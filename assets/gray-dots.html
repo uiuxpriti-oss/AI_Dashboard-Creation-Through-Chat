@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ask Me – Gray Dotted Background</title>
+<style>
+  body { margin: 0; background: #FFFFFF; }
+
+  /* Scales with width: 358px at 1440, grows on larger screens */
+  .am-dots-bg {
+    position: relative;
+    width: 100%;
+    height: clamp(280px, 24.8vw, 520px);
+    overflow: hidden;
+    background: #FFFFFF;
+  }
+
+  /* Gray dots — 1px radius so they render on 1x (non-retina) screens */
+  .am-dots-bg__dots {
+    position: absolute;
+    inset: 0;
+    background-image: radial-gradient(circle, #CBD5E1 1px, transparent 1.2px);
+    background-size: 6px 6px;
+    -webkit-mask-image: linear-gradient(180deg, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0) 100%);
+            mask-image: linear-gradient(180deg, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0) 100%);
+    opacity: 0.55;
+    pointer-events: none;
+  }
+</style>
+</head>
+<body>
+  <div class="am-dots-bg">
+    <div class="am-dots-bg__dots"></div>
+  </div>
+</body>
+</html>

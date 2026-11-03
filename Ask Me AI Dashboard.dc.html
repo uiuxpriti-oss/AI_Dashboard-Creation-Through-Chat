@@ -1,0 +1,1431 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=DM+Sans:wght@500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<script src="lm-icon.js"></script>
+<style>
+body{margin:0;font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;letter-spacing:-0.02em;color:rgb(51,65,85);background:#fff}
+*{box-sizing:border-box}
+a{color:rgb(37,99,235);text-decoration:none}a:hover{color:rgb(59,130,246);text-decoration:underline}
+button,input,textarea{font:inherit;letter-spacing:inherit;color:inherit}
+textarea::placeholder,input::placeholder{color:rgb(100,116,139)}
+lm-icon{display:inline-flex;flex-shrink:0}
+@keyframes lmSpin{to{transform:rotate(360deg)}}
+@keyframes lmFade{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+@keyframes lmIn{from{opacity:0}to{opacity:1}}
+@keyframes lmPop{from{opacity:0;transform:translateY(-4px) scale(.98)}to{opacity:1;transform:none}}
+@keyframes lmShimmer{from{background-position:200% 0}to{background-position:-200% 0}}
+@keyframes lmGlow{0%{box-shadow:0 0 0 0 rgba(59,130,246,.35)}100%{box-shadow:0 0 0 8px rgba(59,130,246,0)}}
+@keyframes om-eqb{0%,100%{transform:scaleY(.35)}50%{transform:scaleY(1)}}
+@keyframes om-lnw{0%,100%{transform:scaleX(.45)}50%{transform:scaleX(1)}}
+@keyframes om-fadeup{from{opacity:0;transform:translateY(5px)}to{opacity:1;transform:none}}
+@keyframes om-pulse{0%,100%{opacity:.3}50%{opacity:1}}
+@keyframes om-dot{0%,100%{opacity:.18}50%{opacity:1}}
+@keyframes om-cyc{0%{opacity:0;transform:scale(.9)}4%{opacity:1;transform:scale(1)}14%{opacity:1;transform:scale(1)}18.5%{opacity:0;transform:scale(1.06)}100%{opacity:0;transform:scale(.9)}}
+@keyframes om-shimmer{0%{background-position:200% 0}100%{background-position:-200% 0}}
+</style>
+</helmet>
+<div data-screen-label="Ask Me" style="display:flex;height:{{ rootH }};min-width:1280px;background:rgb(255,255,255);position:relative;overflow:hidden">
+
+  <nav data-name="Sidebar" style="width:48px;flex-shrink:0;box-sizing:border-box;background:rgb(255,255,255);border:1px solid rgb(241,245,249);display:flex;flex-direction:column;padding:12px 0">
+    <div style="flex:1;min-height:0;display:flex;flex-direction:column;align-items:center;gap:16px;padding:0 8px 14px">
+      <button onClick="{{ reset }}" title="Lumenore" aria-label="Lumenore" style="width:22px;height:22px;flex:none;border:none;background:none;padding:0;cursor:pointer;display:flex"><lm-icon name="AIStroke" style="width:22px;height:22px"></lm-icon></button>
+      <div style="flex:1;align-self:stretch;display:flex;flex-direction:column;align-items:center;gap:16px">
+        <div style="display:flex;flex-direction:column;align-items:center;gap:4px;align-self:stretch">
+      <button title="Home" aria-label="Home" style="width:30px;height:30px;flex:none;border-radius:2px;border:none;background:transparent;padding:6px;display:flex;align-items:center;justify-content:center;cursor:pointer;color:rgb(71,85,105)" style-hover="background:rgb(241,245,249)"><lm-icon name="Home" style="width:18px;height:18px"></lm-icon></button>
+      <button onClick="{{ reset }}" title="Ask Me" aria-label="Ask Me" style="width:30px;height:30px;flex:none;border-radius:2px;border:none;background:{{ navAskBg }};padding:6px;display:flex;align-items:center;justify-content:center;cursor:pointer;color:{{ navAskFg }}" style-hover="background:rgb(241,245,249)"><lm-icon name="IconsProperty1AI" style="width:16px;height:16px"></lm-icon></button>
+      <button title="Dashboard" aria-label="Dashboard" style="width:30px;height:30px;flex:none;border-radius:2px;border:none;background:{{ navDashBg }};padding:6px;display:flex;align-items:center;justify-content:center;cursor:pointer;color:{{ navDashFg }}" style-hover="background:rgb(241,245,249)"><lm-icon name="IconsProperty1Dashboard" style="width:18px;height:18px"></lm-icon></button>
+      <button title="Do You Know" aria-label="Do You Know" style="width:30px;height:30px;flex:none;border-radius:2px;border:none;background:transparent;padding:6px;display:flex;align-items:center;justify-content:center;cursor:pointer;color:rgb(71,85,105)" style-hover="background:rgb(241,245,249)"><lm-icon name="DYK" style="width:18px;height:18px"></lm-icon></button>
+        </div>
+        <div style="height:1px;align-self:stretch;background:rgb(241,245,249)"></div>
+      <button title="Data" aria-label="Data" style="width:30px;height:30px;flex:none;border-radius:2px;border:none;background:transparent;padding:6px;display:flex;align-items:center;justify-content:center;cursor:pointer;color:rgb(71,85,105)" style-hover="background:rgb(241,245,249)"><lm-icon name="DatasetIconTypeStroke" style="width:18px;height:18px"></lm-icon></button>
+      </div>
+      <div style="display:flex;flex-direction:column;align-items:center;gap:6px;align-self:stretch">
+        <div style="height:1px;align-self:stretch;background:rgb(241,245,249)"></div>
+      <button title="Notifications" aria-label="Notifications" style="width:30px;height:30px;flex:none;border-radius:2px;border:none;background:transparent;padding:6px;display:flex;align-items:center;justify-content:center;cursor:pointer;color:rgb(14,116,144)" style-hover="background:rgb(241,245,249)"><lm-icon name="Notification" style="width:16px;height:16px"></lm-icon></button>
+      <button title="Help" aria-label="Help" style="width:30px;height:30px;flex:none;border-radius:2px;border:none;background:transparent;padding:6px;display:flex;align-items:center;justify-content:center;cursor:pointer;color:rgb(14,116,144)" style-hover="background:rgb(241,245,249)"><lm-icon name="IconsProperty1Help" style="width:16px;height:16px"></lm-icon></button>
+      <button title="Feedback" aria-label="Feedback" style="width:30px;height:30px;flex:none;border-radius:2px;border:none;background:transparent;padding:6px;display:flex;align-items:center;justify-content:center;cursor:pointer;color:rgb(14,116,144)" style-hover="background:rgb(241,245,249)"><lm-icon name="Feedback" style="width:16px;height:16px"></lm-icon></button>
+        <span title="Priti J" style="width:28px;height:28px;flex:none;border-radius:50%;background:rgb(203,213,225);display:flex;align-items:center;justify-content:center;font-size:10px;font-weight:500;color:rgb(51,65,85)">PJ</span>
+      </div>
+    </div>
+  </nav>
+
+  <main style="flex:1;min-width:0;display:flex;flex-direction:column;position:relative;background:rgb(255,255,255)">
+
+    <sc-if value="{{ isHome }}" hint-placeholder-val="{{ true }}">
+      <section data-screen-label="01 New Analysis" style="flex:1;position:relative;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:88px;padding:0 10px;overflow:hidden;animation:lmIn .3s ease">
+        <div style="position:absolute;left:0;right:0;top:0;height:358px;background:linear-gradient(180deg, rgb(241,245,249) 0%, rgb(255,255,255) 100%);pointer-events:none"></div>
+        <div style="position:absolute;left:0;right:0;top:0;height:358px;pointer-events:none;background-image:radial-gradient(rgb(203,213,225) 0.6px, transparent 0.6px);background-size:6px 6px;-webkit-mask-image:linear-gradient(180deg, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0) 100%);mask-image:linear-gradient(180deg, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0) 100%);opacity:.7"></div><div style="position:absolute;left:0;right:0;top:0;height:358px;pointer-events:none;background-image:radial-gradient(rgb(255,255,255) 1px, transparent 1px);background-size:6px 6px;-webkit-mask-image:radial-gradient(ellipse 560px 358px at 50% 0%, rgba(0,0,0,1) 0%, rgba(0,0,0,0.85) 55%, rgba(0,0,0,0) 100%);mask-image:radial-gradient(ellipse 560px 358px at 50% 0%, rgba(0,0,0,1) 0%, rgba(0,0,0,0.85) 55%, rgba(0,0,0,0) 100%);opacity:.3"></div>
+        <div style="position:absolute;left:0;right:0;bottom:0;height:358px;background:linear-gradient(0deg, rgb(241,245,249) 0%, rgb(255,255,255) 100%);opacity:.6;pointer-events:none"></div>
+        <div style="position:absolute;left:50%;top:-100px;width:428px;height:230px;margin-left:-214px;opacity:.2;border-radius:100px;background:linear-gradient(89.136deg, rgb(34,211,238) 0.41%, rgb(59,130,246) 50%, rgb(232,121,249) 99.59%);filter:blur(60px);pointer-events:none"></div>
+        <span style="position:absolute;right:24px;top:18px;color:rgb(51,65,85)"><lm-icon name="DarkModeMoon" style="width:20px;height:20px"></lm-icon></span>
+
+        <div style="position:relative;width:833px;max-width:100%;display:flex;flex-direction:column;gap:18px;align-items:center">
+          <div style="align-self:flex-start;display:flex;align-items:center;gap:18px;padding-left:8px">
+            <lm-icon name="AIStroke" gradient="rgb(34,211,238)|rgb(59,130,246)" style="width:42px;height:42px"></lm-icon>
+            <div style="display:flex;flex-direction:column;gap:4px">
+              <span style="font-size:16px;line-height:1.24;color:rgb(100,116,139)">Good evening, Priti.</span>
+              <div style="display:flex;align-items:center;gap:6px">
+                <span style="font-size:20px;line-height:1.26;color:rgb(51,65,85)">{{ heroLine }}</span>
+                <span style="font-size:25px;line-height:32px;font-weight:500;background:linear-gradient(90deg, rgb(34,211,238), rgb(59,130,246));-webkit-background-clip:text;background-clip:text;color:transparent">{{ heroWord }}</span>
+              </div>
+            </div>
+          </div>
+
+          <div style="width:100%;border-radius:12px;background:rgb(248,250,252);padding:8px;display:flex;flex-direction:column;gap:10px">
+            <div data-name="Search Box Container" style="position:relative;min-height:138px;border-radius:8px;background:rgb(255,255,255);box-shadow:inset 0 0 0 1.5px {{ boxRing }};padding:12px 12px 10px;display:flex;flex-direction:column;justify-content:space-between;gap:12px;transition:box-shadow .2s">
+              <textarea value="{{ prompt }}" onChange="{{ onPrompt }}" onKeyDown="{{ onPromptKey }}" placeholder="{{ homePlaceholder }}" rows="3" style="width:100%;border:none;outline:none;resize:none;background:transparent;font-size:14px;line-height:1.45;color:rgb(51,65,85);padding:0"></textarea>
+              <div data-name="Search Options Container" style="display:flex;align-items:center;gap:6px;height:32px">
+                <div style="position:relative">
+                  <button onClick="{{ toggleAdd }}" title="Add" style="width:32px;height:32px;border-radius:64px;border:none;background:{{ addBg }};display:flex;align-items:center;justify-content:center;cursor:pointer;color:rgb(51,65,85)" style-hover="background:rgb(241,245,249)"><lm-icon name="IconsProperty1Add" style="width:16px;height:16px"></lm-icon></button>
+                  <sc-if value="{{ addMenu }}" hint-placeholder-val="{{ false }}">
+                    <div onClick="{{ closeMenus }}" style="position:fixed;inset:0;z-index:29"></div>
+                    <div style="position:absolute;left:0;top:40px;width:284px;z-index:30;border-radius:14px;background:rgb(255,255,255);border:1px solid rgb(226,232,240);box-shadow:0px 20px 60px 0px rgba(15,23,42,0.15);padding:6px 0;animation:lmPop .16s ease">
+                      <div style="display:flex;align-items:center;gap:8px;padding:8px 10px;margin:0 6px;border-radius:8px;cursor:pointer" style-hover="background:rgb(248,250,252)">
+                        <lm-icon name="IconsProperty1Variant55" style="width:18px;height:18px;color:rgb(51,65,85)"></lm-icon><span style="font-size:12px;font-weight:500">Upload a file</span>
+                      </div>
+                      <div style="display:flex;align-items:center;gap:8px;padding:8px 10px;margin:0 6px;border-radius:8px;cursor:pointer" style-hover="background:rgb(248,250,252)">
+                        <lm-icon name="IconsProperty1Connectors" style="width:18px;height:18px;color:rgb(51,65,85)"></lm-icon><span style="font-size:12px;font-weight:500">Connect data source</span>
+                      </div>
+                      <div style="display:flex;align-items:center;gap:8px;padding:8px 10px;margin:0 6px;border-radius:8px;cursor:pointer" style-hover="background:rgb(248,250,252)">
+                        <lm-icon name="IconsProperty1Variant54" style="width:18px;height:18px;color:rgb(51,65,85)"></lm-icon><span style="font-size:12px;font-weight:500">Use sample data</span>
+                      </div>
+                      <div style="height:1px;background:rgb(241,245,249);margin:6px 0"></div>
+                      <span style="display:block;padding:4px 16px;font-size:10px;font-weight:500;color:rgb(100,116,139)">Create New</span>
+                      <div onClick="{{ pickDashboard }}" style="display:flex;align-items:flex-start;gap:8px;padding:8px 10px;margin:0 6px;border-radius:8px;cursor:pointer;background:{{ dashItemBg }}" style-hover="background:rgb(248,250,252)">
+                        <lm-icon name="IconsProperty1Dashboard" style="width:18px;height:18px;color:rgb(37,99,235)"></lm-icon>
+                        <div style="flex:1;display:flex;flex-direction:column;gap:2px">
+                          <div style="display:flex;align-items:center;gap:6px"><span style="font-size:12px;font-weight:500;line-height:1.3">Dashboard</span><span style="font-size:10px;font-weight:500;padding:1px 6px;border-radius:20px;background:rgb(255,247,237);box-shadow:inset 0 0 0 1px rgb(255,237,213);color:rgb(194,65,12)">New</span></div>
+                          <span style="font-size:10px;font-weight:500;line-height:1.34;color:rgb(100,116,139)">Build a multi-chart dashboard from a prompt</span>
+                        </div>
+                        <sc-if value="{{ isDashMode }}" hint-placeholder-val="{{ false }}"><lm-icon name="IconsProperty1Check" style="width:16px;height:16px;color:rgb(37,99,235)"></lm-icon></sc-if>
+                      </div>
+                    </div>
+                  </sc-if>
+                </div>
+                <sc-if value="{{ isDashMode }}" hint-placeholder-val="{{ false }}">
+                  <span style="height:30px;display:flex;align-items:center;gap:4px;padding:4px 6px 4px 8px;border-radius:30px;background:rgb(219,234,254);color:rgb(37,99,235);font-size:12px;font-weight:500;animation:lmPop .2s ease">
+                    <lm-icon name="IconsProperty1Dashboard" style="width:16px;height:16px"></lm-icon>Dashboard
+                    <span style="position:relative;display:flex">
+                      <button onClick="{{ clearMode }}" onMouseEnter="{{ exitHintOn }}" onMouseLeave="{{ exitHintOff }}" aria-label="Exit Dashboard mode" style="width:18px;height:18px;border:none;border-radius:50%;background:{{ exitBg }};padding:0;display:flex;align-items:center;justify-content:center;cursor:pointer;color:rgb(37,99,235);transition:background .15s"><lm-icon name="IconsProperty1Close" style="width:12px;height:12px"></lm-icon></button>
+                      <sc-if value="{{ exitHint }}" hint-placeholder-val="{{ false }}">
+                        <span style="position:absolute;left:50%;top:26px;transform:translateX(-50%);white-space:nowrap;background:rgb(0,0,0);color:rgb(255,255,255);border-radius:6px;padding:6px 8px;font-size:10px;font-weight:500;line-height:1.3;z-index:20;animation:lmFade .15s ease;pointer-events:none">Exit Dashboard mode · your text stays<span style="position:absolute;left:50%;top:-4px;width:8px;height:8px;margin-left:-4px;background:rgb(0,0,0);transform:rotate(45deg)"></span></span>
+                      </sc-if>
+                    </span>
+                  </span>
+                </sc-if>
+                <div style="position:relative">
+                  <button onClick="{{ toggleData }}" style="height:32px;display:flex;align-items:center;gap:6px;padding:0 10px;border-radius:30px;border:none;background:{{ dataPillBg }};color:{{ dataPillFg }};font-size:12px;font-weight:500;cursor:pointer" style-hover="background:rgb(241,245,249)">
+                    <lm-icon name="DatasetIconTypeStroke" style="width:16px;height:16px"></lm-icon>{{ dataPillLabel }}<lm-icon name="IconsProperty1DownArrow" style="width:14px;height:14px"></lm-icon>
+                  </button>
+                  <sc-if value="{{ dataMenuHome }}" hint-placeholder-val="{{ false }}">
+                    <div onClick="{{ closeMenus }}" style="position:fixed;inset:0;z-index:29"></div>
+                    <div style="position:absolute;left:0;top:40px;width:340px;z-index:30;border-radius:14px;background:rgb(255,255,255);border:1px solid rgb(226,232,240);box-shadow:0px 20px 60px 0px rgba(15,23,42,0.15);animation:lmPop .16s ease;overflow:hidden">
+                      <div style="padding:10px;border-bottom:1px solid rgb(241,245,249)">
+                        <div style="display:flex;align-items:center;gap:6px;height:32px;padding:0 10px;border-radius:4px;background:rgb(248,250,252)">
+                          <lm-icon name="Insights" style="width:14px;height:14px;color:rgb(100,116,139)"></lm-icon>
+                          <input value="{{ dataQuery }}" onChange="{{ onDataQuery }}" placeholder="Search data pools and datasets" style="flex:1;border:none;outline:none;background:transparent;font-size:12px">
+                        </div>
+                      </div>
+                      <span style="display:block;padding:10px 16px 4px;font-size:10px;font-weight:500;color:rgb(100,116,139)">Data Pools</span>
+                      <sc-if value="{{ dataLoading }}" hint-placeholder-val="{{ false }}">
+                        <div style="display:flex;flex-direction:column;gap:12px;padding:10px 16px 14px">
+                          <div style="height:12px;width:70%;border-radius:2px;background:linear-gradient(90deg, rgb(241,245,249) 25%, rgb(248,250,252) 50%, rgb(241,245,249) 75%);background-size:200% 100%;animation:lmShimmer 1.2s linear infinite"></div>
+                          <div style="height:12px;width:55%;border-radius:2px;background:linear-gradient(90deg, rgb(241,245,249) 25%, rgb(248,250,252) 50%, rgb(241,245,249) 75%);background-size:200% 100%;animation:lmShimmer 1.2s linear infinite"></div>
+                          <div style="height:12px;width:62%;border-radius:2px;background:linear-gradient(90deg, rgb(241,245,249) 25%, rgb(248,250,252) 50%, rgb(241,245,249) 75%);background-size:200% 100%;animation:lmShimmer 1.2s linear infinite"></div>
+                        </div>
+                      </sc-if>
+                      <sc-if value="{{ dataReady }}" hint-placeholder-val="{{ false }}">
+                        <div style="display:flex;flex-direction:column;padding:0 6px 6px;max-height:280px;overflow:auto">
+                          <sc-for list="{{ poolList }}" as="p" hint-placeholder-count="4">
+                            <div onClick="{{ p.onPick }}" style="display:flex;align-items:flex-start;gap:8px;padding:8px 10px;border-radius:8px;cursor:pointer;background:{{ p.bg }}" style-hover="background:rgb(248,250,252)">
+                              <lm-icon name="IconsProperty1Dp" style="width:18px;height:18px;color:rgb(51,65,85)"></lm-icon>
+                              <div style="flex:1;display:flex;flex-direction:column;gap:2px;min-width:0">
+                                <span style="font-size:12px;font-weight:500;line-height:1.3">{{ p.name }}</span>
+                                <span style="font-size:10px;font-weight:500;line-height:1.34;color:rgb(100,116,139)">{{ p.meta }}</span>
+                              </div>
+                              <sc-if value="{{ p.selected }}" hint-placeholder-val="{{ false }}"><lm-icon name="IconsProperty1Check" style="width:16px;height:16px;color:rgb(37,99,235)"></lm-icon></sc-if>
+                            </div>
+                          </sc-for>
+                          <sc-if value="{{ poolEmpty }}" hint-placeholder-val="{{ false }}">
+                            <span style="padding:12px 10px;font-size:12px;color:rgb(100,116,139)">No data pools match “{{ dataQuery }}”.</span>
+                          </sc-if>
+                        </div>
+                      </sc-if>
+                      <div style="display:flex;align-items:center;gap:8px;padding:10px 16px;border-top:1px solid rgb(241,245,249);color:rgb(37,99,235);font-size:12px;font-weight:500;cursor:pointer"><lm-icon name="IconsProperty1Connectors" style="width:16px;height:16px"></lm-icon>Connect data source</div>
+                    </div>
+                  </sc-if>
+                </div>
+                <div data-name="Search Options" style="flex:1;display:flex;align-items:center;justify-content:flex-end;gap:8px">
+                  <sc-if value="{{ hasPool }}" hint-placeholder-val="{{ false }}">
+                    <div style="display:flex;align-items:center;gap:4px;animation:lmIn .2s ease">
+                      <span style="height:24px;display:flex;align-items:center;gap:4px;padding:4px;border-radius:2px;font-size:12px;color:rgb(51,65,85)"><lm-icon name="PreviewTable" style="width:16px;height:16px"></lm-icon>Preview data<lm-icon name="IconsProperty1DownArrow" style="width:14px;height:14px"></lm-icon></span>
+                      <span style="height:24px;display:flex;align-items:center;gap:4px;padding:4px;border-radius:2px;font-size:12px;color:rgb(51,65,85)"><lm-icon name="IconsProperty1SchemaDetail" style="width:16px;height:16px"></lm-icon>Data Details<lm-icon name="IconsProperty1DownArrow" style="width:14px;height:14px"></lm-icon></span>
+                    </div>
+                  </sc-if>
+                  <sc-if value="{{ canSend }}" hint-placeholder-val="{{ false }}">
+                    <button onClick="{{ submitHome }}" title="Send" style="width:30px;height:30px;border-radius:64px;border:none;background:rgb(59,130,246);color:rgb(255,255,255);display:flex;align-items:center;justify-content:center;cursor:pointer;animation:lmPop .15s ease" style-hover="background:rgb(37,99,235)"><lm-icon name="IconsProperty1PaperPlane1" style="width:16px;height:16px"></lm-icon></button>
+                  </sc-if>
+                  <sc-if value="{{ cantSend }}" hint-placeholder-val="{{ true }}">
+                    <span title="Voice" style="width:30px;height:30px;border-radius:64px;display:flex;align-items:center;justify-content:center;color:rgb(51,65,85)"><lm-icon name="IconsProperty1Mice" style="width:20px;height:20px"></lm-icon></span>
+                  </sc-if>
+                </div>
+              </div>
+            </div>
+            <div style="height:26px;display:flex;align-items:center;justify-content:space-between;padding:0 2px">
+              <span style="display:flex;align-items:center;gap:6px;font-size:12px;line-height:1.3;color:rgb(71,85,105)"><lm-icon name="IconsProperty1Connectors" style="width:18px;height:18px"></lm-icon>{{ belowBoxText }}</span>
+              <span style="width:26px;height:26px;border-radius:50%;background:rgb(255,255,255);box-shadow:0 0 0 0.722px rgb(241,245,249);display:flex;align-items:center;justify-content:center;font-size:7.2px;font-weight:600;color:rgb(95,112,135)">50+</span>
+            </div>
+          </div>
+        </div>
+
+        <div style="position:relative;width:833px;max-width:100%;display:flex;flex-direction:column;gap:12px;padding-bottom:40px">
+          <span style="font-size:12px;font-weight:500;line-height:1.3;color:rgb(51,65,85)">{{ startedLabel }}</span>
+          <sc-if value="{{ isAskMode }}" hint-placeholder-val="{{ true }}">
+            <div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap">
+              <div style="position:relative">
+                <button onClick="{{ pickDashboard }}" style="height:30px;display:flex;align-items:center;gap:6px;padding:6px 8px 6px 8px;border:none;border-radius:30px;background:rgb(239,246,255);box-shadow:inset 0 0 0 1px rgb(219,234,254);font-family:inherit;font-size:12px;font-weight:500;color:rgb(29,78,216);cursor:pointer;transition:background .15s" style-hover="background:rgb(219,234,254)"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="rgb(37,99,235)" stroke-width="1.4"><rect x="2" y="2" width="5" height="5" rx="1.6"></rect><rect x="9" y="2" width="5" height="5" rx="1.6"></rect><rect x="2" y="9" width="5" height="5" rx="1.6"></rect><rect x="9" y="9" width="5" height="5" rx="1.6"></rect></svg>Create a dashboard<span style="font-size:10px;font-weight:500;padding:1px 7px;border-radius:20px;background:rgb(255,247,237);box-shadow:inset 0 0 0 1px rgb(255,237,213);color:rgb(194,65,12)">New</span></button>
+                <sc-if value="{{ showCoach }}" hint-placeholder-val="{{ false }}">
+                  <div style="position:absolute;left:0;top:40px;width:252px;background:rgb(0,0,0);color:rgb(255,255,255);border-radius:6px;padding:10px 12px;display:flex;flex-direction:column;gap:6px;z-index:15;animation:lmFade .3s ease">
+                    <span style="font-size:12px;font-weight:500;line-height:1.3">New: build dashboards in Ask Me</span>
+                    <span style="font-size:12px;line-height:1.4;color:rgb(226,232,240)">Start here, or choose Dashboard from + and describe what you want to track.</span>
+                    <button onClick="{{ dismissCoach }}" style="align-self:flex-end;border:none;background:none;color:rgb(34,211,238);font-size:12px;font-weight:500;cursor:pointer;padding:0">Got it</button>
+                    <span style="position:absolute;left:18px;top:-5px;width:10px;height:10px;background:rgb(0,0,0);transform:rotate(45deg)"></span>
+                  </div>
+                </sc-if>
+              </div>
+              <span style="height:30px;display:flex;align-items:center;gap:4px;padding:6px 12px 6px 8px;border-radius:30px;background:rgb(248,250,252);font-size:12px;font-weight:500;color:rgb(71,85,105)"><lm-icon name="IconsProperty1Variant54" style="width:18px;height:18px"></lm-icon>Use sample data</span>
+              <span style="height:30px;display:flex;align-items:center;gap:4px;padding:6px 12px 6px 8px;border-radius:30px;background:rgb(248,250,252);font-size:12px;font-weight:500;color:rgb(71,85,105)"><lm-icon name="IconsProperty1Variant55" style="width:18px;height:18px"></lm-icon>Upload a file</span>
+              <span style="height:30px;display:flex;align-items:center;gap:4px;padding:6px 12px 6px 8px;border-radius:30px;background:rgb(248,250,252);font-size:12px;font-weight:500;color:rgb(71,85,105)"><lm-icon name="IconsProperty1Connectors" style="width:18px;height:18px"></lm-icon>Connect Data Source</span>
+            </div>
+          </sc-if>
+          <sc-if value="{{ isDashMode }}" hint-placeholder-val="{{ false }}">
+            <div style="display:flex;flex-direction:column;gap:8px;animation:lmFade .25s ease">
+              <sc-for list="{{ dashSuggestions }}" as="s" hint-placeholder-count="3">
+                <button onClick="{{ s.onClick }}" style="align-self:flex-start;height:30px;display:flex;align-items:center;gap:6px;padding:6px 12px 6px 8px;border-radius:30px;border:none;background:rgb(248,250,252);font-size:12px;font-weight:500;color:rgb(71,85,105);cursor:pointer" style-hover="background:rgb(241,245,249)"><lm-icon name="IconsProperty1AI" style="width:14px;height:14px;color:rgb(59,130,246)"></lm-icon>{{ s.text }}</button>
+              </sc-for>
+            </div>
+          </sc-if>
+        </div>
+      </section>
+    </sc-if>
+
+    <sc-if value="{{ isWork }}" hint-placeholder-val="{{ false }}">
+      <sc-if value="{{ isPublished }}" hint-placeholder-val="{{ false }}">
+      <header style="height:{{ headerH }};flex-shrink:0;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:0 20px;border-bottom:1px solid rgb(241,245,249);background:rgb(255,255,255)">
+        <sc-if value="{{ isPublished }}" hint-placeholder-val="{{ false }}">
+          <div style="display:flex;flex-direction:column;gap:4px;min-width:0;animation:lmIn .3s ease">
+            <span style="display:flex;align-items:center;gap:6px;font-size:12px;color:rgb(100,116,139)">Dashboard<lm-icon name="IconsProperty1ArrowRight" style="width:12px;height:12px"></lm-icon>{{ pubLoc }}</span>
+            <div style="display:flex;align-items:center;gap:10px">
+              <span style="font-size:20px;line-height:1.26;color:rgb(51,65,85);white-space:nowrap;overflow:hidden;text-overflow:ellipsis">{{ title }}</span>
+              <span style="display:flex;align-items:center;gap:4px;height:22px;padding:0 8px;border-radius:20px;background:rgb(236,253,245);box-shadow:inset 0 0 0 1px rgb(209,250,229);font-size:10px;font-weight:500;color:rgb(24,92,55)"><span style="width:6px;height:6px;border-radius:50%;background:rgb(33,163,102)"></span>Published</span>
+            </div>
+            <span style="font-size:10px;font-weight:500;color:rgb(100,116,139)">{{ pubMeta }}</span>
+          </div>
+        </sc-if>
+        <div style="display:flex;align-items:center;gap:8px;flex-shrink:0">
+          <sc-if value="{{ isPublished }}" hint-placeholder-val="{{ false }}">
+            <div style="display:flex;align-items:center;gap:8px">
+              <button onClick="{{ copyLink }}" style="height:30px;display:flex;align-items:center;gap:4px;padding:4px 10px;border-radius:4px;border:none;background:rgb(241,245,249);font-size:12px;font-weight:500;color:rgb(71,85,105);cursor:pointer" style-hover="background:rgb(226,232,240)"><lm-icon name="IconsProperty1Share" style="width:16px;height:16px"></lm-icon>Share</button>
+              <button onClick="{{ backToEdit }}" style="height:30px;display:flex;align-items:center;gap:4px;padding:4px 10px;border-radius:4px;border:1px solid rgb(59,130,246);background:rgb(255,255,255);font-size:12px;font-weight:500;color:rgb(37,99,235);cursor:pointer" style-hover="background:rgb(239,246,255)"><lm-icon name="IconsProperty1AI" style="width:14px;height:14px"></lm-icon>Edit in Ask Me</button>
+            </div>
+          </sc-if>
+          <span style="width:30px;height:30px;display:flex;align-items:center;justify-content:center;color:rgb(51,65,85)"><lm-icon name="DarkModeMoon" style="width:18px;height:18px"></lm-icon></span>
+        </div>
+      </header>
+      </sc-if>
+
+      <div style="flex:1;min-height:0;display:flex">
+        <sc-if value="{{ showChat }}" hint-placeholder-val="{{ false }}">
+          <div data-screen-label="{{ chatLabel }}" style="position:relative;flex:0 0 {{ chatBasis }};min-width:0;display:flex;flex-direction:column;border-right:1px solid rgb(241,245,249);background:rgb(255,255,255);transition:flex-basis .45s cubic-bezier(.2,.7,.2,1)">
+            <div style="position:absolute;left:0;right:0;top:0;height:358px;pointer-events:none;background:linear-gradient(180deg, rgb(241,245,249) 0%, rgb(255,255,255) 100%)"></div>
+            <div style="position:absolute;left:0;right:0;top:0;height:358px;pointer-events:none;background-image:radial-gradient(rgb(203,213,225) 0.6px, transparent 0.6px);background-size:6px 6px;-webkit-mask-image:linear-gradient(180deg, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0) 100%);mask-image:linear-gradient(180deg, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0) 100%);opacity:.7"></div><div style="position:absolute;left:0;right:0;top:0;height:358px;pointer-events:none;background-image:radial-gradient(rgb(255,255,255) 1px, transparent 1px);background-size:6px 6px;-webkit-mask-image:radial-gradient(ellipse 560px 358px at 50% 0%, rgba(0,0,0,1) 0%, rgba(0,0,0,0.85) 55%, rgba(0,0,0,0) 100%);mask-image:radial-gradient(ellipse 560px 358px at 50% 0%, rgba(0,0,0,1) 0%, rgba(0,0,0,0.85) 55%, rgba(0,0,0,0) 100%);opacity:.3"></div>
+            <div style="position:absolute;left:0;right:0;bottom:0;height:358px;pointer-events:none;background:linear-gradient(0deg, rgb(241,245,249) 0%, rgb(255,255,255) 100%)"></div>
+            <div style="position:absolute;left:50%;top:-100px;width:428px;height:230px;margin-left:-214px;opacity:.2;border-radius:100px;background:linear-gradient(89.136deg, rgb(34,211,238) 0.41%, rgb(59,130,246) 50%, rgb(232,121,249) 99.59%);filter:blur(60px);pointer-events:none"></div>
+            <sc-if value="{{ showChatIcons }}" hint-placeholder-val="{{ false }}">
+              <div style="position:absolute;top:12px;right:16px;z-index:20;display:flex;align-items:center;gap:4px">
+                <button onClick="{{ copyThread }}" title="Share" style="width:28px;height:28px;border-radius:4px;border:none;background:none;display:flex;align-items:center;justify-content:center;cursor:pointer;color:rgb(51,65,85)" style-hover="background:rgb(241,245,249)"><lm-icon name="IconsProperty1Share" style="width:18px;height:18px"></lm-icon></button>
+                <button title="More" style="width:28px;height:28px;border-radius:4px;border:none;background:none;display:flex;align-items:center;justify-content:center;cursor:pointer;color:rgb(51,65,85)" style-hover="background:rgb(241,245,249)"><lm-icon name="ContextMenu" style="width:18px;height:18px"></lm-icon></button>
+              </div>
+            </sc-if>
+            <sc-if value="{{ showFloatActions }}" hint-placeholder-val="{{ false }}">
+              <div style="position:absolute;top:12px;right:16px;z-index:20;display:flex;align-items:center;gap:8px;animation:lmIn .3s ease">
+                <button onClick="{{ openCanvas }}" style="height:30px;display:flex;align-items:center;gap:4px;padding:4px 10px;border-radius:4px;border:1px solid rgb(59,130,246);background:rgb(255,255,255);font-size:12px;font-weight:500;color:rgb(37,99,235);cursor:pointer" style-hover="background:rgb(239,246,255)"><lm-icon name="IconsProperty1Dashboard" style="width:14px;height:14px"></lm-icon>Show dashboard</button>
+                <button onClick="{{ saveDraft }}" disabled="{{ actionsDisabled }}" style="height:30px;display:flex;align-items:center;gap:4px;padding:4px 10px;border-radius:4px;border:none;background:rgb(241,245,249);font-size:12px;font-weight:500;color:rgb(71,85,105);cursor:pointer;opacity:{{ actionsOpacity }}" style-hover="background:rgb(226,232,240)"><lm-icon name="IconsProperty1Save" style="width:16px;height:16px"></lm-icon>Save draft</button>
+                <button onClick="{{ openPublish }}" disabled="{{ actionsDisabled }}" style="height:30px;display:flex;align-items:center;gap:4px;padding:4px 12px;border-radius:4px;border:none;background:rgb(59,130,246);font-size:12px;font-weight:500;color:rgb(255,255,255);cursor:pointer;opacity:{{ actionsOpacity }}" style-hover="background:rgb(37,99,235)"><lm-icon name="IconsProperty1ArrowUpRight" style="width:16px;height:16px"></lm-icon>Publish</button>
+              </div>
+            </sc-if>
+            <div ref="{{ scrollRef }}" data-scroll="chat" style="position:relative;flex:1;min-height:0;overflow:auto;padding:24px 20px">
+              <div style="max-width:{{ msgMax }};margin:0 auto;display:flex;flex-direction:column;gap:16px">
+                <sc-for list="{{ messagesV }}" as="m" hint-placeholder-count="2">
+                  <div style="animation:lmFade .3s ease">
+                    <sc-if value="{{ m.isUser }}" hint-placeholder-val="{{ false }}">
+                      <div style="display:flex;justify-content:flex-end">
+                        <span style="max-width:85%;background:rgb(241,245,249);border-radius:12px 12px 2px 12px;padding:10px 14px;font-size:14px;line-height:1.45;color:rgb(51,65,85);text-wrap:pretty">{{ m.text }}</span>
+                      </div>
+                    </sc-if>
+                    <sc-if value="{{ m.isAi }}" hint-placeholder-val="{{ false }}">
+                      <div style="display:flex;gap:10px;align-items:flex-start">
+                        <lm-icon name="AIStroke" style="width:20px;height:20px;margin-top:1px"></lm-icon>
+                        <span style="font-size:14px;line-height:1.5;color:rgb(51,65,85);text-wrap:pretty">{{ m.text }}</span>
+                      </div>
+                    </sc-if>
+                    <sc-if value="{{ m.isThinking }}" hint-placeholder-val="{{ false }}">
+                      <div style="display:flex;gap:10px;align-items:center">
+                        <lm-icon name="AIStroke" style="width:20px;height:20px"></lm-icon>
+                        <span style="width:16px;height:16px;display:flex;align-items:center;justify-content:center">{{ loaderIcon }}</span>
+                        <span style="font-size:14px;font-weight:500;background-image:linear-gradient(90deg,#94A3B8 0%,#1E293B 50%,#94A3B8 100%);background-size:200% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;animation:om-shimmer 2.2s linear infinite">{{ m.text }}</span>
+                      </div>
+                    </sc-if>
+                    <sc-if value="{{ m.isRun }}" hint-placeholder-val="{{ false }}">
+                      <div role="status" style="display:flex;flex-direction:column;gap:2px;padding-right:4px">
+                        <div onClick="{{ m.run.onToggle }}" style="display:flex;align-items:center;justify-content:space-between;gap:12px;padding:8px 0 6px;cursor:pointer;user-select:none">
+                          <div aria-live="polite" style="display:flex;align-items:center;gap:10px;min-width:0">
+                            <span style="width:16px;height:16px;display:flex;align-items:center;justify-content:center;flex:none">{{ m.run.hGlyph }}</span>
+                            <sc-if value="{{ m.run.live }}" hint-placeholder-val="{{ true }}"><span style="font-size:14px;font-weight:500;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;background-image:linear-gradient(90deg,#94A3B8 0%,#1E293B 50%,#94A3B8 100%);background-size:200% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;animation:om-shimmer 2.2s linear infinite">{{ m.run.hLabel }}</span></sc-if>
+                            <sc-if value="{{ m.run.idle }}" hint-placeholder-val="{{ false }}"><span style="font-size:14px;font-weight:600;white-space:nowrap;color:{{ m.run.hColor }}">{{ m.run.hLabel }}</span><span style="font-size:12px;color:#94A3B8;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;animation:om-fadeup .3s ease">{{ m.run.hBracket }}</span></sc-if>
+                          </div>
+                          <svg width="12" height="12" viewBox="0 0 12 12" style="flex:none;transition:transform .3s cubic-bezier(.4,0,.2,1);transform:rotate({{ m.run.chev }})"><path d="M2.5 4.5L6 8l3.5-3.5" fill="none" stroke="#64748B" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                        </div>
+                        <sc-if value="{{ m.run.open }}" hint-placeholder-val="{{ true }}">
+                          <div style="padding:2px 0 6px">
+                            <sc-for list="{{ m.run.phases }}" as="ph" hint-placeholder-count="2">
+                              <div style="opacity:{{ ph.opacity }}">
+                                <div onClick="{{ ph.onClick }}" style="display:flex;align-items:center;gap:9px;padding:6px 0;cursor:{{ ph.cursor }};user-select:none">
+                                  <span style="width:16px;height:16px;display:flex;align-items:center;justify-content:center;flex:none">{{ ph.glyph }}</span>
+                                  <sc-if value="{{ ph.active }}" hint-placeholder-val="{{ false }}"><span style="font-size:14px;font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;background-image:linear-gradient(90deg,#94A3B8 0%,#1E293B 50%,#94A3B8 100%);background-size:200% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;animation:om-shimmer 2.2s linear infinite">{{ ph.title }}</span></sc-if>
+                                  <sc-if value="{{ ph.still }}" hint-placeholder-val="{{ true }}"><span style="font-size:14px;font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;color:{{ ph.titleColor }}">{{ ph.title }}</span></sc-if>
+                                  <sc-if value="{{ ph.pillShow }}" hint-placeholder-val="{{ false }}"><span style="font-family:'JetBrains Mono',ui-monospace,monospace;font-size:12px;color:#475569;background:#F1F5F9;border-radius:6px;padding:2px 7px;flex:none">{{ ph.pill }}</span></sc-if>
+                                  <span style="flex:1"></span>
+                                  <svg width="12" height="12" viewBox="0 0 12 12" style="flex:none;opacity:{{ ph.chevOp }};transition:transform .3s cubic-bezier(.4,0,.2,1);transform:rotate({{ ph.chev }})"><path d="M2.5 4.5L6 8l3.5-3.5" fill="none" stroke="#64748B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                                </div>
+                                <sc-if value="{{ ph.open }}" hint-placeholder-val="{{ false }}">
+                                  <div style="margin:0 0 8px 7px;border-left:1px solid #E2E8F0;padding:2px 8px 2px 18px;display:flex;flex-direction:column;gap:12px;animation:om-fadeup .24s ease">
+                                    <span style="font-size:14px;line-height:1.7;color:#475569;text-wrap:pretty">{{ ph.prose }}</span>
+                                    <div style="display:flex;flex-direction:column;gap:9px">
+                                      <sc-for list="{{ ph.agents }}" as="ag" hint-placeholder-count="2">
+                                        <div style="display:flex;gap:9px;opacity:{{ ag.opacity }}">
+                                          <span style="width:11px;height:11px;flex:none;display:flex;align-items:center;justify-content:center;margin-top:5px">{{ ag.glyph }}</span>
+                                          <div style="flex:1;min-width:0;display:flex;flex-direction:column;gap:2px">
+                                            <div style="display:flex;align-items:baseline;gap:7px">
+                                              <span style="font-size:14px;font-weight:500;line-height:1.4;color:#1E293B">{{ ag.name }}</span>
+                                              <sc-if value="{{ ag.countShow }}" hint-placeholder-val="{{ false }}"><span style="font-family:'JetBrains Mono',ui-monospace,monospace;font-size:12px;color:#475569;background:#F1F5F9;border-radius:5px;padding:1px 5px;flex:none">{{ ag.count }}</span></sc-if>
+                                            </div>
+                                            <span style="font-size:12px;line-height:1.5;color:{{ ag.subColor }}">{{ ag.sub }}</span>
+                                          </div>
+                                        </div>
+                                      </sc-for>
+                                    </div>
+                                  </div>
+                                </sc-if>
+                              </div>
+                            </sc-for>
+                          </div>
+                        </sc-if>
+                        <sc-if value="{{ m.done }}" hint-placeholder-val="{{ false }}">
+                          <div style="border:1px solid #E2E8F0;border-radius:10px;background:#FFFFFF;display:flex;flex-direction:column;padding:6px 0;margin-top:4px;animation:om-fadeup .3s ease">
+                            <sc-for list="{{ m.rows }}" as="r" hint-placeholder-count="4">
+                              <div style="display:grid;grid-template-columns:84px minmax(0,1fr) auto;gap:10px;align-items:center;padding:6px 14px">
+                                <span style="font-size:12px;color:rgb(100,116,139)">{{ r.label }}</span>
+                                <span style="font-size:12px;color:rgb(51,65,85);line-height:1.4;text-wrap:pretty">{{ r.value }}</span>
+                                <sc-if value="{{ r.isNeed }}" hint-placeholder-val="{{ false }}"><span style="font-size:10px;font-weight:500;padding:2px 8px;border-radius:20px;background:rgb(255,247,237);box-shadow:inset 0 0 0 1px rgb(255,237,213);color:rgb(194,65,12);white-space:nowrap">{{ r.how }}</span></sc-if>
+                                <sc-if value="{{ r.isFound }}" hint-placeholder-val="{{ false }}"><span style="font-size:10px;font-weight:500;padding:2px 8px;border-radius:20px;background:rgb(219,234,254);color:rgb(37,99,235);white-space:nowrap">{{ r.how }}</span></sc-if>
+                                <sc-if value="{{ r.isDefault }}" hint-placeholder-val="{{ false }}"><span style="font-size:10px;font-weight:500;padding:2px 8px;border-radius:20px;background:rgb(241,245,249);color:rgb(71,85,105);white-space:nowrap">{{ r.how }}</span></sc-if>
+                              </div>
+                            </sc-for>
+                            <span style="padding:8px 14px 6px;font-size:12px;line-height:1.45;color:rgb(71,85,105);border-top:1px solid rgb(241,245,249);margin-top:4px;text-wrap:pretty">{{ m.summary }}</span>
+                          </div>
+                        </sc-if>
+                      </div>
+                    </sc-if>
+                    <sc-if value="{{ m.isQuestion }}" hint-placeholder-val="{{ false }}">
+                      <div style="display:flex;gap:10px;align-items:flex-start">
+                        <lm-icon name="AIStroke" style="width:20px;height:20px;margin-top:1px"></lm-icon>
+                        <div style="flex:1;min-width:0;display:flex;flex-direction:column;gap:10px">
+                          <div style="display:flex;flex-direction:column;gap:4px">
+                            <span style="font-size:14px;font-weight:500;line-height:1.4;color:rgb(51,65,85)">{{ m.q }}</span>
+                            <span style="font-size:12px;line-height:1.45;color:rgb(100,116,139);text-wrap:pretty">{{ m.why }}</span>
+                          </div>
+                          <sc-if value="{{ m.open }}" hint-placeholder-val="{{ true }}">
+                            <span style="display:flex;align-items:center;gap:6px;font-size:12px;color:rgb(37,99,235)"><lm-icon name="IconsProperty1DownArrow" style="width:14px;height:14px"></lm-icon>Choose an option below</span>
+                          </sc-if>
+                        </div>
+                      </div>
+                    </sc-if>
+                    <sc-if value="{{ m.isError }}" hint-placeholder-val="{{ false }}">
+                      <div style="display:flex;gap:10px;align-items:flex-start">
+                        <lm-icon name="AIStroke" style="width:20px;height:20px;margin-top:1px"></lm-icon>
+                        <div style="flex:1;min-width:0;border-radius:8px;border:1px solid rgb(254,202,202);background:rgb(254,242,242);padding:12px 14px;display:flex;flex-direction:column;gap:10px">
+                          <div style="display:flex;gap:8px;align-items:flex-start">
+                            <lm-icon name="IconsProperty1Error" style="width:16px;height:16px;color:rgb(220,38,38);margin-top:1px"></lm-icon>
+                            <div style="display:flex;flex-direction:column;gap:4px">
+                              <span style="font-size:12px;font-weight:500;color:rgb(153,27,27)">Couldn’t finish “{{ tableTitle }}”</span>
+                              <span style="font-size:12px;line-height:1.45;color:rgb(127,29,29)">The {{ poolName }} query timed out after 30 seconds. Everything else is ready — your draft is saved.</span>
+                            </div>
+                          </div>
+                          <div style="display:flex;gap:8px;padding-left:24px">
+                            <button onClick="{{ retryBuild }}" style="height:30px;display:flex;align-items:center;gap:4px;padding:4px 10px;border-radius:4px;border:none;background:rgb(59,130,246);font-size:12px;font-weight:500;color:rgb(255,255,255);cursor:pointer" style-hover="background:rgb(37,99,235)"><lm-icon name="IconsProperty1Retry" style="width:14px;height:14px"></lm-icon>Retry</button>
+                            <button onClick="{{ skipChart }}" style="height:30px;padding:4px 10px;border-radius:4px;border:none;background:rgb(255,255,255);font-size:12px;font-weight:500;color:rgb(71,85,105);cursor:pointer" style-hover="background:rgb(241,245,249)">Continue without it</button>
+                          </div>
+                        </div>
+                      </div>
+                    </sc-if>
+                    <sc-if value="{{ m.isReady }}" hint-placeholder-val="{{ false }}">
+                      <div style="display:flex;gap:10px;align-items:flex-start">
+                        <lm-icon name="AIStroke" style="width:20px;height:20px;margin-top:1px"></lm-icon>
+                        <div style="flex:1;min-width:0;display:flex;flex-direction:column;gap:10px">
+                          <span style="font-size:14px;line-height:1.5;color:rgb(51,65,85);text-wrap:pretty">Your dashboard is ready — built from the details above. Ask me to change anything.</span>
+                          <sc-if value="{{ true }}" hint-placeholder-val="{{ true }}">
+                            <div onClick="{{ openCanvas }}" role="button" style="display:flex;align-items:center;gap:12px;padding:10px 12px 10px 10px;border-radius:10px;background:rgb(255,255,255);border:1px solid rgb(226,232,240);box-shadow:0 1px 2px rgba(15,23,42,0.04);cursor:pointer;transition:border-color .15s, box-shadow .15s;animation:om-fadeup .3s ease" style-hover="border-color:rgb(147,197,253);box-shadow:0 4px 14px rgba(37,99,235,0.08)">
+                              <div style="width:64px;height:44px;flex:none;border-radius:6px;background:rgb(248,250,252);box-shadow:inset 0 0 0 1px rgb(241,245,249);padding:5px;display:grid;grid-template-columns:repeat(4,1fr);grid-template-rows:7px 1fr;gap:3px">
+                                <span style="border-radius:2px;background:rgb(219,234,254)"></span><span style="border-radius:2px;background:rgb(219,234,254)"></span><span style="border-radius:2px;background:rgb(219,234,254)"></span><span style="border-radius:2px;background:rgb(219,234,254)"></span>
+                                <span style="grid-column:span 2;border-radius:2px;background:rgb(191,219,254)"></span><span style="grid-column:span 2;border-radius:2px;background:rgb(226,232,240)"></span>
+                              </div>
+                              <div style="flex:1;min-width:0;display:flex;flex-direction:column;gap:3px">
+                                <span style="font-size:14px;font-weight:500;color:rgb(30,41,59);white-space:nowrap;overflow:hidden;text-overflow:ellipsis">{{ title }}</span>
+                                <span style="font-size:12px;color:rgb(100,116,139)">Draft dashboard · {{ layoutSummary }}</span>
+                              </div>
+                              <span style="height:30px;flex:none;display:flex;align-items:center;gap:4px;padding:4px 10px;border-radius:4px;border:1px solid rgb(59,130,246);font-size:12px;font-weight:500;color:rgb(37,99,235);background:{{ cardBtnBg }}">{{ cardBtnLabel }}</span>
+                            </div>
+                          </sc-if>
+                          <div style="display:flex;flex-wrap:wrap;gap:6px">
+                            <sc-for list="{{ refineSuggestions }}" as="s" hint-placeholder-count="2">
+                              <button onClick="{{ s.onClick }}" style="height:30px;display:flex;align-items:center;gap:4px;padding:6px 12px 6px 8px;border-radius:30px;border:none;background:rgb(248,250,252);font-size:12px;font-weight:500;color:rgb(71,85,105);cursor:pointer" style-hover="background:rgb(241,245,249)"><lm-icon name="IconsProperty1AI" style="width:14px;height:14px;color:rgb(59,130,246)"></lm-icon>{{ s.text }}</button>
+                            </sc-for>
+                          </div>
+                        </div>
+                      </div>
+                    </sc-if>
+                  </div>
+                </sc-for>
+              </div>
+            </div>
+            <div style="padding:0 20px 12px;display:flex;flex-direction:column;align-items:center;gap:10px">
+              <sc-if value="{{ hasActiveQ }}" hint-placeholder-val="{{ false }}">
+                <div data-name="Question container" style="width:100%;max-width:{{ msgMax }};margin-bottom:-10px;border-radius:12px 12px 0 0;background:rgb(255,255,255);border:1px solid rgb(226,232,240);border-bottom:none;box-shadow:0px -8px 24px 0px rgba(15,23,42,0.06);padding:14px 12px 20px;display:flex;flex-direction:column;gap:10px;position:relative;z-index:5">
+                  <div style="display:flex;align-items:flex-start;gap:10px;padding:0 4px">
+                    <span style="flex:1;min-width:0;font-size:14px;font-weight:500;line-height:1.35;color:rgb(51,65,85)">{{ activeQ.q }}</span>
+                    <span style="flex-shrink:0;height:20px;display:flex;align-items:center;padding:0 8px;border-radius:20px;background:rgb(241,245,249);font-size:10px;font-weight:500;color:rgb(71,85,105)">Required</span>
+                  </div>
+                  <div style="display:flex;flex-direction:column;gap:4px">
+                    <sc-for list="{{ activeQ.opts }}" as="o" hint-placeholder-count="3">
+                      <button onClick="{{ o.onPick }}" style="display:flex;align-items:center;gap:10px;padding:8px 10px;border-radius:8px;border:1px solid transparent;background:rgb(248,250,252);text-align:left;cursor:pointer;transition:border-color .15s, background .15s" style-hover="border-color:rgb(59,130,246);background:rgb(239,246,255)">
+                        <span style="width:22px;height:22px;flex-shrink:0;border-radius:4px;background:rgb(255,255,255);box-shadow:inset 0 0 0 1px rgb(226,232,240);display:flex;align-items:center;justify-content:center;font-size:10px;font-weight:500;color:rgb(71,85,105)">{{ o.key }}</span>
+                        <span style="flex:1;display:flex;flex-direction:column;gap:2px;min-width:0">
+                          <span style="font-size:12px;font-weight:500;line-height:1.3;color:rgb(51,65,85)">{{ o.title }}</span>
+                          <span style="font-size:10px;font-weight:500;line-height:1.34;color:rgb(100,116,139);white-space:nowrap;overflow:hidden;text-overflow:ellipsis">{{ o.desc }}</span>
+                        </span>
+                        <sc-if value="{{ o.hasTag }}" hint-placeholder-val="{{ false }}"><span style="font-size:10px;font-weight:500;padding:2px 8px;border-radius:20px;background:rgb(219,234,254);color:rgb(37,99,235);white-space:nowrap">{{ o.tag }}</span></sc-if>
+                      </button>
+                    </sc-for>
+                  </div>
+                  <div style="display:flex;align-items:center;justify-content:space-between;gap:8px;padding:0 4px">
+                    <div style="display:flex;align-items:center;gap:16px;flex-wrap:wrap">
+                      
+                      <sc-if value="{{ activeQ.canChangePool }}" hint-placeholder-val="{{ false }}">
+                        <button onClick="{{ activeQ.changePool }}" title="Currently using {{ activeQ.poolName }}" style="display:flex;align-items:center;gap:4px;border:none;background:none;padding:0;font-size:12px;font-weight:500;color:rgb(37,99,235);cursor:pointer" style-hover="color:rgb(29,78,216)"><lm-icon name="IconsProperty1Dp" style="width:14px;height:14px"></lm-icon>Choose another data pool</button>
+                      </sc-if>
+                    </div>
+                    <span style="font-size:10px;font-weight:500;color:rgb(100,116,139)">Press 1–{{ activeQ.count }} to choose</span>
+                  </div>
+                </div>
+              </sc-if>
+              <div data-name="Inner chat input" style="position:relative;width:100%;max-width:{{ msgMax }};border-radius:12px;background:rgb(248,250,252);border:1px solid rgb(241,245,249);box-shadow:0px 8px 24px 0px rgba(15,23,42,0.06);padding:12px 12px 10px 16px;display:flex;flex-direction:column;gap:14px">
+                <textarea ref="{{ replyRef }}" value="{{ reply }}" onChange="{{ onReply }}" onKeyDown="{{ onReplyKey }}" placeholder="{{ replyPlaceholder }}" rows="1" style="width:100%;border:none;outline:none;resize:none;background:transparent;font-size:16px;line-height:1.4;padding:2px 0 0;color:rgb(51,65,85)"></textarea>
+                <div style="display:flex;align-items:center;gap:10px;height:36px">
+                  <button title="Add" style="width:36px;height:36px;border-radius:50%;border:none;background:rgb(255,255,255);box-shadow:0 1px 2px rgba(15,23,42,0.06);display:flex;align-items:center;justify-content:center;cursor:pointer;color:rgb(51,65,85);flex-shrink:0" style-hover="background:rgb(241,245,249)"><lm-icon name="IconsProperty1Add" style="width:16px;height:16px"></lm-icon></button>
+                  <div style="position:relative;flex-shrink:0;max-width:100%">
+                    <button onClick="{{ toggleDataConv }}" style="height:36px;max-width:100%;display:flex;align-items:center;gap:8px;padding:0 12px 0 6px;border-radius:30px;border:none;background:rgb(219,234,254);font-size:14px;color:rgb(51,65,85);cursor:pointer" style-hover="background:rgb(191,219,254)">
+                      <span style="display:flex;align-items:center">
+                        <span style="width:24px;height:24px;border-radius:50%;background:rgb(255,255,255);box-shadow:0 0 0 1px rgb(241,245,249);display:flex;align-items:center;justify-content:center;color:rgb(37,99,235)"><lm-icon name="IconsProperty1Dp" style="width:13px;height:13px"></lm-icon></span>
+                        <span style="width:24px;height:24px;margin-left:-5px;border-radius:50%;background:rgb(255,255,255);box-shadow:0 0 0 1px rgb(241,245,249);display:flex;align-items:center;justify-content:center;color:rgb(20,184,166)"><lm-icon name="DatasetIconTypeStroke" style="width:13px;height:13px"></lm-icon></span>
+                        <span style="width:24px;height:24px;margin-left:-5px;border-radius:50%;background:rgb(255,255,255);box-shadow:0 0 0 1px rgb(241,245,249);display:flex;align-items:center;justify-content:center;font-size:10px;font-weight:500;color:rgb(51,65,85)">{{ convDataMore }}</span>
+                      </span>
+                      <span style="white-space:nowrap;overflow:hidden;text-overflow:ellipsis">{{ convDataLabel }}</span>
+                      <lm-icon name="IconsProperty1DownArrow" style="width:16px;height:16px"></lm-icon>
+                    </button>
+                    <sc-if value="{{ dataMenuConv }}" hint-placeholder-val="{{ false }}">
+                      <div onClick="{{ closeMenus }}" style="position:fixed;inset:0;z-index:29"></div>
+                      <div style="position:absolute;left:0;bottom:44px;width:320px;z-index:30;border-radius:14px;background:rgb(255,255,255);border:1px solid rgb(226,232,240);box-shadow:0px 20px 60px 0px rgba(15,23,42,0.15);padding:6px;animation:lmPop .16s ease">
+                        <span style="display:block;padding:6px 10px;font-size:10px;font-weight:500;color:rgb(100,116,139)">Data Pools</span>
+                        <sc-for list="{{ poolListAll }}" as="p" hint-placeholder-count="4">
+                          <div onClick="{{ p.onPick }}" style="display:flex;align-items:flex-start;gap:8px;padding:8px 10px;border-radius:8px;cursor:pointer" style-hover="background:rgb(248,250,252)">
+                            <lm-icon name="IconsProperty1Dp" style="width:18px;height:18px;color:rgb(51,65,85)"></lm-icon>
+                            <div style="flex:1;display:flex;flex-direction:column;gap:2px">
+                              <span style="font-size:12px;font-weight:500;line-height:1.3">{{ p.name }}</span>
+                              <span style="font-size:10px;font-weight:500;color:rgb(100,116,139)">{{ p.meta }}</span>
+                            </div>
+                          </div>
+                        </sc-for>
+                      </div>
+                    </sc-if>
+                  </div>
+                  <div style="flex:1;min-width:0"></div>
+                  <sc-if value="{{ composerWide }}" hint-placeholder-val="{{ true }}">
+                  <span title="Preview data" style="width:30px;height:30px;display:flex;align-items:center;justify-content:center;color:rgb(71,85,105);cursor:pointer"><lm-icon name="PreviewTable" style="width:20px;height:20px"></lm-icon></span>
+                  <span title="Data details" style="width:30px;height:30px;display:flex;align-items:center;justify-content:center;color:rgb(71,85,105);cursor:pointer"><lm-icon name="IconsProperty1SchemaDetail" style="width:20px;height:20px"></lm-icon></span>
+                  <span style="width:1px;height:14px;background:rgb(203,213,225);margin:0 6px"></span>
+                  </sc-if>
+                  <sc-if value="{{ canReply }}" hint-placeholder-val="{{ false }}">
+                    <button onClick="{{ sendReply }}" title="Send" style="width:30px;height:30px;border-radius:64px;border:none;background:rgb(59,130,246);color:rgb(255,255,255);display:flex;align-items:center;justify-content:center;cursor:pointer" style-hover="background:rgb(37,99,235)"><lm-icon name="IconsProperty1PaperPlane1" style="width:16px;height:16px"></lm-icon></button>
+                  </sc-if>
+                  <sc-if value="{{ cantReply }}" hint-placeholder-val="{{ true }}">
+                    <span title="Voice" style="width:30px;height:30px;display:flex;align-items:center;justify-content:center;color:rgb(51,65,85)"><lm-icon name="IconsProperty1Mice" style="width:20px;height:20px"></lm-icon></span>
+                  </sc-if>
+                </div>
+              </div>
+              <span style="font-size:12px;line-height:1.3;color:rgb(100,116,139);text-align:center">Lumenore AI can make mistakes. Please double-check responses.</span>
+            </div>
+          </div>
+        </sc-if>
+
+        <sc-if value="{{ showCanvas }}" hint-placeholder-val="{{ false }}">
+          <div data-screen-label="{{ canvasLabel }}" style="flex:1;min-width:0;display:flex;flex-direction:column;background:rgb(248,250,252);animation:lmIn .4s ease">
+            <div data-name="Canvas toolbar" style="flex-shrink:0;height:44px;display:flex;align-items:center;justify-content:space-between;gap:12px;padding:0 12px 0 20px;background:rgb(255,255,255);border-bottom:1px solid rgb(241,245,249)">
+              <div style="display:flex;align-items:center;gap:12px;min-width:0;flex:1 1 0;overflow:hidden">
+                <div style="position:relative;flex:none">
+                  <button onClick="{{ toggleDeviceMenu }}" style="height:30px;display:flex;align-items:center;gap:6px;padding:4px 8px;border-radius:4px;border:1px solid rgb(226,232,240);background:rgb(255,255,255);font-size:12px;color:rgb(51,65,85);cursor:pointer" style-hover="border-color:rgb(203,213,225)">
+                    <lm-icon name="{{ deviceIcon }}" style="width:14px;height:14px;color:rgb(100,116,139)"></lm-icon>
+                    <span style="color:rgb(100,116,139)">Screen</span><span style="font-weight:500">{{ deviceLabel }}</span>
+                    <lm-icon name="IconsProperty1DownArrow" style="width:14px;height:14px"></lm-icon>
+                  </button>
+                  <sc-if value="{{ deviceMenu }}" hint-placeholder-val="{{ false }}">
+                    <div onClick="{{ closeMenus }}" style="position:fixed;inset:0;z-index:29"></div>
+                    <div style="position:absolute;left:0;top:36px;width:210px;z-index:30;border-radius:14px;background:rgb(255,255,255);border:1px solid rgb(226,232,240);box-shadow:0px 20px 60px 0px rgba(15,23,42,0.15);padding:6px;animation:lmPop .16s ease">
+                      <sc-for list="{{ devicesV }}" as="d" hint-placeholder-count="5">
+                        <div onClick="{{ d.onPick }}" style="display:flex;align-items:center;gap:8px;padding:8px 10px;border-radius:8px;cursor:pointer;background:{{ d.rowBg }}" style-hover="background:rgb(248,250,252)">
+                          <span style="flex:1;font-size:12px;font-weight:500;color:{{ d.fg }}">{{ d.label }}</span>
+                          <span style="font-size:10px;font-weight:500;color:rgb(100,116,139)">{{ d.hint }}</span>
+                          <span style="width:14px;display:flex"><sc-if value="{{ d.on }}" hint-placeholder-val="{{ false }}"><lm-icon name="IconsProperty1Check" style="width:14px;height:14px;color:rgb(37,99,235)"></lm-icon></sc-if></span>
+                        </div>
+                      </sc-for>
+                    </div>
+                  </sc-if>
+                </div>
+                <span style="min-width:0;overflow:hidden;text-overflow:ellipsis;font-size:10px;font-weight:500;color:rgb(100,116,139);white-space:nowrap">{{ deviceMeta }}</span>
+              </div>
+              <div style="display:flex;align-items:center;gap:12px;flex:none">
+                <button onClick="{{ toggleAutoFit }}" disabled="{{ autoFitDisabled }}" title="Scale the dashboard to fit the available width" style="display:flex;align-items:center;gap:8px;border:none;background:none;padding:0;cursor:pointer;font-size:12px;font-weight:500;color:rgb(51,65,85);opacity:{{ autoFitOpacity }}">
+                  <span style="position:relative;width:28px;height:16px;border-radius:16px;background:{{ fitTrack }};transition:background .2s"><span style="position:absolute;top:2px;left:{{ fitKnob }};width:12px;height:12px;border-radius:50%;background:rgb(255,255,255);box-shadow:0 1px 2px rgba(15,23,42,0.2);transition:left .2s"></span></span>
+                  Auto fit
+                </button>
+                <span style="min-width:36px;font-size:12px;color:rgb(100,116,139);text-align:right">{{ zoomLabel }}</span>
+                <sc-if value="{{ showBuildActions }}" hint-placeholder-val="{{ false }}">
+                  <div style="width:1px;height:18px;background:rgb(226,232,240)"></div>
+                  <button onClick="{{ saveDraft }}" disabled="{{ actionsDisabled }}" style="height:30px;display:flex;align-items:center;gap:4px;padding:4px 10px;border-radius:4px;border:none;background:rgb(241,245,249);font-size:12px;font-weight:500;color:rgb(71,85,105);cursor:pointer;opacity:{{ actionsOpacity }}" style-hover="background:rgb(226,232,240)"><lm-icon name="IconsProperty1Save" style="width:16px;height:16px"></lm-icon>Save draft</button>
+                  <button onClick="{{ openPublish }}" disabled="{{ actionsDisabled }}" style="height:30px;display:flex;align-items:center;gap:4px;padding:4px 12px;border-radius:4px;border:none;background:rgb(59,130,246);font-size:12px;font-weight:500;color:rgb(255,255,255);cursor:pointer;opacity:{{ actionsOpacity }}" style-hover="background:rgb(37,99,235)"><lm-icon name="IconsProperty1ArrowUpRight" style="width:16px;height:16px"></lm-icon>Publish</button>
+                </sc-if>
+                <sc-if value="{{ showCanvasClose }}" hint-placeholder-val="{{ false }}">
+                  <div style="width:1px;height:18px;background:rgb(226,232,240)"></div>
+                  <button onClick="{{ closeCanvas }}" title="Close dashboard preview" aria-label="Close dashboard preview" style="flex:none;width:28px;height:28px;border-radius:4px;border:none;background:none;display:flex;align-items:center;justify-content:center;cursor:pointer;color:rgb(71,85,105)" style-hover="background:rgb(241,245,249)"><lm-icon name="IconsProperty1Close" style="width:14px;height:14px"></lm-icon></button>
+                </sc-if>
+              </div>
+            </div>
+            <div ref="{{ canvasRef }}" style="flex:1;min-height:0;overflow:auto;padding:16px 20px 28px">
+            <div style="width:{{ frameW }};margin:0 auto;zoom:{{ frameZoom }};background:{{ frameBg }};box-shadow:{{ frameRing }};border-radius:8px;padding:{{ framePad }};transition:width .3s ease">
+            <sc-if value="{{ titleEditable }}" hint-placeholder-val="{{ false }}">
+              <div style="display:flex;align-items:center;gap:10px;margin-bottom:12px;min-width:0">
+                <input value="{{ title }}" onChange="{{ onTitle }}" title="Rename dashboard" style="font-size:20px;line-height:1.26;color:rgb(51,65,85);border:1px solid transparent;border-radius:4px;padding:2px 6px;margin-left:-7px;outline:none;background:transparent;min-width:120px;width:420px;max-width:100%" style-hover="border-color:rgb(226,232,240)" style-focus="border-color:rgb(59,130,246);background:rgb(255,255,255)">
+            <sc-if value="{{ statusProgress }}" hint-placeholder-val="{{ false }}">
+              <span style="display:flex;align-items:center;gap:6px;height:22px;padding:0 8px;border-radius:20px;background:rgb(219,234,254);font-size:10px;font-weight:500;color:rgb(37,99,235)"><span style="width:11px;height:11px;display:flex;align-items:center;justify-content:center">{{ loaderIconSm }}</span>{{ statusText }}</span>
+            </sc-if>
+            <sc-if value="{{ statusInput }}" hint-placeholder-val="{{ false }}">
+              <span style="display:flex;align-items:center;height:22px;padding:0 8px;border-radius:20px;background:rgb(255,247,237);box-shadow:inset 0 0 0 1px rgb(255,237,213);font-size:10px;font-weight:500;color:rgb(194,65,12)">{{ statusText }}</span>
+            </sc-if>
+            <sc-if value="{{ statusDraft }}" hint-placeholder-val="{{ false }}">
+              <span style="display:flex;align-items:center;height:22px;padding:0 8px;border-radius:20px;background:rgb(241,245,249);font-size:10px;font-weight:500;color:rgb(71,85,105)">{{ statusText }}</span>
+            </sc-if>
+            <sc-if value="{{ statusError }}" hint-placeholder-val="{{ false }}">
+              <span style="display:flex;align-items:center;height:22px;padding:0 8px;border-radius:20px;background:rgb(254,242,242);box-shadow:inset 0 0 0 1px rgb(254,202,202);font-size:10px;font-weight:500;color:rgb(185,28,28)">{{ statusText }}</span>
+            </sc-if>
+              </div>
+            </sc-if>
+            <div style="display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:14px;flex-wrap:wrap">
+              <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap">
+                <sc-for list="{{ filtersV }}" as="f" hint-placeholder-count="3">
+                  <div style="position:relative">
+                    <button onClick="{{ f.onToggle }}" disabled="{{ f.disabled }}" style="white-space:nowrap;height:30px;display:flex;align-items:center;gap:6px;padding:4px 8px;border-radius:4px;border:1px solid rgb(226,232,240);background:rgb(255,255,255);font-size:12px;color:rgb(51,65,85);cursor:pointer;opacity:{{ f.opacity }}" style-hover="border-color:rgb(203,213,225)">
+                      <lm-icon name="{{ f.icon }}" style="width:14px;height:14px;color:rgb(100,116,139)"></lm-icon>
+                      <span style="color:rgb(100,116,139)">{{ f.name }}</span><span style="font-weight:500">{{ f.value }}</span>
+                      <lm-icon name="IconsProperty1DownArrow" style="width:14px;height:14px"></lm-icon>
+                    </button>
+                    <sc-if value="{{ f.open }}" hint-placeholder-val="{{ false }}">
+                      <div onClick="{{ closeMenus }}" style="position:fixed;inset:0;z-index:29"></div>
+                      <div style="position:absolute;left:0;top:36px;min-width:200px;z-index:30;border-radius:14px;background:rgb(255,255,255);border:1px solid rgb(226,232,240);box-shadow:0px 20px 60px 0px rgba(15,23,42,0.15);padding:6px;animation:lmPop .16s ease">
+                        <sc-for list="{{ f.options }}" as="o" hint-placeholder-count="4">
+                          <div onClick="{{ o.onPick }}" style="display:flex;align-items:center;justify-content:space-between;gap:12px;padding:8px 10px;border-radius:8px;cursor:pointer;font-size:12px;font-weight:500" style-hover="background:rgb(248,250,252)">
+                            {{ o.label }}
+                            <sc-if value="{{ o.selected }}" hint-placeholder-val="{{ false }}"><lm-icon name="IconsProperty1Check" style="width:14px;height:14px;color:rgb(37,99,235)"></lm-icon></sc-if>
+                          </div>
+                        </sc-for>
+                      </div>
+                    </sc-if>
+                  </div>
+                </sc-for>
+                <sc-if value="{{ refreshing }}" hint-placeholder-val="{{ false }}">
+                  <span style="display:flex;align-items:center;gap:6px;font-size:12px;color:rgb(100,116,139)"><span style="width:13px;height:13px;display:flex;align-items:center;justify-content:center">{{ loaderIconSm }}</span>Updating…</span>
+                </sc-if>
+              </div>
+              <span style="display:flex;align-items:center;gap:6px;font-size:10px;font-weight:500;color:rgb(100,116,139)"><lm-icon name="IconsProperty1Dp" style="width:14px;height:14px"></lm-icon>{{ poolName }} · {{ poolMeta }}</span>
+            </div>
+
+            <div style="display:grid;grid-template-columns:{{ gridCols }};gap:14px;opacity:{{ gridOpacity }};transition:opacity .2s">
+              <sc-for list="{{ widgetsV }}" as="w" hint-placeholder-count="5">
+                <div style="grid-column:span {{ w.span }};min-width:0;animation:{{ w.anim }}">
+                  <sc-if value="{{ w.isKpi }}" hint-placeholder-val="{{ false }}">
+                    <div style="display:grid;grid-template-columns:{{ kpiCols }};gap:14px">
+                      <sc-for list="{{ kpisV }}" as="k" hint-placeholder-count="4">
+                        <div style="background:rgb(255,255,255);border:1px solid rgb(226,232,240);border-radius:8px;padding:14px 16px;display:flex;flex-direction:column;gap:8px;min-height:104px">
+                          <sc-if value="{{ w.loading }}" hint-placeholder-val="{{ true }}">
+                            <div style="height:10px;width:50%;border-radius:2px;background:linear-gradient(90deg, rgb(241,245,249) 25%, rgb(248,250,252) 50%, rgb(241,245,249) 75%);background-size:200% 100%;animation:lmShimmer 1.2s linear infinite"></div>
+                            <div style="height:24px;width:70%;border-radius:2px;background:linear-gradient(90deg, rgb(241,245,249) 25%, rgb(248,250,252) 50%, rgb(241,245,249) 75%);background-size:200% 100%;animation:lmShimmer 1.2s linear infinite"></div>
+                            <div style="height:10px;width:40%;border-radius:2px;background:linear-gradient(90deg, rgb(241,245,249) 25%, rgb(248,250,252) 50%, rgb(241,245,249) 75%);background-size:200% 100%;animation:lmShimmer 1.2s linear infinite"></div>
+                          </sc-if>
+                          <sc-if value="{{ w.ready }}" hint-placeholder-val="{{ false }}">
+                            <span style="font-size:12px;color:rgb(100,116,139);display:flex;align-items:center;gap:6px">{{ k.label }}<sc-if value="{{ k.primary }}" hint-placeholder-val="{{ false }}"><span style="width:6px;height:6px;border-radius:50%;background:rgb(59,130,246)"></span></sc-if></span>
+                            <span style="font-size:25px;line-height:1.2;color:rgb(51,65,85)">{{ k.value }}</span>
+                            <span style="font-size:12px;display:flex;align-items:center;gap:4px"><span style="font-weight:500;color:{{ k.deltaColor }}">{{ k.delta }}</span><span style="color:rgb(100,116,139)">{{ periodLabel }}</span></span>
+                          </sc-if>
+                        </div>
+                      </sc-for>
+                    </div>
+                  </sc-if>
+                  <sc-if value="{{ w.isCard }}" hint-placeholder-val="{{ true }}">
+                    <div style="background:rgb(255,255,255);border:1px solid rgb(226,232,240);border-radius:8px;padding:14px 16px;display:flex;flex-direction:column;gap:14px;height:100%;box-shadow:{{ w.glow }}">
+                      <div style="display:flex;align-items:flex-start;justify-content:space-between;gap:8px">
+                        <div style="display:flex;flex-direction:column;gap:2px;min-width:0">
+                          <span style="font-size:12px;font-weight:500;line-height:1.3">{{ w.title }}</span>
+                          <span style="font-size:10px;font-weight:500;line-height:1.34;color:rgb(100,116,139)">{{ w.sub }}</span>
+                        </div>
+                        <sc-if value="{{ w.menuable }}" hint-placeholder-val="{{ false }}">
+                          <div style="position:relative">
+                            <button onClick="{{ w.onMenu }}" title="More" style="width:24px;height:24px;border-radius:2px;border:none;background:none;display:flex;align-items:center;justify-content:center;cursor:pointer;color:rgb(71,85,105)" style-hover="background:rgb(241,245,249)"><lm-icon name="ContextMenu" style="width:16px;height:16px"></lm-icon></button>
+                            <sc-if value="{{ w.menuOpen }}" hint-placeholder-val="{{ false }}">
+                              <div onClick="{{ closeMenus }}" style="position:fixed;inset:0;z-index:29"></div>
+                              <div style="position:absolute;right:0;top:28px;width:190px;z-index:30;border-radius:14px;background:rgb(255,255,255);border:1px solid rgb(226,232,240);box-shadow:0px 20px 60px 0px rgba(15,23,42,0.15);padding:6px;animation:lmPop .16s ease">
+                                <div onClick="{{ w.onEdit }}" style="display:flex;align-items:center;gap:8px;padding:8px 10px;border-radius:8px;cursor:pointer;font-size:12px;font-weight:500" style-hover="background:rgb(248,250,252)"><lm-icon name="IconsProperty1AI" style="width:14px;height:14px;color:rgb(59,130,246)"></lm-icon>Edit with AI</div>
+                                <div onClick="{{ w.onRemove }}" style="display:flex;align-items:center;gap:8px;padding:8px 10px;border-radius:8px;cursor:pointer;font-size:12px;font-weight:500;color:rgb(185,28,28)" style-hover="background:rgb(254,242,242)"><lm-icon name="IconsProperty1Delete" style="width:14px;height:14px"></lm-icon>Remove</div>
+                              </div>
+                            </sc-if>
+                          </div>
+                        </sc-if>
+                      </div>
+                      <sc-if value="{{ w.loading }}" hint-placeholder-val="{{ true }}">
+                        <div style="flex:1;min-height:{{ w.minH }};border-radius:4px;background:rgb(248,250,252);display:flex;align-items:center;justify-content:center;gap:10px">
+                          <span style="width:15px;height:15px;display:flex;align-items:center;justify-content:center">{{ loaderIcon }}</span>
+                          <span style="font-size:12px;font-weight:500;background-image:linear-gradient(90deg,#94A3B8 0%,#1E293B 50%,#94A3B8 100%);background-size:200% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;animation:om-shimmer 2.2s linear infinite">{{ w.loadLabel }}</span>
+                        </div>
+                      </sc-if>
+                      <sc-if value="{{ w.error }}" hint-placeholder-val="{{ false }}">
+                        <div style="flex:1;min-height:{{ w.minH }};border-radius:4px;border:1px dashed rgb(254,202,202);background:rgb(254,242,242);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;padding:16px;text-align:center">
+                          <lm-icon name="IconsProperty1Error" style="width:20px;height:20px;color:rgb(220,38,38)"></lm-icon>
+                          <span style="font-size:12px;font-weight:500;color:rgb(153,27,27)">This chart didn’t load</span>
+                          <span style="font-size:12px;color:rgb(127,29,29)">Query timed out after 30s</span>
+                          <button onClick="{{ retryBuild }}" style="height:30px;display:flex;align-items:center;gap:4px;padding:4px 10px;border-radius:4px;border:none;background:rgb(255,255,255);font-size:12px;font-weight:500;color:rgb(71,85,105);cursor:pointer"><lm-icon name="IconsProperty1Retry" style="width:14px;height:14px"></lm-icon>Retry</button>
+                        </div>
+                      </sc-if>
+                      <sc-if value="{{ w.showTrend }}" hint-placeholder-val="{{ false }}">
+                        <div style="display:flex;flex-direction:column;gap:8px;animation:lmIn .4s ease">
+                          <div style="display:flex;gap:10px">
+                            <div style="display:flex;flex-direction:column;justify-content:space-between;height:170px;font-size:10px;font-weight:500;color:rgb(100,116,139);text-align:right;width:52px;padding:0 0 6px">
+                              <span>{{ trendMax }}</span><span>{{ trendMid }}</span><span>{{ trendMin }}</span>
+                            </div>
+                            <div style="flex:1;min-width:0;position:relative;height:170px">
+                              <div style="position:absolute;inset:0;display:flex;flex-direction:column;justify-content:space-between;padding-bottom:6px">
+                                <div style="height:1px;background:rgb(241,245,249)"></div><div style="height:1px;background:rgb(241,245,249)"></div><div style="height:1px;background:rgb(226,232,240)"></div>
+                              </div>
+                              <svg viewBox="0 0 600 160" preserveAspectRatio="none" style="position:absolute;inset:0;width:100%;height:164px;overflow:visible">
+                                <path d="{{ trendArea }}" fill="rgba(59,130,246,0.08)"></path>
+                                <sc-if value="{{ compare }}" hint-placeholder-val="{{ false }}"><path d="{{ trendCompare }}" fill="none" stroke="rgb(100,116,139)" stroke-width="1.5" stroke-dasharray="4 4" vector-effect="non-scaling-stroke"></path></sc-if>
+                                <path d="{{ trendLine }}" fill="none" stroke="rgb(59,130,246)" stroke-width="2" vector-effect="non-scaling-stroke" stroke-linejoin="round"></path>
+                              </svg>
+                            </div>
+                          </div>
+                          <div style="display:flex;justify-content:space-between;padding-left:62px;font-size:10px;font-weight:500;color:rgb(100,116,139)">
+                            <sc-for list="{{ trendLabels }}" as="l" hint-placeholder-count="12"><span>{{ l }}</span></sc-for>
+                          </div>
+                          <div style="display:flex;gap:14px;padding-left:62px;font-size:10px;font-weight:500;color:rgb(71,85,105)">
+                            <span style="display:flex;align-items:center;gap:6px"><span style="width:12px;height:2px;background:rgb(59,130,246)"></span>{{ trendLegend }}</span>
+                            <sc-if value="{{ compare }}" hint-placeholder-val="{{ false }}"><span style="display:flex;align-items:center;gap:6px"><span style="width:12px;height:0;border-top:1.5px dashed rgb(100,116,139)"></span>Prior year</span></sc-if>
+                          </div>
+                        </div>
+                      </sc-if>
+                      <sc-if value="{{ w.showBars }}" hint-placeholder-val="{{ false }}">
+                        <div style="display:flex;flex-direction:column;gap:12px;justify-content:center;flex:1;animation:lmIn .4s ease">
+                          <sc-for list="{{ w.bars }}" as="b" hint-placeholder-count="4">
+                            <div style="display:grid;grid-template-columns:96px minmax(0,1fr) 64px;gap:10px;align-items:center">
+                              <span style="font-size:12px;color:rgb(71,85,105);white-space:nowrap;overflow:hidden;text-overflow:ellipsis">{{ b.label }}</span>
+                              <div style="height:12px;border-radius:2px;background:rgb(241,245,249);overflow:hidden"><div style="height:12px;width:{{ b.w }};background:{{ w.barColor }};border-radius:2px;transition:width .5s ease"></div></div>
+                              <span style="font-size:12px;font-weight:500;text-align:right">{{ b.value }}</span>
+                            </div>
+                          </sc-for>
+                        </div>
+                      </sc-if>
+                      <sc-if value="{{ w.showMix }}" hint-placeholder-val="{{ false }}">
+                        <div style="display:flex;flex-direction:column;gap:16px;justify-content:center;flex:1;animation:lmIn .4s ease">
+                          <div style="display:flex;height:16px;border-radius:2px;overflow:hidden;gap:2px">
+                            <sc-for list="{{ mixV }}" as="s" hint-placeholder-count="5"><div style="width:{{ s.w }};background:{{ s.color }}"></div></sc-for>
+                          </div>
+                          <div style="display:grid;grid-template-columns:repeat(2, minmax(0,1fr));gap:10px 16px">
+                            <sc-for list="{{ mixV }}" as="s" hint-placeholder-count="5">
+                              <div style="display:flex;align-items:center;gap:8px;font-size:12px">
+                                <span style="width:8px;height:8px;border-radius:2px;background:{{ s.color }}"></span>
+                                <span style="flex:1;color:rgb(71,85,105)">{{ s.label }}</span>
+                                <span style="font-weight:500">{{ s.pct }}</span>
+                              </div>
+                            </sc-for>
+                          </div>
+                        </div>
+                      </sc-if>
+                      <sc-if value="{{ w.showTable }}" hint-placeholder-val="{{ false }}">
+                        <div style="display:flex;flex-direction:column;animation:lmIn .4s ease">
+                          <div style="display:grid;grid-template-columns:2fr 1.3fr 1fr 1fr 0.9fr;gap:12px;padding:0 0 8px;border-bottom:1px solid rgb(241,245,249)">
+                            <sc-for list="{{ tableCols }}" as="c" hint-placeholder-count="5"><span style="font-size:10px;font-weight:500;color:rgb(100,116,139)">{{ c }}</span></sc-for>
+                          </div>
+                          <sc-for list="{{ tableRows }}" as="r" hint-placeholder-count="5">
+                            <div style="display:grid;grid-template-columns:2fr 1.3fr 1fr 1fr 0.9fr;gap:12px;padding:9px 0;border-bottom:1px solid rgb(248,250,252);font-size:12px;align-items:center">
+                              <span style="font-weight:500;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">{{ r.c0 }}</span>
+                              <span style="color:rgb(71,85,105)">{{ r.c1 }}</span>
+                              <span>{{ r.c2 }}</span>
+                              <span style="color:rgb(71,85,105)">{{ r.c3 }}</span>
+                              <span style="font-weight:500;color:{{ r.c4color }}">{{ r.c4 }}</span>
+                            </div>
+                          </sc-for>
+                        </div>
+                      </sc-if>
+                    </div>
+                  </sc-if>
+                </div>
+              </sc-for>
+            </div>
+            </div>
+            </div>
+          </div>
+        </sc-if>
+      </div>
+    </sc-if>
+  </main>
+
+  <sc-if value="{{ publishOpen }}" hint-placeholder-val="{{ false }}">
+    <div data-screen-label="05 Publish" style="position:absolute;inset:0;z-index:50;background:rgba(15,23,42,0.35);display:flex;align-items:center;justify-content:center;animation:lmIn .2s ease">
+      <div style="width:480px;max-width:calc(100% - 40px);border-radius:14px;background:rgb(255,255,255);border:1px solid rgb(226,232,240);box-shadow:0px 20px 60px 0px rgba(15,23,42,0.15);display:flex;flex-direction:column;animation:lmPop .2s ease">
+        <div style="display:flex;align-items:center;justify-content:space-between;padding:16px 20px;border-bottom:1px solid rgb(241,245,249)">
+          <div style="display:flex;flex-direction:column;gap:2px">
+            <span style="font-size:14px;font-weight:500">Publish dashboard</span>
+            <span style="font-size:12px;color:rgb(100,116,139)">Published dashboards appear in Dashboard for everyone with access.</span>
+          </div>
+          <button onClick="{{ closePublish }}" style="width:28px;height:28px;border:none;background:none;border-radius:4px;display:flex;align-items:center;justify-content:center;cursor:pointer;color:rgb(71,85,105)" style-hover="background:rgb(241,245,249)"><lm-icon name="IconsProperty1Close" style="width:14px;height:14px"></lm-icon></button>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:16px;padding:18px 20px">
+          <sc-if value="{{ pubError }}" hint-placeholder-val="{{ false }}">
+            <div style="display:flex;gap:8px;align-items:flex-start;padding:10px 12px;border-radius:8px;background:rgb(254,242,242);border:1px solid rgb(254,202,202);animation:lmFade .2s ease">
+              <lm-icon name="IconsProperty1Error" style="width:16px;height:16px;color:rgb(220,38,38)"></lm-icon>
+              <span style="font-size:12px;line-height:1.45;color:rgb(127,29,29)"><b style="font-weight:500">Publishing didn’t complete.</b> Saving the dashboard snapshot timed out. Your draft is safe — try again.</span>
+            </div>
+          </sc-if>
+          <label style="display:flex;flex-direction:column;gap:6px">
+            <span style="font-size:12px;font-weight:500">Name</span>
+            <input value="{{ pubName }}" onChange="{{ onPubName }}" style="height:36px;border:1px solid {{ pubNameBorder }};border-radius:4px;padding:0 10px;font-size:12px;outline:none" style-focus="border-color:rgb(59,130,246)">
+            <sc-if value="{{ pubNameEmpty }}" hint-placeholder-val="{{ false }}"><span style="font-size:10px;font-weight:500;color:rgb(185,28,28)">Give the dashboard a name to publish it.</span></sc-if>
+          </label>
+          <sc-for list="{{ pubGroups }}" as="g" hint-placeholder-count="3">
+            <div style="display:flex;flex-direction:column;gap:6px">
+              <span style="font-size:12px;font-weight:500">{{ g.label }}</span>
+              <div style="display:flex;gap:6px;flex-wrap:wrap">
+                <sc-for list="{{ g.options }}" as="o" hint-placeholder-count="3">
+                  <button onClick="{{ o.onPick }}" style="height:30px;display:flex;align-items:center;gap:4px;padding:4px 12px;border-radius:30px;border:1px solid {{ o.border }};background:{{ o.bg }};font-size:12px;font-weight:500;color:{{ o.fg }};cursor:pointer">{{ o.label }}</button>
+                </sc-for>
+              </div>
+            </div>
+          </sc-for>
+        </div>
+        <div style="display:flex;justify-content:flex-end;gap:8px;padding:14px 20px;border-top:1px solid rgb(241,245,249)">
+          <button onClick="{{ closePublish }}" style="height:30px;padding:4px 12px;border-radius:4px;border:none;background:rgb(241,245,249);font-size:12px;font-weight:500;color:rgb(71,85,105);cursor:pointer" style-hover="background:rgb(226,232,240)">Cancel</button>
+          <button onClick="{{ doPublish }}" disabled="{{ pubBusy }}" style="height:30px;min-width:96px;display:flex;align-items:center;justify-content:center;gap:6px;padding:4px 12px;border-radius:4px;border:none;background:rgb(59,130,246);font-size:12px;font-weight:500;color:rgb(255,255,255);cursor:pointer" style-hover="background:rgb(37,99,235)">
+            <sc-if value="{{ pubBusy }}" hint-placeholder-val="{{ false }}"><span style="width:12px;height:12px;border-radius:50%;border:2px solid rgba(255,255,255,0.4);border-top-color:rgb(255,255,255);animation:lmSpin .8s linear infinite"></span></sc-if>
+            {{ pubBtnLabel }}
+          </button>
+        </div>
+      </div>
+    </div>
+  </sc-if>
+
+  <sc-if value="{{ hasToast }}" hint-placeholder-val="{{ false }}">
+    <div style="position:absolute;left:50%;bottom:24px;transform:translateX(-50%);z-index:60;display:flex;align-items:center;gap:10px;padding:10px 14px;border-radius:8px;background:rgb(0,0,0);color:rgb(255,255,255);font-size:12px;box-shadow:0px 20px 60px 0px rgba(15,23,42,0.15);animation:lmIn .2s ease">
+      <lm-icon name="IconsProperty1Chec" style="width:16px;height:16px;color:rgb(51,196,129)"></lm-icon>{{ toast }}
+    </div>
+  </sc-if>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;errorMode&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;none&quot;,&quot;generation&quot;,&quot;publish&quot;],&quot;default&quot;:&quot;none&quot;,&quot;tsType&quot;:&quot;'none'|'generation'|'publish'&quot;,&quot;section&quot;:&quot;States&quot;},&quot;showCoachmark&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;States&quot;},&quot;buildSpeed&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;normal&quot;,&quot;fast&quot;,&quot;slow&quot;],&quot;default&quot;:&quot;normal&quot;,&quot;tsType&quot;:&quot;'normal'|'fast'|'slow'&quot;,&quot;section&quot;:&quot;States&quot;}}">
+class Component extends DCLogic {
+  static D = {
+    pools: [
+      { id: 'retail', name: 'Retail Sales', src: 'Data Pool', cols: 14, rows: '1.2M rows', upd: 'Updated 2h ago', short: 'Retail',
+        kw: ['retail', 'store', 'stores', 'product', 'products', 'category', 'categories', 'region', 'sales', 'shop'],
+        metrics: [
+          { id: 'rev', label: 'Revenue', f: 'money', agg: 'sum', total: 4.82e6, delta: '+12.4%', good: true, kw: ['revenue', 'sold', 'income'], desc: 'Total sales value · best for tracking growth' },
+          { id: 'gm', label: 'Gross margin', f: 'pct', agg: 'avg', total: 31.8, delta: '−0.7 pts', good: false, kw: ['margin', 'profit', 'profitability'], desc: 'Profit after cost of goods · best for profitability' },
+          { id: 'ord', label: 'Orders', f: 'num', agg: 'sum', total: 38214, delta: '+6.1%', good: true, kw: ['orders', 'order volume', 'transactions'], desc: 'Order count · best for demand and traffic' }],
+        extraKpi: { label: 'Avg order value', value: '$126.14', delta: '+5.9%', good: true },
+        dim: 'Region', dims: [['West', .30, 1.04], ['Northeast', .25, 1.01], ['South', .245, .97], ['Midwest', .205, .96]],
+        mixLabel: 'Category', mix: [['Electronics', 34], ['Home & Kitchen', 26], ['Apparel', 21], ['Beauty', 11], ['Other', 8]],
+        table: { title: 'Top products', cols: ['Product', 'Category', 'Revenue', 'Units', 'vs prior'], rows: [
+          ['Aurora 55" 4K TV', 'Electronics', '$412.6K', '1,284', '+18%'], ['Nimbus Air Fryer XL', 'Home & Kitchen', '$238.9K', '2,951', '+24%'],
+          ['Pulse Wireless Earbuds', 'Electronics', '$221.4K', '3,702', '+9%'], ['Everyday Stretch Denim', 'Apparel', '$164.2K', '2,736', '−3%'], ['Glow Vitamin C Serum', 'Beauty', '$98.7K', '3,290', '+31%']] },
+        extra: { title: 'Return rate by category', f: 'pct', kw: ['return'], bars: [['Apparel', 11.2], ['Electronics', 6.8], ['Home & Kitchen', 4.1], ['Beauty', 2.9]] } },
+      { id: 'pipeline', name: 'Sales Pipeline', src: 'Salesforce', cols: 11, rows: '86.4K rows', upd: 'Updated 25m ago', short: 'Pipeline',
+        kw: ['pipeline', 'deal', 'deals', 'crm', 'opportunity', 'opportunities', 'quota', 'reps', 'salesforce', 'sales'],
+        metrics: [
+          { id: 'pv', label: 'Pipeline value', f: 'money', agg: 'sum', total: 18.6e6, delta: '+8.2%', good: true, kw: ['pipeline value', 'bookings', 'value'], desc: 'Open opportunity value · best for coverage' },
+          { id: 'wr', label: 'Win rate', f: 'pct', agg: 'avg', total: 27.4, delta: '+1.9 pts', good: true, kw: ['win rate', 'conversion'], desc: 'Share of closed deals won · best for effectiveness' },
+          { id: 'dw', label: 'Deals won', f: 'num', agg: 'sum', total: 412, delta: '+5.4%', good: true, kw: ['deals won', 'closed', 'won'], desc: 'Closed-won count · best for velocity' }],
+        extraKpi: { label: 'Avg deal size', value: '$45.1K', delta: '+2.7%', good: true },
+        dim: 'Territory', dims: [['NA East', .33, 1.06], ['NA West', .27, 1.02], ['EMEA', .24, .95], ['APAC', .16, .9]],
+        mixLabel: 'Stage', mix: [['Prospecting', 31], ['Discovery', 24], ['Proposal', 19], ['Negotiation', 14], ['Commit', 12]],
+        table: { title: 'Largest open deals', cols: ['Account', 'Stage', 'Value', 'Owner', 'Close'], rows: [
+          ['Northwind Health', 'Negotiation', '$612K', 'A. Moreno', 'Oct 14'], ['Brightline Logistics', 'Proposal', '$488K', 'J. Park', 'Oct 30'],
+          ['Cobalt Energy', 'Commit', '$455K', 'R. Shah', 'Oct 3'], ['Harbor & Finch', 'Discovery', '$390K', 'A. Moreno', 'Nov 18'], ['Veridian Labs', 'Negotiation', '$342K', 'L. Chen', 'Oct 22']] },
+        extra: { title: 'Win rate by owner', f: 'pct', kw: ['owner', 'rep', 'win rate by'], bars: [['L. Chen', 34.1], ['R. Shah', 30.6], ['A. Moreno', 26.2], ['J. Park', 21.8]] } },
+      { id: 'marketing', name: 'Marketing Campaigns', src: 'Data Pool', cols: 9, rows: '312K rows', upd: 'Updated yesterday', short: 'Marketing',
+        kw: ['marketing', 'campaign', 'campaigns', 'leads', 'spend', 'roas', 'ads', 'channel'],
+        metrics: [
+          { id: 'ld', label: 'Leads', f: 'num', agg: 'sum', total: 24180, delta: '+14.2%', good: true, kw: ['leads', 'signups'], desc: 'New leads captured · best for top-of-funnel' },
+          { id: 'roas', label: 'ROAS', f: 'x', agg: 'avg', total: 3.6, delta: '+0.4×', good: true, kw: ['roas', 'return on ad'], desc: 'Revenue per ad dollar · best for efficiency' },
+          { id: 'sp', label: 'Spend', f: 'money', agg: 'sum', total: 1.12e6, delta: '+6.0%', good: true, kw: ['spend', 'budget', 'cost'], desc: 'Media spend · best for budget pacing' }],
+        extraKpi: { label: 'Cost per lead', value: '$46.32', delta: '−7.1%', good: true },
+        dim: 'Channel', dims: [['Paid search', .36, 1.1], ['Social', .28, .94], ['Email', .21, 1.22], ['Display', .15, .71]],
+        mixLabel: 'Campaign type', mix: [['Always-on', 38], ['Product launch', 27], ['Seasonal', 22], ['Webinar', 13]],
+        table: { title: 'Top campaigns', cols: ['Campaign', 'Channel', 'Leads', 'Spend', 'ROAS'], rows: [
+          ['Fall Refresh 2026', 'Paid search', '4,812', '$168.2K', '4.8×'], ['Smart Home Launch', 'Social', '3,905', '$142.7K', '3.9×'],
+          ['Loyalty Win-back', 'Email', '3,114', '$21.4K', '7.2×'], ['Back to Campus', 'Display', '2,286', '$96.1K', '2.1×'], ['Holiday Preview Webinar', 'Email', '1,947', '$12.8K', '5.6×']] },
+        extra: { title: 'Cost per lead by channel', f: 'money', kw: ['cost per lead', 'cpl'], bars: [['Display', 62.4], ['Paid search', 51.9], ['Social', 44.7], ['Email', 18.2]] } },
+      { id: 'support', name: 'Customer Support Tickets', src: 'Zendesk', cols: 12, rows: '64.9K rows', upd: 'Updated 10m ago', short: 'Support',
+        kw: ['support', 'ticket', 'tickets', 'csat', 'sla', 'resolution', 'agents', 'customer service'],
+        metrics: [
+          { id: 'csat', label: 'CSAT', f: 'pct', agg: 'avg', total: 91.2, delta: '+1.4 pts', good: true, kw: ['csat', 'satisfaction'], desc: 'Customer satisfaction · best for quality' },
+          { id: 'res', label: 'Median resolution', f: 'hrs', agg: 'avg', total: 4.2, delta: '−0.6h', good: true, kw: ['resolution', 'time to resolve'], desc: 'Hours to resolve · best for speed' },
+          { id: 'tk', label: 'Tickets', f: 'num', agg: 'sum', total: 18944, delta: '−3.2%', good: true, kw: ['volume', 'tickets created'], desc: 'Tickets created · best for workload' }],
+        extraKpi: { label: 'First-response SLA', value: '96.1%', delta: '+0.8 pts', good: true },
+        dim: 'Team', dims: [['Tier 1', .41, 1.02], ['Tier 2', .27, .97], ['Billing', .18, 1.05], ['Technical', .14, .93]],
+        mixLabel: 'Ticket category', mix: [['Account access', 29], ['Billing', 24], ['Bug report', 21], ['How-to', 16], ['Other', 10]],
+        table: { title: 'Longest open tickets', cols: ['Ticket', 'Category', 'Age', 'Team', 'Priority'], rows: [
+          ['#48213 SSO loop on login', 'Account access', '9d 4h', 'Technical', 'High'], ['#48177 Duplicate invoice', 'Billing', '8d 1h', 'Billing', 'Med'],
+          ['#48102 Export stalls at 90%', 'Bug report', '7d 6h', 'Tier 2', 'High'], ['#48096 Seat count mismatch', 'Billing', '7d 2h', 'Billing', 'Low'], ['#48040 API rate limits', 'How-to', '6d 9h', 'Tier 2', 'Med']] },
+        extra: { title: 'Backlog by age', f: 'num', kw: ['backlog', 'age'], bars: [['< 1 day', 412], ['1–3 days', 268], ['3–7 days', 131], ['> 7 days', 57]] } }
+    ],
+    colors: ['rgb(59,130,246)', 'rgb(34,211,238)', 'rgb(232,121,249)', 'rgb(255,122,89)', 'rgb(203,213,225)'],
+    steps: ['Mapping columns', 'KPI summary · 4 cards', 'TREND', 'DIM', 'MIX', 'TABLE', 'Filters · Date, DIM, MIX']
+  };
+
+  static MORE = {
+    retail: [['units', 'Units sold', 'num', 'sum', 96480, '+4.3%'], ['disc', 'Discount rate', 'pct', 'avg', 8.6, '+1.2 pts'], ['ret', 'Return rate', 'pct', 'avg', 6.4, '−0.3 pts'], ['cust', 'Customers', 'num', 'sum', 21906, '+7.8%']],
+    pipeline: [['cyc', 'Sales cycle (days)', 'num', 'avg', 46, '−3 days'], ['cov', 'Pipeline coverage', 'x', 'avg', 3.1, '+0.2×']],
+    marketing: [['ctr', 'Click-through rate', 'pct', 'avg', 2.7, '+0.3 pts'], ['conv', 'Conversions', 'num', 'sum', 3812, '+9.4%']],
+    support: [['fcr', 'First-contact resolution', 'pct', 'avg', 72.4, '+2.1 pts'], ['bk', 'Backlog', 'num', 'sum', 868, '−11%']]
+  };
+  state = (Component.D.pools.forEach(p => { if (!p.allM) { p.more = (Component.MORE[p.id] || []).map(a => ({ id: a[0], label: a[1], f: a[2], agg: a[3], total: a[4], delta: a[5], good: !/^−/.test(a[5]) || /days|Backlog/.test(a[1]), kw: [a[1].toLowerCase()], desc: 'Measure column in ' + p.name })); p.allM = [...p.metrics, ...p.more]; } }), this.fresh());
+
+  fresh() {
+    return { step: 'home', mode: null, addMenu: false, dataMenu: null, dataLoading: false, dataLoaded: false, dataQuery: '', pool: null, prompt: '',
+      coachDismissed: false, messages: [], pending: null, answers: {}, ctx: null, title: '', reply: '', progress: 0, building: false,
+      buildError: false, errorUsed: false, removed: {}, extra: false, compare: false, newKey: null, filterOpen: null, filters: {}, refreshing: false,
+      cardMenu: null, publishOpen: false, pubState: 'idle', pubErrorUsed: false, pubName: '', pubLoc: 'Sales Team', pubAccess: 'My team', pubRefresh: 'Daily at 6:00 AM', toast: null,
+      device: 'auto', autoFit: true, canvasClosed: false, canvasW: 0 };
+  }
+
+  workIcon(s, color, cycle, which) {
+    const still = !cycle, E = React.createElement;
+    const box = (children, extra) => E('div', { style: Object.assign({ display: 'flex', width: s, height: s }, extra || {}) }, children);
+    const bar = (i, h, origin, anim, dur) => E('span', { key: i, style: { width: Math.max(1.6, s * 0.13), height: (h * 100) + '%', borderRadius: 1, background: color, transformOrigin: origin, transform: still ? 'scaleY(' + (0.55 + 0.45 * h) + ')' : undefined, animation: still ? 'none' : anim + ' ' + dur + 's ease-in-out ' + (i * 0.18) + 's infinite' } });
+    const line = (i, w) => E('span', { key: i, style: { width: (w * 100) + '%', height: Math.max(1.6, s * 0.13), borderRadius: 1, background: color, transformOrigin: 'left center', animation: still ? 'none' : 'om-lnw 2.4s ease-in-out ' + (i * 0.2) + 's infinite' } });
+    const dot = (i) => E('span', { key: i, style: { width: '100%', height: '100%', borderRadius: 1, background: color, animation: still ? 'none' : 'om-dot 2.2s ease-in-out ' + ((i % 3) * 0.12 + Math.floor(i / 3) * 0.1) + 's infinite' } });
+    const gap = Math.max(1.3, s * 0.11);
+    const icons = [
+      box([0.5, 0.85, 0.65, 1].map((h, i) => bar(i, h, 'bottom center', 'om-eqb', 1.7)), { alignItems: 'flex-end', gap }),
+      box([1, 0.6, 0.8, 0.45].map((h, i) => bar(i, h, 'top center', 'om-eqb', 1.9)), { alignItems: 'flex-start', gap }),
+      box([0.55, 1, 0.7, 0.9].map((h, i) => bar(i, h, 'center', 'om-eqb', 2.1)), { alignItems: 'center', gap }),
+      box([1, 0.62, 0.84, 0.48].map((w, i) => line(i, w)), { flexDirection: 'column', justifyContent: 'space-between', alignItems: 'flex-start' }),
+      box([0.55, 1, 0.75].map((w, i) => line(i, w)), { flexDirection: 'column', justifyContent: 'center', alignItems: 'flex-start', gap: gap + 1 }),
+      E('div', { style: { display: 'grid', gridTemplateColumns: 'repeat(3,1fr)', gridTemplateRows: 'repeat(3,1fr)', gap: gap - 0.2, width: s, height: s } }, [0, 1, 2, 3, 4, 5, 6, 7, 8].map(dot))
+    ];
+    const dur = 12;
+    if (!cycle) return E('div', { style: { display: 'flex', width: s, height: s, alignItems: 'center', justifyContent: 'center', flex: 'none' } }, icons[which || 0]);
+    return E('div', { style: { position: 'relative', width: s, height: s, flex: 'none' } },
+      icons.map((ic, i) => E('div', { key: i, style: { position: 'absolute', inset: 0, display: 'flex', alignItems: 'center', justifyContent: 'center', opacity: 0, willChange: 'opacity, transform', animation: 'om-cyc ' + dur + 's cubic-bezier(.4,0,.2,1) ' + (i * dur / icons.length).toFixed(2) + 's infinite' } }, ic)));
+  }
+  phaseSvg(kind, c) {
+    const E = React.createElement, p = (d, k) => E('path', { key: k, d });
+    const svg = (ch) => E('svg', { width: 14, height: 14, viewBox: '0 0 16 16', fill: 'none', stroke: c, strokeWidth: 1.4, strokeLinecap: 'round', strokeLinejoin: 'round', style: { flex: 'none' } }, ch);
+    if (kind === 'brain') return svg([p('M7.4 2.6C5.9 2 4.3 2.7 4 4.1c-1.1.3-1.7 1.3-1.4 2.3-.9.6-1 1.9-.2 2.6-.3 1.2.6 2.3 1.9 2.3.2 1.1 1.3 1.8 2.4 1.5.3.5.5.9.7 1.6V2.6z', 'a'), p('M8.6 2.6C10.1 2 11.7 2.7 12 4.1c1.1.3 1.7 1.3 1.4 2.3.9.6 1 1.9.2 2.6.3 1.2-.6 2.3-1.9 2.3-.2 1.1-1.3 1.8-2.4 1.5-.3.5-.5.9-.7 1.6V2.6z', 'b'), p('M8 2.4v11.6', 'c')]);
+    if (kind === 'db') return svg([E('ellipse', { key: 'a', cx: 8, cy: 4, rx: 5, ry: 1.9 }), p('M3 4v4c0 1.05 2.24 1.9 5 1.9s5-.85 5-1.9V4', 'b'), p('M3 8v4c0 1.05 2.24 1.9 5 1.9s5-.85 5-1.9V8', 'c')]);
+    if (kind === 'chart') return svg([E('circle', { key: 'a', cx: 8, cy: 8, r: 5.6 }), p('M8 2.4v5.6l4.9 2.7', 'b')]);
+    if (kind === 'spark') return svg([p('M6.2 2.2l.9 2.4 2.4.9-2.4.9-.9 2.4-.9-2.4-2.4-.9 2.4-.9.9-2.4z', 'a'), p('M11.4 8.4l.6 1.5 1.5.6-1.5.6-.6 1.5-.6-1.5-1.5-.6 1.5-.6.6-1.5z', 'b')]);
+    return svg([E('circle', { key: 'a', cx: 4, cy: 4, r: 1.6 }), E('circle', { key: 'b', cx: 12, cy: 8, r: 1.6 }), E('circle', { key: 'c', cx: 4.5, cy: 12, r: 1.6 }), p('M5.5 4.6l5 2.8M10.6 9.2l-4.7 2.2', 'd')]);
+  }
+  gCheck(s, c) { const E = React.createElement; return E('svg', { width: s, height: s, viewBox: '0 0 16 16' }, E('path', { d: 'M3.5 8.5l3 3 6-7', fill: 'none', stroke: c, strokeWidth: 1.6, strokeLinecap: 'round', strokeLinejoin: 'round' })); }
+  gDot(on, err) { return React.createElement('span', { style: { width: 5, height: 5, borderRadius: '50%', background: err ? '#B4472B' : '#CBD5E1', animation: on ? 'om-pulse 1.8s ease-in-out infinite' : 'none' } }); }
+  gErr() { return React.createElement('span', { style: { width: 13, height: 13, borderRadius: '50%', background: '#B4472B', color: '#FFF', fontSize: 9, fontWeight: 700, display: 'flex', alignItems: 'center', justifyContent: 'center' } }, '!'); }
+  clock(sec) { sec = Math.max(0, Math.floor(sec)); return Math.floor(sec / 60) + ':' + String(sec % 60).padStart(2, '0'); }
+  // phases: [{title, icon, start, end|null, err, prose, agents:[{name, sub, count}]}]
+  runView(id, phases, opts) {
+    const now = Date.now(), s = this.state;
+    const live = phases.some(p => !p.end && !p.err) && !opts.failed;
+    const runOpen = s.runOpen && s.runOpen[id] !== undefined ? s.runOpen[id] : !!this.props.expandSteps && live;
+    const view = phases.map((ph, i) => {
+      const st = ph.err ? 'error' : ph.end ? 'done' : ph.start ? 'active' : 'pending';
+      const key = id + ':' + i, manual = s.phaseOpen && s.phaseOpen[key];
+      const open = st !== 'pending' && (manual !== undefined ? manual : st === 'active' || st === 'error');
+      const el = ph.start ? ((ph.end || now) - ph.start) / 1000 : 0;
+      const n = ph.agents.length, frac = ph.end ? 1 : Math.min(0.99, el / Math.max(0.6, ph.est || 1.6));
+      const typed = st === 'active' ? ph.prose.slice(0, Math.max(1, Math.floor(el * 110))) : ph.prose;
+      return {
+        glyph: st === 'done' ? this.gCheck(15, '#64748B') : st === 'error' ? this.gErr() : this.phaseSvg(ph.icon, st === 'pending' ? '#CBD5E1' : '#64748B'),
+        title: ph.title, active: st === 'active', still: st !== 'active', titleColor: st === 'pending' ? '#64748B' : st === 'error' ? '#B4472B' : '#1E293B',
+        pillShow: st !== 'pending', pill: this.clock(el), opacity: st === 'pending' ? 0.5 : 1,
+        open, chev: open ? '180deg' : '0deg', chevOp: st === 'pending' ? 0 : 1, cursor: st === 'pending' ? 'default' : 'pointer',
+        onClick: () => { if (st !== 'pending') this.setState(x => ({ phaseOpen: { ...(x.phaseOpen || {}), [key]: !open } })); },
+        prose: typed,
+        agents: ph.agents.map((a, k) => {
+          const aSt = st === 'error' && k === n - 1 ? 'error' : st === 'done' || frac >= (k + 1) / n ? 'done' : frac >= k / n && st !== 'pending' ? 'active' : 'pending';
+          return { name: a.name, sub: aSt === 'error' ? (a.errSub || 'Failed') : a.sub, count: a.count, countShow: !!a.count && aSt !== 'pending',
+            glyph: aSt === 'done' ? this.gCheck(11, '#94A3B8') : this.gDot(aSt === 'active' || aSt === 'error', aSt === 'error'),
+            opacity: aSt === 'pending' ? 0.5 : 1, subColor: aSt === 'error' ? '#B4472B' : '#64748B' };
+        })
+      };
+    });
+    const total = phases.reduce((a, p) => a + (p.start > 2 && p.end > 2 ? (p.end - p.start) / 1000 : 0), 0);
+    const agentN = phases.reduce((a, p) => a + p.agents.length, 0);
+    return {
+      live, idle: !live, open: runOpen, chev: runOpen ? '180deg' : '0deg',
+      onToggle: () => this.setState(x => ({ runOpen: { ...(x.runOpen || {}), [id]: !runOpen } })),
+      hGlyph: opts.failed ? this.gErr() : live ? (this._loader || (this._loader = this.workIcon(15, '#2563EB', true))) : this.gCheck(15, '#64748B'),
+      hLabel: opts.failed ? opts.failLabel : live ? ((view.find(v => v.active) || {}).title ? view.find(v => v.active).title + '…' : opts.liveLabel) : opts.doneLabel.replace('{s}', Math.max(1, Math.round(total))),
+      hColor: opts.failed ? '#B4472B' : '#1E293B',
+      hBracket: '(' + phases.length + ' steps)',
+      phases: view
+    };
+  }
+  scrollRef = React.createRef();
+  replyRef = React.createRef();
+  canvasRef = (el) => {
+    if (this._ro) { this._ro.disconnect(); this._ro = null; }
+    if (el) {
+      this._ro = new ResizeObserver(() => { const w = el.clientWidth - 40; if (Math.abs(w - (this.state.canvasW || 0)) > 2) this.setState({ canvasW: w }); });
+      this._ro.observe(el);
+    }
+  };
+  componentDidMount() {
+    { const p = this.props, init = {};
+      if (p.initialMode) init.mode = p.initialMode;
+      if (p.initialPool) { init.pool = p.initialPool; init.dataLoaded = true; }
+      if (p.initialPrompt) init.prompt = p.initialPrompt;
+      if (p.initialAddMenu) init.addMenu = true;
+      if (p.initialExitHint) init.exitHint = true;
+      if (Object.keys(init).length) this.setState(init, () => { if (p.initialSubmit) this.submit(this.state.prompt); }); }
+    this._key = (e) => {
+      const s = this.state; if (!s.pending || /INPUT|TEXTAREA/.test((e.target || {}).tagName || '')) return;
+      const n = parseInt(e.key, 10); if (!n) return;
+      const q = s.messages.filter(m => m.kind === 'question' && !m.answered).pop();
+      const o = q && q.opts[n - 1]; if (o) this.answer(q.qkind, o.value, o.title);
+    };
+    window.addEventListener('keydown', this._key);
+    this._clk = setInterval(() => { const s = this.state; const an = s.messages.some(m => m.kind === 'analysis' && !m.done); if (an || (s.building && !s.buildError)) { const el = this.scrollRef.current; const near = el && el.scrollHeight - el.scrollTop - el.clientHeight < 160; this.forceUpdate(); if (near) requestAnimationFrame(() => { el.scrollTop = el.scrollHeight; }); } }, 200);
+  }
+  componentWillUnmount() {
+    window.removeEventListener('keydown', this._key); clearInterval(this._clk); (this._t || []).forEach(clearTimeout); }
+  componentDidUpdate() {
+    const s = this.state;
+    if (this._lastMsgs !== s.messages || this._lastStep !== s.step) {
+      this._lastMsgs = s.messages; this._lastStep = s.step;
+      setTimeout(() => { const el = this.scrollRef.current || document.querySelector('[data-scroll="chat"]'); if (el) el.scrollTo({ top: el.scrollHeight, behavior: 'smooth' }); }, 120);
+    }
+  }
+  T(fn, ms) { const id = setTimeout(fn, ms); (this._t = this._t || []).push(id); }
+  ms(n) { const s = this.props.buildSpeed ?? 'normal'; return Math.round(n * (s === 'fast' ? 0.45 : s === 'slow' ? 1.8 : 1)); }
+  uid() { this._id = (this._id || 0) + 1; return 'm' + this._id; }
+  pool(id) { return Component.D.pools.find(p => p.id === id); }
+  push(...msgs) { this.setState(s => ({ messages: [...s.messages, ...msgs.map(m => ({ id: this.uid(), ...m }))] })); }
+  toastMsg(t) { this.setState({ toast: t }); clearTimeout(this._toast); this._toast = setTimeout(() => this.setState({ toast: null }), 3200); }
+
+  fmt(v, f) {
+    if (f === 'money') return v >= 1e6 ? '$' + (v / 1e6).toFixed(2) + 'M' : v >= 1e3 ? '$' + (v / 1e3).toFixed(1) + 'K' : '$' + v.toFixed(2);
+    if (f === 'pct') return v.toFixed(1) + '%';
+    if (f === 'x') return v.toFixed(1) + '×';
+    if (f === 'hrs') return v.toFixed(1) + 'h';
+    return Math.round(v).toLocaleString('en-US');
+  }
+
+  analyze(prompt, poolSel, answers) {
+    const p = ' ' + prompt.toLowerCase() + ' ';
+    const D = Component.D, rows = [], needs = [];
+    rows.push({ label: 'Output', value: 'Dashboard', how: 'Selected', t: 'found' });
+    let pool = null;
+    if (answers.pool) { pool = this.pool(answers.pool); rows.push({ label: 'Data', value: pool.name, how: 'Your answer', t: 'found' }); }
+    else if (poolSel) { pool = this.pool(poolSel); rows.push({ label: 'Data', value: pool.name, how: 'Selected', t: 'found' }); }
+    else {
+      const named = D.pools.find(x => p.includes(x.name.toLowerCase()));
+      if (named) { pool = named; rows.push({ label: 'Data', value: named.name, how: 'From prompt', t: 'found' }); }
+      else {
+        const scored = D.pools.map(x => { const hits = x.kw.filter(k => p.includes(' ' + k) || p.includes(k + ' ')); return { x, n: hits.length, hit: hits[0] }; }).filter(s => s.n > 0).sort((a, b) => b.n - a.n);
+        if (scored.length && (scored.length === 1 || scored[0].n > scored[1].n)) { pool = scored[0].x; rows.push({ label: 'Data', value: pool.name + ' — matched “' + scored[0].hit + '”', how: 'Inferred', t: 'found' }); }
+        else {
+          const cands = scored.length ? scored.map(s => s.x) : D.pools;
+          const word = scored.length ? scored[0].hit : null;
+          rows.push({ label: 'Data', value: word ? cands.length + ' data pools match “' + word + '”' : 'No data selected or mentioned', how: 'Needs input', t: 'need' });
+          needs.push({ kind: 'data', cands, word });
+        }
+      }
+    }
+    let metric = null, multi = false;
+    if (pool) {
+      if (answers.metric) { metric = pool.allM.find(m => m.id === answers.metric); const ah = pool.metrics.filter(m => m.kw.some(k => p.includes(k)) || p.includes(m.label.toLowerCase())); const list = ah.length > 1 ? ah : [metric]; multi = list.length > 1; rows.push({ label: multi ? 'Measures' : 'Measure', value: list.map(m => m.label).join(', '), how: 'Your answer', t: 'found' }); }
+      else {
+        const hits = pool.metrics.filter(m => m.kw.some(k => p.includes(k))), hit = hits[0];
+        if (hit) { metric = hit; rows.push({ label: hits.length > 1 ? 'Measures' : 'Measure', value: hits.map(m => m.label).join(', '), how: 'From prompt', t: 'found' }); multi = hits.length > 1; }
+        else if (/perform|how (we|we're|are)|doing|health|kpi|track/.test(p)) {
+          const w = (p.match(/perform\w*|health|kpis?|doing/) || ['performance'])[0];
+          rows.push({ label: 'Measure', value: '“' + w + '” could mean ' + pool.metrics.map(m => m.label).join(', ').replace(/, ([^,]*)$/, ' or $1'), how: 'Needs input', t: 'need' });
+          needs.push({ kind: 'metric', pool, word: w });
+        } else {
+          rows.push({ label: 'Objective', value: 'Not stated — ' + pool.name + ' can track ' + pool.metrics.map(m => m.label.toLowerCase()).join(', ').replace(/, ([^,]*)$/, ' or $1'), how: 'Needs input', t: 'need' });
+          needs.push({ kind: 'metric', pool, word: null });
+        }
+      }
+    } else rows.push({ label: 'Measure', value: 'Decided once data is chosen', how: 'Pending', t: 'default' });
+    let time = 'Last 12 months', grain = 'month12', timeHow = 'Default', tt = 'default';
+    const q = p.match(/\bq([1-4])\b/);
+    if (q) { time = 'Q' + q[1] + ' 2026'; grain = 'week'; timeHow = 'From prompt'; tt = 'found'; }
+    else if (/last quarter|past quarter|previous quarter/.test(p)) { time = 'Last quarter'; grain = 'week'; timeHow = 'From prompt'; tt = 'found'; }
+    else if (/(last|past|previous) (12|twelve) months|last year|past year/.test(p)) { time = 'Last 12 months'; grain = 'month12'; timeHow = 'From prompt'; tt = 'found'; }
+    else if (/ytd|year to date|this year/.test(p)) { time = '2026 YTD'; grain = 'month9'; timeHow = 'From prompt'; tt = 'found'; }
+    if (/weekly|by week|per week/.test(p)) grain = 'week';
+    rows.push({ label: 'Time range', value: time + (/monthly|by month|per month/.test(p) ? ', monthly' : /weekly|by week/.test(p) ? ', weekly' : ''), how: timeHow, t: tt });
+    const byDim = pool && p.includes(pool.dim.toLowerCase());
+    if (byDim) rows.push({ label: 'Breakdown', value: 'By ' + pool.dim.toLowerCase(), how: 'From prompt', t: 'found' });
+    const nc = p.match(/(\d+)\s+charts?/);
+    rows.push({ label: 'Layout', value: nc ? nc[1] + ' charts plus KPI cards' : 'KPI cards + the charts that fit this data', how: nc ? 'From prompt' : 'Auto', t: nc ? 'found' : 'default' });
+    return { rows, needs, goal: pool && metric ? { pool: pool.name, poolHow: rows[1].how, timeHow, measures: rows.find(x => /^Measure/.test(x.label)).value, time, byDim: byDim ? pool.dim.toLowerCase() : null, monthly: /monthly|by month/.test(p) } : null,
+      ctx: pool && metric ? { poolId: pool.id, metricId: metric.id, multi, time, grain, timeHow, poolHow: rows[1].how, metricHow: rows[2].how } : null };
+  }
+
+  questionFor(need) {
+    if (need.kind === 'data') {
+      const opts = need.cands.map(x => ({ value: x.id, title: x.name, desc: x.src + ' · ' + x.cols + ' columns · ' + x.rows + ' · ' + x.upd, icon: 'IconsProperty1Dp' }));
+      const moreOpts = Component.D.pools.filter(x => !need.cands.includes(x)).map(x => ({ value: x.id, title: x.name, desc: x.src + ' · ' + x.cols + ' columns · ' + x.rows + ' · ' + x.upd, icon: 'IconsProperty1Dp' }));
+      return { moreOpts, kind: 'question', qkind: 'data', q: 'Which data should this dashboard use?', why: need.word ? '“' + need.word[0].toUpperCase() + need.word.slice(1) + '” matches ' + need.cands.length + ' data pools that measure different things, so I don’t want to guess.' : 'Pick the data pool to build from — I’ll infer everything else.', opts };
+    }
+    const opts = need.pool.metrics.map((m, i) => ({ value: m.id, title: m.label, desc: m.desc, icon: 'IconsProperty1Graph', tag: i === 0 ? 'Most used' : '' }));
+    const moreOpts = need.pool.more.map(m => ({ value: m.id, title: m.label, desc: m.desc, icon: 'IconsProperty1Graph', tag: '' }));
+    const OBJ = { rev: 'Revenue and growth', gm: 'Profitability', ord: 'Orders and demand', pv: 'Pipeline coverage', wr: 'Win rate', dw: 'Deals closed', ld: 'Lead generation', roas: 'Return on ad spend', sp: 'Budget pacing' };
+    const opts2 = need.word ? opts : need.pool.metrics.map((m, i) => ({ value: m.id, title: OBJ[m.id] || m.label, desc: 'Built around ' + m.label.toLowerCase() + ' · ' + m.desc.split(' · ')[0].toLowerCase(), icon: 'IconsProperty1Graph', tag: i === 0 ? 'Most used' : '' }));
+    return { kind: 'question', qkind: 'metric', q: need.word ? 'What should “' + need.word + '” be measured by?' : 'What should this dashboard monitor?',
+      why: need.word ? need.pool.name + ' has three measures that fit. I’ll build the KPIs and charts around the one you pick.' : '“Sales” in ' + need.pool.name + ' could mean revenue, profit or order volume. I’ll pick sensible charts and a time range once I know the focus.',
+      opts: opts2, moreOpts, poolId: need.pool.id };
+  }
+
+  submit(text, dashIntent) {
+    const prompt = text.trim(); if (!prompt) return;
+    const poolHint = this.state.pool ? this.pool(this.state.pool).name : 'available data';
+    this.setState({ step: 'thread', mode: 'dashboard', addMenu: false, dataMenu: null, prompt: '', coachDismissed: true, answers: {}, basePrompt: prompt,
+      messages: [{ id: this.uid(), kind: 'user', text: prompt }, { id: 'analysis', kind: 'analysis', done: false, poolHint }] });
+    this._anT = { s: Date.now(), m: Date.now() + this.ms(1100) };
+    if (this.props.holdAnalysis) return;
+    this.T(() => {
+      const r = this.analyze(prompt, this.state.pool, {});
+      const summary = r.needs.length ? (r.needs.length === 1 ? 'I need one detail I can’t reliably infer. Everything else I’ll decide for you.' : 'I need a couple of details I can’t reliably infer — one at a time.') : (() => { const g = r.goal; if (!g) return 'I have everything I need. Building your dashboard now.';
+        const ms = g.measures.toLowerCase().replace(/, ([^,]*)$/, ' and $1');
+        return 'Using ' + g.pool + (g.poolHow === 'Selected' ? ' (your selected schema)' : '') + ' — building a ' + ms + ' dashboard for the ' + g.time.toLowerCase() + (g.monthly ? ', with monthly trends' : '') + (g.byDim ? (g.monthly ? ' and ' : ', with ') + 'performance by ' + g.byDim : '') + '. Nothing to confirm — starting now.'; })();
+      this._anT = { ...this._anT, e: Date.now() };
+      this.setState(s => ({ messages: s.messages.map(m => m.id === 'analysis' ? { ...m, done: true, rows: r.rows, summary } : m) }));
+      if (this.props.holdAt === 'understood') return;
+      this.T(() => this.proceed(), this.ms(700));
+    }, this.ms(2400));
+  }
+
+  proceed() {
+    const r = this.analyze(this.state.basePrompt, this.state.pool, this.state.answers);
+    if (r.needs.length) { const q = this.questionFor(r.needs[0]); this.setState({ pending: q.qkind }); this.push(q); this.playScript(q.qkind); }
+    else {
+      this.setState({ pending: null });
+      if (Object.keys(this.state.answers).length && r.goal) {
+        const g = r.goal, ms = g.measures.toLowerCase().replace(/, ([^,]*)$/, ' and $1');
+        this.push({ kind: 'ai', text: 'That’s enough to start — building a ' + ms + ' dashboard from ' + g.pool + ' for the ' + g.time.toLowerCase() + (g.timeHow === 'Default' ? ' (default — change it any time with the Date filter)' : '') + (g.byDim ? ', broken down by ' + g.byDim : '') + '.' });
+      }
+      this.startBuild(r.ctx);
+    }
+  }
+
+  changePool(q) {
+    const pools = Component.D.pools;
+    this.setState(s => ({ showAllQ: false, pending: null, answers: { ...s.answers, pool: undefined, metric: undefined },
+      messages: s.messages.map(m => m.kind === 'question' && !m.answered ? { ...m, answered: true } : m) }));
+    this.push({ kind: 'user', text: 'Use a different data pool' });
+    this.T(() => { const nq = this.questionFor({ kind: 'data', cands: pools.filter(p => p.id !== q.poolId), word: null }); nq.why = 'Pick the data pool to build from — I’ll infer everything else.'; this.setState({ pending: 'data' }); this.push(nq); }, this.ms(500));
+  }
+  playScript(kind) {
+    const sc = this.props.script; if (!sc) return;
+    this._sc = this._sc || 0; const step = sc[this._sc]; if (!step || step.kind !== kind) return;
+    this._sc++;
+    if (step.text) { this.T(() => this.setState({ reply: step.text }), this.ms(700)); this.T(() => this.sendReply(), this.ms(1500)); }
+    else this.T(() => this.answer(kind, step.value, step.label), this.ms(900));
+  }
+  answer(kind, value, label) {
+    this.setState({ showAllQ: false, ownFocus: false });
+    const key = kind === 'data' ? 'pool' : kind;
+    this.setState(s => ({ pending: null, dataMenu: null, answers: { ...s.answers, [key]: value },
+      messages: [...s.messages.map(m => m.kind === 'question' && m.qkind === kind && !m.answered ? { ...m, answered: true } : m), { id: this.uid(), kind: 'user', text: label }, { id: this.uid(), kind: 'thinking', tid: 'think', text: kind === 'data' ? 'Reading ' + (this.pool(value) || {}).name + '…' : 'Planning the dashboard around your answer…' }] }));
+    this.T(() => { this.setState(s => ({ messages: s.messages.filter(m => m.tid !== 'think') })); this.proceed(); }, this.ms(1100));
+  }
+
+  startBuild(ctx) {
+    const pool = this.pool(ctx.poolId), metric = pool.allM.find(m => m.id === ctx.metricId);
+    const f = {}; f.date = ctx.time; f.dim = 'All'; f.mix = 'All';
+    this.setState({ ctx, step: 'build', progress: 0, building: true, buildError: false, errorUsed: false, removed: {}, extra: false, compare: false, filters: f,
+      title: ctx.multi ? pool.name + ' Dashboard' : pool.short + ' ' + metric.label + ' Dashboard' });
+    this._stepAt = [Date.now()]; this.setState({ runOpen: {}, phaseOpen: {} });
+    this.push({ kind: 'build' });
+    if (this.props.holdBuildAt === 0) { this._anT && (this._anT.e = this._anT.e || Date.now()); return; }
+    this.tick();
+  }
+
+  tick() {
+    this.T(() => {
+      const s = this.state;
+      if (!s.building) return;
+      if (this.props.holdBuildAt != null && s.progress >= this.props.holdBuildAt) return;
+      if ((this.props.errorMode ?? 'none') === 'generation' && !s.errorUsed && s.progress === 5) {
+        this.setState({ buildError: true }); this.push({ kind: 'error' }); return;
+      }
+      const next = s.progress + 1;
+      this._stepAt[next] = Date.now();
+      if (next >= 7) { this.setState({ progress: 7, building: false }); this.T(() => this.push({ kind: 'ready' }), 250); }
+      else { this.setState({ progress: next }); this.tick(); }
+    }, this.ms(s0(this.state.progress)));
+    function s0(p) { return p === 0 ? 1700 : 1500; }
+  }
+
+  retryBuild = () => {
+    this._stepAt[this.state.progress] = Date.now();
+    this.setState(s => ({ buildError: false, errorUsed: true, messages: s.messages.filter(m => m.kind !== 'error') }));
+    this.tick();
+  };
+  skipChart = () => {
+    this._stepAt[6] = Date.now(); this._stepAt[5] = null;
+    this.setState(s => ({ buildError: false, errorUsed: true, removed: { ...s.removed, table: true }, progress: 6, messages: s.messages.filter(m => m.kind !== 'error') }));
+    this.tick();
+  };
+
+  refine(text) {
+    const t = text.trim(); if (!t) return;
+    const pool = this.pool(this.state.ctx.poolId), lt = t.toLowerCase();
+    this.setState({ reply: '' });
+    this.push({ kind: 'user', text: t }, { kind: 'thinking', text: 'Updating the dashboard…', tid: 'think' });
+    this.T(() => {
+      let reply, patch = {};
+      if (pool.extra.kw.some(k => lt.includes(k)) || lt.includes(pool.extra.title.toLowerCase())) { patch = { extra: true, newKey: 'extra' }; reply = 'Added “' + pool.extra.title + '” at the bottom of the dashboard.'; }
+      else if (/compare|last year|prior|previous|yoy/.test(lt)) { patch = { compare: true, newKey: 'trend' }; reply = 'Added a prior-year comparison line to the trend chart.'; }
+      else if (/remove|delete|drop/.test(lt) && /table|products|deals|campaigns|tickets/.test(lt)) { patch = { removed: { ...this.state.removed, table: true } }; reply = 'Removed “' + pool.table.title + '”.'; }
+      else reply = 'I can add a chart, remove one, or compare periods. Which part of the dashboard should change?';
+      this.setState(s => ({ ...patch, messages: s.messages.filter(m => m.tid !== 'think') }));
+      this.push({ kind: 'ai', text: reply });
+      if (patch.newKey) this.T(() => this.setState({ newKey: null }), 2200);
+    }, this.ms(1300));
+  }
+
+  sendReply = () => {
+    const t = this.state.reply.trim(); if (!t) return;
+    const s = this.state;
+    if (s.pending) {
+      const lt = t.toLowerCase();
+      if (s.pending === 'data') {
+        const hit = Component.D.pools.find(p => lt.includes(p.name.toLowerCase()) || p.kw.slice(0, 3).some(k => lt.includes(k)));
+        this.setState({ reply: '' });
+        if (hit) this.answer('data', hit.id, t);
+        else { this.push({ kind: 'user', text: t }, { kind: 'ai', text: 'I couldn’t match that to a data pool you have access to. Pick one above, or browse all data pools.' }); }
+      } else {
+        const pool = this.pool(s.answers.pool || s.pool || this.analyze(s.basePrompt, s.pool, s.answers).rows && this.inferPoolId());
+        const hit = pool && pool.metrics.find(m => lt.includes(m.label.toLowerCase()) || m.kw.some(k => lt.includes(k)));
+        this.setState({ reply: '' });
+        if (hit) { this.setState(x => ({ basePrompt: x.basePrompt + ' — ' + t })); this.answer('metric', hit.id, t); }
+        else this.push({ kind: 'user', text: t }, { kind: 'ai', text: 'I couldn’t match that to something ' + (pool ? pool.name : 'this data') + ' tracks. Try naming what matters — e.g. “revenue and orders by region”.' });
+      }
+      return;
+    }
+    if (s.step === 'build' && !s.building) this.refine(t);
+  };
+  inferPoolId() { const r = this.analyze(this.state.basePrompt, this.state.pool, this.state.answers); const n = r.needs.find(x => x.kind === 'metric'); return n ? n.pool.id : null; }
+
+  doPublish = () => {
+    if (!this.state.pubName.trim()) return;
+    this.setState({ pubState: 'busy' });
+    this.T(() => {
+      if ((this.props.errorMode ?? 'none') === 'publish' && !this.state.pubErrorUsed) { this.setState({ pubState: 'error', pubErrorUsed: true }); return; }
+      this.setState(s => ({ pubState: 'idle', publishOpen: false, step: 'published', title: s.pubName.trim(), cardMenu: null, filterOpen: null }));
+      this.toastMsg('Published to ' + this.state.pubLoc + ' · visible to ' + this.state.pubAccess.toLowerCase());
+    }, this.ms(1600));
+  };
+
+  setFilter(key, val) {
+    this.setState(s => ({ filters: { ...s.filters, [key]: val }, filterOpen: null, refreshing: true }));
+    this.T(() => this.setState({ refreshing: false }), 800);
+  }
+
+  renderVals() {
+    const s = this.state, D = Component.D;
+    const isHome = s.step === 'home', isPublished = s.step === 'published', isBuild = s.step === 'build', isThread = s.step === 'thread';
+    const dash = s.mode === 'dashboard';
+    const promptT = s.prompt.trim();
+    const canSend = !!promptT && (dash || /dashboard/i.test(promptT));
+    const selPool = s.pool ? this.pool(s.pool) : null;
+    const ctx = s.ctx, pool = ctx ? this.pool(ctx.poolId) : null, metric = pool ? pool.allM.find(m => m.id === ctx.metricId) : null;
+    const errMode = this.props.errorMode ?? 'none';
+    const DEV = [{ id: 'auto', label: 'Auto', w: null, hint: 'Fill the available space' }, { id: 'desktop', label: 'Desktop', w: 1440, hint: '1440 px' },
+      { id: 'laptop', label: 'Laptop', w: 1280, hint: '1280 px' }, { id: 'tablet', label: 'Tablet', w: 768, hint: '768 px' }, { id: 'mobile', label: 'Mobile', w: 390, hint: '390 px' }];
+    const dev = DEV.find(d => d.id === s.device);
+    const cols = s.device === 'mobile' ? 1 : s.device === 'tablet' ? 2 : 4;
+    const avail = s.canvasW || 0;
+    const zoom = dev.w && s.autoFit && avail ? Math.min(1, avail / dev.w) : 1;
+    const devicesV = DEV.map(d => { const on = d.id === s.device; return { label: d.label, hint: d.hint, bg: on ? 'rgb(255,255,255)' : 'transparent', shadow: on ? '0 1px 2px rgba(15,23,42,0.08)' : 'none', fg: on ? 'rgb(37,99,235)' : 'rgb(51,65,85)', rowBg: on ? 'rgb(239,246,255)' : 'transparent', on, hint: d.w ? d.w + ' px' : 'Fill space', onPick: () => this.setState({ device: d.id, deviceMenu: false }) }; });
+    const fitOn = s.autoFit && !!dev.w;
+
+    const q = s.dataQuery.toLowerCase();
+    const mkPool = (onPick) => (p) => ({ name: p.name, meta: p.src + ' · ' + p.cols + ' columns · ' + p.rows + ' · ' + p.upd, selected: s.pool === p.id, bg: s.pool === p.id ? 'rgb(248,250,252)' : 'transparent', onPick: () => onPick(p) });
+    const poolList = D.pools.filter(p => !q || p.name.toLowerCase().includes(q)).map(mkPool(p => this.setState({ pool: p.id, dataMenu: null, dataQuery: '' })));
+    const poolListAll = D.pools.map(mkPool(p => { if (s.pending === 'data') this.answer('data', p.id, p.name); else this.setState({ dataMenu: null }); }));
+
+    const A = this._anT || {};
+    const anPhases = [
+      { title: 'Understanding your request', icon: 'brain', start: A.s, end: A.m && Date.now() >= A.m ? A.m : null, est: 0.7,
+        prose: 'Reading the prompt for what to build, who it’s for and any time period — a dashboard request, so several related views rather than one answer.',
+        agents: [{ name: 'Request', sub: 'Output, measures, time range and breakdowns' }] },
+      { title: 'Checking your data', icon: 'db', start: A.m && Date.now() >= A.m ? A.m : null, end: A.e || null, est: 0.8,
+        prose: 'Matching the prompt to data pools you can access and their measures. Anything that can’t be inferred reliably becomes one question — optional details get sensible defaults.',
+        agents: [{ name: 'Data match', sub: 'Matching the request to your data' }, { name: 'Gap check', sub: 'Anything required that can’t be inferred' }] }
+    ];
+    const SA = this._stepAt || [];
+    const P = pool ? [
+      { title: 'Validating your data', icon: 'db', prose: 'Checking ' + pool.name + ' has what this dashboard needs — ' + pool.metrics.map(m => m.label.toLowerCase()).join(', ') + ', an order date and ' + pool.dim.toLowerCase() + '. All present, with data through ' + pool.upd.toLowerCase().replace('updated ', '') + '.', agents: [{ name: 'Field check', sub: 'Required fields found', count: '5/5' }, { name: 'Freshness check', sub: 'Data covers the full period' }] },
+      { title: 'Creating KPI cards', icon: 'db', prose: 'Totalling the headline numbers for the ' + ctx.time.toLowerCase() + ' and comparing each with the period before.', agents: [{ name: 'KPI cards', sub: pool.metrics.map(m => m.label).join(', ') + ', ' + pool.extraKpi.label, count: '4/4' }] },
+      { title: 'Charting the ' + metric.label.toLowerCase() + ' trend', icon: 'chart', prose: 'A continuous time series reads best as a line, so ' + metric.label.toLowerCase() + ' is grouped ' + (ctx.grain === 'week' ? 'by week' : 'by month') + ' with an area fill for scale.', agents: [{ name: 'Trend chart', sub: 'Line chart, ' + (ctx.grain === 'week' ? 'weekly' : 'monthly') }] },
+      { title: 'Comparing by ' + pool.dim.toLowerCase(), icon: 'chart', prose: 'Ranking ' + pool.dims.length + ' ' + pool.dim.toLowerCase() + ' values by ' + metric.label.toLowerCase() + ' — a sorted bar makes the gaps easy to read.', agents: [{ name: pool.dim + ' chart', sub: 'Bar chart, sorted high to low' }] },
+      { title: 'Showing ' + pool.mixLabel.toLowerCase() + ' mix', icon: 'chart', prose: 'Shares of a fixed total read best as one stacked bar with a legend, instead of a pie with ' + pool.mix.length + ' slices.', agents: [{ name: pool.mixLabel + ' mix', sub: 'Stacked bar with legend' }] },
+      { title: 'Building ' + pool.table.title.toLowerCase(), icon: 'db', prose: s.buildError ? 'The warehouse didn’t respond within 30 seconds, so this table was stopped rather than filled with partial rows.' : 'Pulling the top 5 rows ranked by ' + metric.label.toLowerCase() + ', with the change versus the prior period.', agents: [{ name: pool.table.title, sub: 'Top 5 rows', errSub: 'Data didn’t load in time' }] },
+      { title: 'Generating the layout', icon: 'spark', prose: 'KPIs across the top, the trend full-width below, then the breakdowns. Date, ' + pool.dim + ' and ' + pool.mixLabel + ' filters apply to every view.', agents: [{ name: 'Layout', sub: 'Arranging cards by importance' }, { name: 'Filters', sub: 'Date, ' + pool.dim + ', ' + pool.mixLabel, count: '3/3' }] }
+    ].map((p, i) => {
+      const skipped = i === 5 && s.removed.table && s.progress > 5 && !SA[5];
+      return { ...p, est: 1.5, start: isPublished ? 1 : SA[i] || (skipped ? SA[6] : null), end: isPublished ? 2 : (i < s.progress ? (SA[i + 1] || SA[i] || 1) : null), err: i === s.progress && s.buildError };
+    }) : [];
+    const hasBuildMsg = s.messages.some(m => m.kind === 'build');
+    // messages
+    const messagesV = s.messages.map(m => ({
+      ...m, isRun: m.kind === 'analysis',
+      run: m.kind === 'analysis' ? (hasBuildMsg
+        ? this.runView('an', [...anPhases, ...P], { liveLabel: 'Building your dashboard…', doneLabel: 'Dashboard built in {s}s', failed: s.buildError, failLabel: 'Paused — one view couldn’t load', tools: 0 })
+        : this.runView('an', anPhases, { liveLabel: 'Understanding your request…', doneLabel: 'Understood your request in {s}s' })) : null,
+      isUser: m.kind === 'user', isAi: m.kind === 'ai', isThinking: m.kind === 'thinking', isAnalysis: m.kind === 'analysis', isQuestion: m.kind === 'question',
+      isBuild: m.kind === 'build', isError: m.kind === 'error', isReady: m.kind === 'ready',
+      loading: m.kind === 'analysis' && !m.done, head: m.done ? 'Understood your request' : 'Understanding your request',
+      rows: (m.rows || []).map(r => ({ ...r, isNeed: r.t === 'need', isFound: r.t === 'found', isDefault: r.t === 'default' })),
+      open: !m.answered, isData: m.qkind === 'data',
+      opts: (m.opts || []).map(o => ({ ...o, hasTag: !!o.tag, onPick: () => this.answer(m.qkind, o.value, o.title) }))
+    }));
+
+    // build steps
+    const lbl = (x) => !pool ? x : x.replace('TREND', metric.label + ' trend').replace('TABLE', pool.table.title).replace('Filters · Date, DIM, MIX', 'Filters · Date, ' + pool.dim + ', ' + pool.mixLabel).replace('DIM', metric.label + ' by ' + pool.dim.toLowerCase()).replace('MIX', 'Share by ' + pool.mixLabel.toLowerCase()).replace('Mapping columns', 'Mapped ' + pool.cols + ' columns in ' + pool.name);
+    const buildSteps = D.steps.map((x, i) => {
+      const skipped = i === 5 && s.removed.table && s.progress > 5;
+      const done = !skipped && (i < s.progress || (isPublished));
+      const running = i === s.progress && s.building && !s.buildError;
+      const error = i === s.progress && s.buildError;
+      return { label: lbl(x), done, running, notRunning: !running, icon: running ? this.workIcon(13, '#2563EB', false, i % 6) : null, error, skipped, pending: !done && !running && !error && !skipped, color: done || running ? 'rgb(51,65,85)' : error ? 'rgb(185,28,28)' : 'rgb(100,116,139)' };
+    });
+    const doneCount = buildSteps.filter(b => b.done || b.skipped).length;
+
+    // widgets
+    let kpisV = [], trend = {}, widgetsV = [], mixV = [], tableRows = [];
+    if (pool) {
+      const others = pool.metrics.filter(m => m.id !== metric.id);
+      const kp = [metric, ...others].map((m, i) => ({ label: m.label, value: this.fmt(m.total, m.f), delta: m.delta, good: m.good, primary: i === 0 }));
+      kp.splice(3, 0, { ...pool.extraKpi, primary: false });
+      kpisV = kp.slice(0, 4).map(k => ({ ...k, deltaColor: k.good ? 'rgb(24,136,79)' : 'rgb(185,28,28)' }));
+      const base = ctx.grain === 'week' ? [0.9, 0.93, 0.91, 0.96, 0.98, 0.95, 1.0, 1.03, 1.01, 1.06, 1.04, 1.09, 1.12] : [0.78, 0.82, 0.8, 0.86, 0.9, 0.88, 0.93, 0.97, 0.95, 1.0, 1.04, 1.08];
+      const shape = ctx.grain === 'month9' ? base.slice(3) : base;
+      const avg = shape.reduce((a, b) => a + b, 0) / shape.length;
+      const ser = shape.map(v => metric.agg === 'sum' ? metric.total / shape.length * v / avg : metric.total * (1 + (v / avg - 1) * 0.5));
+      const prior = ser.map((v, i) => v * (0.86 + 0.03 * Math.sin(i)));
+      const all = s.compare ? ser.concat(prior) : ser;
+      const mn = Math.min(...all) * 0.97, mx = Math.max(...all) * 1.02;
+      const pts = (arr) => arr.map((v, i) => [i / (arr.length - 1) * 600, 156 - (v - mn) / (mx - mn) * 140]);
+      const path = (arr) => pts(arr).map((p, i) => (i ? 'L' : 'M') + p[0].toFixed(1) + ' ' + p[1].toFixed(1)).join(' ');
+      trend = { line: path(ser), area: path(ser) + ' L600 160 L0 160 Z', cmp: path(prior), max: this.fmt(mx, metric.f), mid: this.fmt((mx + mn) / 2, metric.f), min: this.fmt(mn, metric.f),
+        labels: ctx.grain === 'week' ? ['Jul 5', 'Jul 12', 'Jul 19', 'Jul 26', 'Aug 2', 'Aug 9', 'Aug 16', 'Aug 23', 'Aug 30', 'Sep 6', 'Sep 13', 'Sep 20', 'Sep 27'] : ctx.grain === 'month9' ? ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep'] : ['Oct', 'Nov', 'Dec', 'Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep'] };
+      const maxShare = Math.max(...pool.dims.map(d => d[1])), maxF = Math.max(...pool.dims.map(d => d[2]));
+      const dimBars = pool.dims.map(d => metric.agg === 'sum' ? { label: d[0], value: this.fmt(metric.total * d[1], metric.f), w: (d[1] / maxShare * 100).toFixed(1) + '%' } : { label: d[0], value: this.fmt(metric.total * d[2], metric.f), w: (d[2] / maxF * 100).toFixed(1) + '%' });
+      const exMax = Math.max(...pool.extra.bars.map(b => b[1]));
+      const exBars = pool.extra.bars.map(b => ({ label: b[0], value: this.fmt(b[1], pool.extra.f), w: (b[1] / exMax * 100).toFixed(1) + '%' }));
+      mixV = pool.mix.map((m, i) => ({ label: m[0], pct: m[1] + '%', w: m[1] + '%', color: D.colors[i % D.colors.length] }));
+      tableRows = pool.table.rows.map(r => ({ c0: r[0], c1: r[1], c2: r[2], c3: r[3], c4: r[4], c4color: /^\+/.test(r[4]) ? 'rgb(24,136,79)' : /^−/.test(r[4]) ? 'rgb(185,28,28)' : 'rgb(51,65,85)' }));
+      const grainTxt = ctx.grain === 'week' ? 'Weekly' : 'Monthly';
+      const editable = isBuild && !s.building;
+      const defs = [
+        { key: 'kpi', idx: 1, span: 4, isKpi: true },
+        { key: 'trend', idx: 2, span: 4, title: metric.label + ' trend', sub: s.filters.date + ' · ' + grainTxt + (s.compare ? ' · vs prior year' : ''), kind: 'trend', minH: '200px' },
+        { key: 'dim', idx: 3, span: 2, title: metric.label + ' by ' + pool.dim.toLowerCase(), sub: s.filters.date + ' · ' + (metric.agg === 'sum' ? 'Total' : 'Average'), kind: 'bars', bars: dimBars, barColor: 'rgb(59,130,246)', minH: '160px' },
+        { key: 'mix', idx: 4, span: 2, title: 'Share by ' + pool.mixLabel.toLowerCase(), sub: s.filters.date + ' · % of ' + (pool.metrics[0].label.toLowerCase()), kind: 'mix', minH: '160px' },
+        { key: 'table', idx: 5, span: 4, title: pool.table.title, sub: s.filters.date + ' · Top 5', kind: 'table', minH: '200px' },
+      ];
+      if (s.extra) defs.push({ key: 'extra', idx: 0, span: 2, title: pool.extra.title, sub: s.filters.date, kind: 'bars', bars: exBars, barColor: 'rgb(34,211,238)', minH: '160px' });
+      widgetsV = defs.filter(d => !s.removed[d.key]).map(d => {
+        const ready = isPublished || s.progress > d.idx || d.key === 'extra';
+        const error = d.key === 'table' && s.buildError;
+        return { ...d, span: Math.min(d.span, cols), isCard: !d.isKpi, ready, loading: !ready && !error, error, showTrend: ready && d.kind === 'trend', showBars: ready && d.kind === 'bars', showMix: ready && d.kind === 'mix', showTable: ready && d.kind === 'table',
+          loadLabel: d.kind === 'table' ? 'Querying rows…' : 'Building chart…', menuable: editable, menuOpen: s.cardMenu === d.key, anim: s.newKey === d.key ? 'lmGlow 1s ease 2' : 'none', glow: s.newKey === d.key ? '0 0 0 2px rgb(191,219,254)' : 'none',
+          onMenu: () => this.setState({ cardMenu: s.cardMenu === d.key ? null : d.key }),
+          onEdit: () => this.setState({ cardMenu: null, reply: 'Change “' + d.title + '” to ' }),
+          onRemove: () => { this.setState(st => ({ cardMenu: null, removed: { ...st.removed, [d.key]: true } })); this.toastMsg('Removed “' + d.title + '”'); } };
+      });
+    }
+
+    const filterDefs = pool ? [
+      { key: 'date', name: 'Date', icon: 'IconsProperty1Calendar', options: Array.from(new Set([ctx.time, 'Last 30 days', 'Last 12 months', '2026 YTD'])) },
+      { key: 'dim', name: pool.dim, icon: 'IconsProperty1Location', options: ['All', ...pool.dims.map(d => d[0])] },
+      { key: 'mix', name: pool.mixLabel, icon: 'IconsProperty1Column', options: ['All', ...pool.mix.map(m => m[0])] }] : [];
+    const filtersReady = isPublished || s.progress > 6;
+    const filtersV = filterDefs.map(f => ({ ...f, value: s.filters[f.key], open: s.filterOpen === f.key, disabled: !filtersReady, opacity: filtersReady ? 1 : 0.5,
+      onToggle: () => this.setState({ filterOpen: s.filterOpen === f.key ? null : f.key }),
+      options: f.options.map(o => ({ label: o, selected: s.filters[f.key] === o, onPick: () => this.setFilter(f.key, o) })) }));
+
+    const assumptions = pool ? [
+      { label: 'Data', value: pool.name + ' (' + ctx.poolHow.toLowerCase() + ')' },
+      { label: 'Measure', value: metric.label + ' (' + ctx.metricHow.toLowerCase() + ')' },
+      { label: 'Time', value: ctx.time + (ctx.timeHow === 'Default' ? ' (default — none in prompt)' : ' (from prompt)') },
+      { label: 'Layout', value: '4 KPI cards, ' + (widgetsV.length - 1) + ' charts, 3 filters' }] : [];
+    const refineSuggestions = pool ? [
+      { text: 'Add ' + pool.extra.title.toLowerCase(), onClick: () => this.refine('Add ' + pool.extra.title.toLowerCase()) },
+      { text: 'Compare to last year', onClick: () => this.refine('Compare to last year') }].filter(x => !(x.text.startsWith('Add') && s.extra) && !(x.text.startsWith('Compare') && s.compare)) : [];
+
+    // status
+    let statusText = '', statusKind = '';
+    if (isThread) { statusText = s.pending ? 'Needs your input' : 'Understanding request'; statusKind = s.pending ? 'input' : 'progress'; }
+    if (isBuild) { statusText = s.buildError ? 'Partially built' : s.building ? 'Generating ' + doneCount + '/7' : 'Draft'; statusKind = s.buildError ? 'error' : s.building ? 'progress' : 'draft'; }
+
+    const pubGroups = [
+      { label: 'Location', key: 'pubLoc', opts: ['My dashboards', 'Sales Team', 'Leadership'] },
+      { label: 'Who can view', key: 'pubAccess', opts: ['Only me', 'My team', 'Organization'] },
+      { label: 'Data refresh', key: 'pubRefresh', opts: ['Daily at 6:00 AM', 'Hourly', 'Manual'] }].map(g => ({ label: g.label,
+      options: g.opts.map(o => { const on = s[g.key] === o; return { label: o, bg: on ? 'rgb(219,234,254)' : 'rgb(255,255,255)', border: on ? 'rgb(37,99,235)' : 'rgb(226,232,240)', fg: on ? 'rgb(37,99,235)' : 'rgb(71,85,105)', onPick: () => this.setState({ [g.key]: o }) }; }) }));
+
+    const showCoach = isHome && !s.coachDismissed && !dash && !s.addMenu && (this.props.showCoachmark ?? true);
+    const convTitle = s.basePrompt ? (s.basePrompt.length > 60 ? s.basePrompt.slice(0, 58) + '…' : s.basePrompt) : 'New analysis';
+
+    return {
+      isHome, isWork: !isHome, isPublished, isConv: isThread || isBuild, showAskSidebar: !isPublished,
+      navAskBg: isPublished ? 'transparent' : 'rgb(59,130,246)', navAskFg: isPublished ? 'rgb(51,65,85)' : 'rgb(255,255,255)',
+      navDashBg: isPublished ? 'rgb(59,130,246)' : 'transparent', navDashFg: isPublished ? 'rgb(255,255,255)' : 'rgb(51,65,85)',
+      newChatBg: isHome ? 'rgb(241,245,249)' : 'transparent',
+      reset: () => { (this._t || []).forEach(clearTimeout); this._t = []; this.setState({ ...this.fresh(), coachDismissed: true }); },
+      heroLine: dash ? 'Describe it. Get an instant' : 'Talk to Your Business Data. Get instant', heroWord: dash ? 'Dashboard' : 'Insights',
+      prompt: s.prompt, onPrompt: e => this.setState({ prompt: e.target.value }),
+      onPromptKey: e => { if (e.key === 'Escape' && dash) { this.setState({ mode: null }); return; } if (e.key === 'Enter' && !e.shiftKey) { e.preventDefault(); if (canSend) this.submit(s.prompt); } },
+      homePlaceholder: dash ? 'Describe the dashboard you want to create — e.g. what to track, for whom, and time period' : 'Ask a question',
+      rootH: this.props.embedded ? '100%' : '100vh',
+      exitHint: !!s.exitHint, exitHintOn: () => this.setState({ exitHint: true }), exitHintOff: () => this.setState({ exitHint: false }), exitBg: s.exitHint ? 'rgb(191,219,254)' : 'transparent',
+      boxRing: dash ? 'rgb(219,234,254)' : 'rgb(241,245,249)',
+      toggleAdd: () => this.setState({ addMenu: !s.addMenu, dataMenu: null, coachDismissed: true }), addBg: s.addMenu ? 'rgb(241,245,249)' : 'rgba(241,245,249,0.8)',
+      showCoach, dismissCoach: () => this.setState({ coachDismissed: true }),
+      addMenu: s.addMenu, closeMenus: () => this.setState({ deviceMenu: false, addMenu: false, dataMenu: null, filterOpen: null, cardMenu: null }),
+      pickDashboard: () => this.setState({ mode: 'dashboard', addMenu: false, coachDismissed: true }), dashItemBg: dash ? 'rgb(239,246,255)' : 'transparent',
+      isDashMode: dash, isAskMode: !dash, clearMode: () => this.setState({ mode: null, exitHint: false }),
+      toggleData: () => {
+        const open = s.dataMenu === 'home' ? null : 'home';
+        this.setState({ dataMenu: open, addMenu: false, dataLoading: open && !s.dataLoaded });
+        if (open && !s.dataLoaded) this.T(() => this.setState({ dataLoading: false, dataLoaded: true }), 650);
+      },
+      dataPillLabel: selPool ? selPool.name : 'Select data', dataPillBg: selPool ? 'rgb(241,245,249)' : 'rgba(241,245,249,0.8)', dataPillFg: 'rgb(51,65,85)',
+      dataMenuHome: s.dataMenu === 'home', dataLoading: s.dataLoading, dataReady: !s.dataLoading, dataQuery: s.dataQuery, onDataQuery: e => this.setState({ dataQuery: e.target.value }),
+      poolList, poolEmpty: poolList.length === 0, poolListAll, hasPool: !!selPool,
+      canSend, cantSend: !canSend, submitHome: () => this.submit(s.prompt),
+      belowBoxText: dash && !promptT ? 'Tip: mention the data, measure or time period — I’ll ask only if something’s unclear' : (!dash && promptT && !canSend ? 'Choose Dashboard from + to build a dashboard from this prompt' : 'Connect with 50+ data sources to analyse your data'),
+      startedLabel: dash ? 'Try a dashboard prompt' : 'Get started',
+      dashSuggestions: ['Create a Sales Dashboard', 'Q3 revenue by region and category for Retail Sales', 'Create a dashboard to track store performance'].map(t => ({ text: t, onClick: () => this.setState({ prompt: t }) })),
+      headerH: isPublished ? '76px' : '52px', title: s.title, onTitle: e => this.setState({ title: e.target.value }), titleEditable: isBuild, titleStatic: isThread, convTitle,
+      statusText, statusProgress: statusKind === 'progress', statusInput: statusKind === 'input', statusDraft: statusKind === 'draft', statusError: statusKind === 'error',
+      showBuildActions: isBuild, actionsDisabled: s.building || s.buildError, actionsOpacity: s.building || s.buildError ? 0.5 : 1,
+      saveDraft: () => this.toastMsg('Draft saved to My dashboards'),
+      openPublish: () => { if (!s.building && !s.buildError) this.setState({ publishOpen: true, pubName: s.title, pubState: 'idle' }); },
+      pubLoc: s.pubLoc, pubMeta: 'Published by Priti Jani just now · Visible to ' + s.pubAccess.toLowerCase() + ' · Refreshes ' + (s.pubRefresh === 'Manual' ? 'manually' : s.pubRefresh.toLowerCase()),
+      copyLink: () => this.toastMsg('Link copied — anyone in ' + s.pubAccess.toLowerCase() + ' can open it'),
+      backToEdit: () => this.setState({ step: 'build' }),
+      showChat: isThread || isBuild, chatBasis: isBuild && !s.canvasClosed ? '380px' : '100%', msgMax: isBuild && !s.canvasClosed ? '100%' : '760px',
+      deviceMenu: !!s.deviceMenu, toggleDeviceMenu: () => this.setState({ deviceMenu: !s.deviceMenu, filterOpen: null, cardMenu: null }),
+      deviceLabel: dev.label, deviceIcon: s.device === 'mobile' || s.device === 'tablet' ? 'IconsProperty1Tab' : 'IconsProperty1View',
+      devicesV, deviceMeta: dev.w ? dev.w + ' px' + (zoom < 1 ? ' · scaled to fit' : '') : 'Fills the canvas',
+      toggleAutoFit: () => this.setState({ autoFit: !s.autoFit }), autoFitDisabled: !dev.w, autoFitOpacity: dev.w ? 1 : 0.45,
+      fitTrack: fitOn ? 'rgb(59,130,246)' : 'rgb(203,213,225)', fitKnob: fitOn ? '14px' : '2px', zoomLabel: Math.round(zoom * 100) + '%',
+      canvasRef: this.canvasRef, frameW: dev.w ? dev.w + 'px' : '100%', frameZoom: zoom, frameBg: dev.w ? 'rgb(248,250,252)' : 'transparent',
+      frameRing: dev.w ? '0 0 0 1px rgb(226,232,240)' : 'none', framePad: dev.w ? '16px' : '0',
+      gridCols: 'repeat(' + cols + ', minmax(0,1fr))', kpiCols: 'repeat(' + (s.device === 'mobile' ? 1 : s.device === 'tablet' ? 2 : 4) + ', minmax(0,1fr))',
+      showCanvasClose: isBuild, showFloatActions: false, showChatIcons: isThread, copyThread: () => this.toastMsg('Link to this analysis copied'), closeCanvas: () => this.setState({ canvasClosed: true, cardMenu: null, filterOpen: null }),
+      canvasClosed: isBuild && s.canvasClosed, openCanvas: () => this.setState({ canvasClosed: false }), chatLabel: isBuild ? '04 Draft dashboard' : (s.pending ? '03 Clarifying question' : '02 Understanding request'),
+      scrollRef: this.scrollRef, messagesV, cardBtnLabel: s.canvasClosed ? 'Open dashboard' : 'Viewing', cardBtnBg: s.canvasClosed ? 'rgb(255,255,255)' : 'rgb(239,246,255)', layoutSummary: pool ? '4 KPIs · ' + (widgetsV.length - 1) + ' charts · 1 table' : '',
+      analysisAgents: (() => {
+        const el = Math.floor((Date.now() - (this._anStart || Date.now())) / 450);
+        const E = React.createElement;
+        const check = E('svg', { width: 11, height: 11, viewBox: '0 0 16 16' }, E('path', { d: 'M3.5 8.5l3 3 6-7', fill: 'none', stroke: '#94A3B8', strokeWidth: 1.7, strokeLinecap: 'round', strokeLinejoin: 'round' }));
+        const dot = (on) => E('span', { style: { width: 5, height: 5, borderRadius: '50%', background: '#CBD5E1', animation: on ? 'om-pulse 1.8s ease-in-out infinite' : 'none' } });
+        return [['Agent: Intent Reader', 'Detecting output type and scope'], ['Schema Resolver', 'Matching data pools and columns'], ['Gap Check', 'Finding details that can’t be inferred']]
+          .map((a, i) => ({ name: a[0], sub: a[1], glyph: i < el ? check : dot(i === el), opacity: i <= el ? 1 : 0.5 }));
+      })(),
+      loaderIconSm: this._loaderSm || (this._loaderSm = this.workIcon(11, '#2563EB', true)),
+      loaderIcon: this._loader || (this._loader = this.workIcon(15, '#2563EB', true)),
+      buildLive: s.building && !s.buildError, buildIdle: !(s.building && !s.buildError),
+      buildHead: s.building && !s.buildError ? (buildSteps.find(b => b.running) || {}).label || 'Building your dashboard' : s.buildError ? 'Built with one issue' : s.buildError ? 'Built with one issue' : 'Dashboard built', buildCount: doneCount + ' of 7', buildPct: (doneCount / 7 * 100).toFixed(0) + '%', buildSteps,
+      tableTitle: pool ? pool.table.title : '', poolName: pool ? pool.name : '', poolMeta: pool ? pool.cols + ' columns · ' + pool.upd : '',
+      retryBuild: this.retryBuild, skipChart: this.skipChart,
+      assumptions, refineSuggestions,
+      openDataFromQ: () => this.setState({ dataMenu: 'conv' }),
+      reply: s.reply, onReply: e => this.setState({ reply: e.target.value }), onReplyKey: e => { if (e.key === 'Enter' && !e.shiftKey) { e.preventDefault(); this.sendReply(); } },
+      replyRef: this.replyRef, replyPlaceholder: s.pending ? (s.ownFocus ? (s.pending === 'data' ? 'Name the data — e.g. “Retail Sales”' : 'Describe it in your words — e.g. “weekly revenue and orders by region”') : 'Type your answer, or pick an option above') : isBuild ? (s.building ? 'You can refine once the dashboard is built' : 'Ask to change the dashboard — e.g. “add returns by category”') : 'Analyzing…',
+      canReply: !!s.reply.trim() && (!!s.pending || (isBuild && !s.building)), cantReply: !(!!s.reply.trim() && (!!s.pending || (isBuild && !s.building))), sendReply: this.sendReply,
+      convDataLabel: pool ? pool.name : (selPool ? selPool.name : (s.answers.pool ? this.pool(s.answers.pool).name : 'Select data')),
+      ...(() => {
+        const q = messagesV.filter(m => m.isQuestion && m.open).pop();
+        if (!q) return { hasActiveQ: false, activeQ: { opts: [] } };
+        const typeOwn = { value: '__own', title: 'Type my own answer', desc: 'Describe what you need in your own words', icon: '', tag: '', hasTag: false, isOwn: true, onPick: () => { const el = this.replyRef.current; if (el) el.focus(); this.setState({ ownFocus: true }); } };
+        const raw0 = s.showAllQ ? [...q.opts, ...(q.moreOpts || []).map(o => ({ ...o, hasTag: false, onPick: () => this.answer(q.qkind, o.value, o.title) }))] : q.opts;
+        const raw = [...raw0, typeOwn];
+        const moreN = (q.moreOpts || []).length;
+        return { hasActiveQ: true, activeQ: { q: q.q, why: q.why, isData: q.isData, notData: !q.isData, count: raw.length - 1, opts: raw.map((o, i) => ({ ...o, key: o.isOwn ? '✎' : String(i + 1), desc: o.desc })), 
+          hasMore: false, viewAllLabel: s.showAllQ ? 'Show fewer' : (q.isData ? 'View all data pools (' + (q.opts.length + moreN) + ')' : 'View all measures (' + (q.opts.length + moreN) + ')'),
+          toggleAll: () => this.setState({ showAllQ: !s.showAllQ }), canChangePool: true, poolName: q.poolId ? this.pool(q.poolId).name : '',
+          changePool: () => q.isData ? this.setState({ dataMenu: 'conv' }) : this.changePool(q) } };
+      })(),
+      convDataMore: '+5', composerWide: !(isBuild && !s.canvasClosed),
+      toggleDataConv: () => this.setState({ dataMenu: s.dataMenu === 'conv' ? null : 'conv' }),
+      dataMenuConv: s.dataMenu === 'conv',
+      showCanvas: (isBuild && !s.canvasClosed) || isPublished, canvasLabel: isPublished ? '06 Published dashboard' : '04 Draft dashboard',
+      filtersV, refreshing: s.refreshing, gridOpacity: s.refreshing ? 0.55 : 1,
+      widgetsV, kpisV, periodLabel: ctx && ctx.grain === 'week' ? 'vs Q2' : 'vs prior period',
+      trendLine: trend.line, trendArea: trend.area, trendCompare: trend.cmp, trendMax: trend.max, trendMid: trend.mid, trendMin: trend.min, trendLabels: trend.labels || [],
+      trendLegend: metric ? metric.label : '', compare: s.compare, mixV, tableCols: pool ? pool.table.cols : [], tableRows,
+      publishOpen: s.publishOpen, closePublish: () => { if (s.pubState !== 'busy') this.setState({ publishOpen: false }); },
+      pubError: s.pubState === 'error', pubName: s.pubName, onPubName: e => this.setState({ pubName: e.target.value }),
+      pubNameEmpty: !s.pubName.trim(), pubNameBorder: !s.pubName.trim() ? 'rgb(254,202,202)' : 'rgb(226,232,240)', pubGroups,
+      doPublish: this.doPublish, pubBusy: s.pubState === 'busy', pubBtnLabel: s.pubState === 'busy' ? 'Publishing…' : s.pubState === 'error' ? 'Try again' : 'Publish',
+      hasToast: !!s.toast, toast: s.toast
+    };
+  }
+}
+</script>
+</body>
+</html>

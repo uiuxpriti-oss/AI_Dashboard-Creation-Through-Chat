@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<meta name="design_doc_mode" content="canvas">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+body{margin:0;font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;letter-spacing:-0.02em;color:rgb(51,65,85);background:rgb(241,245,249)}
+*{box-sizing:border-box}
+a{color:rgb(37,99,235);text-decoration:none}a:hover{color:rgb(59,130,246);text-decoration:underline}
+</style>
+</helmet>
+<section data-screen-label="Flow 3" style="padding:64px;display:flex;flex-direction:column;gap:40px">
+  <div style="display:flex;flex-direction:column;gap:8px;max-width:960px">
+    <span style="font-size:12px;font-weight:500;color:rgb(37,99,235)">Flow 3</span>
+    <span style="font-size:32px;font-weight:600;line-height:1.2;color:rgb(15,23,42)">Vague request → only the next necessary question</span>
+    <span style="font-size:16px;line-height:1.5;color:rgb(71,85,105);text-wrap:pretty">“Create a Sales Dashboard.” Ask Me asks for data only if none is selected, asks the objective only if it can’t be inferred, and never asks for time period or KPI count — it builds as soon as it has enough.</span>
+  </div>
+  <div style="display:flex;flex-wrap:wrap;gap:48px 40px;align-items:flex-start">
+    <div id="3a" style="display:flex;flex-direction:column;gap:14px;width:1280px">
+      <div style="display:flex;align-items:center;gap:12px">
+        <span style="height:28px;min-width:36px;padding:0 10px;border-radius:6px;background:rgb(15,23,42);color:rgb(255,255,255);font-size:14px;font-weight:600;display:flex;align-items:center;justify-content:center">3a</span>
+        <span style="font-size:20px;font-weight:600;color:rgb(15,23,42)">No data selected → ask for data first</span>
+        <span style="font-size:14px;color:rgb(100,116,139)">“Sales” matches two data pools, so the only question is which one. Options plus “Type my own answer”.</span>
+      </div>
+      <div style="width:1280px;height:760px;border-radius:12px;overflow:hidden;background:rgb(255,255,255);box-shadow:0 0 0 1px rgb(226,232,240),0 12px 40px rgba(15,23,42,0.08)">
+        <dc-import name="Ask Me AI Dashboard" style="width:100%;height:100%" embedded="{{ true }}" initial-mode="dashboard" initial-prompt="Create a Sales Dashboard" show-coachmark="{{ false }}" initial-submit="{{ true }}" hint-size="1280px,760px"></dc-import>
+      </div>
+    </div>
+    <div id="3b" style="display:flex;flex-direction:column;gap:14px;width:1280px">
+      <div style="display:flex;align-items:center;gap:12px">
+        <span style="height:28px;min-width:36px;padding:0 10px;border-radius:6px;background:rgb(15,23,42);color:rgb(255,255,255);font-size:14px;font-weight:600;display:flex;align-items:center;justify-content:center">3b</span>
+        <span style="font-size:20px;font-weight:600;color:rgb(15,23,42)">Data answered → ask the objective</span>
+        <span style="font-size:14px;color:rgb(100,116,139)">The earlier answer stays in the thread. “Sales” is still vague for Retail Sales, so one question: what to monitor.</span>
+      </div>
+      <div style="width:1280px;height:760px;border-radius:12px;overflow:hidden;background:rgb(255,255,255);box-shadow:0 0 0 1px rgb(226,232,240),0 12px 40px rgba(15,23,42,0.08)">
+        <dc-import name="Ask Me AI Dashboard" style="width:100%;height:100%" embedded="{{ true }}" initial-mode="dashboard" initial-prompt="Create a Sales Dashboard" show-coachmark="{{ false }}" initial-submit="{{ true }}" script="{{ s3b }}" hint-size="1280px,760px"></dc-import>
+      </div>
+    </div>
+    <div id="3c" style="display:flex;flex-direction:column;gap:14px;width:1280px">
+      <div style="display:flex;align-items:center;gap:12px">
+        <span style="height:28px;min-width:36px;padding:0 10px;border-radius:6px;background:rgb(15,23,42);color:rgb(255,255,255);font-size:14px;font-weight:600;display:flex;align-items:center;justify-content:center">3c</span>
+        <span style="font-size:20px;font-weight:600;color:rgb(15,23,42)">Objective answered → generate</span>
+        <span style="font-size:14px;color:rgb(100,116,139)">Time period and KPIs aren’t required — Ask Me uses a default and starts building immediately.</span>
+      </div>
+      <div style="width:1280px;height:760px;border-radius:12px;overflow:hidden;background:rgb(255,255,255);box-shadow:0 0 0 1px rgb(226,232,240),0 12px 40px rgba(15,23,42,0.08)">
+        <dc-import name="Ask Me AI Dashboard" style="width:100%;height:100%" embedded="{{ true }}" initial-mode="dashboard" initial-prompt="Create a Sales Dashboard" show-coachmark="{{ false }}" initial-submit="{{ true }}" script="{{ s3c }}" build-speed="fast" hint-size="1280px,760px"></dc-import>
+      </div>
+    </div>
+    <div id="3d" style="display:flex;flex-direction:column;gap:14px;width:1280px">
+      <div style="display:flex;align-items:center;gap:12px">
+        <span style="height:28px;min-width:36px;padding:0 10px;border-radius:6px;background:rgb(15,23,42);color:rgb(255,255,255);font-size:14px;font-weight:600;display:flex;align-items:center;justify-content:center">3d</span>
+        <span style="font-size:20px;font-weight:600;color:rgb(15,23,42)">Custom requirement in free text</span>
+        <span style="font-size:14px;color:rgb(100,116,139)">The user types their own answer instead of picking. Measures, time and breakdown are read from it.</span>
+      </div>
+      <div style="width:1280px;height:760px;border-radius:12px;overflow:hidden;background:rgb(255,255,255);box-shadow:0 0 0 1px rgb(226,232,240),0 12px 40px rgba(15,23,42,0.08)">
+        <dc-import name="Ask Me AI Dashboard" style="width:100%;height:100%" embedded="{{ true }}" initial-mode="dashboard" initial-prompt="Create a Sales Dashboard" show-coachmark="{{ false }}" initial-submit="{{ true }}" script="{{ s3d }}" build-speed="fast" hint-size="1280px,760px"></dc-import>
+      </div>
+    </div>
+    <div id="3e" style="display:flex;flex-direction:column;gap:14px;width:1280px">
+      <div style="display:flex;align-items:center;gap:12px">
+        <span style="height:28px;min-width:36px;padding:0 10px;border-radius:6px;background:rgb(15,23,42);color:rgb(255,255,255);font-size:14px;font-weight:600;display:flex;align-items:center;justify-content:center">3e</span>
+        <span style="font-size:20px;font-weight:600;color:rgb(15,23,42)">Data already selected → skip straight to the objective</span>
+        <span style="font-size:14px;color:rgb(100,116,139)">With Retail Sales chosen up front, the data question never appears.</span>
+      </div>
+      <div style="width:1280px;height:760px;border-radius:12px;overflow:hidden;background:rgb(255,255,255);box-shadow:0 0 0 1px rgb(226,232,240),0 12px 40px rgba(15,23,42,0.08)">
+        <dc-import name="Ask Me AI Dashboard" style="width:100%;height:100%" embedded="{{ true }}" initial-mode="dashboard" initial-prompt="Create a Sales Dashboard" show-coachmark="{{ false }}" initial-pool="retail" initial-submit="{{ true }}" hint-size="1280px,760px"></dc-import>
+      </div>
+    </div>
+  </div>
+</section>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  renderVals() {
+    const data = { kind: 'data', value: 'retail', label: 'Retail Sales' };
+    return {
+      s3b: [data],
+      s3c: [data, { kind: 'metric', value: 'rev', label: 'Revenue and growth' }],
+      s3d: [data, { kind: 'metric', text: 'Weekly revenue and orders by region for the last quarter, so store managers can spot slow weeks' }]
+    };
+  }
+}
+</script>
+</body>
+</html>

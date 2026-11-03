@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<meta name="design_doc_mode" content="canvas">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+body{margin:0;font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;letter-spacing:-0.02em;color:rgb(51,65,85);background:rgb(241,245,249)}
+*{box-sizing:border-box}
+a{color:rgb(37,99,235);text-decoration:none}a:hover{color:rgb(59,130,246);text-decoration:underline}
+</style>
+</helmet>
+<section data-screen-label="Flow 2" style="padding:64px;display:flex;flex-direction:column;gap:40px">
+  <div style="display:flex;flex-direction:column;gap:8px;max-width:960px">
+    <span style="font-size:12px;font-weight:500;color:rgb(37,99,235)">Flow 2</span>
+    <span style="font-size:32px;font-weight:600;line-height:1.2;color:rgb(15,23,42)">Sufficient request → straight to generation</span>
+    <span style="font-size:16px;line-height:1.5;color:rgb(71,85,105);text-wrap:pretty">The schema is selected and has every required field, so Ask Me asks nothing and builds.</span>
+  </div>
+  <div style="display:flex;flex-wrap:wrap;gap:48px 40px;align-items:flex-start">
+    <div id="2a" style="display:flex;flex-direction:column;gap:14px;width:1280px">
+      <div style="display:flex;align-items:center;gap:12px">
+        <span style="height:28px;min-width:36px;padding:0 10px;border-radius:6px;background:rgb(15,23,42);color:rgb(255,255,255);font-size:14px;font-weight:600;display:flex;align-items:center;justify-content:center">2a</span>
+        <span style="font-size:20px;font-weight:600;color:rgb(15,23,42)">Request with schema selected</span>
+        <span style="font-size:14px;color:rgb(100,116,139)">Dashboard mode, Retail Sales already chosen in Data Pool.</span>
+      </div>
+      <div style="width:1280px;height:760px;border-radius:12px;overflow:hidden;background:rgb(255,255,255);box-shadow:0 0 0 1px rgb(226,232,240),0 12px 40px rgba(15,23,42,0.08)">
+        <dc-import name="Ask Me AI Dashboard" style="width:100%;height:100%" embedded="{{ true }}" initial-mode="dashboard" initial-pool="retail" initial-prompt="Create a Retail Sales Dashboard using the selected schema for the last 12 months. Show revenue, profit, orders, monthly trends, and performance by region." show-coachmark="{{ false }}" hint-size="1280px,760px"></dc-import>
+      </div>
+    </div>
+    <div id="2b" style="display:flex;flex-direction:column;gap:14px;width:1280px">
+      <div style="display:flex;align-items:center;gap:12px">
+        <span style="height:28px;min-width:36px;padding:0 10px;border-radius:6px;background:rgb(15,23,42);color:rgb(255,255,255);font-size:14px;font-weight:600;display:flex;align-items:center;justify-content:center">2b</span>
+        <span style="font-size:20px;font-weight:600;color:rgb(15,23,42)">Recognized — no question needed</span>
+        <span style="font-size:14px;color:rgb(100,116,139)">One status line confirms the schema and the goal, then generation starts.</span>
+      </div>
+      <div style="width:1280px;height:760px;border-radius:12px;overflow:hidden;background:rgb(255,255,255);box-shadow:0 0 0 1px rgb(226,232,240),0 12px 40px rgba(15,23,42,0.08)">
+        <dc-import name="Ask Me AI Dashboard" style="width:100%;height:100%" embedded="{{ true }}" initial-mode="dashboard" initial-pool="retail" initial-prompt="Create a Retail Sales Dashboard using the selected schema for the last 12 months. Show revenue, profit, orders, monthly trends, and performance by region." show-coachmark="{{ false }}" initial-submit="{{ true }}" hold-at="understood" hint-size="1280px,760px"></dc-import>
+      </div>
+    </div>
+    <div id="2c" style="display:flex;flex-direction:column;gap:14px;width:1280px">
+      <div style="display:flex;align-items:center;gap:12px">
+        <span style="height:28px;min-width:36px;padding:0 10px;border-radius:6px;background:rgb(15,23,42);color:rgb(255,255,255);font-size:14px;font-weight:600;display:flex;align-items:center;justify-content:center">2c</span>
+        <span style="font-size:20px;font-weight:600;color:rgb(15,23,42)">Validating data</span>
+        <span style="font-size:14px;color:rgb(100,116,139)">Checks required fields and freshness. The canvas opens with placeholders.</span>
+      </div>
+      <div style="width:1280px;height:760px;border-radius:12px;overflow:hidden;background:rgb(255,255,255);box-shadow:0 0 0 1px rgb(226,232,240),0 12px 40px rgba(15,23,42,0.08)">
+        <dc-import name="Ask Me AI Dashboard" style="width:100%;height:100%" embedded="{{ true }}" initial-mode="dashboard" initial-pool="retail" initial-prompt="Create a Retail Sales Dashboard using the selected schema for the last 12 months. Show revenue, profit, orders, monthly trends, and performance by region." show-coachmark="{{ false }}" initial-submit="{{ true }}" hold-build-at="{{ 0 }}" expand-steps="{{ true }}" hint-size="1280px,760px"></dc-import>
+      </div>
+    </div>
+    <div id="2d" style="display:flex;flex-direction:column;gap:14px;width:1280px">
+      <div style="display:flex;align-items:center;gap:12px">
+        <span style="height:28px;min-width:36px;padding:0 10px;border-radius:6px;background:rgb(15,23,42);color:rgb(255,255,255);font-size:14px;font-weight:600;display:flex;align-items:center;justify-content:center">2d</span>
+        <span style="font-size:20px;font-weight:600;color:rgb(15,23,42)">Creating KPIs and charts</span>
+        <span style="font-size:14px;color:rgb(100,116,139)">KPI cards and the trend are in; the region chart is being drawn.</span>
+      </div>
+      <div style="width:1280px;height:760px;border-radius:12px;overflow:hidden;background:rgb(255,255,255);box-shadow:0 0 0 1px rgb(226,232,240),0 12px 40px rgba(15,23,42,0.08)">
+        <dc-import name="Ask Me AI Dashboard" style="width:100%;height:100%" embedded="{{ true }}" initial-mode="dashboard" initial-pool="retail" initial-prompt="Create a Retail Sales Dashboard using the selected schema for the last 12 months. Show revenue, profit, orders, monthly trends, and performance by region." show-coachmark="{{ false }}" initial-submit="{{ true }}" hold-build-at="{{ 3 }}" expand-steps="{{ true }}" hint-size="1280px,760px"></dc-import>
+      </div>
+    </div>
+    <div id="2e" style="display:flex;flex-direction:column;gap:14px;width:1280px">
+      <div style="display:flex;align-items:center;gap:12px">
+        <span style="height:28px;min-width:36px;padding:0 10px;border-radius:6px;background:rgb(15,23,42);color:rgb(255,255,255);font-size:14px;font-weight:600;display:flex;align-items:center;justify-content:center">2e</span>
+        <span style="font-size:20px;font-weight:600;color:rgb(15,23,42)">Generating the layout</span>
+        <span style="font-size:14px;color:rgb(100,116,139)">All views are ready; cards are arranged and filters wired.</span>
+      </div>
+      <div style="width:1280px;height:760px;border-radius:12px;overflow:hidden;background:rgb(255,255,255);box-shadow:0 0 0 1px rgb(226,232,240),0 12px 40px rgba(15,23,42,0.08)">
+        <dc-import name="Ask Me AI Dashboard" style="width:100%;height:100%" embedded="{{ true }}" initial-mode="dashboard" initial-pool="retail" initial-prompt="Create a Retail Sales Dashboard using the selected schema for the last 12 months. Show revenue, profit, orders, monthly trends, and performance by region." show-coachmark="{{ false }}" initial-submit="{{ true }}" hold-build-at="{{ 6 }}" expand-steps="{{ true }}" hint-size="1280px,760px"></dc-import>
+      </div>
+    </div>
+    <div id="2f" style="display:flex;flex-direction:column;gap:14px;width:1280px">
+      <div style="display:flex;align-items:center;gap:12px">
+        <span style="height:28px;min-width:36px;padding:0 10px;border-radius:6px;background:rgb(15,23,42);color:rgb(255,255,255);font-size:14px;font-weight:600;display:flex;align-items:center;justify-content:center">2f</span>
+        <span style="font-size:20px;font-weight:600;color:rgb(15,23,42)">Draft ready</span>
+        <span style="font-size:14px;color:rgb(100,116,139)">The stepper collapses to one line; the draft is ready to refine or publish.</span>
+      </div>
+      <div style="width:1280px;height:760px;border-radius:12px;overflow:hidden;background:rgb(255,255,255);box-shadow:0 0 0 1px rgb(226,232,240),0 12px 40px rgba(15,23,42,0.08)">
+        <dc-import name="Ask Me AI Dashboard" style="width:100%;height:100%" embedded="{{ true }}" initial-mode="dashboard" initial-pool="retail" initial-prompt="Create a Retail Sales Dashboard using the selected schema for the last 12 months. Show revenue, profit, orders, monthly trends, and performance by region." show-coachmark="{{ false }}" initial-submit="{{ true }}" build-speed="fast" hint-size="1280px,760px"></dc-import>
+      </div>
+    </div>
+  </div>
+</section>
+</x-dc>
+</body>
+</html>

@@ -1,0 +1,16561 @@
+// Components bundle — 72 component(s) materialized from a .fig as one
+// self-contained file: no imports/exports; every component is assigned to window below.
+// Design tokens / typography still ship separately (fig-tokens.css / fig-typography.css).
+
+// figma node: 6:4248 Agent icon (2 variants)
+const __venc_AgentIcon = v => String(v).replace(/[%|=]/g, encodeURIComponent);
+const __vkey_AgentIcon = p => "property1=" + __venc_AgentIcon(p.property1);
+function AgentIcon(_p = {}) {
+  const props = {
+    ..._p,
+    property1: _p.property1 ?? "nlq"
+  };
+  const __body0 = () => /*#__PURE__*/React.createElement("div", {
+    className: props.className,
+    style: {
+      width: 18,
+      height: 18,
+      overflow: "hidden",
+      borderRadius: 2,
+      backgroundColor: "rgb(250,232,255)",
+      position: "relative",
+      color: "rgb(192,38,211)",
+      ...props.style
+    }
+  }, /*#__PURE__*/React.createElement("svg", {
+    width: 10,
+    height: 10,
+    viewBox: "0 0 10 10",
+    fill: "none",
+    style: {
+      position: "absolute",
+      left: 4,
+      top: 4,
+      width: 10,
+      height: 10
+    }
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M 0 0 L 2.932 0 L 4.949 5.664 L 5.051 5.664 L 7.068 0 L 10 0 L 10 10 L 7.695 10 L 7.695 4.219 L 7.627 4.219 L 5.695 9.922 L 4.305 9.922 L 2.373 4.18 L 2.305 4.18 L 2.305 10 L 0 10 L 0 0 Z",
+    fill: "currentColor",
+    fillRule: "evenodd"
+  })));
+  const __body1 = () => /*#__PURE__*/React.createElement("div", {
+    className: props.className,
+    style: {
+      width: 18,
+      height: 18,
+      overflow: "hidden",
+      borderRadius: 2,
+      backgroundColor: "rgb(237,233,254)",
+      position: "relative",
+      color: "rgb(124,58,237)",
+      ...props.style
+    }
+  }, /*#__PURE__*/React.createElement("svg", {
+    width: 9,
+    height: 10.500,
+    viewBox: "0 0 9 10.500",
+    fill: "none",
+    style: {
+      position: "absolute",
+      left: 4.5,
+      top: 3.75,
+      width: 9,
+      height: 10.5
+    }
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M 0 10.5 L 0 0 L 2.224 0 L 6.776 6.9 L 6.776 0 L 9 0 L 9 10.5 L 6.776 10.5 L 2.224 3.615 L 2.224 10.5 L 0 10.5 Z",
+    fill: "currentColor",
+    fillRule: "evenodd"
+  })));
+  const __impls = {
+    // figma: Property 1=Master agent
+    "property1=master agent": __body0,
+    // figma: Property 1=NLQ
+    "property1=nlq": __body1
+  };
+  return (__impls[__vkey_AgentIcon(props)] ?? __body1)();
+}
+
+// figma node: 700:18250 Attachment
+function Attachment(_p = {}) {
+  const props = _p;
+  return /*#__PURE__*/React.createElement("div", {
+    className: props.className,
+    style: {
+      width: 24,
+      height: 24,
+      position: "relative",
+      color: "rgb(71,85,105)",
+      ...props.style
+    }
+  }, /*#__PURE__*/React.createElement("svg", {
+    width: 11,
+    height: 20,
+    viewBox: "0 0 11 20",
+    fill: "none",
+    style: {
+      position: "absolute",
+      left: 6,
+      top: 2,
+      width: 11,
+      height: 20
+    }
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M 5.5 20 C 3.967 20 2.667 19.467 1.6 18.4 C 0.533 17.333 0 16.033 0 14.5 L 0 4 C 0 2.9 0.392 1.958 1.175 1.175 C 1.958 0.392 2.9 0 4 0 C 5.1 0 6.042 0.392 6.825 1.175 C 7.608 1.958 8 2.9 8 4 L 8 13.5 C 8 14.2 7.758 14.792 7.275 15.275 C 6.792 15.758 6.2 16 5.5 16 C 4.8 16 4.208 15.758 3.725 15.275 C 3.242 14.792 3 14.2 3 13.5 L 3 4 L 4.5 4 L 4.5 13.5 C 4.5 13.783 4.596 14.021 4.787 14.213 C 4.979 14.404 5.217 14.5 5.5 14.5 C 5.783 14.5 6.021 14.404 6.213 14.213 C 6.404 14.021 6.5 13.783 6.5 13.5 L 6.5 4 C 6.5 3.3 6.258 2.708 5.775 2.225 C 5.292 1.742 4.7 1.5 4 1.5 C 3.3 1.5 2.708 1.742 2.225 2.225 C 1.742 2.708 1.5 3.3 1.5 4 L 1.5 14.5 C 1.5 15.6 1.892 16.542 2.675 17.325 C 3.458 18.108 4.4 18.5 5.5 18.5 C 6.6 18.5 7.542 18.108 8.325 17.325 C 9.108 16.542 9.5 15.6 9.5 14.5 L 9.5 4 L 11 4 L 11 14.5 C 11 16.033 10.467 17.333 9.4 18.4 C 8.333 19.467 7.033 20 5.5 20 Z",
+    fill: "currentColor",
+    fillRule: "evenodd"
+  })));
+}
+
+// figma node: 650:10663 Dropdown options (2 variants)
+const __venc_DropdownOptions = v => String(v).replace(/[%|=]/g, encodeURIComponent);
+const __vkey_DropdownOptions = p => "property1=" + __venc_DropdownOptions(p.property1);
+function DropdownOptions(_p = {}) {
+  const props = {
+    ..._p,
+    property1: _p.property1 ?? "default",
+    tagText2: _p.tagText2 ?? "AI Ready",
+    title: _p.title ?? "NLQ (Default)",
+    tagText1: _p.tagText1 ?? "20%",
+    showTag: _p.showTag ?? false,
+    para: _p.para ?? "Lumenore's proprietary engine ",
+    faceIcon: _p.faceIcon ?? true,
+    showPara: _p.showPara ?? true
+  };
+  const __body0 = () => /*#__PURE__*/React.createElement("div", {
+    className: props.className,
+    style: {
+      width: 196,
+      overflow: "hidden",
+      display: "flex",
+      flexDirection: "column",
+      gap: 12,
+      padding: "8px 10px 8px 10px",
+      justifyContent: "center",
+      alignItems: "flex-start",
+      flexWrap: "nowrap",
+      boxSizing: "border-box",
+      position: "relative",
+      ...props.style
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      height: 43,
+      display: "flex",
+      flexDirection: "row",
+      gap: 10,
+      padding: "10px 0px 10px 0px",
+      alignItems: "center",
+      flexWrap: "nowrap",
+      boxSizing: "border-box",
+      flexShrink: 0,
+      alignSelf: "stretch"
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      width: 176,
+      height: 43,
+      display: "flex",
+      flexDirection: "row",
+      gap: 8,
+      alignItems: "flex-start",
+      flexWrap: "nowrap",
+      flexShrink: 0
+    }
+  }, props.faceIcon && /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      width: 18,
+      height: 18,
+      flexShrink: 0
+    }
+  }, props.icon1 ?? /*#__PURE__*/React.createElement(AgentIcon, {
+    property1: "nlq"
+  })), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      display: "flex",
+      flexDirection: "column",
+      gap: 2,
+      justifyContent: "center",
+      alignItems: "flex-start",
+      flexWrap: "nowrap",
+      flexGrow: 1,
+      alignSelf: "stretch"
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      height: 16,
+      display: "flex",
+      flexDirection: "row",
+      gap: 10,
+      alignItems: "flex-start",
+      flexWrap: "nowrap",
+      flexShrink: 0,
+      alignSelf: "stretch"
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      display: "flex",
+      flexDirection: "row",
+      gap: 10,
+      justifyContent: "center",
+      alignItems: "center",
+      flexWrap: "nowrap",
+      flexGrow: 1,
+      alignSelf: "stretch"
+    }
+  }, /*#__PURE__*/React.createElement("span", {
+    style: {
+      position: "relative",
+      fontFamily: "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+      fontWeight: 500,
+      fontSize: 12,
+      lineHeight: 1.2999999523162842,
+      letterSpacing: "-0.020em",
+      color: "rgb(51,65,85)",
+      flexGrow: 1,
+      alignSelf: "stretch"
+    }
+  }, props.title))), props.showPara && /*#__PURE__*/React.createElement("span", {
+    style: {
+      position: "relative",
+      fontFamily: "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+      fontWeight: 500,
+      fontSize: 10,
+      whiteSpace: "nowrap",
+      lineHeight: 1.340000033378601,
+      letterSpacing: "-0.020em",
+      color: "rgb(100,116,139)",
+      flexShrink: 0,
+      alignSelf: "stretch"
+    }
+  }, props.para))), props.showTag && /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      height: 28,
+      borderRadius: 20,
+      backgroundColor: "rgb(255,247,237)",
+      boxShadow: "inset 0 0 0 1px rgb(255,237,213)",
+      display: "flex",
+      flexDirection: "row",
+      gap: 4,
+      padding: "6px 8px 6px 8px",
+      justifyContent: "center",
+      alignItems: "center",
+      flexWrap: "nowrap",
+      boxSizing: "border-box",
+      flexShrink: 0
+    }
+  }, /*#__PURE__*/React.createElement("span", {
+    style: {
+      position: "relative",
+      fontFamily: "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+      fontWeight: 500,
+      fontSize: 10,
+      whiteSpace: "nowrap",
+      lineHeight: "24px",
+      textBox: "trim-both cap alphabetic",
+      letterSpacing: "-0.020em",
+      color: "rgb(249,115,22)",
+      flexShrink: 0
+    }
+  }, props.tagText1), /*#__PURE__*/React.createElement("span", {
+    style: {
+      position: "relative",
+      fontFamily: "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+      fontWeight: 500,
+      fontSize: 10,
+      whiteSpace: "nowrap",
+      lineHeight: "24px",
+      textBox: "trim-both cap alphabetic",
+      letterSpacing: "-0.020em",
+      color: "rgb(55,55,55)",
+      flexShrink: 0
+    }
+  }, props.tagText2))));
+  const __body1 = () => /*#__PURE__*/React.createElement("div", {
+    className: props.className,
+    style: {
+      width: 196,
+      overflow: "hidden",
+      backgroundColor: "rgb(239,246,255)",
+      display: "flex",
+      flexDirection: "column",
+      gap: 12,
+      padding: "8px 10px 8px 10px",
+      justifyContent: "center",
+      alignItems: "flex-start",
+      flexWrap: "nowrap",
+      boxSizing: "border-box",
+      position: "relative",
+      ...props.style
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      height: 43,
+      display: "flex",
+      flexDirection: "row",
+      gap: 10,
+      padding: "10px 0px 10px 0px",
+      alignItems: "center",
+      flexWrap: "nowrap",
+      boxSizing: "border-box",
+      flexShrink: 0,
+      alignSelf: "stretch"
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      width: 176,
+      height: 43,
+      display: "flex",
+      flexDirection: "row",
+      gap: 8,
+      alignItems: "flex-start",
+      flexWrap: "nowrap",
+      flexShrink: 0
+    }
+  }, props.faceIcon && /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      width: 18,
+      height: 18,
+      flexShrink: 0
+    }
+  }, props.icon1 ?? /*#__PURE__*/React.createElement(AgentIcon, {
+    property1: "nlq"
+  })), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      display: "flex",
+      flexDirection: "column",
+      gap: 2,
+      justifyContent: "center",
+      alignItems: "flex-start",
+      flexWrap: "nowrap",
+      flexGrow: 1,
+      alignSelf: "stretch"
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      height: 16,
+      display: "flex",
+      flexDirection: "row",
+      gap: 10,
+      alignItems: "flex-start",
+      flexWrap: "nowrap",
+      flexShrink: 0,
+      alignSelf: "stretch"
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      display: "flex",
+      flexDirection: "row",
+      gap: 10,
+      justifyContent: "center",
+      alignItems: "center",
+      flexWrap: "nowrap",
+      flexGrow: 1,
+      alignSelf: "stretch"
+    }
+  }, /*#__PURE__*/React.createElement("span", {
+    style: {
+      position: "relative",
+      fontFamily: "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+      fontWeight: 500,
+      fontSize: 12,
+      lineHeight: 1.2999999523162842,
+      letterSpacing: "-0.020em",
+      color: "rgb(51,65,85)",
+      flexGrow: 1,
+      alignSelf: "stretch"
+    }
+  }, props.title))), props.showPara && /*#__PURE__*/React.createElement("span", {
+    style: {
+      position: "relative",
+      fontFamily: "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+      fontWeight: 500,
+      fontSize: 10,
+      whiteSpace: "nowrap",
+      lineHeight: 1.340000033378601,
+      letterSpacing: "-0.020em",
+      color: "rgb(100,116,139)",
+      flexShrink: 0,
+      alignSelf: "stretch"
+    }
+  }, props.para))), props.showTag && /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      height: 28,
+      borderRadius: 20,
+      backgroundColor: "rgb(255,247,237)",
+      boxShadow: "inset 0 0 0 1px rgb(255,237,213)",
+      display: "flex",
+      flexDirection: "row",
+      gap: 4,
+      padding: "6px 8px 6px 8px",
+      justifyContent: "center",
+      alignItems: "center",
+      flexWrap: "nowrap",
+      boxSizing: "border-box",
+      flexShrink: 0
+    }
+  }, /*#__PURE__*/React.createElement("span", {
+    style: {
+      position: "relative",
+      fontFamily: "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+      fontWeight: 500,
+      fontSize: 10,
+      whiteSpace: "nowrap",
+      lineHeight: "24px",
+      textBox: "trim-both cap alphabetic",
+      letterSpacing: "-0.020em",
+      color: "rgb(249,115,22)",
+      flexShrink: 0
+    }
+  }, props.tagText1), /*#__PURE__*/React.createElement("span", {
+    style: {
+      position: "relative",
+      fontFamily: "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+      fontWeight: 500,
+      fontSize: 10,
+      whiteSpace: "nowrap",
+      lineHeight: "24px",
+      textBox: "trim-both cap alphabetic",
+      letterSpacing: "-0.020em",
+      color: "rgb(55,55,55)",
+      flexShrink: 0
+    }
+  }, props.tagText2))));
+  const __impls = {
+    // figma: Property 1=Default
+    "property1=default": __body0,
+    // figma: Property 1=Hover
+    "property1=hover": __body1
+  };
+  return (__impls[__vkey_DropdownOptions(props)] ?? __body0)();
+}
+
+// figma node: 6:29596 Auto RCA
+function AutoRCA3(_p = {}) {
+  const props = _p;
+  return /*#__PURE__*/React.createElement("div", {
+    className: props.className,
+    style: {
+      width: 24,
+      height: 24,
+      overflow: "hidden",
+      position: "relative",
+      ...props.style
+    }
+  }, /*#__PURE__*/React.createElement("svg", {
+    width: 7.652,
+    height: 7.826,
+    viewBox: "0 0 7.652 7.826",
+    fill: "none",
+    style: {
+      position: "absolute",
+      left: 9.101,
+      top: 2,
+      width: 7.652,
+      height: 7.826,
+      color: "rgb(8,145,178)"
+    }
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M 3.826 0 L 2.63 2.69 L 0 3.913 L 2.63 5.136 L 3.826 7.826 L 5.022 5.136 L 7.652 3.913 L 5.022 2.69 L 3.826 0 Z M 3.348 4.402 L 4.345 4.158 L 5.342 3.913 L 3.348 4.402 Z",
+    fill: "currentColor",
+    fillRule: "evenodd"
+  })), /*#__PURE__*/React.createElement("svg", {
+    width: 4.947,
+    height: 5.059,
+    viewBox: "0 0 4.947 5.059",
+    fill: "none",
+    style: {
+      position: "absolute",
+      left: 15.053,
+      top: 6.348,
+      width: 4.947,
+      height: 5.059,
+      color: "rgb(45,212,191)"
+    }
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M 2.473 5.059 L 3.253 3.326 L 4.947 2.53 L 3.253 1.739 L 2.473 0 L 1.7 1.739 L 0 2.53 L 1.7 3.326 L 2.473 5.059 Z",
+    fill: "currentColor",
+    fillRule: "evenodd"
+  })), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "absolute",
+      left: 4,
+      top: 6.734,
+      width: 16,
+      height: 15.266,
+      border: "1px dashed currentColor",
+      display: "flex",
+      alignItems: "center",
+      justifyContent: "center",
+      overflow: "hidden",
+      fontSize: 10,
+      opacity: 0.45
+    }
+  }, "Subtract"), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "absolute",
+      left: 7,
+      top: 9.857,
+      width: 2,
+      height: 4.742,
+      border: "1px dashed currentColor",
+      display: "flex",
+      alignItems: "center",
+      justifyContent: "center",
+      overflow: "hidden",
+      fontSize: 10,
+      opacity: 0.45
+    }
+  }, "Ellipse 69"));
+}
+
+// figma node: 700:18110 Icon Pack
+function IconPack5(_p = {}) {
+  const props = _p;
+  return /*#__PURE__*/React.createElement("div", {
+    className: props.className,
+    style: {
+      width: 24,
+      height: 24,
+      overflow: "hidden",
+      position: "relative",
+      ...props.style
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "absolute",
+      left: 0,
+      top: 0,
+      width: 24,
+      height: 24
+    }
+  }, props.instance ?? /*#__PURE__*/React.createElement(AutoRCA3, null)));
+}
+
+// figma node: 6390:18207 benefit-hand 1
+function BenefitHand1(_p = {}) {
+  const props = _p;
+  return /*#__PURE__*/React.createElement("div", {
+    className: props.className,
+    style: {
+      width: 24,
+      height: 24,
+      overflow: "hidden",
+      position: "relative",
+      color: "rgb(71,85,105)",
+      ...props.style
+    }
+  }, /*#__PURE__*/React.createElement("svg", {
+    width: 18,
+    height: 18,
+    viewBox: "0 0 18 18",
+    fill: "none",
+    style: {
+      position: "absolute",
+      left: 3,
+      top: 3,
+      width: 18,
+      height: 18
+    }
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M 1.5 4.5 C 1.5 4.086 1.836 3.75 2.25 3.75 L 3.001 3.75 L 3.001 3 C 3.001 2.586 3.337 2.25 3.751 2.25 C 4.165 2.25 4.501 2.586 4.501 3 L 4.501 3.75 L 5.251 3.75 C 5.665 3.75 6.001 4.086 6.001 4.5 C 6.001 4.914 5.665 5.25 5.251 5.25 L 4.501 5.25 L 4.501 6 C 4.501 6.414 4.165 6.75 3.751 6.75 C 3.337 6.75 3.001 6.414 3.001 6 L 3.001 5.25 L 2.25 5.25 C 1.836 5.25 1.5 4.914 1.5 4.5 Z M 8.251 3 L 9.002 3 L 9.002 3.75 C 9.002 4.164 9.338 4.5 9.752 4.5 C 10.166 4.5 10.502 4.164 10.502 3.75 L 10.502 3 L 11.252 3 C 11.666 3 12.002 2.664 12.002 2.25 C 12.002 1.836 11.666 1.5 11.252 1.5 L 10.502 1.5 L 10.502 0.75 C 10.502 0.336 10.166 0 9.752 0 C 9.338 0 9.002 0.336 9.002 0.75 L 9.002 1.5 L 8.251 1.5 C 7.837 1.5 7.501 1.836 7.501 2.25 C 7.501 2.664 7.837 3 8.251 3 Z M 17.43 9.761 L 12.325 15.489 C 10.903 17.085 8.861 18 6.725 18 L 3.001 18 C 1.346 18 0 16.655 0 15 L 0 11.25 C 0 9.596 1.346 8.25 3.001 8.25 L 9.645 8.25 C 10.5 8.25 11.249 8.707 11.662 9.39 L 14.075 6.739 C 14.481 6.293 15.036 6.031 15.64 6.004 C 16.246 5.972 16.82 6.183 17.266 6.59 C 18.177 7.42 18.25 8.842 17.43 9.761 Z M 16.255 7.698 C 16.106 7.561 15.91 7.492 15.709 7.501 C 15.507 7.511 15.321 7.598 15.184 7.748 L 11.864 11.396 C 11.575 12.198 10.86 12.814 9.978 12.94 L 6.107 13.493 C 5.697 13.552 5.317 13.267 5.258 12.856 C 5.2 12.446 5.485 12.065 5.895 12.007 L 9.766 11.454 C 10.186 11.395 10.502 11.031 10.502 10.607 C 10.502 10.134 10.118 9.75 9.645 9.75 L 3.001 9.75 C 2.173 9.75 1.5 10.422 1.5 11.25 L 1.5 14.999 C 1.5 15.827 2.173 16.499 3.001 16.499 L 6.725 16.499 C 8.435 16.499 10.068 15.767 11.206 14.491 L 16.31 8.763 C 16.585 8.454 16.561 7.976 16.255 7.697 L 16.255 7.698 Z",
+    fill: "currentColor",
+    fillRule: "evenodd"
+  })));
+}
+
+// figma node: 9001:12984 Icons (84 variants)
+const __venc_Icons = v => String(v).replace(/[%|=]/g, encodeURIComponent);
+const __vkey_Icons = p => "property1=" + __venc_Icons(p.property1);
+function Icons(_p = {}) {
+  const props = {
+    ..._p,
+    property1: _p.property1 ?? "down arrow"
+  };
+  const __body0 = () => /*#__PURE__*/React.createElement("div", {
+    className: props.className,
+    style: {
+      width: 24,
+      height: 24,
+      overflow: "hidden",
+      position: "relative",
+      color: "rgb(71,85,105)",
+      ...props.style
+    }
+  }, /*#__PURE__*/React.createElement("svg", {
+    width: 17,
+    height: 19,
+    viewBox: "0 0 17 19",
+    fill: "none",
+    style: {
+      position: "absolute",
+      left: 4,
+      top: 2,
+      width: 17,
+      height: 19
+    }
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M 16.15 3.167 L 13.515 3.167 C 13.318 2.273 12.796 1.47 12.037 0.894 C 11.278 0.317 10.329 0.001 9.35 0 L 7.65 0 C 6.671 0.001 5.722 0.317 4.963 0.894 C 4.204 1.47 3.682 2.273 3.485 3.167 L 0.85 3.167 C 0.625 3.167 0.408 3.25 0.249 3.399 C 0.09 3.547 0 3.748 0 3.958 C 0 4.168 0.09 4.37 0.249 4.518 C 0.408 4.667 0.625 4.75 0.85 4.75 L 1.7 4.75 L 1.7 15.042 C 1.701 16.091 2.15 17.097 2.946 17.839 C 3.743 18.581 4.823 18.999 5.95 19 L 11.05 19 C 12.177 18.999 13.257 18.581 14.054 17.839 C 14.85 17.097 15.299 16.091 15.3 15.042 L 15.3 4.75 L 16.15 4.75 C 16.375 4.75 16.592 4.667 16.751 4.518 C 16.91 4.37 17 4.168 17 3.958 C 17 3.748 16.91 3.547 16.751 3.399 C 16.592 3.25 16.375 3.167 16.15 3.167 Z M 7.65 1.583 L 9.35 1.583 C 9.877 1.584 10.391 1.736 10.822 2.02 C 11.252 2.303 11.578 2.704 11.755 3.167 L 5.245 3.167 C 5.422 2.704 5.748 2.303 6.178 2.02 C 6.609 1.736 7.123 1.584 7.65 1.583 Z M 13.6 15.042 C 13.6 15.672 13.331 16.276 12.853 16.721 C 12.375 17.166 11.726 17.417 11.05 17.417 L 5.95 17.417 C 5.274 17.417 4.625 17.166 4.147 16.721 C 3.669 16.276 3.4 15.672 3.4 15.042 L 3.4 4.75 L 13.6 4.75 L 13.6 15.042 Z",
+    fill: "currentColor",
+    fillRule: "evenodd"
+  }), /*#__PURE__*/React.createElement("path", {
+    d: "M 6.8 14.25 C 7.025 14.25 7.242 14.167 7.401 14.018 C 7.56 13.87 7.65 13.668 7.65 13.458 L 7.65 8.708 C 7.65 8.498 7.56 8.297 7.401 8.149 C 7.242 8 7.025 7.917 6.8 7.917 C 6.575 7.917 6.358 8 6.199 8.149 C 6.04 8.297 5.95 8.498 5.95 8.708 L 5.95 13.458 C 5.95 13.668 6.04 13.87 6.199 14.018 C 6.358 14.167 6.575 14.25 6.8 14.25 Z",
+    fill: "currentColor",
+    fillRule: "evenodd"
+  }), /*#__PURE__*/React.createElement("path", {
+    d: "M 10.2 14.25 C 10.425 14.25 10.642 14.167 10.801 14.018 C 10.96 13.87 11.05 13.668 11.05 13.458 L 11.05 8.708 C 11.05 8.498 10.96 8.297 10.801 8.149 C 10.642 8 10.425 7.917 10.2 7.917 C 9.975 7.917 9.758 8 9.599 8.149 C 9.44 8.297 9.35 8.498 9.35 8.708 L 9.35 13.458 C 9.35 13.668 9.44 13.87 9.599 14.018 C 9.758 14.167 9.975 14.25 10.2 14.25 Z",
+    fill: "currentColor",
+    fillRule: "evenodd"
+  })));
+  const __body1 = () => /*#__PURE__*/React.createElement("div", {
+    className: props.className,
+    style: {
+      width: 24,
+      height: 24,
+      overflow: "hidden",
+      position: "relative",
+      color: "rgb(71,85,105)",
+      ...props.style
+    }
+  }, /*#__PURE__*/React.createElement("svg", {
+    width: 12.586,
+    height: 12.586,
+    viewBox: "0 0 12.586 12.586",
+    fill: "none",
+    style: {
+      position: "absolute",
+      left: 5.707,
+      top: 5.707,
+      width: 12.586,
+      height: 12.586
+    }
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M 12.293 0.293 C 12.105 0.105 11.851 0 11.586 0 C 11.321 0 11.066 0.105 10.879 0.293 L 6.293 4.879 L 1.707 0.293 C 1.519 0.105 1.265 0 1 0 C 0.735 0 0.48 0.105 0.293 0.293 C 0.105 0.48 0 0.735 0 1 C 0 1.265 0.105 1.519 0.293 1.707 L 4.879 6.293 L 0.293 10.879 C 0.105 11.066 0 11.321 0 11.586 C 0 11.851 0.105 12.105 0.293 12.293 C 0.48 12.48 0.735 12.586 1 12.586 C 1.265 12.586 1.519 12.48 1.707 12.293 L 6.293 7.707 L 10.879 12.293 C 11.066 12.48 11.321 12.586 11.586 12.586 C 11.851 12.586 12.105 12.48 12.293 12.293 C 12.48 12.105 12.586 11.851 12.586 11.586 C 12.586 11.321 12.48 11.066 12.293 10.879 L 7.707 6.293 L 12.293 1.707 C 12.48 1.519 12.586 1.265 12.586 1 C 12.586 0.735 12.48 0.48 12.293 0.293 Z",
+    fill: "currentColor",
+    fillRule: "evenodd"
+  })));
+  const __body2 = () => /*#__PURE__*/React.createElement("div", {
+    className: props.className,
+    style: {
+      width: 24,
+      height: 24,
+      overflow: "hidden",
+      position: "relative",
+      color: "rgb(71,85,105)",
+      ...props.style
+    }
+  }, /*#__PURE__*/React.createElement("svg", {
+    width: 18,
+    height: 18,
+    viewBox: "0 0 18 18",
+    fill: "none",
+    style: {
+      position: "absolute",
+      left: 3,
+      top: 3,
+      width: 18,
+      height: 18
+    }
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M 0.75 18 C 0.949 18 1.139 17.921 1.28 17.78 L 6.244 12.811 L 7.18 13.781 C 7.886 14.527 8.858 14.963 9.884 14.993 C 10.226 14.994 10.566 14.936 10.888 14.822 C 11.387 14.65 11.824 14.337 12.149 13.921 C 12.473 13.505 12.669 13.004 12.714 12.478 C 12.796 11.717 12.739 10.947 12.548 10.206 L 12.387 9.424 C 12.357 9.299 12.359 9.168 12.394 9.044 C 12.429 8.92 12.495 8.807 12.585 8.716 L 13.776 7.524 C 13.823 7.476 13.886 7.449 13.953 7.448 C 13.976 7.444 14 7.446 14.022 7.455 C 14.044 7.464 14.064 7.478 14.078 7.497 C 14.455 7.897 14.961 8.149 15.507 8.209 C 16.053 8.268 16.602 8.131 17.056 7.822 C 17.322 7.632 17.544 7.386 17.706 7.101 C 17.867 6.817 17.965 6.5 17.992 6.174 C 18.019 5.848 17.975 5.52 17.862 5.212 C 17.75 4.905 17.572 4.626 17.34 4.395 L 13.65 0.699 C 13.271 0.31 12.767 0.067 12.227 0.012 C 11.687 -0.043 11.146 0.094 10.696 0.398 C 10.43 0.588 10.208 0.834 10.046 1.119 C 9.885 1.403 9.787 1.72 9.76 2.046 C 9.732 2.372 9.777 2.7 9.889 3.008 C 10.002 3.315 10.18 3.594 10.411 3.825 L 10.468 3.883 C 10.511 3.926 10.535 3.984 10.535 4.045 C 10.535 4.106 10.511 4.165 10.468 4.208 L 9.268 5.409 C 9.176 5.501 9.062 5.568 8.936 5.602 C 8.811 5.637 8.679 5.638 8.553 5.605 L 7.94 5.449 C 7.186 5.251 6.403 5.192 5.629 5.274 C 5.079 5.331 4.557 5.544 4.125 5.888 C 3.692 6.232 3.367 6.692 3.187 7.215 C 2.991 7.752 2.953 8.335 3.076 8.893 C 3.199 9.452 3.479 9.963 3.883 10.368 L 5.202 11.734 L 0.22 16.719 C 0.115 16.823 0.043 16.957 0.014 17.103 C -0.015 17.248 0 17.399 0.057 17.537 C 0.114 17.674 0.21 17.791 0.333 17.873 C 0.457 17.956 0.602 18 0.75 18 Z M 4.601 7.715 C 4.686 7.459 4.842 7.233 5.052 7.065 C 5.262 6.897 5.517 6.793 5.785 6.766 C 5.957 6.748 6.131 6.739 6.304 6.739 C 6.73 6.739 7.153 6.794 7.565 6.902 L 8.182 7.06 C 8.56 7.155 8.957 7.151 9.333 7.048 C 9.709 6.945 10.052 6.746 10.329 6.47 L 11.529 5.269 C 11.852 4.944 12.034 4.504 12.034 4.045 C 12.034 3.586 11.852 3.145 11.529 2.82 L 11.472 2.763 C 11.394 2.686 11.334 2.592 11.297 2.489 C 11.259 2.386 11.245 2.275 11.254 2.166 C 11.264 2.057 11.297 1.951 11.352 1.856 C 11.407 1.761 11.482 1.679 11.572 1.616 C 11.732 1.519 11.921 1.48 12.106 1.506 C 12.291 1.532 12.462 1.621 12.589 1.759 L 16.282 5.455 C 16.36 5.533 16.419 5.626 16.457 5.73 C 16.495 5.833 16.509 5.943 16.5 6.052 C 16.49 6.162 16.457 6.268 16.402 6.363 C 16.347 6.458 16.272 6.54 16.182 6.602 C 16.02 6.701 15.829 6.739 15.642 6.712 C 15.454 6.685 15.283 6.593 15.156 6.452 C 15.001 6.293 14.817 6.166 14.613 6.08 C 14.409 5.993 14.189 5.948 13.968 5.948 C 13.5 5.95 13.052 6.134 12.717 6.461 L 11.528 7.653 C 11.258 7.923 11.061 8.258 10.956 8.626 C 10.851 8.994 10.841 9.382 10.928 9.755 L 11.092 10.549 C 11.244 11.128 11.29 11.73 11.228 12.325 C 11.21 12.568 11.121 12.8 10.973 12.993 C 10.824 13.186 10.622 13.33 10.392 13.409 C 10.008 13.51 9.604 13.5 9.225 13.381 C 8.847 13.261 8.51 13.037 8.254 12.734 L 4.954 9.318 C 4.749 9.112 4.606 8.852 4.543 8.568 C 4.481 8.284 4.501 7.988 4.601 7.715 Z",
+    fill: "currentColor",
+    fillRule: "evenodd"
+  })));
+  const __body3 = () => /*#__PURE__*/React.createElement("div", {
+    className: props.className,
+    style: {
+      width: 24,
+      height: 24,
+      overflow: "hidden",
+      position: "relative",
+      color: "rgb(71,85,105)",
+      ...props.style
+    }
+  }, /*#__PURE__*/React.createElement("svg", {
+    width: 18,
+    height: 17.985,
+    viewBox: "0 0 18 17.985",
+    fill: "none",
+    style: {
+      position: "absolute",
+      left: 3,
+      top: 3.007,
+      width: 18,
+      height: 17.985
+    }
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M 17.451 5.043 L 12.995 0.59 C 12.68 0.264 12.26 0.059 11.809 0.011 C 11.357 -0.037 10.904 0.075 10.527 0.328 C 10.305 0.486 10.12 0.691 9.985 0.927 C 9.85 1.164 9.769 1.427 9.746 1.699 C 9.723 1.971 9.76 2.244 9.854 2.5 C 9.948 2.755 10.096 2.988 10.289 3.18 L 10.732 3.623 C 10.846 3.737 10.909 3.891 10.909 4.051 C 10.909 4.212 10.846 4.365 10.732 4.479 L 9.159 6.053 C 9.021 6.19 8.849 6.29 8.661 6.341 C 8.473 6.393 8.275 6.395 8.086 6.347 L 7.472 6.19 C 6.763 6.005 6.027 5.949 5.299 6.026 C 4.82 6.076 4.365 6.261 3.989 6.561 C 3.612 6.86 3.329 7.261 3.172 7.717 C 3.001 8.187 2.968 8.697 3.076 9.185 C 3.185 9.674 3.431 10.122 3.785 10.476 L 5.093 11.831 L 0.229 16.697 C 0.157 16.766 0.1 16.849 0.061 16.94 C 0.022 17.031 0.001 17.13 0 17.229 C -0.001 17.329 0.018 17.427 0.056 17.52 C 0.093 17.612 0.149 17.695 0.219 17.766 C 0.29 17.836 0.374 17.892 0.466 17.929 C 0.558 17.967 0.656 17.986 0.756 17.985 C 0.855 17.984 0.954 17.964 1.045 17.924 C 1.137 17.885 1.219 17.828 1.288 17.756 L 6.135 12.91 L 7.072 13.88 C 7.707 14.553 8.583 14.948 9.508 14.978 C 9.807 14.979 10.104 14.928 10.386 14.828 C 10.817 14.68 11.195 14.41 11.475 14.051 C 11.755 13.691 11.925 13.259 11.964 12.805 C 12.04 12.083 11.986 11.354 11.804 10.651 L 11.645 9.882 C 11.601 9.695 11.605 9.499 11.657 9.314 C 11.71 9.128 11.809 8.959 11.945 8.823 L 13.511 7.259 C 13.632 7.148 13.79 7.083 13.955 7.077 C 14.027 7.076 14.099 7.091 14.166 7.119 C 14.233 7.147 14.294 7.188 14.345 7.239 L 14.724 7.618 C 15.037 7.953 15.46 8.165 15.916 8.217 C 16.372 8.268 16.832 8.155 17.212 7.899 C 17.434 7.741 17.619 7.536 17.754 7.3 C 17.889 7.063 17.971 6.8 17.993 6.528 C 18.016 6.256 17.979 5.983 17.886 5.727 C 17.792 5.471 17.644 5.239 17.451 5.046 L 17.451 5.043 Z",
+    fill: "currentColor",
+    fillRule: "evenodd"
+  })));
+  const __body4 = () => /*#__PURE__*/React.createElement("div", {
+    className: props.className,
+    style: {
+      width: 24,
+      height: 24,
+      overflow: "hidden",
+      position: "relative",
+      color: "rgb(71,85,105)",
+      ...props.style
+    }
+  }, /*#__PURE__*/React.createElement("svg", {
+    width: 16,
+    height: 19,
+    viewBox: "0 0 16 19",
+    fill: "none",
+    style: {
+      position: "absolute",
+      left: 4,
+      top: 3,
+      width: 16,
+      height: 19
+    }
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M 8 4.751 C 7.371 4.751 6.755 4.937 6.232 5.285 C 5.709 5.633 5.301 6.127 5.06 6.706 C 4.819 7.284 4.756 7.921 4.879 8.535 C 5.001 9.15 5.305 9.714 5.75 10.157 C 6.195 10.599 6.762 10.901 7.379 11.023 C 7.996 11.145 8.636 11.083 9.218 10.843 C 9.799 10.603 10.296 10.197 10.646 9.677 C 10.996 9.156 11.182 8.544 11.182 7.918 C 11.182 7.078 10.847 6.272 10.25 5.679 C 9.654 5.085 8.844 4.751 8 4.751 Z M 8 9.501 C 7.685 9.501 7.378 9.408 7.116 9.234 C 6.854 9.06 6.65 8.813 6.53 8.523 C 6.409 8.234 6.378 7.916 6.439 7.609 C 6.501 7.302 6.652 7.019 6.875 6.798 C 7.097 6.577 7.381 6.426 7.69 6.365 C 7.998 6.304 8.318 6.335 8.609 6.455 C 8.9 6.575 9.148 6.778 9.323 7.038 C 9.498 7.298 9.591 7.604 9.591 7.918 C 9.591 8.337 9.424 8.74 9.125 9.037 C 8.827 9.334 8.422 9.501 8 9.501 Z",
+    fill: "currentColor",
+    fillRule: "evenodd"
+  }), /*#__PURE__*/React.createElement("path", {
+    d: "M 8 19 C 7.33 19.003 6.669 18.847 6.072 18.544 C 5.476 18.241 4.96 17.8 4.57 17.258 C 1.538 13.097 0 9.969 0 7.96 C 0 5.849 0.843 3.824 2.343 2.331 C 3.843 0.839 5.878 0 8 0 C 10.122 0 12.157 0.839 13.657 2.331 C 15.157 3.824 16 5.849 16 7.96 C 16 9.969 14.462 13.097 11.43 17.258 C 11.04 17.8 10.524 18.241 9.928 18.544 C 9.331 18.847 8.67 19.003 8 19 Z M 8 1.728 C 6.339 1.73 4.747 2.387 3.572 3.556 C 2.398 4.724 1.737 6.309 1.735 7.961 C 1.735 9.552 3.241 12.495 5.975 16.246 C 6.207 16.564 6.512 16.823 6.864 17.001 C 7.216 17.18 7.605 17.273 8 17.273 C 8.395 17.273 8.784 17.18 9.136 17.001 C 9.488 16.823 9.793 16.564 10.025 16.246 C 12.759 12.495 14.265 9.552 14.265 7.961 C 14.263 6.309 13.602 4.724 12.428 3.556 C 11.253 2.387 9.661 1.73 8 1.728 Z",
+    fill: "currentColor",
+    fillRule: "evenodd"
+  })));
+  const __body5 = () => /*#__PURE__*/React.createElement("div", {
+    className: props.className,
+    style: {
+      width: 24,
+      height: 24,
+      overflow: "hidden",
+      position: "relative",
+      color: "rgb(71,85,105)",
+      ...props.style
+    }
+  }, /*#__PURE__*/React.createElement("svg", {
+    width: 18,
+    height: 16,
+    viewBox: "0 0 18 16",
+    fill: "none",
+    style: {
+      position: "absolute",
+      left: 3,
+      top: 4,
+      width: 18,
+      height: 16
+    }
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M 14.25 1.455 L 9.354 1.455 C 9.238 1.455 9.123 1.43 9.019 1.382 L 6.652 0.23 C 6.339 0.079 5.995 0 5.646 0 L 3.75 0 C 2.756 0.001 1.803 0.385 1.1 1.066 C 0.397 1.748 0.001 2.672 0 3.636 L 0 12.364 C 0.001 13.328 0.397 14.252 1.1 14.934 C 1.803 15.615 2.756 15.999 3.75 16 L 14.25 16 C 15.244 15.999 16.197 15.615 16.9 14.934 C 17.603 14.252 17.999 13.328 18 12.364 L 18 5.091 C 17.999 4.127 17.603 3.203 16.9 2.521 C 16.197 1.839 15.244 1.456 14.25 1.455 Z M 3.75 1.455 L 5.646 1.455 C 5.762 1.454 5.877 1.479 5.981 1.527 L 8.348 2.676 C 8.66 2.828 9.005 2.908 9.354 2.909 L 14.25 2.909 C 14.699 2.91 15.137 3.04 15.508 3.284 C 15.879 3.528 16.167 3.874 16.334 4.278 L 1.5 4.359 L 1.5 3.636 C 1.5 3.058 1.737 2.503 2.159 2.094 C 2.581 1.684 3.153 1.455 3.75 1.455 Z M 14.25 14.545 L 3.75 14.545 C 3.153 14.545 2.581 14.316 2.159 13.906 C 1.737 13.497 1.5 12.942 1.5 12.364 L 1.5 5.814 L 16.5 5.732 L 16.5 12.364 C 16.5 12.942 16.263 13.497 15.841 13.906 C 15.419 14.316 14.847 14.545 14.25 14.545 Z",
+    fill: "currentColor",
+    fillRule: "evenodd"
+  })));
+  const __body6 = () => /*#__PURE__*/React.createElement("div", {
+    className: props.className,
+    style: {
+      width: 24,
+      height: 24,
+      overflow: "hidden",
+      position: "relative",
+      color: "rgb(71,85,105)",
+      ...props.style
+    }
+  }, /*#__PURE__*/React.createElement("svg", {
+    width: 18,
+    height: 18,
+    viewBox: "0 0 18 18",
+    fill: "none",
+    style: {
+      position: "absolute",
+      left: 3,
+      top: 3,
+      width: 18,
+      height: 18
+    }
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M 17.25 16.5 L 2.25 16.5 C 2.051 16.5 1.86 16.421 1.72 16.28 C 1.579 16.14 1.5 15.949 1.5 15.75 L 1.5 0.75 C 1.5 0.551 1.421 0.36 1.28 0.22 C 1.14 0.079 0.949 0 0.75 0 C 0.551 0 0.36 0.079 0.22 0.22 C 0.079 0.36 0 0.551 0 0.75 L 0 15.75 C 0 16.347 0.237 16.919 0.659 17.341 C 1.081 17.763 1.653 18 2.25 18 L 17.25 18 C 17.449 18 17.64 17.921 17.78 17.78 C 17.921 17.64 18 17.449 18 17.25 C 18 17.051 17.921 16.86 17.78 16.72 C 17.64 16.579 17.449 16.5 17.25 16.5 Z",
+    fill: "currentColor",
+    fillRule: "evenodd"
+  }), /*#__PURE__*/React.createElement("path", {
+    d: "M 11.25 15 C 11.449 15 11.64 14.921 11.78 14.78 C 11.921 14.64 12 14.449 12 14.25 L 12 9 C 12 8.801 11.921 8.61 11.78 8.47 C 11.64 8.329 11.449 8.25 11.25 8.25 C 11.051 8.25 10.86 8.329 10.72 8.47 C 10.579 8.61 10.5 8.801 10.5 9 L 10.5 14.25 C 10.5 14.449 10.579 14.64 10.72 14.78 C 10.86 14.921 11.051 15 11.25 15 Z",
+    fill: "currentColor",
+    fillRule: "evenodd"
+  }), /*#__PURE__*/React.createElement("path", {
+    d: "M 5.25 15 C 5.449 15 5.64 14.921 5.78 14.78 C 5.921 14.64 6 14.449 6 14.25 L 6 9 C 6 8.801 5.921 8.61 5.78 8.47 C 5.64 8.329 5.449 8.25 5.25 8.25 C 5.051 8.25 4.86 8.329 4.72 8.47 C 4.579 8.61 4.5 8.801 4.5 9 L 4.5 14.25 C 4.5 14.449 4.579 14.64 4.72 14.78 C 4.86 14.921 5.051 15 5.25 15 Z",
+    fill: "currentColor",
+    fillRule: "evenodd"
+  }), /*#__PURE__*/React.createElement("path", {
+    d: "M 14.25 15 C 14.449 15 14.64 14.921 14.78 14.78 C 14.921 14.64 15 14.449 15 14.25 L 15 5.25 C 15 5.051 14.921 4.86 14.78 4.72 C 14.64 4.579 14.449 4.5 14.25 4.5 C 14.051 4.5 13.86 4.579 13.72 4.72 C 13.579 4.86 13.5 5.051 13.5 5.25 L 13.5 14.25 C 13.5 14.449 13.579 14.64 13.72 14.78 C 13.86 14.921 14.051 15 14.25 15 Z",
+    fill: "currentColor",
+    fillRule: "evenodd"
+  }), /*#__PURE__*/React.createElement("path", {
+    d: "M 8.25 15 C 8.449 15 8.64 14.921 8.78 14.78 C 8.921 14.64 9 14.449 9 14.25 L 9 5.25 C 9 5.051 8.921 4.86 8.78 4.72 C 8.64 4.579 8.449 4.5 8.25 4.5 C 8.051 4.5 7.86 4.579 7.72 4.72 C 7.579 4.86 7.5 5.051 7.5 5.25 L 7.5 14.25 C 7.5 14.449 7.579 14.64 7.72 14.78 C 7.86 14.921 8.051 15 8.25 15 Z",
+    fill: "currentColor",
+    fillRule: "evenodd"
+  })));
+  const __body7 = () => /*#__PURE__*/React.createElement("div", {
+    className: props.className,
+    style: {
+      width: 24,
+      height: 24,
+      overflow: "hidden",
+      position: "relative",
+      color: "rgb(71,85,105)",
+      ...props.style
+    }
+  }, /*#__PURE__*/React.createElement("svg", {
+    width: 18,
+    height: 16,
+    viewBox: "0 0 18 16",
+    fill: "none",
+    style: {
+      position: "absolute",
+      left: 3,
+      top: 4,
+      width: 18,
+      height: 16
+    }
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M 17.077 5.673 C 16.725 5.253 16.29 4.916 15.802 4.685 C 15.314 4.454 14.784 4.334 14.247 4.335 L 11.256 4.335 L 11.508 2.747 C 11.597 2.188 11.49 1.615 11.205 1.131 C 10.921 0.648 10.478 0.286 9.958 0.113 C 9.437 -0.06 8.875 -0.034 8.372 0.188 C 7.869 0.409 7.459 0.81 7.218 1.319 L 5.783 4.335 L 3.749 4.335 C 2.755 4.336 1.802 4.746 1.099 5.475 C 0.397 6.204 0.001 7.192 0 8.223 L 0 12.112 C 0.001 13.142 0.397 14.131 1.099 14.86 C 1.802 15.589 2.755 15.999 3.749 16 L 13.723 16 C 14.625 15.996 15.496 15.656 16.177 15.043 C 16.859 14.429 17.305 13.582 17.435 12.656 L 17.964 8.767 C 18.038 8.216 17.998 7.654 17.845 7.12 C 17.691 6.586 17.43 6.093 17.077 5.673 Z M 1.5 12.112 L 1.5 8.223 C 1.5 7.604 1.737 7.011 2.159 6.573 C 2.581 6.136 3.153 5.89 3.749 5.89 L 5.249 5.89 L 5.249 14.445 L 3.749 14.445 C 3.153 14.445 2.581 14.199 2.159 13.761 C 1.737 13.324 1.5 12.73 1.5 12.112 Z M 16.475 8.549 L 15.946 12.437 C 15.869 12.993 15.602 13.501 15.193 13.869 C 14.785 14.237 14.264 14.442 13.723 14.445 L 6.749 14.445 L 6.749 5.683 C 6.819 5.619 6.878 5.542 6.921 5.456 L 8.563 2.007 C 8.624 1.892 8.711 1.793 8.817 1.72 C 8.922 1.646 9.043 1.6 9.169 1.584 C 9.295 1.569 9.423 1.584 9.542 1.63 C 9.661 1.675 9.768 1.749 9.854 1.846 C 9.928 1.935 9.982 2.039 10.012 2.152 C 10.042 2.265 10.048 2.384 10.029 2.499 L 9.633 4.988 C 9.615 5.099 9.622 5.213 9.651 5.321 C 9.68 5.43 9.731 5.53 9.802 5.616 C 9.872 5.702 9.96 5.771 10.058 5.818 C 10.157 5.865 10.264 5.89 10.373 5.89 L 14.247 5.89 C 14.569 5.89 14.888 5.962 15.181 6.1 C 15.474 6.239 15.735 6.441 15.946 6.693 C 16.157 6.945 16.314 7.241 16.405 7.561 C 16.496 7.881 16.52 8.218 16.475 8.549 Z",
+    fill: "currentColor",
+    fillRule: "evenodd"
+  })));
+  const __body8 = () => /*#__PURE__*/React.createElement("div", {
+    className: props.className,
+    style: {
+      width: 24,
+      height: 24,
+      overflow: "hidden",
+      position: "relative",
+      color: "rgb(71,85,105)",
+      ...props.style
+    }
+  }, /*#__PURE__*/React.createElement("svg", {
+    width: 18,
+    height: 18,
+    viewBox: "0 0 18 18",
+    fill: "none",
+    style: {
+      position: "absolute",
+      left: 3,
+      top: 3,
+      width: 18,
+      height: 18
+    }
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M 12 5.25 L 6 5.25 C 5.587 5.25 5.25 5.587 5.25 6 L 5.25 12 C 5.25 12.413 5.587 12.75 6 12.75 L 12 12.75 C 12.413 12.75 12.75 12.413 12.75 12 L 12.75 6 C 12.75 5.587 12.413 5.25 12 5.25 Z M 11.25 11.25 L 6.75 11.25 L 6.75 6.75 L 11.25 6.75 L 11.25 11.25 Z M 17.25 8.25 C 17.663 8.25 18 7.913 18 7.5 C 18 7.087 17.663 6.75 17.25 6.75 L 16.5 6.75 L 16.5 5.25 L 17.25 5.25 C 17.663 5.25 18 4.913 18 4.5 C 18 4.087 17.663 3.75 17.25 3.75 L 16.185 3.75 C 15.81 2.888 15.112 2.198 14.25 1.815 L 14.25 0.75 C 14.25 0.337 13.913 0 13.5 0 C 13.087 0 12.75 0.337 12.75 0.75 L 12.75 1.5 L 11.25 1.5 L 11.25 0.75 C 11.25 0.337 10.913 0 10.5 0 C 10.087 0 9.75 0.337 9.75 0.75 L 9.75 1.5 L 8.25 1.5 L 8.25 0.75 C 8.25 0.337 7.913 0 7.5 0 C 7.087 0 6.75 0.337 6.75 0.75 L 6.75 1.5 L 5.25 1.5 L 5.25 0.75 C 5.25 0.337 4.913 0 4.5 0 C 4.087 0 3.75 0.337 3.75 0.75 L 3.75 1.815 C 2.888 2.19 2.198 2.888 1.815 3.75 L 0.75 3.75 C 0.337 3.75 0 4.087 0 4.5 C 0 4.913 0.337 5.25 0.75 5.25 L 1.5 5.25 L 1.5 6.75 L 0.75 6.75 C 0.337 6.75 0 7.087 0 7.5 C 0 7.913 0.337 8.25 0.75 8.25 L 1.5 8.25 L 1.5 9.75 L 0.75 9.75 C 0.337 9.75 0 10.087 0 10.5 C 0 10.913 0.337 11.25 0.75 11.25 L 1.5 11.25 L 1.5 12.75 L 0.75 12.75 C 0.337 12.75 0 13.087 0 13.5 C 0 13.913 0.337 14.25 0.75 14.25 L 1.815 14.25 C 2.19 15.112 2.888 15.802 3.75 16.185 L 3.75 17.25 C 3.75 17.663 4.087 18 4.5 18 C 4.913 18 5.25 17.663 5.25 17.25 L 5.25 16.5 L 6.75 16.5 L 6.75 17.25 C 6.75 17.663 7.087 18 7.5 18 C 7.913 18 8.25 17.663 8.25 17.25 L 8.25 16.5 L 9.75 16.5 L 9.75 17.25 C 9.75 17.663 10.087 18 10.5 18 C 10.913 18 11.25 17.663 11.25 17.25 L 11.25 16.5 L 12.75 16.5 L 12.75 17.25 C 12.75 17.663 13.087 18 13.5 18 C 13.913 18 14.25 17.663 14.25 17.25 L 14.25 16.185 C 15.112 15.81 15.802 15.112 16.185 14.25 L 17.25 14.25 C 17.663 14.25 18 13.913 18 13.5 C 18 13.087 17.663 12.75 17.25 12.75 L 16.5 12.75 L 16.5 11.25 L 17.25 11.25 C 17.663 11.25 18 10.913 18 10.5 C 18 10.087 17.663 9.75 17.25 9.75 L 16.5 9.75 L 16.5 8.25 L 17.25 8.25 Z M 12.75 15 L 5.25 15 C 4.013 15 3 13.987 3 12.75 L 3 5.25 C 3 4.013 4.013 3 5.25 3 L 12.75 3 C 13.987 3 15 4.013 15 5.25 L 15 12.75 C 15 13.987 13.987 15 12.75 15 Z",
+    fill: "currentColor",
+    fillRule: "evenodd"
+  })));
+  const __body9 = () => /*#__PURE__*/React.createElement("div", {
+    className: props.className,
+    style: {
+      width: 24,
+      height: 24,
+      overflow: "hidden",
+      position: "relative",
+      color: "rgb(71,85,105)",
+      ...props.style
+    }
+  }, /*#__PURE__*/React.createElement("svg", {
+    width: 18,
+    height: 18,
+    viewBox: "0 0 18 18",
+    fill: "none",
+    style: {
+      position: "absolute",
+      left: 3,
+      top: 3,
+      width: 18,
+      height: 18
+    }
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M 14.503 11 C 13.937 11 13.379 11.139 12.878 11.403 C 12.377 11.668 11.947 12.05 11.627 12.518 L 6.751 10.314 C 7.097 9.476 7.099 8.536 6.755 7.698 L 11.624 5.482 C 12.099 6.17 12.804 6.664 13.612 6.876 C 14.42 7.087 15.277 7.002 16.027 6.635 C 16.777 6.269 17.371 5.645 17.702 4.877 C 18.032 4.11 18.077 3.249 17.827 2.451 C 17.578 1.653 17.051 0.972 16.343 0.529 C 15.634 0.087 14.791 -0.086 13.966 0.041 C 13.14 0.167 12.388 0.586 11.844 1.221 C 11.301 1.856 11.003 2.664 11.005 3.5 C 11.008 3.698 11.028 3.895 11.064 4.09 L 5.888 6.445 C 5.391 5.978 4.768 5.668 4.097 5.55 C 3.426 5.433 2.735 5.515 2.11 5.786 C 1.484 6.056 0.952 6.504 0.577 7.073 C 0.202 7.643 0.002 8.31 0 8.992 C -0.001 9.674 0.196 10.341 0.568 10.912 C 0.941 11.484 1.472 11.934 2.096 12.207 C 2.72 12.48 3.41 12.565 4.082 12.451 C 4.754 12.337 5.377 12.029 5.877 11.565 L 11.067 13.91 C 11.031 14.105 11.011 14.302 11.008 14.499 C 11.007 15.191 11.212 15.868 11.596 16.444 C 11.981 17.02 12.527 17.468 13.165 17.733 C 13.804 17.998 14.507 18.068 15.186 17.933 C 15.864 17.798 16.487 17.464 16.976 16.975 C 17.465 16.485 17.798 15.862 17.933 15.183 C 18.068 14.504 17.998 13.8 17.734 13.16 C 17.469 12.521 17.021 11.974 16.446 11.589 C 15.871 11.205 15.195 11 14.503 11 Z M 14.503 1.5 C 14.898 1.5 15.285 1.617 15.613 1.837 C 15.942 2.057 16.198 2.369 16.349 2.734 C 16.501 3.1 16.54 3.502 16.463 3.89 C 16.386 4.278 16.196 4.635 15.917 4.914 C 15.637 5.194 15.281 5.385 14.894 5.462 C 14.506 5.539 14.104 5.5 13.739 5.348 C 13.374 5.197 13.062 4.94 12.843 4.612 C 12.623 4.283 12.506 3.896 12.506 3.5 C 12.506 2.97 12.717 2.462 13.091 2.087 C 13.466 1.712 13.973 1.501 14.503 1.5 Z M 3.516 11 C 3.121 11 2.735 10.883 2.406 10.663 C 2.077 10.443 1.821 10.131 1.67 9.766 C 1.518 9.4 1.479 8.998 1.556 8.61 C 1.633 8.222 1.823 7.865 2.102 7.586 C 2.382 7.306 2.738 7.115 3.125 7.038 C 3.513 6.961 3.915 7 4.28 7.152 C 4.645 7.303 4.957 7.559 5.177 7.888 C 5.396 8.217 5.513 8.604 5.513 9 C 5.513 9.53 5.302 10.038 4.928 10.413 C 4.553 10.788 4.046 10.999 3.516 11 Z M 14.503 16.499 C 14.108 16.499 13.722 16.382 13.393 16.162 C 13.064 15.942 12.808 15.63 12.657 15.265 C 12.506 14.899 12.466 14.497 12.543 14.109 C 12.621 13.721 12.811 13.365 13.09 13.085 C 13.37 12.805 13.726 12.615 14.113 12.537 C 14.501 12.46 14.903 12.5 15.268 12.651 C 15.633 12.803 15.945 13.059 16.164 13.388 C 16.384 13.717 16.501 14.104 16.501 14.499 C 16.501 15.03 16.29 15.538 15.915 15.913 C 15.541 16.288 15.033 16.499 14.503 16.499 Z",
+    fill: "currentColor",
+    fillRule: "evenodd"
+  })));
+  const __body10 = () => /*#__PURE__*/React.createElement("div", {
+    className: props.className,
+    style: {
+      width: 24,
+      height: 24,
+      overflow: "hidden",
+      position: "relative",
+      color: "rgb(71,85,105)",
+      ...props.style
+    }
+  }, /*#__PURE__*/React.createElement("svg", {
+    width: 18,
+    height: 18,
+    viewBox: "0 0 18 18",
+    fill: "none",
+    style: {
+      position: "absolute",
+      left: 3,
+      top: 3,
+      width: 18,
+      height: 18
+    }
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M 11.27 18 L 6.73 18 L 6.73 15.365 C 5.941 15.089 5.21 14.67 4.574 14.131 L 2.27 15.45 L 0 11.55 L 2.303 10.234 C 2.152 9.418 2.152 8.582 2.303 7.766 L 0 6.45 L 2.27 2.55 L 4.574 3.869 C 5.21 3.33 5.941 2.911 6.73 2.635 L 6.73 0 L 11.27 0 L 11.27 2.635 C 12.059 2.911 12.79 3.33 13.426 3.869 L 15.73 2.55 L 18 6.45 L 15.697 7.766 C 15.848 8.582 15.848 9.418 15.697 10.234 L 18 11.55 L 15.73 15.45 L 13.426 14.131 C 12.79 14.671 12.059 15.089 11.27 15.365 L 11.27 18 Z M 8.243 16.5 L 9.757 16.5 L 9.757 14.23 L 10.325 14.084 C 11.257 13.845 12.106 13.358 12.779 12.675 L 13.19 12.26 L 15.175 13.396 L 15.932 12.097 L 13.949 10.963 L 14.105 10.403 C 14.361 9.483 14.361 8.511 14.105 7.591 L 13.949 7.031 L 15.932 5.897 L 15.175 4.597 L 13.19 5.737 L 12.779 5.325 C 12.106 4.644 11.257 4.157 10.325 3.919 L 9.757 3.77 L 9.757 1.5 L 8.243 1.5 L 8.243 3.77 L 7.675 3.916 C 6.743 4.155 5.894 4.642 5.221 5.325 L 4.81 5.74 L 2.825 4.601 L 2.068 5.899 L 4.051 7.034 L 3.895 7.594 C 3.639 8.514 3.639 9.486 3.895 10.406 L 4.051 10.966 L 2.068 12.101 L 2.825 13.399 L 4.81 12.263 L 5.221 12.678 C 5.894 13.359 6.743 13.846 7.675 14.084 L 8.243 14.23 L 8.243 16.5 Z M 9 12 C 8.401 12 7.816 11.824 7.318 11.494 C 6.821 11.165 6.433 10.696 6.203 10.148 C 5.974 9.6 5.914 8.997 6.031 8.415 C 6.148 7.833 6.436 7.298 6.86 6.879 C 7.283 6.459 7.822 6.173 8.409 6.058 C 8.997 5.942 9.605 6.001 10.158 6.228 C 10.711 6.455 11.184 6.84 11.517 7.333 C 11.849 7.827 12.027 8.407 12.027 9 C 12.027 9.796 11.708 10.559 11.14 11.121 C 10.573 11.684 9.803 12 9 12 Z M 9 7.5 C 8.701 7.5 8.408 7.588 8.159 7.753 C 7.91 7.918 7.716 8.152 7.602 8.426 C 7.487 8.7 7.457 9.002 7.516 9.293 C 7.574 9.584 7.718 9.851 7.93 10.061 C 8.141 10.27 8.411 10.413 8.705 10.471 C 8.998 10.529 9.303 10.499 9.579 10.386 C 9.856 10.272 10.092 10.08 10.258 9.833 C 10.425 9.587 10.513 9.297 10.513 9 C 10.513 8.602 10.354 8.221 10.07 7.939 C 9.786 7.658 9.401 7.5 9 7.5 Z",
+    fill: "currentColor",
+    fillRule: "evenodd"
+  })));
+  const __body11 = () => /*#__PURE__*/React.createElement("div", {
+    className: props.className,
+    style: {
+      width: 24,
+      height: 24,
+      overflow: "hidden",
+      position: "relative",
+      color: "rgb(71,85,105)",
+      ...props.style
+    }
+  }, /*#__PURE__*/React.createElement("svg", {
+    width: 14,
+    height: 14,
+    viewBox: "0 0 14 14",
+    fill: "none",
+    style: {
+      position: "absolute",
+      left: 5,
+      top: 5,
+      width: 14,
+      height: 14
+    }
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M 12.444 6.222 C 12.444 9.659 9.659 12.444 6.222 12.444 M 6.222 0 C 9.659 0 12.444 2.786 12.444 6.222 M 0 6.222 C 0 2.786 2.786 0 6.222 0 M 6.222 12.444 C 2.786 12.444 0 9.659 0 6.222 Z",
+    fill: "currentColor",
+    fillRule: "evenodd"
+  })));
+  const __body12 = () => /*#__PURE__*/React.createElement("div", {
+    className: props.className,
+    style: {
+      width: 24,
+      height: 24,
+      overflow: "hidden",
+      position: "relative",
+      color: "rgb(71,85,105)",
+      ...props.style
+    }
+  }, /*#__PURE__*/React.createElement("svg", {
+    width: 18,
+    height: 18,
+    viewBox: "0 0 18 18",
+    fill: "none",
+    style: {
+      position: "absolute",
+      left: 3,
+      top: 3,
+      width: 18,
+      height: 18
+    }
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M 9 1.5 C 9.999 1.503 10.987 1.704 11.907 2.09 C 12.828 2.476 13.662 3.041 14.362 3.75 L 12.011 3.75 C 11.812 3.75 11.62 3.829 11.479 3.97 C 11.338 4.11 11.259 4.301 11.259 4.5 C 11.259 4.699 11.338 4.89 11.479 5.03 C 11.62 5.171 11.812 5.25 12.011 5.25 L 15.131 5.25 C 15.501 5.25 15.857 5.103 16.119 4.842 C 16.381 4.581 16.528 4.227 16.529 3.857 L 16.529 0.75 C 16.529 0.551 16.449 0.361 16.308 0.22 C 16.167 0.079 15.975 0 15.776 0 C 15.576 0 15.385 0.079 15.243 0.22 C 15.102 0.361 15.023 0.551 15.023 0.75 L 15.023 2.309 C 13.779 1.192 12.247 0.443 10.599 0.145 C 8.952 -0.153 7.253 0.011 5.694 0.62 C 4.135 1.229 2.777 2.258 1.772 3.593 C 0.767 4.927 0.154 6.514 0.003 8.175 C -0.006 8.279 0.006 8.385 0.039 8.484 C 0.073 8.584 0.126 8.675 0.197 8.753 C 0.268 8.83 0.354 8.892 0.451 8.935 C 0.547 8.978 0.651 9 0.756 9 C 0.94 9.002 1.119 8.936 1.256 8.814 C 1.394 8.693 1.481 8.524 1.501 8.342 C 1.668 6.475 2.531 4.738 3.918 3.472 C 5.306 2.206 7.118 1.503 9 1.5 Z",
+    fill: "currentColor",
+    fillRule: "evenodd"
+  }), /*#__PURE__*/React.createElement("path", {
+    d: "M 17.245 9 C 17.061 8.998 16.882 9.064 16.744 9.186 C 16.607 9.307 16.52 9.476 16.5 9.658 C 16.376 11.086 15.843 12.448 14.965 13.583 C 14.087 14.717 12.9 15.577 11.546 16.061 C 10.192 16.544 8.728 16.63 7.326 16.309 C 5.924 15.988 4.644 15.274 3.638 14.25 L 5.989 14.25 C 6.188 14.25 6.38 14.171 6.521 14.03 C 6.662 13.89 6.741 13.699 6.741 13.5 C 6.741 13.301 6.662 13.11 6.521 12.97 C 6.38 12.829 6.188 12.75 5.989 12.75 L 2.869 12.75 C 2.686 12.75 2.504 12.786 2.334 12.856 C 2.165 12.926 2.01 13.028 1.881 13.158 C 1.751 13.287 1.648 13.441 1.578 13.61 C 1.507 13.779 1.471 13.96 1.471 14.143 L 1.471 17.25 C 1.471 17.449 1.551 17.639 1.692 17.78 C 1.833 17.921 2.025 18 2.224 18 C 2.424 18 2.615 17.921 2.757 17.78 C 2.898 17.639 2.977 17.449 2.977 17.25 L 2.977 15.691 C 4.221 16.808 5.753 17.557 7.401 17.855 C 9.048 18.153 10.747 17.989 12.306 17.38 C 13.865 16.771 15.223 15.742 16.228 14.407 C 17.233 13.073 17.846 11.486 17.997 9.825 C 18.006 9.721 17.994 9.615 17.961 9.516 C 17.927 9.416 17.874 9.325 17.803 9.247 C 17.732 9.17 17.646 9.108 17.549 9.065 C 17.453 9.022 17.35 9 17.245 9 Z",
+    fill: "currentColor",
+    fillRule: "evenodd"
+  })));
+  const __body13 = () => /*#__PURE__*/React.createElement("div", {
+    className: props.className,
+    style: {
+      width: 24,
+      height: 24,
+      overflow: "hidden",
+      position: "relative",
+      color: "rgb(71,85,105)",
+      ...props.style
+    }
+  }, /*#__PURE__*/React.createElement("svg", {
+    width: 18,
+    height: 18,
+    viewBox: "0 0 18 18",
+    fill: "none",
+    style: {
+      position: "absolute",
+      left: 3,
+      top: 3,
+      width: 18,
+      height: 18
+    }
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M 13.992 0.697 L 4.848 9.841 C 4.499 10.189 4.222 10.602 4.033 11.057 C 3.845 11.512 3.749 12 3.75 12.493 L 3.75 13.5 C 3.75 13.699 3.829 13.89 3.97 14.03 C 4.11 14.171 4.301 14.25 4.5 14.25 L 5.507 14.25 C 6 14.251 6.488 14.155 6.943 13.967 C 7.398 13.778 7.811 13.501 8.158 13.152 L 17.302 4.008 C 17.741 3.569 17.987 2.973 17.987 2.353 C 17.987 1.732 17.741 1.137 17.302 0.697 C 16.857 0.271 16.264 0.034 15.647 0.034 C 15.031 0.034 14.438 0.271 13.992 0.697 Z M 16.242 2.947 L 7.098 12.091 C 6.675 12.512 6.103 12.748 5.507 12.75 L 5.25 12.75 L 5.25 12.493 C 5.252 11.896 5.488 11.325 5.908 10.902 L 15.052 1.758 C 15.213 1.605 15.426 1.52 15.647 1.52 C 15.869 1.52 16.082 1.605 16.242 1.758 C 16.399 1.916 16.488 2.13 16.488 2.353 C 16.488 2.576 16.399 2.79 16.242 2.947 Z",
+    fill: "currentColor",
+    fillRule: "evenodd"
+  }), /*#__PURE__*/React.createElement("path", {
+    d: "M 17.25 6.734 C 17.051 6.734 16.86 6.813 16.72 6.954 C 16.579 7.095 16.5 7.285 16.5 7.484 L 16.5 11.25 L 13.5 11.25 C 12.903 11.25 12.331 11.487 11.909 11.909 C 11.487 12.331 11.25 12.903 11.25 13.5 L 11.25 16.5 L 3.75 16.5 C 3.153 16.5 2.581 16.263 2.159 15.841 C 1.737 15.419 1.5 14.847 1.5 14.25 L 1.5 3.75 C 1.5 3.153 1.737 2.581 2.159 2.159 C 2.581 1.737 3.153 1.5 3.75 1.5 L 10.531 1.5 C 10.73 1.5 10.921 1.421 11.062 1.28 C 11.202 1.14 11.281 0.949 11.281 0.75 C 11.281 0.551 11.202 0.36 11.062 0.22 C 10.921 0.079 10.73 0 10.531 0 L 3.75 0 C 2.756 0.001 1.803 0.397 1.1 1.1 C 0.397 1.803 0.001 2.756 0 3.75 L 0 14.25 C 0.001 15.244 0.397 16.197 1.1 16.9 C 1.803 17.603 2.756 17.999 3.75 18 L 12.257 18 C 12.75 18.001 13.238 17.905 13.693 17.717 C 14.148 17.528 14.562 17.251 14.909 16.902 L 16.901 14.908 C 17.251 14.561 17.528 14.148 17.716 13.693 C 17.905 13.238 18.001 12.75 18 12.257 L 18 7.484 C 18 7.285 17.921 7.095 17.78 6.954 C 17.64 6.813 17.449 6.734 17.25 6.734 Z M 13.849 15.841 C 13.547 16.142 13.166 16.35 12.75 16.441 L 12.75 13.5 C 12.75 13.301 12.829 13.11 12.97 12.97 C 13.11 12.829 13.301 12.75 13.5 12.75 L 16.444 12.75 C 16.351 13.165 16.143 13.546 15.844 13.848 L 13.849 15.841 Z",
+    fill: "currentColor",
+    fillRule: "evenodd"
+  })));
+  const __body14 = () => /*#__PURE__*/React.createElement("div", {
+    className: props.className,
+    style: {
+      width: 24,
+      height: 24,
+      overflow: "hidden",
+      position: "relative",
+      color: "rgb(71,85,105)",
+      ...props.style
+    }
+  }, /*#__PURE__*/React.createElement("svg", {
+    width: 18,
+    height: 18,
+    viewBox: "0 0 18 18",
+    fill: "none",
+    style: {
+      position: "absolute",
+      left: 3,
+      top: 3,
+      width: 18,
+      height: 18
+    }
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M 15.892 8.452 C 15.454 8.452 15.098 8.807 15.098 9.247 L 15.098 14.022 C 15.098 15.338 14.028 16.409 12.714 16.409 L 3.973 16.409 C 2.659 16.409 1.589 15.338 1.589 14.022 L 1.589 5.269 C 1.589 3.953 2.659 2.882 3.973 2.882 L 9.535 2.882 C 9.974 2.882 10.33 2.526 10.33 2.086 C 10.33 1.646 9.974 1.291 9.535 1.291 L 3.973 1.291 C 1.782 1.291 0 3.075 0 5.269 L 0 14.022 C 0 16.215 1.782 18 3.973 18 L 12.714 18 C 14.905 18 16.687 16.215 16.687 14.022 L 16.687 9.247 C 16.687 8.807 16.331 8.452 15.892 8.452 Z",
+    fill: "currentColor",
+    fillRule: "evenodd"
+  }), /*#__PURE__*/React.createElement("path", {
+    d: "M 14.361 0.606 L 6.032 8.946 C 5.714 9.263 5.462 9.64 5.291 10.055 C 5.119 10.47 5.031 10.915 5.032 11.364 L 5.032 12.283 C 5.032 12.464 5.104 12.638 5.232 12.767 C 5.361 12.895 5.534 12.967 5.716 12.967 L 6.633 12.967 C 7.082 12.968 7.526 12.88 7.941 12.708 C 8.355 12.536 8.731 12.284 9.048 11.965 L 17.377 3.625 C 17.776 3.224 18 2.681 18 2.115 C 18 1.549 17.776 1.006 17.377 0.606 C 16.971 0.217 16.431 0 15.869 0 C 15.307 0 14.767 0.217 14.361 0.606 Z M 16.411 2.658 L 8.082 10.998 C 7.697 11.381 7.176 11.597 6.633 11.599 L 6.399 11.599 L 6.399 11.364 C 6.4 10.82 6.616 10.299 6.998 9.913 L 15.327 1.573 C 15.473 1.433 15.667 1.355 15.869 1.355 C 16.071 1.355 16.265 1.433 16.411 1.573 C 16.554 1.717 16.635 1.912 16.635 2.115 C 16.635 2.319 16.554 2.514 16.411 2.658 Z",
+    fill: "currentColor",
+    fillRule: "evenodd"
+  })));
+  const __body15 = () => /*#__PURE__*/React.createElement("div", {
+    className: props.className,
+    style: {
+      width: 24,
+      height: 24,
+      overflow: "hidden",
+      position: "relative",
+      color: "rgb(71,85,105)",
+      ...props.style
+    }
+  }, /*#__PURE__*/React.createElement("svg", {
+    width: 18,
+    height: 18,
+    viewBox: "0 0 18 18",
+    fill: "none",
+    style: {
+      position: "absolute",
+      left: 3,
+      top: 3,
+      width: 18,
+      height: 18
+    }
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M 17.34 0.661 C 17.071 0.389 16.736 0.191 16.368 0.086 C 16 -0.02 15.611 -0.028 15.239 0.061 L 3.238 2.589 C 2.547 2.683 1.896 2.969 1.358 3.414 C 0.821 3.859 0.418 4.445 0.196 5.106 C -0.027 5.767 -0.06 6.477 0.099 7.156 C 0.258 7.835 0.604 8.456 1.098 8.95 L 2.386 10.237 C 2.456 10.307 2.511 10.39 2.549 10.481 C 2.587 10.572 2.606 10.67 2.606 10.768 L 2.606 13.144 C 2.608 13.478 2.685 13.808 2.831 14.108 L 2.825 14.113 L 2.845 14.133 C 3.064 14.575 3.423 14.932 3.866 15.15 L 3.886 15.169 L 3.891 15.163 C 4.191 15.31 4.521 15.387 4.855 15.388 L 7.231 15.388 C 7.43 15.388 7.621 15.467 7.762 15.607 L 9.049 16.895 C 9.395 17.244 9.806 17.522 10.259 17.711 C 10.712 17.901 11.199 17.999 11.69 18 C 12.099 17.999 12.506 17.933 12.894 17.802 C 13.549 17.587 14.131 17.193 14.574 16.665 C 15.017 16.137 15.304 15.495 15.402 14.812 L 17.934 2.786 C 18.027 2.411 18.022 2.017 17.918 1.645 C 17.813 1.272 17.614 0.933 17.34 0.661 Z M 3.448 9.178 L 2.159 7.89 C 1.859 7.598 1.648 7.225 1.552 6.817 C 1.456 6.408 1.479 5.981 1.617 5.585 C 1.752 5.179 2 4.819 2.332 4.55 C 2.665 4.281 3.067 4.112 3.493 4.065 L 15.375 1.564 L 4.105 12.835 L 4.105 10.768 C 4.106 10.473 4.049 10.181 3.936 9.908 C 3.823 9.635 3.658 9.387 3.448 9.178 Z M 13.928 14.556 C 13.87 14.97 13.699 15.36 13.432 15.682 C 13.165 16.004 12.813 16.245 12.417 16.379 C 12.02 16.512 11.594 16.532 11.187 16.437 C 10.78 16.342 10.407 16.135 10.111 15.84 L 8.821 14.55 C 8.612 14.341 8.365 14.175 8.092 14.062 C 7.819 13.948 7.527 13.891 7.231 13.891 L 5.165 13.891 L 16.436 2.625 L 13.928 14.556 Z",
+    fill: "currentColor",
+    fillRule: "evenodd"
+  })));
+  const __body16 = () => /*#__PURE__*/React.createElement("div", {
+    className: props.className,
+    style: {
+      width: 24,
+      height: 24,
+      overflow: "hidden",
+      position: "relative",
+      color: "rgb(71,85,105)",
+      ...props.style
+    }
+  }, /*#__PURE__*/React.createElement("svg", {
+    width: 18,
+    height: 14,
+    viewBox: "0 0 18 14",
+    fill: "none",
+    style: {
+      position: "absolute",
+      left: 3,
+      top: 5,
+      width: 18,
+      height: 14
+    }
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M 17.866 6.363 C 17.208 4.87 14.625 0 9 0 C 3.375 0 0.793 4.87 0.134 6.363 C 0.046 6.563 0 6.781 0 7.001 C 0 7.221 0.046 7.438 0.134 7.639 C 0.793 9.13 3.375 14 9 14 C 14.625 14 17.208 9.13 17.866 7.637 C 17.954 7.437 18 7.22 18 7 C 18 6.78 17.954 6.563 17.866 6.363 Z M 9 12.444 C 4.27 12.444 2.062 8.271 1.5 7.009 C 2.062 5.729 4.27 1.556 9 1.556 C 13.719 1.556 15.927 5.711 16.5 7 C 15.927 8.289 13.719 12.444 9 12.444 Z",
+    fill: "currentColor",
+    fillRule: "evenodd"
+  }), /*#__PURE__*/React.createElement("path", {
+    d: "M 9 3.111 C 8.258 3.111 7.533 3.339 6.917 3.767 C 6.3 4.194 5.819 4.801 5.535 5.512 C 5.252 6.222 5.177 7.004 5.322 7.759 C 5.467 8.513 5.824 9.206 6.348 9.75 C 6.873 10.294 7.541 10.664 8.269 10.814 C 8.996 10.964 9.75 10.887 10.435 10.593 C 11.12 10.299 11.706 9.8 12.118 9.161 C 12.53 8.521 12.75 7.769 12.75 7 C 12.749 5.969 12.354 4.981 11.651 4.252 C 10.948 3.522 9.994 3.112 9 3.111 Z M 9 9.333 C 8.555 9.333 8.12 9.196 7.75 8.94 C 7.38 8.684 7.092 8.319 6.921 7.893 C 6.751 7.467 6.706 6.997 6.793 6.545 C 6.88 6.092 7.094 5.676 7.409 5.35 C 7.724 5.024 8.125 4.802 8.561 4.712 C 8.998 4.621 9.45 4.668 9.861 4.844 C 10.272 5.021 10.624 5.32 10.871 5.704 C 11.118 6.087 11.25 6.539 11.25 7 C 11.25 7.619 11.013 8.212 10.591 8.65 C 10.169 9.088 9.597 9.333 9 9.333 Z",
+    fill: "currentColor",
+    fillRule: "evenodd"
+  })));
+  const __body17 = () => /*#__PURE__*/React.createElement("div", {
+    className: props.className,
+    style: {
+      width: 24,
+      height: 24,
+      overflow: "hidden",
+      position: "relative",
+      color: "rgb(71,85,105)",
+      ...props.style
+    }
+  }, /*#__PURE__*/React.createElement("svg", {
+    width: 18,
+    height: 15,
+    viewBox: "0 0 18 15",
+    fill: "none",
+    style: {
+      position: "absolute",
+      left: 3,
+      top: 4,
+      width: 18,
+      height: 15
+    }
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M 17.963 6.781 L 17.434 3.135 C 17.304 2.267 16.859 1.474 16.178 0.899 C 15.497 0.323 14.627 0.004 13.725 0 L 3.75 0 C 2.756 0.001 1.803 0.386 1.1 1.069 C 0.397 1.752 0.001 2.679 0 3.645 L 0 7.291 C 0.001 8.257 0.397 9.184 1.1 9.867 C 1.803 10.551 2.756 10.935 3.75 10.936 L 5.784 10.936 L 7.219 13.764 C 7.461 14.24 7.87 14.617 8.373 14.824 C 8.876 15.032 9.439 15.056 9.959 14.894 C 10.48 14.732 10.922 14.393 11.207 13.939 C 11.492 13.486 11.599 12.948 11.51 12.424 L 11.258 10.936 L 14.25 10.936 C 14.787 10.936 15.317 10.824 15.806 10.608 C 16.294 10.391 16.729 10.075 17.081 9.681 C 17.433 9.287 17.694 8.825 17.846 8.324 C 17.998 7.824 18.038 7.297 17.963 6.781 Z M 3.75 1.458 L 5.25 1.458 L 5.25 9.478 L 3.75 9.478 C 3.153 9.478 2.581 9.248 2.159 8.838 C 1.737 8.427 1.5 7.871 1.5 7.291 L 1.5 3.645 C 1.5 3.065 1.737 2.509 2.159 2.099 C 2.581 1.689 3.153 1.458 3.75 1.458 Z M 15.948 8.726 C 15.737 8.962 15.476 9.151 15.183 9.281 C 14.89 9.411 14.572 9.478 14.25 9.478 L 10.375 9.478 C 10.266 9.478 10.158 9.501 10.06 9.546 C 9.961 9.59 9.873 9.655 9.803 9.735 C 9.732 9.816 9.681 9.91 9.652 10.012 C 9.623 10.114 9.617 10.221 9.634 10.325 L 10.03 12.658 C 10.049 12.767 10.044 12.878 10.013 12.984 C 9.983 13.09 9.929 13.188 9.856 13.271 C 9.769 13.361 9.662 13.431 9.543 13.473 C 9.423 13.515 9.295 13.53 9.169 13.515 C 9.043 13.5 8.923 13.456 8.817 13.386 C 8.712 13.317 8.625 13.225 8.564 13.116 L 6.922 9.885 C 6.879 9.804 6.821 9.732 6.75 9.672 L 6.75 1.458 L 13.725 1.458 C 14.267 1.46 14.789 1.651 15.198 1.997 C 15.607 2.342 15.875 2.819 15.952 3.34 L 16.482 6.985 C 16.526 7.296 16.502 7.612 16.409 7.912 C 16.317 8.212 16.16 8.49 15.948 8.726 Z",
+    fill: "currentColor",
+    fillRule: "evenodd"
+  })));
+  const __body18 = () => /*#__PURE__*/React.createElement("div", {
+    className: props.className,
+    style: {
+      width: 24,
+      height: 24,
+      overflow: "hidden",
+      position: "relative",
+      color: "rgb(71,85,105)",
+      ...props.style
+    }
+  }, /*#__PURE__*/React.createElement("svg", {
+    width: 18,
+    height: 18,
+    viewBox: "0 0 18 18",
+    fill: "none",
+    style: {
+      position: "absolute",
+      left: 3,
+      top: 3,
+      width: 18,
+      height: 18
+    }
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M 9.018 18 C 4.045 18 0 13.954 0 8.983 C 0 4.306 3.506 0.447 8.156 0.005 C 8.518 -0.037 8.847 0.172 8.986 0.501 C 9.126 0.829 9.037 1.211 8.766 1.443 C 7.871 2.213 7.436 3.543 7.436 5.509 C 7.436 9.716 9.37 10.561 12.491 10.561 C 14.506 10.561 15.797 10.138 16.556 9.232 C 16.785 8.956 17.169 8.865 17.498 9.002 C 17.828 9.141 18.031 9.479 17.996 9.836 C 17.558 14.49 13.698 17.999 9.018 17.999 L 9.018 18 Z M 6.366 2.09 C 3.569 3.154 1.636 5.842 1.636 8.982 C 1.636 13.05 4.948 16.359 9.018 16.359 C 12.153 16.359 14.84 14.435 15.908 11.65 C 14.75 12.125 13.486 12.202 12.491 12.202 C 9.618 12.202 5.799 11.508 5.799 5.51 C 5.799 4.154 5.987 3.02 6.366 2.09 Z",
+    fill: "currentColor",
+    fillRule: "evenodd"
+  })));
+  const __body19 = () => /*#__PURE__*/React.createElement("div", {
+    className: props.className,
+    style: {
+      width: 24,
+      height: 24,
+      overflow: "hidden",
+      position: "relative",
+      color: "rgb(71,85,105)",
+      ...props.style
+    }
+  }, /*#__PURE__*/React.createElement("svg", {
+    width: 17,
+    height: 20,
+    viewBox: "0 0 17 20",
+    fill: "none",
+    style: {
+      position: "absolute",
+      left: 4,
+      top: 2,
+      width: 17,
+      height: 20
+    }
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M 12.75 11.667 C 12.75 11.888 12.66 12.1 12.501 12.256 C 12.342 12.412 12.125 12.5 11.9 12.5 L 5.1 12.5 C 4.875 12.5 4.658 12.412 4.499 12.256 C 4.34 12.1 4.25 11.888 4.25 11.667 C 4.25 11.446 4.34 11.234 4.499 11.077 C 4.658 10.921 4.875 10.833 5.1 10.833 L 11.9 10.833 C 12.125 10.833 12.342 10.921 12.501 11.077 C 12.66 11.234 12.75 11.446 12.75 11.667 Z M 9.35 14.167 L 5.1 14.167 C 4.875 14.167 4.658 14.254 4.499 14.411 C 4.34 14.567 4.25 14.779 4.25 15 C 4.25 15.221 4.34 15.433 4.499 15.589 C 4.658 15.746 4.875 15.833 5.1 15.833 L 9.35 15.833 C 9.575 15.833 9.792 15.746 9.951 15.589 C 10.11 15.433 10.2 15.221 10.2 15 C 10.2 14.779 10.11 14.567 9.951 14.411 C 9.792 14.254 9.575 14.167 9.35 14.167 Z M 17 8.738 L 17 15.833 C 16.999 16.938 16.55 17.997 15.754 18.778 C 14.957 19.559 13.877 19.999 12.75 20 L 4.25 20 C 3.123 19.999 2.043 19.559 1.246 18.778 C 0.45 17.997 0.001 16.938 0 15.833 L 0 4.167 C 0.001 3.062 0.45 2.003 1.246 1.222 C 2.043 0.441 3.123 0.001 4.25 0 L 8.088 0 C 8.869 -0.002 9.644 0.148 10.366 0.441 C 11.088 0.734 11.744 1.165 12.295 1.708 L 15.257 4.613 C 15.811 5.154 16.251 5.796 16.55 6.504 C 16.849 7.212 17.002 7.971 17 8.738 Z M 11.093 2.887 C 10.826 2.633 10.525 2.414 10.2 2.237 L 10.2 5.833 C 10.2 6.054 10.29 6.266 10.449 6.423 C 10.608 6.579 10.825 6.667 11.05 6.667 L 14.719 6.667 C 14.537 6.348 14.314 6.053 14.055 5.792 L 11.093 2.887 Z M 15.3 8.738 C 15.3 8.6 15.273 8.468 15.26 8.333 L 11.05 8.333 C 10.374 8.333 9.725 8.07 9.247 7.601 C 8.769 7.132 8.5 6.496 8.5 5.833 L 8.5 1.706 C 8.362 1.693 8.227 1.667 8.088 1.667 L 4.25 1.667 C 3.574 1.667 2.925 1.93 2.447 2.399 C 1.969 2.868 1.7 3.504 1.7 4.167 L 1.7 15.833 C 1.7 16.496 1.969 17.132 2.447 17.601 C 2.925 18.07 3.574 18.333 4.25 18.333 L 12.75 18.333 C 13.426 18.333 14.075 18.07 14.553 17.601 C 15.031 17.132 15.3 16.496 15.3 15.833 L 15.3 8.738 Z",
+    fill: "currentColor",
+    fillRule: "evenodd"
+  })));
+  const __body20 = () => /*#__PURE__*/React.createElement("div", {
+    className: props.className,
+    style: {
+      width: 24,
+      height: 24,
+      overflow: "hidden",
+      position: "relative",
+      color: "rgb(71,85,105)",
+      ...props.style
+    }
+  }, /*#__PURE__*/React.createElement("svg", {
+    width: 18,
+    height: 20,
+    viewBox: "0 0 18 20",
+    fill: "none",
+    style: {
+      position: "absolute",
+      left: 3,
+      top: 2,
+      width: 18,
+      height: 20
+    }
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M 15.96 3.469 L 11.04 0.558 C 10.42 0.192 9.716 0 9 0 C 8.284 0 7.58 0.192 6.96 0.558 L 2.04 3.469 C 1.421 3.836 0.906 4.364 0.548 5 C 0.19 5.635 0.001 6.356 0 7.09 L 0 12.91 C 0.001 13.644 0.19 14.365 0.548 15 C 0.906 15.636 1.421 16.164 2.04 16.532 L 6.96 19.441 C 7.58 19.807 8.284 20 9 20 C 9.716 20 10.42 19.807 11.04 19.441 L 15.96 16.532 C 16.579 16.164 17.094 15.636 17.452 15 C 17.81 14.365 17.999 13.644 18 12.91 L 18 7.09 C 17.999 6.356 17.81 5.635 17.452 5 C 17.094 4.364 16.579 3.836 15.96 3.469 Z M 7.776 2.008 C 8.148 1.787 8.57 1.671 9 1.671 C 9.43 1.671 9.852 1.787 10.224 2.008 L 15.143 4.917 C 15.268 4.998 15.385 5.09 15.494 5.193 L 10.439 8.183 C 10.001 8.441 9.505 8.577 9 8.577 C 8.495 8.577 7.999 8.441 7.561 8.183 L 2.506 5.193 C 2.615 5.09 2.732 4.998 2.857 4.917 L 7.776 2.008 Z M 2.857 15.083 C 2.485 14.862 2.176 14.545 1.961 14.163 C 1.746 13.782 1.633 13.349 1.632 12.908 L 1.632 7.09 C 1.638 6.939 1.657 6.789 1.69 6.642 L 6.745 9.632 C 7.191 9.892 7.678 10.072 8.184 10.163 L 8.184 18.165 C 8.043 18.121 7.906 18.063 7.776 17.993 L 2.857 15.083 Z M 16.368 12.908 C 16.367 13.349 16.254 13.782 16.039 14.163 C 15.824 14.545 15.515 14.862 15.143 15.083 L 10.224 17.993 C 10.094 18.063 9.957 18.121 9.816 18.165 L 9.816 10.163 C 10.322 10.072 10.809 9.892 11.255 9.632 L 16.31 6.642 C 16.343 6.789 16.362 6.939 16.368 7.09 L 16.368 12.908 Z",
+    fill: "currentColor",
+    fillRule: "evenodd"
+  })));
+  const __body21 = () => /*#__PURE__*/React.createElement("div", {
+    className: props.className,
+    style: {
+      width: 24,
+      height: 24,
+      overflow: "hidden",
+      position: "relative",
+      color: "rgb(71,85,105)",
+      ...props.style
+    }
+  }, /*#__PURE__*/React.createElement("svg", {
+    width: 18,
+    height: 19,
+    viewBox: "0 0 18 19",
+    fill: "none",
+    style: {
+      position: "absolute",
+      left: 3,
+      top: 2,
+      width: 18,
+      height: 19
+    }
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M 17.771 7.579 C 17.467 7.269 16.974 7.269 16.671 7.579 L 8.197 16.252 C 6.678 17.801 4.215 17.801 2.696 16.253 C 1.176 14.705 1.176 12.194 2.695 10.646 L 10.902 2.247 C 11.821 1.326 13.298 1.338 14.203 2.274 C 15.096 3.2 15.096 4.685 14.203 5.611 L 5.996 14.009 C 5.689 14.309 5.204 14.309 4.896 14.009 C 4.592 13.7 4.592 13.198 4.896 12.888 L 12.203 5.407 C 12.501 5.092 12.493 4.59 12.184 4.286 C 11.882 3.989 11.404 3.989 11.103 4.286 L 3.796 11.767 C 2.884 12.696 2.884 14.202 3.796 15.131 C 3.796 15.131 3.796 15.131 3.796 15.131 C 4.72 16.03 6.173 16.03 7.097 15.131 L 15.303 6.732 C 16.803 5.164 16.771 2.654 15.233 1.126 C 13.722 -0.375 11.313 -0.375 9.802 1.126 L 1.595 9.525 C -0.532 11.692 -0.532 15.207 1.595 17.374 C 3.722 19.542 7.17 19.542 9.297 17.374 L 17.771 8.703 C 18.075 8.394 18.077 7.892 17.774 7.582 C 17.773 7.581 17.772 7.58 17.771 7.579 Z",
+    fill: "currentColor",
+    fillRule: "evenodd"
+  })));
+  const __body22 = () => /*#__PURE__*/React.createElement("div", {
+    className: props.className,
+    style: {
+      width: 24,
+      height: 24,
+      overflow: "hidden",
+      position: "relative",
+      color: "rgb(71,85,105)",
+      ...props.style
+    }
+  }, /*#__PURE__*/React.createElement("svg", {
+    width: 18,
+    height: 18,
+    viewBox: "0 0 18 18",
+    fill: "none",
+    style: {
+      position: "absolute",
+      left: 3,
+      top: 3,
+      width: 18,
+      height: 18
+    }
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M 17.25 16.5 L 3.75 16.5 C 3.153 16.5 2.581 16.263 2.159 15.841 C 1.737 15.419 1.5 14.847 1.5 14.25 L 1.5 0.75 C 1.5 0.551 1.421 0.36 1.28 0.22 C 1.14 0.079 0.949 0 0.75 0 C 0.551 0 0.36 0.079 0.22 0.22 C 0.079 0.36 0 0.551 0 0.75 L 0 14.25 C 0.001 15.244 0.397 16.197 1.1 16.9 C 1.803 17.603 2.756 17.999 3.75 18 L 17.25 18 C 17.449 18 17.64 17.921 17.78 17.78 C 17.921 17.64 18 17.449 18 17.25 C 18 17.051 17.921 16.86 17.78 16.72 C 17.64 16.579 17.449 16.5 17.25 16.5 Z",
+    fill: "currentColor",
+    fillRule: "evenodd"
+  }), /*#__PURE__*/React.createElement("path", {
+    d: "M 4.5 15 C 4.699 15 4.89 14.921 5.03 14.78 C 5.171 14.64 5.25 14.449 5.25 14.25 L 5.25 9 C 5.25 8.801 5.171 8.61 5.03 8.47 C 4.89 8.329 4.699 8.25 4.5 8.25 C 4.301 8.25 4.11 8.329 3.97 8.47 C 3.829 8.61 3.75 8.801 3.75 9 L 3.75 14.25 C 3.75 14.449 3.829 14.64 3.97 14.78 C 4.11 14.921 4.301 15 4.5 15 Z",
+    fill: "currentColor",
+    fillRule: "evenodd"
+  }), /*#__PURE__*/React.createElement("path", {
+    d: "M 7.5 7.5 L 7.5 14.25 C 7.5 14.449 7.579 14.64 7.72 14.78 C 7.86 14.921 8.051 15 8.25 15 C 8.449 15 8.64 14.921 8.78 14.78 C 8.921 14.64 9 14.449 9 14.25 L 9 7.5 C 9 7.301 8.921 7.11 8.78 6.97 C 8.64 6.829 8.449 6.75 8.25 6.75 C 8.051 6.75 7.86 6.829 7.72 6.97 C 7.579 7.11 7.5 7.301 7.5 7.5 Z",
+    fill: "currentColor",
+    fillRule: "evenodd"
+  }), /*#__PURE__*/React.createElement("path", {
+    d: "M 11.25 9.75 L 11.25 14.25 C 11.25 14.449 11.329 14.64 11.47 14.78 C 11.61 14.921 11.801 15 12 15 C 12.199 15 12.39 14.921 12.53 14.78 C 12.671 14.64 12.75 14.449 12.75 14.25 L 12.75 9.75 C 12.75 9.551 12.671 9.36 12.53 9.22 C 12.39 9.079 12.199 9 12 9 C 11.801 9 11.61 9.079 11.47 9.22 C 11.329 9.36 11.25 9.551 11.25 9.75 Z",
+    fill: "currentColor",
+    fillRule: "evenodd"
+  }), /*#__PURE__*/React.createElement("path", {
+    d: "M 15 6.75 L 15 14.25 C 15 14.449 15.079 14.64 15.22 14.78 C 15.36 14.921 15.551 15 15.75 15 C 15.949 15 16.14 14.921 16.28 14.78 C 16.421 14.64 16.5 14.449 16.5 14.25 L 16.5 6.75 C 16.5 6.551 16.421 6.36 16.28 6.22 C 16.14 6.079 15.949 6 15.75 6 C 15.551 6 15.36 6.079 15.22 6.22 C 15.079 6.36 15 6.551 15 6.75 Z",
+    fill: "currentColor",
+    fillRule: "evenodd"
+  }), /*#__PURE__*/React.createElement("path", {
+    d: "M 4.5 6.75 C 4.699 6.75 4.89 6.671 5.03 6.53 L 7.72 3.841 C 7.863 3.705 8.053 3.629 8.25 3.629 C 8.447 3.629 8.637 3.705 8.78 3.841 L 10.409 5.47 C 10.831 5.892 11.403 6.129 12 6.129 C 12.597 6.129 13.169 5.892 13.591 5.47 L 17.78 1.28 C 17.917 1.139 17.992 0.949 17.991 0.753 C 17.989 0.556 17.91 0.368 17.771 0.229 C 17.632 0.09 17.444 0.011 17.247 0.009 C 17.051 0.008 16.861 0.083 16.72 0.22 L 12.53 4.408 C 12.39 4.549 12.199 4.628 12 4.628 C 11.801 4.628 11.61 4.549 11.47 4.408 L 9.841 2.78 C 9.419 2.358 8.847 2.121 8.25 2.121 C 7.653 2.121 7.081 2.358 6.659 2.78 L 3.97 5.47 C 3.865 5.575 3.793 5.708 3.765 5.854 C 3.736 5.999 3.75 6.15 3.807 6.287 C 3.864 6.424 3.96 6.541 4.083 6.624 C 4.207 6.706 4.352 6.75 4.5 6.75 Z",
+    fill: "currentColor",
+    fillRule: "evenodd"
+  })));
+  const __body23 = () => /*#__PURE__*/React.createElement("div", {
+    className: props.className,
+    style: {
+      width: 24,
+      height: 24,
+      overflow: "hidden",
+      position: "relative",
+      color: "rgb(71,85,105)",
+      ...props.style
+    }
+  }, /*#__PURE__*/React.createElement("svg", {
+    width: 18,
+    height: 18,
+    viewBox: "0 0 18 18",
+    fill: "none",
+    style: {
+      position: "absolute",
+      left: 3,
+      top: 3,
+      width: 18,
+      height: 18
+    }
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M 9 12.75 C 6.93 12.75 5.25 11.07 5.25 9 C 5.25 6.93 6.93 5.25 9 5.25 C 11.07 5.25 12.75 6.93 12.75 9 C 12.75 11.07 11.07 12.75 9 12.75 Z M 9 6.75 C 7.763 6.75 6.75 7.763 6.75 9 C 6.75 10.237 7.763 11.25 9 11.25 C 10.237 11.25 11.25 10.237 11.25 9 C 11.25 7.763 10.237 6.75 9 6.75 Z M 9.75 3 L 9.75 0.75 C 9.75 0.337 9.413 0 9 0 C 8.587 0 8.25 0.337 8.25 0.75 L 8.25 3 C 8.25 3.413 8.587 3.75 9 3.75 C 9.413 3.75 9.75 3.413 9.75 3 Z M 9.75 17.25 L 9.75 15 C 9.75 14.587 9.413 14.25 9 14.25 C 8.587 14.25 8.25 14.587 8.25 15 L 8.25 17.25 C 8.25 17.663 8.587 18 9 18 C 9.413 18 9.75 17.663 9.75 17.25 Z M 3.75 9 C 3.75 8.587 3.413 8.25 3 8.25 L 0.75 8.25 C 0.337 8.25 0 8.587 0 9 C 0 9.413 0.337 9.75 0.75 9.75 L 3 9.75 C 3.413 9.75 3.75 9.413 3.75 9 Z M 18 9 C 18 8.587 17.663 8.25 17.25 8.25 L 15 8.25 C 14.587 8.25 14.25 8.587 14.25 9 C 14.25 9.413 14.587 9.75 15 9.75 L 17.25 9.75 C 17.663 9.75 18 9.413 18 9 Z M 5.033 5.033 C 5.325 4.74 5.325 4.268 5.033 3.975 L 3.533 2.475 C 3.24 2.182 2.767 2.182 2.475 2.475 C 2.182 2.767 2.182 3.24 2.475 3.533 L 3.975 5.033 C 4.125 5.183 4.313 5.25 4.508 5.25 C 4.703 5.25 4.89 5.175 5.04 5.033 L 5.033 5.033 Z M 15.532 15.532 C 15.825 15.24 15.825 14.767 15.532 14.475 L 14.032 12.975 C 13.74 12.682 13.267 12.682 12.975 12.975 C 12.682 13.267 12.682 13.74 12.975 14.032 L 14.475 15.532 C 14.625 15.682 14.813 15.75 15.008 15.75 C 15.203 15.75 15.39 15.675 15.54 15.532 L 15.532 15.532 Z M 3.533 15.532 L 5.033 14.032 C 5.325 13.74 5.325 13.267 5.033 12.975 C 4.74 12.682 4.268 12.682 3.975 12.975 L 2.475 14.475 C 2.182 14.767 2.182 15.24 2.475 15.532 C 2.625 15.682 2.813 15.75 3.008 15.75 C 3.203 15.75 3.39 15.675 3.54 15.532 L 3.533 15.532 Z M 14.032 5.033 L 15.532 3.533 C 15.825 3.24 15.825 2.767 15.532 2.475 C 15.24 2.182 14.767 2.182 14.475 2.475 L 12.975 3.975 C 12.682 4.268 12.682 4.74 12.975 5.033 C 13.125 5.183 13.313 5.25 13.508 5.25 C 13.703 5.25 13.89 5.175 14.04 5.033 L 14.032 5.033 Z",
+    fill: "currentColor",
+    fillRule: "evenodd"
+  })));
+  const __body24 = () => /*#__PURE__*/React.createElement("div", {
+    className: props.className,
+    style: {
+      width: 28,
+      height: 28,
+      overflow: "hidden",
+      position: "relative",
+      color: "rgb(71,85,105)",
+      ...props.style
+    }
+  }, /*#__PURE__*/React.createElement("svg", {
+    width: 18,
+    height: 20,
+    viewBox: "0 0 18 20",
+    fill: "none",
+    style: {
+      position: "absolute",
+      left: 5,
+      top: 4,
+      width: 18,
+      height: 20
+    }
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M 15.657 19.997 C 15.355 19.996 15.055 19.934 14.776 19.815 C 14.497 19.696 14.244 19.521 14.032 19.301 L 9 14.207 L 3.968 19.305 C 3.645 19.639 3.231 19.866 2.779 19.956 C 2.327 20.047 1.859 19.996 1.436 19.812 C 1.009 19.637 0.643 19.335 0.387 18.945 C 0.13 18.555 -0.004 18.095 0 17.626 L 0 4.166 C 0 3.061 0.431 2.002 1.198 1.22 C 1.965 0.439 3.006 0 4.091 0 L 13.909 0 C 14.446 0 14.978 0.108 15.475 0.317 C 15.971 0.526 16.422 0.833 16.802 1.22 C 17.182 1.607 17.483 2.066 17.688 2.572 C 17.894 3.077 18 3.619 18 4.166 L 18 17.626 C 18.004 18.095 17.87 18.554 17.615 18.944 C 17.359 19.334 16.994 19.636 16.567 19.812 C 16.279 19.935 15.97 19.998 15.657 19.997 Z M 4.091 1.666 C 3.44 1.666 2.816 1.93 2.355 2.399 C 1.895 2.867 1.636 3.503 1.636 4.166 L 1.636 17.626 C 1.636 17.765 1.676 17.9 1.752 18.016 C 1.827 18.132 1.935 18.222 2.06 18.275 C 2.186 18.329 2.325 18.343 2.459 18.317 C 2.592 18.29 2.715 18.224 2.812 18.126 L 8.427 12.442 C 8.581 12.287 8.788 12.2 9.004 12.2 C 9.22 12.2 9.428 12.287 9.581 12.442 L 15.189 18.124 C 15.286 18.222 15.409 18.288 15.543 18.315 C 15.677 18.342 15.815 18.327 15.941 18.274 C 16.067 18.22 16.174 18.13 16.25 18.014 C 16.325 17.899 16.365 17.763 16.365 17.624 L 16.365 4.166 C 16.365 3.503 16.107 2.867 15.646 2.399 C 15.186 1.93 14.562 1.666 13.911 1.666 L 4.091 1.666 Z",
+    fill: "currentColor",
+    fillRule: "evenodd"
+  })));
+  const __body25 = () => /*#__PURE__*/React.createElement("div", {
+    className: props.className,
+    style: {
+      width: 24,
+      height: 24,
+      overflow: "hidden",
+      position: "relative",
+      color: "rgb(71,85,105)",
+      ...props.style
+    }
+  }, /*#__PURE__*/React.createElement("svg", {
+    width: 18,
+    height: 15,
+    viewBox: "0 0 18 15",
+    fill: "none",
+    style: {
+      position: "absolute",
+      left: 3,
+      top: 5,
+      width: 18,
+      height: 15
+    }
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M 1.125 0.577 L 7.875 0 L 7.875 13.846 L 1.125 13.846 L 1.125 0.577 Z",
+    fill: "currentColor",
+    fillRule: "evenodd"
+  }), /*#__PURE__*/React.createElement("path", {
+    d: "M 2.25 0 C 1.007 0 0 1.033 0 2.308 M 2.25 0 L 15.75 0 C 16.993 0 18 1.033 18 2.308 L 18 12.692 C 18 13.967 16.993 15 15.75 15 L 2.25 15 C 1.007 15 0 13.967 0 12.692 L 0 2.308 Z",
+    fill: "currentColor",
+    fillRule: "evenodd"
+  })));
+  const __body26 = () => /*#__PURE__*/React.createElement("div", {
+    className: props.className,
+    style: {
+      width: 24,
+      height: 24,
+      overflow: "hidden",
+      position: "relative",
+      color: "rgb(71,85,105)",
+      ...props.style
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "absolute",
+      left: 4,
+      top: 16,
+      width: 10,
+      height: 2,
+      overflow: "hidden"
+    }
+  }, /*#__PURE__*/React.createElement("svg", {
+    width: 10,
+    height: 2,
+    viewBox: "0 0 10 2",
+    fill: "none",
+    style: {
+      position: "absolute",
+      left: 0,
+      top: 0,
+      width: 10,
+      height: 2
+    }
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M 9 2 L 1 2 C 0.4 2 0 1.6 0 1 C 0 0.4 0.4 0 1 0 L 9 0 C 9.6 0 10 0.4 10 1 C 10 1.6 9.6 2 9 2 Z",
+    fill: "currentColor",
+    fillRule: "evenodd"
+  }))), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "absolute",
+      left: 4,
+      top: 11,
+      width: 16,
+      height: 2,
+      overflow: "hidden"
+    }
+  }, /*#__PURE__*/React.createElement("svg", {
+    width: 16,
+    height: 2,
+    viewBox: "0 0 16 2",
+    fill: "none",
+    style: {
+      position: "absolute",
+      left: 0,
+      top: 0,
+      width: 16,
+      height: 2
+    }
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M 15 2 L 1 2 C 0.4 2 0 1.6 0 1 C 0 0.4 0.4 0 1 0 L 15 0 C 15.6 0 16 0.4 16 1 C 16 1.6 15.6 2 15 2 Z",
+    fill: "currentColor",
+    fillRule: "evenodd"
+  }))), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "absolute",
+      left: 4,
+      top: 6,
+      width: 10,
+      height: 2,
+      overflow: "hidden"
+    }
+  }, /*#__PURE__*/React.createElement("svg", {
+    width: 10,
+    height: 2,
+    viewBox: "0 0 10 2",
+    fill: "none",
+    style: {
+      position: "absolute",
+      left: 0,
+      top: 0,
+      width: 10,
+      height: 2
+    }
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M 9 2 L 1 2 C 0.4 2 0 1.6 0 1 C 0 0.4 0.4 0 1 0 L 9 0 C 9.6 0 10 0.4 10 1 C 10 1.6 9.6 2 9 2 Z",
+    fill: "currentColor",
+    fillRule: "evenodd"
+  }))));
+  const __body27 = () => /*#__PURE__*/React.createElement("div", {
+    className: props.className,
+    style: {
+      width: 24,
+      height: 24,
+      overflow: "hidden",
+      position: "relative",
+      color: "rgb(71,85,105)",
+      ...props.style
+    }
+  }, /*#__PURE__*/React.createElement("svg", {
+    width: 8,
+    height: 16,
+    viewBox: "0 0 8 16",
+    fill: "none",
+    style: {
+      position: "absolute",
+      left: 8,
+      top: 4,
+      width: 8,
+      height: 16
+    }
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M 2.551 8.812 C 2.446 8.706 2.364 8.579 2.307 8.44 C 2.25 8.301 2.221 8.151 2.221 8 C 2.221 7.85 2.25 7.7 2.307 7.561 C 2.364 7.422 2.446 7.295 2.551 7.189 L 7.67 1.955 C 7.775 1.849 7.858 1.722 7.914 1.583 C 7.971 1.444 8 1.295 8 1.144 C 8 0.993 7.971 0.843 7.914 0.704 C 7.858 0.565 7.775 0.439 7.67 0.332 C 7.461 0.119 7.178 0 6.884 0 C 6.589 0 6.307 0.119 6.098 0.332 L 0.978 5.578 C 0.352 6.221 0 7.092 0 8 C 0 8.909 0.352 9.78 0.978 10.423 L 6.098 15.669 C 6.305 15.88 6.586 15.999 6.878 16 C 7.025 16.001 7.171 15.972 7.306 15.915 C 7.442 15.858 7.566 15.774 7.67 15.669 C 7.775 15.562 7.858 15.436 7.914 15.297 C 7.971 15.157 8 15.008 8 14.857 C 8 14.706 7.971 14.557 7.914 14.418 C 7.858 14.278 7.775 14.152 7.67 14.046 L 2.551 8.812 Z",
+    fill: "currentColor",
+    fillRule: "evenodd"
+  })));
+  const __body28 = () => /*#__PURE__*/React.createElement("div", {
+    className: props.className,
+    style: {
+      width: 24,
+      height: 24,
+      overflow: "hidden",
+      position: "relative",
+      color: "rgb(71,85,105)",
+      ...props.style
+    }
+  }, /*#__PURE__*/React.createElement("svg", {
+    width: 8,
+    height: 16,
+    viewBox: "0 0 8 16",
+    fill: "none",
+    style: {
+      position: "absolute",
+      left: 0,
+      top: 0,
+      transform: "matrix(-1,0,0,1,16,4)",
+      transformOrigin: "0 0",
+      width: 8,
+      height: 16
+    }
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M 2.551 8.812 C 2.446 8.706 2.364 8.579 2.307 8.44 C 2.25 8.301 2.221 8.151 2.221 8 C 2.221 7.85 2.25 7.7 2.307 7.561 C 2.364 7.422 2.446 7.295 2.551 7.189 L 7.67 1.955 C 7.775 1.849 7.858 1.722 7.914 1.583 C 7.971 1.444 8 1.295 8 1.144 C 8 0.993 7.971 0.843 7.914 0.704 C 7.858 0.565 7.775 0.439 7.67 0.332 C 7.461 0.119 7.178 0 6.884 0 C 6.589 0 6.307 0.119 6.098 0.332 L 0.978 5.578 C 0.352 6.221 0 7.092 0 8 C 0 8.909 0.352 9.78 0.978 10.423 L 6.098 15.669 C 6.305 15.88 6.586 15.999 6.878 16 C 7.025 16.001 7.171 15.972 7.306 15.915 C 7.442 15.858 7.566 15.774 7.67 15.669 C 7.775 15.562 7.858 15.436 7.914 15.297 C 7.971 15.157 8 15.008 8 14.857 C 8 14.706 7.971 14.557 7.914 14.418 C 7.858 14.278 7.775 14.152 7.67 14.046 L 2.551 8.812 Z",
+    fill: "currentColor",
+    fillRule: "evenodd"
+  })));
+  const __body29 = () => /*#__PURE__*/React.createElement("div", {
+    className: props.className,
+    style: {
+      width: "fit-content",
+      display: "flex",
+      flexDirection: "row",
+      gap: 8,
+      alignItems: "center",
+      flexWrap: "nowrap",
+      position: "relative",
+      ...props.style
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      width: 24,
+      flexShrink: 0,
+      alignSelf: "stretch",
+      height: "auto"
+    }
+  }, props.icon1 ?? /*#__PURE__*/React.createElement(BenefitHand1, null)));
+  const __body30 = () => /*#__PURE__*/React.createElement("div", {
+    className: props.className,
+    style: {
+      width: 24,
+      height: 24,
+      overflow: "hidden",
+      position: "relative",
+      color: "rgb(71,85,105)",
+      ...props.style
+    }
+  }, /*#__PURE__*/React.createElement("svg", {
+    width: 16,
+    height: 8,
+    viewBox: "0 0 16 8",
+    fill: "none",
+    style: {
+      position: "absolute",
+      left: 4,
+      top: 8,
+      width: 16,
+      height: 8
+    }
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M 15.668 0.33 C 15.561 0.225 15.435 0.142 15.296 0.086 C 15.157 0.029 15.007 0 14.856 0 C 14.706 0 14.556 0.029 14.417 0.086 C 14.278 0.142 14.151 0.225 14.045 0.33 L 8.811 5.438 C 8.705 5.542 8.579 5.625 8.439 5.682 C 8.3 5.739 8.151 5.768 8 5.768 C 7.849 5.768 7.7 5.739 7.561 5.682 C 7.421 5.625 7.295 5.542 7.189 5.438 L 1.955 0.33 C 1.849 0.225 1.722 0.142 1.583 0.086 C 1.444 0.029 1.294 0 1.144 0 C 0.993 0 0.843 0.029 0.704 0.086 C 0.565 0.142 0.439 0.225 0.332 0.33 C 0.119 0.539 0 0.822 0 1.116 C 0 1.411 0.119 1.693 0.332 1.902 L 5.577 7.022 C 6.22 7.648 7.092 8 8 8 C 8.908 8 9.78 7.648 10.423 7.022 L 15.668 1.902 C 15.881 1.693 16 1.411 16 1.116 C 16 0.822 15.881 0.539 15.668 0.33 Z",
+    fill: "currentColor",
+    fillRule: "evenodd"
+  })));
+  const __body31 = () => /*#__PURE__*/React.createElement("div", {
+    className: props.className,
+    style: {
+      width: 24,
+      height: 24,
+      overflow: "hidden",
+      position: "relative",
+      color: "rgb(71,85,105)",
+      ...props.style
+    }
+  }, /*#__PURE__*/React.createElement("svg", {
+    width: 18,
+    height: 18,
+    viewBox: "0 0 18 18",
+    fill: "none",
+    style: {
+      position: "absolute",
+      left: 3,
+      top: 3,
+      width: 18,
+      height: 18
+    }
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M 9.531 9.53 L 7.811 11.25 L 6.75 10.19 L 8.47 8.47 C 8.763 8.177 8.763 7.703 8.47 7.409 C 8.177 7.116 7.703 7.116 7.41 7.409 L 5.69 9.129 L 4.281 7.72 C 3.987 7.427 3.513 7.427 3.22 7.72 C 2.927 8.013 2.927 8.487 3.22 8.78 L 3.484 9.044 L 2.633 9.896 C 1.306 11.222 1.147 13.282 2.155 14.785 L 0.22 16.72 C -0.073 17.013 -0.073 17.487 0.22 17.78 C 0.366 17.927 0.558 18 0.75 18 C 0.942 18 1.134 17.927 1.28 17.78 L 3.216 15.845 C 3.864 16.28 4.617 16.499 5.369 16.499 C 6.36 16.499 7.35 16.121 8.104 15.367 L 8.955 14.516 L 9.219 14.78 C 9.366 14.927 9.558 15 9.75 15 C 9.942 15 10.134 14.927 10.28 14.78 C 10.573 14.487 10.573 14.013 10.28 13.72 L 8.871 12.311 L 10.59 10.591 C 10.884 10.298 10.884 9.824 10.59 9.53 C 10.297 9.237 9.824 9.237 9.531 9.53 Z M 7.044 14.306 C 6.12 15.229 4.619 15.229 3.694 14.306 C 2.771 13.383 2.771 11.88 3.694 10.956 L 4.545 10.105 L 7.895 13.455 L 7.044 14.306 L 7.044 14.306 Z M 17.781 0.22 C 17.488 -0.073 17.014 -0.073 16.72 0.22 L 14.785 2.155 C 13.282 1.147 11.223 1.306 9.896 2.633 L 9.045 3.485 L 8.78 3.22 C 8.487 2.927 8.013 2.927 7.719 3.22 C 7.426 3.513 7.426 3.987 7.719 4.28 L 13.719 10.28 C 13.866 10.427 14.058 10.5 14.25 10.5 C 14.442 10.5 14.634 10.427 14.78 10.28 C 15.073 9.987 15.073 9.513 14.78 9.22 L 14.515 8.955 L 15.367 8.104 C 16.694 6.777 16.853 4.718 15.845 3.215 L 17.78 1.28 C 18.073 0.986 18.073 0.512 17.78 0.219 L 17.781 0.22 Z M 14.307 7.044 L 13.455 7.895 L 10.105 4.545 L 10.956 3.694 C 11.88 2.771 13.382 2.771 14.307 3.694 C 15.23 4.617 15.23 6.12 14.307 7.044 Z",
+    fill: "currentColor",
+    fillRule: "evenodd"
+  })));
+  const __body32 = () => /*#__PURE__*/React.createElement("div", {
+    className: props.className,
+    style: {
+      width: 24,
+      height: 24,
+      overflow: "hidden",
+      position: "relative",
+      color: "rgb(71,85,105)",
+      ...props.style
+    }
+  }, /*#__PURE__*/React.createElement("svg", {
+    width: 17.996,
+    height: 18,
+    viewBox: "0 0 17.996 18",
+    fill: "none",
+    style: {
+      position: "absolute",
+      left: 3.002,
+      top: 3,
+      width: 17.996,
+      height: 18
+    }
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M 13.48 9.768 C 12.641 8.931 11.37 8.78 10.375 9.313 L 6.751 5.689 L 6.751 3.374 C 6.751 2.615 6.342 1.908 5.684 1.528 L 3.449 0.239 C 2.75 -0.165 1.865 -0.047 1.293 0.523 L 0.525 1.293 C -0.046 1.863 -0.162 2.749 0.24 3.447 L 1.529 5.683 C 1.909 6.341 2.617 6.75 3.376 6.75 L 5.69 6.75 L 9.31 10.37 C 9.101 10.751 8.99 11.179 8.99 11.625 C 8.99 12.327 9.264 12.986 9.761 13.482 L 13.522 17.232 C 14.015 17.724 14.687 18 15.382 18 C 16.121 18 16.948 17.609 17.42 17.033 C 18.265 16.004 18.152 14.427 17.164 13.443 L 13.48 9.768 Z M 2.828 4.934 L 1.539 2.698 C 1.475 2.587 1.493 2.445 1.585 2.354 L 2.354 1.584 C 2.445 1.494 2.587 1.474 2.699 1.539 L 4.934 2.829 C 5.129 2.941 5.25 3.151 5.25 3.375 L 5.25 5.25 L 3.375 5.25 C 3.15 5.25 2.941 5.129 2.828 4.934 Z M 16.261 16.082 C 16.054 16.334 15.761 16.482 15.438 16.499 C 15.122 16.514 14.807 16.394 14.582 16.17 L 10.821 12.42 C 10.608 12.208 10.491 11.926 10.491 11.625 C 10.491 11.324 10.609 11.043 10.821 10.83 C 11.042 10.61 11.332 10.5 11.621 10.5 C 11.911 10.5 12.2 10.61 12.421 10.83 L 16.106 14.504 C 16.553 14.951 16.621 15.643 16.261 16.082 Z M 7.823 12.824 C 8.116 13.118 8.115 13.592 7.822 13.885 L 4.464 17.231 C 3.971 17.723 3.299 17.999 2.604 17.999 C 1.943 17.999 1.038 17.609 0.566 17.032 C -0.278 16.004 -0.166 14.426 0.822 13.442 L 5.073 9.201 C 5.366 8.909 5.841 8.909 6.134 9.203 C 6.426 9.496 6.425 9.971 6.132 10.263 L 1.88 14.504 C 1.433 14.951 1.364 15.643 1.724 16.081 C 1.932 16.334 2.225 16.482 2.548 16.499 C 2.867 16.513 3.179 16.394 3.404 16.17 L 6.763 12.824 C 7.056 12.531 7.53 12.531 7.824 12.825 L 7.823 12.824 Z M 7.415 3.476 C 8.105 1.719 9.683 0.42 11.534 0.088 C 12.181 -0.027 12.831 -0.03 13.468 0.084 C 13.967 0.172 14.37 0.525 14.519 1.002 C 14.691 1.548 14.519 2.15 14.06 2.61 L 12.309 4.292 C 11.945 4.655 11.886 5.237 12.185 5.603 C 12.358 5.814 12.6 5.937 12.869 5.951 C 13.13 5.964 13.389 5.867 13.579 5.678 L 15.539 3.787 C 15.904 3.422 16.449 3.287 16.959 3.449 C 17.457 3.606 17.822 4.021 17.913 4.53 C 18.025 5.166 18.024 5.818 17.908 6.466 C 17.698 7.645 17.083 8.743 16.179 9.558 C 16.036 9.687 15.856 9.751 15.677 9.751 C 15.473 9.751 15.268 9.668 15.12 9.503 C 14.843 9.196 14.867 8.721 15.175 8.444 C 15.833 7.851 16.279 7.055 16.432 6.203 C 16.505 5.792 16.516 5.381 16.464 4.979 L 14.63 6.748 C 14.154 7.226 13.483 7.486 12.794 7.45 C 12.107 7.415 11.462 7.089 11.024 6.554 C 10.243 5.598 10.346 4.134 11.26 3.221 L 13.01 1.54 L 13.017 1.533 C 12.616 1.482 12.206 1.493 11.798 1.566 C 10.457 1.806 9.314 2.749 8.812 4.025 C 8.661 4.411 8.225 4.601 7.84 4.449 C 7.454 4.298 7.264 3.863 7.416 3.477 L 7.415 3.476 Z",
+    fill: "currentColor",
+    fillRule: "evenodd"
+  })));
+  const __body33 = () => /*#__PURE__*/React.createElement("div", {
+    className: props.className,
+    style: {
+      width: 24,
+      height: 24,
+      overflow: "hidden",
+      position: "relative",
+      color: "rgb(100,116,139)",
+      ...props.style
+    }
+  }, /*#__PURE__*/React.createElement("svg", {
+    width: 18,
+    height: 18,
+    viewBox: "0 0 18 18",
+    fill: "none",
+    style: {
+      position: "absolute",
+      left: 3,
+      top: 3,
+      width: 18,
+      height: 18
+    }
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M 9 0 C 4.037 0 0 4.037 0 9 C 0 13.963 4.037 18 9 18 C 13.963 18 18 13.963 18 9 C 18 4.037 13.963 0 9 0 Z M 9 16.5 C 4.865 16.5 1.5 13.135 1.5 9 C 1.5 4.865 4.865 1.5 9 1.5 C 13.135 1.5 16.5 4.865 16.5 9 C 16.5 13.135 13.135 16.5 9 16.5 Z M 10.5 5.25 L 7.5 5.25 C 6.259 5.25 5.25 6.259 5.25 7.5 L 5.25 10.5 C 5.25 11.741 6.259 12.75 7.5 12.75 L 10.5 12.75 C 11.741 12.75 12.75 11.741 12.75 10.5 L 12.75 7.5 C 12.75 6.259 11.741 5.25 10.5 5.25 Z M 11.25 10.5 C 11.25 10.913 10.913 11.25 10.5 11.25 L 7.5 11.25 C 7.087 11.25 6.75 10.913 6.75 10.5 L 6.75 7.5 C 6.75 7.087 7.087 6.75 7.5 6.75 L 10.5 6.75 C 10.913 6.75 11.25 7.087 11.25 7.5 L 11.25 10.5 Z",
+    fill: "currentColor",
+    fillRule: "evenodd"
+  })));
+  const __body34 = () => /*#__PURE__*/React.createElement("div", {
+    className: props.className,
+    style: {
+      width: 24,
+      height: 24,
+      overflow: "hidden",
+      position: "relative",
+      color: "rgb(71,85,105)",
+      ...props.style
+    }
+  }, /*#__PURE__*/React.createElement("svg", {
+    width: 10,
+    height: 10,
+    viewBox: "0 0 10 10",
+    fill: "none",
+    style: {
+      position: "absolute",
+      left: 7,
+      top: 7,
+      width: 10,
+      height: 10
+    }
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M 0 0 L 10 0 L 10 10 Z",
+    fill: "currentColor",
+    fillRule: "evenodd"
+  })));
+  const __body35 = () => /*#__PURE__*/React.createElement("div", {
+    className: props.className,
+    style: {
+      width: 24,
+      height: 24,
+      overflow: "hidden",
+      position: "relative",
+      color: "rgb(71,85,105)",
+      ...props.style
+    }
+  }, /*#__PURE__*/React.createElement("svg", {
+    width: 16,
+    height: 16,
+    viewBox: "0 0 16 16",
+    fill: "none",
+    style: {
+      position: "absolute",
+      left: 4,
+      top: 4,
+      width: 16,
+      height: 16
+    }
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M 15 7 L 9 7 L 9 1 C 9 0.448 8.552 0 8 0 C 7.448 0 7 0.448 7 1 L 7 7 L 1 7 C 0.448 7 0 7.448 0 8 C 0 8.552 0.448 9 1 9 L 7 9 L 7 15 C 7 15.552 7.448 16 8 16 C 8.552 16 9 15.552 9 15 L 9 9 L 15 9 C 15.552 9 16 8.552 16 8 C 16 7.448 15.552 7 15 7 Z",
+    fill: "currentColor",
+    fillRule: "evenodd"
+  })));
+  const __body36 = () => /*#__PURE__*/React.createElement("div", {
+    className: props.className,
+    style: {
+      width: 24,
+      height: 24,
+      overflow: "hidden",
+      position: "relative",
+      color: "rgb(71,85,105)",
+      ...props.style
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "absolute",
+      left: 6,
+      top: 3,
+      width: 12.851,
+      height: 18,
+      overflow: "hidden"
+    }
+  }, /*#__PURE__*/React.createElement("svg", {
+    width: 12.851,
+    height: 18,
+    viewBox: "0 0 12.851 18",
+    fill: "none",
+    style: {
+      position: "absolute",
+      left: 0,
+      top: 0,
+      width: 12.851,
+      height: 18
+    }
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M 12.851 8.609 C 12.851 8.311 12.61 8.069 12.312 8.069 C 12.014 8.069 11.772 8.311 11.772 8.609 C 11.772 11.557 9.374 13.955 6.426 13.955 C 3.478 13.955 1.079 11.557 1.079 8.609 C 1.079 8.311 0.838 8.069 0.54 8.069 C 0.242 8.069 0 8.311 0 8.609 C 0 11.97 2.595 14.737 5.886 15.012 L 5.886 16.921 L 3.483 16.921 C 3.185 16.921 2.943 17.162 2.943 17.46 C 2.943 17.758 3.185 18 3.483 18 L 9.369 18 C 9.667 18 9.908 17.758 9.908 17.46 C 9.908 17.162 9.667 16.921 9.369 16.921 L 6.965 16.921 L 6.965 15.012 C 10.257 14.737 12.851 11.97 12.851 8.609 Z",
+    fill: "currentColor",
+    fillRule: "evenodd"
+  }), /*#__PURE__*/React.createElement("path", {
+    d: "M 6.426 12.092 C 8.346 12.092 9.908 10.529 9.908 8.609 L 9.908 3.483 C 9.908 1.562 8.346 0 6.426 0 C 4.505 0 2.943 1.562 2.943 3.483 L 2.943 8.609 C 2.943 10.529 4.505 12.092 6.426 12.092 Z M 4.022 3.483 C 4.022 2.157 5.1 1.079 6.426 1.079 C 7.751 1.079 8.829 2.157 8.829 3.483 L 8.829 8.609 C 8.829 9.934 7.751 11.012 6.426 11.012 C 5.1 11.012 4.022 9.934 4.022 8.609 L 4.022 3.483 Z",
+    fill: "currentColor",
+    fillRule: "evenodd"
+  }))));
+  const __body37 = () => /*#__PURE__*/React.createElement("div", {
+    className: props.className,
+    style: {
+      width: 24,
+      height: 24,
+      overflow: "hidden",
+      position: "relative",
+      color: "rgb(71,85,105)",
+      ...props.style
+    }
+  }, /*#__PURE__*/React.createElement("svg", {
+    width: 18,
+    height: 18.000,
+    viewBox: "0 0 18 18.000",
+    fill: "none",
+    style: {
+      position: "absolute",
+      left: 3,
+      top: 3,
+      width: 18,
+      height: 18
+    }
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M 7.408 13.591 C 8.286 14.47 9.711 14.471 10.59 13.592 L 12.999 11.183 C 13.277 10.876 13.253 10.402 12.946 10.124 C 12.659 9.865 12.224 9.866 11.938 10.125 L 9.744 12.32 L 9.749 0.75 C 9.749 0.336 9.413 0 8.999 0 C 8.585 0 8.249 0.336 8.249 0.75 L 8.242 12.306 L 6.06 10.125 C 5.767 9.832 5.292 9.832 4.999 10.125 C 4.706 10.418 4.706 10.893 4.999 11.186 L 7.408 13.591 Z",
+    fill: "currentColor",
+    fillRule: "evenodd"
+  }), /*#__PURE__*/React.createElement("path", {
+    d: "M 17.25 12 C 16.836 12 16.5 12.336 16.5 12.75 L 16.5 15.75 C 16.5 16.164 16.164 16.5 15.75 16.5 L 2.25 16.5 C 1.836 16.5 1.5 16.164 1.5 15.75 L 1.5 12.75 C 1.5 12.336 1.164 12 0.75 12 C 0.336 12 0 12.336 0 12.75 L 0 15.75 C 0 16.993 1.007 18 2.25 18 L 15.75 18 C 16.993 18 18 16.993 18 15.75 L 18 12.75 C 18 12.336 17.664 12 17.25 12 Z",
+    fill: "currentColor",
+    fillRule: "evenodd"
+  })));
+  const __body38 = () => /*#__PURE__*/React.createElement("div", {
+    className: props.className,
+    style: {
+      width: 22,
+      height: 22,
+      overflow: "hidden",
+      borderRadius: 4,
+      backgroundColor: "rgb(217,239,255)",
+      position: "relative",
+      ...props.style
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "absolute",
+      left: 6.111,
+      top: 3.666,
+      width: 9.213,
+      height: 14.667,
+      overflow: "hidden"
+    }
+  }, /*#__PURE__*/React.createElement("svg", {
+    width: 3.480,
+    height: 11.228,
+    viewBox: "0 0 3.480 11.228",
+    fill: "none",
+    style: {
+      position: "absolute",
+      left: 0,
+      top: 0,
+      width: 3.48,
+      height: 11.228
+    }
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M 3.48 0 L 0 0 L 0 11.228 L 3.48 11.228 L 3.48 0 Z",
+    fill: "currentColor",
+    fillRule: "evenodd"
+  })), /*#__PURE__*/React.createElement("svg", {
+    width: 5.733,
+    height: 3.439,
+    viewBox: "0 0 5.733 3.439",
+    fill: "none",
+    style: {
+      position: "absolute",
+      left: 3.481,
+      top: 11.228,
+      width: 5.733,
+      height: 3.439
+    }
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M 5.733 0 L 0 0 L 0 3.439 L 5.733 3.439 L 5.733 0 Z",
+    fill: "currentColor",
+    fillRule: "evenodd"
+  })), /*#__PURE__*/React.createElement("svg", {
+    width: 3.480,
+    height: 3.439,
+    viewBox: "0 0 3.480 3.439",
+    fill: "none",
+    style: {
+      position: "absolute",
+      left: 0,
+      top: 11.228,
+      width: 3.48,
+      height: 3.439,
+      color: "rgb(86,181,207)"
+    }
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M 0 0 L 3.48 0 L 3.48 3.439 L 0 0 Z",
+    fill: "currentColor",
+    fillRule: "nonzero"
+  }))));
+  const __body39 = () => /*#__PURE__*/React.createElement("div", {
+    className: props.className,
+    style: {
+      width: 22,
+      height: 22,
+      overflow: "hidden",
+      borderRadius: 4,
+      backgroundColor: "rgb(206,244,255)",
+      position: "relative",
+      ...props.style
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "absolute",
+      left: 3.384,
+      top: 3.667,
+      width: 14.667,
+      height: 14.667,
+      overflow: "hidden"
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "absolute",
+      left: 4.583,
+      top: 0.917,
+      width: 9.167,
+      height: 12.833,
+      border: "1px dashed currentColor",
+      display: "flex",
+      alignItems: "center",
+      justifyContent: "center",
+      overflow: "hidden",
+      fontSize: 10,
+      opacity: 0.45
+    }
+  }, "Vector"), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "absolute",
+      left: 4.583,
+      top: 0.917,
+      width: 9.167,
+      height: 12.833,
+      border: "1px dashed currentColor",
+      display: "flex",
+      alignItems: "center",
+      justifyContent: "center",
+      overflow: "hidden",
+      fontSize: 10,
+      opacity: 0.45
+    }
+  }, "Vector"), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "absolute",
+      left: 4.583,
+      top: 2.292,
+      width: 4.583,
+      height: 4.583,
+      border: "1px dashed currentColor",
+      display: "flex",
+      alignItems: "center",
+      justifyContent: "center",
+      overflow: "hidden",
+      fontSize: 10,
+      opacity: 0.45
+    }
+  }, "Vector"), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "absolute",
+      left: 4.583,
+      top: 6.875,
+      width: 4.583,
+      height: 4.583,
+      border: "1px dashed currentColor",
+      display: "flex",
+      alignItems: "center",
+      justifyContent: "center",
+      overflow: "hidden",
+      fontSize: 10,
+      opacity: 0.45
+    }
+  }, "Vector"), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "absolute",
+      left: 9.167,
+      top: 6.875,
+      width: 4.583,
+      height: 4.583,
+      border: "1px dashed currentColor",
+      display: "flex",
+      alignItems: "center",
+      justifyContent: "center",
+      overflow: "hidden",
+      fontSize: 10,
+      opacity: 0.45
+    }
+  }, "Vector"), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "absolute",
+      left: 9.167,
+      top: 2.292,
+      width: 4.583,
+      height: 4.583,
+      border: "1px dashed currentColor",
+      display: "flex",
+      alignItems: "center",
+      justifyContent: "center",
+      overflow: "hidden",
+      fontSize: 10,
+      opacity: 0.45
+    }
+  }, "Vector"), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "absolute",
+      left: 3.667,
+      top: 6.417,
+      width: 11,
+      height: 7.333,
+      overflow: "hidden"
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "absolute",
+      left: 0,
+      top: 0,
+      width: 11,
+      height: 7.333333969116211,
+      clipPath: "inset(0px 0px 0px 0px)"
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "absolute",
+      left: -0.458,
+      top: 0,
+      width: 11.916,
+      height: 7.333,
+      overflow: "hidden"
+    }
+  }, /*#__PURE__*/React.createElement("svg", {
+    width: 0.917,
+    height: 1.833,
+    viewBox: "0 0 0.917 1.833",
+    fill: "none",
+    style: {
+      position: "absolute",
+      left: 10.542,
+      top: 0,
+      width: 0.917,
+      height: 1.833,
+      color: "rgb(19,82,152)"
+    }
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M 0.917 0 L 0.917 1.833 L 0 1.833 L 0 0 L 0.917 0 Z",
+    fill: "currentColor",
+    fillRule: "evenodd"
+  })), /*#__PURE__*/React.createElement("svg", {
+    width: 11.458,
+    height: 6.417,
+    viewBox: "0 0 11.458 6.417",
+    fill: "none",
+    style: {
+      position: "absolute",
+      left: 0,
+      top: 0.917,
+      width: 11.458,
+      height: 6.417
+    }
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M 11.458 6.417 L 11.458 0 L 0 6.417 L 11.458 6.417 Z",
+    fill: "currentColor",
+    fillRule: "evenodd"
+  })), /*#__PURE__*/React.createElement("svg", {
+    width: 11.458,
+    height: 6.417,
+    viewBox: "0 0 11.458 6.417",
+    fill: "none",
+    style: {
+      position: "absolute",
+      left: 0.458,
+      top: 0.917,
+      width: 11.458,
+      height: 6.417
+    }
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M 0 6.417 L 0 0 L 11.458 6.417 L 0 6.417 Z",
+    fill: "currentColor",
+    fillRule: "evenodd"
+  }))))), /*#__PURE__*/React.createElement("svg", {
+    width: 5.500,
+    height: 8.250,
+    viewBox: "0 0 5.500 8.250",
+    fill: "none",
+    style: {
+      position: "absolute",
+      left: 3.667,
+      top: 4.125,
+      width: 5.5,
+      height: 8.25,
+      color: "rgba(0,0,0,0.3)"
+    }
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M 0 1.375 C 0 0.616 0.616 0 1.375 0 L 4.125 0 C 4.884 0 5.5 0.616 5.5 1.375 L 5.5 6.875 C 5.5 7.634 4.884 8.25 4.125 8.25 L 0 8.25 L 0 1.375 Z",
+    fill: "currentColor",
+    fillRule: "evenodd"
+  })), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "absolute",
+      left: 0,
+      top: 3.208,
+      width: 8.25,
+      height: 8.25,
+      border: "1px dashed currentColor",
+      display: "flex",
+      alignItems: "center",
+      justifyContent: "center",
+      overflow: "hidden",
+      fontSize: 10,
+      opacity: 0.45
+    }
+  }, "Vector"), /*#__PURE__*/React.createElement("svg", {
+    width: 4.583,
+    height: 4.583,
+    viewBox: "0 0 4.583 4.583",
+    fill: "none",
+    style: {
+      position: "absolute",
+      left: 1.833,
+      top: 5.042,
+      width: 4.583,
+      height: 4.583,
+      color: "rgb(255,255,255)"
+    }
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M 4.583 2.323 L 4.583 2.247 C 4.583 0.927 3.633 0 2.299 0 C 0.957 0 0 0.933 0 2.26 L 0 2.336 C 0 3.656 0.95 4.583 2.292 4.583 C 3.626 4.583 4.583 3.65 4.583 2.323 Z M 3.503 2.336 C 3.503 3.212 3.01 3.739 2.299 3.739 C 1.588 3.739 1.088 3.199 1.088 2.323 L 1.088 2.247 C 1.088 1.371 1.581 0.844 2.292 0.844 C 2.995 0.844 3.503 1.384 3.503 2.26 L 3.503 2.336 Z",
+    fill: "currentColor",
+    fillRule: "evenodd"
+  }))));
+  const __body40 = () => /*#__PURE__*/React.createElement("div", {
+    className: props.className,
+    style: {
+      width: 24,
+      height: 24,
+      overflow: "hidden",
+      position: "relative",
+      color: "rgb(71,85,105)",
+      ...props.style
+    }
+  }, /*#__PURE__*/React.createElement("svg", {
+    width: 18.667,
+    height: 18.667,
+    viewBox: "0 0 18.667 18.667",
+    fill: "none",
+    style: {
+      position: "absolute",
+      left: 2.667,
+      top: 2.667,
+      width: 18.667,
+      height: 18.667
+    }
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M 6.222 9.333 L 4.667 9.333 C 3.809 9.333 3.111 10.031 3.111 10.889 L 3.111 12.444 C 3.111 13.302 3.809 14 4.667 14 L 6.222 14 C 7.08 14 7.778 13.302 7.778 12.444 L 7.778 10.889 C 7.778 10.031 7.08 9.333 6.222 9.333 Z M 4.667 12.444 L 4.667 10.889 L 6.222 10.889 L 6.222 12.444 L 4.667 12.444 Z M 14.778 1.556 L 14 1.556 L 14 0.778 C 14 0.348 13.652 0 13.222 0 C 12.792 0 12.444 0.348 12.444 0.778 L 12.444 1.556 L 6.222 1.556 L 6.222 0.778 C 6.222 0.348 5.875 0 5.444 0 C 5.014 0 4.667 0.348 4.667 0.778 L 4.667 1.556 L 3.889 1.556 C 1.745 1.556 0 3.3 0 5.444 L 0 14.778 C 0 16.922 1.745 18.667 3.889 18.667 L 14.778 18.667 C 16.922 18.667 18.667 16.922 18.667 14.778 L 18.667 5.444 C 18.667 3.3 16.922 1.556 14.778 1.556 Z M 3.889 3.111 L 14.778 3.111 C 16.064 3.111 17.111 4.158 17.111 5.444 L 17.111 6.222 L 1.556 6.222 L 1.556 5.444 C 1.556 4.158 2.602 3.111 3.889 3.111 Z M 14.778 17.111 L 3.889 17.111 C 2.602 17.111 1.556 16.064 1.556 14.778 L 1.556 7.778 L 17.111 7.778 L 17.111 14.778 C 17.111 16.064 16.064 17.111 14.778 17.111 Z",
+    fill: "currentColor",
+    fillRule: "evenodd"
+  })));
+  const __body41 = () => /*#__PURE__*/React.createElement("div", {
+    className: props.className,
+    style: {
+      width: 24,
+      height: 24,
+      overflow: "hidden",
+      position: "relative",
+      color: "rgb(71,85,105)",
+      ...props.style
+    }
+  }, /*#__PURE__*/React.createElement("svg", {
+    width: 18.667,
+    height: 18.667,
+    viewBox: "0 0 18.667 18.667",
+    fill: "none",
+    style: {
+      position: "absolute",
+      left: 2.667,
+      top: 2.667,
+      width: 18.667,
+      height: 18.667
+    }
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M 17.468 7.076 L 16.333 5.989 L 16.333 3.111 C 16.333 1.395 14.938 0 13.222 0 L 5.444 0 C 3.729 0 2.333 1.395 2.333 3.111 L 2.333 5.989 L 1.199 7.075 C 0.437 7.805 0 8.829 0 9.883 L 0 14.778 C 0 16.922 1.745 18.667 3.889 18.667 L 14.778 18.667 C 16.922 18.667 18.667 16.922 18.667 14.778 L 18.667 9.883 C 18.667 8.829 18.23 7.805 17.468 7.076 Z M 5.444 1.556 L 13.222 1.556 C 14.08 1.556 14.778 2.253 14.778 3.111 L 14.778 9.522 L 10.983 13.316 C 10.102 14.198 8.565 14.198 7.684 13.316 L 3.889 9.522 L 3.889 3.111 C 3.889 2.253 4.587 1.556 5.444 1.556 Z M 17.111 14.778 C 17.111 16.064 16.064 17.111 14.778 17.111 L 3.889 17.111 C 2.602 17.111 1.556 16.064 1.556 14.778 L 1.556 9.883 C 1.556 9.732 1.573 9.581 1.601 9.434 L 6.584 14.417 C 7.317 15.151 8.294 15.556 9.333 15.556 C 10.372 15.556 11.349 15.151 12.083 14.417 L 17.065 9.434 C 17.094 9.581 17.111 9.732 17.111 9.883 L 17.111 14.778 Z M 5.693 7.417 C 5.378 7.124 5.36 6.632 5.652 6.318 C 5.945 6.003 6.438 5.987 6.751 6.277 L 8.191 7.616 C 8.4 7.824 8.709 7.825 8.899 7.635 L 11.904 4.738 C 12.213 4.44 12.706 4.45 13.004 4.758 C 13.302 5.066 13.293 5.56 12.984 5.857 L 9.989 8.745 C 9.597 9.137 9.078 9.333 8.559 9.333 C 8.035 9.333 7.51 9.133 7.111 8.735 L 5.693 7.416 L 5.693 7.417 Z",
+    fill: "currentColor",
+    fillRule: "evenodd"
+  })));
+  const __body42 = () => /*#__PURE__*/React.createElement("div", {
+    className: props.className,
+    style: {
+      width: 24,
+      height: 24,
+      overflow: "hidden",
+      position: "relative",
+      color: "rgb(71,85,105)",
+      ...props.style
+    }
+  }, /*#__PURE__*/React.createElement("svg", {
+    width: 18.667,
+    height: 18.666,
+    viewBox: "0 0 18.667 18.666",
+    fill: "none",
+    style: {
+      position: "absolute",
+      left: 2.667,
+      top: 2.667,
+      width: 18.667,
+      height: 18.666
+    }
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M 13.985 7.072 C 13.985 6.759 13.923 6.448 13.803 6.158 C 13.682 5.868 13.505 5.605 13.283 5.384 C 12.827 4.949 12.222 4.707 11.592 4.707 C 10.962 4.707 10.357 4.949 9.901 5.384 L 0.642 14.645 C 0.22 15.098 -0.01 15.698 0 16.317 C 0.011 16.937 0.262 17.528 0.7 17.966 C 1.138 18.404 1.729 18.655 2.349 18.666 C 2.968 18.677 3.568 18.447 4.021 18.024 L 13.283 8.763 C 13.506 8.542 13.683 8.278 13.803 7.988 C 13.924 7.698 13.985 7.387 13.985 7.072 Z M 2.918 16.923 C 2.76 17.073 2.55 17.157 2.332 17.157 C 2.114 17.157 1.905 17.073 1.747 16.923 C 1.592 16.767 1.505 16.557 1.505 16.337 C 1.505 16.118 1.592 15.908 1.747 15.752 L 7.809 9.69 L 8.983 10.864 L 2.918 16.923 Z M 12.181 7.659 L 10.084 9.757 L 8.913 8.583 L 11.011 6.486 C 11.086 6.4 11.178 6.331 11.28 6.282 C 11.383 6.234 11.494 6.207 11.608 6.203 C 11.721 6.199 11.834 6.219 11.94 6.261 C 12.046 6.302 12.142 6.365 12.222 6.446 C 12.302 6.526 12.365 6.622 12.407 6.727 C 12.449 6.833 12.468 6.946 12.464 7.06 C 12.461 7.173 12.434 7.285 12.385 7.387 C 12.336 7.49 12.267 7.581 12.182 7.656 L 12.181 7.659 Z M 3.735 2.228 L 4.944 1.883 L 5.289 0.674 C 5.344 0.479 5.462 0.309 5.623 0.187 C 5.784 0.066 5.98 0 6.182 0 C 6.384 0 6.58 0.066 6.742 0.187 C 6.903 0.309 7.02 0.479 7.076 0.674 L 7.421 1.883 L 8.63 2.228 C 8.824 2.283 8.995 2.401 9.116 2.562 C 9.238 2.723 9.303 2.919 9.303 3.121 C 9.303 3.323 9.238 3.519 9.116 3.681 C 8.995 3.842 8.824 3.959 8.63 4.015 L 7.421 4.36 L 7.076 5.569 C 7.02 5.763 6.903 5.934 6.742 6.055 C 6.58 6.177 6.384 6.242 6.182 6.242 C 5.98 6.242 5.784 6.177 5.623 6.055 C 5.462 5.934 5.344 5.763 5.289 5.569 L 4.944 4.36 L 3.735 4.015 C 3.54 3.959 3.37 3.842 3.248 3.681 C 3.127 3.519 3.061 3.323 3.061 3.121 C 3.061 2.919 3.127 2.723 3.248 2.562 C 3.37 2.401 3.54 2.283 3.735 2.228 Z M 17.993 13.378 L 16.784 13.723 L 16.439 14.932 C 16.383 15.126 16.266 15.297 16.105 15.418 C 15.944 15.54 15.747 15.606 15.545 15.606 C 15.344 15.606 15.147 15.54 14.986 15.418 C 14.825 15.297 14.708 15.126 14.652 14.932 L 14.307 13.723 L 13.098 13.378 C 12.904 13.322 12.733 13.205 12.611 13.044 C 12.49 12.883 12.424 12.686 12.424 12.484 C 12.424 12.283 12.49 12.086 12.611 11.925 C 12.733 11.764 12.904 11.647 13.098 11.591 L 14.307 11.246 L 14.652 10.037 C 14.708 9.843 14.825 9.672 14.986 9.55 C 15.147 9.429 15.344 9.363 15.545 9.363 C 15.747 9.363 15.944 9.429 16.105 9.55 C 16.266 9.672 16.383 9.843 16.439 10.037 L 16.784 11.246 L 17.993 11.591 C 18.187 11.647 18.358 11.764 18.479 11.925 C 18.601 12.086 18.667 12.283 18.667 12.484 C 18.667 12.686 18.601 12.883 18.479 13.044 C 18.358 13.205 18.187 13.322 17.993 13.378 Z M 13.794 1.951 L 14.852 1.649 L 15.155 0.589 C 15.205 0.421 15.307 0.272 15.448 0.167 C 15.589 0.062 15.76 0.005 15.936 0.005 C 16.111 0.005 16.282 0.062 16.423 0.167 C 16.564 0.272 16.666 0.421 16.716 0.589 L 17.018 1.647 L 18.076 1.949 C 18.245 1.999 18.393 2.101 18.498 2.242 C 18.603 2.383 18.66 2.554 18.66 2.73 C 18.66 2.905 18.603 3.076 18.498 3.217 C 18.393 3.358 18.245 3.46 18.076 3.51 L 17.018 3.812 L 16.716 4.872 C 16.666 5.041 16.564 5.189 16.423 5.294 C 16.282 5.4 16.111 5.457 15.936 5.457 C 15.76 5.457 15.589 5.4 15.448 5.294 C 15.307 5.189 15.205 5.041 15.155 4.872 L 14.853 3.815 L 13.794 3.511 C 13.625 3.462 13.477 3.359 13.372 3.219 C 13.266 3.078 13.209 2.907 13.209 2.731 C 13.209 2.555 13.266 2.384 13.372 2.244 C 13.477 2.103 13.625 2 13.794 1.951 Z",
+    fill: "currentColor",
+    fillRule: "evenodd"
+  })));
+  const __body43 = () => /*#__PURE__*/React.createElement("div", {
+    className: props.className,
+    style: {
+      width: 24,
+      height: 24,
+      overflow: "hidden",
+      position: "relative",
+      color: "rgb(71,85,105)",
+      ...props.style
+    }
+  }, /*#__PURE__*/React.createElement("svg", {
+    width: 16,
+    height: 13,
+    viewBox: "0 0 16 13",
+    fill: "none",
+    style: {
+      position: "absolute",
+      left: 4,
+      top: 6,
+      width: 16,
+      height: 13
+    }
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M 12.667 0 L 3.333 0 C 1.495 0 0 1.458 0 3.25 L 0 9.75 C 0 11.542 1.495 13 3.333 13 L 12.667 13 C 14.505 13 16 11.542 16 9.75 L 16 3.25 C 16 1.458 14.505 0 12.667 0 Z M 10 1.3 L 10 11.7 L 6 11.7 L 6 1.3 L 10 1.3 Z M 1.333 9.75 L 1.333 3.25 C 1.333 2.175 2.231 1.3 3.333 1.3 L 4.667 1.3 L 4.667 11.7 L 3.333 11.7 C 2.231 11.7 1.333 10.825 1.333 9.75 Z M 14.667 9.75 C 14.667 10.825 13.769 11.7 12.667 11.7 L 11.333 11.7 L 11.333 1.3 L 12.667 1.3 C 13.769 1.3 14.667 2.175 14.667 3.25 L 14.667 9.75 Z",
+    fill: "currentColor",
+    fillRule: "evenodd"
+  })));
+  const __body44 = () => /*#__PURE__*/React.createElement("div", {
+    className: props.className,
+    style: {
+      width: 24,
+      height: 24,
+      overflow: "hidden",
+      position: "relative",
+      color: "rgb(71,85,105)",
+      ...props.style
+    }
+  }, /*#__PURE__*/React.createElement("svg", {
+    width: 18,
+    height: 18,
+    viewBox: "0 0 18 18",
+    fill: "none",
+    style: {
+      position: "absolute",
+      left: 3,
+      top: 3,
+      width: 18,
+      height: 18
+    }
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M 6 12 C 6 12.621 5.496 13.125 4.875 13.125 C 4.254 13.125 3.75 12.621 3.75 12 C 3.75 11.379 4.254 10.875 4.875 10.875 C 5.496 10.875 6 11.379 6 12 Z M 4.875 3.375 C 4.254 3.375 3.75 3.879 3.75 4.5 C 3.75 5.121 4.254 5.625 4.875 5.625 C 5.496 5.625 6 5.121 6 4.5 C 6 3.879 5.496 3.375 4.875 3.375 Z M 4.875 7.125 C 4.254 7.125 3.75 7.629 3.75 8.25 C 3.75 8.871 4.254 9.375 4.875 9.375 C 5.496 9.375 6 8.871 6 8.25 C 6 7.629 5.496 7.125 4.875 7.125 Z M 14.25 0 L 3.75 0 C 1.682 0 0 1.682 0 3.75 L 0 13.5 C 0 15.568 1.682 17.25 3.75 17.25 L 6 17.25 C 6.414 17.25 6.75 16.915 6.75 16.5 C 6.75 16.085 6.414 15.75 6 15.75 L 3.75 15.75 C 2.51 15.75 1.5 14.74 1.5 13.5 L 1.5 3.75 C 1.5 2.51 2.51 1.5 3.75 1.5 L 14.25 1.5 C 15.49 1.5 16.5 2.51 16.5 3.75 L 16.5 10.5 C 16.5 10.915 16.836 11.25 17.25 11.25 C 17.664 11.25 18 10.915 18 10.5 L 18 3.75 C 18 1.682 16.318 0 14.25 0 Z M 8.25 5.25 L 13.5 5.25 C 13.914 5.25 14.25 4.914 14.25 4.5 C 14.25 4.086 13.914 3.75 13.5 3.75 L 8.25 3.75 C 7.836 3.75 7.5 4.086 7.5 4.5 C 7.5 4.914 7.836 5.25 8.25 5.25 Z M 8.25 9 L 13.5 9 C 13.914 9 14.25 8.664 14.25 8.25 C 14.25 7.836 13.914 7.5 13.5 7.5 L 8.25 7.5 C 7.836 7.5 7.5 7.836 7.5 8.25 C 7.5 8.664 7.836 9 8.25 9 Z M 17.779 13.912 C 18.072 14.345 18.072 14.905 17.779 15.338 C 17.107 16.332 15.559 18 12.75 18 C 9.941 18 8.393 16.332 7.72 15.338 C 7.427 14.904 7.427 14.344 7.72 13.912 C 8.393 12.918 9.939 11.25 12.749 11.25 C 15.56 11.25 17.107 12.918 17.779 13.912 Z M 16.448 14.625 C 15.9 13.87 14.75 12.75 12.75 12.75 C 10.75 12.75 9.599 13.871 9.052 14.625 C 9.599 15.38 10.75 16.5 12.75 16.5 C 14.75 16.5 15.9 15.38 16.448 14.625 Z M 12.75 13.5 C 12.129 13.5 11.625 14.004 11.625 14.625 C 11.625 15.246 12.129 15.75 12.75 15.75 C 13.371 15.75 13.875 15.246 13.875 14.625 C 13.875 14.004 13.371 13.5 12.75 13.5 Z",
+    fill: "currentColor",
+    fillRule: "evenodd"
+  })));
+  const __body45 = () => /*#__PURE__*/React.createElement("div", {
+    className: props.className,
+    style: {
+      width: 24,
+      height: 24,
+      overflow: "hidden",
+      position: "relative",
+      color: "rgb(71,85,105)",
+      ...props.style
+    }
+  }, /*#__PURE__*/React.createElement("svg", {
+    width: 18.625,
+    height: 16,
+    viewBox: "0 0 18.625 16",
+    fill: "none",
+    style: {
+      position: "absolute",
+      left: 3.375,
+      top: 4,
+      width: 18.625,
+      height: 16
+    }
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M 5.411 0 C 5.746 0 6.076 0.079 6.375 0.229 L 8.643 1.382 C 8.743 1.43 8.853 1.455 8.964 1.454 L 13.656 1.454 C 14.609 1.455 15.523 1.839 16.196 2.521 C 16.731 3.062 17.078 3.756 17.2 4.502 C 16.646 4.204 16.048 3.979 15.418 3.838 C 15.268 3.622 15.08 3.434 14.862 3.284 C 14.506 3.04 14.086 2.91 13.656 2.909 L 8.964 2.909 C 8.629 2.908 8.299 2.828 8 2.676 L 5.732 1.527 C 5.632 1.479 5.522 1.453 5.411 1.454 L 3.594 1.454 C 3.022 1.454 2.474 1.684 2.069 2.093 C 1.665 2.502 1.438 3.057 1.438 3.636 L 1.438 4.359 L 10.949 4.304 C 10.165 4.663 9.457 5.162 8.86 5.771 L 1.438 5.813 L 1.438 12.363 C 1.438 12.942 1.665 13.497 2.069 13.906 C 2.474 14.315 3.022 14.545 3.594 14.545 L 7.997 14.545 C 8.353 15.087 8.781 15.576 9.269 16 L 3.594 16 C 2.641 15.999 1.727 15.615 1.054 14.934 C 0.38 14.252 0.001 13.327 0 12.363 L 0 3.636 C 0.001 2.672 0.38 1.748 1.054 1.066 C 1.727 0.385 2.641 0.001 3.594 0 L 5.411 0 Z",
+    fill: "currentColor",
+    fillRule: "evenodd"
+  }), /*#__PURE__*/React.createElement("path", {
+    d: "M 18.063 10.337 L 14.688 10.337 L 14.688 6.962 C 14.688 6.652 14.436 6.4 14.125 6.4 C 13.814 6.4 13.563 6.652 13.563 6.962 L 13.563 10.337 L 10.188 10.337 C 9.877 10.337 9.625 10.589 9.625 10.9 C 9.625 11.21 9.877 11.462 10.188 11.462 L 13.563 11.462 L 13.563 14.837 C 13.563 15.148 13.814 15.4 14.125 15.4 C 14.436 15.4 14.688 15.148 14.688 14.837 L 14.688 11.462 L 18.063 11.462 C 18.373 11.462 18.625 11.21 18.625 10.9 C 18.625 10.589 18.373 10.337 18.063 10.337 Z",
+    fill: "currentColor",
+    fillRule: "evenodd"
+  })));
+  const __body46 = () => /*#__PURE__*/React.createElement("div", {
+    className: props.className,
+    style: {
+      width: 24,
+      height: 24,
+      overflow: "hidden",
+      position: "relative",
+      color: "rgb(71,85,105)",
+      ...props.style
+    }
+  }, /*#__PURE__*/React.createElement("svg", {
+    width: 18,
+    height: 18,
+    viewBox: "0 0 18 18",
+    fill: "none",
+    style: {
+      position: "absolute",
+      left: 3,
+      top: 3,
+      width: 18,
+      height: 18
+    }
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M 9 0 C 7.22 0 5.48 0.528 4 1.517 C 2.52 2.506 1.366 3.911 0.685 5.556 C 0.004 7.2 -0.174 9.01 0.173 10.756 C 0.52 12.502 1.377 14.105 2.636 15.364 C 3.895 16.623 5.498 17.48 7.244 17.827 C 8.99 18.174 10.8 17.996 12.444 17.315 C 14.089 16.634 15.494 15.48 16.483 14 C 17.472 12.52 18 10.78 18 9 C 17.997 6.614 17.048 4.326 15.361 2.639 C 13.674 0.952 11.386 0.003 9 0 Z M 9 16.5 C 7.517 16.5 6.067 16.06 4.833 15.236 C 3.6 14.412 2.639 13.241 2.071 11.87 C 1.503 10.5 1.355 8.992 1.644 7.537 C 1.934 6.082 2.648 4.746 3.697 3.697 C 4.746 2.648 6.082 1.933 7.537 1.644 C 8.992 1.355 10.5 1.503 11.87 2.071 C 13.241 2.639 14.412 3.6 15.236 4.833 C 16.06 6.067 16.5 7.517 16.5 9 C 16.498 10.988 15.707 12.895 14.301 14.301 C 12.895 15.707 10.988 16.498 9 16.5 Z",
+    fill: "currentColor",
+    fillRule: "evenodd"
+  }), /*#__PURE__*/React.createElement("path", {
+    d: "M 9 7.5 L 8.25 7.5 C 8.051 7.5 7.86 7.579 7.72 7.72 C 7.579 7.86 7.5 8.051 7.5 8.25 C 7.5 8.449 7.579 8.64 7.72 8.78 C 7.86 8.921 8.051 9 8.25 9 L 9 9 L 9 13.5 C 9 13.699 9.079 13.89 9.22 14.03 C 9.36 14.171 9.551 14.25 9.75 14.25 C 9.949 14.25 10.14 14.171 10.28 14.03 C 10.421 13.89 10.5 13.699 10.5 13.5 L 10.5 9 C 10.5 8.602 10.342 8.221 10.061 7.939 C 9.779 7.658 9.398 7.5 9 7.5 Z",
+    fill: "currentColor",
+    fillRule: "evenodd"
+  }), /*#__PURE__*/React.createElement("path", {
+    d: "M 10.125 4.875 C 10.125 5.496 9.621 6 9 6 M 9 3.75 C 9.621 3.75 10.125 4.254 10.125 4.875 M 7.875 4.875 C 7.875 4.254 8.379 3.75 9 3.75 M 9 6 C 8.379 6 7.875 5.496 7.875 4.875 Z",
+    fill: "currentColor",
+    fillRule: "evenodd"
+  })));
+  const __body47 = () => /*#__PURE__*/React.createElement("div", {
+    className: props.className,
+    style: {
+      width: 24,
+      height: 24,
+      overflow: "hidden",
+      position: "relative",
+      color: "rgb(71,85,105)",
+      ...props.style
+    }
+  }, /*#__PURE__*/React.createElement("svg", {
+    width: 18,
+    height: 18,
+    viewBox: "0 0 18 18",
+    fill: "none",
+    style: {
+      position: "absolute",
+      left: 3,
+      top: 3,
+      width: 18,
+      height: 18
+    }
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M 9 0 C 7.22 0 5.48 0.528 4 1.517 C 2.52 2.506 1.366 3.911 0.685 5.556 C 0.004 7.2 -0.174 9.01 0.173 10.756 C 0.52 12.502 1.377 14.105 2.636 15.364 C 3.895 16.623 5.498 17.48 7.244 17.827 C 8.99 18.174 10.8 17.996 12.444 17.315 C 14.089 16.634 15.494 15.48 16.483 14 C 17.472 12.52 18 10.78 18 9 C 17.997 6.614 17.048 4.326 15.361 2.639 C 13.674 0.952 11.386 0.003 9 0 Z M 9 16.5 C 7.517 16.5 6.067 16.06 4.833 15.236 C 3.6 14.412 2.639 13.241 2.071 11.87 C 1.503 10.5 1.355 8.992 1.644 7.537 C 1.934 6.082 2.648 4.746 3.697 3.697 C 4.746 2.648 6.082 1.933 7.537 1.644 C 8.992 1.355 10.5 1.503 11.87 2.071 C 13.241 2.639 14.412 3.6 15.236 4.833 C 16.06 6.067 16.5 7.517 16.5 9 C 16.498 10.988 15.707 12.895 14.301 14.301 C 12.895 15.707 10.988 16.498 9 16.5 Z",
+    fill: "currentColor",
+    fillRule: "evenodd"
+  }), /*#__PURE__*/React.createElement("path", {
+    d: "M 9.538 3.797 C 9.105 3.718 8.661 3.736 8.236 3.848 C 7.81 3.96 7.415 4.164 7.078 4.445 C 6.74 4.727 6.469 5.08 6.282 5.478 C 6.096 5.876 6 6.31 6 6.75 C 6 6.949 6.079 7.14 6.22 7.28 C 6.36 7.421 6.551 7.5 6.75 7.5 C 6.949 7.5 7.14 7.421 7.28 7.28 C 7.421 7.14 7.5 6.949 7.5 6.75 C 7.5 6.529 7.548 6.311 7.642 6.112 C 7.736 5.912 7.872 5.735 8.042 5.594 C 8.212 5.453 8.411 5.352 8.625 5.296 C 8.838 5.241 9.061 5.234 9.278 5.275 C 9.575 5.332 9.847 5.477 10.061 5.69 C 10.274 5.903 10.42 6.175 10.478 6.471 C 10.537 6.782 10.497 7.103 10.362 7.39 C 10.227 7.676 10.005 7.912 9.728 8.065 C 9.269 8.331 8.89 8.715 8.63 9.177 C 8.37 9.639 8.239 10.163 8.25 10.693 L 8.25 11.25 C 8.25 11.449 8.329 11.64 8.47 11.78 C 8.61 11.921 8.801 12 9 12 C 9.199 12 9.39 11.921 9.53 11.78 C 9.671 11.64 9.75 11.449 9.75 11.25 L 9.75 10.693 C 9.741 10.432 9.8 10.173 9.923 9.942 C 10.045 9.712 10.226 9.517 10.447 9.379 C 10.991 9.08 11.428 8.621 11.7 8.064 C 11.972 7.506 12.064 6.879 11.964 6.267 C 11.864 5.655 11.578 5.089 11.143 4.647 C 10.709 4.204 10.148 3.908 9.538 3.797 Z",
+    fill: "currentColor",
+    fillRule: "evenodd"
+  }), /*#__PURE__*/React.createElement("path", {
+    d: "M 9 12.75 C 9.414 12.75 9.75 13.086 9.75 13.5 M 8.25 13.5 C 8.25 13.086 8.586 12.75 9 12.75 M 9 14.25 C 8.586 14.25 8.25 13.914 8.25 13.5 M 9.75 13.5 C 9.75 13.914 9.414 14.25 9 14.25 Z",
+    fill: "currentColor",
+    fillRule: "evenodd"
+  })));
+  const __body48 = () => /*#__PURE__*/React.createElement("div", {
+    className: props.className,
+    style: {
+      width: 24,
+      height: 24,
+      overflow: "hidden",
+      position: "relative",
+      color: "rgb(71,85,105)",
+      ...props.style
+    }
+  }, /*#__PURE__*/React.createElement("svg", {
+    width: 18,
+    height: 19,
+    viewBox: "0 0 18 19",
+    fill: "none",
+    style: {
+      position: "absolute",
+      left: 3,
+      top: 3,
+      width: 18,
+      height: 19
+    }
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M 17.914 12.823 L 15.868 5.407 C 15.431 3.821 14.479 2.427 13.164 1.448 C 11.848 0.468 10.245 -0.04 8.608 0.003 C 6.972 0.045 5.397 0.637 4.134 1.684 C 2.871 2.731 1.993 4.173 1.639 5.78 L 0.056 12.942 C -0.02 13.289 -0.019 13.649 0.062 13.995 C 0.142 14.341 0.298 14.665 0.519 14.942 C 0.74 15.219 1.021 15.443 1.339 15.597 C 1.658 15.751 2.007 15.83 2.36 15.831 L 5.198 15.831 C 5.379 16.725 5.862 17.529 6.564 18.107 C 7.267 18.684 8.147 19 9.054 19 C 9.962 19 10.841 18.684 11.544 18.107 C 12.247 17.529 12.729 16.725 12.91 15.831 L 15.64 15.831 C 16.004 15.83 16.363 15.746 16.688 15.583 C 17.014 15.421 17.298 15.185 17.518 14.894 C 17.738 14.603 17.889 14.264 17.957 13.905 C 18.026 13.546 18.011 13.176 17.914 12.823 Z M 9.054 17.413 C 8.568 17.411 8.094 17.258 7.697 16.975 C 7.3 16.691 7 16.292 6.838 15.831 L 11.27 15.831 C 11.108 16.292 10.808 16.691 10.411 16.975 C 10.015 17.258 9.541 17.411 9.054 17.413 Z M 16.266 13.935 C 16.193 14.033 16.097 14.112 15.988 14.167 C 15.879 14.221 15.758 14.249 15.636 14.248 L 2.36 14.248 C 2.242 14.248 2.126 14.221 2.02 14.17 C 1.913 14.119 1.82 14.044 1.746 13.952 C 1.673 13.859 1.621 13.751 1.594 13.636 C 1.567 13.52 1.567 13.4 1.592 13.285 L 3.175 6.123 C 3.453 4.862 4.143 3.73 5.135 2.909 C 6.127 2.087 7.363 1.622 8.647 1.589 C 9.931 1.555 11.19 1.954 12.223 2.722 C 13.256 3.49 14.004 4.584 14.348 5.828 L 16.394 13.244 C 16.428 13.362 16.433 13.485 16.411 13.605 C 16.389 13.725 16.339 13.838 16.266 13.935 Z",
+    fill: "currentColor",
+    fillRule: "evenodd"
+  })));
+  const __body49 = () => /*#__PURE__*/React.createElement("div", {
+    className: props.className,
+    style: {
+      width: 24,
+      height: 24,
+      overflow: "hidden",
+      position: "relative",
+      color: "rgb(71,85,105)",
+      ...props.style
+    }
+  }, /*#__PURE__*/React.createElement("svg", {
+    width: 18,
+    height: 18,
+    viewBox: "0 0 18 18",
+    fill: "none",
+    style: {
+      position: "absolute",
+      left: 3,
+      top: 3,
+      width: 18,
+      height: 18
+    }
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M 17.341 6.79 L 11.652 1.097 C 10.948 0.394 9.994 0 9 0 C 8.006 0 7.052 0.394 6.348 1.097 L 0.659 6.79 C 0.45 6.998 0.283 7.246 0.17 7.52 C 0.057 7.793 -0.001 8.086 0 8.381 L 0 15.749 C 0 16.346 0.237 16.918 0.659 17.341 C 1.081 17.763 1.653 18 2.25 18 L 15.75 18 C 16.347 18 16.919 17.763 17.341 17.341 C 17.763 16.918 18 16.346 18 15.749 L 18 8.381 C 18.001 8.086 17.943 7.793 17.83 7.52 C 17.717 7.246 17.55 6.998 17.341 6.79 Z M 11.25 16.499 L 6.75 16.499 L 6.75 13.547 C 6.75 12.95 6.987 12.377 7.409 11.955 C 7.831 11.533 8.403 11.295 9 11.295 C 9.597 11.295 10.169 11.533 10.591 11.955 C 11.013 12.377 11.25 12.95 11.25 13.547 L 11.25 16.499 Z M 16.5 15.749 C 16.5 15.948 16.421 16.139 16.28 16.279 C 16.14 16.42 15.949 16.499 15.75 16.499 L 12.75 16.499 L 12.75 13.547 C 12.75 12.552 12.355 11.597 11.652 10.894 C 10.948 10.19 9.995 9.795 9 9.795 C 8.005 9.795 7.052 10.19 6.348 10.894 C 5.645 11.597 5.25 12.552 5.25 13.547 L 5.25 16.499 L 2.25 16.499 C 2.051 16.499 1.86 16.42 1.72 16.279 C 1.579 16.139 1.5 15.948 1.5 15.749 L 1.5 8.381 C 1.501 8.183 1.58 7.992 1.72 7.851 L 7.409 2.16 C 7.831 1.739 8.403 1.503 9 1.503 C 9.597 1.503 10.169 1.739 10.591 2.16 L 16.28 7.853 C 16.42 7.994 16.499 8.183 16.5 8.381 L 16.5 15.749 Z",
+    fill: "currentColor",
+    fillRule: "evenodd"
+  })));
+  const __body50 = () => /*#__PURE__*/React.createElement("div", {
+    className: props.className,
+    style: {
+      width: 24,
+      height: 24,
+      overflow: "hidden",
+      position: "relative",
+      color: "rgb(71,85,105)",
+      ...props.style
+    }
+  }, /*#__PURE__*/React.createElement("svg", {
+    width: 18,
+    height: 18,
+    viewBox: "0 0 18 18",
+    fill: "none",
+    style: {
+      position: "absolute",
+      left: 3,
+      top: 3,
+      width: 18,
+      height: 18
+    }
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M 5.25 0 L 3 0 C 2.204 0 1.441 0.316 0.879 0.879 C 0.316 1.441 0 2.204 0 3 L 0 5.25 C 0 6.046 0.316 6.809 0.879 7.371 C 1.441 7.934 2.204 8.25 3 8.25 L 5.25 8.25 C 6.046 8.25 6.809 7.934 7.371 7.371 C 7.934 6.809 8.25 6.046 8.25 5.25 L 8.25 3 C 8.25 2.204 7.934 1.441 7.371 0.879 C 6.809 0.316 6.046 0 5.25 0 Z M 6.75 5.25 C 6.75 5.648 6.592 6.029 6.311 6.311 C 6.029 6.592 5.648 6.75 5.25 6.75 L 3 6.75 C 2.602 6.75 2.221 6.592 1.939 6.311 C 1.658 6.029 1.5 5.648 1.5 5.25 L 1.5 3 C 1.5 2.602 1.658 2.221 1.939 1.939 C 2.221 1.658 2.602 1.5 3 1.5 L 5.25 1.5 C 5.648 1.5 6.029 1.658 6.311 1.939 C 6.592 2.221 6.75 2.602 6.75 3 L 6.75 5.25 Z",
+    fill: "currentColor",
+    fillRule: "evenodd"
+  }), /*#__PURE__*/React.createElement("path", {
+    d: "M 15 0 L 12.75 0 C 11.954 0 11.191 0.316 10.629 0.879 C 10.066 1.441 9.75 2.204 9.75 3 L 9.75 5.25 C 9.75 6.046 10.066 6.809 10.629 7.371 C 11.191 7.934 11.954 8.25 12.75 8.25 L 15 8.25 C 15.796 8.25 16.559 7.934 17.121 7.371 C 17.684 6.809 18 6.046 18 5.25 L 18 3 C 18 2.204 17.684 1.441 17.121 0.879 C 16.559 0.316 15.796 0 15 0 Z M 16.5 5.25 C 16.5 5.648 16.342 6.029 16.061 6.311 C 15.779 6.592 15.398 6.75 15 6.75 L 12.75 6.75 C 12.352 6.75 11.971 6.592 11.689 6.311 C 11.408 6.029 11.25 5.648 11.25 5.25 L 11.25 3 C 11.25 2.602 11.408 2.221 11.689 1.939 C 11.971 1.658 12.352 1.5 12.75 1.5 L 15 1.5 C 15.398 1.5 15.779 1.658 16.061 1.939 C 16.342 2.221 16.5 2.602 16.5 3 L 16.5 5.25 Z",
+    fill: "currentColor",
+    fillRule: "evenodd"
+  }), /*#__PURE__*/React.createElement("path", {
+    d: "M 5.25 9.75 L 3 9.75 C 2.204 9.75 1.441 10.066 0.879 10.629 C 0.316 11.191 0 11.954 0 12.75 L 0 15 C 0 15.796 0.316 16.559 0.879 17.121 C 1.441 17.684 2.204 18 3 18 L 5.25 18 C 6.046 18 6.809 17.684 7.371 17.121 C 7.934 16.559 8.25 15.796 8.25 15 L 8.25 12.75 C 8.25 11.954 7.934 11.191 7.371 10.629 C 6.809 10.066 6.046 9.75 5.25 9.75 Z M 6.75 15 C 6.75 15.398 6.592 15.779 6.311 16.061 C 6.029 16.342 5.648 16.5 5.25 16.5 L 3 16.5 C 2.602 16.5 2.221 16.342 1.939 16.061 C 1.658 15.779 1.5 15.398 1.5 15 L 1.5 12.75 C 1.5 12.352 1.658 11.971 1.939 11.689 C 2.221 11.408 2.602 11.25 3 11.25 L 5.25 11.25 C 5.648 11.25 6.029 11.408 6.311 11.689 C 6.592 11.971 6.75 12.352 6.75 12.75 L 6.75 15 Z",
+    fill: "currentColor",
+    fillRule: "evenodd"
+  }), /*#__PURE__*/React.createElement("path", {
+    d: "M 15 9.75 L 12.75 9.75 C 11.954 9.75 11.191 10.066 10.629 10.629 C 10.066 11.191 9.75 11.954 9.75 12.75 L 9.75 15 C 9.75 15.796 10.066 16.559 10.629 17.121 C 11.191 17.684 11.954 18 12.75 18 L 15 18 C 15.796 18 16.559 17.684 17.121 17.121 C 17.684 16.559 18 15.796 18 15 L 18 12.75 C 18 11.954 17.684 11.191 17.121 10.629 C 16.559 10.066 15.796 9.75 15 9.75 Z M 16.5 15 C 16.5 15.398 16.342 15.779 16.061 16.061 C 15.779 16.342 15.398 16.5 15 16.5 L 12.75 16.5 C 12.352 16.5 11.971 16.342 11.689 16.061 C 11.408 15.779 11.25 15.398 11.25 15 L 11.25 12.75 C 11.25 12.352 11.408 11.971 11.689 11.689 C 11.971 11.408 12.352 11.25 12.75 11.25 L 15 11.25 C 15.398 11.25 15.779 11.408 16.061 11.689 C 16.342 11.971 16.5 12.352 16.5 12.75 L 16.5 15 Z",
+    fill: "currentColor",
+    fillRule: "evenodd"
+  })));
+  const __body51 = () => /*#__PURE__*/React.createElement("div", {
+    className: props.className,
+    style: {
+      width: 24,
+      height: 24,
+      overflow: "hidden",
+      position: "relative",
+      color: "rgb(71,85,105)",
+      ...props.style
+    }
+  }, /*#__PURE__*/React.createElement("svg", {
+    width: 18,
+    height: 18,
+    viewBox: "0 0 18 18",
+    fill: "none",
+    style: {
+      position: "absolute",
+      left: 3,
+      top: 3,
+      width: 18,
+      height: 18
+    }
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M 1.409 13.406 C 0.757 14.306 0.29 15.325 0.033 16.406 C -0.016 16.621 -0.01 16.845 0.051 17.057 C 0.112 17.269 0.226 17.462 0.382 17.618 C 0.538 17.774 0.731 17.888 0.944 17.949 C 1.156 18.01 1.38 18.016 1.595 17.967 C 2.674 17.71 3.692 17.243 4.59 16.592 C 5.013 16.17 5.251 15.598 5.251 15.001 C 5.251 14.404 5.015 13.831 4.593 13.409 C 4.171 12.986 3.598 12.749 3.001 12.748 C 2.404 12.748 1.831 12.985 1.409 13.406 Z M 3.53 15.528 C 2.925 15.915 2.269 16.214 1.58 16.416 C 1.782 15.727 2.081 15.071 2.468 14.466 C 2.609 14.329 2.799 14.254 2.995 14.256 C 3.192 14.257 3.38 14.336 3.519 14.475 C 3.658 14.614 3.737 14.802 3.739 14.999 C 3.741 15.196 3.665 15.385 3.528 15.526 L 3.53 15.528 Z M 13.5 6.374 C 13.5 6.871 13.302 7.348 12.951 7.7 C 12.599 8.051 12.122 8.249 11.625 8.249 C 11.127 8.249 10.65 8.051 10.299 7.7 C 9.947 7.348 9.75 6.871 9.75 6.374 C 9.75 5.877 9.947 5.4 10.299 5.049 C 10.65 4.697 11.127 4.499 11.625 4.499 C 12.122 4.499 12.599 4.697 12.951 5.049 C 13.302 5.4 13.5 5.877 13.5 6.374 Z M 15.729 0 C 13.944 -0.01 12.181 0.39 10.576 1.171 C 8.971 1.953 7.568 3.093 6.475 4.504 C 5.284 4.545 4.115 4.843 3.048 5.376 C 1.812 5.945 0.802 6.914 0.182 8.125 C 0.036 8.463 -0.023 8.832 0.01 9.199 C 0.043 9.565 0.166 9.918 0.369 10.225 C 0.575 10.539 0.855 10.797 1.185 10.976 C 1.515 11.155 1.885 11.248 2.26 11.248 L 4.125 11.248 C 4.82 11.252 5.486 11.529 5.977 12.021 C 6.469 12.512 6.746 13.178 6.75 13.873 L 6.75 15.737 C 6.749 16.112 6.843 16.482 7.021 16.812 C 7.2 17.142 7.458 17.422 7.772 17.628 C 8.079 17.831 8.432 17.954 8.798 17.987 C 9.165 18.02 9.534 17.961 9.872 17.815 C 11.084 17.195 12.052 16.185 12.621 14.949 C 13.155 13.883 13.453 12.714 13.494 11.523 C 14.907 10.428 16.049 9.021 16.831 7.413 C 17.612 5.805 18.012 4.038 18 2.25 C 17.999 1.953 17.939 1.659 17.825 1.385 C 17.71 1.111 17.542 0.863 17.331 0.654 C 17.12 0.445 16.87 0.279 16.595 0.167 C 16.32 0.055 16.026 -0.002 15.729 0 Z M 3.259 9.749 L 2.26 9.749 C 2.133 9.75 2.008 9.718 1.897 9.658 C 1.785 9.597 1.691 9.51 1.623 9.403 C 1.556 9.304 1.514 9.189 1.503 9.07 C 1.492 8.951 1.511 8.83 1.559 8.72 C 2.042 7.835 2.801 7.131 3.721 6.717 C 4.196 6.479 4.698 6.297 5.216 6.177 C 4.47 7.314 3.816 8.508 3.259 9.749 Z M 11.284 14.276 C 10.87 15.196 10.166 15.955 9.281 16.438 C 9.171 16.486 9.051 16.505 8.931 16.494 C 8.812 16.483 8.697 16.442 8.598 16.374 C 8.491 16.306 8.403 16.212 8.343 16.1 C 8.282 15.989 8.251 15.864 8.252 15.737 L 8.252 14.738 C 9.492 14.181 10.687 13.527 11.824 12.782 C 11.703 13.3 11.521 13.801 11.282 14.276 L 11.284 14.276 Z M 11.385 11.262 C 10.371 11.967 9.299 12.586 8.182 13.115 C 8.03 12.296 7.633 11.543 7.044 10.954 C 6.455 10.365 5.701 9.968 4.882 9.815 C 5.411 8.7 6.031 7.629 6.736 6.616 C 9.262 3.093 11.88 1.61 15.75 1.5 C 15.945 1.5 16.133 1.576 16.273 1.712 C 16.413 1.848 16.494 2.034 16.5 2.229 C 16.389 6.119 14.907 8.736 11.383 11.262 L 11.385 11.262 Z",
+    fill: "currentColor",
+    fillRule: "evenodd"
+  })));
+  const __body52 = () => /*#__PURE__*/React.createElement("div", {
+    className: props.className,
+    style: {
+      width: 24,
+      height: 24,
+      overflow: "hidden",
+      position: "relative",
+      color: "rgb(71,85,105)",
+      ...props.style
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "absolute",
+      left: 3,
+      top: 3,
+      width: 18,
+      height: 18,
+      overflow: "hidden"
+    }
+  }, /*#__PURE__*/React.createElement("svg", {
+    width: 18,
+    height: 18,
+    viewBox: "0 0 18 18",
+    fill: "none",
+    style: {
+      position: "absolute",
+      left: 0,
+      top: 0,
+      width: 18,
+      height: 18
+    }
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M 17.124 6.879 L 14.215 3.97 C 13.917 3.682 13.442 3.69 13.154 3.988 C 12.873 4.279 12.873 4.74 13.154 5.03 L 16.064 7.94 C 16.15 8.028 16.226 8.126 16.289 8.232 C 16.278 8.232 16.269 8.226 16.257 8.226 L 4.492 8.25 C 4.078 8.25 3.742 8.586 3.742 9 C 3.742 9.414 4.078 9.75 4.492 9.75 L 16.253 9.726 C 16.274 9.726 16.291 9.715 16.311 9.714 C 16.245 9.841 16.16 9.958 16.061 10.06 L 13.151 12.97 C 12.853 13.257 12.845 13.732 13.133 14.03 C 13.42 14.328 13.895 14.336 14.193 14.049 C 14.2 14.043 14.206 14.036 14.212 14.03 L 17.121 11.121 C 18.293 9.949 18.293 8.05 17.121 6.879 L 17.124 6.879 Z",
+    fill: "currentColor",
+    fillRule: "evenodd"
+  }), /*#__PURE__*/React.createElement("path", {
+    d: "M 5.251 16.5 L 3.751 16.5 C 2.508 16.5 1.5 15.493 1.5 14.25 L 1.5 3.75 C 1.5 2.507 2.508 1.5 3.751 1.5 L 5.251 1.5 C 5.665 1.5 6.001 1.164 6.001 0.75 C 6.001 0.336 5.665 0 5.251 0 L 3.751 0 C 1.68 0.002 0.002 1.68 0 3.75 L 0 14.25 C 0.002 16.32 1.68 17.998 3.751 18 L 5.251 18 C 5.665 18 6.001 17.664 6.001 17.25 C 6.001 16.836 5.665 16.5 5.251 16.5 Z",
+    fill: "currentColor",
+    fillRule: "evenodd"
+  }))));
+  const __body53 = () => /*#__PURE__*/React.createElement("div", {
+    className: props.className,
+    style: {
+      width: 24,
+      height: 24,
+      overflow: "hidden",
+      position: "relative",
+      color: "rgb(71,85,105)",
+      ...props.style
+    }
+  }, /*#__PURE__*/React.createElement("svg", {
+    width: 14,
+    height: 18,
+    viewBox: "0 0 14 18",
+    fill: "none",
+    style: {
+      position: "absolute",
+      left: 5,
+      top: 3,
+      width: 14,
+      height: 18
+    }
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M 0.322 7.176 C -0.104 6.738 -0.108 6.027 0.314 5.584 L 4.693 0.993 C 5.312 0.351 6.129 0 7 0 C 7.871 0 8.687 0.351 9.303 0.989 L 13.686 5.584 C 14.108 6.026 14.104 6.738 13.678 7.176 C 13.466 7.392 13.19 7.5 12.914 7.5 C 12.634 7.5 12.355 7.389 12.143 7.167 L 7.763 2.576 C 7.362 2.159 6.643 2.155 6.233 2.58 L 1.858 7.167 C 1.437 7.608 0.748 7.612 0.322 7.176 Z M 12.142 10.834 L 7.767 15.421 C 7.357 15.845 6.637 15.841 6.237 15.425 L 1.857 10.834 C 1.436 10.392 0.748 10.389 0.322 10.825 C -0.104 11.262 -0.108 11.974 0.314 12.416 L 4.697 17.011 C 5.313 17.65 6.129 18 7 18 C 7.871 18 8.687 17.649 9.307 17.007 L 13.686 12.416 C 14.108 11.974 14.104 11.262 13.678 10.825 C 13.251 10.389 12.563 10.392 12.142 10.834 Z",
+    fill: "currentColor",
+    fillRule: "evenodd"
+  })));
+  const __body54 = () => /*#__PURE__*/React.createElement("div", {
+    className: props.className,
+    style: {
+      width: 24,
+      height: 24,
+      overflow: "hidden",
+      position: "relative",
+      color: "rgb(71,85,105)",
+      ...props.style
+    }
+  }, /*#__PURE__*/React.createElement("svg", {
+    width: 18,
+    height: 18,
+    viewBox: "0 0 18 18",
+    fill: "none",
+    style: {
+      position: "absolute",
+      left: 3,
+      top: 3,
+      width: 18,
+      height: 18
+    }
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M 9 0 C 4.037 0 0 4.037 0 9 C 0 13.963 4.037 18 9 18 C 13.963 18 18 13.963 18 9 C 18 4.037 13.963 0 9 0 Z M 13.65 7.884 L 10.331 11.143 C 9.743 11.719 8.987 12.006 8.23 12.006 C 7.482 12.006 6.733 11.724 6.148 11.159 L 4.724 9.759 C 4.429 9.469 4.425 8.994 4.715 8.698 C 5.005 8.402 5.481 8.399 5.776 8.69 L 7.195 10.085 C 7.777 10.648 8.696 10.645 9.281 10.072 L 12.6 6.814 C 12.895 6.523 13.368 6.528 13.661 6.823 C 13.951 7.119 13.946 7.594 13.65 7.884 Z",
+    fill: "currentColor",
+    fillRule: "evenodd"
+  })));
+  const __body55 = () => /*#__PURE__*/React.createElement("div", {
+    className: props.className,
+    style: {
+      width: 24,
+      height: 24,
+      overflow: "hidden",
+      position: "relative",
+      color: "rgb(71,85,105)",
+      ...props.style
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "absolute",
+      left: 3,
+      top: 6,
+      width: 18,
+      height: 12.727,
+      overflow: "hidden"
+    }
+  }, /*#__PURE__*/React.createElement("svg", {
+    width: 18,
+    height: 12.727,
+    viewBox: "0 0 18 12.727",
+    fill: "none",
+    style: {
+      position: "absolute",
+      left: 0,
+      top: 0,
+      width: 18,
+      height: 12.727
+    }
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M 0.231 8.569 L 3.666 12.003 C 4.631 12.969 6.197 12.969 7.163 12.003 L 17.769 1.397 C 18.085 1.07 18.076 0.548 17.748 0.231 C 17.429 -0.077 16.922 -0.077 16.603 0.231 L 5.997 10.838 C 5.675 11.159 5.153 11.159 4.831 10.838 L 1.397 7.403 C 1.07 7.087 0.548 7.096 0.231 7.424 C -0.077 7.743 -0.077 8.249 0.231 8.569 Z",
+    fill: "currentColor",
+    fillRule: "evenodd"
+  }))));
+  const __body56 = () => /*#__PURE__*/React.createElement("div", {
+    className: props.className,
+    style: {
+      width: 24,
+      height: 24,
+      overflow: "hidden",
+      position: "relative",
+      color: "rgb(71,85,105)",
+      ...props.style
+    }
+  }, /*#__PURE__*/React.createElement("svg", {
+    width: 18,
+    height: 18,
+    viewBox: "0 0 18 18",
+    fill: "none",
+    style: {
+      position: "absolute",
+      left: 3,
+      top: 3,
+      width: 18,
+      height: 18
+    }
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M 8.417 0 C 9.087 0 9.744 0.173 10.325 0.502 L 14.925 3.122 C 15.504 3.453 15.986 3.928 16.321 4.5 C 16.656 5.072 16.832 5.721 16.833 6.381 L 16.833 6.641 C 16.342 6.489 15.83 6.386 15.302 6.336 C 15.295 6.216 15.28 6.095 15.253 5.978 L 14.678 6.303 C 14.644 6.303 14.611 6.302 14.578 6.302 C 11.471 6.302 8.804 8.158 7.654 10.807 L 7.654 9.147 C 7.181 9.065 6.725 8.903 6.307 8.668 L 1.582 5.978 C 1.551 6.11 1.532 6.245 1.527 6.381 L 1.527 11.618 C 1.527 12.014 1.633 12.404 1.834 12.748 C 2.035 13.091 2.325 13.375 2.672 13.574 L 7.271 16.194 C 7.349 16.234 7.431 16.268 7.513 16.299 C 7.741 16.908 8.048 17.477 8.421 17.999 L 8.417 18 C 7.748 18 7.09 17.827 6.509 17.498 L 1.909 14.879 C 1.33 14.548 0.848 14.072 0.513 13.5 C 0.179 12.928 0.001 12.279 0 11.619 L 0 6.381 C 0.001 5.721 0.179 5.072 0.513 4.5 C 0.848 3.928 1.33 3.453 1.909 3.122 L 6.509 0.502 C 7.09 0.173 7.748 0 8.417 0 Z M 8.417 1.504 C 8.015 1.504 7.619 1.608 7.271 1.806 L 2.672 4.426 C 2.556 4.498 2.446 4.581 2.345 4.674 L 7.071 7.365 C 7.48 7.597 7.945 7.719 8.417 7.719 C 8.889 7.719 9.353 7.597 9.762 7.365 L 14.489 4.674 C 14.388 4.581 14.278 4.499 14.162 4.426 L 9.561 1.806 C 9.214 1.608 8.819 1.504 8.417 1.504 Z",
+    fill: "currentColor",
+    fillRule: "nonzero"
+  }), /*#__PURE__*/React.createElement("path", {
+    d: "M 13.893 9.002 C 14.459 9.002 14.995 9.109 15.496 9.322 C 15.993 9.534 16.428 9.822 16.798 10.187 C 17.168 10.552 17.46 10.981 17.675 11.471 C 17.891 11.966 18 12.494 18 13.052 C 18 13.611 17.891 14.138 17.675 14.633 C 17.46 15.123 17.168 15.552 16.798 15.917 C 16.428 16.282 15.993 16.57 15.496 16.782 C 14.995 16.995 14.459 17.102 13.893 17.102 C 13.327 17.102 12.791 16.995 12.29 16.782 C 11.793 16.57 11.358 16.282 10.988 15.917 C 10.618 15.552 10.326 15.123 10.111 14.633 C 9.895 14.138 9.786 13.611 9.786 13.052 C 9.786 12.494 9.895 11.966 10.111 11.471 C 10.326 10.981 10.618 10.552 10.988 10.187 C 11.358 9.822 11.793 9.534 12.29 9.322 C 12.791 9.109 13.327 9.002 13.893 9.002 Z M 13.299 15.169 L 14.472 15.169 L 14.472 12.471 L 13.299 12.471 L 13.299 15.169 Z M 13.886 10.927 C 13.726 10.927 13.581 10.982 13.468 11.094 C 13.355 11.206 13.3 11.348 13.299 11.506 C 13.3 11.663 13.355 11.805 13.468 11.917 C 13.581 12.029 13.726 12.084 13.886 12.084 C 14.046 12.084 14.19 12.029 14.303 11.917 C 14.417 11.805 14.472 11.663 14.472 11.506 C 14.472 11.348 14.417 11.206 14.303 11.094 C 14.19 10.983 14.046 10.927 13.886 10.927 Z",
+    fill: "currentColor",
+    fillRule: "nonzero"
+  })));
+  const __body57 = () => /*#__PURE__*/React.createElement("div", {
+    className: props.className,
+    style: {
+      width: 24,
+      height: 24,
+      overflow: "hidden",
+      position: "relative",
+      color: "rgb(71,85,105)",
+      ...props.style
+    }
+  }, /*#__PURE__*/React.createElement("svg", {
+    width: 18,
+    height: 17,
+    viewBox: "0 0 18 17",
+    fill: "none",
+    style: {
+      position: "absolute",
+      left: 3,
+      top: 3,
+      width: 18,
+      height: 17
+    }
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M 13.801 4.774 C 13.666 4.736 13.542 4.665 13.441 4.569 C 13.34 4.472 13.266 4.352 13.225 4.219 C 12.995 3.456 12.61 2.746 12.092 2.133 C 11.575 1.52 10.935 1.016 10.214 0.652 C 9.492 0.287 8.702 0.071 7.892 0.015 C 7.083 -0.041 6.27 0.064 5.503 0.325 C 4.736 0.586 4.031 0.996 3.43 1.532 C 2.83 2.068 2.347 2.718 2.01 3.442 C 1.673 4.166 1.489 4.95 1.47 5.745 C 1.451 6.541 1.596 7.333 1.898 8.072 C 1.967 8.227 1.982 8.401 1.94 8.565 C 1.899 8.73 1.802 8.877 1.667 8.982 C 1.07 9.417 0.603 10.002 0.317 10.675 C 0.031 11.349 -0.064 12.085 0.042 12.807 C 0.207 13.783 0.724 14.669 1.498 15.303 C 2.273 15.937 3.253 16.279 4.262 16.264 L 8.251 16.264 C 8.45 16.264 8.64 16.187 8.781 16.049 C 8.922 15.911 9.001 15.724 9.001 15.529 C 9.001 15.334 8.922 15.147 8.781 15.009 C 8.64 14.871 8.45 14.793 8.251 14.793 L 4.262 14.793 C 3.614 14.809 2.982 14.596 2.481 14.194 C 1.979 13.791 1.641 13.226 1.527 12.601 C 1.455 12.141 1.514 11.67 1.696 11.24 C 1.878 10.811 2.176 10.438 2.559 10.164 C 2.962 9.869 3.253 9.451 3.387 8.977 C 3.521 8.502 3.49 7.997 3.3 7.541 C 2.923 6.566 2.904 5.494 3.245 4.506 C 3.518 3.733 4.005 3.05 4.653 2.534 C 5.301 2.019 6.084 1.692 6.912 1.59 C 7.104 1.565 7.297 1.553 7.491 1.553 C 8.461 1.55 9.406 1.855 10.184 2.422 C 10.962 2.99 11.532 3.789 11.808 4.701 C 11.916 5.049 12.11 5.364 12.374 5.62 C 12.637 5.875 12.961 6.063 13.316 6.165 C 14.186 6.417 14.956 6.924 15.524 7.617 C 16.092 8.311 16.431 9.158 16.494 10.045 C 16.558 10.932 16.343 11.818 15.879 12.582 C 15.416 13.346 14.725 13.954 13.9 14.323 C 13.778 14.384 13.675 14.478 13.605 14.593 C 13.535 14.709 13.499 14.841 13.501 14.976 C 13.5 15.097 13.53 15.218 13.588 15.325 C 13.646 15.433 13.731 15.524 13.835 15.591 C 13.938 15.658 14.057 15.698 14.181 15.708 C 14.305 15.719 14.429 15.698 14.543 15.649 C 17.644 14.187 19.328 10.342 16.703 6.628 C 15.98 5.703 14.956 5.049 13.801 4.774 Z",
+    fill: "currentColor",
+    fillRule: "evenodd"
+  }), /*#__PURE__*/React.createElement("path", {
+    d: "M 14.032 11.635 C 14.172 11.498 14.251 11.31 14.251 11.115 C 14.251 10.92 14.172 10.733 14.032 10.595 L 12.842 9.429 C 12.42 9.015 11.848 8.783 11.251 8.783 C 10.654 8.783 10.082 9.015 9.66 9.429 L 8.47 10.595 C 8.334 10.734 8.258 10.92 8.26 11.113 C 8.262 11.306 8.34 11.49 8.48 11.627 C 8.619 11.763 8.807 11.84 9.003 11.842 C 9.2 11.844 9.39 11.769 9.531 11.635 L 10.501 10.684 L 10.501 16.264 C 10.501 16.46 10.58 16.647 10.721 16.785 C 10.861 16.923 11.052 17 11.251 17 C 11.45 17 11.641 16.923 11.781 16.785 C 11.922 16.647 12.001 16.46 12.001 16.264 L 12.001 10.684 L 12.971 11.635 C 13.112 11.773 13.303 11.851 13.501 11.851 C 13.7 11.851 13.891 11.773 14.032 11.635 Z",
+    fill: "currentColor",
+    fillRule: "evenodd"
+  })));
+  const __body58 = () => /*#__PURE__*/React.createElement("div", {
+    className: props.className,
+    style: {
+      width: 24,
+      height: 24,
+      overflow: "hidden",
+      position: "relative",
+      color: "rgb(71,85,105)",
+      ...props.style
+    }
+  }, /*#__PURE__*/React.createElement("svg", {
+    width: 18,
+    height: 18,
+    viewBox: "0 0 18 18",
+    fill: "none",
+    style: {
+      position: "absolute",
+      left: 3,
+      top: 3,
+      width: 18,
+      height: 18
+    }
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M 18 9.373 C 18 11.301 17.029 13.074 15.404 14.114 C 15.055 14.337 14.591 14.236 14.368 13.887 C 14.145 13.538 14.247 13.075 14.596 12.851 C 15.788 12.087 16.5 10.788 16.5 9.373 C 16.5 7.413 15.106 5.71 13.187 5.327 C 12.469 5.184 11.879 4.726 11.568 4.072 C 10.681 2.202 8.703 1.197 6.643 1.575 C 4.838 1.905 3.366 3.405 3.065 5.222 C 2.973 5.774 2.979 6.324 3.083 6.858 C 3.226 7.6 2.949 8.394 2.36 8.929 C 1.814 9.427 1.501 10.135 1.501 10.873 C 1.501 11.984 2.204 12.979 3.251 13.349 C 3.641 13.487 3.845 13.915 3.707 14.306 C 3.599 14.614 3.309 14.807 3 14.807 C 2.917 14.807 2.833 14.792 2.75 14.763 C 1.106 14.181 0 12.618 0 10.872 C 0 9.712 0.492 8.599 1.351 7.819 C 1.556 7.633 1.655 7.374 1.61 7.143 C 1.472 6.433 1.464 5.704 1.585 4.975 C 1.994 2.509 3.919 0.549 6.372 0.099 C 9.068 -0.393 11.76 0.976 12.924 3.429 C 13.029 3.651 13.232 3.806 13.48 3.856 C 16.099 4.379 18 6.699 18 9.373 L 18 9.373 Z M 12.75 9.748 L 12.75 16.194 C 12.75 17.027 11.767 18 9 18 C 6.232 18 5.249 17.028 5.249 16.194 L 5.249 9.748 C 5.249 8.403 6.756 7.498 9 7.498 C 11.243 7.498 12.75 8.403 12.75 9.748 Z M 11.25 11.604 C 10.642 11.856 9.881 11.999 9 11.999 C 8.118 11.999 7.357 11.856 6.75 11.604 L 6.75 13.056 C 6.936 13.206 7.587 13.499 9 13.499 C 10.413 13.499 11.064 13.206 11.25 13.056 L 11.25 11.604 Z M 6.75 9.748 C 6.75 10.018 7.501 10.499 9 10.499 C 10.498 10.499 11.25 10.018 11.25 9.748 C 11.25 9.479 10.498 8.998 9 8.998 C 7.501 8.998 6.75 9.479 6.75 9.748 Z M 11.25 16.058 L 11.25 14.692 C 10.686 14.878 9.956 14.999 9 14.999 C 8.043 14.999 7.313 14.878 6.75 14.692 L 6.75 16.058 C 6.939 16.209 7.595 16.5 9 16.5 C 10.404 16.5 11.06 16.209 11.25 16.058 Z",
+    fill: "currentColor",
+    fillRule: "evenodd"
+  })));
+  const __body59 = () => /*#__PURE__*/React.createElement("div", {
+    className: props.className,
+    style: {
+      width: 24,
+      height: 24,
+      overflow: "hidden",
+      position: "relative",
+      ...props.style
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "absolute",
+      left: 5,
+      top: 6.5,
+      width: 10.5,
+      height: 10.5,
+      opacity: 0.3,
+      border: "1px dashed currentColor",
+      display: "flex",
+      alignItems: "center",
+      justifyContent: "center",
+      overflow: "hidden",
+      fontSize: 10
+    }
+  }, "Vector 112"), /*#__PURE__*/React.createElement("svg", {
+    width: 18.310,
+    height: 16,
+    viewBox: "0 0 18.310 16",
+    fill: "none",
+    style: {
+      position: "absolute",
+      left: 2.845,
+      top: 3.999,
+      width: 18.31,
+      height: 16
+    }
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M 15.092 7.641 C 15.092 7.328 14.916 7.041 14.637 6.899 C 13.921 6.534 13.154 6.199 12.295 5.873 C 10.876 5.328 9.841 4.278 9.303 2.839 C 8.981 1.966 8.65 1.189 8.291 0.463 C 8.151 0.18 7.861 0 7.546 0 C 7.23 0 6.939 0.18 6.8 0.464 C 6.442 1.187 6.112 1.964 5.789 2.836 C 5.252 4.277 4.216 5.328 2.799 5.871 C 1.935 6.2 1.168 6.535 0.454 6.899 C 0.176 7.04 0 7.328 0 7.64 C 0 7.953 0.176 8.241 0.455 8.383 C 1.173 8.747 1.939 9.084 2.797 9.408 C 4.216 9.953 5.251 11.003 5.789 12.443 C 6.112 13.319 6.443 14.095 6.8 14.818 C 6.94 15.102 7.229 15.282 7.546 15.282 C 7.862 15.282 8.151 15.102 8.291 14.818 C 8.65 14.095 8.98 13.318 9.302 12.445 C 9.84 11.004 10.876 9.953 12.292 9.41 C 13.153 9.084 13.919 8.748 14.637 8.384 C 14.916 8.241 15.092 7.955 15.092 7.641 Z M 11.699 7.855 C 9.848 8.565 8.444 9.988 7.741 11.867 C 7.676 12.043 7.611 12.215 7.546 12.383 C 7.48 12.215 7.415 12.042 7.348 11.864 C 6.649 9.989 5.245 8.565 3.39 7.854 C 3.203 7.784 3.024 7.712 2.847 7.641 C 3.023 7.57 3.205 7.499 3.393 7.427 C 5.245 6.717 6.649 5.293 7.349 3.417 C 7.415 3.239 7.481 3.067 7.546 2.9 C 7.611 3.069 7.677 3.242 7.743 3.419 C 8.444 5.294 9.848 6.717 11.701 7.428 C 11.888 7.498 12.068 7.57 12.245 7.641 C 12.067 7.713 11.885 7.784 11.699 7.855 Z",
+    fill: "currentColor",
+    fillRule: "evenodd"
+  }), /*#__PURE__*/React.createElement("path", {
+    d: "M 13.396 3.457 C 13.608 3.566 13.817 3.655 14.022 3.733 C 14.195 3.799 14.315 3.923 14.38 4.095 C 14.457 4.305 14.544 4.515 14.65 4.73 C 14.789 5.015 15.079 5.196 15.396 5.196 L 15.397 5.196 C 15.714 5.196 16.003 5.016 16.143 4.732 C 16.249 4.519 16.335 4.308 16.413 4.099 C 16.479 3.923 16.6 3.799 16.769 3.734 C 16.978 3.655 17.186 3.566 17.398 3.458 C 17.678 3.317 17.854 3.029 17.854 2.716 C 17.854 2.403 17.677 2.116 17.397 1.974 C 17.186 1.868 16.978 1.779 16.772 1.7 C 16.6 1.634 16.479 1.511 16.414 1.336 C 16.335 1.125 16.249 0.915 16.142 0.7 C 16.002 0.417 15.713 0.237 15.397 0.237 L 15.395 0.237 C 15.078 0.237 14.789 0.418 14.649 0.702 C 14.544 0.916 14.457 1.127 14.381 1.333 C 14.315 1.51 14.194 1.633 14.025 1.698 C 13.815 1.778 13.607 1.866 13.395 1.974 C 13.115 2.116 12.94 2.403 12.94 2.716 C 12.94 3.029 13.116 3.316 13.396 3.457 Z",
+    fill: "currentColor",
+    fillRule: "evenodd"
+  }), /*#__PURE__*/React.createElement("path", {
+    d: "M 17.854 12.315 C 17.591 12.181 17.33 12.07 17.074 11.973 C 16.792 11.865 16.586 11.655 16.48 11.371 C 16.383 11.108 16.274 10.845 16.142 10.578 C 16.002 10.295 15.712 10.115 15.397 10.115 C 15.079 10.115 14.79 10.295 14.651 10.58 C 14.52 10.846 14.411 11.109 14.316 11.367 C 14.208 11.655 14.002 11.865 13.725 11.972 C 13.465 12.07 13.203 12.181 12.94 12.316 C 12.662 12.459 12.486 12.745 12.486 13.058 C 12.486 13.371 12.662 13.657 12.94 13.799 C 13.203 13.933 13.463 14.044 13.722 14.143 C 14.002 14.251 14.208 14.459 14.315 14.745 C 14.411 15.007 14.52 15.27 14.652 15.536 C 14.792 15.819 15.08 15.999 15.397 16 C 15.714 16 16.002 15.821 16.143 15.537 C 16.275 15.271 16.385 15.008 16.481 14.747 C 16.588 14.459 16.793 14.251 17.074 14.143 C 17.333 14.044 17.592 13.934 17.855 13.8 C 18.135 13.658 18.31 13.371 18.31 13.058 C 18.31 12.745 18.134 12.458 17.854 12.315 Z",
+    fill: "currentColor",
+    fillRule: "evenodd"
+  })));
+  const __body60 = () => /*#__PURE__*/React.createElement("div", {
+    className: props.className,
+    style: {
+      width: 24,
+      height: 24,
+      overflow: "hidden",
+      position: "relative",
+      color: "rgb(202,138,4)",
+      ...props.style
+    }
+  }, /*#__PURE__*/React.createElement("svg", {
+    width: 17.456,
+    height: 16,
+    viewBox: "0 0 17.456 16",
+    fill: "none",
+    style: {
+      position: "absolute",
+      left: 3.272,
+      top: 4,
+      width: 17.456,
+      height: 16
+    }
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M 17.087 7.285 C 16.732 6.809 16.189 6.536 15.596 6.536 L 15.273 6.536 L 15.273 5.09 C 15.273 3.085 13.642 1.454 11.637 1.454 L 7.96 1.454 C 7.848 1.454 7.734 1.427 7.635 1.378 L 5.34 0.23 C 5.039 0.079 4.701 0 4.364 0 L 2.909 0 C 1.305 -0.001 0 1.304 0 2.908 L 0 12.363 C 0 14.369 1.631 16 3.637 16 L 12.77 16 C 14.389 16 15.788 14.958 16.263 13.377 L 17.377 8.928 C 17.547 8.36 17.441 7.761 17.087 7.285 Z M 1.455 12.363 L 1.455 2.908 C 1.455 2.106 2.107 1.454 2.909 1.454 L 4.364 1.454 C 4.476 1.454 4.589 1.481 4.689 1.53 L 6.984 2.678 C 7.285 2.828 7.622 2.908 7.96 2.908 L 11.637 2.908 C 12.84 2.908 13.819 3.887 13.819 5.09 L 13.819 6.535 L 6.266 6.535 C 5.029 6.535 3.925 7.32 3.51 8.513 L 1.917 13.705 C 1.628 13.334 1.455 12.869 1.455 12.363 Z M 15.975 8.543 L 14.86 12.99 C 14.581 13.921 13.741 14.545 12.77 14.545 L 3.637 14.545 C 3.485 14.545 3.338 14.53 3.195 14.5 L 4.893 8.966 C 5.096 8.382 5.648 7.99 6.266 7.99 L 15.596 7.99 C 15.772 7.99 15.875 8.092 15.92 8.153 C 15.965 8.214 16.033 8.341 15.975 8.543 Z",
+    fill: "currentColor",
+    fillRule: "evenodd"
+  })), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "absolute",
+      left: 4,
+      top: 5,
+      width: 13.5,
+      height: 13,
+      opacity: 0.3,
+      border: "1px dashed currentColor",
+      display: "flex",
+      alignItems: "center",
+      justifyContent: "center",
+      overflow: "hidden",
+      fontSize: 10
+    }
+  }, "Vector 111"));
+  const __body61 = () => /*#__PURE__*/React.createElement("div", {
+    className: props.className,
+    style: {
+      width: 24,
+      height: 24,
+      overflow: "hidden",
+      position: "relative",
+      ...props.style
+    }
+  }, /*#__PURE__*/React.createElement("svg", {
+    width: 18,
+    height: 16,
+    viewBox: "0 0 18 16",
+    fill: "none",
+    style: {
+      position: "absolute",
+      left: 3,
+      top: 4,
+      width: 18,
+      height: 16
+    }
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M 14.836 7.641 C 14.836 7.328 14.663 7.041 14.389 6.899 C 13.685 6.534 12.931 6.199 12.087 5.873 C 10.691 5.328 9.674 4.278 9.146 2.839 C 8.829 1.966 8.503 1.189 8.151 0.463 C 8.012 0.18 7.728 0 7.418 0 C 7.108 0 6.821 0.18 6.685 0.464 C 6.333 1.187 6.008 1.964 5.691 2.836 C 5.163 4.277 4.145 5.328 2.752 5.871 C 1.902 6.2 1.148 6.535 0.447 6.899 C 0.173 7.04 0 7.328 0 7.64 C 0 7.953 0.173 8.241 0.448 8.383 C 1.153 8.747 1.906 9.084 2.749 9.408 C 4.145 9.953 5.162 11.003 5.69 12.443 C 6.009 13.319 6.334 14.095 6.685 14.818 C 6.823 15.102 7.107 15.282 7.418 15.282 C 7.729 15.282 8.013 15.102 8.151 14.818 C 8.503 14.095 8.828 13.318 9.144 12.445 C 9.673 11.004 10.692 9.953 12.084 9.41 C 12.93 9.084 13.683 8.748 14.389 8.384 C 14.663 8.241 14.836 7.955 14.836 7.641 Z M 11.5 7.855 C 9.681 8.565 8.3 9.988 7.61 11.867 C 7.546 12.043 7.482 12.215 7.418 12.383 C 7.353 12.215 7.289 12.042 7.224 11.864 C 6.536 9.989 5.156 8.565 3.332 7.854 C 3.149 7.784 2.972 7.712 2.799 7.641 C 2.972 7.57 3.151 7.499 3.336 7.427 C 5.156 6.717 6.536 5.293 7.225 3.417 C 7.289 3.239 7.354 3.067 7.418 2.9 C 7.482 3.069 7.547 3.242 7.612 3.419 C 8.3 5.294 9.681 6.717 11.503 7.428 C 11.686 7.498 11.864 7.57 12.037 7.641 C 11.863 7.713 11.684 7.784 11.5 7.855 Z",
+    fill: "currentColor",
+    fillRule: "evenodd"
+  }), /*#__PURE__*/React.createElement("path", {
+    d: "M 13.169 3.457 C 13.377 3.566 13.583 3.655 13.785 3.733 C 13.954 3.799 14.073 3.923 14.137 4.095 C 14.212 4.305 14.298 4.515 14.402 4.73 C 14.538 5.015 14.823 5.196 15.135 5.196 L 15.136 5.196 C 15.447 5.196 15.732 5.016 15.869 4.732 C 15.973 4.519 16.058 4.308 16.135 4.099 C 16.2 3.923 16.319 3.799 16.485 3.734 C 16.69 3.655 16.895 3.566 17.103 3.458 C 17.378 3.317 17.551 3.029 17.551 2.716 C 17.551 2.403 17.377 2.116 17.102 1.974 C 16.895 1.868 16.69 1.779 16.487 1.7 C 16.319 1.634 16.2 1.511 16.135 1.336 C 16.058 1.125 15.973 0.915 15.869 0.7 C 15.731 0.417 15.446 0.237 15.136 0.237 L 15.134 0.237 C 14.822 0.237 14.538 0.418 14.401 0.702 C 14.298 0.916 14.212 1.127 14.137 1.333 C 14.072 1.51 13.953 1.633 13.787 1.698 C 13.581 1.778 13.376 1.866 13.168 1.974 C 12.893 2.116 12.72 2.403 12.72 2.716 C 12.72 3.029 12.894 3.316 13.169 3.457 Z",
+    fill: "currentColor",
+    fillRule: "evenodd"
+  }), /*#__PURE__*/React.createElement("path", {
+    d: "M 17.552 12.315 C 17.292 12.181 17.036 12.07 16.784 11.973 C 16.507 11.865 16.305 11.655 16.201 11.371 C 16.105 11.108 15.998 10.845 15.869 10.578 C 15.73 10.295 15.446 10.115 15.136 10.115 C 14.824 10.115 14.539 10.295 14.402 10.58 C 14.274 10.846 14.167 11.109 14.074 11.367 C 13.967 11.655 13.765 11.865 13.492 11.972 C 13.237 12.07 12.98 12.181 12.721 12.316 C 12.447 12.459 12.274 12.745 12.274 13.058 C 12.274 13.371 12.447 13.657 12.721 13.799 C 12.98 13.933 13.235 14.044 13.489 14.143 C 13.765 14.251 13.967 14.459 14.072 14.745 C 14.167 15.007 14.274 15.27 14.403 15.536 C 14.541 15.819 14.825 15.999 15.136 16 C 15.447 16 15.731 15.821 15.869 15.537 C 16 15.271 16.107 15.008 16.202 14.747 C 16.306 14.459 16.508 14.251 16.784 14.143 C 17.039 14.044 17.294 13.934 17.552 13.8 C 17.827 13.658 18 13.371 18 13.058 C 18 12.745 17.827 12.458 17.552 12.315 Z",
+    fill: "currentColor",
+    fillRule: "evenodd"
+  })));
+  const __body62 = () => /*#__PURE__*/React.createElement("div", {
+    className: props.className,
+    style: {
+      width: 24,
+      height: 24,
+      overflow: "hidden",
+      position: "relative",
+      color: "rgb(71,85,105)",
+      ...props.style
+    }
+  }, /*#__PURE__*/React.createElement("svg", {
+    width: 18,
+    height: 16,
+    viewBox: "0 0 18 16",
+    fill: "none",
+    style: {
+      position: "absolute",
+      left: 3,
+      top: 4,
+      width: 18,
+      height: 16
+    }
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M 17.619 7.285 C 17.253 6.809 16.693 6.536 16.081 6.536 L 15.749 6.536 L 15.749 5.09 C 15.749 3.085 14.067 1.454 11.999 1.454 L 8.207 1.454 C 8.092 1.454 7.975 1.427 7.872 1.378 L 5.506 0.23 C 5.196 0.079 4.848 0 4.5 0 L 3 0 C 1.345 -0.001 0 1.304 0 2.908 L 0 12.363 C 0 14.369 1.682 16 3.75 16 L 13.168 16 C 14.837 16 16.28 14.958 16.769 13.377 L 17.918 8.928 C 18.093 8.36 17.984 7.761 17.619 7.285 Z M 1.5 12.363 L 1.5 2.908 C 1.5 2.106 2.173 1.454 3 1.454 L 4.5 1.454 C 4.615 1.454 4.732 1.481 4.835 1.53 L 7.201 2.678 C 7.512 2.828 7.86 2.908 8.207 2.908 L 11.999 2.908 C 13.24 2.908 14.249 3.887 14.249 5.09 L 14.249 6.535 L 6.461 6.535 C 5.186 6.535 4.048 7.32 3.619 8.513 L 1.977 13.705 C 1.678 13.334 1.5 12.869 1.5 12.363 Z M 16.472 8.543 L 15.323 12.99 C 15.035 13.921 14.169 14.545 13.168 14.545 L 3.75 14.545 C 3.594 14.545 3.442 14.53 3.295 14.5 L 5.045 8.966 C 5.254 8.382 5.824 7.99 6.462 7.99 L 16.082 7.99 C 16.264 7.99 16.369 8.092 16.416 8.153 C 16.462 8.214 16.533 8.341 16.472 8.543 Z",
+    fill: "currentColor",
+    fillRule: "evenodd"
+  })));
+  const __body63 = () => /*#__PURE__*/React.createElement("div", {
+    className: props.className,
+    style: {
+      width: 24,
+      height: 24,
+      overflow: "hidden",
+      position: "relative",
+      color: "rgb(71,85,105)",
+      ...props.style
+    }
+  }, /*#__PURE__*/React.createElement("svg", {
+    width: 18,
+    height: 15,
+    viewBox: "0 0 18 15",
+    fill: "none",
+    style: {
+      position: "absolute",
+      left: 3,
+      top: 5,
+      width: 18,
+      height: 15
+    }
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M 17.075 1.648 C 16.8 1.531 16.499 1.501 16.207 1.56 C 15.916 1.619 15.649 1.765 15.44 1.98 L 13.5 3.961 L 10.06 0.448 C 9.779 0.161 9.398 0 9 0 C 8.602 0 8.221 0.161 7.94 0.448 L 4.5 3.961 L 2.561 1.98 C 2.351 1.766 2.083 1.62 1.793 1.561 C 1.502 1.502 1.2 1.532 0.926 1.648 C 0.652 1.764 0.418 1.961 0.253 2.212 C 0.088 2.464 0 2.76 0 3.063 L 0 11.171 C 0.001 12.186 0.397 13.159 1.1 13.877 C 1.803 14.595 2.756 14.999 3.75 15 L 14.25 15 C 15.244 14.999 16.197 14.595 16.9 13.877 C 17.603 13.159 17.999 12.186 18 11.171 L 18 3.063 C 18 2.76 17.912 2.464 17.747 2.212 C 17.583 1.96 17.349 1.764 17.075 1.648 Z M 16.5 11.171 C 16.5 11.78 16.263 12.364 15.841 12.795 C 15.419 13.226 14.847 13.468 14.25 13.468 L 3.75 13.468 C 3.153 13.468 2.581 13.226 2.159 12.795 C 1.737 12.364 1.5 11.78 1.5 11.171 L 1.5 3.063 L 3.97 5.585 C 4.11 5.729 4.301 5.809 4.5 5.809 C 4.699 5.809 4.89 5.729 5.03 5.585 L 9 1.531 L 12.97 5.585 C 13.11 5.729 13.301 5.809 13.5 5.809 C 13.699 5.809 13.89 5.729 14.03 5.585 L 16.5 3.063 L 16.5 11.171 Z",
+    fill: "currentColor",
+    fillRule: "evenodd"
+  })));
+  const __body64 = () => /*#__PURE__*/React.createElement("div", {
+    className: props.className,
+    style: {
+      width: 24,
+      height: 24,
+      overflow: "hidden",
+      position: "relative",
+      color: "rgb(71,85,105)",
+      ...props.style
+    }
+  }, /*#__PURE__*/React.createElement("svg", {
+    width: 18,
+    height: 18,
+    viewBox: "0 0 18 18",
+    fill: "none",
+    style: {
+      position: "absolute",
+      left: 3,
+      top: 3,
+      width: 18,
+      height: 18
+    }
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M 17.245 9 C 16.865 8.995 16.542 9.279 16.501 9.656 C 16.15 13.796 12.499 16.868 8.346 16.518 C 4.193 16.168 1.112 12.528 1.463 8.388 C 1.814 4.248 5.465 1.176 9.618 1.527 C 11.416 1.678 13.1 2.467 14.364 3.75 L 12.016 3.75 C 11.6 3.75 11.263 4.086 11.263 4.5 C 11.263 4.914 11.6 5.25 12.016 5.25 L 15.133 5.25 C 15.904 5.25 16.529 4.626 16.53 3.857 L 16.53 0.75 C 16.53 0.336 16.193 0 15.777 0 C 15.362 0 15.025 0.336 15.025 0.75 L 15.025 2.309 C 11.312 -0.999 5.611 -0.68 2.293 3.022 C -1.025 6.724 -0.704 12.406 3.009 15.714 C 6.722 19.022 12.422 18.702 15.74 15 C 17.03 13.562 17.821 11.747 17.997 9.825 C 18.035 9.41 17.729 9.042 17.312 9.003 C 17.29 9.001 17.268 9 17.245 9 Z",
+    fill: "currentColor",
+    fillRule: "evenodd"
+  })));
+  const __body65 = () => /*#__PURE__*/React.createElement("div", {
+    className: props.className,
+    style: {
+      width: 24,
+      height: 24,
+      overflow: "hidden",
+      position: "relative",
+      color: "rgb(71,85,105)",
+      ...props.style
+    }
+  }, /*#__PURE__*/React.createElement("svg", {
+    width: 20,
+    height: 17,
+    viewBox: "0 0 20 17",
+    fill: "none",
+    style: {
+      position: "absolute",
+      left: 2,
+      top: 4,
+      width: 20,
+      height: 17
+    }
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M 17.509 8.86 L 17.509 7.65 C 17.509 5.621 16.718 3.675 15.31 2.241 C 13.902 0.806 11.992 0 10 0 C 8.008 0 6.098 0.806 4.69 2.241 C 3.282 3.675 2.491 5.621 2.491 7.65 L 2.491 8.86 C 1.616 9.253 0.899 9.94 0.462 10.806 C 0.025 11.672 -0.107 12.665 0.088 13.619 C 0.284 14.572 0.795 15.429 1.536 16.044 C 2.277 16.66 3.203 16.997 4.159 17 C 4.602 17 5.026 16.821 5.339 16.502 C 5.652 16.183 5.828 15.751 5.828 15.3 L 5.828 10.2 C 5.828 9.749 5.652 9.317 5.339 8.998 C 5.026 8.679 4.602 8.5 4.159 8.5 L 4.159 7.65 C 4.159 6.072 4.775 4.559 5.87 3.443 C 6.965 2.327 8.451 1.7 10 1.7 C 11.549 1.7 13.035 2.327 14.13 3.443 C 15.225 4.559 15.841 6.072 15.841 7.65 L 15.841 8.5 C 15.398 8.5 14.974 8.679 14.661 8.998 C 14.348 9.317 14.172 9.749 14.172 10.2 L 14.172 15.3 L 11.669 15.3 C 11.447 15.3 11.235 15.39 11.079 15.549 C 10.922 15.708 10.834 15.925 10.834 16.15 C 10.834 16.375 10.922 16.592 11.079 16.751 C 11.235 16.91 11.447 17 11.669 17 L 15.841 17 C 16.797 16.997 17.723 16.66 18.464 16.044 C 19.205 15.429 19.716 14.572 19.912 13.619 C 20.107 12.665 19.975 11.672 19.538 10.806 C 19.101 9.94 18.384 9.253 17.509 8.86 Z M 4.159 15.3 C 3.496 15.3 2.859 15.031 2.389 14.553 C 1.92 14.075 1.656 13.426 1.656 12.75 C 1.656 12.074 1.92 11.425 2.389 10.947 C 2.859 10.469 3.496 10.2 4.159 10.2 L 4.159 15.3 Z M 15.841 15.3 L 15.841 10.2 C 16.504 10.2 17.141 10.469 17.611 10.947 C 18.08 11.425 18.344 12.074 18.344 12.75 C 18.344 13.426 18.08 14.075 17.611 14.553 C 17.141 15.031 16.504 15.3 15.841 15.3 Z",
+    fill: "currentColor",
+    fillRule: "evenodd"
+  })));
+  const __body66 = () => /*#__PURE__*/React.createElement("div", {
+    className: props.className,
+    style: {
+      width: 24,
+      height: 24,
+      overflow: "hidden",
+      position: "relative",
+      color: "rgb(71,85,105)",
+      ...props.style
+    }
+  }, /*#__PURE__*/React.createElement("svg", {
+    width: 18,
+    height: 18,
+    viewBox: "0 0 18 18",
+    fill: "none",
+    style: {
+      position: "absolute",
+      left: 3,
+      top: 3,
+      width: 18,
+      height: 18
+    }
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M 17.874 6.667 C 17.72 6.162 17.414 5.722 16.999 5.411 C 16.585 5.101 16.085 4.936 15.573 4.942 L 12.296 4.942 L 11.3 1.737 C 11.144 1.233 10.836 0.793 10.422 0.48 C 10.008 0.168 9.508 0 8.995 0 C 8.482 0 7.983 0.168 7.568 0.48 C 7.154 0.793 6.847 1.233 6.69 1.737 L 5.695 4.942 L 2.417 4.942 C 1.907 4.943 1.41 5.11 0.997 5.42 C 0.584 5.73 0.277 6.166 0.119 6.668 C -0.039 7.169 -0.04 7.709 0.117 8.21 C 0.274 8.712 0.58 9.149 0.992 9.461 L 3.659 11.475 L 2.645 14.719 C 2.481 15.222 2.479 15.767 2.639 16.271 C 2.799 16.776 3.113 17.213 3.533 17.519 C 3.947 17.834 4.447 18.003 4.961 18 C 5.475 17.997 5.974 17.823 6.384 17.504 L 8.995 15.519 L 11.607 17.502 C 12.02 17.815 12.518 17.985 13.03 17.988 C 13.542 17.99 14.041 17.825 14.457 17.516 C 14.872 17.207 15.182 16.769 15.342 16.267 C 15.501 15.764 15.502 15.222 15.345 14.719 L 14.331 11.475 L 17.001 9.461 C 17.418 9.153 17.728 8.716 17.885 8.213 C 18.042 7.709 18.038 7.167 17.874 6.667 Z M 16.116 8.209 L 13.008 10.556 C 12.88 10.652 12.785 10.788 12.736 10.943 C 12.687 11.098 12.687 11.265 12.736 11.421 L 13.918 15.194 C 13.977 15.386 13.977 15.592 13.916 15.783 C 13.855 15.974 13.738 16.14 13.58 16.257 C 13.422 16.375 13.232 16.438 13.037 16.437 C 12.842 16.436 12.653 16.371 12.496 16.252 L 9.439 13.927 C 9.311 13.83 9.155 13.777 8.995 13.777 C 8.835 13.777 8.68 13.83 8.551 13.927 L 5.494 16.252 C 5.338 16.373 5.148 16.439 4.952 16.441 C 4.757 16.442 4.566 16.38 4.407 16.262 C 4.248 16.144 4.13 15.977 4.069 15.785 C 4.008 15.593 4.008 15.386 4.069 15.194 L 5.254 11.421 C 5.303 11.265 5.303 11.098 5.254 10.943 C 5.205 10.788 5.11 10.652 4.983 10.556 L 1.874 8.209 C 1.718 8.091 1.601 7.924 1.542 7.734 C 1.482 7.543 1.483 7.337 1.543 7.147 C 1.603 6.956 1.72 6.791 1.877 6.673 C 2.034 6.555 2.223 6.492 2.417 6.491 L 6.243 6.491 C 6.402 6.491 6.556 6.439 6.685 6.343 C 6.813 6.246 6.908 6.11 6.957 5.954 L 8.12 2.211 C 8.179 2.019 8.296 1.852 8.454 1.733 C 8.611 1.615 8.801 1.551 8.996 1.551 C 9.191 1.551 9.381 1.615 9.538 1.733 C 9.695 1.852 9.812 2.019 9.872 2.211 L 11.035 5.954 C 11.083 6.11 11.179 6.246 11.307 6.343 C 11.435 6.439 11.59 6.491 11.749 6.491 L 15.575 6.491 C 15.769 6.492 15.958 6.555 16.115 6.673 C 16.272 6.791 16.389 6.956 16.449 7.147 C 16.509 7.337 16.51 7.543 16.45 7.734 C 16.391 7.924 16.274 8.091 16.118 8.209 L 16.116 8.209 Z",
+    fill: "currentColor",
+    fillRule: "evenodd"
+  })));
+  const __body67 = () => /*#__PURE__*/React.createElement("div", {
+    className: props.className,
+    style: {
+      width: 24,
+      height: 24,
+      overflow: "hidden",
+      position: "relative",
+      color: "rgb(202,138,4)",
+      ...props.style
+    }
+  }, /*#__PURE__*/React.createElement("svg", {
+    width: 18,
+    height: 18,
+    viewBox: "0 0 18 18",
+    fill: "none",
+    style: {
+      position: "absolute",
+      left: 3,
+      top: 3,
+      width: 18,
+      height: 18
+    }
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M 0.989 9.461 L 3.661 11.475 L 2.646 14.719 C 2.482 15.222 2.48 15.767 2.64 16.271 C 2.8 16.776 3.114 17.213 3.535 17.519 C 3.948 17.834 4.449 18.003 4.963 18 C 5.477 17.997 5.976 17.823 6.386 17.504 L 8.998 15.519 L 11.611 17.502 C 12.024 17.815 12.522 17.985 13.034 17.988 C 13.547 17.99 14.047 17.825 14.462 17.516 C 14.878 17.207 15.188 16.769 15.347 16.267 C 15.507 15.764 15.508 15.222 15.351 14.719 L 14.336 11.475 L 17.008 9.461 C 17.42 9.149 17.726 8.712 17.883 8.21 C 18.04 7.709 18.039 7.169 17.881 6.668 C 17.723 6.166 17.415 5.73 17.002 5.42 C 16.59 5.11 16.092 4.943 15.582 4.942 L 12.3 4.942 L 11.305 1.737 C 11.148 1.233 10.84 0.793 10.426 0.48 C 10.011 0.168 9.512 0 8.998 0 C 8.485 0 7.986 0.168 7.571 0.48 C 7.157 0.793 6.849 1.233 6.692 1.737 L 5.697 4.942 L 2.418 4.942 C 1.908 4.943 1.41 5.11 0.998 5.42 C 0.585 5.73 0.277 6.166 0.119 6.668 C -0.039 7.169 -0.04 7.709 0.117 8.21 C 0.274 8.712 0.58 9.149 0.992 9.461 L 0.989 9.461 Z",
+    fill: "currentColor",
+    fillRule: "evenodd"
+  })));
+  const __body68 = () => /*#__PURE__*/React.createElement("div", {
+    className: props.className,
+    style: {
+      width: 24,
+      height: 24,
+      overflow: "hidden",
+      position: "relative",
+      color: "rgb(71,85,105)",
+      ...props.style
+    }
+  }, /*#__PURE__*/React.createElement("svg", {
+    width: 18,
+    height: 18,
+    viewBox: "0 0 18 18",
+    fill: "none",
+    style: {
+      position: "absolute",
+      left: 3,
+      top: 3,
+      width: 18,
+      height: 18
+    }
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M 18 8.25 C 18 7.074 17.436 5.97 16.5 5.266 L 16.5 5.25 C 16.5 3.827 15.505 2.633 14.174 2.326 C 13.867 0.996 12.672 0 11.25 0 C 10.354 0 9.55 0.395 9 1.018 C 8.45 0.394 7.646 0 6.75 0 C 5.328 0 4.133 0.995 3.827 2.326 C 2.496 2.633 1.5 3.827 1.5 5.25 L 1.5 5.266 C 0.564 5.97 0 7.073 0 8.25 C 0 8.914 0.176 9.553 0.514 10.125 C 0.177 10.697 0 11.336 0 12 C 0 13.264 0.643 14.433 1.7 15.125 C 2.239 16.833 3.809 18 5.625 18 C 7.019 18 8.253 17.306 9 16.244 C 9.747 17.305 10.981 18 12.375 18 C 14.191 18 15.761 16.833 16.3 15.125 C 17.356 14.433 18 13.264 18 12 C 18 11.336 17.824 10.697 17.485 10.125 C 17.823 9.553 18 8.914 18 8.25 Z M 5.625 16.5 C 4.4 16.5 3.35 15.664 3.074 14.466 C 3.025 14.255 2.888 14.076 2.698 13.974 C 1.959 13.578 1.5 12.822 1.5 12.001 C 1.5 11.494 1.675 11.009 2.009 10.597 C 2.231 10.321 2.231 9.929 2.009 9.654 C 1.676 9.242 1.5 8.757 1.5 8.25 C 1.5 7.447 1.943 6.7 2.657 6.298 C 2.935 6.142 3.083 5.828 3.028 5.514 C 3.013 5.428 3 5.341 3 5.25 C 3 4.423 3.673 3.75 4.5 3.75 C 4.915 3.75 5.25 3.414 5.25 3 C 5.25 2.173 5.923 1.5 6.75 1.5 C 7.577 1.5 8.25 2.173 8.25 3 L 8.25 6 L 6.549 6 C 6.29 5.552 5.805 5.25 5.25 5.25 C 4.421 5.25 3.75 5.921 3.75 6.75 C 3.75 7.579 4.421 8.25 5.25 8.25 C 5.805 8.25 6.29 7.948 6.549 7.5 L 8.25 7.5 L 8.25 11.25 L 6.549 11.25 C 6.29 10.802 5.805 10.5 5.25 10.5 C 4.421 10.5 3.75 11.171 3.75 12 C 3.75 12.829 4.421 13.5 5.25 13.5 C 5.805 13.5 6.29 13.198 6.549 12.75 L 8.25 12.75 L 8.25 13.875 C 8.25 15.322 7.072 16.5 5.625 16.5 Z M 15.991 10.596 C 16.324 11.008 16.5 11.493 16.5 12 C 16.5 12.822 16.042 13.578 15.302 13.973 C 15.112 14.075 14.974 14.255 14.926 14.465 C 14.65 15.663 13.6 16.499 12.375 16.499 C 10.928 16.499 9.75 15.322 9.75 13.874 L 9.75 10.499 L 11.25 10.499 C 12.491 10.499 13.5 9.49 13.5 8.249 L 13.5 8.048 C 13.948 7.789 14.25 7.304 14.25 6.749 C 14.25 5.92 13.579 5.249 12.75 5.249 C 11.921 5.249 11.25 5.92 11.25 6.749 C 11.25 7.304 11.552 7.789 12 8.048 L 12 8.249 C 12 8.662 11.664 8.999 11.25 8.999 L 9.75 8.999 L 9.75 3 C 9.75 2.173 10.423 1.5 11.25 1.5 C 12.077 1.5 12.75 2.173 12.75 3 C 12.75 3.414 13.085 3.75 13.5 3.75 C 14.327 3.75 15 4.423 15 5.25 C 15 5.341 14.986 5.428 14.972 5.514 C 14.917 5.828 15.065 6.142 15.343 6.298 C 16.057 6.699 16.5 7.447 16.5 8.25 C 16.5 8.756 16.324 9.241 15.991 9.654 C 15.769 9.929 15.769 10.321 15.991 10.596 Z",
+    fill: "currentColor",
+    fillRule: "evenodd"
+  })));
+  const __body69 = () => /*#__PURE__*/React.createElement("div", {
+    className: props.className,
+    style: {
+      width: 24,
+      height: 24,
+      overflow: "hidden",
+      position: "relative",
+      color: "rgb(71,85,105)",
+      ...props.style
+    }
+  }, /*#__PURE__*/React.createElement("svg", {
+    width: 18,
+    height: 18,
+    viewBox: "0 0 18 18",
+    fill: "none",
+    style: {
+      position: "absolute",
+      left: 3,
+      top: 3,
+      width: 18,
+      height: 18
+    }
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M 8.308 16.341 C 7.738 16.437 7.099 16.5 6.375 16.5 C 3.221 16.5 1.5 15.403 1.5 14.839 L 1.5 13.094 C 2.651 13.81 4.376 14.25 6.375 14.25 C 6.62 14.25 6.853 14.23 7.089 14.216 C 6.928 13.754 6.823 13.257 6.78 12.728 C 6.643 12.734 6.518 12.75 6.375 12.75 C 3.399 12.75 1.5 11.64 1.5 10.875 L 1.5 9.344 C 2.651 10.06 4.376 10.5 6.375 10.5 C 6.503 10.5 6.624 10.489 6.75 10.485 L 6.75 9.143 C 6.75 9.093 6.76 9.045 6.762 8.996 C 6.634 8.998 6.511 9.001 6.375 9.001 C 3.399 9.001 1.5 7.891 1.5 7.126 L 1.5 5.595 C 2.651 6.311 4.376 6.751 6.375 6.751 C 10.01 6.751 12.75 5.299 12.75 3.376 C 12.75 1.452 10.01 0 6.375 0 C 2.74 0 0 1.451 0 3.375 L 0 14.839 C 0 16.915 3.207 18 6.375 18 C 7.484 18 8.594 17.864 9.574 17.602 C 9.142 17.245 8.706 16.824 8.308 16.341 Z M 6.375 1.5 C 9.351 1.5 11.25 2.61 11.25 3.375 C 11.25 4.14 9.351 5.25 6.375 5.25 C 3.399 5.25 1.5 4.14 1.5 3.375 C 1.5 2.61 3.399 1.5 6.375 1.5 Z M 16.549 7.135 L 13.125 6 L 9.701 7.135 C 8.833 7.423 8.25 8.23 8.25 9.143 L 8.25 12.225 C 8.25 15.348 11.406 17.168 12.376 17.652 L 13.067 17.996 L 13.787 17.708 C 14.776 17.31 18 15.738 18 12.225 L 18 9.143 C 18 8.23 17.417 7.423 16.549 7.135 Z M 13.125 14.997 C 12.097 14.997 11.189 14.527 10.573 13.799 L 9.75 14.622 L 9.75 12.372 C 9.75 12.165 9.918 11.997 10.125 11.997 L 12.375 11.997 L 11.625 12.747 L 11.635 12.747 C 11.977 13.199 12.515 13.497 13.125 13.497 C 13.735 13.497 14.273 13.199 14.615 12.747 L 16.292 12.747 C 15.826 14.054 14.59 14.997 13.125 14.997 Z M 16.5 10.872 C 16.5 11.079 16.332 11.247 16.125 11.247 L 13.875 11.247 L 14.625 10.497 L 14.615 10.497 C 14.272 10.045 13.735 9.747 13.125 9.747 C 12.515 9.747 11.977 10.045 11.635 10.497 L 9.958 10.497 C 10.424 9.191 11.661 8.247 13.126 8.247 C 14.153 8.247 15.061 8.717 15.677 9.445 L 16.501 8.622 L 16.5 10.872 Z",
+    fill: "currentColor",
+    fillRule: "evenodd"
+  })));
+  const __body70 = () => /*#__PURE__*/React.createElement("div", {
+    className: props.className,
+    style: {
+      width: 24,
+      height: 24,
+      overflow: "hidden",
+      position: "relative",
+      color: "rgb(22,163,74)",
+      ...props.style
+    }
+  }, /*#__PURE__*/React.createElement("svg", {
+    width: 15,
+    height: 18,
+    viewBox: "0 0 15 18",
+    fill: "none",
+    style: {
+      position: "absolute",
+      left: 4,
+      top: 3,
+      width: 15,
+      height: 18
+    }
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M 12.436 1.605 L 7.737 0.038 C 7.583 -0.013 7.417 -0.013 7.263 0.038 L 2.564 1.605 C 1.817 1.853 1.167 2.331 0.707 2.969 C 0.247 3.608 -0.001 4.375 0 5.162 L 0 9 C 0 14.672 6.9 17.805 7.195 17.935 C 7.291 17.978 7.395 18 7.5 18 C 7.605 18 7.709 17.978 7.804 17.935 C 8.1 17.805 15 14.672 15 9 L 15 5.162 C 15.001 4.375 14.753 3.608 14.293 2.969 C 13.833 2.331 13.183 1.853 12.436 1.605 Z M 13.5 9 C 13.5 13.091 8.761 15.775 7.5 16.417 C 6.238 15.777 1.5 13.102 1.5 9 L 1.5 5.162 C 1.5 4.69 1.649 4.23 1.925 3.847 C 2.201 3.464 2.591 3.177 3.039 3.028 L 7.5 1.541 L 11.961 3.028 C 12.409 3.177 12.799 3.464 13.075 3.847 C 13.351 4.23 13.5 4.69 13.5 5.162 L 13.5 9 Z",
+    fill: "currentColor",
+    fillRule: "evenodd"
+  }), /*#__PURE__*/React.createElement("path", {
+    d: "M 9.975 6.225 L 6.834 9.375 L 5.151 7.62 C 5.083 7.546 5.002 7.487 4.911 7.445 C 4.82 7.403 4.722 7.38 4.622 7.377 C 4.522 7.373 4.422 7.39 4.328 7.426 C 4.235 7.462 4.15 7.516 4.078 7.586 C 4.006 7.655 3.948 7.738 3.908 7.83 C 3.869 7.922 3.848 8.021 3.848 8.121 C 3.847 8.221 3.866 8.32 3.904 8.413 C 3.943 8.505 3.999 8.589 4.07 8.66 L 5.8 10.46 C 5.929 10.599 6.085 10.711 6.258 10.788 C 6.431 10.865 6.619 10.907 6.809 10.91 L 6.833 10.91 C 7.019 10.91 7.204 10.874 7.375 10.803 C 7.547 10.731 7.703 10.627 7.835 10.495 L 11.038 7.291 C 11.108 7.221 11.164 7.138 11.202 7.047 C 11.24 6.955 11.259 6.858 11.26 6.759 C 11.26 6.66 11.24 6.562 11.203 6.471 C 11.165 6.379 11.109 6.296 11.04 6.226 C 10.97 6.156 10.887 6.101 10.796 6.063 C 10.704 6.025 10.606 6.005 10.508 6.005 C 10.409 6.005 10.311 6.024 10.219 6.062 C 10.128 6.1 10.045 6.155 9.975 6.225 Z",
+    fill: "currentColor",
+    fillRule: "evenodd"
+  })));
+  const __body71 = () => /*#__PURE__*/React.createElement("div", {
+    className: props.className,
+    style: {
+      width: 24,
+      height: 24,
+      overflow: "hidden",
+      position: "relative",
+      color: "rgb(71,85,105)",
+      ...props.style
+    }
+  }, /*#__PURE__*/React.createElement("svg", {
+    width: 18,
+    height: 18,
+    viewBox: "0 0 18 18",
+    fill: "none",
+    style: {
+      position: "absolute",
+      left: 3,
+      top: 3,
+      width: 18,
+      height: 18
+    }
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M 9 0 C 7.22 0 5.48 0.528 4 1.517 C 2.52 2.506 1.366 3.911 0.685 5.556 C 0.004 7.2 -0.174 9.01 0.173 10.756 C 0.52 12.502 1.377 14.105 2.636 15.364 C 3.895 16.623 5.498 17.48 7.244 17.827 C 8.99 18.174 10.8 17.996 12.444 17.315 C 14.089 16.634 15.494 15.48 16.483 14 C 17.472 12.52 18 10.78 18 9 C 17.997 6.614 17.048 4.326 15.361 2.639 C 13.674 0.952 11.386 0.003 9 0 Z M 9 16.5 C 7.517 16.5 6.067 16.06 4.833 15.236 C 3.6 14.412 2.639 13.241 2.071 11.87 C 1.503 10.5 1.355 8.992 1.644 7.537 C 1.934 6.082 2.648 4.746 3.697 3.697 C 4.746 2.648 6.082 1.933 7.537 1.644 C 8.992 1.355 10.5 1.503 11.87 2.071 C 13.241 2.639 14.412 3.6 15.236 4.833 C 16.06 6.067 16.5 7.517 16.5 9 C 16.498 10.988 15.707 12.895 14.301 14.301 C 12.895 15.707 10.988 16.498 9 16.5 Z",
+    fill: "currentColor",
+    fillRule: "evenodd"
+  }), /*#__PURE__*/React.createElement("path", {
+    d: "M 9 3.75 C 8.801 3.75 8.61 3.829 8.47 3.97 C 8.329 4.11 8.25 4.301 8.25 4.5 L 8.25 10.5 C 8.25 10.699 8.329 10.89 8.47 11.03 C 8.61 11.171 8.801 11.25 9 11.25 C 9.199 11.25 9.39 11.171 9.53 11.03 C 9.671 10.89 9.75 10.699 9.75 10.5 L 9.75 4.5 C 9.75 4.301 9.671 4.11 9.53 3.97 C 9.39 3.829 9.199 3.75 9 3.75 Z",
+    fill: "currentColor",
+    fillRule: "evenodd"
+  }), /*#__PURE__*/React.createElement("path", {
+    d: "M 9 12.75 C 9.414 12.75 9.75 13.086 9.75 13.5 M 8.25 13.5 C 8.25 13.086 8.586 12.75 9 12.75 M 9 14.25 C 8.586 14.25 8.25 13.914 8.25 13.5 M 9.75 13.5 C 9.75 13.914 9.414 14.25 9 14.25 Z",
+    fill: "currentColor",
+    fillRule: "evenodd"
+  })));
+  const __body72 = () => /*#__PURE__*/React.createElement("div", {
+    className: props.className,
+    style: {
+      width: 24,
+      height: 24,
+      overflow: "hidden",
+      position: "relative",
+      color: "rgb(71,85,105)",
+      ...props.style
+    }
+  }, /*#__PURE__*/React.createElement("svg", {
+    width: 18,
+    height: 18,
+    viewBox: "0 0 18 18",
+    fill: "none",
+    style: {
+      position: "absolute",
+      left: 3,
+      top: 3,
+      width: 18,
+      height: 18
+    }
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M 9 0 C 6.784 0.002 4.647 0.822 3 2.305 L 3 0.75 C 3 0.551 2.921 0.36 2.78 0.22 C 2.64 0.079 2.449 0 2.25 0 C 2.051 0 1.86 0.079 1.72 0.22 C 1.579 0.36 1.5 0.551 1.5 0.75 L 1.5 3 C 1.5 3.597 1.737 4.169 2.159 4.591 C 2.581 5.013 3.153 5.25 3.75 5.25 L 6 5.25 C 6.199 5.25 6.39 5.171 6.53 5.03 C 6.671 4.89 6.75 4.699 6.75 4.5 C 6.75 4.301 6.671 4.11 6.53 3.97 C 6.39 3.829 6.199 3.75 6 3.75 L 3.75 3.75 C 3.725 3.746 3.7 3.741 3.675 3.734 C 4.897 2.503 6.509 1.735 8.234 1.56 C 9.96 1.385 11.693 1.814 13.137 2.774 C 14.582 3.735 15.648 5.167 16.154 6.826 C 16.661 8.485 16.575 10.268 15.913 11.871 C 15.251 13.474 14.053 14.798 12.523 15.616 C 10.994 16.435 9.228 16.697 7.527 16.358 C 5.826 16.019 4.295 15.1 3.196 13.758 C 2.097 12.416 1.497 10.735 1.5 9 C 1.5 8.801 1.421 8.61 1.28 8.47 C 1.14 8.329 0.949 8.25 0.75 8.25 C 0.551 8.25 0.36 8.329 0.22 8.47 C 0.079 8.61 0 8.801 0 9 C 0 10.78 0.528 12.52 1.517 14 C 2.506 15.48 3.911 16.634 5.556 17.315 C 7.2 17.996 9.01 18.174 10.756 17.827 C 12.502 17.48 14.105 16.623 15.364 15.364 C 16.623 14.105 17.48 12.502 17.827 10.756 C 18.174 9.01 17.996 7.2 17.315 5.556 C 16.634 3.911 15.48 2.506 14 1.517 C 12.52 0.528 10.78 0 9 0 Z",
+    fill: "currentColor",
+    fillRule: "evenodd"
+  }), /*#__PURE__*/React.createElement("path", {
+    d: "M 9 4.5 C 8.801 4.5 8.61 4.579 8.47 4.72 C 8.329 4.86 8.25 5.051 8.25 5.25 L 8.25 9 C 8.25 9.199 8.329 9.39 8.47 9.53 L 10.72 11.78 C 10.861 11.917 11.051 11.992 11.247 11.991 C 11.444 11.989 11.632 11.91 11.771 11.771 C 11.91 11.632 11.989 11.444 11.991 11.247 C 11.992 11.051 11.917 10.861 11.78 10.72 L 9.75 8.689 L 9.75 5.25 C 9.75 5.051 9.671 4.86 9.53 4.72 C 9.39 4.579 9.199 4.5 9 4.5 Z",
+    fill: "currentColor",
+    fillRule: "evenodd"
+  })));
+  const __body73 = () => /*#__PURE__*/React.createElement("div", {
+    className: props.className,
+    style: {
+      width: 24,
+      height: 24,
+      position: "relative",
+      color: "rgb(100,116,139)",
+      ...props.style
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "absolute",
+      left: 0,
+      top: 0,
+      width: 24,
+      height: 24,
+      clipPath: "inset(0px 0px 0px 0px)"
+    }
+  }, /*#__PURE__*/React.createElement("svg", {
+    width: 18,
+    height: 18,
+    viewBox: "0 0 18 18",
+    fill: "none",
+    style: {
+      position: "absolute",
+      left: 3,
+      top: 3,
+      width: 18,
+      height: 18
+    }
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M 9.09 18 C 7.83 18 6.649 17.76 5.546 17.28 C 4.444 16.8 3.484 16.151 2.666 15.334 C 1.849 14.516 1.2 13.556 0.72 12.454 C 0.24 11.351 0 10.17 0 8.91 C 0 6.72 0.697 4.789 2.093 3.116 C 3.488 1.444 5.265 0.405 7.425 0 C 7.155 1.485 7.238 2.936 7.673 4.354 C 8.108 5.771 8.858 7.013 9.923 8.078 C 10.988 9.143 12.229 9.893 13.646 10.328 C 15.064 10.763 16.515 10.845 18 10.575 C 17.61 12.735 16.575 14.513 14.895 15.908 C 13.215 17.303 11.28 18 9.09 18 Z M 9.09 16.2 C 10.41 16.2 11.633 15.87 12.758 15.21 C 13.883 14.55 14.768 13.642 15.413 12.488 C 14.123 12.367 12.9 12.041 11.745 11.509 C 10.59 10.976 9.555 10.253 8.64 9.338 C 7.725 8.422 6.998 7.388 6.458 6.233 C 5.918 5.078 5.595 3.855 5.49 2.565 C 4.335 3.21 3.431 4.099 2.779 5.231 C 2.126 6.364 1.8 7.59 1.8 8.91 C 1.8 10.935 2.509 12.656 3.926 14.074 C 5.344 15.491 7.065 16.2 9.09 16.2 Z",
+    fill: "currentColor",
+    fillRule: "evenodd"
+  }))));
+  const __body74 = () => /*#__PURE__*/React.createElement("div", {
+    className: props.className,
+    style: {
+      width: 24,
+      height: 24,
+      position: "relative",
+      color: "rgb(100,116,139)",
+      ...props.style
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "absolute",
+      left: 0,
+      top: 0,
+      width: 24,
+      height: 24,
+      clipPath: "inset(0px 0px 0px 0px)"
+    }
+  }, /*#__PURE__*/React.createElement("svg", {
+    width: 20,
+    height: 20,
+    viewBox: "0 0 20 20",
+    fill: "none",
+    style: {
+      position: "absolute",
+      left: 2,
+      top: 2,
+      width: 20,
+      height: 20
+    }
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M 11.932 11.932 C 12.462 11.402 12.727 10.758 12.727 10 C 12.727 9.242 12.462 8.598 11.932 8.068 C 11.402 7.538 10.758 7.273 10 7.273 C 9.242 7.273 8.598 7.538 8.068 8.068 C 7.538 8.598 7.273 9.242 7.273 10 C 7.273 10.758 7.538 11.402 8.068 11.932 C 8.598 12.462 9.242 12.727 10 12.727 C 10.758 12.727 11.402 12.462 11.932 11.932 Z M 6.784 13.216 C 5.898 12.33 5.455 11.258 5.455 10 C 5.455 8.742 5.898 7.67 6.784 6.784 C 7.67 5.898 8.742 5.455 10 5.455 C 11.258 5.455 12.33 5.898 13.216 6.784 C 14.102 7.67 14.545 8.742 14.545 10 C 14.545 11.258 14.102 12.33 13.216 13.216 C 12.33 14.102 11.258 14.545 10 14.545 C 8.742 14.545 7.67 14.102 6.784 13.216 Z M 3.636 10.909 L 0 10.909 L 0 9.091 L 3.636 9.091 L 3.636 10.909 Z M 20 10.909 L 16.364 10.909 L 16.364 9.091 L 20 9.091 L 20 10.909 Z M 9.091 3.636 L 9.091 0 L 10.909 0 L 10.909 3.636 L 9.091 3.636 Z M 9.091 20 L 9.091 16.364 L 10.909 16.364 L 10.909 20 L 9.091 20 Z M 4.909 6.136 L 2.614 3.932 L 3.909 2.591 L 6.091 4.864 L 4.909 6.136 Z M 16.091 17.409 L 13.886 15.114 L 15.091 13.864 L 17.386 16.068 L 16.091 17.409 Z M 13.864 4.909 L 16.068 2.614 L 17.409 3.909 L 15.136 6.091 L 13.864 4.909 Z M 2.591 16.091 L 4.886 13.886 L 6.136 15.091 L 3.932 17.386 L 2.591 16.091 Z",
+    fill: "currentColor",
+    fillRule: "evenodd"
+  }))));
+  const __body75 = () => /*#__PURE__*/React.createElement("div", {
+    className: props.className,
+    style: {
+      width: 24,
+      height: 24,
+      position: "relative",
+      color: "rgb(71,85,105)",
+      ...props.style
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "absolute",
+      left: 0,
+      top: 0,
+      width: 24,
+      height: 24,
+      clipPath: "inset(0px 0px 0px 0px)"
+    }
+  }, /*#__PURE__*/React.createElement("svg", {
+    width: 20,
+    height: 12,
+    viewBox: "0 0 20 12",
+    fill: "none",
+    style: {
+      position: "absolute",
+      left: 2,
+      top: 6,
+      width: 20,
+      height: 12
+    }
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M 18 12 L 18 0 L 20 0 L 20 12 L 18 12 Z M 10 12 L 8.575 10.6 L 12.175 7 L 0 7 L 0 5 L 12.175 5 L 8.6 1.4 L 10 0 L 16 6 L 10 12 Z",
+    fill: "currentColor",
+    fillRule: "evenodd"
+  }))));
+  const __body76 = () => /*#__PURE__*/React.createElement("div", {
+    className: props.className,
+    style: {
+      width: 24,
+      height: 24,
+      overflow: "hidden",
+      position: "relative",
+      color: "rgb(71,85,105)",
+      ...props.style
+    }
+  }, /*#__PURE__*/React.createElement("svg", {
+    width: 18,
+    height: 18,
+    viewBox: "0 0 18 18",
+    fill: "none",
+    style: {
+      position: "absolute",
+      left: 3,
+      top: 3,
+      width: 18,
+      height: 18
+    }
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M 4.5 11.25 C 4.915 11.25 5.25 11.586 5.25 12 L 5.25 14.25 C 5.25 14.664 4.915 15 4.5 15 C 4.085 15 3.75 14.664 3.75 14.25 L 3.75 12 C 3.75 11.586 4.085 11.25 4.5 11.25 Z M 7.5 8.25 C 7.085 8.25 6.75 8.586 6.75 9 L 6.75 14.25 C 6.75 14.664 7.085 15 7.5 15 C 7.915 15 8.25 14.664 8.25 14.25 L 8.25 9 C 8.25 8.586 7.915 8.25 7.5 8.25 Z M 18 16.375 C 18 17.408 16.769 18 14.625 18 C 12.481 18 11.25 17.408 11.25 16.375 L 11.25 10.875 C 11.25 10.213 12.637 9.75 14.625 9.75 C 16.613 9.75 18 10.213 18 10.875 L 18 16.375 Z M 14.625 12 C 13.908 12 13.274 11.938 12.75 11.83 L 12.75 13.156 C 12.937 13.28 13.497 13.5 14.625 13.5 C 15.735 13.5 16.303 13.267 16.5 13.133 L 16.5 11.831 C 15.976 11.939 15.342 12 14.625 12 Z M 16.5 16.205 L 16.5 14.752 C 16.003 14.903 15.39 15 14.625 15 C 13.844 15 13.237 14.905 12.75 14.759 L 12.75 16.205 C 12.972 16.325 13.585 16.5 14.625 16.5 C 15.665 16.5 16.278 16.325 16.5 16.205 Z M 9.75 7.5 C 8.509 7.5 7.5 6.491 7.5 5.25 L 7.5 1.535 C 7.378 1.523 7.259 1.5 7.136 1.5 L 3.75 1.5 C 2.509 1.5 1.5 2.509 1.5 3.75 L 1.5 14.25 C 1.5 15.491 2.509 16.5 3.75 16.5 L 9 16.5 C 9.415 16.5 9.75 16.836 9.75 17.25 C 9.75 17.664 9.415 18 9 18 L 3.75 18 C 1.682 18 0 16.318 0 14.25 L 0 3.75 C 0 1.682 1.682 0 3.75 0 L 7.136 0 C 8.538 0 9.857 0.546 10.849 1.537 L 13.462 4.152 C 14.341 5.031 14.882 6.199 14.983 7.439 C 15.016 7.852 14.709 8.214 14.296 8.248 C 13.856 8.29 13.498 7.934 13.477 7.5 L 9.749 7.5 L 9.75 7.5 Z M 9.75 6 L 12.987 6 C 12.823 5.717 12.636 5.446 12.401 5.212 L 9.788 2.599 C 9.552 2.362 9.282 2.176 9 2.013 L 9 5.25 C 9 5.663 9.336 6 9.75 6 Z",
+    fill: "currentColor",
+    fillRule: "evenodd"
+  })));
+  const __body77 = () => /*#__PURE__*/React.createElement("div", {
+    className: props.className,
+    style: {
+      width: 24,
+      height: 24,
+      overflow: "hidden",
+      position: "relative",
+      color: "rgb(71,85,105)",
+      ...props.style
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "absolute",
+      left: 2,
+      top: 4,
+      width: 20,
+      height: 16.667,
+      border: "1px dashed currentColor",
+      display: "flex",
+      alignItems: "center",
+      justifyContent: "center",
+      overflow: "hidden",
+      fontSize: 10,
+      opacity: 0.45
+    }
+  }, "Union"));
+  const __body78 = () => /*#__PURE__*/React.createElement("div", {
+    className: props.className,
+    style: {
+      width: 24,
+      height: 24,
+      overflow: "hidden",
+      position: "relative",
+      color: "rgb(71,85,105)",
+      ...props.style
+    }
+  }, /*#__PURE__*/React.createElement("svg", {
+    width: 18,
+    height: 14,
+    viewBox: "0 0 18 14",
+    fill: "none",
+    style: {
+      position: "absolute",
+      left: 3,
+      top: 5,
+      width: 18,
+      height: 14
+    }
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M 5.051 0 C 5.364 0 5.672 0.068 5.952 0.197 L 8.069 1.18 C 8.162 1.222 8.265 1.243 8.369 1.242 L 12.749 1.242 C 13.639 1.243 14.491 1.571 15.12 2.153 C 15.647 2.641 15.978 3.275 16.073 3.952 C 15.59 3.748 15.078 3.597 14.542 3.509 C 14.388 3.226 14.159 2.983 13.875 2.805 C 13.543 2.597 13.151 2.485 12.749 2.485 L 8.369 2.485 C 8.057 2.483 7.748 2.415 7.469 2.286 L 5.352 1.305 C 5.258 1.263 5.155 1.242 5.051 1.242 L 3.355 1.242 C 2.821 1.242 2.309 1.439 1.932 1.788 C 1.554 2.138 1.342 2.612 1.342 3.106 L 1.342 3.724 L 11.573 3.669 C 10.67 3.922 9.848 4.355 9.152 4.925 L 1.342 4.966 L 1.342 10.56 C 1.342 11.054 1.554 11.529 1.932 11.878 C 2.309 12.227 2.821 12.424 3.355 12.424 L 7.521 12.424 C 7.749 12.871 8.032 13.287 8.36 13.666 L 3.355 13.666 C 2.466 13.665 1.613 13.338 0.984 12.755 C 0.355 12.173 0.001 11.384 0 10.56 L 0 3.106 C 0.001 2.283 0.355 1.493 0.984 0.911 C 1.613 0.329 2.466 0.001 3.355 0 L 5.051 0 Z",
+    fill: "currentColor",
+    fillRule: "evenodd"
+  }), /*#__PURE__*/React.createElement("path", {
+    d: "M 13.644 8.338 C 14.078 8.338 14.45 8.486 14.757 8.779 C 15.063 9.073 15.217 9.431 15.217 9.847 C 15.217 10.263 15.063 10.62 14.757 10.914 C 14.45 11.208 14.078 11.355 13.644 11.355 C 13.204 11.355 12.829 11.208 12.526 10.914 C 12.223 10.62 12.07 10.262 12.07 9.847 C 12.07 9.432 12.223 9.075 12.526 8.781 C 12.829 8.486 13.204 8.338 13.644 8.338 Z",
+    fill: "currentColor",
+    fillRule: "nonzero"
+  }), /*#__PURE__*/React.createElement("path", {
+    d: "M 15.04 7.021 C 15.118 7.053 15.194 7.089 15.265 7.13 C 15.334 7.17 15.401 7.213 15.467 7.258 L 16.756 6.739 L 18 8.802 L 16.886 9.61 C 16.89 9.644 16.892 9.677 16.892 9.709 L 16.892 9.984 C 16.892 10.018 16.888 10.053 16.882 10.087 L 17.99 10.891 L 16.744 12.955 L 15.467 12.435 C 15.4 12.481 15.33 12.524 15.258 12.564 C 15.186 12.605 15.114 12.641 15.041 12.672 L 14.867 14 L 12.378 14 L 12.205 12.673 C 12.127 12.642 12.052 12.605 11.981 12.563 C 11.912 12.523 11.844 12.48 11.778 12.435 L 10.489 12.955 L 9.245 10.891 L 10.359 10.083 C 10.356 10.049 10.354 10.016 10.354 9.984 L 10.354 9.709 C 10.354 9.677 10.356 9.644 10.359 9.61 L 9.245 8.802 L 10.489 6.739 L 11.778 7.258 C 11.845 7.213 11.915 7.17 11.988 7.129 C 12.06 7.089 12.132 7.053 12.204 7.022 L 12.378 5.694 L 14.867 5.694 L 15.04 7.021 Z M 13.142 7.738 L 13.084 7.753 C 12.872 7.805 12.676 7.882 12.497 7.983 C 12.316 8.084 12.15 8.207 12 8.351 L 11.958 8.392 L 10.927 7.982 L 10.592 8.543 L 11.491 9.184 L 11.471 9.243 C 11.438 9.34 11.414 9.436 11.4 9.532 C 11.387 9.63 11.381 9.735 11.381 9.847 C 11.381 9.952 11.387 10.053 11.4 10.151 C 11.414 10.247 11.438 10.343 11.471 10.44 L 11.491 10.498 L 10.592 11.151 L 10.926 11.711 L 11.96 11.291 L 12.003 11.333 C 12.153 11.483 12.317 11.609 12.497 11.71 C 12.676 11.811 12.872 11.888 13.084 11.94 L 13.142 11.955 L 13.278 13.016 L 13.958 13.016 L 14.103 11.955 L 14.161 11.94 C 14.373 11.888 14.569 11.811 14.749 11.71 C 14.929 11.609 15.095 11.486 15.245 11.342 L 15.287 11.302 L 16.319 11.711 L 16.653 11.151 L 15.753 10.498 L 15.775 10.439 C 15.808 10.35 15.831 10.256 15.845 10.156 C 15.858 10.055 15.865 9.952 15.865 9.847 C 15.865 9.742 15.858 9.638 15.845 9.537 C 15.831 9.438 15.808 9.344 15.775 9.255 L 15.753 9.197 L 16.653 8.543 L 16.319 7.982 L 15.286 8.404 L 15.243 8.36 C 15.093 8.21 14.928 8.084 14.749 7.983 C 14.569 7.882 14.373 7.805 14.161 7.753 L 14.103 7.738 L 13.967 6.679 L 13.288 6.679 L 13.142 7.738 Z M 12.744 11.922 C 12.795 11.942 12.847 11.96 12.9 11.977 C 12.794 11.943 12.692 11.904 12.595 11.858 L 12.744 11.922 Z",
+    fill: "currentColor",
+    fillRule: "nonzero"
+  })));
+  const __body79 = () => /*#__PURE__*/React.createElement("div", {
+    className: props.className,
+    style: {
+      width: 24,
+      height: 24,
+      overflow: "hidden",
+      position: "relative",
+      color: "rgb(71,85,105)",
+      ...props.style
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "absolute",
+      left: 0,
+      top: 0,
+      width: 24,
+      height: 24,
+      overflow: "hidden"
+    }
+  }, /*#__PURE__*/React.createElement("svg", {
+    width: 18,
+    height: 11,
+    viewBox: "0 0 18 11",
+    fill: "none",
+    style: {
+      position: "absolute",
+      left: 3,
+      top: 7,
+      width: 18,
+      height: 11
+    }
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M 8.598 0.003 C 10.044 -0.022 11.228 1.163 11.228 2.571 L 11.228 5.529 C 11.228 5.928 11.122 6.3 10.952 6.636 L 11.4 7.072 C 11.406 7.079 11.412 7.086 11.418 7.092 C 11.153 7.497 10.96 7.951 10.858 8.438 C 10.633 8.449 10.404 8.376 10.232 8.208 L 9.785 7.773 C 9.317 7.998 8.78 8.105 8.198 8 C 6.95 7.775 6.067 6.681 6.067 5.446 L 6.067 2.515 C 6.067 1.144 7.196 0.03 8.598 0.003 Z M 8.648 1.611 C 8.136 1.611 7.718 2.017 7.718 2.515 L 7.718 5.529 C 7.718 6.027 8.136 6.433 8.648 6.433 C 9.159 6.433 9.576 6.027 9.576 5.529 L 9.576 2.515 C 9.576 2.017 9.159 1.611 8.648 1.611 Z",
+    fill: "currentColor",
+    fillRule: "nonzero"
+  }), /*#__PURE__*/React.createElement("path", {
+    d: "M 1.537 0.133 C 2.402 -0.145 3.189 0.057 3.755 0.337 C 4.173 0.543 4.29 1.072 4.003 1.434 C 3.794 1.698 3.427 1.792 3.113 1.659 C 2.798 1.524 2.381 1.432 1.941 1.57 C 1.089 1.821 1.45 2.686 1.856 2.768 C 2.147 2.897 2.688 3.138 3.264 3.366 C 4.77 3.959 5.15 5.117 5.001 6.003 L 5.004 6.001 C 4.808 7.18 3.752 8.037 2.492 8.037 C 1.808 8.037 1.151 7.84 0.596 7.482 C 0.196 7.224 0.134 6.677 0.473 6.347 C 0.717 6.111 1.094 6.064 1.388 6.236 C 1.715 6.428 2.099 6.535 2.491 6.535 C 3.936 6.527 3.819 4.975 2.779 4.775 C 1.835 4.403 0.973 3.992 0.97 3.992 C 0.257 3.505 -0.089 2.756 0.02 1.935 C 0.134 1.087 0.716 0.396 1.537 0.133 Z",
+    fill: "currentColor",
+    fillRule: "evenodd"
+  }), /*#__PURE__*/React.createElement("path", {
+    d: "M 13.361 0.002 C 13.817 0.002 14.188 0.362 14.188 0.806 L 14.188 5.284 C 13.581 5.387 13.02 5.62 12.536 5.951 L 12.536 0.806 C 12.536 0.362 12.905 0.003 13.361 0.002 Z",
+    fill: "currentColor",
+    fillRule: "evenodd"
+  }), /*#__PURE__*/React.createElement("path", {
+    d: "M 13.665 11 L 11.806 8.991 M 14.387 10.205 L 13.665 11 M 13.265 8.991 L 14.387 10.205 M 14.387 7.777 L 13.265 8.991 M 13.665 6.981 L 14.387 7.777 M 11.806 8.991 L 13.665 6.981 Z",
+    fill: "currentColor",
+    fillRule: "evenodd"
+  }), /*#__PURE__*/React.createElement("path", {
+    d: "M 16.142 11 L 15.419 10.205 M 18 8.991 L 16.142 11 M 16.142 6.981 L 18 8.991 M 15.419 7.777 L 16.142 6.981 M 16.542 8.991 L 15.419 7.777 M 15.419 10.205 L 16.542 8.991 Z",
+    fill: "currentColor",
+    fillRule: "evenodd"
+  }))));
+  const __body80 = () => /*#__PURE__*/React.createElement("div", {
+    className: props.className,
+    style: {
+      width: 24,
+      height: 24,
+      overflow: "hidden",
+      position: "relative",
+      color: "rgb(71,85,105)",
+      ...props.style
+    }
+  }, /*#__PURE__*/React.createElement("svg", {
+    width: 17.751,
+    height: 18,
+    viewBox: "0 0 17.751 18",
+    fill: "none",
+    style: {
+      position: "absolute",
+      left: 3.125,
+      top: 3,
+      width: 17.751,
+      height: 18
+    }
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M 8.301 0 C 8.961 0 9.61 0.173 10.182 0.502 L 14.719 3.122 C 15.29 3.453 15.765 3.928 16.095 4.5 C 16.425 5.072 16.599 5.721 16.6 6.381 L 16.6 6.641 C 16.116 6.489 15.611 6.386 15.09 6.336 C 15.083 6.216 15.069 6.095 15.042 5.978 L 14.475 6.303 C 14.442 6.303 14.409 6.302 14.376 6.302 C 11.312 6.302 8.682 8.158 7.548 10.807 L 7.548 9.147 C 7.081 9.065 6.632 8.903 6.22 8.668 L 1.56 5.978 C 1.529 6.11 1.511 6.245 1.506 6.381 L 1.506 11.618 C 1.506 12.014 1.611 12.404 1.809 12.748 C 2.007 13.091 2.292 13.375 2.635 13.574 L 7.171 16.194 C 7.248 16.234 7.328 16.268 7.409 16.299 C 7.634 16.908 7.937 17.477 8.305 17.999 L 8.301 18 C 7.64 18 6.992 17.827 6.419 17.498 L 1.883 14.879 C 1.311 14.548 0.836 14.072 0.506 13.5 C 0.176 12.928 0.001 12.279 0 11.619 L 0 6.381 C 0.001 5.721 0.176 5.072 0.506 4.5 C 0.836 3.928 1.311 3.453 1.883 3.122 L 6.419 0.502 C 6.992 0.173 7.64 0 8.301 0 Z M 8.301 1.504 C 7.904 1.504 7.514 1.608 7.171 1.806 L 2.635 4.426 C 2.521 4.498 2.412 4.581 2.312 4.674 L 6.973 7.365 C 7.377 7.597 7.835 7.719 8.301 7.719 C 8.766 7.719 9.224 7.597 9.627 7.365 L 14.289 4.674 C 14.189 4.581 14.081 4.499 13.966 4.426 L 9.429 1.806 C 9.086 1.608 8.697 1.504 8.301 1.504 Z",
+    fill: "currentColor",
+    fillRule: "nonzero"
+  }), /*#__PURE__*/React.createElement("path", {
+    d: "M 13.701 9.002 C 14.259 9.002 14.787 9.109 15.281 9.322 C 15.772 9.534 16.201 9.822 16.566 10.187 C 16.93 10.552 17.219 10.981 17.43 11.471 C 17.644 11.966 17.751 12.494 17.751 13.052 C 17.751 13.611 17.644 14.138 17.43 14.633 C 17.219 15.123 16.931 15.552 16.566 15.917 C 16.201 16.282 15.772 16.57 15.281 16.782 C 14.787 16.995 14.259 17.102 13.701 17.102 C 13.142 17.102 12.614 16.995 12.12 16.782 C 11.63 16.57 11.201 16.282 10.836 15.917 C 10.471 15.552 10.183 15.123 9.971 14.633 C 9.758 14.138 9.651 13.611 9.651 13.052 C 9.651 12.494 9.758 11.966 9.971 11.471 C 10.183 10.981 10.471 10.552 10.836 10.187 C 11.201 9.822 11.63 9.534 12.12 9.322 C 12.614 9.109 13.142 9.002 13.701 9.002 Z M 13.115 15.169 L 14.272 15.169 L 14.272 12.471 L 13.115 12.471 L 13.115 15.169 Z M 13.694 10.927 C 13.536 10.927 13.393 10.982 13.281 11.094 C 13.17 11.206 13.115 11.348 13.115 11.506 C 13.115 11.663 13.17 11.805 13.281 11.917 C 13.393 12.029 13.536 12.084 13.694 12.084 C 13.852 12.084 13.994 12.029 14.105 11.917 C 14.217 11.805 14.272 11.663 14.272 11.506 C 14.271 11.348 14.217 11.206 14.105 11.094 C 13.994 10.983 13.852 10.927 13.694 10.927 Z",
+    fill: "currentColor",
+    fillRule: "nonzero"
+  })));
+  const __body81 = () => /*#__PURE__*/React.createElement("div", {
+    className: props.className,
+    style: {
+      width: 24,
+      height: 24,
+      overflow: "hidden",
+      position: "relative",
+      color: "rgb(100,116,139)",
+      ...props.style
+    }
+  }, /*#__PURE__*/React.createElement("svg", {
+    width: 18,
+    height: 18,
+    viewBox: "0 0 18 18",
+    fill: "none",
+    style: {
+      position: "absolute",
+      left: 3,
+      top: 3,
+      width: 18,
+      height: 18
+    }
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M 14.192 8.898 L 10.613 8.898 C 10.21 8.898 9.823 8.738 9.539 8.453 C 9.254 8.168 9.094 7.781 9.094 7.377 L 9.094 3.783 C 9.095 3.433 9.015 3.088 8.862 2.773 C 8.708 2.459 8.485 2.185 8.208 1.971 C 7.946 1.763 7.64 1.618 7.313 1.548 C 6.986 1.477 6.648 1.483 6.324 1.565 C 4.482 2.022 2.852 3.096 1.703 4.607 C 0.554 6.118 -0.046 7.977 0.003 9.877 C 0.052 11.776 0.747 13.601 1.972 15.051 C 3.198 16.501 4.881 17.489 6.744 17.851 C 8.838 18.252 11.006 17.837 12.804 16.689 C 14.602 15.542 15.894 13.75 16.415 11.68 C 16.497 11.355 16.503 11.015 16.433 10.688 C 16.362 10.36 16.218 10.053 16.01 9.79 C 15.794 9.513 15.518 9.289 15.203 9.135 C 14.889 8.981 14.543 8.9 14.192 8.898 Z M 14.943 11.308 C 14.652 12.48 14.055 13.555 13.214 14.421 C 12.372 15.287 11.316 15.913 10.154 16.237 C 8.991 16.56 7.763 16.568 6.597 16.26 C 5.43 15.953 4.366 15.34 3.513 14.485 C 2.66 13.631 2.049 12.564 1.743 11.396 C 1.436 10.227 1.446 8.998 1.769 7.834 C 2.093 6.67 2.72 5.613 3.585 4.771 C 4.451 3.929 5.524 3.332 6.695 3.042 C 6.795 3.017 6.9 3.016 7.001 3.039 C 7.102 3.061 7.196 3.107 7.275 3.173 C 7.37 3.245 7.446 3.338 7.499 3.444 C 7.551 3.55 7.579 3.667 7.579 3.786 L 7.579 7.377 C 7.579 8.184 7.899 8.958 8.469 9.528 C 9.039 10.099 9.811 10.42 10.617 10.42 L 14.196 10.42 C 14.315 10.42 14.433 10.448 14.541 10.5 C 14.648 10.553 14.742 10.629 14.816 10.724 C 14.88 10.805 14.925 10.9 14.947 11.001 C 14.969 11.102 14.968 11.207 14.943 11.308 Z",
+    fill: "currentColor",
+    fillRule: "evenodd"
+  }), /*#__PURE__*/React.createElement("path", {
+    d: "M 17.943 5.435 C 17.593 4.148 16.914 2.974 15.972 2.031 C 15.03 1.087 13.859 0.406 12.574 0.055 C 12.439 0.019 12.3 0 12.16 0 C 11.96 -0.002 11.761 0.036 11.575 0.112 C 11.389 0.187 11.22 0.299 11.077 0.44 C 10.934 0.582 10.821 0.75 10.744 0.936 C 10.667 1.121 10.627 1.32 10.627 1.521 L 10.627 5.096 C 10.627 5.701 10.867 6.281 11.294 6.709 C 11.722 7.137 12.301 7.377 12.906 7.377 L 16.49 7.377 C 16.724 7.375 16.955 7.319 17.164 7.213 C 17.373 7.107 17.555 6.954 17.696 6.766 C 17.836 6.578 17.932 6.36 17.974 6.129 C 18.017 5.898 18.006 5.661 17.943 5.435 Z M 12.903 5.856 C 12.701 5.856 12.508 5.776 12.365 5.634 C 12.223 5.491 12.143 5.297 12.143 5.096 L 12.137 1.526 C 12.143 1.522 12.149 1.52 12.156 1.52 L 12.176 1.52 C 13.21 1.802 14.153 2.351 14.909 3.112 C 15.666 3.873 16.209 4.819 16.487 5.856 L 12.903 5.856 Z",
+    fill: "currentColor",
+    fillRule: "evenodd"
+  })));
+  const __impls = {
+    // figma: Property 1=delete
+    "property1=delete": __body0,
+    // figma: Property 1=Close
+    "property1=Close": __body1,
+    // figma: Property 1=pin
+    "property1=pin": __body2,
+    // figma: Property 1=Filled pin
+    "property1=Filled pin": __body3,
+    // figma: Property 1=location
+    "property1=location": __body4,
+    // figma: Property 1=Folder
+    "property1=Folder": __body5,
+    // figma: Property 1=graph
+    "property1=graph": __body6,
+    // figma: Property 1=thumsup
+    "property1=thumsup": __body7,
+    // figma: Property 1=Embedings
+    "property1=Embedings": __body8,
+    // figma: Property 1=share
+    "property1=share": __body9,
+    // figma: Property 1=settings
+    "property1=settings": __body10,
+    // figma: Property 1=search
+    "property1=search": __body11,
+    // figma: Property 1=refresh
+    "property1=refresh": __body12,
+    // figma: Property 1=edit 1
+    "property1=edit 1": __body13,
+    // figma: Property 1=new chat
+    "property1=new chat": __body14,
+    // figma: Property 1=paper-plane 1
+    "property1=paper-plane 1": __body15,
+    // figma: Property 1=view
+    "property1=view": __body16,
+    // figma: Property 1=thumsdown
+    "property1=thumsdown": __body17,
+    // figma: Property 1=moon 1
+    "property1=moon 1": __body18,
+    // figma: Property 1=document 1
+    "property1=document 1": __body19,
+    // figma: Property 1=schema
+    "property1=schema": __body20,
+    // figma: Property 1=file
+    "property1=file": __body21,
+    // figma: Property 1=chart-histogram (1) 1
+    "property1=chart-histogram (1) 1": __body22,
+    // figma: Property 1=light
+    "property1=light": __body23,
+    // figma: Property 1=save
+    "property1=save": __body24,
+    // figma: Property 1=Dock left
+    "property1=Dock left": __body25,
+    // figma: Property 1=MENU
+    "property1=MENU": __body26,
+    // figma: Property 1=arrow left
+    "property1=arrow left": __body27,
+    // figma: Property 1=arrow right
+    "property1=arrow right": __body28,
+    // figma: Property 1=Benefit
+    "property1=Benefit": __body29,
+    // figma: Property 1=down arrow
+    "property1=down arrow": __body30,
+    // figma: Property 1=connectors
+    "property1=connectors": __body31,
+    // figma: Property 1=Tools
+    "property1=Tools": __body32,
+    // figma: Property 1=stop
+    "property1=stop": __body33,
+    // figma: Property 1=arrow-up-right (1) 1
+    "property1=arrow-up-right (1) 1": __body34,
+    // figma: Property 1=add
+    "property1=add": __body35,
+    // figma: Property 1=Mice
+    "property1=Mice": __body36,
+    // figma: Property 1=download
+    "property1=download": __body37,
+    // figma: Property 1=lumenore
+    "property1=lumenore": __body38,
+    // figma: Property 1=outlook
+    "property1=outlook": __body39,
+    // figma: Property 1=calendar
+    "property1=calendar": __body40,
+    // figma: Property 1=email
+    "property1=email": __body41,
+    // figma: Property 1=create visualization
+    "property1=create visualization": __body42,
+    // figma: Property 1=column
+    "property1=column": __body43,
+    // figma: Property 1=preview data
+    "property1=preview data": __body44,
+    // figma: Property 1=create data pool
+    "property1=create data pool": __body45,
+    // figma: Property 1=Info
+    "property1=Info": __body46,
+    // figma: Property 1=help
+    "property1=help": __body47,
+    // figma: Property 1=notification
+    "property1=notification": __body48,
+    // figma: Property 1=Home
+    "property1=Home": __body49,
+    // figma: Property 1=Dashboard
+    "property1=Dashboard": __body50,
+    // figma: Property 1=Rocket
+    "property1=Rocket": __body51,
+    // figma: Property 1=Logout
+    "property1=Logout": __body52,
+    // figma: Property 1=Angle arrow
+    "property1=Angle arrow": __body53,
+    // figma: Property 1=check
+    "property1=check": __body54,
+    // figma: Property 1=chec
+    "property1=chec": __body55,
+    // figma: Property 1=Schema detail
+    "property1=Schema detail": __body56,
+    // figma: Property 1=Variant55
+    "property1=Variant55": __body57,
+    // figma: Property 1=Variant54
+    "property1=Variant54": __body58,
+    // figma: Property 1=Variant53
+    "property1=Variant53": __body47,
+    // figma: Property 1=AI dual tone
+    "property1=AI dual tone": __body59,
+    // figma: Property 1=DP Dual tone
+    "property1=DP Dual tone": __body60,
+    // figma: Property 1=AI
+    "property1=AI": __body61,
+    // figma: Property 1=dp
+    "property1=dp": __body62,
+    // figma: Property 1=Crown
+    "property1=Crown": __body63,
+    // figma: Property 1=Retry
+    "property1=Retry": __body64,
+    // figma: Property 1=Support
+    "property1=Support": __body65,
+    // figma: Property 1=Feedback_outline
+    "property1=Feedback_outline": __body66,
+    // figma: Property 1=Feedback_Filled
+    "property1=Feedback_Filled": __body67,
+    // figma: Property 1=Brain
+    "property1=Brain": __body68,
+    // figma: Property 1=Data Security
+    "property1=Data Security": __body69,
+    // figma: Property 1=Security
+    "property1=Security": __body70,
+    // figma: Property 1=Error
+    "property1=Error": __body71,
+    // figma: Property 1=History
+    "property1=History": __body72,
+    // figma: Property 1=Dark
+    "property1=Dark": __body73,
+    // figma: Property 1=Light
+    "property1=Light": __body74,
+    // figma: Property 1=Suffle
+    "property1=Suffle": __body12,
+    // figma: Property 1=Tab
+    "property1=Tab": __body75,
+    // figma: Property 1=Sample data
+    "property1=Sample data": __body76,
+    // figma: Property 1=Switch dp
+    "property1=Switch dp": __body77,
+    // figma: Property 1=Manage DP
+    "property1=Manage DP": __body78,
+    // figma: Property 1=SQL
+    "property1=SQL": __body79,
+    // figma: Property 1=Schema detai
+    "property1=Schema detai": __body80,
+    // figma: Property 1=Variant84
+    "property1=Variant84": __body81
+  };
+  return (__impls[__vkey_Icons(props)] ?? __body30)();
+}
+
+// figma node: 11001:5977 sample
+function Sample(_p = {}) {
+  const props = _p;
+  return /*#__PURE__*/React.createElement("div", {
+    className: props.className,
+    style: {
+      width: 24,
+      height: 24,
+      overflow: "hidden",
+      position: "relative",
+      color: "rgb(71,85,105)",
+      ...props.style
+    }
+  }, /*#__PURE__*/React.createElement("svg", {
+    width: 18,
+    height: 18,
+    viewBox: "0 0 18 18",
+    fill: "none",
+    style: {
+      position: "absolute",
+      left: 3,
+      top: 3,
+      width: 18,
+      height: 18
+    }
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M 4.5 11.25 C 4.915 11.25 5.25 11.586 5.25 12 L 5.25 14.25 C 5.25 14.664 4.915 15 4.5 15 C 4.085 15 3.75 14.664 3.75 14.25 L 3.75 12 C 3.75 11.586 4.085 11.25 4.5 11.25 Z M 7.5 8.25 C 7.085 8.25 6.75 8.586 6.75 9 L 6.75 14.25 C 6.75 14.664 7.085 15 7.5 15 C 7.915 15 8.25 14.664 8.25 14.25 L 8.25 9 C 8.25 8.586 7.915 8.25 7.5 8.25 Z M 18 16.375 C 18 17.408 16.769 18 14.625 18 C 12.481 18 11.25 17.408 11.25 16.375 L 11.25 10.875 C 11.25 10.213 12.637 9.75 14.625 9.75 C 16.613 9.75 18 10.213 18 10.875 L 18 16.375 Z M 14.625 12 C 13.908 12 13.274 11.938 12.75 11.83 L 12.75 13.156 C 12.937 13.28 13.497 13.5 14.625 13.5 C 15.735 13.5 16.303 13.267 16.5 13.133 L 16.5 11.831 C 15.976 11.939 15.342 12 14.625 12 Z M 16.5 16.205 L 16.5 14.752 C 16.003 14.903 15.39 15 14.625 15 C 13.844 15 13.237 14.905 12.75 14.759 L 12.75 16.205 C 12.972 16.325 13.585 16.5 14.625 16.5 C 15.665 16.5 16.278 16.325 16.5 16.205 Z M 9.75 7.5 C 8.509 7.5 7.5 6.491 7.5 5.25 L 7.5 1.535 C 7.378 1.523 7.259 1.5 7.136 1.5 L 3.75 1.5 C 2.509 1.5 1.5 2.509 1.5 3.75 L 1.5 14.25 C 1.5 15.491 2.509 16.5 3.75 16.5 L 9 16.5 C 9.415 16.5 9.75 16.836 9.75 17.25 C 9.75 17.664 9.415 18 9 18 L 3.75 18 C 1.682 18 0 16.318 0 14.25 L 0 3.75 C 0 1.682 1.682 0 3.75 0 L 7.136 0 C 8.538 0 9.857 0.546 10.849 1.537 L 13.462 4.152 C 14.341 5.031 14.882 6.199 14.983 7.439 C 15.016 7.852 14.709 8.214 14.296 8.248 C 13.856 8.29 13.498 7.934 13.477 7.5 L 9.749 7.5 L 9.75 7.5 Z M 9.75 6 L 12.987 6 C 12.823 5.717 12.636 5.446 12.401 5.212 L 9.788 2.599 C 9.552 2.362 9.282 2.176 9 2.013 L 9 5.25 C 9 5.663 9.336 6 9.75 6 Z",
+    fill: "currentColor",
+    fillRule: "evenodd"
+  })));
+}
+
+// figma node: 11001:5979 Add dropdown (3 variants)
+const __venc_AddDropdown = v => String(v).replace(/[%|=]/g, encodeURIComponent);
+const __vkey_AddDropdown = p => "property1=" + __venc_AddDropdown(p.property1);
+function AddDropdown(_p = {}) {
+  const props = {
+    ..._p,
+    property1: _p.property1 ?? "default"
+  };
+  const __body0 = () => /*#__PURE__*/React.createElement("div", {
+    className: props.className,
+    style: {
+      width: 32,
+      height: 32,
+      overflow: "hidden",
+      borderRadius: 200,
+      backgroundColor: "rgb(255,255,255)",
+      display: "flex",
+      flexDirection: "row",
+      gap: 10,
+      alignItems: "center",
+      flexWrap: "nowrap",
+      position: "relative",
+      ...props.style
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      overflow: "hidden",
+      borderRadius: 104,
+      display: "flex",
+      flexDirection: "row",
+      gap: 4,
+      padding: "4px 4px 4px 4px",
+      justifyContent: "center",
+      alignItems: "center",
+      flexWrap: "nowrap",
+      boxSizing: "border-box",
+      flexGrow: 1,
+      alignSelf: "stretch"
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      width: 16,
+      height: 16,
+      flexShrink: 0
+    }
+  }, /*#__PURE__*/React.createElement("svg", {
+    width: 8,
+    height: 8,
+    viewBox: "0 0 8 8",
+    fill: "none",
+    style: {
+      position: "absolute",
+      left: 4,
+      top: 4.333,
+      width: 8,
+      height: 8,
+      color: "rgb(71,85,105)"
+    }
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M 3.429 4.571 L 0 4.571 L 0 3.429 L 3.429 3.429 L 3.429 0 L 4.571 0 L 4.571 3.429 L 8 3.429 L 8 4.571 L 4.571 4.571 L 4.571 8 L 3.429 8 L 3.429 4.571 Z",
+    fill: "currentColor",
+    fillRule: "nonzero"
+  }))), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      width: 42,
+      display: "flex",
+      flexDirection: "row",
+      gap: 10,
+      alignItems: "center",
+      flexWrap: "nowrap",
+      flexShrink: 0
+    }
+  }, /*#__PURE__*/React.createElement("span", {
+    style: {
+      position: "relative",
+      fontFamily: "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+      fontWeight: 400,
+      fontSize: 12,
+      whiteSpace: "nowrap",
+      lineHeight: 1.2999999523162842,
+      letterSpacing: "-0.020em",
+      color: "rgb(71,85,105)",
+      flexShrink: 0
+    }
+  }, "Button")), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      width: 16,
+      height: 16,
+      flexShrink: 0
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "absolute",
+      left: 0,
+      top: 0,
+      width: 16,
+      height: 16
+    }
+  }, /*#__PURE__*/React.createElement("svg", {
+    width: 10.667,
+    height: 12,
+    viewBox: "0 0 10.667 12",
+    fill: "none",
+    style: {
+      position: "absolute",
+      left: 2.667,
+      top: 2,
+      width: 10.667,
+      height: 12,
+      color: "rgb(71,85,105)"
+    }
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M 4.741 10.455 L 4.741 6.345 L 1.185 4.26 L 1.185 8.37 L 4.741 10.455 Z M 5.926 10.455 L 9.481 8.37 L 9.481 4.26 L 5.926 6.345 L 5.926 10.455 Z M 5.333 5.31 L 8.844 3.255 L 5.333 1.2 L 1.822 3.255 L 5.333 5.31 Z M 0.593 9.42 C 0.405 9.31 0.259 9.165 0.156 8.985 C 0.052 8.805 0 8.605 0 8.385 L 0 3.615 C 0 3.395 0.052 3.195 0.156 3.015 C 0.259 2.835 0.405 2.69 0.593 2.58 L 4.741 0.165 C 4.928 0.055 5.126 0 5.333 0 C 5.541 0 5.738 0.055 5.926 0.165 L 10.074 2.58 C 10.262 2.69 10.407 2.835 10.511 3.015 C 10.615 3.195 10.667 3.395 10.667 3.615 L 10.667 8.385 C 10.667 8.605 10.615 8.805 10.511 8.985 C 10.407 9.165 10.262 9.31 10.074 9.42 L 5.926 11.835 C 5.738 11.945 5.541 12 5.333 12 C 5.126 12 4.928 11.945 4.741 11.835 L 0.593 9.42 Z",
+    fill: "currentColor",
+    fillRule: "nonzero"
+  }))))), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "absolute",
+      left: 0,
+      top: -100,
+      borderRadius: 5,
+      backgroundColor: "rgb(255,255,255)",
+      boxShadow: "0px 0px 8px 0px rgba(0,0,0,0.12)",
+      display: "flex",
+      flexDirection: "column",
+      gap: 2,
+      padding: "4px 0px 4px 0px",
+      justifyContent: "flex-end",
+      alignItems: "flex-start",
+      flexWrap: "nowrap",
+      boxSizing: "border-box"
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      overflow: "hidden",
+      display: "flex",
+      flexDirection: "column",
+      gap: 12,
+      padding: "5px 8px 5px 8px",
+      justifyContent: "center",
+      alignItems: "flex-start",
+      flexWrap: "nowrap",
+      boxSizing: "border-box",
+      flexShrink: 0,
+      alignSelf: "stretch"
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      display: "flex",
+      flexDirection: "row",
+      gap: 10,
+      alignItems: "center",
+      flexWrap: "nowrap",
+      flexShrink: 0,
+      alignSelf: "stretch"
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      display: "flex",
+      flexDirection: "row",
+      gap: 8,
+      alignItems: "center",
+      flexWrap: "nowrap",
+      flexGrow: 1
+    }
+  }, /*#__PURE__*/React.createElement(AgentIcon, {
+    style: {
+      position: "relative",
+      width: 18,
+      height: 18,
+      flexShrink: 0
+    },
+    property1: "master agent"
+  }), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      height: 16,
+      display: "flex",
+      flexDirection: "column",
+      gap: 2,
+      justifyContent: "center",
+      alignItems: "flex-start",
+      flexWrap: "nowrap",
+      flexGrow: 1
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      height: 16,
+      display: "flex",
+      flexDirection: "row",
+      gap: 10,
+      alignItems: "flex-start",
+      flexWrap: "nowrap",
+      flexShrink: 0,
+      alignSelf: "stretch"
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      display: "flex",
+      flexDirection: "row",
+      gap: 10,
+      justifyContent: "center",
+      alignItems: "center",
+      flexWrap: "nowrap",
+      flexGrow: 1,
+      alignSelf: "stretch"
+    }
+  }, /*#__PURE__*/React.createElement("span", {
+    style: {
+      position: "relative",
+      fontFamily: "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+      fontWeight: 400,
+      fontSize: 12,
+      lineHeight: 1.2999999523162842,
+      letterSpacing: "-0.020em",
+      color: "rgb(51,65,85)",
+      flexGrow: 1,
+      alignSelf: "stretch"
+    }
+  }, "MCP Agents")), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      width: 16,
+      overflow: "hidden",
+      flexShrink: 0,
+      alignSelf: "stretch"
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "absolute",
+      left: 0,
+      top: 0,
+      width: 16,
+      height: 16
+    }
+  }, /*#__PURE__*/React.createElement("svg", {
+    width: 4.933,
+    height: 8,
+    viewBox: "0 0 4.933 8",
+    fill: "none",
+    style: {
+      position: "absolute",
+      left: 5.333,
+      top: 4,
+      width: 4.933,
+      height: 8,
+      color: "rgb(71,85,105)"
+    }
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M 3.067 4 L 0 0.933 L 0.933 0 L 4.933 4 L 0.933 8 L 0 7.067 L 3.067 4 Z",
+    fill: "currentColor",
+    fillRule: "nonzero"
+  }))))), /*#__PURE__*/React.createElement("span", {
+    style: {
+      position: "relative",
+      fontFamily: "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+      fontWeight: 500,
+      fontSize: 10,
+      whiteSpace: "nowrap",
+      lineHeight: 1.340000033378601,
+      letterSpacing: "-0.020em",
+      color: "rgb(100,116,139)",
+      flexShrink: 0,
+      alignSelf: "stretch"
+    }
+  }, "Lumenore's proprietary engine "))))), /*#__PURE__*/React.createElement(DropdownOptions, {
+    style: {
+      position: "relative",
+      width: 155,
+      height: 28,
+      flexShrink: 0
+    },
+    title: "Connect Connection",
+    icon1: /*#__PURE__*/React.createElement(IconPack5, {
+      style: {
+        transform: "scale(0.750, 0.750)",
+        transformOrigin: "0 0"
+      }
+    }),
+    property1: "default"
+  }), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      overflow: "hidden",
+      display: "flex",
+      flexDirection: "column",
+      gap: 12,
+      padding: "5px 8px 5px 8px",
+      justifyContent: "center",
+      alignItems: "flex-start",
+      flexWrap: "nowrap",
+      boxSizing: "border-box",
+      flexShrink: 0,
+      alignSelf: "stretch"
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      display: "flex",
+      flexDirection: "row",
+      gap: 10,
+      alignItems: "center",
+      flexWrap: "nowrap",
+      flexShrink: 0,
+      alignSelf: "stretch"
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      display: "flex",
+      flexDirection: "row",
+      gap: 8,
+      alignItems: "center",
+      flexWrap: "nowrap",
+      flexShrink: 0
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      width: 18,
+      height: 18,
+      overflow: "hidden",
+      borderRadius: 2,
+      backgroundColor: "rgb(237,233,254)",
+      flexShrink: 0
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "absolute",
+      left: 0,
+      top: 0,
+      width: 18,
+      height: 18
+    }
+  }, /*#__PURE__*/React.createElement(Attachment, {
+    style: {
+      transform: "scale(0.750, 0.750)",
+      transformOrigin: "0 0"
+    }
+  }))), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      height: 16,
+      display: "flex",
+      flexDirection: "column",
+      gap: 2,
+      justifyContent: "center",
+      alignItems: "flex-start",
+      flexWrap: "nowrap",
+      flexShrink: 0
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      height: 16,
+      display: "flex",
+      flexDirection: "row",
+      gap: 10,
+      alignItems: "flex-start",
+      flexWrap: "nowrap",
+      flexShrink: 0
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      display: "flex",
+      flexDirection: "row",
+      gap: 10,
+      justifyContent: "center",
+      alignItems: "center",
+      flexWrap: "nowrap",
+      flexShrink: 0,
+      alignSelf: "stretch"
+    }
+  }, /*#__PURE__*/React.createElement("span", {
+    style: {
+      position: "relative",
+      fontFamily: "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+      fontWeight: 400,
+      fontSize: 12,
+      whiteSpace: "nowrap",
+      lineHeight: 1.2999999523162842,
+      letterSpacing: "-0.020em",
+      color: "rgb(51,65,85)",
+      flexShrink: 0,
+      alignSelf: "stretch"
+    }
+  }, "Upload Attachment"))), /*#__PURE__*/React.createElement("span", {
+    style: {
+      position: "relative",
+      fontFamily: "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+      fontWeight: 500,
+      fontSize: 10,
+      whiteSpace: "nowrap",
+      lineHeight: 1.340000033378601,
+      letterSpacing: "-0.020em",
+      color: "rgb(100,116,139)",
+      flexShrink: 0,
+      alignSelf: "stretch"
+    }
+  }, "Lumenore's proprietary engine ")))))));
+  const __body1 = () => /*#__PURE__*/React.createElement("div", {
+    className: props.className,
+    style: {
+      width: 32,
+      height: 32,
+      overflow: "hidden",
+      borderRadius: 200,
+      display: "flex",
+      flexDirection: "row",
+      gap: 10,
+      alignItems: "center",
+      flexWrap: "nowrap",
+      position: "relative",
+      ...props.style
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      overflow: "hidden",
+      borderRadius: 104,
+      backgroundColor: "rgb(219,234,254)",
+      display: "flex",
+      flexDirection: "row",
+      gap: 4,
+      padding: "4px 4px 4px 4px",
+      justifyContent: "center",
+      alignItems: "center",
+      flexWrap: "nowrap",
+      boxSizing: "border-box",
+      flexGrow: 1,
+      alignSelf: "stretch"
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      width: 16,
+      height: 16,
+      flexShrink: 0
+    }
+  }, /*#__PURE__*/React.createElement("svg", {
+    width: 8,
+    height: 8,
+    viewBox: "0 0 8 8",
+    fill: "none",
+    style: {
+      position: "absolute",
+      left: 4,
+      top: 4.333,
+      width: 8,
+      height: 8,
+      color: "rgb(71,85,105)"
+    }
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M 3.429 4.571 L 0 4.571 L 0 3.429 L 3.429 3.429 L 3.429 0 L 4.571 0 L 4.571 3.429 L 8 3.429 L 8 4.571 L 4.571 4.571 L 4.571 8 L 3.429 8 L 3.429 4.571 Z",
+    fill: "currentColor",
+    fillRule: "nonzero"
+  }))), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      width: 16,
+      height: 16,
+      flexShrink: 0
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "absolute",
+      left: 0,
+      top: 0,
+      width: 16,
+      height: 16
+    }
+  }, /*#__PURE__*/React.createElement("svg", {
+    width: 10.667,
+    height: 12,
+    viewBox: "0 0 10.667 12",
+    fill: "none",
+    style: {
+      position: "absolute",
+      left: 2.667,
+      top: 2,
+      width: 10.667,
+      height: 12,
+      color: "rgb(71,85,105)"
+    }
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M 4.741 10.455 L 4.741 6.345 L 1.185 4.26 L 1.185 8.37 L 4.741 10.455 Z M 5.926 10.455 L 9.481 8.37 L 9.481 4.26 L 5.926 6.345 L 5.926 10.455 Z M 5.333 5.31 L 8.844 3.255 L 5.333 1.2 L 1.822 3.255 L 5.333 5.31 Z M 0.593 9.42 C 0.405 9.31 0.259 9.165 0.156 8.985 C 0.052 8.805 0 8.605 0 8.385 L 0 3.615 C 0 3.395 0.052 3.195 0.156 3.015 C 0.259 2.835 0.405 2.69 0.593 2.58 L 4.741 0.165 C 4.928 0.055 5.126 0 5.333 0 C 5.541 0 5.738 0.055 5.926 0.165 L 10.074 2.58 C 10.262 2.69 10.407 2.835 10.511 3.015 C 10.615 3.195 10.667 3.395 10.667 3.615 L 10.667 8.385 C 10.667 8.605 10.615 8.805 10.511 8.985 C 10.407 9.165 10.262 9.31 10.074 9.42 L 5.926 11.835 C 5.738 11.945 5.541 12 5.333 12 C 5.126 12 4.928 11.945 4.741 11.835 L 0.593 9.42 Z",
+    fill: "currentColor",
+    fillRule: "nonzero"
+  }))))), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "absolute",
+      left: 0,
+      top: -100,
+      borderRadius: 5,
+      backgroundColor: "rgb(255,255,255)",
+      boxShadow: "0px 0px 8px 0px rgba(0,0,0,0.12)",
+      display: "flex",
+      flexDirection: "column",
+      gap: 2,
+      padding: "4px 0px 4px 0px",
+      justifyContent: "flex-end",
+      alignItems: "flex-start",
+      flexWrap: "nowrap",
+      boxSizing: "border-box"
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      overflow: "hidden",
+      display: "flex",
+      flexDirection: "column",
+      gap: 12,
+      padding: "5px 8px 5px 8px",
+      justifyContent: "center",
+      alignItems: "flex-start",
+      flexWrap: "nowrap",
+      boxSizing: "border-box",
+      flexShrink: 0,
+      alignSelf: "stretch"
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      display: "flex",
+      flexDirection: "row",
+      gap: 10,
+      alignItems: "center",
+      flexWrap: "nowrap",
+      flexShrink: 0,
+      alignSelf: "stretch"
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      display: "flex",
+      flexDirection: "row",
+      gap: 8,
+      alignItems: "center",
+      flexWrap: "nowrap",
+      flexGrow: 1
+    }
+  }, /*#__PURE__*/React.createElement(AgentIcon, {
+    style: {
+      position: "relative",
+      width: 18,
+      height: 18,
+      flexShrink: 0
+    },
+    property1: "master agent"
+  }), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      height: 16,
+      display: "flex",
+      flexDirection: "column",
+      gap: 2,
+      justifyContent: "center",
+      alignItems: "flex-start",
+      flexWrap: "nowrap",
+      flexGrow: 1
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      height: 16,
+      display: "flex",
+      flexDirection: "row",
+      gap: 10,
+      alignItems: "flex-start",
+      flexWrap: "nowrap",
+      flexShrink: 0,
+      alignSelf: "stretch"
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      display: "flex",
+      flexDirection: "row",
+      gap: 10,
+      justifyContent: "center",
+      alignItems: "center",
+      flexWrap: "nowrap",
+      flexGrow: 1,
+      alignSelf: "stretch"
+    }
+  }, /*#__PURE__*/React.createElement("span", {
+    style: {
+      position: "relative",
+      fontFamily: "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+      fontWeight: 400,
+      fontSize: 12,
+      lineHeight: 1.2999999523162842,
+      letterSpacing: "-0.020em",
+      color: "rgb(51,65,85)",
+      flexGrow: 1,
+      alignSelf: "stretch"
+    }
+  }, "MCP Agents")), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      width: 16,
+      overflow: "hidden",
+      flexShrink: 0,
+      alignSelf: "stretch"
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "absolute",
+      left: 0,
+      top: 0,
+      width: 16,
+      height: 16
+    }
+  }, /*#__PURE__*/React.createElement("svg", {
+    width: 4.933,
+    height: 8,
+    viewBox: "0 0 4.933 8",
+    fill: "none",
+    style: {
+      position: "absolute",
+      left: 5.333,
+      top: 4,
+      width: 4.933,
+      height: 8,
+      color: "rgb(71,85,105)"
+    }
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M 3.067 4 L 0 0.933 L 0.933 0 L 4.933 4 L 0.933 8 L 0 7.067 L 3.067 4 Z",
+    fill: "currentColor",
+    fillRule: "nonzero"
+  }))))), /*#__PURE__*/React.createElement("span", {
+    style: {
+      position: "relative",
+      fontFamily: "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+      fontWeight: 500,
+      fontSize: 10,
+      whiteSpace: "nowrap",
+      lineHeight: 1.340000033378601,
+      letterSpacing: "-0.020em",
+      color: "rgb(100,116,139)",
+      flexShrink: 0,
+      alignSelf: "stretch"
+    }
+  }, "Lumenore's proprietary engine "))))), /*#__PURE__*/React.createElement(DropdownOptions, {
+    style: {
+      position: "relative",
+      width: 155,
+      height: 28,
+      flexShrink: 0
+    },
+    title: "Connect Connection",
+    icon1: /*#__PURE__*/React.createElement(IconPack5, {
+      style: {
+        transform: "scale(0.750, 0.750)",
+        transformOrigin: "0 0"
+      }
+    }),
+    property1: "default"
+  }), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      overflow: "hidden",
+      display: "flex",
+      flexDirection: "column",
+      gap: 12,
+      padding: "5px 8px 5px 8px",
+      justifyContent: "center",
+      alignItems: "flex-start",
+      flexWrap: "nowrap",
+      boxSizing: "border-box",
+      flexShrink: 0,
+      alignSelf: "stretch"
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      display: "flex",
+      flexDirection: "row",
+      gap: 10,
+      alignItems: "center",
+      flexWrap: "nowrap",
+      flexShrink: 0,
+      alignSelf: "stretch"
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      display: "flex",
+      flexDirection: "row",
+      gap: 8,
+      alignItems: "center",
+      flexWrap: "nowrap",
+      flexShrink: 0
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      width: 18,
+      height: 18,
+      overflow: "hidden",
+      borderRadius: 2,
+      backgroundColor: "rgb(237,233,254)",
+      flexShrink: 0
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "absolute",
+      left: 0,
+      top: 0,
+      width: 18,
+      height: 18
+    }
+  }, /*#__PURE__*/React.createElement(Attachment, {
+    style: {
+      transform: "scale(0.750, 0.750)",
+      transformOrigin: "0 0"
+    }
+  }))), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      height: 16,
+      display: "flex",
+      flexDirection: "column",
+      gap: 2,
+      justifyContent: "center",
+      alignItems: "flex-start",
+      flexWrap: "nowrap",
+      flexShrink: 0
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      height: 16,
+      display: "flex",
+      flexDirection: "row",
+      gap: 10,
+      alignItems: "flex-start",
+      flexWrap: "nowrap",
+      flexShrink: 0
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      display: "flex",
+      flexDirection: "row",
+      gap: 10,
+      justifyContent: "center",
+      alignItems: "center",
+      flexWrap: "nowrap",
+      flexShrink: 0,
+      alignSelf: "stretch"
+    }
+  }, /*#__PURE__*/React.createElement("span", {
+    style: {
+      position: "relative",
+      fontFamily: "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+      fontWeight: 400,
+      fontSize: 12,
+      whiteSpace: "nowrap",
+      lineHeight: 1.2999999523162842,
+      letterSpacing: "-0.020em",
+      color: "rgb(51,65,85)",
+      flexShrink: 0,
+      alignSelf: "stretch"
+    }
+  }, "Upload Attachment"))), /*#__PURE__*/React.createElement("span", {
+    style: {
+      position: "relative",
+      fontFamily: "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+      fontWeight: 500,
+      fontSize: 10,
+      whiteSpace: "nowrap",
+      lineHeight: 1.340000033378601,
+      letterSpacing: "-0.020em",
+      color: "rgb(100,116,139)",
+      flexShrink: 0,
+      alignSelf: "stretch"
+    }
+  }, "Lumenore's proprietary engine ")))))));
+  const __body2 = () => /*#__PURE__*/React.createElement("div", {
+    className: props.className,
+    style: {
+      width: 32,
+      height: 32,
+      borderRadius: 200,
+      display: "flex",
+      flexDirection: "row",
+      gap: 10,
+      alignItems: "center",
+      flexWrap: "nowrap",
+      position: "relative",
+      ...props.style
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      overflow: "hidden",
+      borderRadius: 104,
+      backgroundColor: "rgb(219,234,254)",
+      display: "flex",
+      flexDirection: "row",
+      gap: 4,
+      padding: "4px 4px 4px 4px",
+      justifyContent: "center",
+      alignItems: "center",
+      flexWrap: "nowrap",
+      boxSizing: "border-box",
+      flexGrow: 1,
+      alignSelf: "stretch"
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      width: 16,
+      height: 16,
+      flexShrink: 0
+    }
+  }, /*#__PURE__*/React.createElement("svg", {
+    width: 8,
+    height: 8,
+    viewBox: "0 0 8 8",
+    fill: "none",
+    style: {
+      position: "absolute",
+      left: 4,
+      top: 4.333,
+      width: 8,
+      height: 8,
+      color: "rgb(71,85,105)"
+    }
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M 3.429 4.571 L 0 4.571 L 0 3.429 L 3.429 3.429 L 3.429 0 L 4.571 0 L 4.571 3.429 L 8 3.429 L 8 4.571 L 4.571 4.571 L 4.571 8 L 3.429 8 L 3.429 4.571 Z",
+    fill: "currentColor",
+    fillRule: "nonzero"
+  }))), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      width: 16,
+      height: 16,
+      flexShrink: 0
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "absolute",
+      left: 0,
+      top: 0,
+      width: 16,
+      height: 16
+    }
+  }, /*#__PURE__*/React.createElement("svg", {
+    width: 10.667,
+    height: 12,
+    viewBox: "0 0 10.667 12",
+    fill: "none",
+    style: {
+      position: "absolute",
+      left: 2.667,
+      top: 2,
+      width: 10.667,
+      height: 12,
+      color: "rgb(71,85,105)"
+    }
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M 4.741 10.455 L 4.741 6.345 L 1.185 4.26 L 1.185 8.37 L 4.741 10.455 Z M 5.926 10.455 L 9.481 8.37 L 9.481 4.26 L 5.926 6.345 L 5.926 10.455 Z M 5.333 5.31 L 8.844 3.255 L 5.333 1.2 L 1.822 3.255 L 5.333 5.31 Z M 0.593 9.42 C 0.405 9.31 0.259 9.165 0.156 8.985 C 0.052 8.805 0 8.605 0 8.385 L 0 3.615 C 0 3.395 0.052 3.195 0.156 3.015 C 0.259 2.835 0.405 2.69 0.593 2.58 L 4.741 0.165 C 4.928 0.055 5.126 0 5.333 0 C 5.541 0 5.738 0.055 5.926 0.165 L 10.074 2.58 C 10.262 2.69 10.407 2.835 10.511 3.015 C 10.615 3.195 10.667 3.395 10.667 3.615 L 10.667 8.385 C 10.667 8.605 10.615 8.805 10.511 8.985 C 10.407 9.165 10.262 9.31 10.074 9.42 L 5.926 11.835 C 5.738 11.945 5.541 12 5.333 12 C 5.126 12 4.928 11.945 4.741 11.835 L 0.593 9.42 Z",
+    fill: "currentColor",
+    fillRule: "nonzero"
+  }))))), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "absolute",
+      left: 0,
+      top: -130,
+      width: 168,
+      borderRadius: 6,
+      backgroundColor: "rgb(255,255,255)",
+      boxShadow: "inset 0 0 0 1px rgb(241,245,249), 0px 0px 4px 0px rgba(0,0,0,0.08)",
+      display: "flex",
+      flexDirection: "column",
+      gap: 2,
+      padding: "4px 0px 4px 0px",
+      justifyContent: "flex-end",
+      alignItems: "flex-start",
+      flexWrap: "nowrap",
+      boxSizing: "border-box"
+    }
+  }, /*#__PURE__*/React.createElement(DropdownOptions, {
+    style: {
+      position: "relative",
+      height: 28,
+      flexShrink: 0,
+      alignSelf: "stretch",
+      width: "auto"
+    },
+    title: "Connect Data Source",
+    icon1: /*#__PURE__*/React.createElement(Icons, {
+      property1: "connectors",
+      style: {
+        transform: "scale(0.750, 0.750)",
+        transformOrigin: "0 0"
+      }
+    }),
+    property1: "default"
+  }), /*#__PURE__*/React.createElement(DropdownOptions, {
+    style: {
+      position: "relative",
+      height: 28,
+      flexShrink: 0,
+      alignSelf: "stretch",
+      width: "auto"
+    },
+    title: "Upload File",
+    icon1: /*#__PURE__*/React.createElement(Icons, {
+      property1: "file",
+      style: {
+        transform: "scale(0.750, 0.750)",
+        transformOrigin: "0 0"
+      }
+    }),
+    property1: "default"
+  }), /*#__PURE__*/React.createElement(DropdownOptions, {
+    style: {
+      position: "relative",
+      height: 28,
+      flexShrink: 0,
+      alignSelf: "stretch",
+      width: "auto"
+    },
+    title: "Add Schema",
+    icon1: /*#__PURE__*/React.createElement(Icons, {
+      property1: "schema",
+      style: {
+        transform: "scale(0.750, 0.750)",
+        transformOrigin: "0 0"
+      }
+    }),
+    property1: "default"
+  }), /*#__PURE__*/React.createElement(DropdownOptions, {
+    style: {
+      position: "relative",
+      height: 28,
+      flexShrink: 0,
+      alignSelf: "stretch",
+      width: "auto"
+    },
+    title: "Sample Data",
+    icon1: /*#__PURE__*/React.createElement(Sample, {
+      style: {
+        transform: "scale(0.750, 0.750)",
+        transformOrigin: "0 0"
+      }
+    }),
+    property1: "default"
+  })));
+  const __impls = {
+    // figma: Property 1=Default
+    "property1=default": __body0,
+    // figma: Property 1=Variant3
+    "property1=variant3": __body1,
+    // figma: Property 1=Variant2
+    "property1=variant2": __body2
+  };
+  return (__impls[__vkey_AddDropdown(props)] ?? __body0)();
+}
+
+// figma node: 6:5088 beta (2 variants)
+const __venc_Beta = v => String(v).replace(/[%|=]/g, encodeURIComponent);
+const __vkey_Beta = p => "property1=" + __venc_Beta(p.property1);
+function Beta(_p = {}) {
+  const props = {
+    ..._p,
+    text: _p.text ?? "Premium",
+    property1: _p.property1 ?? "default"
+  };
+  const __body0 = () => /*#__PURE__*/React.createElement("div", {
+    className: props.className,
+    style: {
+      width: 24,
+      borderRadius: 20,
+      background: "radial-gradient(46.737px 72.960px at 108.89% 37.50%, rgb(233,213,255) 0.00%, rgb(243,232,255) 50.00%, rgb(233,213,255) 100.00%)",
+      boxShadow: "inset 0 0 0 1px rgb(233,213,255), 0px 6px 12px 0px rgba(0,0,0,0.1)",
+      display: "flex",
+      flexDirection: "row",
+      gap: 10,
+      padding: "4px 10px 4px 10px",
+      justifyContent: "center",
+      alignItems: "center",
+      flexWrap: "nowrap",
+      boxSizing: "border-box",
+      position: "relative",
+      ...props.style
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      width: 16,
+      overflow: "hidden",
+      flexShrink: 0,
+      alignSelf: "stretch"
+    }
+  }, /*#__PURE__*/React.createElement("svg", {
+    width: 13.333,
+    height: 9.333,
+    viewBox: "0 0 13.333 9.333",
+    fill: "none",
+    style: {
+      position: "absolute",
+      left: 1.333,
+      top: 3.333,
+      width: 13.333,
+      height: 9.333,
+      color: "rgb(71,85,105)"
+    }
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M 12.809 2.725 L 12.55 1.968 L 11.975 2.164 L 12.01 2.771 L 12.809 2.725 Z M 12.799 2.832 L 12.024 2.633 L 12.02 2.649 L 12.017 2.665 L 12.799 2.832 Z M 11.976 6.676 L 12.751 6.877 L 12.755 6.861 L 12.759 6.844 L 11.976 6.676 Z M 11.616 6.95 L 11.62 7.75 L 11.62 7.75 L 11.616 6.95 Z M 6.681 6.974 L 6.681 7.774 L 6.685 7.774 L 6.681 6.974 Z M 1.382 6.7 L 0.599 6.867 L 0.603 6.884 L 0.607 6.9 L 1.382 6.7 Z M 0.559 2.844 L 1.342 2.677 L 1.338 2.66 L 1.334 2.644 L 0.559 2.844 Z M 0.55 2.734 L 1.348 2.786 L 1.39 2.153 L 0.783 1.968 L 0.55 2.734 Z M 1.283 2.596 L 0.785 1.97 L 0.075 2.535 L 0.726 3.169 L 1.283 2.596 Z M 2.313 3.598 L 2.871 3.024 L 2.871 3.024 L 2.313 3.598 Z M 4.42 3.46 L 3.789 2.968 L 3.789 2.968 L 4.42 3.46 Z M 6.112 1.294 L 6.742 1.787 L 7.186 1.219 L 6.667 0.719 L 6.112 1.294 Z M 7.234 1.281 L 6.665 0.719 L 6.147 1.243 L 6.626 1.802 L 7.234 1.281 Z M 7.235 1.283 L 7.868 0.794 L 7.855 0.778 L 7.842 0.762 L 7.235 1.283 Z M 8.915 3.455 L 9.548 2.966 L 9.548 2.966 L 8.915 3.455 Z M 11.02 3.601 L 10.465 3.026 L 10.464 3.026 L 11.02 3.601 Z M 12.057 2.6 L 12.612 3.176 L 13.275 2.536 L 12.548 1.969 L 12.057 2.6 Z M 12.809 2.725 L 12.01 2.771 C 12.008 2.735 12.01 2.687 12.024 2.633 L 12.799 2.832 L 13.574 3.031 C 13.606 2.906 13.614 2.786 13.607 2.679 L 12.809 2.725 Z M 12.799 2.832 L 12.017 2.665 L 11.194 6.509 L 11.976 6.676 L 12.759 6.844 L 13.581 2.999 L 12.799 2.832 Z M 11.976 6.676 L 11.202 6.476 C 11.256 6.268 11.436 6.151 11.612 6.15 L 11.616 6.95 L 11.62 7.75 C 12.137 7.747 12.614 7.405 12.751 6.877 L 11.976 6.676 Z M 11.616 6.95 L 11.612 6.15 L 6.677 6.174 L 6.681 6.974 L 6.685 7.774 L 11.62 7.75 L 11.616 6.95 Z M 6.681 6.974 L 6.681 6.174 L 6.679 6.174 L 6.679 6.974 L 6.679 7.774 L 6.681 7.774 L 6.681 6.974 Z M 6.679 6.974 L 6.679 6.174 L 1.745 6.174 L 1.745 6.974 L 1.745 7.774 L 6.679 7.774 L 6.679 6.974 Z M 1.745 6.974 L 1.745 6.174 C 1.921 6.174 2.103 6.292 2.157 6.501 L 1.382 6.7 L 0.607 6.9 C 0.744 7.43 1.225 7.774 1.745 7.774 L 1.745 6.974 Z M 1.382 6.7 L 2.164 6.533 L 1.342 2.677 L 0.559 2.844 L -0.223 3.011 L 0.599 6.867 L 1.382 6.7 Z M 0.559 2.844 L 1.334 2.644 C 1.348 2.698 1.35 2.747 1.348 2.786 L 0.55 2.734 L -0.249 2.681 C -0.256 2.793 -0.248 2.916 -0.215 3.043 L 0.559 2.844 Z M 0.55 2.734 L 0.783 1.968 C 0.783 1.968 0.783 1.968 0.784 1.969 C 0.785 1.97 0.786 1.971 0.789 1.974 C 0.791 1.976 0.794 1.981 0.796 1.988 C 0.799 1.995 0.8 2.003 0.8 2.01 L 0 2.01 L -0.8 2.01 C -0.8 2.728 -0.312 3.307 0.317 3.499 L 0.55 2.734 Z M 0 2.01 L 0.8 2.01 C 0.8 2.019 0.798 2.029 0.794 2.037 C 0.791 2.044 0.788 2.048 0.786 2.05 C 0.783 2.053 0.781 2.052 0.785 2.052 L 0.785 1.252 L 0.785 0.452 C -0.063 0.452 -0.8 1.124 -0.8 2.01 L 0 2.01 Z M 0.785 1.252 L 0.785 2.052 C 0.789 2.052 0.787 2.053 0.784 2.05 C 0.782 2.048 0.779 2.044 0.776 2.037 C 0.772 2.029 0.77 2.019 0.77 2.01 L 1.57 2.01 L 2.37 2.01 C 2.37 1.124 1.633 0.452 0.785 0.452 L 0.785 1.252 Z M 1.57 2.01 L 0.77 2.01 C 0.77 2 0.773 1.989 0.777 1.981 C 0.781 1.974 0.784 1.971 0.785 1.97 L 1.283 2.596 L 1.782 3.222 C 2.134 2.941 2.37 2.506 2.37 2.01 L 1.57 2.01 Z M 1.283 2.596 L 0.726 3.169 L 1.755 4.171 L 2.313 3.598 L 2.871 3.024 L 1.841 2.022 L 1.283 2.596 Z M 2.313 3.598 L 1.755 4.171 C 2.168 4.573 2.73 4.796 3.304 4.796 L 3.304 3.996 L 3.304 3.196 C 3.139 3.196 2.979 3.13 2.871 3.024 L 2.313 3.598 Z M 3.304 3.996 L 3.304 4.796 C 3.98 4.796 4.632 4.488 5.05 3.953 L 4.42 3.46 L 3.789 2.968 C 3.683 3.104 3.501 3.196 3.304 3.196 L 3.304 3.996 Z M 4.42 3.46 L 5.05 3.953 L 6.742 1.787 L 6.112 1.294 L 5.481 0.802 L 3.789 2.968 L 4.42 3.46 Z M 6.112 1.294 L 6.667 0.719 C 6.669 0.72 6.673 0.724 6.676 0.732 C 6.68 0.74 6.682 0.749 6.682 0.758 L 5.882 0.758 L 5.082 0.758 C 5.082 1.198 5.268 1.591 5.556 1.87 L 6.112 1.294 Z M 5.882 0.758 L 6.682 0.758 C 6.682 0.767 6.68 0.777 6.676 0.785 C 6.673 0.792 6.669 0.796 6.668 0.798 C 6.664 0.801 6.663 0.8 6.667 0.8 L 6.667 0 L 6.667 -0.8 C 5.818 -0.8 5.082 -0.128 5.082 0.758 L 5.882 0.758 Z M 6.667 0 L 6.667 0.8 C 6.671 0.8 6.669 0.801 6.666 0.798 C 6.664 0.796 6.661 0.792 6.657 0.785 C 6.654 0.777 6.652 0.767 6.652 0.758 L 7.452 0.758 L 8.252 0.758 C 8.252 -0.128 7.515 -0.8 6.667 -0.8 L 6.667 0 Z M 7.452 0.758 L 6.652 0.758 C 6.652 0.749 6.654 0.739 6.657 0.731 C 6.66 0.724 6.664 0.72 6.665 0.719 L 7.234 1.281 L 7.802 1.844 C 8.075 1.569 8.252 1.186 8.252 0.758 L 7.452 0.758 Z M 7.234 1.281 L 6.626 1.802 L 6.628 1.804 L 7.235 1.283 L 7.842 0.762 L 7.841 0.761 L 7.234 1.281 Z M 7.235 1.283 L 6.602 1.773 L 8.282 3.944 L 8.915 3.455 L 9.548 2.966 L 7.868 0.794 L 7.235 1.283 Z M 8.915 3.455 L 8.282 3.944 C 8.7 4.484 9.354 4.796 10.033 4.796 L 10.033 3.996 L 10.033 3.196 C 9.836 3.196 9.655 3.104 9.548 2.966 L 8.915 3.455 Z M 10.033 3.996 L 10.033 4.796 C 10.61 4.796 11.161 4.578 11.576 4.177 L 11.02 3.601 L 10.464 3.026 C 10.353 3.134 10.203 3.196 10.033 3.196 L 10.033 3.996 Z M 11.02 3.601 L 11.576 4.177 L 12.612 3.176 L 12.057 2.6 L 11.501 2.025 L 10.465 3.026 L 11.02 3.601 Z M 12.057 2.6 L 12.548 1.969 C 12.549 1.97 12.552 1.973 12.556 1.98 C 12.56 1.988 12.563 1.999 12.563 2.01 L 11.763 2.01 L 10.963 2.01 C 10.963 2.513 11.207 2.952 11.565 3.231 L 12.057 2.6 Z M 11.763 2.01 L 12.563 2.01 C 12.563 2.019 12.561 2.029 12.558 2.037 C 12.554 2.044 12.551 2.048 12.549 2.05 C 12.546 2.053 12.544 2.052 12.548 2.052 L 12.548 1.252 L 12.548 0.452 C 11.7 0.452 10.963 1.124 10.963 2.01 L 11.763 2.01 Z M 12.548 1.252 L 12.548 2.052 C 12.552 2.052 12.551 2.053 12.547 2.05 C 12.546 2.048 12.542 2.044 12.539 2.037 C 12.535 2.029 12.533 2.019 12.533 2.01 L 13.333 2.01 L 14.133 2.01 C 14.133 1.124 13.397 0.452 12.548 0.452 L 12.548 1.252 Z M 13.333 2.01 L 12.533 2.01 C 12.533 2.003 12.535 1.995 12.537 1.988 C 12.54 1.981 12.542 1.976 12.545 1.973 C 12.549 1.968 12.551 1.967 12.55 1.968 L 12.809 2.725 L 13.067 3.482 C 13.669 3.276 14.133 2.71 14.133 2.01 L 13.333 2.01 Z M 11.896 8.106 L 12.696 8.106 C 12.696 7.438 12.144 6.944 11.522 6.944 L 11.522 7.744 L 11.522 8.544 C 11.313 8.544 11.096 8.374 11.096 8.106 L 11.896 8.106 Z M 11.522 7.744 L 11.522 6.944 L 1.853 6.944 L 1.853 7.744 L 1.853 8.544 L 11.522 8.544 L 11.522 7.744 Z M 1.853 7.744 L 1.853 6.944 C 1.231 6.944 0.679 7.438 0.679 8.106 L 1.479 8.106 L 2.279 8.106 C 2.279 8.374 2.062 8.544 1.853 8.544 L 1.853 7.744 Z M 1.479 8.106 L 0.679 8.106 L 0.679 8.972 L 1.479 8.972 L 2.279 8.972 L 2.279 8.106 L 1.479 8.106 Z M 1.479 8.972 L 0.679 8.972 C 0.679 9.639 1.231 10.133 1.853 10.133 L 1.853 9.333 L 1.853 8.533 C 2.062 8.533 2.279 8.704 2.279 8.972 L 1.479 8.972 Z M 1.853 9.333 L 1.853 10.133 L 11.522 10.133 L 11.522 9.333 L 11.522 8.533 L 1.853 8.533 L 1.853 9.333 Z M 11.522 9.333 L 11.522 10.133 C 12.144 10.133 12.696 9.639 12.696 8.972 L 11.896 8.972 L 11.096 8.972 C 11.096 8.704 11.313 8.533 11.522 8.533 L 11.522 9.333 Z M 11.896 8.972 L 12.696 8.972 L 12.696 8.106 L 11.896 8.106 L 11.096 8.106 L 11.096 8.972 L 11.896 8.972 Z",
+    fill: "currentColor",
+    fillRule: "nonzero"
+  }))));
+  const __body1 = () => /*#__PURE__*/React.createElement("div", {
+    className: props.className,
+    style: {
+      width: "fit-content",
+      borderRadius: 20,
+      background: "radial-gradient(149.946px 60.800px at 108.89% 37.50%, rgb(233,213,255) 0.00%, rgb(243,232,255) 50.00%, rgb(233,213,255) 100.00%)",
+      boxShadow: "inset 0 0 0 1px rgb(233,213,255), 0px 6px 12px 0px rgba(0,0,0,0.1)",
+      display: "flex",
+      flexDirection: "row",
+      gap: 4,
+      padding: "4px 8px 4px 8px",
+      justifyContent: "center",
+      alignItems: "center",
+      flexWrap: "nowrap",
+      boxSizing: "border-box",
+      position: "relative",
+      ...props.style
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      width: 12,
+      overflow: "hidden",
+      flexShrink: 0,
+      alignSelf: "stretch"
+    }
+  }, /*#__PURE__*/React.createElement("svg", {
+    width: 10,
+    height: 7,
+    viewBox: "0 0 10 7",
+    fill: "none",
+    style: {
+      position: "absolute",
+      left: 1,
+      top: 2.5,
+      width: 10,
+      height: 7,
+      color: "rgb(71,85,105)"
+    }
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M 9.607 2.044 L 8.961 0.151 L 7.522 0.642 L 7.61 2.159 L 9.607 2.044 Z M 9.599 2.124 L 7.662 1.625 L 7.652 1.665 L 7.643 1.706 L 9.599 2.124 Z M 8.982 5.007 L 10.918 5.509 L 10.929 5.468 L 10.938 5.426 L 8.982 5.007 Z M 8.712 5.212 L 8.721 7.212 L 8.722 7.212 L 8.712 5.212 Z M 5.011 5.231 L 5.011 7.231 L 5.021 7.231 L 5.011 5.231 Z M 1.036 5.025 L -0.92 5.442 L -0.911 5.483 L -0.9 5.524 L 1.036 5.025 Z M 0.42 2.133 L 2.376 1.716 L 2.367 1.675 L 2.356 1.634 L 0.42 2.133 Z M 0.412 2.05 L 2.408 2.181 L 2.512 0.599 L 0.994 0.137 L 0.412 2.05 Z M 0.963 1.947 L -0.283 0.382 L -2.06 1.796 L -0.432 3.38 L 0.963 1.947 Z M 1.735 2.698 L 3.13 1.265 L 3.13 1.265 L 1.735 2.698 Z M 3.315 2.595 L 1.739 1.364 L 1.739 1.364 L 3.315 2.595 Z M 4.584 0.971 L 6.16 2.202 L 7.269 0.783 L 5.973 -0.468 L 4.584 0.971 Z M 5.425 0.961 L 4.003 -0.445 L 2.707 0.865 L 3.907 2.263 L 5.425 0.961 Z M 5.426 0.962 L 7.008 -0.261 L 6.977 -0.301 L 6.944 -0.34 L 5.426 0.962 Z M 6.686 2.591 L 8.268 1.368 L 8.268 1.368 L 6.686 2.591 Z M 8.265 2.701 L 6.876 1.263 L 6.876 1.263 L 8.265 2.701 Z M 9.042 1.95 L 10.432 3.389 L 12.089 1.788 L 10.272 0.373 L 9.042 1.95 Z M 9.607 2.044 L 7.61 2.159 C 7.601 2.006 7.611 1.824 7.662 1.625 L 9.599 2.124 L 11.536 2.623 C 11.601 2.371 11.615 2.134 11.603 1.928 L 9.607 2.044 Z M 9.599 2.124 L 7.643 1.706 L 7.027 4.589 L 8.982 5.007 L 10.938 5.426 L 11.555 2.542 L 9.599 2.124 Z M 8.982 5.007 L 7.046 4.506 C 7.253 3.707 7.965 3.216 8.702 3.213 L 8.712 5.212 L 8.722 7.212 C 9.715 7.207 10.649 6.548 10.918 5.509 L 8.982 5.007 Z M 8.712 5.212 L 8.702 3.213 L 5.001 3.231 L 5.011 5.231 L 5.021 7.231 L 8.721 7.212 L 8.712 5.212 Z M 5.011 5.231 L 5.011 3.231 L 5.009 3.231 L 5.009 5.231 L 5.009 7.231 L 5.011 7.231 L 5.011 5.231 Z M 5.009 5.231 L 5.009 3.231 L 1.308 3.231 L 1.308 5.231 L 1.308 7.231 L 5.009 7.231 L 5.009 5.231 Z M 1.308 5.231 L 1.308 3.231 C 2.049 3.231 2.766 3.723 2.973 4.526 L 1.036 5.025 L -0.9 5.524 C -0.631 6.569 0.31 7.231 1.308 7.231 L 1.308 5.231 Z M 1.036 5.025 L 2.992 4.608 L 2.376 1.716 L 0.42 2.133 L -1.536 2.55 L -0.92 5.442 L 1.036 5.025 Z M 0.42 2.133 L 2.356 1.634 C 2.407 1.833 2.419 2.019 2.408 2.181 L 0.412 2.05 L -1.583 1.919 C -1.598 2.136 -1.583 2.378 -1.517 2.631 L 0.42 2.133 Z M 0.412 2.05 L 0.994 0.137 C 1.533 0.301 2 0.816 2 1.508 L 0 1.508 L -2 1.508 C -2 2.708 -1.186 3.654 -0.17 3.963 L 0.412 2.05 Z M 0 1.508 L 2 1.508 C 2 2.363 1.303 2.939 0.589 2.939 L 0.589 0.939 L 0.589 -1.061 C -0.775 -1.061 -2 0.025 -2 1.508 L 0 1.508 Z M 0.589 0.939 L 0.589 2.939 C -0.125 2.939 -0.822 2.363 -0.822 1.508 L 1.178 1.508 L 3.178 1.508 C 3.178 0.025 1.952 -1.061 0.589 -1.061 L 0.589 0.939 Z M 1.178 1.508 L -0.822 1.508 C -0.822 1.032 -0.594 0.629 -0.283 0.382 L 0.963 1.947 L 2.208 3.512 C 2.782 3.055 3.178 2.336 3.178 1.508 L 1.178 1.508 Z M 0.963 1.947 L -0.432 3.38 L 0.34 4.132 L 1.735 2.698 L 3.13 1.265 L 2.358 0.513 L 0.963 1.947 Z M 1.735 2.698 L 0.34 4.131 C 0.916 4.692 1.69 4.997 2.478 4.997 L 2.478 2.997 L 2.478 0.997 C 2.712 0.997 2.944 1.085 3.13 1.265 L 1.735 2.698 Z M 2.478 2.997 L 2.478 4.997 C 3.404 4.997 4.305 4.577 4.891 3.826 L 3.315 2.595 L 1.739 1.364 C 1.931 1.117 2.207 0.997 2.478 0.997 L 2.478 2.997 Z M 3.315 2.595 L 4.891 3.826 L 6.16 2.202 L 4.584 0.971 L 3.008 -0.261 L 1.739 1.364 L 3.315 2.595 Z M 4.584 0.971 L 5.973 -0.468 C 6.232 -0.218 6.411 0.149 6.411 0.569 L 4.411 0.569 L 2.411 0.569 C 2.411 1.302 2.723 1.954 3.195 2.41 L 4.584 0.971 Z M 4.411 0.569 L 6.411 0.569 C 6.411 1.424 5.714 2 5 2 L 5 0 L 5 -2 C 3.637 -2 2.411 -0.914 2.411 0.569 L 4.411 0.569 Z M 5 0 L 5 2 C 4.286 2 3.589 1.424 3.589 0.569 L 5.589 0.569 L 7.589 0.569 C 7.589 -0.914 6.363 -2 5 -2 L 5 0 Z M 5.589 0.569 L 3.589 0.569 C 3.589 0.157 3.761 -0.2 4.003 -0.445 L 5.425 0.961 L 6.847 2.368 C 7.292 1.918 7.589 1.284 7.589 0.569 L 5.589 0.569 Z M 5.425 0.961 L 3.907 2.263 L 3.908 2.265 L 5.426 0.962 L 6.944 -0.34 L 6.943 -0.341 L 5.425 0.961 Z M 5.426 0.962 L 3.844 2.186 L 5.104 3.815 L 6.686 2.591 L 8.268 1.368 L 7.008 -0.261 L 5.426 0.962 Z M 6.686 2.591 L 5.104 3.815 C 5.689 4.571 6.593 4.997 7.525 4.997 L 7.525 2.997 L 7.525 0.997 C 7.799 0.997 8.076 1.12 8.268 1.368 L 6.686 2.591 Z M 7.525 2.997 L 7.525 4.997 C 8.313 4.997 9.077 4.698 9.655 4.139 L 8.265 2.701 L 6.876 1.263 C 7.058 1.086 7.296 0.997 7.525 0.997 L 7.525 2.997 Z M 8.265 2.701 L 9.655 4.139 L 10.432 3.389 L 9.042 1.95 L 7.653 0.512 L 6.876 1.263 L 8.265 2.701 Z M 9.042 1.95 L 10.272 0.373 C 10.587 0.618 10.822 1.024 10.822 1.508 L 8.822 1.508 L 6.822 1.508 C 6.822 2.349 7.23 3.074 7.813 3.528 L 9.042 1.95 Z M 8.822 1.508 L 10.822 1.508 C 10.822 2.363 10.125 2.939 9.411 2.939 L 9.411 0.939 L 9.411 -1.061 C 8.048 -1.061 6.822 0.025 6.822 1.508 L 8.822 1.508 Z M 9.411 0.939 L 9.411 2.939 C 8.697 2.939 8 2.363 8 1.508 L 10 1.508 L 12 1.508 C 12 0.025 10.775 -1.061 9.411 -1.061 L 9.411 0.939 Z M 10 1.508 L 8 1.508 C 8 0.831 8.446 0.326 8.961 0.151 L 9.607 2.044 L 10.252 3.936 C 11.224 3.605 12 2.679 12 1.508 L 10 1.508 Z M 8.922 6.079 L 10.922 6.079 C 10.922 4.76 9.835 3.808 8.642 3.808 L 8.642 5.808 L 8.642 7.808 C 7.758 7.808 6.922 7.099 6.922 6.079 L 8.922 6.079 Z M 8.642 5.808 L 8.642 3.808 L 1.389 3.808 L 1.389 5.808 L 1.389 7.808 L 8.642 7.808 L 8.642 5.808 Z M 1.389 5.808 L 1.389 3.808 C 0.196 3.808 -0.891 4.76 -0.891 6.079 L 1.109 6.079 L 3.109 6.079 C 3.109 7.099 2.273 7.808 1.389 7.808 L 1.389 5.808 Z M 1.109 6.079 L -0.891 6.079 L -0.891 6.729 L 1.109 6.729 L 3.109 6.729 L 3.109 6.079 L 1.109 6.079 Z M 1.109 6.729 L -0.891 6.729 C -0.891 8.048 0.196 9 1.389 9 L 1.389 7 L 1.389 5 C 2.273 5 3.109 5.709 3.109 6.729 L 1.109 6.729 Z M 1.389 7 L 1.389 9 L 8.642 9 L 8.642 7 L 8.642 5 L 1.389 5 L 1.389 7 Z M 8.642 7 L 8.642 9 C 9.835 9 10.922 8.048 10.922 6.729 L 8.922 6.729 L 6.922 6.729 C 6.922 5.709 7.758 5 8.642 5 L 8.642 7 Z M 8.922 6.729 L 10.922 6.729 L 10.922 6.079 L 8.922 6.079 L 6.922 6.079 L 6.922 6.729 L 8.922 6.729 Z",
+    fill: "currentColor",
+    fillRule: "nonzero"
+  }))), /*#__PURE__*/React.createElement("span", {
+    style: {
+      position: "relative",
+      fontFamily: "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+      fontWeight: 600,
+      fontSize: 10,
+      whiteSpace: "nowrap",
+      lineHeight: "100%",
+      letterSpacing: "-0.040em",
+      color: "rgb(147,51,234)",
+      textTransform: "uppercase",
+      flexShrink: 0,
+      alignSelf: "stretch"
+    }
+  }, props.text));
+  const __impls = {
+    // figma: Property 1=Default
+    "property1=default": __body0,
+    // figma: Property 1=Variant2
+    "property1=variant2": __body1
+  };
+  return (__impls[__vkey_Beta(props)] ?? __body0)();
+}
+
+// figma node: 108:8253 Down arrow
+function DownArrow2(_p = {}) {
+  const props = _p;
+  return /*#__PURE__*/React.createElement("div", {
+    className: props.className,
+    style: {
+      width: 24,
+      height: 24,
+      position: "relative",
+      color: "rgb(71,85,105)",
+      ...props.style
+    }
+  }, /*#__PURE__*/React.createElement("svg", {
+    width: 12,
+    height: 7.400,
+    viewBox: "0 0 12 7.400",
+    fill: "none",
+    style: {
+      position: "absolute",
+      left: 6,
+      top: 8.5,
+      width: 12,
+      height: 7.4
+    }
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M 6 7.4 L 0 1.4 L 1.4 0 L 6 4.575 L 10.6 0 L 12 1.4 L 6 7.4 Z",
+    fill: "currentColor",
+    fillRule: "evenodd"
+  })));
+}
+
+// figma node: 6:5335 Schema info
+function SchemaInfo(_p = {}) {
+  const props = _p;
+  return /*#__PURE__*/React.createElement("div", {
+    className: props.className,
+    style: {
+      width: 24,
+      height: 24,
+      position: "relative",
+      color: "rgb(71,85,105)",
+      ...props.style
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "absolute",
+      left: 0,
+      top: 0,
+      width: 24,
+      height: 24
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "absolute",
+      left: 2.999,
+      top: 2,
+      width: 18.002,
+      height: 19.999,
+      border: "1px dashed currentColor",
+      display: "flex",
+      alignItems: "center",
+      justifyContent: "center",
+      overflow: "hidden",
+      fontSize: 10,
+      opacity: 0.45
+    }
+  }, "Union")));
+}
+
+// figma node: 40:16048 tooltip_info (1 variants)
+const __venc_TooltipInfo = v => String(v).replace(/[%|=]/g, encodeURIComponent);
+const __vkey_TooltipInfo = p => "position=" + __venc_TooltipInfo(p.position);
+function TooltipInfo(_p = {}) {
+  const props = {
+    ..._p,
+    tooltipText: _p.tooltipText ?? "You don’t have access yet contact\nyour admin.",
+    position: _p.position ?? "bottom/center"
+  };
+  const __body0 = () => /*#__PURE__*/React.createElement("div", {
+    className: props.className,
+    style: {
+      width: "fit-content",
+      borderRadius: 4,
+      backgroundColor: "rgb(28,27,31)",
+      display: "flex",
+      flexDirection: "row",
+      gap: 4,
+      padding: "6px 12px 6px 12px",
+      alignItems: "center",
+      flexWrap: "nowrap",
+      boxSizing: "border-box",
+      position: "relative",
+      color: "rgb(28,27,31)",
+      ...props.style
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      display: "flex",
+      flexDirection: "column",
+      gap: 2,
+      alignItems: "flex-start",
+      flexWrap: "nowrap",
+      flexShrink: 0,
+      alignSelf: "stretch"
+    }
+  }, /*#__PURE__*/React.createElement("span", {
+    style: {
+      position: "relative",
+      fontFamily: "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+      fontWeight: 400,
+      fontSize: 12,
+      textAlign: "center",
+      lineHeight: 1.2999999523162842,
+      letterSpacing: "-0.020em",
+      color: "var(--card-text)",
+      flexShrink: 0,
+      whiteSpace: "pre-wrap"
+    }
+  }, props.tooltipText)), /*#__PURE__*/React.createElement("svg", {
+    width: 10,
+    height: 10,
+    viewBox: "0 0 10 10",
+    fill: "none",
+    style: {
+      position: "absolute",
+      left: 101,
+      top: -6,
+      width: 10,
+      height: 10
+    }
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M 5 0 L 9.33 7.5 L 0.67 7.5 L 5 0 Z",
+    fill: "currentColor",
+    fillRule: "evenodd"
+  })));
+  const __impls = {
+    // figma: Position=Top/Center
+    "position=top/center": __body0
+  };
+  return (__impls[__vkey_TooltipInfo(props)] ?? __body0)();
+}
+
+// figma node: 11001:6040 Button (9 variants)
+const __venc_Button = v => String(v).replace(/[%|=]/g, encodeURIComponent);
+const __vkey_Button = p => "property1=" + __venc_Button(p.property1) + '|' + "size=" + __venc_Button(p.size);
+function Button(_p = {}) {
+  const props = {
+    ..._p,
+    tooltip: _p.tooltip ?? false,
+    property1: _p.property1 ?? "button system",
+    tailIcon: _p.tailIcon ?? true,
+    size: _p.size ?? "sm",
+    textSection: _p.textSection ?? true,
+    faceIcon: _p.faceIcon ?? true
+  };
+  const __body0 = () => /*#__PURE__*/React.createElement("div", {
+    className: props.className,
+    style: {
+      width: "fit-content",
+      height: 24,
+      borderRadius: 2,
+      display: "flex",
+      flexDirection: "row",
+      gap: 4,
+      padding: "4px 4px 4px 4px",
+      justifyContent: "center",
+      alignItems: "center",
+      flexWrap: "nowrap",
+      boxSizing: "border-box",
+      position: "relative",
+      ...props.style
+    }
+  }, props.faceIcon && /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      width: 16,
+      flexShrink: 0,
+      alignSelf: "stretch",
+      height: "auto"
+    }
+  }, props.icon1 ?? /*#__PURE__*/React.createElement(SchemaInfo, null)), props.textSection && /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      display: "flex",
+      flexDirection: "row",
+      gap: 10,
+      padding: "0px 2px 0px 2px",
+      alignItems: "center",
+      flexWrap: "nowrap",
+      boxSizing: "border-box",
+      flexShrink: 0,
+      alignSelf: "stretch"
+    }
+  }, /*#__PURE__*/React.createElement("span", {
+    style: {
+      position: "relative",
+      fontFamily: "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+      fontWeight: 400,
+      fontSize: 12,
+      whiteSpace: "nowrap",
+      lineHeight: 1.2999999523162842,
+      letterSpacing: "-0.020em",
+      color: "rgb(51,65,85)",
+      flexShrink: 0,
+      alignSelf: "stretch"
+    }
+  }, props.text1 ?? "Data Details")), props.tailIcon && /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      width: 16,
+      flexShrink: 0,
+      alignSelf: "stretch",
+      height: "auto"
+    }
+  }, props.icon2 ?? /*#__PURE__*/React.createElement(DownArrow2, null)), props.tooltip && /*#__PURE__*/React.createElement(TooltipInfo, {
+    style: {
+      position: "absolute",
+      left: -73,
+      top: 34,
+      width: 264
+    },
+    tooltipText: "Automatically adds all available filters to\nadvanced filter builder using AND condition.",
+    position: "top/center"
+  }));
+  const __body1 = () => /*#__PURE__*/React.createElement("div", {
+    className: props.className,
+    style: {
+      width: "fit-content",
+      height: 30,
+      borderRadius: 2,
+      display: "flex",
+      flexDirection: "row",
+      gap: 4,
+      padding: "4px 4px 4px 4px",
+      justifyContent: "center",
+      alignItems: "center",
+      flexWrap: "nowrap",
+      boxSizing: "border-box",
+      position: "relative",
+      ...props.style
+    }
+  }, props.faceIcon && /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      width: 18,
+      height: 18,
+      flexShrink: 0
+    }
+  }, props.icon1 ?? /*#__PURE__*/React.createElement(SchemaInfo, {
+    style: {
+      transform: "scale(0.750, 0.750)",
+      transformOrigin: "0 0"
+    }
+  })), props.textSection && /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      display: "flex",
+      flexDirection: "row",
+      gap: 10,
+      padding: "0px 2px 0px 2px",
+      alignItems: "center",
+      flexWrap: "nowrap",
+      boxSizing: "border-box",
+      flexShrink: 0
+    }
+  }, /*#__PURE__*/React.createElement("span", {
+    style: {
+      position: "relative",
+      fontFamily: "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+      fontWeight: 400,
+      fontSize: 12,
+      whiteSpace: "nowrap",
+      lineHeight: 1.2999999523162842,
+      letterSpacing: "-0.020em",
+      color: "rgb(51,65,85)",
+      flexShrink: 0
+    }
+  }, props.text1 ?? "Data Details")), props.tailIcon && /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      width: 18,
+      height: 18,
+      flexShrink: 0
+    }
+  }, props.icon2 ?? /*#__PURE__*/React.createElement(DownArrow2, {
+    style: {
+      transform: "scale(0.750, 0.750)",
+      transformOrigin: "0 0"
+    }
+  })), props.tooltip && /*#__PURE__*/React.createElement(TooltipInfo, {
+    style: {
+      position: "absolute",
+      left: -71,
+      top: 34,
+      width: 264
+    },
+    tooltipText: "Automatically adds all available filters to\nadvanced filter builder using AND condition.",
+    position: "top/center"
+  }));
+  const __body2 = () => /*#__PURE__*/React.createElement("div", {
+    className: props.className,
+    style: {
+      width: "fit-content",
+      height: 32,
+      borderRadius: 2,
+      display: "flex",
+      flexDirection: "row",
+      gap: 4,
+      padding: "4px 8px 4px 8px",
+      justifyContent: "center",
+      alignItems: "center",
+      flexWrap: "nowrap",
+      boxSizing: "border-box",
+      position: "relative",
+      ...props.style
+    }
+  }, props.faceIcon && /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      width: 18,
+      height: 18,
+      flexShrink: 0
+    }
+  }, props.icon1 ?? /*#__PURE__*/React.createElement(SchemaInfo, {
+    style: {
+      transform: "scale(0.750, 0.750)",
+      transformOrigin: "0 0"
+    }
+  })), props.textSection && /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      display: "flex",
+      flexDirection: "row",
+      gap: 10,
+      padding: "0px 2px 0px 2px",
+      alignItems: "center",
+      flexWrap: "nowrap",
+      boxSizing: "border-box",
+      flexShrink: 0
+    }
+  }, /*#__PURE__*/React.createElement("span", {
+    style: {
+      position: "relative",
+      fontFamily: "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+      fontWeight: 500,
+      fontSize: 14,
+      whiteSpace: "nowrap",
+      lineHeight: 1.2999999523162842,
+      letterSpacing: "-0.020em",
+      color: "rgb(51,65,85)",
+      flexShrink: 0
+    }
+  }, props.text1 ?? "Data Details")), props.tailIcon && /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      width: 18,
+      height: 18,
+      flexShrink: 0
+    }
+  }, props.icon2 ?? /*#__PURE__*/React.createElement(DownArrow2, {
+    style: {
+      transform: "scale(0.750, 0.750)",
+      transformOrigin: "0 0"
+    }
+  })), props.tooltip && /*#__PURE__*/React.createElement(TooltipInfo, {
+    style: {
+      position: "absolute",
+      left: -61,
+      top: 34,
+      width: 264
+    },
+    tooltipText: "Automatically adds all available filters to\nadvanced filter builder using AND condition.",
+    position: "top/center"
+  }));
+  const __body3 = () => /*#__PURE__*/React.createElement("div", {
+    className: props.className,
+    style: {
+      width: "fit-content",
+      height: 24,
+      borderRadius: 2,
+      backgroundColor: "rgb(239,246,255)",
+      display: "flex",
+      flexDirection: "row",
+      gap: 4,
+      padding: "4px 4px 4px 4px",
+      justifyContent: "center",
+      alignItems: "center",
+      flexWrap: "nowrap",
+      boxSizing: "border-box",
+      position: "relative",
+      ...props.style
+    }
+  }, props.faceIcon && /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      width: 16,
+      flexShrink: 0,
+      alignSelf: "stretch",
+      height: "auto"
+    }
+  }, props.icon1 ?? /*#__PURE__*/React.createElement(SchemaInfo, null)), props.textSection && /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      display: "flex",
+      flexDirection: "row",
+      gap: 10,
+      padding: "0px 2px 0px 2px",
+      alignItems: "center",
+      flexWrap: "nowrap",
+      boxSizing: "border-box",
+      flexShrink: 0,
+      alignSelf: "stretch"
+    }
+  }, /*#__PURE__*/React.createElement("span", {
+    style: {
+      position: "relative",
+      fontFamily: "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+      fontWeight: 400,
+      fontSize: 12,
+      whiteSpace: "nowrap",
+      lineHeight: 1.2999999523162842,
+      letterSpacing: "-0.020em",
+      color: "rgb(51,65,85)",
+      flexShrink: 0,
+      alignSelf: "stretch"
+    }
+  }, props.text1 ?? "Data Details")), props.tailIcon && /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      width: 16,
+      flexShrink: 0,
+      alignSelf: "stretch",
+      height: "auto"
+    }
+  }, props.icon2 ?? /*#__PURE__*/React.createElement(DownArrow2, null)), props.tooltip && /*#__PURE__*/React.createElement(TooltipInfo, {
+    style: {
+      position: "absolute",
+      left: -73,
+      top: 34,
+      width: 264
+    },
+    tooltipText: "Automatically adds all available filters to\nadvanced filter builder using AND condition.",
+    position: "top/center"
+  }));
+  const __body4 = () => /*#__PURE__*/React.createElement("div", {
+    className: props.className,
+    style: {
+      width: "fit-content",
+      height: 30,
+      borderRadius: 2,
+      backgroundColor: "rgb(239,246,255)",
+      display: "flex",
+      flexDirection: "row",
+      gap: 4,
+      padding: "4px 4px 4px 4px",
+      justifyContent: "center",
+      alignItems: "center",
+      flexWrap: "nowrap",
+      boxSizing: "border-box",
+      position: "relative",
+      ...props.style
+    }
+  }, props.faceIcon && /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      width: 18,
+      height: 18,
+      flexShrink: 0
+    }
+  }, props.icon1 ?? /*#__PURE__*/React.createElement(SchemaInfo, {
+    style: {
+      transform: "scale(0.750, 0.750)",
+      transformOrigin: "0 0"
+    }
+  })), props.textSection && /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      display: "flex",
+      flexDirection: "row",
+      gap: 10,
+      padding: "0px 2px 0px 2px",
+      alignItems: "center",
+      flexWrap: "nowrap",
+      boxSizing: "border-box",
+      flexShrink: 0
+    }
+  }, /*#__PURE__*/React.createElement("span", {
+    style: {
+      position: "relative",
+      fontFamily: "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+      fontWeight: 400,
+      fontSize: 12,
+      whiteSpace: "nowrap",
+      lineHeight: 1.2999999523162842,
+      letterSpacing: "-0.020em",
+      color: "rgb(51,65,85)",
+      flexShrink: 0
+    }
+  }, props.text1 ?? "Data Details")), props.tailIcon && /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      width: 18,
+      height: 18,
+      flexShrink: 0
+    }
+  }, props.icon2 ?? /*#__PURE__*/React.createElement(DownArrow2, {
+    style: {
+      transform: "scale(0.750, 0.750)",
+      transformOrigin: "0 0"
+    }
+  })), props.tooltip && /*#__PURE__*/React.createElement(TooltipInfo, {
+    style: {
+      position: "absolute",
+      left: -71,
+      top: 34,
+      width: 264
+    },
+    tooltipText: "Automatically adds all available filters to\nadvanced filter builder using AND condition.",
+    position: "top/center"
+  }));
+  const __body5 = () => /*#__PURE__*/React.createElement("div", {
+    className: props.className,
+    style: {
+      width: "fit-content",
+      height: 32,
+      borderRadius: 2,
+      backgroundColor: "rgb(239,246,255)",
+      display: "flex",
+      flexDirection: "row",
+      gap: 4,
+      padding: "4px 8px 4px 8px",
+      justifyContent: "center",
+      alignItems: "center",
+      flexWrap: "nowrap",
+      boxSizing: "border-box",
+      position: "relative",
+      ...props.style
+    }
+  }, props.faceIcon && /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      width: 18,
+      height: 18,
+      flexShrink: 0
+    }
+  }, props.icon1 ?? /*#__PURE__*/React.createElement(SchemaInfo, {
+    style: {
+      transform: "scale(0.750, 0.750)",
+      transformOrigin: "0 0"
+    }
+  })), props.textSection && /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      display: "flex",
+      flexDirection: "row",
+      gap: 10,
+      padding: "0px 2px 0px 2px",
+      alignItems: "center",
+      flexWrap: "nowrap",
+      boxSizing: "border-box",
+      flexShrink: 0
+    }
+  }, /*#__PURE__*/React.createElement("span", {
+    style: {
+      position: "relative",
+      fontFamily: "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+      fontWeight: 500,
+      fontSize: 14,
+      whiteSpace: "nowrap",
+      lineHeight: 1.2999999523162842,
+      letterSpacing: "-0.020em",
+      color: "rgb(51,65,85)",
+      flexShrink: 0
+    }
+  }, props.text1 ?? "Data Details")), props.tailIcon && /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      width: 18,
+      height: 18,
+      flexShrink: 0
+    }
+  }, props.icon2 ?? /*#__PURE__*/React.createElement(DownArrow2, {
+    style: {
+      transform: "scale(0.750, 0.750)",
+      transformOrigin: "0 0"
+    }
+  })), props.tooltip && /*#__PURE__*/React.createElement(TooltipInfo, {
+    style: {
+      position: "absolute",
+      left: -61,
+      top: 34,
+      width: 264
+    },
+    tooltipText: "Automatically adds all available filters to\nadvanced filter builder using AND condition.",
+    position: "top/center"
+  }));
+  const __body6 = () => /*#__PURE__*/React.createElement("div", {
+    className: props.className,
+    style: {
+      width: "fit-content",
+      height: 24,
+      borderRadius: 2,
+      backgroundColor: "rgb(219,234,254)",
+      display: "flex",
+      flexDirection: "row",
+      gap: 4,
+      padding: "4px 4px 4px 4px",
+      justifyContent: "center",
+      alignItems: "center",
+      flexWrap: "nowrap",
+      boxSizing: "border-box",
+      position: "relative",
+      ...props.style
+    }
+  }, props.faceIcon && /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      width: 16,
+      flexShrink: 0,
+      alignSelf: "stretch",
+      height: "auto"
+    }
+  }, props.icon1 ?? /*#__PURE__*/React.createElement(SchemaInfo, null)), props.textSection && /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      display: "flex",
+      flexDirection: "row",
+      gap: 10,
+      padding: "0px 2px 0px 2px",
+      alignItems: "center",
+      flexWrap: "nowrap",
+      boxSizing: "border-box",
+      flexShrink: 0,
+      alignSelf: "stretch"
+    }
+  }, /*#__PURE__*/React.createElement("span", {
+    style: {
+      position: "relative",
+      fontFamily: "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+      fontWeight: 400,
+      fontSize: 12,
+      whiteSpace: "nowrap",
+      lineHeight: 1.2999999523162842,
+      letterSpacing: "-0.020em",
+      color: "rgb(51,65,85)",
+      flexShrink: 0,
+      alignSelf: "stretch"
+    }
+  }, props.text1 ?? "Data Details")), props.tailIcon && /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      width: 16,
+      flexShrink: 0,
+      alignSelf: "stretch",
+      height: "auto"
+    }
+  }, props.icon2 ?? /*#__PURE__*/React.createElement(DownArrow2, null)), props.tooltip && /*#__PURE__*/React.createElement(TooltipInfo, {
+    style: {
+      position: "absolute",
+      left: -73,
+      top: 34,
+      width: 264
+    },
+    tooltipText: "Automatically adds all available filters to\nadvanced filter builder using AND condition.",
+    position: "top/center"
+  }));
+  const __body7 = () => /*#__PURE__*/React.createElement("div", {
+    className: props.className,
+    style: {
+      width: "fit-content",
+      height: 30,
+      borderRadius: 2,
+      backgroundColor: "rgb(219,234,254)",
+      display: "flex",
+      flexDirection: "row",
+      gap: 4,
+      padding: "4px 4px 4px 4px",
+      justifyContent: "center",
+      alignItems: "center",
+      flexWrap: "nowrap",
+      boxSizing: "border-box",
+      position: "relative",
+      ...props.style
+    }
+  }, props.faceIcon && /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      width: 18,
+      height: 18,
+      flexShrink: 0
+    }
+  }, props.icon1 ?? /*#__PURE__*/React.createElement(SchemaInfo, {
+    style: {
+      transform: "scale(0.750, 0.750)",
+      transformOrigin: "0 0"
+    }
+  })), props.textSection && /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      display: "flex",
+      flexDirection: "row",
+      gap: 10,
+      padding: "0px 2px 0px 2px",
+      alignItems: "center",
+      flexWrap: "nowrap",
+      boxSizing: "border-box",
+      flexShrink: 0
+    }
+  }, /*#__PURE__*/React.createElement("span", {
+    style: {
+      position: "relative",
+      fontFamily: "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+      fontWeight: 400,
+      fontSize: 12,
+      whiteSpace: "nowrap",
+      lineHeight: 1.2999999523162842,
+      letterSpacing: "-0.020em",
+      color: "rgb(51,65,85)",
+      flexShrink: 0
+    }
+  }, props.text1 ?? "Data Details")), props.tailIcon && /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      width: 18,
+      height: 18,
+      flexShrink: 0
+    }
+  }, props.icon2 ?? /*#__PURE__*/React.createElement(DownArrow2, {
+    style: {
+      transform: "scale(0.750, 0.750)",
+      transformOrigin: "0 0"
+    }
+  })), props.tooltip && /*#__PURE__*/React.createElement(TooltipInfo, {
+    style: {
+      position: "absolute",
+      left: -71,
+      top: 34,
+      width: 264
+    },
+    tooltipText: "Automatically adds all available filters to\nadvanced filter builder using AND condition.",
+    position: "top/center"
+  }));
+  const __body8 = () => /*#__PURE__*/React.createElement("div", {
+    className: props.className,
+    style: {
+      width: "fit-content",
+      height: 32,
+      borderRadius: 2,
+      backgroundColor: "rgb(219,234,254)",
+      display: "flex",
+      flexDirection: "row",
+      gap: 4,
+      padding: "4px 8px 4px 8px",
+      justifyContent: "center",
+      alignItems: "center",
+      flexWrap: "nowrap",
+      boxSizing: "border-box",
+      position: "relative",
+      ...props.style
+    }
+  }, props.faceIcon && /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      width: 18,
+      height: 18,
+      flexShrink: 0
+    }
+  }, props.icon1 ?? /*#__PURE__*/React.createElement(SchemaInfo, {
+    style: {
+      transform: "scale(0.750, 0.750)",
+      transformOrigin: "0 0"
+    }
+  })), props.textSection && /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      display: "flex",
+      flexDirection: "row",
+      gap: 10,
+      padding: "0px 2px 0px 2px",
+      alignItems: "center",
+      flexWrap: "nowrap",
+      boxSizing: "border-box",
+      flexShrink: 0
+    }
+  }, /*#__PURE__*/React.createElement("span", {
+    style: {
+      position: "relative",
+      fontFamily: "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+      fontWeight: 500,
+      fontSize: 14,
+      whiteSpace: "nowrap",
+      lineHeight: 1.2999999523162842,
+      letterSpacing: "-0.020em",
+      color: "rgb(51,65,85)",
+      flexShrink: 0
+    }
+  }, props.text1 ?? "Data Details")), props.tailIcon && /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      width: 18,
+      height: 18,
+      flexShrink: 0
+    }
+  }, props.icon2 ?? /*#__PURE__*/React.createElement(DownArrow2, {
+    style: {
+      transform: "scale(0.750, 0.750)",
+      transformOrigin: "0 0"
+    }
+  })), props.tooltip && /*#__PURE__*/React.createElement(TooltipInfo, {
+    style: {
+      position: "absolute",
+      left: -61,
+      top: 34,
+      width: 264
+    },
+    tooltipText: "Automatically adds all available filters to\nadvanced filter builder using AND condition.",
+    position: "top/center"
+  }));
+  const __impls = {
+    // figma: Property 1=Button System, Size=Small
+    "property1=button system|size=sm": __body0,
+    // figma: Property 1=Button System, Size=Regular
+    "property1=button system|size=regular": __body1,
+    // figma: Property 1=Button System, Size=Large
+    "property1=button system|size=lg": __body2,
+    // figma: Property 1=Variant2, Size=Small
+    "property1=variant2|size=sm": __body3,
+    // figma: Property 1=Variant2, Size=Regular
+    "property1=variant2|size=regular": __body4,
+    // figma: Property 1=Variant2, Size=Large
+    "property1=variant2|size=lg": __body5,
+    // figma: Property 1=Selected, Size=Small
+    "property1=selected|size=sm": __body6,
+    // figma: Property 1=Selected, Size=Regular
+    "property1=selected|size=regular": __body7,
+    // figma: Property 1=Selected, Size=Large
+    "property1=selected|size=lg": __body8
+  };
+  return (__impls[__vkey_Button(props)] ?? __body0)();
+}
+
+// figma node: 1:373 Schema (2 variants)
+const __venc_Schema = v => String(v).replace(/[%|=]/g, encodeURIComponent);
+const __vkey_Schema = p => "property1=" + __venc_Schema(p.property1);
+function Schema(_p = {}) {
+  const props = {
+    ..._p,
+    property1: _p.property1 ?? "default"
+  };
+  const __body0 = () => /*#__PURE__*/React.createElement("div", {
+    className: props.className,
+    style: {
+      width: 24,
+      height: 24,
+      position: "relative",
+      color: "rgb(71,85,105)",
+      ...props.style
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "absolute",
+      left: 0,
+      top: 0,
+      width: 24,
+      height: 24
+    }
+  }, /*#__PURE__*/React.createElement("svg", {
+    width: 16,
+    height: 18,
+    viewBox: "0 0 16 18",
+    fill: "none",
+    style: {
+      position: "absolute",
+      left: 4,
+      top: 3,
+      width: 16,
+      height: 18
+    }
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M 7.111 15.683 L 7.111 9.517 L 1.778 6.39 L 1.778 12.555 L 7.111 15.683 Z M 8.889 15.683 L 14.222 12.555 L 14.222 6.39 L 8.889 9.517 L 8.889 15.683 Z M 8 7.965 L 13.267 4.883 L 8 1.8 L 2.733 4.883 L 8 7.965 Z M 0.889 14.13 C 0.607 13.965 0.389 13.747 0.233 13.477 C 0.078 13.207 0 12.908 0 12.578 L 0 5.423 C 0 5.093 0.078 4.793 0.233 4.523 C 0.389 4.253 0.607 4.035 0.889 3.87 L 7.111 0.248 C 7.393 0.082 7.689 0 8 0 C 8.311 0 8.607 0.082 8.889 0.248 L 15.111 3.87 C 15.393 4.035 15.611 4.253 15.767 4.523 C 15.922 4.793 16 5.093 16 5.423 L 16 12.578 C 16 12.908 15.922 13.207 15.767 13.477 C 15.611 13.747 15.393 13.965 15.111 14.13 L 8.889 17.753 C 8.607 17.918 8.311 18 8 18 C 7.689 18 7.393 17.918 7.111 17.753 L 0.889 14.13 Z",
+    fill: "currentColor",
+    fillRule: "evenodd"
+  }))));
+  const __body1 = () => /*#__PURE__*/React.createElement("div", {
+    className: props.className,
+    style: {
+      width: 24,
+      height: 24,
+      position: "relative",
+      color: "rgb(20,184,166)",
+      ...props.style
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "absolute",
+      left: 0,
+      top: 0,
+      width: 24,
+      height: 24
+    }
+  }, /*#__PURE__*/React.createElement("svg", {
+    width: 16,
+    height: 18,
+    viewBox: "0 0 16 18",
+    fill: "none",
+    style: {
+      position: "absolute",
+      left: 4,
+      top: 3,
+      width: 16,
+      height: 18
+    }
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M 7.111 15.683 L 7.111 9.518 L 1.778 6.39 L 1.778 12.555 L 7.111 15.683 Z M 8.889 15.683 L 14.222 12.555 L 14.222 6.39 L 8.889 9.518 L 8.889 15.683 Z M 8 7.965 L 13.267 4.883 L 8 1.8 L 2.733 4.883 L 8 7.965 Z M 0.889 14.13 C 0.607 13.965 0.389 13.748 0.233 13.478 C 0.078 13.208 0 12.908 0 12.578 L 0 5.423 C 0 5.093 0.078 4.793 0.233 4.523 C 0.389 4.253 0.607 4.035 0.889 3.87 L 7.111 0.248 C 7.393 0.082 7.689 0 8 0 C 8.311 0 8.607 0.082 8.889 0.248 L 15.111 3.87 C 15.393 4.035 15.611 4.253 15.767 4.523 C 15.922 4.793 16 5.093 16 5.423 L 16 12.578 C 16 12.908 15.922 13.208 15.767 13.478 C 15.611 13.748 15.393 13.965 15.111 14.13 L 8.889 17.753 C 8.607 17.918 8.311 18 8 18 C 7.689 18 7.393 17.918 7.111 17.753 L 0.889 14.13 Z",
+    fill: "currentColor",
+    fillRule: "evenodd"
+  })), /*#__PURE__*/React.createElement("svg", {
+    width: 7.807,
+    height: 11.609,
+    viewBox: "0 0 7.807 11.609",
+    fill: "none",
+    style: {
+      position: "absolute",
+      left: 4.58,
+      top: 8,
+      width: 7.807,
+      height: 11.609,
+      opacity: 0.2
+    }
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M 7.42 4.247 L 7.807 11.609 C 7.672 11.608 7.538 11.571 7.42 11.5 L 0.42 8.5 C 0.293 8.425 0.187 8.315 0.113 8.182 C 0.039 8.048 0 7.896 0 7.74 L 0.462 0.355 C 0.462 0.233 0.487 0.112 0.533 0 L 7.42 4.247 Z",
+    fill: "currentColor",
+    fillRule: "evenodd"
+  }))));
+  const __impls = {
+    // figma: Property 1=Default
+    "property1=default": __body0,
+    // figma: Property 1=Dual tone
+    "property1=dual tone": __body1
+  };
+  return (__impls[__vkey_Schema(props)] ?? __body0)();
+}
+
+// figma node: 9001:12261 Component / Button System (6 variants)
+const __venc_ComponentButtonSystem = v => String(v).replace(/[%|=]/g, encodeURIComponent);
+const __vkey_ComponentButtonSystem = p => "size=" + __venc_ComponentButtonSystem(p.size) + '|' + "type=" + __venc_ComponentButtonSystem(p.type) + '|' + "mode=" + __venc_ComponentButtonSystem(p.mode) + '|' + "state=" + __venc_ComponentButtonSystem(p.state);
+function ComponentButtonSystem(_p = {}) {
+  const props = {
+    ..._p,
+    size: _p.size ?? "regular",
+    showText: _p.showText ?? true,
+    buttonText: _p.buttonText ?? "Button",
+    showLeading: _p.showLeading ?? true,
+    showTrailing: _p.showTrailing ?? true,
+    type: _p.type ?? "primary-solid",
+    mode: _p.mode ?? "dark",
+    tooltip: _p.tooltip ?? false,
+    state: _p.state ?? "default"
+  };
+  const __body0 = () => /*#__PURE__*/React.createElement("div", {
+    className: props.className,
+    style: {
+      width: "fit-content",
+      height: 30,
+      overflow: "hidden",
+      borderRadius: 4,
+      backgroundColor: "rgb(255,255,255)",
+      boxShadow: "inset 0 0 0 1px rgb(59,130,246)",
+      display: "flex",
+      flexDirection: "row",
+      gap: 4,
+      padding: "4px 8px 4px 8px",
+      justifyContent: "center",
+      alignItems: "center",
+      flexWrap: "nowrap",
+      boxSizing: "border-box",
+      position: "relative",
+      ...props.style
+    }
+  }, props.showLeading && /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      width: 16,
+      height: 16,
+      flexShrink: 0
+    }
+  }, props.leadingIcon ?? /*#__PURE__*/React.createElement(Schema, {
+    property1: "default",
+    style: {
+      transform: "scale(0.667, 0.667)",
+      transformOrigin: "0 0"
+    }
+  })), props.showText && /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      display: "flex",
+      flexDirection: "row",
+      gap: 10,
+      padding: "0px 2px 0px 2px",
+      alignItems: "flex-start",
+      flexWrap: "nowrap",
+      boxSizing: "border-box",
+      flexShrink: 0
+    }
+  }, /*#__PURE__*/React.createElement("span", {
+    style: {
+      position: "relative",
+      fontFamily: "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+      fontWeight: 500,
+      fontSize: 12,
+      whiteSpace: "nowrap",
+      lineHeight: 1.2999999523162842,
+      letterSpacing: "-0.020em",
+      color: "rgb(37,99,235)",
+      flexShrink: 0
+    }
+  }, props.buttonText)), props.showTrailing && /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      width: 16,
+      height: 16,
+      flexShrink: 0
+    }
+  }, props.trailingIcon ?? /*#__PURE__*/React.createElement(Schema, {
+    property1: "default",
+    style: {
+      transform: "scale(0.667, 0.667)",
+      transformOrigin: "0 0"
+    }
+  })));
+  const __body1 = () => /*#__PURE__*/React.createElement("div", {
+    className: props.className,
+    style: {
+      width: "fit-content",
+      height: 30,
+      borderRadius: 4,
+      backgroundColor: "rgb(226,232,240)",
+      display: "flex",
+      flexDirection: "row",
+      gap: 4,
+      padding: "4px 8px 4px 8px",
+      justifyContent: "center",
+      alignItems: "center",
+      flexWrap: "nowrap",
+      boxSizing: "border-box",
+      position: "relative",
+      ...props.style
+    }
+  }, props.showLeading && /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      width: 16,
+      height: 16,
+      flexShrink: 0
+    }
+  }, props.leadingIcon ?? /*#__PURE__*/React.createElement(Schema, {
+    property1: "default",
+    style: {
+      transform: "scale(0.667, 0.667)",
+      transformOrigin: "0 0"
+    }
+  })), props.showText && /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      display: "flex",
+      flexDirection: "row",
+      gap: 10,
+      padding: "0px 2px 0px 2px",
+      alignItems: "center",
+      flexWrap: "nowrap",
+      boxSizing: "border-box",
+      flexShrink: 0
+    }
+  }, /*#__PURE__*/React.createElement("span", {
+    style: {
+      position: "relative",
+      fontFamily: "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+      fontWeight: 500,
+      fontSize: 12,
+      whiteSpace: "nowrap",
+      lineHeight: 1.2999999523162842,
+      letterSpacing: "-0.020em",
+      color: "rgb(51,65,85)",
+      flexShrink: 0
+    }
+  }, props.buttonText)), props.showTrailing && /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      width: 16,
+      height: 16,
+      flexShrink: 0
+    }
+  }, props.trailingIcon ?? /*#__PURE__*/React.createElement(Schema, {
+    property1: "default",
+    style: {
+      transform: "scale(0.667, 0.667)",
+      transformOrigin: "0 0"
+    }
+  })), props.tooltip && /*#__PURE__*/React.createElement(TooltipInfo, {
+    style: {
+      position: "absolute",
+      left: -83,
+      top: 34,
+      width: 264
+    },
+    tooltipText: "Automatically adds all available filters to\nadvanced filter builder using AND condition.",
+    position: "top/center"
+  }));
+  const __body2 = () => /*#__PURE__*/React.createElement("div", {
+    className: props.className,
+    style: {
+      width: "fit-content",
+      height: 30,
+      overflow: "hidden",
+      borderRadius: 4,
+      backgroundColor: "rgb(203,213,225)",
+      display: "flex",
+      flexDirection: "row",
+      gap: 4,
+      padding: "4px 8px 4px 8px",
+      justifyContent: "center",
+      alignItems: "center",
+      flexWrap: "nowrap",
+      boxSizing: "border-box",
+      position: "relative",
+      ...props.style
+    }
+  }, props.showLeading && /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      width: 16,
+      height: 16,
+      flexShrink: 0
+    }
+  }, props.leadingIcon ?? /*#__PURE__*/React.createElement(Schema, {
+    property1: "default",
+    style: {
+      transform: "scale(0.667, 0.667)",
+      transformOrigin: "0 0"
+    }
+  })), props.showText && /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      display: "flex",
+      flexDirection: "row",
+      gap: 10,
+      padding: "0px 2px 0px 2px",
+      alignItems: "flex-start",
+      flexWrap: "nowrap",
+      boxSizing: "border-box",
+      flexShrink: 0
+    }
+  }, /*#__PURE__*/React.createElement("span", {
+    style: {
+      position: "relative",
+      fontFamily: "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+      fontWeight: 500,
+      fontSize: 12,
+      whiteSpace: "nowrap",
+      lineHeight: 1.2999999523162842,
+      letterSpacing: "-0.020em",
+      color: "rgb(51,65,85)",
+      flexShrink: 0
+    }
+  }, props.buttonText)), props.showTrailing && /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      width: 16,
+      height: 16,
+      flexShrink: 0
+    }
+  }, props.trailingIcon ?? /*#__PURE__*/React.createElement(Schema, {
+    property1: "default",
+    style: {
+      transform: "scale(0.667, 0.667)",
+      transformOrigin: "0 0"
+    }
+  })));
+  const __body3 = () => /*#__PURE__*/React.createElement("div", {
+    className: props.className,
+    style: {
+      width: "fit-content",
+      height: 30,
+      borderRadius: 4,
+      backgroundColor: "rgb(239,246,255)",
+      boxShadow: "inset 0 0 0 1px rgb(59,130,246)",
+      display: "flex",
+      flexDirection: "row",
+      gap: 4,
+      padding: "4px 8px 4px 8px",
+      justifyContent: "center",
+      alignItems: "center",
+      flexWrap: "nowrap",
+      boxSizing: "border-box",
+      position: "relative",
+      ...props.style
+    }
+  }, props.showLeading && /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      width: 16,
+      height: 16,
+      flexShrink: 0
+    }
+  }, props.leadingIcon ?? /*#__PURE__*/React.createElement(Schema, {
+    property1: "default",
+    style: {
+      transform: "scale(0.667, 0.667)",
+      transformOrigin: "0 0"
+    }
+  })), props.showText && /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      display: "flex",
+      flexDirection: "row",
+      gap: 10,
+      padding: "0px 2px 0px 2px",
+      alignItems: "flex-start",
+      flexWrap: "nowrap",
+      boxSizing: "border-box",
+      flexShrink: 0
+    }
+  }, /*#__PURE__*/React.createElement("span", {
+    style: {
+      position: "relative",
+      fontFamily: "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+      fontWeight: 500,
+      fontSize: 12,
+      whiteSpace: "nowrap",
+      lineHeight: 1.2999999523162842,
+      letterSpacing: "-0.020em",
+      color: "rgb(37,99,235)",
+      flexShrink: 0
+    }
+  }, props.buttonText)), props.showTrailing && /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      width: 16,
+      height: 16,
+      flexShrink: 0
+    }
+  }, props.trailingIcon ?? /*#__PURE__*/React.createElement(Schema, {
+    property1: "default",
+    style: {
+      transform: "scale(0.667, 0.667)",
+      transformOrigin: "0 0"
+    }
+  })), props.tooltip && /*#__PURE__*/React.createElement(TooltipInfo, {
+    style: {
+      position: "absolute",
+      left: -83,
+      top: 34,
+      width: 264
+    },
+    tooltipText: "Automatically adds all available filters to\nadvanced filter builder using AND condition.",
+    position: "top/center"
+  }));
+  const __body4 = () => /*#__PURE__*/React.createElement("div", {
+    className: props.className,
+    style: {
+      width: "fit-content",
+      height: 30,
+      overflow: "hidden",
+      borderRadius: 4,
+      backgroundColor: "rgb(219,234,254)",
+      boxShadow: "inset 0 0 0 1px rgb(29,78,216)",
+      display: "flex",
+      flexDirection: "row",
+      gap: 4,
+      padding: "4px 8px 4px 8px",
+      justifyContent: "center",
+      alignItems: "center",
+      flexWrap: "nowrap",
+      boxSizing: "border-box",
+      position: "relative",
+      ...props.style
+    }
+  }, props.showLeading && /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      width: 16,
+      height: 16,
+      flexShrink: 0
+    }
+  }, props.leadingIcon ?? /*#__PURE__*/React.createElement(Schema, {
+    property1: "default",
+    style: {
+      transform: "scale(0.667, 0.667)",
+      transformOrigin: "0 0"
+    }
+  })), props.showText && /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      display: "flex",
+      flexDirection: "row",
+      gap: 10,
+      padding: "0px 2px 0px 2px",
+      alignItems: "flex-start",
+      flexWrap: "nowrap",
+      boxSizing: "border-box",
+      flexShrink: 0
+    }
+  }, /*#__PURE__*/React.createElement("span", {
+    style: {
+      position: "relative",
+      fontFamily: "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+      fontWeight: 500,
+      fontSize: 12,
+      whiteSpace: "nowrap",
+      lineHeight: 1.2999999523162842,
+      letterSpacing: "-0.020em",
+      color: "rgb(29,78,216)",
+      flexShrink: 0
+    }
+  }, props.buttonText)), props.showTrailing && /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      width: 16,
+      height: 16,
+      flexShrink: 0
+    }
+  }, props.trailingIcon ?? /*#__PURE__*/React.createElement(Schema, {
+    property1: "default",
+    style: {
+      transform: "scale(0.667, 0.667)",
+      transformOrigin: "0 0"
+    }
+  })));
+  const __body5 = () => /*#__PURE__*/React.createElement("div", {
+    className: props.className,
+    style: {
+      width: "fit-content",
+      height: 30,
+      overflow: "hidden",
+      borderRadius: 4,
+      backgroundColor: "rgb(241,245,249)",
+      display: "flex",
+      flexDirection: "row",
+      gap: 4,
+      padding: "4px 8px 4px 8px",
+      justifyContent: "center",
+      alignItems: "center",
+      flexWrap: "nowrap",
+      boxSizing: "border-box",
+      position: "relative",
+      ...props.style
+    }
+  }, props.showLeading && /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      width: 16,
+      height: 16,
+      flexShrink: 0
+    }
+  }, props.leadingIcon ?? /*#__PURE__*/React.createElement(Schema, {
+    property1: "default",
+    style: {
+      transform: "scale(0.667, 0.667)",
+      transformOrigin: "0 0"
+    }
+  })), props.showText && /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      display: "flex",
+      flexDirection: "row",
+      gap: 10,
+      padding: "0px 2px 0px 2px",
+      alignItems: "center",
+      flexWrap: "nowrap",
+      boxSizing: "border-box",
+      flexShrink: 0
+    }
+  }, /*#__PURE__*/React.createElement("span", {
+    style: {
+      position: "relative",
+      fontFamily: "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+      fontWeight: 500,
+      fontSize: 12,
+      whiteSpace: "nowrap",
+      lineHeight: 1.2999999523162842,
+      letterSpacing: "-0.020em",
+      color: "rgb(71,85,105)",
+      flexShrink: 0
+    }
+  }, props.buttonText)), props.showTrailing && /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      width: 16,
+      height: 16,
+      flexShrink: 0
+    }
+  }, props.trailingIcon ?? /*#__PURE__*/React.createElement(Schema, {
+    property1: "default",
+    style: {
+      transform: "scale(0.667, 0.667)",
+      transformOrigin: "0 0"
+    }
+  })));
+  const __impls = {
+    // figma: Size=Regular, Type=Primary-Outline, State=Default, Mode=Light
+    "size=regular|type=primary-outline|mode=light|state=default": __body0,
+    // figma: Size=Regular, Type=Secondary-Solid, State=Hover, Mode=Light
+    "size=regular|type=secondary-solid|mode=light|state=hover": __body1,
+    // figma: Size=Regular, Type=Secondary-Solid, State=Clicked, Mode=Light
+    "size=regular|type=secondary-solid|mode=light|state=clicked": __body2,
+    // figma: Size=Regular, Type=Primary-Outline, State=Hover, Mode=Light
+    "size=regular|type=primary-outline|mode=light|state=hover": __body3,
+    // figma: Size=Regular, Type=Primary-Outline, State=Clicked, Mode=Light
+    "size=regular|type=primary-outline|mode=light|state=clicked": __body4,
+    // figma: Size=Regular, Type=Secondary-Solid, State=Default, Mode=Light
+    "size=regular|type=secondary-solid|mode=light|state=default": __body5
+  };
+  return (__impls[__vkey_ComponentButtonSystem(props)] ?? __body0)();
+}
+
+// figma node: 11001:6111 Loader 1 Spiner (8 variants)
+const __venc_Loader1Spiner = v => String(v).replace(/[%|=]/g, encodeURIComponent);
+const __vkey_Loader1Spiner = p => "frame=" + __venc_Loader1Spiner(p.frame);
+function Loader1Spiner(_p = {}) {
+  const props = {
+    ..._p,
+    frame: _p.frame ?? "1"
+  };
+  const __body0 = () => /*#__PURE__*/React.createElement("div", {
+    className: props.className,
+    style: {
+      width: 96,
+      height: 96,
+      overflow: "hidden",
+      position: "relative",
+      ...props.style
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "absolute",
+      left: 44,
+      top: 8,
+      width: 8,
+      height: 24,
+      borderRadius: 100,
+      backgroundColor: "rgb(37,99,235)"
+    }
+  }), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "absolute",
+      left: 44,
+      top: 64,
+      width: 8,
+      height: 24,
+      borderRadius: 100,
+      backgroundColor: "rgb(239,246,255)"
+    }
+  }), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "absolute",
+      left: 0,
+      top: 0,
+      transform: "matrix(0.707,0.707,-0.707,0.707,73.456,16.887)",
+      transformOrigin: "0 0",
+      width: 8,
+      height: 24,
+      borderRadius: 100,
+      backgroundColor: "rgba(147,197,253,0.8)"
+    }
+  }), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "absolute",
+      left: 0,
+      top: 0,
+      transform: "matrix(0.707,0.707,-0.707,0.707,33.858,56.485)",
+      transformOrigin: "0 0",
+      width: 8,
+      height: 24,
+      borderRadius: 100,
+      backgroundColor: "rgb(239,246,255)"
+    }
+  }), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "absolute",
+      left: 0,
+      top: 0,
+      transform: "matrix(0,-1,1,0,8,52)",
+      transformOrigin: "0 0",
+      width: 8,
+      height: 24,
+      borderRadius: 100,
+      backgroundColor: "rgb(219,234,254)"
+    }
+  }), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "absolute",
+      left: 0,
+      top: 0,
+      transform: "matrix(0,-1,1,0,64,52)",
+      transformOrigin: "0 0",
+      width: 8,
+      height: 24,
+      borderRadius: 100,
+      backgroundColor: "rgb(219,234,254)"
+    }
+  }), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "absolute",
+      left: 0,
+      top: 0,
+      transform: "matrix(0.707,-0.707,0.707,0.707,16.887,22.544)",
+      transformOrigin: "0 0",
+      width: 8,
+      height: 24,
+      borderRadius: 100,
+      backgroundColor: "rgba(147,197,253,0.8)"
+    }
+  }), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "absolute",
+      left: 0,
+      top: 0,
+      transform: "matrix(0.707,-0.707,0.707,0.707,56.485,62.142)",
+      transformOrigin: "0 0",
+      width: 8,
+      height: 24,
+      borderRadius: 100,
+      backgroundColor: "rgb(239,246,255)"
+    }
+  }));
+  const __body1 = () => /*#__PURE__*/React.createElement("div", {
+    className: props.className,
+    style: {
+      width: 96,
+      height: 96,
+      overflow: "hidden",
+      position: "relative",
+      ...props.style
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "absolute",
+      left: 44,
+      top: 8,
+      width: 8,
+      height: 24,
+      borderRadius: 100,
+      backgroundColor: "rgba(147,197,253,0.8)"
+    }
+  }), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "absolute",
+      left: 44,
+      top: 64,
+      width: 8,
+      height: 24,
+      borderRadius: 100,
+      backgroundColor: "rgb(239,246,255)"
+    }
+  }), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "absolute",
+      left: 0,
+      top: 0,
+      transform: "matrix(0.707,0.707,-0.707,0.707,73.456,16.887)",
+      transformOrigin: "0 0",
+      width: 8,
+      height: 24,
+      borderRadius: 100,
+      backgroundColor: "rgb(37,99,235)"
+    }
+  }), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "absolute",
+      left: 0,
+      top: 0,
+      transform: "matrix(0.707,0.707,-0.707,0.707,33.858,56.485)",
+      transformOrigin: "0 0",
+      width: 8,
+      height: 24,
+      borderRadius: 100,
+      backgroundColor: "rgb(239,246,255)"
+    }
+  }), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "absolute",
+      left: 0,
+      top: 0,
+      transform: "matrix(0,-1,1,0,8,52)",
+      transformOrigin: "0 0",
+      width: 8,
+      height: 24,
+      borderRadius: 100,
+      backgroundColor: "rgb(239,246,255)"
+    }
+  }), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "absolute",
+      left: 0,
+      top: 0,
+      transform: "matrix(0,-1,1,0,64,52)",
+      transformOrigin: "0 0",
+      width: 8,
+      height: 24,
+      borderRadius: 100,
+      backgroundColor: "rgba(147,197,253,0.8)"
+    }
+  }), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "absolute",
+      left: 0,
+      top: 0,
+      transform: "matrix(0.707,-0.707,0.707,0.707,16.887,22.544)",
+      transformOrigin: "0 0",
+      width: 8,
+      height: 24,
+      borderRadius: 100,
+      backgroundColor: "rgb(219,234,254)"
+    }
+  }), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "absolute",
+      left: 0,
+      top: 0,
+      transform: "matrix(0.707,-0.707,0.707,0.707,56.485,62.142)",
+      transformOrigin: "0 0",
+      width: 8,
+      height: 24,
+      borderRadius: 100,
+      backgroundColor: "rgb(219,234,254)"
+    }
+  }));
+  const __body2 = () => /*#__PURE__*/React.createElement("div", {
+    className: props.className,
+    style: {
+      width: 96,
+      height: 96,
+      overflow: "hidden",
+      position: "relative",
+      ...props.style
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "absolute",
+      left: 44,
+      top: 8,
+      width: 8,
+      height: 24,
+      borderRadius: 100,
+      backgroundColor: "rgb(219,234,254)"
+    }
+  }), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "absolute",
+      left: 44,
+      top: 64,
+      width: 8,
+      height: 24,
+      borderRadius: 100,
+      backgroundColor: "rgb(219,234,254)"
+    }
+  }), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "absolute",
+      left: 0,
+      top: 0,
+      transform: "matrix(0.707,0.707,-0.707,0.707,73.456,16.887)",
+      transformOrigin: "0 0",
+      width: 8,
+      height: 24,
+      borderRadius: 100,
+      backgroundColor: "rgba(147,197,253,0.8)"
+    }
+  }), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "absolute",
+      left: 0,
+      top: 0,
+      transform: "matrix(0.707,0.707,-0.707,0.707,33.858,56.485)",
+      transformOrigin: "0 0",
+      width: 8,
+      height: 24,
+      borderRadius: 100,
+      backgroundColor: "rgb(239,246,255)"
+    }
+  }), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "absolute",
+      left: 0,
+      top: 0,
+      transform: "matrix(0,-1,1,0,8,52)",
+      transformOrigin: "0 0",
+      width: 8,
+      height: 24,
+      borderRadius: 100,
+      backgroundColor: "rgb(239,246,255)"
+    }
+  }), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "absolute",
+      left: 0,
+      top: 0,
+      transform: "matrix(0,-1,1,0,64,52)",
+      transformOrigin: "0 0",
+      width: 8,
+      height: 24,
+      borderRadius: 100,
+      backgroundColor: "rgb(37,99,235)"
+    }
+  }), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "absolute",
+      left: 0,
+      top: 0,
+      transform: "matrix(0.707,-0.707,0.707,0.707,16.887,22.544)",
+      transformOrigin: "0 0",
+      width: 8,
+      height: 24,
+      borderRadius: 100,
+      backgroundColor: "rgb(239,246,255)"
+    }
+  }), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "absolute",
+      left: 0,
+      top: 0,
+      transform: "matrix(0.707,-0.707,0.707,0.707,56.485,62.142)",
+      transformOrigin: "0 0",
+      width: 8,
+      height: 24,
+      borderRadius: 100,
+      backgroundColor: "rgba(147,197,253,0.8)"
+    }
+  }));
+  const __body3 = () => /*#__PURE__*/React.createElement("div", {
+    className: props.className,
+    style: {
+      width: 96,
+      height: 96,
+      overflow: "hidden",
+      position: "relative",
+      ...props.style
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "absolute",
+      left: 44,
+      top: 8,
+      width: 8,
+      height: 24,
+      borderRadius: 100,
+      backgroundColor: "rgb(239,246,255)"
+    }
+  }), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "absolute",
+      left: 44,
+      top: 64,
+      width: 8,
+      height: 24,
+      borderRadius: 100,
+      backgroundColor: "rgba(147,197,253,0.8)"
+    }
+  }), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "absolute",
+      left: 0,
+      top: 0,
+      transform: "matrix(0.707,0.707,-0.707,0.707,73.456,16.887)",
+      transformOrigin: "0 0",
+      width: 8,
+      height: 24,
+      borderRadius: 100,
+      backgroundColor: "rgb(219,234,254)"
+    }
+  }), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "absolute",
+      left: 0,
+      top: 0,
+      transform: "matrix(0.707,0.707,-0.707,0.707,33.858,56.485)",
+      transformOrigin: "0 0",
+      width: 8,
+      height: 24,
+      borderRadius: 100,
+      backgroundColor: "rgb(219,234,254)"
+    }
+  }), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "absolute",
+      left: 0,
+      top: 0,
+      transform: "matrix(0,-1,1,0,8,52)",
+      transformOrigin: "0 0",
+      width: 8,
+      height: 24,
+      borderRadius: 100,
+      backgroundColor: "rgb(239,246,255)"
+    }
+  }), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "absolute",
+      left: 0,
+      top: 0,
+      transform: "matrix(0,-1,1,0,64,52)",
+      transformOrigin: "0 0",
+      width: 8,
+      height: 24,
+      borderRadius: 100,
+      backgroundColor: "rgba(147,197,253,0.8)"
+    }
+  }), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "absolute",
+      left: 0,
+      top: 0,
+      transform: "matrix(0.707,-0.707,0.707,0.707,16.887,22.544)",
+      transformOrigin: "0 0",
+      width: 8,
+      height: 24,
+      borderRadius: 100,
+      backgroundColor: "rgb(239,246,255)"
+    }
+  }), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "absolute",
+      left: 0,
+      top: 0,
+      transform: "matrix(0.707,-0.707,0.707,0.707,56.485,62.142)",
+      transformOrigin: "0 0",
+      width: 8,
+      height: 24,
+      borderRadius: 100,
+      backgroundColor: "rgb(37,99,235)"
+    }
+  }));
+  const __body4 = () => /*#__PURE__*/React.createElement("div", {
+    className: props.className,
+    style: {
+      width: 96,
+      height: 96,
+      overflow: "hidden",
+      position: "relative",
+      ...props.style
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "absolute",
+      left: 44,
+      top: 8,
+      width: 8,
+      height: 24,
+      borderRadius: 100,
+      backgroundColor: "rgb(239,246,255)"
+    }
+  }), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "absolute",
+      left: 44,
+      top: 64,
+      width: 8,
+      height: 24,
+      borderRadius: 100,
+      backgroundColor: "rgb(37,99,235)"
+    }
+  }), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "absolute",
+      left: 0,
+      top: 0,
+      transform: "matrix(0.707,0.707,-0.707,0.707,73.456,16.887)",
+      transformOrigin: "0 0",
+      width: 8,
+      height: 24,
+      borderRadius: 100,
+      backgroundColor: "rgb(239,246,255)"
+    }
+  }), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "absolute",
+      left: 0,
+      top: 0,
+      transform: "matrix(0.707,0.707,-0.707,0.707,33.858,56.485)",
+      transformOrigin: "0 0",
+      width: 8,
+      height: 24,
+      borderRadius: 100,
+      backgroundColor: "rgba(147,197,253,0.8)"
+    }
+  }), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "absolute",
+      left: 0,
+      top: 0,
+      transform: "matrix(0,-1,1,0,8,52)",
+      transformOrigin: "0 0",
+      width: 8,
+      height: 24,
+      borderRadius: 100,
+      backgroundColor: "rgb(219,234,254)"
+    }
+  }), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "absolute",
+      left: 0,
+      top: 0,
+      transform: "matrix(0,-1,1,0,64,52)",
+      transformOrigin: "0 0",
+      width: 8,
+      height: 24,
+      borderRadius: 100,
+      backgroundColor: "rgb(219,234,254)"
+    }
+  }), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "absolute",
+      left: 0,
+      top: 0,
+      transform: "matrix(0.707,-0.707,0.707,0.707,16.887,22.544)",
+      transformOrigin: "0 0",
+      width: 8,
+      height: 24,
+      borderRadius: 100,
+      backgroundColor: "rgb(239,246,255)"
+    }
+  }), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "absolute",
+      left: 0,
+      top: 0,
+      transform: "matrix(0.707,-0.707,0.707,0.707,56.485,62.142)",
+      transformOrigin: "0 0",
+      width: 8,
+      height: 24,
+      borderRadius: 100,
+      backgroundColor: "rgba(147,197,253,0.8)"
+    }
+  }));
+  const __body5 = () => /*#__PURE__*/React.createElement("div", {
+    className: props.className,
+    style: {
+      width: 96,
+      height: 96,
+      overflow: "hidden",
+      position: "relative",
+      ...props.style
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "absolute",
+      left: 44,
+      top: 8,
+      width: 8,
+      height: 24,
+      borderRadius: 100,
+      backgroundColor: "rgb(239,246,255)"
+    }
+  }), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "absolute",
+      left: 44,
+      top: 64,
+      width: 8,
+      height: 24,
+      borderRadius: 100,
+      backgroundColor: "rgba(147,197,253,0.8)"
+    }
+  }), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "absolute",
+      left: 0,
+      top: 0,
+      transform: "matrix(0.707,0.707,-0.707,0.707,73.456,16.887)",
+      transformOrigin: "0 0",
+      width: 8,
+      height: 24,
+      borderRadius: 100,
+      backgroundColor: "rgb(239,246,255)"
+    }
+  }), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "absolute",
+      left: 0,
+      top: 0,
+      transform: "matrix(0.707,0.707,-0.707,0.707,33.858,56.485)",
+      transformOrigin: "0 0",
+      width: 8,
+      height: 24,
+      borderRadius: 100,
+      backgroundColor: "rgb(37,99,235)"
+    }
+  }), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "absolute",
+      left: 0,
+      top: 0,
+      transform: "matrix(0,-1,1,0,8,52)",
+      transformOrigin: "0 0",
+      width: 8,
+      height: 24,
+      borderRadius: 100,
+      backgroundColor: "rgba(147,197,253,0.8)"
+    }
+  }), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "absolute",
+      left: 0,
+      top: 0,
+      transform: "matrix(0,-1,1,0,64,52)",
+      transformOrigin: "0 0",
+      width: 8,
+      height: 24,
+      borderRadius: 100,
+      backgroundColor: "rgb(239,246,255)"
+    }
+  }), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "absolute",
+      left: 0,
+      top: 0,
+      transform: "matrix(0.707,-0.707,0.707,0.707,16.887,22.544)",
+      transformOrigin: "0 0",
+      width: 8,
+      height: 24,
+      borderRadius: 100,
+      backgroundColor: "rgb(219,234,254)"
+    }
+  }), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "absolute",
+      left: 0,
+      top: 0,
+      transform: "matrix(0.707,-0.707,0.707,0.707,56.485,62.142)",
+      transformOrigin: "0 0",
+      width: 8,
+      height: 24,
+      borderRadius: 100,
+      backgroundColor: "rgb(219,234,254)"
+    }
+  }));
+  const __body6 = () => /*#__PURE__*/React.createElement("div", {
+    className: props.className,
+    style: {
+      width: 96,
+      height: 96,
+      overflow: "hidden",
+      position: "relative",
+      ...props.style
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "absolute",
+      left: 44,
+      top: 8,
+      width: 8,
+      height: 24,
+      borderRadius: 100,
+      backgroundColor: "rgb(219,234,254)"
+    }
+  }), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "absolute",
+      left: 44,
+      top: 64,
+      width: 8,
+      height: 24,
+      borderRadius: 100,
+      backgroundColor: "rgb(219,234,254)"
+    }
+  }), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "absolute",
+      left: 0,
+      top: 0,
+      transform: "matrix(0.707,0.707,-0.707,0.707,73.456,16.887)",
+      transformOrigin: "0 0",
+      width: 8,
+      height: 24,
+      borderRadius: 100,
+      backgroundColor: "rgb(239,246,255)"
+    }
+  }), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "absolute",
+      left: 0,
+      top: 0,
+      transform: "matrix(0.707,0.707,-0.707,0.707,33.858,56.485)",
+      transformOrigin: "0 0",
+      width: 8,
+      height: 24,
+      borderRadius: 100,
+      backgroundColor: "rgba(147,197,253,0.8)"
+    }
+  }), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "absolute",
+      left: 0,
+      top: 0,
+      transform: "matrix(0,-1,1,0,8,52)",
+      transformOrigin: "0 0",
+      width: 8,
+      height: 24,
+      borderRadius: 100,
+      backgroundColor: "rgb(37,99,235)"
+    }
+  }), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "absolute",
+      left: 0,
+      top: 0,
+      transform: "matrix(0,-1,1,0,64,52)",
+      transformOrigin: "0 0",
+      width: 8,
+      height: 24,
+      borderRadius: 100,
+      backgroundColor: "rgb(239,246,255)"
+    }
+  }), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "absolute",
+      left: 0,
+      top: 0,
+      transform: "matrix(0.707,-0.707,0.707,0.707,16.887,22.544)",
+      transformOrigin: "0 0",
+      width: 8,
+      height: 24,
+      borderRadius: 100,
+      backgroundColor: "rgba(147,197,253,0.8)"
+    }
+  }), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "absolute",
+      left: 0,
+      top: 0,
+      transform: "matrix(0.707,-0.707,0.707,0.707,56.485,62.142)",
+      transformOrigin: "0 0",
+      width: 8,
+      height: 24,
+      borderRadius: 100,
+      backgroundColor: "rgb(239,246,255)"
+    }
+  }));
+  const __body7 = () => /*#__PURE__*/React.createElement("div", {
+    className: props.className,
+    style: {
+      width: 96,
+      height: 96,
+      overflow: "hidden",
+      position: "relative",
+      ...props.style
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "absolute",
+      left: 44,
+      top: 8,
+      width: 8,
+      height: 24,
+      borderRadius: 100,
+      backgroundColor: "rgba(147,197,253,0.8)"
+    }
+  }), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "absolute",
+      left: 44,
+      top: 64,
+      width: 8,
+      height: 24,
+      borderRadius: 100,
+      backgroundColor: "rgb(239,246,255)"
+    }
+  }), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "absolute",
+      left: 0,
+      top: 0,
+      transform: "matrix(0.707,0.707,-0.707,0.707,73.456,16.887)",
+      transformOrigin: "0 0",
+      width: 8,
+      height: 24,
+      borderRadius: 100,
+      backgroundColor: "rgb(219,234,254)"
+    }
+  }), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "absolute",
+      left: 0,
+      top: 0,
+      transform: "matrix(0.707,0.707,-0.707,0.707,33.858,56.485)",
+      transformOrigin: "0 0",
+      width: 8,
+      height: 24,
+      borderRadius: 100,
+      backgroundColor: "rgb(219,234,254)"
+    }
+  }), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "absolute",
+      left: 0,
+      top: 0,
+      transform: "matrix(0,-1,1,0,8,52)",
+      transformOrigin: "0 0",
+      width: 8,
+      height: 24,
+      borderRadius: 100,
+      backgroundColor: "rgba(147,197,253,0.8)"
+    }
+  }), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "absolute",
+      left: 0,
+      top: 0,
+      transform: "matrix(0,-1,1,0,64,52)",
+      transformOrigin: "0 0",
+      width: 8,
+      height: 24,
+      borderRadius: 100,
+      backgroundColor: "rgb(239,246,255)"
+    }
+  }), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "absolute",
+      left: 0,
+      top: 0,
+      transform: "matrix(0.707,-0.707,0.707,0.707,16.887,22.544)",
+      transformOrigin: "0 0",
+      width: 8,
+      height: 24,
+      borderRadius: 100,
+      backgroundColor: "rgb(37,99,235)"
+    }
+  }), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "absolute",
+      left: 0,
+      top: 0,
+      transform: "matrix(0.707,-0.707,0.707,0.707,56.485,62.142)",
+      transformOrigin: "0 0",
+      width: 8,
+      height: 24,
+      borderRadius: 100,
+      backgroundColor: "rgb(239,246,255)"
+    }
+  }));
+  const __impls = {
+    // figma: Frame=1
+    "frame=1": __body0,
+    // figma: Frame=2
+    "frame=2": __body1,
+    // figma: Frame=3
+    "frame=3": __body2,
+    // figma: Frame=4
+    "frame=4": __body3,
+    // figma: Frame=5
+    "frame=5": __body4,
+    // figma: Frame=6
+    "frame=6": __body5,
+    // figma: Frame=7
+    "frame=7": __body6,
+    // figma: Frame=8
+    "frame=8": __body7
+  };
+  return (__impls[__vkey_Loader1Spiner(props)] ?? __body0)();
+}
+
+// figma node: 11001:6184 Container (2 variants)
+const __venc_Container = v => String(v).replace(/[%|=]/g, encodeURIComponent);
+const __vkey_Container = p => "property1=" + __venc_Container(p.property1);
+function Container(_p = {}) {
+  const props = {
+    ..._p,
+    property1: _p.property1 ?? "default"
+  };
+  const __body0 = () => /*#__PURE__*/React.createElement("div", {
+    className: props.className,
+    style: {
+      width: 48,
+      height: 48,
+      position: "relative",
+      color: "rgb(71,85,105)",
+      ...props.style
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "absolute",
+      left: 0,
+      top: 0,
+      width: 48,
+      height: 48,
+      opacity: 0.5,
+      overflow: "hidden",
+      borderRadius: 10,
+      backgroundColor: "rgb(241,245,249)",
+      borderTop: "1px solid rgb(229,231,235)",
+      borderRight: "1px solid rgb(229,231,235)",
+      borderBottom: "1px solid rgb(229,231,235)",
+      borderLeft: "1px solid rgb(229,231,235)"
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "absolute",
+      left: 12,
+      top: 12,
+      width: 24,
+      height: 24
+    }
+  }, props.icon1 ?? /*#__PURE__*/React.createElement(Loader1Spiner, {
+    frame: "1",
+    style: {
+      transform: "scale(0.250, 0.250)",
+      transformOrigin: "0 0"
+    }
+  }))), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "absolute",
+      left: 38,
+      top: -6,
+      width: 16,
+      height: 16,
+      borderRadius: 33554400,
+      backgroundColor: "rgb(226,232,240)",
+      display: "flex",
+      flexDirection: "row",
+      justifyContent: "center",
+      alignItems: "center",
+      flexWrap: "nowrap"
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      width: 8,
+      height: 8,
+      overflow: "hidden",
+      flexShrink: 0
+    }
+  }, /*#__PURE__*/React.createElement("svg", {
+    width: 4,
+    height: 4,
+    viewBox: "0 0 4 4",
+    fill: "none",
+    style: {
+      position: "absolute",
+      left: 2,
+      top: 2,
+      width: 4,
+      height: 4
+    }
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M 4 0 L 0 4 Z",
+    fill: "currentColor",
+    fillRule: "evenodd"
+  })), /*#__PURE__*/React.createElement("svg", {
+    width: 4,
+    height: 4,
+    viewBox: "0 0 4 4",
+    fill: "none",
+    style: {
+      position: "absolute",
+      left: 2,
+      top: 2,
+      width: 4,
+      height: 4
+    }
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M 0 0 L 4 4 Z",
+    fill: "currentColor",
+    fillRule: "evenodd"
+  })))));
+  const __body1 = () => /*#__PURE__*/React.createElement("div", {
+    className: props.className,
+    style: {
+      width: 48,
+      height: 48,
+      position: "relative",
+      color: "rgb(71,85,105)",
+      ...props.style
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "absolute",
+      left: 0,
+      top: 0,
+      width: 48,
+      height: 48,
+      overflow: "hidden",
+      borderRadius: 10,
+      borderTop: "1px solid rgb(229,231,235)",
+      borderRight: "1px solid rgb(229,231,235)",
+      borderBottom: "1px solid rgb(229,231,235)",
+      borderLeft: "1px solid rgb(229,231,235)"
+    }
+  }), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "absolute",
+      left: 38,
+      top: -6,
+      width: 16,
+      height: 16,
+      borderRadius: 33554400,
+      backgroundColor: "rgb(226,232,240)",
+      display: "flex",
+      flexDirection: "row",
+      justifyContent: "center",
+      alignItems: "center",
+      flexWrap: "nowrap"
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      width: 8,
+      height: 8,
+      overflow: "hidden",
+      flexShrink: 0
+    }
+  }, /*#__PURE__*/React.createElement("svg", {
+    width: 4,
+    height: 4,
+    viewBox: "0 0 4 4",
+    fill: "none",
+    style: {
+      position: "absolute",
+      left: 2,
+      top: 2,
+      width: 4,
+      height: 4
+    }
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M 4 0 L 0 4 Z",
+    fill: "currentColor",
+    fillRule: "evenodd"
+  })), /*#__PURE__*/React.createElement("svg", {
+    width: 4,
+    height: 4,
+    viewBox: "0 0 4 4",
+    fill: "none",
+    style: {
+      position: "absolute",
+      left: 2,
+      top: 2,
+      width: 4,
+      height: 4
+    }
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M 0 0 L 4 4 Z",
+    fill: "currentColor",
+    fillRule: "evenodd"
+  })))));
+  const __impls = {
+    // figma: Property 1=Default
+    "property1=default": __body0,
+    // figma: Property 1=Variant2
+    "property1=variant2": __body1
+  };
+  return (__impls[__vkey_Container(props)] ?? __body0)();
+}
+
+// figma node: 1:1474 Context Menu
+function ContextMenu(_p = {}) {
+  const props = _p;
+  return /*#__PURE__*/React.createElement("div", {
+    className: props.className,
+    style: {
+      width: 24,
+      height: 24,
+      position: "relative",
+      color: "rgb(100,116,139)",
+      ...props.style
+    }
+  }, /*#__PURE__*/React.createElement("svg", {
+    width: 4,
+    height: 16,
+    viewBox: "0 0 4 16",
+    fill: "none",
+    style: {
+      position: "absolute",
+      left: 10,
+      top: 4,
+      width: 4,
+      height: 16
+    }
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M 2 16 C 1.45 16 0.979 15.804 0.588 15.413 C 0.196 15.021 0 14.55 0 14 C 0 13.45 0.196 12.979 0.588 12.588 C 0.979 12.196 1.45 12 2 12 C 2.55 12 3.021 12.196 3.413 12.588 C 3.804 12.979 4 13.45 4 14 C 4 14.55 3.804 15.021 3.413 15.413 C 3.021 15.804 2.55 16 2 16 Z M 2 10 C 1.45 10 0.979 9.804 0.588 9.413 C 0.196 9.021 0 8.55 0 8 C 0 7.45 0.196 6.979 0.588 6.588 C 0.979 6.196 1.45 6 2 6 C 2.55 6 3.021 6.196 3.413 6.588 C 3.804 6.979 4 7.45 4 8 C 4 8.55 3.804 9.021 3.413 9.413 C 3.021 9.804 2.55 10 2 10 Z M 2 4 C 1.45 4 0.979 3.804 0.588 3.413 C 0.196 3.021 0 2.55 0 2 C 0 1.45 0.196 0.979 0.588 0.588 C 0.979 0.196 1.45 0 2 0 C 2.55 0 3.021 0.196 3.413 0.588 C 3.804 0.979 4 1.45 4 2 C 4 2.55 3.804 3.021 3.413 3.413 C 3.021 3.804 2.55 4 2 4 Z",
+    fill: "currentColor",
+    fillRule: "evenodd"
+  })));
+}
+
+// figma node: 1:1471 delete
+function Delete(_p = {}) {
+  const props = _p;
+  return /*#__PURE__*/React.createElement("div", {
+    className: props.className,
+    style: {
+      width: 24,
+      height: 24,
+      position: "relative",
+      color: "rgb(100,116,139)",
+      ...props.style
+    }
+  }, /*#__PURE__*/React.createElement("svg", {
+    width: 10.889,
+    height: 14,
+    viewBox: "0 0 10.889 14",
+    fill: "none",
+    style: {
+      position: "absolute",
+      left: 6.556,
+      top: 5,
+      width: 10.889,
+      height: 14
+    }
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M 8.185 0.766 L 10.889 0.766 L 10.889 2.333 L 0 2.333 L 0 0.766 L 2.704 0.766 L 3.508 0 L 7.381 0 L 8.185 0.766 Z M 2.339 4.667 L 2.339 12.432 L 8.55 12.432 L 8.55 4.667 L 2.339 4.667 Z M 0.767 12.432 L 0.767 3.099 L 10.122 3.099 L 10.122 12.432 C 10.122 12.845 9.963 13.21 9.647 13.526 C 9.33 13.842 8.964 14 8.55 14 L 2.339 14 C 1.924 14 1.559 13.842 1.242 13.526 C 0.926 13.21 0.767 12.845 0.767 12.432 Z",
+    fill: "currentColor",
+    fillRule: "evenodd"
+  })));
+}
+
+// figma node: 1:1478 pin
+function Pin(_p = {}) {
+  const props = _p;
+  return /*#__PURE__*/React.createElement("div", {
+    className: props.className,
+    style: {
+      width: 24,
+      height: 24,
+      overflow: "hidden",
+      position: "relative",
+      color: "rgb(100,116,139)",
+      ...props.style
+    }
+  }, /*#__PURE__*/React.createElement("svg", {
+    width: 18,
+    height: 18,
+    viewBox: "0 0 18 18",
+    fill: "none",
+    style: {
+      position: "absolute",
+      left: 3,
+      top: 3,
+      width: 18,
+      height: 18
+    }
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M 9.033 17.362 L 10.464 15.952 L 10.464 13.215 L 15.998 7.691 L 16.637 8.328 L 18 6.968 L 17.998 6.966 L 11.019 0 L 9.64 1.376 L 9.639 1.377 L 9.642 1.38 L 10.312 2.049 L 10.311 2.05 L 4.66 7.691 L 2.002 7.691 L 0.656 9.034 L 4.239 12.61 L 0 16.841 L 1.16 18 L 5.416 13.752 L 9.033 17.362 Z M 5.416 10.926 L 5.4 10.943 M 8.464 13.968 L 5.416 10.926 M 8.464 12.385 L 8.464 13.968 M 14.53 6.33 L 8.464 12.385 M 11.692 3.498 L 14.53 6.33 M 5.487 9.691 L 11.692 3.498 M 4.145 9.691 L 5.487 9.691 M 5.4 10.943 L 4.145 9.691 Z",
+    fill: "currentColor",
+    fillRule: "nonzero"
+  })));
+}
+
+// figma node: 1:1484 Profit Sales Analysis (2 variants)
+const __venc_ProfitSalesAnalysis = v => String(v).replace(/[%|=]/g, encodeURIComponent);
+const __vkey_ProfitSalesAnalysis = p => "property1=" + __venc_ProfitSalesAnalysis(p.property1);
+function ProfitSalesAnalysis(_p = {}) {
+  const props = {
+    ..._p,
+    property1: _p.property1 ?? "default"
+  };
+  const __body0 = () => /*#__PURE__*/React.createElement("div", {
+    className: props.className,
+    style: {
+      width: 156,
+      height: 9,
+      position: "relative",
+      ...props.style
+    }
+  }, /*#__PURE__*/React.createElement("span", {
+    style: {
+      position: "absolute",
+      left: 0,
+      top: 0,
+      width: 156,
+      height: 9,
+      fontFamily: "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+      fontWeight: 400,
+      fontSize: 12,
+      whiteSpace: "nowrap",
+      lineHeight: "100%",
+      color: "rgb(71,85,105)"
+    }
+  }, props.text1 ?? "Profit Sales Analysis"));
+  const __body1 = () => /*#__PURE__*/React.createElement("div", {
+    className: props.className,
+    style: {
+      width: 156,
+      height: 9,
+      position: "relative",
+      ...props.style
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "absolute",
+      left: 0,
+      top: -4,
+      backgroundColor: "rgb(226,232,240)",
+      display: "flex",
+      flexDirection: "row",
+      gap: 10,
+      padding: "4px 0px 4px 0px",
+      justifyContent: "center",
+      alignItems: "center",
+      flexWrap: "nowrap",
+      boxSizing: "border-box"
+    }
+  }, /*#__PURE__*/React.createElement("span", {
+    style: {
+      position: "relative",
+      fontFamily: "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+      fontWeight: 400,
+      fontSize: 12,
+      whiteSpace: "pre-wrap",
+      lineHeight: "100%",
+      color: "rgb(71,85,105)",
+      flexShrink: 0
+    }
+  }, "Profit Sales Analysis", "|")));
+  const __impls = {
+    // figma: Property 1=Default
+    "property1=default": __body0,
+    // figma: Property 1=Variant2
+    "property1=variant2": __body1
+  };
+  return (__impls[__vkey_ProfitSalesAnalysis(props)] ?? __body0)();
+}
+
+// figma node: 1:1476 Star
+function Star(_p = {}) {
+  const props = _p;
+  return /*#__PURE__*/React.createElement("div", {
+    className: props.className,
+    style: {
+      width: 24,
+      height: 24,
+      position: "relative",
+      color: "rgb(100,116,139)",
+      ...props.style
+    }
+  }, /*#__PURE__*/React.createElement("svg", {
+    width: 20,
+    height: 18,
+    viewBox: "0 0 20 18",
+    fill: "none",
+    style: {
+      position: "absolute",
+      left: 2,
+      top: 3,
+      width: 20,
+      height: 18
+    }
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M 6.85 14.045 L 10 12.245 L 13.15 14.068 L 12.325 10.658 L 15.1 8.384 L 11.45 8.076 L 10 4.855 L 8.55 8.053 L 4.9 8.361 L 7.675 10.658 L 6.85 14.045 Z M 3.825 18 L 5.45 11.345 L 0 6.868 L 7.2 6.276 L 10 0 L 12.8 6.276 L 20 6.868 L 14.55 11.345 L 16.175 18 L 10 14.471 L 3.825 18 Z",
+    fill: "currentColor",
+    fillRule: "evenodd"
+  })));
+}
+
+// figma node: 1:1480 unpin/ pin-off
+function UnpinPinOff(_p = {}) {
+  const props = _p;
+  return /*#__PURE__*/React.createElement("div", {
+    className: props.className,
+    style: {
+      width: 24,
+      height: 24,
+      overflow: "hidden",
+      position: "relative",
+      color: "rgb(100,116,139)",
+      ...props.style
+    }
+  }, /*#__PURE__*/React.createElement("svg", {
+    width: 18,
+    height: 18,
+    viewBox: "0 0 18 18",
+    fill: "none",
+    style: {
+      position: "absolute",
+      left: 3,
+      top: 3,
+      width: 18,
+      height: 18
+    }
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M 16.505 15.627 L 1.843 0.978 L 0.706 2.115 L 5.514 6.919 L 4.762 7.67 L 1.938 7.67 L 0.546 9.061 L 4.184 12.696 L 0 16.876 L 1.125 18 L 5.311 13.818 L 8.941 17.445 L 10.34 16.047 L 10.34 13.275 L 11.1 12.516 L 15.369 16.762 L 16.505 15.627 Z M 9.416 11.371 L 8.34 12.446 L 8.34 14.017 L 5.311 10.991 L 5.309 10.993 L 3.986 9.67 L 5.59 9.67 L 6.652 8.609 L 9.416 11.371 Z M 17.999 6.972 L 18 6.973 M 11.02 0 L 17.999 6.972 M 9.632 1.386 L 11.02 0 M 9.632 1.386 L 10.349 2.104 L 10.345 2.108 L 7.792 4.657 L 9.183 6.046 L 11.734 3.498 L 14.526 6.288 L 11.991 8.821 L 13.412 10.215 L 15.947 7.682 L 16.619 8.353 L 18 6.973 Z",
+    fill: "currentColor",
+    fillRule: "nonzero"
+  })));
+}
+
+// figma node: 1:1490 Conversation tab (7 variants)
+const __venc_ConversationTab = v => String(v).replace(/[%|=]/g, encodeURIComponent);
+const __vkey_ConversationTab = p => "property1=" + __venc_ConversationTab(p.property1);
+function ConversationTab(_p = {}) {
+  const props = {
+    ..._p,
+    pinn: _p.pinn ?? true,
+    property1: _p.property1 ?? "default",
+    separator: _p.separator ?? true,
+    contextMenu: _p.contextMenu ?? true,
+    unpin: _p.unpin ?? true,
+    delete: _p.delete ?? true
+  };
+  const __body0 = () => /*#__PURE__*/React.createElement("div", {
+    className: props.className,
+    style: {
+      width: 226,
+      height: 28,
+      borderRadius: 2,
+      display: "flex",
+      flexDirection: "row",
+      gap: 12,
+      padding: "6px 6px 6px 10px",
+      alignItems: "center",
+      flexWrap: "nowrap",
+      boxSizing: "border-box",
+      position: "relative",
+      ...props.style
+    }
+  }, /*#__PURE__*/React.createElement("span", {
+    style: {
+      position: "relative",
+      fontFamily: "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+      fontWeight: 400,
+      fontSize: 14,
+      whiteSpace: "nowrap",
+      lineHeight: "100%",
+      textBox: "trim-both cap alphabetic",
+      color: "rgb(71,85,105)",
+      flexGrow: 1
+    }
+  }, props.text1 ?? "Profit Sales Analysis"), props.pinn && /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      width: 16,
+      overflow: "hidden",
+      flexShrink: 0,
+      alignSelf: "stretch"
+    }
+  }), props.unpin && /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      width: 16,
+      overflow: "hidden",
+      flexShrink: 0,
+      alignSelf: "stretch"
+    }
+  }), props.delete && /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      width: 16,
+      flexShrink: 0,
+      alignSelf: "stretch",
+      height: "auto"
+    }
+  }, props.icon1 ?? /*#__PURE__*/React.createElement(Delete, null)), props.separator && /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      width: 1,
+      height: 12,
+      overflow: "hidden",
+      flexShrink: 0
+    }
+  }), props.contextMenu && /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      width: 16,
+      flexShrink: 0,
+      alignSelf: "stretch",
+      height: "auto"
+    }
+  }, props.icon2 ?? /*#__PURE__*/React.createElement(ContextMenu, null)));
+  const __body1 = () => /*#__PURE__*/React.createElement("div", {
+    className: props.className,
+    style: {
+      width: 226,
+      borderRadius: 2,
+      display: "flex",
+      flexDirection: "column",
+      gap: 6,
+      padding: "6px 6px 6px 10px",
+      justifyContent: "center",
+      alignItems: "flex-start",
+      flexWrap: "nowrap",
+      boxSizing: "border-box",
+      position: "relative",
+      ...props.style
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      display: "flex",
+      flexDirection: "row",
+      gap: 12,
+      alignItems: "center",
+      flexWrap: "nowrap",
+      flexShrink: 0,
+      alignSelf: "stretch"
+    }
+  }, /*#__PURE__*/React.createElement("span", {
+    style: {
+      position: "relative",
+      fontFamily: "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+      fontWeight: 400,
+      fontSize: 12,
+      whiteSpace: "nowrap",
+      lineHeight: "100%",
+      color: "rgb(71,85,105)",
+      flexGrow: 1
+    }
+  }, props.text1 ?? "Profit Sales Analysis"), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      display: "flex",
+      flexDirection: "row",
+      gap: 6,
+      alignItems: "center",
+      flexWrap: "nowrap",
+      flexShrink: 0
+    }
+  }, props.contextMenu && /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      width: 16,
+      height: 16,
+      flexShrink: 0
+    }
+  }, props.icon1 ?? /*#__PURE__*/React.createElement(ContextMenu, {
+    style: {
+      transform: "scale(0.667, 0.667)",
+      transformOrigin: "0 0"
+    }
+  })), props.pinn && /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      width: 16,
+      height: 16,
+      flexShrink: 0
+    }
+  }, props.icon2 ?? /*#__PURE__*/React.createElement(Star, {
+    style: {
+      transform: "scale(0.667, 0.667)",
+      transformOrigin: "0 0"
+    }
+  })))), /*#__PURE__*/React.createElement("span", {
+    style: {
+      position: "relative",
+      fontFamily: "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+      fontWeight: 400,
+      fontSize: 10,
+      whiteSpace: "nowrap",
+      lineHeight: "100%",
+      color: "rgb(100,116,139)",
+      flexShrink: 0
+    }
+  }, props.text2 ?? "Last updated: 07:30 AM IST"));
+  const __body2 = () => /*#__PURE__*/React.createElement("div", {
+    className: props.className,
+    style: {
+      width: 226,
+      height: 28,
+      borderRadius: 2,
+      backgroundColor: "rgb(239,246,255)",
+      display: "flex",
+      flexDirection: "row",
+      gap: 12,
+      padding: "6px 6px 6px 10px",
+      alignItems: "center",
+      flexWrap: "nowrap",
+      boxSizing: "border-box",
+      position: "relative",
+      ...props.style
+    }
+  }, /*#__PURE__*/React.createElement("span", {
+    style: {
+      position: "relative",
+      fontFamily: "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+      fontWeight: 400,
+      fontSize: 14,
+      lineHeight: "100%",
+      color: "rgb(71,85,105)",
+      flexGrow: 1,
+      whiteSpace: "nowrap"
+    }
+  }, props.text1 ?? "Profit Sales Analysis"), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      display: "flex",
+      flexDirection: "row",
+      gap: 6,
+      alignItems: "center",
+      flexWrap: "nowrap",
+      flexShrink: 0,
+      alignSelf: "stretch"
+    }
+  }, props.pinn && /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      width: 16,
+      flexShrink: 0,
+      alignSelf: "stretch",
+      height: "auto"
+    }
+  }, props.icon1 ?? /*#__PURE__*/React.createElement(Pin, null)), props.unpin && /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      width: 16,
+      flexShrink: 0,
+      alignSelf: "stretch",
+      height: "auto"
+    }
+  }, props.icon2 ?? /*#__PURE__*/React.createElement(UnpinPinOff, null)), props.separator && /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      width: 1,
+      height: 12,
+      overflow: "hidden",
+      backgroundColor: "rgb(203,213,225)",
+      flexShrink: 0
+    }
+  }), props.delete && /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      width: 16,
+      flexShrink: 0,
+      alignSelf: "stretch",
+      height: "auto"
+    }
+  }, props.icon3 ?? /*#__PURE__*/React.createElement(Delete, null)), props.contextMenu && /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      width: 16,
+      flexShrink: 0,
+      alignSelf: "stretch",
+      height: "auto"
+    }
+  }, props.icon4 ?? /*#__PURE__*/React.createElement(ContextMenu, null))));
+  const __body3 = () => /*#__PURE__*/React.createElement("div", {
+    className: props.className,
+    style: {
+      width: 226,
+      height: 28,
+      borderRadius: 2,
+      backgroundColor: "rgb(219,234,254)",
+      display: "flex",
+      flexDirection: "row",
+      gap: 12,
+      padding: "6px 6px 6px 10px",
+      alignItems: "center",
+      flexWrap: "nowrap",
+      boxSizing: "border-box",
+      position: "relative",
+      ...props.style
+    }
+  }, /*#__PURE__*/React.createElement(ProfitSalesAnalysis, {
+    style: {
+      position: "relative",
+      height: 9,
+      flexGrow: 1,
+      width: "auto"
+    },
+    property1: "variant2"
+  }), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      display: "flex",
+      flexDirection: "row",
+      gap: 6,
+      alignItems: "center",
+      flexWrap: "nowrap",
+      flexShrink: 0,
+      alignSelf: "stretch"
+    }
+  }, props.pinn && /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      width: 16,
+      flexShrink: 0,
+      alignSelf: "stretch",
+      height: "auto"
+    }
+  }, props.icon1 ?? /*#__PURE__*/React.createElement(Pin, null)), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      width: 1,
+      height: 12,
+      overflow: "hidden",
+      backgroundColor: "rgb(203,213,225)",
+      flexShrink: 0
+    }
+  }), props.delete && /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      width: 16,
+      flexShrink: 0,
+      alignSelf: "stretch",
+      height: "auto"
+    }
+  }, props.icon2 ?? /*#__PURE__*/React.createElement(Delete, null)), props.contextMenu && /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      width: 16,
+      flexShrink: 0,
+      alignSelf: "stretch",
+      height: "auto"
+    }
+  }, props.icon3 ?? /*#__PURE__*/React.createElement(ContextMenu, null))));
+  const __body4 = () => /*#__PURE__*/React.createElement("div", {
+    className: props.className,
+    style: {
+      width: 226,
+      height: 28,
+      borderRadius: 2,
+      backgroundColor: "rgb(219,234,254)",
+      borderTop: "1px solid rgb(37,99,235)",
+      borderRight: "1px solid rgb(37,99,235)",
+      borderBottom: "1px solid rgb(37,99,235)",
+      borderLeft: "2px solid rgb(37,99,235)",
+      display: "flex",
+      flexDirection: "row",
+      gap: 12,
+      padding: "6px 6px 6px 10px",
+      alignItems: "center",
+      flexWrap: "nowrap",
+      boxSizing: "border-box",
+      position: "relative",
+      ...props.style
+    }
+  }, /*#__PURE__*/React.createElement("span", {
+    style: {
+      position: "relative",
+      fontFamily: "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+      fontWeight: 500,
+      fontSize: 14,
+      whiteSpace: "nowrap",
+      lineHeight: "100%",
+      textBox: "trim-both cap alphabetic",
+      color: "rgb(71,85,105)",
+      flexGrow: 1
+    }
+  }, props.text1 ?? "Profit Sales Analysis"), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      display: "flex",
+      flexDirection: "row",
+      gap: 6,
+      alignItems: "center",
+      flexWrap: "nowrap",
+      flexShrink: 0,
+      alignSelf: "stretch"
+    }
+  }, props.pinn && /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      width: 16,
+      flexShrink: 0,
+      alignSelf: "stretch",
+      height: "auto"
+    }
+  }, props.icon1 ?? /*#__PURE__*/React.createElement(Pin, null)), props.unpin && /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      width: 16,
+      flexShrink: 0,
+      alignSelf: "stretch",
+      height: "auto"
+    }
+  }, props.icon2 ?? /*#__PURE__*/React.createElement(UnpinPinOff, null)), props.separator && /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      width: 1,
+      height: 12,
+      overflow: "hidden",
+      flexShrink: 0
+    }
+  }), props.delete && /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      width: 16,
+      flexShrink: 0,
+      alignSelf: "stretch",
+      height: "auto"
+    }
+  }, props.icon3 ?? /*#__PURE__*/React.createElement(Delete, null)), props.contextMenu && /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      width: 16,
+      flexShrink: 0,
+      alignSelf: "stretch",
+      height: "auto"
+    }
+  }, props.icon4 ?? /*#__PURE__*/React.createElement(ContextMenu, null))));
+  const __body5 = () => /*#__PURE__*/React.createElement("div", {
+    className: props.className,
+    style: {
+      width: 226,
+      height: 28,
+      borderRadius: 2,
+      backgroundColor: "rgb(191,219,254)",
+      borderTop: "1px solid rgb(37,99,235)",
+      borderRight: "1px solid rgb(37,99,235)",
+      borderBottom: "1px solid rgb(37,99,235)",
+      borderLeft: "2px solid rgb(37,99,235)",
+      display: "flex",
+      flexDirection: "row",
+      gap: 12,
+      padding: "6px 6px 6px 10px",
+      alignItems: "center",
+      flexWrap: "nowrap",
+      boxSizing: "border-box",
+      position: "relative",
+      ...props.style
+    }
+  }, /*#__PURE__*/React.createElement("span", {
+    style: {
+      position: "relative",
+      fontFamily: "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+      fontWeight: 500,
+      fontSize: 14,
+      lineHeight: "100%",
+      color: "rgb(71,85,105)",
+      flexGrow: 1,
+      whiteSpace: "nowrap"
+    }
+  }, props.text1 ?? "Profit Sales Analysis"), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      display: "flex",
+      flexDirection: "row",
+      gap: 6,
+      alignItems: "center",
+      flexWrap: "nowrap",
+      flexShrink: 0,
+      alignSelf: "stretch"
+    }
+  }, props.pinn && /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      width: 16,
+      flexShrink: 0,
+      alignSelf: "stretch",
+      height: "auto"
+    }
+  }, props.icon1 ?? /*#__PURE__*/React.createElement(Pin, null)), props.unpin && /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      width: 16,
+      flexShrink: 0,
+      alignSelf: "stretch",
+      height: "auto"
+    }
+  }, props.icon2 ?? /*#__PURE__*/React.createElement(UnpinPinOff, null)), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      width: 1,
+      height: 12,
+      overflow: "hidden",
+      backgroundColor: "rgb(203,213,225)",
+      flexShrink: 0
+    }
+  }), props.delete && /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      width: 16,
+      flexShrink: 0,
+      alignSelf: "stretch",
+      height: "auto"
+    }
+  }, props.icon3 ?? /*#__PURE__*/React.createElement(Delete, null)), props.contextMenu && /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      width: 16,
+      flexShrink: 0,
+      alignSelf: "stretch",
+      height: "auto"
+    }
+  }, props.icon4 ?? /*#__PURE__*/React.createElement(ContextMenu, null))));
+  const __body6 = () => /*#__PURE__*/React.createElement("div", {
+    className: props.className,
+    style: {
+      width: 226,
+      height: 28,
+      borderRadius: 2,
+      backgroundColor: "rgb(191,219,254)",
+      borderTop: "1px solid rgb(37,99,235)",
+      borderRight: "1px solid rgb(37,99,235)",
+      borderBottom: "1px solid rgb(37,99,235)",
+      borderLeft: "2px solid rgb(37,99,235)",
+      display: "flex",
+      flexDirection: "row",
+      gap: 12,
+      padding: "6px 6px 6px 10px",
+      alignItems: "center",
+      flexWrap: "nowrap",
+      boxSizing: "border-box",
+      position: "relative",
+      ...props.style
+    }
+  }, /*#__PURE__*/React.createElement(ProfitSalesAnalysis, {
+    style: {
+      position: "relative",
+      height: 9,
+      flexGrow: 1,
+      width: "auto"
+    },
+    property1: "variant2"
+  }), props.contextMenu && /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      width: 16,
+      flexShrink: 0,
+      alignSelf: "stretch",
+      height: "auto"
+    }
+  }, props.icon1 ?? /*#__PURE__*/React.createElement(ContextMenu, null)));
+  const __impls = {
+    // figma: Property 1=Default
+    "property1=default": __body0,
+    // figma: Property 1=Variant7
+    "property1=variant7": __body1,
+    // figma: Property 1=Hover - pin
+    "property1=hover - pin": __body2,
+    // figma: Property 1=Variant6
+    "property1=variant6": __body3,
+    // figma: Property 1=Selected
+    "property1=selected": __body4,
+    // figma: Property 1=selected hover
+    "property1=selected hover": __body5,
+    // figma: Property 1=Selected edit
+    "property1=selected edit": __body6
+  };
+  return (__impls[__vkey_ConversationTab(props)] ?? __body0)();
+}
+
+// figma node: 24:15262 Preview Table
+function PreviewTable(_p = {}) {
+  const props = _p;
+  return /*#__PURE__*/React.createElement("div", {
+    className: props.className,
+    style: {
+      width: 24,
+      height: 24,
+      position: "relative",
+      color: "rgb(71,85,105)",
+      ...props.style
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "absolute",
+      left: 2,
+      top: 2,
+      width: 20,
+      height: 20,
+      overflow: "hidden"
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "absolute",
+      left: 0,
+      top: 0,
+      width: 19,
+      height: 18,
+      border: "1px dashed currentColor",
+      display: "flex",
+      alignItems: "center",
+      justifyContent: "center",
+      overflow: "hidden",
+      fontSize: 10,
+      opacity: 0.45
+    }
+  }, "Subtract"), /*#__PURE__*/React.createElement("svg", {
+    width: 12,
+    height: 8,
+    viewBox: "0 0 12 8",
+    fill: "none",
+    style: {
+      position: "absolute",
+      left: 8,
+      top: 12,
+      width: 12,
+      height: 8
+    }
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M 6 6.4 C 6.682 6.4 7.261 6.167 7.739 5.7 C 8.216 5.233 8.455 4.667 8.455 4 C 8.455 3.333 8.216 2.767 7.739 2.3 C 7.261 1.833 6.682 1.6 6 1.6 C 5.318 1.6 4.739 1.833 4.261 2.3 C 3.784 2.767 3.545 3.333 3.545 4 C 3.545 4.667 3.784 5.233 4.261 5.7 C 4.739 6.167 5.318 6.4 6 6.4 Z M 6 5.44 C 5.591 5.44 5.243 5.3 4.957 5.02 C 4.671 4.74 4.527 4.4 4.527 4 C 4.527 3.6 4.671 3.26 4.957 2.98 C 5.243 2.7 5.591 2.56 6 2.56 C 6.409 2.56 6.757 2.7 7.043 2.98 C 7.33 3.26 7.473 3.6 7.473 4 C 7.473 4.4 7.33 4.74 7.043 5.02 C 6.757 5.3 6.409 5.44 6 5.44 Z M 6 8 C 4.673 8 3.464 7.638 2.373 6.913 C 1.282 6.189 0.491 5.218 0 4 C 0.491 2.782 1.282 1.811 2.373 1.086 C 3.464 0.362 4.673 0 6 0 C 7.327 0 8.536 0.362 9.627 1.086 C 10.718 1.811 11.509 2.782 12 4 C 11.509 5.218 10.718 6.189 9.627 6.913 C 8.536 7.638 7.327 8 6 8 Z",
+    fill: "currentColor",
+    fillRule: "evenodd"
+  }))));
+}
+
+// figma node: 11001:6095 Data collaps (2 variants)
+const __venc_DataCollaps = v => String(v).replace(/[%|=]/g, encodeURIComponent);
+const __vkey_DataCollaps = p => "property1=" + __venc_DataCollaps(p.property1);
+function DataCollaps(_p = {}) {
+  const props = {
+    ..._p,
+    property1: _p.property1 ?? "default"
+  };
+  const __body0 = () => /*#__PURE__*/React.createElement("div", {
+    className: props.className,
+    style: {
+      width: "fit-content",
+      display: "flex",
+      flexDirection: "row",
+      gap: 4,
+      alignItems: "center",
+      flexWrap: "nowrap",
+      isolation: "isolate",
+      position: "relative",
+      ...props.style
+    }
+  }, /*#__PURE__*/React.createElement(Button, {
+    style: {
+      position: "relative",
+      width: 104,
+      zIndex: 3,
+      flexShrink: 0,
+      alignSelf: "stretch",
+      height: "auto"
+    },
+    tailIcon: false,
+    text1: "Preview data",
+    icon1: /*#__PURE__*/React.createElement(PreviewTable, {
+      style: {
+        transform: "scale(0.667, 0.667)",
+        transformOrigin: "0 0"
+      }
+    }),
+    property1: "button system",
+    size: "sm"
+  }), /*#__PURE__*/React.createElement(Button, {
+    style: {
+      position: "relative",
+      width: 98,
+      zIndex: 2,
+      flexShrink: 0,
+      alignSelf: "stretch",
+      height: "auto"
+    },
+    tailIcon: false,
+    property1: "button system",
+    size: "sm"
+  }), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      width: 24,
+      borderRadius: 2,
+      backgroundColor: "rgb(255,255,255)",
+      display: "flex",
+      flexDirection: "row",
+      gap: 4,
+      padding: "4px 4px 4px 4px",
+      justifyContent: "center",
+      alignItems: "center",
+      flexWrap: "nowrap",
+      boxSizing: "border-box",
+      flexShrink: 0,
+      alignSelf: "stretch"
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      width: 16,
+      flexShrink: 0,
+      alignSelf: "stretch"
+    }
+  }, /*#__PURE__*/React.createElement("svg", {
+    width: 4.933,
+    height: 8,
+    viewBox: "0 0 4.933 8",
+    fill: "none",
+    style: {
+      position: "absolute",
+      left: 5.333,
+      top: 4,
+      width: 4.933,
+      height: 8,
+      color: "rgb(71,85,105)"
+    }
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M 3.067 4 L 0 0.933 L 0.933 0 L 4.933 4 L 0.933 8 L 0 7.067 L 3.067 4 Z",
+    fill: "currentColor",
+    fillRule: "nonzero"
+  }))), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      display: "flex",
+      flexDirection: "row",
+      gap: 10,
+      padding: "0px 2px 0px 2px",
+      alignItems: "center",
+      flexWrap: "nowrap",
+      boxSizing: "border-box",
+      flexShrink: 0,
+      alignSelf: "stretch"
+    }
+  }, /*#__PURE__*/React.createElement("span", {
+    style: {
+      position: "relative",
+      fontFamily: "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+      fontWeight: 400,
+      fontSize: 12,
+      whiteSpace: "nowrap",
+      lineHeight: 1.2999999523162842,
+      letterSpacing: "-0.020em",
+      color: "rgb(51,65,85)",
+      flexShrink: 0,
+      alignSelf: "stretch"
+    }
+  }, "Data Details")), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      width: 16,
+      flexShrink: 0,
+      alignSelf: "stretch"
+    }
+  }, /*#__PURE__*/React.createElement("svg", {
+    width: 8,
+    height: 4.933,
+    viewBox: "0 0 8 4.933",
+    fill: "none",
+    style: {
+      position: "absolute",
+      left: 4,
+      top: 5.667,
+      width: 8,
+      height: 4.933,
+      color: "rgb(71,85,105)"
+    }
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M 4 4.933 L 0 0.933 L 0.933 0 L 4 3.05 L 7.067 0 L 8 0.933 L 4 4.933 Z",
+    fill: "currentColor",
+    fillRule: "nonzero"
+  }))), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "absolute",
+      left: -120,
+      top: 34,
+      borderRadius: 4,
+      backgroundColor: "rgb(28,27,31)",
+      display: "flex",
+      flexDirection: "row",
+      gap: 4,
+      padding: "6px 12px 6px 12px",
+      alignItems: "center",
+      flexWrap: "nowrap",
+      boxSizing: "border-box"
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      display: "flex",
+      flexDirection: "column",
+      gap: 2,
+      alignItems: "flex-start",
+      flexWrap: "nowrap",
+      flexShrink: 0
+    }
+  }, /*#__PURE__*/React.createElement("span", {
+    style: {
+      position: "relative",
+      fontFamily: "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+      fontWeight: 400,
+      fontSize: 12,
+      textAlign: "center",
+      lineHeight: 1.2999999523162842,
+      letterSpacing: "-0.020em",
+      color: "var(--card-text)",
+      flexShrink: 0,
+      whiteSpace: "pre-wrap"
+    }
+  }, "Automatically adds all available filters to\nadvanced filter builder using AND condition.")), /*#__PURE__*/React.createElement("svg", {
+    width: 10,
+    height: 10,
+    viewBox: "0 0 10 10",
+    fill: "none",
+    style: {
+      position: "absolute",
+      left: 127,
+      top: -6,
+      width: 10,
+      height: 10,
+      color: "rgb(28,27,31)"
+    }
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M 5 0 L 9.33 7.5 L 0.67 7.5 L 5 0 Z",
+    fill: "currentColor",
+    fillRule: "nonzero"
+  })))));
+  const __body1 = () => /*#__PURE__*/React.createElement("div", {
+    className: props.className,
+    style: {
+      width: "fit-content",
+      overflow: "hidden",
+      display: "flex",
+      flexDirection: "row",
+      gap: 4,
+      justifyContent: "flex-end",
+      alignItems: "center",
+      flexWrap: "nowrap",
+      isolation: "isolate",
+      position: "relative",
+      ...props.style
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      width: 24,
+      borderRadius: 2,
+      backgroundColor: "rgb(255,255,255)",
+      display: "flex",
+      flexDirection: "row",
+      gap: 4,
+      padding: "4px 4px 4px 4px",
+      justifyContent: "center",
+      alignItems: "center",
+      flexWrap: "nowrap",
+      boxSizing: "border-box",
+      flexShrink: 0,
+      alignSelf: "stretch"
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      width: 16,
+      flexShrink: 0,
+      alignSelf: "stretch"
+    }
+  }, /*#__PURE__*/React.createElement("svg", {
+    width: 4.933,
+    height: 8,
+    viewBox: "0 0 4.933 8",
+    fill: "none",
+    style: {
+      position: "absolute",
+      left: 5.333,
+      top: 4,
+      width: 4.933,
+      height: 8,
+      color: "rgb(71,85,105)"
+    }
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M 4 8 L 0 4 L 4 0 L 4.933 0.933 L 1.867 4 L 4.933 7.067 L 4 8 Z",
+    fill: "currentColor",
+    fillRule: "nonzero"
+  }))), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      display: "flex",
+      flexDirection: "row",
+      gap: 10,
+      padding: "0px 2px 0px 2px",
+      alignItems: "center",
+      flexWrap: "nowrap",
+      boxSizing: "border-box",
+      flexShrink: 0,
+      alignSelf: "stretch"
+    }
+  }, /*#__PURE__*/React.createElement("span", {
+    style: {
+      position: "relative",
+      fontFamily: "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+      fontWeight: 400,
+      fontSize: 12,
+      whiteSpace: "nowrap",
+      lineHeight: 1.2999999523162842,
+      letterSpacing: "-0.020em",
+      color: "rgb(51,65,85)",
+      flexShrink: 0,
+      alignSelf: "stretch"
+    }
+  }, "Data Details")), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      width: 16,
+      flexShrink: 0,
+      alignSelf: "stretch"
+    }
+  }, /*#__PURE__*/React.createElement("svg", {
+    width: 8,
+    height: 4.933,
+    viewBox: "0 0 8 4.933",
+    fill: "none",
+    style: {
+      position: "absolute",
+      left: 4,
+      top: 5.667,
+      width: 8,
+      height: 4.933,
+      color: "rgb(71,85,105)"
+    }
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M 4 4.933 L 0 0.933 L 0.933 0 L 4 3.05 L 7.067 0 L 8 0.933 L 4 4.933 Z",
+    fill: "currentColor",
+    fillRule: "nonzero"
+  }))), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "absolute",
+      left: -120,
+      top: 34,
+      borderRadius: 4,
+      backgroundColor: "rgb(28,27,31)",
+      display: "flex",
+      flexDirection: "row",
+      gap: 4,
+      padding: "6px 12px 6px 12px",
+      alignItems: "center",
+      flexWrap: "nowrap",
+      boxSizing: "border-box"
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      display: "flex",
+      flexDirection: "column",
+      gap: 2,
+      alignItems: "flex-start",
+      flexWrap: "nowrap",
+      flexShrink: 0
+    }
+  }, /*#__PURE__*/React.createElement("span", {
+    style: {
+      position: "relative",
+      fontFamily: "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+      fontWeight: 400,
+      fontSize: 12,
+      textAlign: "center",
+      lineHeight: 1.2999999523162842,
+      letterSpacing: "-0.020em",
+      color: "var(--card-text)",
+      flexShrink: 0,
+      whiteSpace: "pre-wrap"
+    }
+  }, "Automatically adds all available filters to\nadvanced filter builder using AND condition.")), /*#__PURE__*/React.createElement("svg", {
+    width: 10,
+    height: 10,
+    viewBox: "0 0 10 10",
+    fill: "none",
+    style: {
+      position: "absolute",
+      left: 127,
+      top: -6,
+      width: 10,
+      height: 10,
+      color: "rgb(28,27,31)"
+    }
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M 5 0 L 9.33 7.5 L 0.67 7.5 L 5 0 Z",
+    fill: "currentColor",
+    fillRule: "nonzero"
+  })))), /*#__PURE__*/React.createElement(Button, {
+    style: {
+      position: "absolute",
+      left: 26,
+      top: 0,
+      height: 24,
+      width: 104,
+      zIndex: 2
+    },
+    tailIcon: false,
+    text1: "Preview data",
+    icon1: /*#__PURE__*/React.createElement(PreviewTable, {
+      style: {
+        transform: "scale(0.667, 0.667)",
+        transformOrigin: "0 0"
+      }
+    }),
+    property1: "button system",
+    size: "sm"
+  }), /*#__PURE__*/React.createElement(Button, {
+    style: {
+      position: "absolute",
+      left: 138,
+      top: 0,
+      height: 24,
+      width: 98,
+      zIndex: 1
+    },
+    tailIcon: false,
+    property1: "button system",
+    size: "sm"
+  }));
+  const __impls = {
+    // figma: Property 1=Default
+    "property1=default": __body0,
+    // figma: Property 1=Variant2
+    "property1=variant2": __body1
+  };
+  return (__impls[__vkey_DataCollaps(props)] ?? __body0)();
+}
+
+// figma node: 182:7788 dock-left
+function DockLeft3(_p = {}) {
+  const props = _p;
+  return /*#__PURE__*/React.createElement("div", {
+    className: props.className,
+    style: {
+      width: 24,
+      height: 24,
+      overflow: "hidden",
+      position: "relative",
+      color: "rgb(71,85,105)",
+      ...props.style
+    }
+  }, /*#__PURE__*/React.createElement("svg", {
+    width: 20,
+    height: 16,
+    viewBox: "0 0 20 16",
+    fill: "none",
+    style: {
+      position: "absolute",
+      left: 2,
+      top: 4,
+      width: 20,
+      height: 16
+    }
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M 18 0 L 2 0 C 1.47 0 0.961 0.211 0.586 0.586 C 0.211 0.961 0 1.47 0 2 L 0 14 C 0 14.53 0.211 15.039 0.586 15.414 C 0.961 15.789 1.47 16 2 16 L 18 16 C 18.53 16 19.039 15.789 19.414 15.414 C 19.789 15.039 20 14.53 20 14 L 20 2 C 20 1.47 19.789 0.961 19.414 0.586 C 19.039 0.211 18.53 0 18 0 Z M 18 14 L 7 14 L 7 2 L 18 2 L 18 14 Z",
+    fill: "currentColor",
+    fillRule: "evenodd"
+  })));
+}
+
+// figma node: 9001:12256 Dock left (2 variants)
+const __venc_DockLeft = v => String(v).replace(/[%|=]/g, encodeURIComponent);
+const __vkey_DockLeft = p => "property1=" + __venc_DockLeft(p.property1);
+function DockLeft(_p = {}) {
+  const props = {
+    ..._p,
+    property1: _p.property1 ?? "default"
+  };
+  const __body0 = () => /*#__PURE__*/React.createElement("div", {
+    className: props.className,
+    style: {
+      width: "fit-content",
+      display: "flex",
+      flexDirection: "row",
+      gap: 10,
+      alignItems: "center",
+      flexWrap: "nowrap",
+      position: "relative",
+      ...props.style
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      width: 20,
+      flexShrink: 0,
+      alignSelf: "stretch",
+      height: "auto"
+    }
+  }, props.icon1 ?? /*#__PURE__*/React.createElement(DockLeft3, null)));
+  const __impls = {
+    // figma: Property 1=Default
+    "property1=default": __body0,
+    // figma: Property 1=Variant2
+    "property1=variant2": __body0
+  };
+  return (__impls[__vkey_DockLeft(props)] ?? __body0)();
+}
+
+// figma node: 11001:6198 Container (2 variants)
+const __venc_Container2 = v => String(v).replace(/[%|=]/g, encodeURIComponent);
+const __vkey_Container2 = p => "property1=" + __venc_Container2(p.property1);
+function Container2(_p = {}) {
+  const props = {
+    ..._p,
+    property1: _p.property1 ?? "default"
+  };
+  const __body0 = () => /*#__PURE__*/React.createElement("div", {
+    className: props.className,
+    style: {
+      width: 186,
+      height: 48,
+      position: "relative",
+      color: "rgb(71,85,105)",
+      ...props.style
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "absolute",
+      left: 0,
+      top: 0,
+      width: 186,
+      height: 48,
+      borderRadius: 10,
+      backgroundColor: "rgb(255,255,255)",
+      borderTop: "1px solid rgb(229,231,235)",
+      borderRight: "1px solid rgb(229,231,235)",
+      borderBottom: "1px solid rgb(229,231,235)",
+      borderLeft: "1px solid rgb(229,231,235)",
+      display: "flex",
+      flexDirection: "row",
+      gap: 8,
+      padding: "0px 10px 0px 8px",
+      alignItems: "center",
+      flexWrap: "nowrap",
+      boxSizing: "border-box"
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      width: 32,
+      height: 32,
+      borderRadius: 8,
+      backgroundColor: "rgb(43,127,255)",
+      display: "flex",
+      flexDirection: "row",
+      justifyContent: "center",
+      alignItems: "center",
+      flexWrap: "nowrap",
+      flexShrink: 0
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      width: 20,
+      height: 20,
+      flexShrink: 0
+    }
+  }, props.icon1 ?? /*#__PURE__*/React.createElement(Loader1Spiner, {
+    frame: "1",
+    style: {
+      transform: "scale(0.208, 0.208)",
+      transformOrigin: "0 0"
+    }
+  }))), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      height: 28.594,
+      display: "flex",
+      flexDirection: "column",
+      gap: 3,
+      alignItems: "flex-start",
+      flexWrap: "nowrap",
+      flexGrow: 1
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      width: 120,
+      overflow: "hidden",
+      display: "flex",
+      flexDirection: "row",
+      alignItems: "flex-start",
+      flexWrap: "nowrap",
+      flexGrow: 1
+    }
+  }, /*#__PURE__*/React.createElement("span", {
+    style: {
+      position: "relative",
+      fontFamily: "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+      fontWeight: 500,
+      fontSize: 10,
+      whiteSpace: "nowrap",
+      lineHeight: 1.340000033378601,
+      letterSpacing: "-0.020em",
+      color: "rgb(51,65,85)",
+      flexShrink: 0,
+      alignSelf: "stretch"
+    }
+  }, props.text1 ?? "JOULE CUBE Website ser...")), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      width: 120,
+      height: 13,
+      display: "flex",
+      flexDirection: "row",
+      alignItems: "flex-start",
+      flexWrap: "nowrap",
+      flexShrink: 0
+    }
+  }, /*#__PURE__*/React.createElement("span", {
+    style: {
+      position: "relative",
+      fontFamily: "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+      fontWeight: 400,
+      fontSize: 12,
+      whiteSpace: "nowrap",
+      lineHeight: 1.2999999523162842,
+      letterSpacing: "-0.020em",
+      color: "rgb(100,116,139)",
+      flexShrink: 0
+    }
+  }, props.text2 ?? "Document")))), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "absolute",
+      left: 176,
+      top: -6,
+      width: 16,
+      height: 16,
+      borderRadius: 33554400,
+      backgroundColor: "rgb(226,232,240)",
+      display: "flex",
+      flexDirection: "row",
+      justifyContent: "center",
+      alignItems: "center",
+      flexWrap: "nowrap"
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      width: 8,
+      height: 8,
+      overflow: "hidden",
+      flexShrink: 0
+    }
+  }, /*#__PURE__*/React.createElement("svg", {
+    width: 4,
+    height: 4,
+    viewBox: "0 0 4 4",
+    fill: "none",
+    style: {
+      position: "absolute",
+      left: 2,
+      top: 2,
+      width: 4,
+      height: 4
+    }
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M 4 0 L 0 4 Z",
+    fill: "currentColor",
+    fillRule: "evenodd"
+  })), /*#__PURE__*/React.createElement("svg", {
+    width: 4,
+    height: 4,
+    viewBox: "0 0 4 4",
+    fill: "none",
+    style: {
+      position: "absolute",
+      left: 2,
+      top: 2,
+      width: 4,
+      height: 4
+    }
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M 0 0 L 4 4 Z",
+    fill: "currentColor",
+    fillRule: "evenodd"
+  })))));
+  const __body1 = () => /*#__PURE__*/React.createElement("div", {
+    className: props.className,
+    style: {
+      width: 186,
+      height: 48,
+      position: "relative",
+      ...props.style
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "absolute",
+      left: 0,
+      top: 0,
+      width: 186,
+      height: 48,
+      borderRadius: 10,
+      backgroundColor: "rgb(255,255,255)",
+      borderTop: "1px solid rgb(229,231,235)",
+      borderRight: "1px solid rgb(229,231,235)",
+      borderBottom: "1px solid rgb(229,231,235)",
+      borderLeft: "1px solid rgb(229,231,235)",
+      display: "flex",
+      flexDirection: "row",
+      gap: 8,
+      padding: "0px 10px 0px 8px",
+      alignItems: "center",
+      flexWrap: "nowrap",
+      boxSizing: "border-box"
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      width: 32,
+      height: 32,
+      borderRadius: 8,
+      backgroundColor: "rgb(43,127,255)",
+      display: "flex",
+      flexDirection: "row",
+      justifyContent: "center",
+      alignItems: "center",
+      flexWrap: "nowrap",
+      flexShrink: 0
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      width: 16,
+      height: 16,
+      overflow: "hidden",
+      flexShrink: 0
+    }
+  }, /*#__PURE__*/React.createElement("svg", {
+    width: 10.667,
+    height: 13.333,
+    viewBox: "0 0 10.667 13.333",
+    fill: "none",
+    style: {
+      position: "absolute",
+      left: 2.667,
+      top: 1.332,
+      width: 10.667,
+      height: 13.333,
+      color: "rgb(255,255,255)"
+    }
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M 7.333 0 L 1.333 0 C 0.98 0 0.641 0.14 0.391 0.391 C 0.14 0.641 0 0.98 0 1.333 L 0 12 C 0 12.354 0.14 12.693 0.391 12.943 C 0.641 13.193 0.98 13.333 1.333 13.333 L 9.333 13.333 C 9.687 13.333 10.026 13.193 10.276 12.943 C 10.526 12.693 10.667 12.354 10.667 12 L 10.667 3.333 L 7.333 0 Z",
+    fill: "currentColor",
+    fillRule: "evenodd"
+  })), /*#__PURE__*/React.createElement("svg", {
+    width: 4,
+    height: 4,
+    viewBox: "0 0 4 4",
+    fill: "none",
+    style: {
+      position: "absolute",
+      left: 9.333,
+      top: 1.332,
+      width: 4,
+      height: 4,
+      color: "rgb(255,255,255)"
+    }
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M 0 0 L 0 2.667 C 0 3.02 0.14 3.359 0.391 3.609 C 0.641 3.86 0.98 4 1.333 4 L 4 4 Z",
+    fill: "currentColor",
+    fillRule: "evenodd"
+  })), /*#__PURE__*/React.createElement("svg", {
+    width: 1.333,
+    height: 1.333,
+    viewBox: "0 -0.667 1.333 1.333",
+    fill: "none",
+    style: {
+      position: "absolute",
+      left: 5.333,
+      top: 6,
+      width: 1.333,
+      height: 1.3333333730697632,
+      color: "rgb(255,255,255)"
+    }
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M 1.333 0 L 0 0 Z",
+    fill: "currentColor",
+    fillRule: "evenodd"
+  })), /*#__PURE__*/React.createElement("svg", {
+    width: 5.333,
+    height: 1.333,
+    viewBox: "0 -0.667 5.333 1.333",
+    fill: "none",
+    style: {
+      position: "absolute",
+      left: 5.333,
+      top: 8.668,
+      width: 5.333,
+      height: 1.3333333730697632,
+      color: "rgb(255,255,255)"
+    }
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M 5.333 0 L 0 0 Z",
+    fill: "currentColor",
+    fillRule: "evenodd"
+  })), /*#__PURE__*/React.createElement("svg", {
+    width: 5.333,
+    height: 1.333,
+    viewBox: "0 -0.667 5.333 1.333",
+    fill: "none",
+    style: {
+      position: "absolute",
+      left: 5.333,
+      top: 11.332,
+      width: 5.333,
+      height: 1.3333333730697632,
+      color: "rgb(255,255,255)"
+    }
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M 5.333 0 L 0 0 Z",
+    fill: "currentColor",
+    fillRule: "evenodd"
+  })))), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      height: 28.594,
+      display: "flex",
+      flexDirection: "column",
+      gap: 3,
+      alignItems: "flex-start",
+      flexWrap: "nowrap",
+      flexGrow: 1
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      width: 120,
+      overflow: "hidden",
+      display: "flex",
+      flexDirection: "row",
+      alignItems: "flex-start",
+      flexWrap: "nowrap",
+      flexGrow: 1
+    }
+  }, /*#__PURE__*/React.createElement("span", {
+    style: {
+      position: "relative",
+      fontFamily: "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+      fontWeight: 500,
+      fontSize: 10,
+      whiteSpace: "nowrap",
+      lineHeight: 1.340000033378601,
+      letterSpacing: "-0.020em",
+      color: "rgb(51,65,85)",
+      flexShrink: 0,
+      alignSelf: "stretch"
+    }
+  }, props.text1 ?? "JOULE CUBE Website ser...")), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      width: 120,
+      height: 13,
+      display: "flex",
+      flexDirection: "row",
+      alignItems: "flex-start",
+      flexWrap: "nowrap",
+      flexShrink: 0
+    }
+  }, /*#__PURE__*/React.createElement("span", {
+    style: {
+      position: "relative",
+      fontFamily: "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+      fontWeight: 400,
+      fontSize: 12,
+      whiteSpace: "nowrap",
+      lineHeight: 1.2999999523162842,
+      letterSpacing: "-0.020em",
+      color: "rgb(100,116,139)",
+      flexShrink: 0
+    }
+  }, props.text2 ?? "Document")))), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "absolute",
+      left: 176,
+      top: -6,
+      width: 16,
+      height: 16,
+      borderRadius: 33554400,
+      backgroundColor: "rgb(226,232,240)",
+      display: "flex",
+      flexDirection: "row",
+      justifyContent: "center",
+      alignItems: "center",
+      flexWrap: "nowrap"
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      width: 8,
+      height: 8,
+      overflow: "hidden",
+      flexShrink: 0
+    }
+  }, /*#__PURE__*/React.createElement("svg", {
+    width: 4,
+    height: 4,
+    viewBox: "0 0 4 4",
+    fill: "none",
+    style: {
+      position: "absolute",
+      left: 2,
+      top: 2,
+      width: 4,
+      height: 4,
+      color: "rgb(71,85,105)"
+    }
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M 4 0 L 0 4 Z",
+    fill: "currentColor",
+    fillRule: "evenodd"
+  })), /*#__PURE__*/React.createElement("svg", {
+    width: 4,
+    height: 4,
+    viewBox: "0 0 4 4",
+    fill: "none",
+    style: {
+      position: "absolute",
+      left: 2,
+      top: 2,
+      width: 4,
+      height: 4,
+      color: "rgb(71,85,105)"
+    }
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M 0 0 L 4 4 Z",
+    fill: "currentColor",
+    fillRule: "evenodd"
+  })))));
+  const __impls = {
+    // figma: Property 1=Default
+    "property1=default": __body0,
+    // figma: Property 1=Variant2
+    "property1=variant2": __body1
+  };
+  return (__impls[__vkey_Container2(props)] ?? __body0)();
+}
+
+// figma node: 11001:5949 Placeholder animation (9 variants)
+const __venc_PlaceholderAnimation = v => String(v).replace(/[%|=]/g, encodeURIComponent);
+const __vkey_PlaceholderAnimation = p => "property1=" + __venc_PlaceholderAnimation(p.property1);
+function PlaceholderAnimation(_p = {}) {
+  const props = {
+    ..._p,
+    property1: _p.property1 ?? "default"
+  };
+  const __body0 = () => /*#__PURE__*/React.createElement("div", {
+    className: props.className,
+    style: {
+      width: "fit-content",
+      display: "flex",
+      flexDirection: "row",
+      gap: 10,
+      alignItems: "center",
+      flexWrap: "nowrap",
+      position: "relative",
+      ...props.style
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      width: 1,
+      overflow: "hidden",
+      display: "flex",
+      flexDirection: "row",
+      gap: 10,
+      alignItems: "center",
+      flexWrap: "nowrap",
+      flexShrink: 0,
+      alignSelf: "stretch"
+    }
+  }, /*#__PURE__*/React.createElement("span", {
+    style: {
+      position: "relative",
+      fontFamily: "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+      fontWeight: 400,
+      fontSize: 12,
+      whiteSpace: "nowrap",
+      lineHeight: 1.2999999523162842,
+      letterSpacing: "-0.020em",
+      color: "rgb(148,163,184)",
+      flexShrink: 0,
+      alignSelf: "stretch"
+    }
+  }, props.text1 ?? "Ask a question")));
+  const __body1 = () => /*#__PURE__*/React.createElement("div", {
+    className: props.className,
+    style: {
+      width: "fit-content",
+      display: "flex",
+      flexDirection: "row",
+      gap: 10,
+      alignItems: "center",
+      flexWrap: "nowrap",
+      position: "relative",
+      ...props.style
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      width: 98,
+      overflow: "hidden",
+      display: "flex",
+      flexDirection: "row",
+      gap: 10,
+      alignItems: "center",
+      flexWrap: "nowrap",
+      flexShrink: 0,
+      alignSelf: "stretch"
+    }
+  }, /*#__PURE__*/React.createElement("span", {
+    style: {
+      position: "relative",
+      fontFamily: "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+      fontWeight: 500,
+      fontSize: 12,
+      whiteSpace: "nowrap",
+      lineHeight: 1.2999999523162842,
+      letterSpacing: "-0.020em",
+      color: "rgb(148,163,184)",
+      flexShrink: 0,
+      alignSelf: "stretch"
+    }
+  }, props.text1 ?? "Ask a question")));
+  const __body2 = () => /*#__PURE__*/React.createElement("div", {
+    className: props.className,
+    style: {
+      width: "fit-content",
+      display: "flex",
+      flexDirection: "row",
+      gap: 10,
+      alignItems: "center",
+      flexWrap: "nowrap",
+      position: "relative",
+      ...props.style
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      width: 1,
+      overflow: "hidden",
+      display: "flex",
+      flexDirection: "row",
+      gap: 10,
+      alignItems: "center",
+      flexWrap: "nowrap",
+      flexShrink: 0,
+      alignSelf: "stretch"
+    }
+  }, /*#__PURE__*/React.createElement("span", {
+    style: {
+      position: "relative",
+      fontFamily: "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+      fontWeight: 400,
+      fontSize: 12,
+      whiteSpace: "nowrap",
+      lineHeight: 1.2999999523162842,
+      letterSpacing: "-0.020em",
+      color: "rgb(148,163,184)",
+      flexShrink: 0,
+      alignSelf: "stretch"
+    }
+  }, props.text1 ?? "Summarize Sales & Profit for this month vs last month.")));
+  const __body3 = () => /*#__PURE__*/React.createElement("div", {
+    className: props.className,
+    style: {
+      width: "fit-content",
+      display: "flex",
+      flexDirection: "row",
+      gap: 10,
+      alignItems: "center",
+      flexWrap: "nowrap",
+      position: "relative",
+      ...props.style
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      display: "flex",
+      flexDirection: "row",
+      gap: 10,
+      alignItems: "center",
+      flexWrap: "nowrap",
+      flexShrink: 0,
+      alignSelf: "stretch"
+    }
+  }, /*#__PURE__*/React.createElement("span", {
+    style: {
+      position: "relative",
+      fontFamily: "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+      fontWeight: 500,
+      fontSize: 12,
+      whiteSpace: "nowrap",
+      lineHeight: 1.2999999523162842,
+      letterSpacing: "-0.020em",
+      color: "rgb(148,163,184)",
+      flexShrink: 0,
+      alignSelf: "stretch"
+    }
+  }, props.text1 ?? "/h for schema details")));
+  const __body4 = () => /*#__PURE__*/React.createElement("div", {
+    className: props.className,
+    style: {
+      width: "fit-content",
+      display: "flex",
+      flexDirection: "row",
+      gap: 10,
+      alignItems: "center",
+      flexWrap: "nowrap",
+      position: "relative",
+      ...props.style
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      width: 1,
+      overflow: "hidden",
+      display: "flex",
+      flexDirection: "row",
+      gap: 10,
+      alignItems: "center",
+      flexWrap: "nowrap",
+      flexShrink: 0,
+      alignSelf: "stretch"
+    }
+  }, /*#__PURE__*/React.createElement("span", {
+    style: {
+      position: "relative",
+      fontFamily: "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+      fontWeight: 400,
+      fontSize: 12,
+      whiteSpace: "nowrap",
+      lineHeight: 1.2999999523162842,
+      letterSpacing: "-0.020em",
+      color: "rgb(148,163,184)",
+      flexShrink: 0,
+      alignSelf: "stretch"
+    }
+  }, props.text1 ?? "Show 12-month Sales trend with insights.")));
+  const __body5 = () => /*#__PURE__*/React.createElement("div", {
+    className: props.className,
+    style: {
+      width: "fit-content",
+      display: "flex",
+      flexDirection: "row",
+      gap: 10,
+      alignItems: "center",
+      flexWrap: "nowrap",
+      position: "relative",
+      ...props.style
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      width: 226,
+      overflow: "hidden",
+      display: "flex",
+      flexDirection: "row",
+      gap: 10,
+      alignItems: "center",
+      flexWrap: "nowrap",
+      flexShrink: 0,
+      alignSelf: "stretch"
+    }
+  }, /*#__PURE__*/React.createElement("span", {
+    style: {
+      position: "relative",
+      fontFamily: "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+      fontWeight: 500,
+      fontSize: 12,
+      whiteSpace: "nowrap",
+      lineHeight: 1.2999999523162842,
+      letterSpacing: "-0.020em",
+      color: "rgb(148,163,184)",
+      flexShrink: 0,
+      alignSelf: "stretch"
+    }
+  }, props.text1 ?? "Show 12-month Sales trend with insights.")));
+  const __impls = {
+    // figma: Property 1=Default
+    "property1=default": __body0,
+    // figma: Property 1=Variant2
+    "property1=variant2": __body1,
+    // figma: Property 1=Variant3
+    "property1=variant3": __body0,
+    // figma: Property 1=Variant4
+    "property1=variant4": __body2,
+    // figma: Property 1=Variant5
+    "property1=variant5": __body3,
+    // figma: Property 1=Variant6
+    "property1=variant6": __body2,
+    // figma: Property 1=Variant7
+    "property1=variant7": __body4,
+    // figma: Property 1=Variant8
+    "property1=variant8": __body5,
+    // figma: Property 1=Variant9
+    "property1=variant9": __body4
+  };
+  return (__impls[__vkey_PlaceholderAnimation(props)] ?? __body0)();
+}
+
+// figma node: 88:11278 Foreword arrow
+function ForewordArrow(_p = {}) {
+  const props = _p;
+  return /*#__PURE__*/React.createElement("div", {
+    className: props.className,
+    style: {
+      width: 24,
+      height: 24,
+      position: "relative",
+      color: "rgb(71,85,105)",
+      ...props.style
+    }
+  }, /*#__PURE__*/React.createElement("svg", {
+    width: 16,
+    height: 16,
+    viewBox: "0 0 16 16",
+    fill: "none",
+    style: {
+      position: "absolute",
+      left: 4,
+      top: 4,
+      width: 16,
+      height: 16
+    }
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M 3.825 9 L 9.425 14.6 L 8 16 L 0 8 L 8 0 L 9.425 1.4 L 3.825 7 L 16 7 L 16 9 L 3.825 9 Z",
+    fill: "currentColor",
+    fillRule: "evenodd"
+  })));
+}
+
+// figma node: 11001:6104 Search Button Container (3 variants)
+const __venc_SearchButtonContainer = v => String(v).replace(/[%|=]/g, encodeURIComponent);
+const __vkey_SearchButtonContainer = p => "property1=" + __venc_SearchButtonContainer(p.property1);
+function SearchButtonContainer(_p = {}) {
+  const props = {
+    ..._p,
+    property1: _p.property1 ?? "default"
+  };
+  const __body0 = () => /*#__PURE__*/React.createElement("div", {
+    className: props.className,
+    style: {
+      width: 30,
+      height: 30,
+      borderRadius: 64,
+      display: "flex",
+      flexDirection: "row",
+      gap: 10,
+      padding: "4px 4px 4px 4px",
+      justifyContent: "center",
+      alignItems: "center",
+      flexWrap: "nowrap",
+      boxSizing: "border-box",
+      position: "relative",
+      ...props.style
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      width: 20,
+      transform: "matrix(-1,0,0,1,0,0)",
+      flexShrink: 0,
+      alignSelf: "stretch",
+      height: "auto"
+    }
+  }, props.icon1 ?? /*#__PURE__*/React.createElement(Icons, {
+    property1: "Mice"
+  })));
+  const __body1 = () => /*#__PURE__*/React.createElement("div", {
+    className: props.className,
+    style: {
+      width: 30,
+      height: 30,
+      borderRadius: 64,
+      display: "flex",
+      flexDirection: "row",
+      gap: 10,
+      padding: "4px 4px 4px 4px",
+      justifyContent: "center",
+      alignItems: "center",
+      flexWrap: "nowrap",
+      boxSizing: "border-box",
+      position: "relative",
+      ...props.style
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      width: 20,
+      transform: "matrix(-1,0,0,1,0,0)",
+      flexShrink: 0,
+      alignSelf: "stretch",
+      height: "auto"
+    }
+  }, props.icon1 ?? /*#__PURE__*/React.createElement(Icons, {
+    property1: "stop"
+  })));
+  const __body2 = () => /*#__PURE__*/React.createElement("div", {
+    className: props.className,
+    style: {
+      width: 30,
+      height: 30,
+      borderRadius: 64,
+      backgroundColor: "rgb(59,130,246)",
+      display: "flex",
+      flexDirection: "row",
+      gap: 10,
+      padding: "3px 3px 3px 3px",
+      justifyContent: "center",
+      alignItems: "center",
+      flexWrap: "nowrap",
+      boxSizing: "border-box",
+      position: "relative",
+      ...props.style
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      width: 14,
+      height: 14,
+      transform: "matrix(-1,0,0,-1,0,0)",
+      flexShrink: 0
+    }
+  }, props.icon1 ?? /*#__PURE__*/React.createElement(ForewordArrow, {
+    style: {
+      transform: "scale(0.583, 0.583)",
+      transformOrigin: "0 0"
+    }
+  })));
+  const __impls = {
+    // figma: Property 1=Default
+    "property1=default": __body0,
+    // figma: Property 1=Variant3
+    "property1=variant3": __body1,
+    // figma: Property 1=Variant2
+    "property1=variant2": __body2
+  };
+  return (__impls[__vkey_SearchButtonContainer(props)] ?? __body0)();
+}
+
+// figma node: 11001:6230 First time (3 variants)
+const __venc_FirstTime = v => String(v).replace(/[%|=]/g, encodeURIComponent);
+const __vkey_FirstTime = p => "property1=" + __venc_FirstTime(p.property1);
+function FirstTime(_p = {}) {
+  const props = {
+    ..._p,
+    property1: _p.property1 ?? "default"
+  };
+  const __body0 = () => /*#__PURE__*/React.createElement("div", {
+    className: props.className,
+    style: {
+      width: 817,
+      height: 138,
+      position: "relative",
+      ...props.style
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "absolute",
+      left: 0,
+      top: 0,
+      width: 817,
+      height: 138,
+      borderRadius: 8,
+      backgroundColor: "rgb(255,255,255)",
+      boxShadow: "inset 0 0 0 1.500px rgb(241,245,249)",
+      display: "flex",
+      flexDirection: "column",
+      padding: "12px 12px 10px 12px",
+      justifyContent: "space-between",
+      alignItems: "flex-start",
+      flexWrap: "nowrap",
+      boxSizing: "border-box"
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      display: "flex",
+      flexDirection: "row",
+      gap: 10,
+      alignItems: "center",
+      flexWrap: "nowrap",
+      flexShrink: 0,
+      alignSelf: "stretch"
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      flexShrink: 0
+    }
+  }, props.icon1 ?? /*#__PURE__*/React.createElement(PlaceholderAnimation, {
+    text1: "Ask a question",
+    property1: "default"
+  }))), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      display: "flex",
+      flexDirection: "row",
+      gap: 6,
+      alignItems: "center",
+      flexWrap: "nowrap",
+      flexShrink: 0,
+      alignSelf: "stretch"
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      width: 32,
+      height: 32,
+      overflow: "hidden",
+      borderRadius: 200,
+      backgroundColor: "rgb(248,250,252)",
+      display: "flex",
+      flexDirection: "row",
+      gap: 10,
+      alignItems: "center",
+      flexWrap: "nowrap",
+      flexShrink: 0
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      overflow: "hidden",
+      borderRadius: 104,
+      display: "flex",
+      flexDirection: "row",
+      gap: 4,
+      padding: "4px 4px 4px 4px",
+      justifyContent: "center",
+      alignItems: "center",
+      flexWrap: "nowrap",
+      boxSizing: "border-box",
+      flexGrow: 1,
+      alignSelf: "stretch"
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      width: 16,
+      height: 16,
+      flexShrink: 0
+    }
+  }, /*#__PURE__*/React.createElement("svg", {
+    width: 8,
+    height: 8,
+    viewBox: "0 0 8 8",
+    fill: "none",
+    style: {
+      position: "absolute",
+      left: 4,
+      top: 4.333,
+      width: 8,
+      height: 8,
+      color: "rgb(71,85,105)"
+    }
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M 3.429 4.571 L 0 4.571 L 0 3.429 L 3.429 3.429 L 3.429 0 L 4.571 0 L 4.571 3.429 L 8 3.429 L 8 4.571 L 4.571 4.571 L 4.571 8 L 3.429 8 L 3.429 4.571 Z",
+    fill: "currentColor",
+    fillRule: "nonzero"
+  }))), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      width: 42,
+      display: "flex",
+      flexDirection: "row",
+      gap: 10,
+      alignItems: "center",
+      flexWrap: "nowrap",
+      flexShrink: 0
+    }
+  }, /*#__PURE__*/React.createElement("span", {
+    style: {
+      position: "relative",
+      fontFamily: "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+      fontWeight: 400,
+      fontSize: 12,
+      whiteSpace: "nowrap",
+      lineHeight: 1.2999999523162842,
+      letterSpacing: "-0.020em",
+      color: "rgb(71,85,105)",
+      flexShrink: 0
+    }
+  }, "Button")), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      width: 16,
+      height: 16,
+      flexShrink: 0
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "absolute",
+      left: 0,
+      top: 0,
+      width: 16,
+      height: 16
+    }
+  }, /*#__PURE__*/React.createElement("svg", {
+    width: 10.667,
+    height: 12,
+    viewBox: "0 0 10.667 12",
+    fill: "none",
+    style: {
+      position: "absolute",
+      left: 2.667,
+      top: 2,
+      width: 10.667,
+      height: 12,
+      color: "rgb(71,85,105)"
+    }
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M 4.741 10.455 L 4.741 6.345 L 1.185 4.26 L 1.185 8.37 L 4.741 10.455 Z M 5.926 10.455 L 9.481 8.37 L 9.481 4.26 L 5.926 6.345 L 5.926 10.455 Z M 5.333 5.31 L 8.844 3.255 L 5.333 1.2 L 1.822 3.255 L 5.333 5.31 Z M 0.593 9.42 C 0.405 9.31 0.259 9.165 0.156 8.985 C 0.052 8.805 0 8.605 0 8.385 L 0 3.615 C 0 3.395 0.052 3.195 0.156 3.015 C 0.259 2.835 0.405 2.69 0.593 2.58 L 4.741 0.165 C 4.928 0.055 5.126 0 5.333 0 C 5.541 0 5.738 0.055 5.926 0.165 L 10.074 2.58 C 10.262 2.69 10.407 2.835 10.511 3.015 C 10.615 3.195 10.667 3.395 10.667 3.615 L 10.667 8.385 C 10.667 8.605 10.615 8.805 10.511 8.985 C 10.407 9.165 10.262 9.31 10.074 9.42 L 5.926 11.835 C 5.738 11.945 5.541 12 5.333 12 C 5.126 12 4.928 11.945 4.741 11.835 L 0.593 9.42 Z",
+    fill: "currentColor",
+    fillRule: "nonzero"
+  }))))), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "absolute",
+      left: 0,
+      top: -100,
+      borderRadius: 5,
+      backgroundColor: "rgb(255,255,255)",
+      boxShadow: "0px 0px 8px 0px rgba(0,0,0,0.12)",
+      display: "flex",
+      flexDirection: "column",
+      gap: 2,
+      padding: "4px 0px 4px 0px",
+      justifyContent: "flex-end",
+      alignItems: "flex-start",
+      flexWrap: "nowrap",
+      boxSizing: "border-box"
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      overflow: "hidden",
+      display: "flex",
+      flexDirection: "column",
+      gap: 12,
+      padding: "5px 8px 5px 8px",
+      justifyContent: "center",
+      alignItems: "flex-start",
+      flexWrap: "nowrap",
+      boxSizing: "border-box",
+      flexShrink: 0,
+      alignSelf: "stretch"
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      display: "flex",
+      flexDirection: "row",
+      gap: 10,
+      alignItems: "center",
+      flexWrap: "nowrap",
+      flexShrink: 0,
+      alignSelf: "stretch"
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      display: "flex",
+      flexDirection: "row",
+      gap: 8,
+      alignItems: "center",
+      flexWrap: "nowrap",
+      flexGrow: 1
+    }
+  }, /*#__PURE__*/React.createElement(AgentIcon, {
+    style: {
+      position: "relative",
+      width: 18,
+      height: 18,
+      flexShrink: 0
+    },
+    property1: "master agent"
+  }), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      height: 16,
+      display: "flex",
+      flexDirection: "column",
+      gap: 2,
+      justifyContent: "center",
+      alignItems: "flex-start",
+      flexWrap: "nowrap",
+      flexGrow: 1
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      height: 16,
+      display: "flex",
+      flexDirection: "row",
+      gap: 10,
+      alignItems: "flex-start",
+      flexWrap: "nowrap",
+      flexShrink: 0,
+      alignSelf: "stretch"
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      display: "flex",
+      flexDirection: "row",
+      gap: 10,
+      justifyContent: "center",
+      alignItems: "center",
+      flexWrap: "nowrap",
+      flexGrow: 1,
+      alignSelf: "stretch"
+    }
+  }, /*#__PURE__*/React.createElement("span", {
+    style: {
+      position: "relative",
+      fontFamily: "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+      fontWeight: 400,
+      fontSize: 12,
+      lineHeight: 1.2999999523162842,
+      letterSpacing: "-0.020em",
+      color: "rgb(51,65,85)",
+      flexGrow: 1,
+      alignSelf: "stretch"
+    }
+  }, "MCP Agents")), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      width: 16,
+      overflow: "hidden",
+      flexShrink: 0,
+      alignSelf: "stretch"
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "absolute",
+      left: 0,
+      top: 0,
+      width: 16,
+      height: 16
+    }
+  }, /*#__PURE__*/React.createElement("svg", {
+    width: 4.933,
+    height: 8,
+    viewBox: "0 0 4.933 8",
+    fill: "none",
+    style: {
+      position: "absolute",
+      left: 5.333,
+      top: 4,
+      width: 4.933,
+      height: 8,
+      color: "rgb(71,85,105)"
+    }
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M 3.067 4 L 0 0.933 L 0.933 0 L 4.933 4 L 0.933 8 L 0 7.067 L 3.067 4 Z",
+    fill: "currentColor",
+    fillRule: "nonzero"
+  }))))), /*#__PURE__*/React.createElement("span", {
+    style: {
+      position: "relative",
+      fontFamily: "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+      fontWeight: 500,
+      fontSize: 10,
+      whiteSpace: "nowrap",
+      lineHeight: 1.340000033378601,
+      letterSpacing: "-0.020em",
+      color: "rgb(100,116,139)",
+      flexShrink: 0,
+      alignSelf: "stretch"
+    }
+  }, "Lumenore's proprietary engine "))))), /*#__PURE__*/React.createElement(DropdownOptions, {
+    style: {
+      position: "relative",
+      width: 155,
+      height: 28,
+      flexShrink: 0
+    },
+    title: "Connect Connection",
+    icon1: /*#__PURE__*/React.createElement(IconPack5, {
+      style: {
+        transform: "scale(0.750, 0.750)",
+        transformOrigin: "0 0"
+      }
+    }),
+    property1: "default"
+  }), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      overflow: "hidden",
+      display: "flex",
+      flexDirection: "column",
+      gap: 12,
+      padding: "5px 8px 5px 8px",
+      justifyContent: "center",
+      alignItems: "flex-start",
+      flexWrap: "nowrap",
+      boxSizing: "border-box",
+      flexShrink: 0,
+      alignSelf: "stretch"
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      display: "flex",
+      flexDirection: "row",
+      gap: 10,
+      alignItems: "center",
+      flexWrap: "nowrap",
+      flexShrink: 0,
+      alignSelf: "stretch"
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      display: "flex",
+      flexDirection: "row",
+      gap: 8,
+      alignItems: "center",
+      flexWrap: "nowrap",
+      flexShrink: 0
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      width: 18,
+      height: 18,
+      overflow: "hidden",
+      borderRadius: 2,
+      backgroundColor: "rgb(237,233,254)",
+      flexShrink: 0
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "absolute",
+      left: 0,
+      top: 0,
+      width: 18,
+      height: 18
+    }
+  }, /*#__PURE__*/React.createElement(Attachment, {
+    style: {
+      transform: "scale(0.750, 0.750)",
+      transformOrigin: "0 0"
+    }
+  }))), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      height: 16,
+      display: "flex",
+      flexDirection: "column",
+      gap: 2,
+      justifyContent: "center",
+      alignItems: "flex-start",
+      flexWrap: "nowrap",
+      flexShrink: 0
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      height: 16,
+      display: "flex",
+      flexDirection: "row",
+      gap: 10,
+      alignItems: "flex-start",
+      flexWrap: "nowrap",
+      flexShrink: 0
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      display: "flex",
+      flexDirection: "row",
+      gap: 10,
+      justifyContent: "center",
+      alignItems: "center",
+      flexWrap: "nowrap",
+      flexShrink: 0,
+      alignSelf: "stretch"
+    }
+  }, /*#__PURE__*/React.createElement("span", {
+    style: {
+      position: "relative",
+      fontFamily: "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+      fontWeight: 400,
+      fontSize: 12,
+      whiteSpace: "nowrap",
+      lineHeight: 1.2999999523162842,
+      letterSpacing: "-0.020em",
+      color: "rgb(51,65,85)",
+      flexShrink: 0,
+      alignSelf: "stretch"
+    }
+  }, "Upload Attachment"))), /*#__PURE__*/React.createElement("span", {
+    style: {
+      position: "relative",
+      fontFamily: "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+      fontWeight: 500,
+      fontSize: 10,
+      whiteSpace: "nowrap",
+      lineHeight: 1.340000033378601,
+      letterSpacing: "-0.020em",
+      color: "rgb(100,116,139)",
+      flexShrink: 0,
+      alignSelf: "stretch"
+    }
+  }, "Lumenore's proprietary engine "))))))), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      height: 32,
+      overflow: "hidden",
+      borderRadius: 50,
+      backgroundColor: "rgb(248,250,252)",
+      display: "flex",
+      flexDirection: "row",
+      gap: 10,
+      justifyContent: "center",
+      alignItems: "center",
+      flexWrap: "nowrap",
+      flexShrink: 0
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      width: 96,
+      overflow: "hidden",
+      borderRadius: 4,
+      display: "flex",
+      flexDirection: "row",
+      gap: 4,
+      padding: "4px 4px 4px 4px",
+      justifyContent: "center",
+      alignItems: "center",
+      flexWrap: "nowrap",
+      boxSizing: "border-box",
+      flexShrink: 0,
+      alignSelf: "stretch"
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      width: 16,
+      height: 16,
+      flexShrink: 0
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "absolute",
+      left: 0,
+      top: 0,
+      width: 16,
+      height: 16,
+      clipPath: "inset(0px 0px 0px 0px)"
+    }
+  }, /*#__PURE__*/React.createElement("svg", {
+    width: 11,
+    height: 12,
+    viewBox: "0 0 11 12",
+    fill: "none",
+    style: {
+      position: "absolute",
+      left: 2,
+      top: 2,
+      width: 11,
+      height: 12,
+      color: "rgb(100,116,139)"
+    }
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M 9.084 11.95 C 9.02 11.926 8.96 11.886 8.905 11.829 L 6.093 8.914 C 6.038 8.857 5.999 8.795 5.976 8.729 C 5.953 8.662 5.941 8.59 5.941 8.514 C 5.941 8.438 5.953 8.367 5.976 8.3 C 5.999 8.233 6.038 8.171 6.093 8.114 L 7.264 6.9 C 7.32 6.843 7.379 6.802 7.444 6.779 C 7.508 6.755 7.577 6.743 7.65 6.743 C 7.724 6.743 7.793 6.755 7.857 6.779 C 7.921 6.802 7.981 6.843 8.036 6.9 L 10.848 9.814 C 10.904 9.871 10.943 9.933 10.966 10 C 10.989 10.067 11 10.138 11 10.214 C 11 10.29 10.989 10.362 10.966 10.429 C 10.943 10.495 10.904 10.557 10.848 10.614 L 9.677 11.829 C 9.622 11.886 9.562 11.926 9.497 11.95 C 9.433 11.974 9.364 11.986 9.291 11.986 C 9.217 11.986 9.148 11.974 9.084 11.95 Z M 9.291 10.629 L 9.69 10.214 L 7.664 8.114 L 7.264 8.529 L 9.291 10.629 Z M 1.509 11.957 C 1.44 11.929 1.378 11.886 1.323 11.829 L 0.165 10.629 C 0.11 10.571 0.069 10.507 0.041 10.436 C 0.014 10.364 0 10.29 0 10.214 C 0 10.138 0.014 10.067 0.041 10 C 0.069 9.933 0.11 9.871 0.165 9.814 L 3.088 6.786 L 4.259 6.786 L 4.728 6.3 L 2.454 3.943 L 1.668 3.943 L 0 2.214 L 1.558 0.6 L 3.226 2.329 L 3.226 3.143 L 5.5 5.5 L 7.099 3.843 L 6.506 3.229 L 7.278 2.429 L 5.721 2.429 L 5.335 2.029 L 7.292 0 L 7.678 0.4 L 7.678 2.014 L 8.45 1.214 L 10.407 3.243 C 10.563 3.405 10.683 3.588 10.766 3.793 C 10.848 3.998 10.89 4.214 10.89 4.443 C 10.89 4.671 10.848 4.89 10.766 5.1 C 10.683 5.31 10.563 5.495 10.407 5.657 L 9.236 4.443 L 8.464 5.243 L 7.885 4.643 L 5.031 7.6 L 5.031 8.8 L 2.109 11.829 C 2.054 11.886 1.994 11.929 1.93 11.957 C 1.865 11.986 1.797 12 1.723 12 C 1.65 12 1.578 11.986 1.509 11.957 Z M 1.723 10.629 L 4.066 8.2 L 4.066 7.786 L 3.667 7.786 L 1.323 10.214 L 1.723 10.629 Z M 1.723 10.629 L 1.323 10.214 L 1.53 10.414 L 1.723 10.629 Z",
+    fill: "currentColor",
+    fillRule: "nonzero"
+  })))), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      width: 42,
+      display: "flex",
+      flexDirection: "row",
+      gap: 10,
+      alignItems: "center",
+      flexWrap: "nowrap",
+      flexShrink: 0
+    }
+  }, /*#__PURE__*/React.createElement("span", {
+    style: {
+      position: "relative",
+      fontFamily: "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+      fontWeight: 400,
+      fontSize: 12,
+      whiteSpace: "nowrap",
+      lineHeight: 1.2999999523162842,
+      letterSpacing: "-0.020em",
+      color: "rgb(71,85,105)",
+      flexShrink: 0
+    }
+  }, "Tools")), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      width: 16,
+      height: 16,
+      flexShrink: 0
+    }
+  }, /*#__PURE__*/React.createElement(DownArrow2, {
+    style: {
+      transform: "scale(0.667, 0.667)",
+      transformOrigin: "0 0"
+    }
+  }))), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "absolute",
+      left: 0,
+      top: -100,
+      borderRadius: 5,
+      backgroundColor: "rgb(255,255,255)",
+      boxShadow: "0px 0px 8px 0px rgba(0,0,0,0.12)",
+      display: "flex",
+      flexDirection: "column",
+      gap: 2,
+      padding: "4px 0px 4px 0px",
+      justifyContent: "flex-end",
+      alignItems: "flex-start",
+      flexWrap: "nowrap",
+      boxSizing: "border-box"
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      overflow: "hidden",
+      display: "flex",
+      flexDirection: "column",
+      gap: 12,
+      padding: "5px 8px 5px 8px",
+      justifyContent: "center",
+      alignItems: "flex-start",
+      flexWrap: "nowrap",
+      boxSizing: "border-box",
+      flexShrink: 0,
+      alignSelf: "stretch"
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      display: "flex",
+      flexDirection: "row",
+      gap: 10,
+      alignItems: "center",
+      flexWrap: "nowrap",
+      flexShrink: 0,
+      alignSelf: "stretch"
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      display: "flex",
+      flexDirection: "row",
+      gap: 8,
+      alignItems: "center",
+      flexWrap: "nowrap",
+      flexGrow: 1
+    }
+  }, /*#__PURE__*/React.createElement(AgentIcon, {
+    style: {
+      position: "relative",
+      width: 18,
+      height: 18,
+      flexShrink: 0
+    },
+    property1: "master agent"
+  }), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      height: 16,
+      display: "flex",
+      flexDirection: "column",
+      gap: 2,
+      justifyContent: "center",
+      alignItems: "flex-start",
+      flexWrap: "nowrap",
+      flexGrow: 1
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      height: 16,
+      display: "flex",
+      flexDirection: "row",
+      gap: 10,
+      alignItems: "flex-start",
+      flexWrap: "nowrap",
+      flexShrink: 0,
+      alignSelf: "stretch"
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      display: "flex",
+      flexDirection: "row",
+      gap: 10,
+      justifyContent: "center",
+      alignItems: "center",
+      flexWrap: "nowrap",
+      flexGrow: 1,
+      alignSelf: "stretch"
+    }
+  }, /*#__PURE__*/React.createElement("span", {
+    style: {
+      position: "relative",
+      fontFamily: "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+      fontWeight: 400,
+      fontSize: 12,
+      lineHeight: 1.2999999523162842,
+      letterSpacing: "-0.020em",
+      color: "rgb(51,65,85)",
+      flexGrow: 1,
+      alignSelf: "stretch"
+    }
+  }, "MCP Agents")), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      width: 16,
+      overflow: "hidden",
+      flexShrink: 0,
+      alignSelf: "stretch"
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "absolute",
+      left: 0,
+      top: 0,
+      width: 16,
+      height: 16
+    }
+  }, /*#__PURE__*/React.createElement("svg", {
+    width: 4.933,
+    height: 8,
+    viewBox: "0 0 4.933 8",
+    fill: "none",
+    style: {
+      position: "absolute",
+      left: 5.333,
+      top: 4,
+      width: 4.933,
+      height: 8,
+      color: "rgb(71,85,105)"
+    }
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M 3.067 4 L 0 0.933 L 0.933 0 L 4.933 4 L 0.933 8 L 0 7.067 L 3.067 4 Z",
+    fill: "currentColor",
+    fillRule: "nonzero"
+  }))))), /*#__PURE__*/React.createElement("span", {
+    style: {
+      position: "relative",
+      fontFamily: "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+      fontWeight: 500,
+      fontSize: 10,
+      whiteSpace: "nowrap",
+      lineHeight: 1.340000033378601,
+      letterSpacing: "-0.020em",
+      color: "rgb(100,116,139)",
+      flexShrink: 0,
+      alignSelf: "stretch"
+    }
+  }, "Lumenore's proprietary engine "))))), /*#__PURE__*/React.createElement(DropdownOptions, {
+    style: {
+      position: "relative",
+      width: 155,
+      height: 28,
+      flexShrink: 0
+    },
+    title: "Connect Connection",
+    icon1: /*#__PURE__*/React.createElement(IconPack5, {
+      style: {
+        transform: "scale(0.750, 0.750)",
+        transformOrigin: "0 0"
+      }
+    }),
+    property1: "default"
+  }), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      overflow: "hidden",
+      display: "flex",
+      flexDirection: "column",
+      gap: 12,
+      padding: "5px 8px 5px 8px",
+      justifyContent: "center",
+      alignItems: "flex-start",
+      flexWrap: "nowrap",
+      boxSizing: "border-box",
+      flexShrink: 0,
+      alignSelf: "stretch"
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      display: "flex",
+      flexDirection: "row",
+      gap: 10,
+      alignItems: "center",
+      flexWrap: "nowrap",
+      flexShrink: 0,
+      alignSelf: "stretch"
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      display: "flex",
+      flexDirection: "row",
+      gap: 8,
+      alignItems: "center",
+      flexWrap: "nowrap",
+      flexShrink: 0
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      width: 18,
+      height: 18,
+      overflow: "hidden",
+      borderRadius: 2,
+      backgroundColor: "rgb(237,233,254)",
+      flexShrink: 0
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "absolute",
+      left: 0,
+      top: 0,
+      width: 18,
+      height: 18
+    }
+  }, /*#__PURE__*/React.createElement(Attachment, {
+    style: {
+      transform: "scale(0.750, 0.750)",
+      transformOrigin: "0 0"
+    }
+  }))), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      height: 16,
+      display: "flex",
+      flexDirection: "column",
+      gap: 2,
+      justifyContent: "center",
+      alignItems: "flex-start",
+      flexWrap: "nowrap",
+      flexShrink: 0
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      height: 16,
+      display: "flex",
+      flexDirection: "row",
+      gap: 10,
+      alignItems: "flex-start",
+      flexWrap: "nowrap",
+      flexShrink: 0
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      display: "flex",
+      flexDirection: "row",
+      gap: 10,
+      justifyContent: "center",
+      alignItems: "center",
+      flexWrap: "nowrap",
+      flexShrink: 0,
+      alignSelf: "stretch"
+    }
+  }, /*#__PURE__*/React.createElement("span", {
+    style: {
+      position: "relative",
+      fontFamily: "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+      fontWeight: 400,
+      fontSize: 12,
+      whiteSpace: "nowrap",
+      lineHeight: 1.2999999523162842,
+      letterSpacing: "-0.020em",
+      color: "rgb(51,65,85)",
+      flexShrink: 0,
+      alignSelf: "stretch"
+    }
+  }, "Upload Attachment"))), /*#__PURE__*/React.createElement("span", {
+    style: {
+      position: "relative",
+      fontFamily: "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+      fontWeight: 500,
+      fontSize: 10,
+      whiteSpace: "nowrap",
+      lineHeight: 1.340000033378601,
+      letterSpacing: "-0.020em",
+      color: "rgb(100,116,139)",
+      flexShrink: 0,
+      alignSelf: "stretch"
+    }
+  }, "Lumenore's proprietary engine "))))))), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      display: "flex",
+      flexDirection: "row",
+      gap: 8,
+      justifyContent: "flex-end",
+      alignItems: "center",
+      flexWrap: "nowrap",
+      flexGrow: 1
+    }
+  }, /*#__PURE__*/React.createElement(DataCollaps, {
+    style: {
+      position: "relative",
+      flexShrink: 0
+    },
+    property1: "default"
+  }), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      width: 30,
+      height: 30,
+      flexShrink: 0
+    }
+  }, props.icon3 ?? /*#__PURE__*/React.createElement(SearchButtonContainer, {
+    property1: "default"
+  }))))));
+  const __body1 = () => /*#__PURE__*/React.createElement("div", {
+    className: props.className,
+    style: {
+      width: 817,
+      height: 138,
+      position: "relative",
+      ...props.style
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "absolute",
+      left: 0,
+      top: 0,
+      width: 817,
+      height: 138,
+      borderRadius: 8,
+      backgroundColor: "rgb(255,255,255)",
+      display: "flex",
+      flexDirection: "column",
+      padding: "12px 12px 10px 12px",
+      justifyContent: "space-between",
+      alignItems: "flex-start",
+      flexWrap: "nowrap",
+      boxSizing: "border-box"
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      display: "flex",
+      flexDirection: "row",
+      gap: 10,
+      alignItems: "center",
+      flexWrap: "nowrap",
+      flexShrink: 0,
+      alignSelf: "stretch"
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      flexShrink: 0
+    }
+  }, props.icon1 ?? /*#__PURE__*/React.createElement(PlaceholderAnimation, {
+    text1: "Ask a question",
+    property1: "default"
+  }))), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      display: "flex",
+      flexDirection: "row",
+      gap: 6,
+      alignItems: "center",
+      flexWrap: "nowrap",
+      flexShrink: 0,
+      alignSelf: "stretch"
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      width: 32,
+      height: 32,
+      overflow: "hidden",
+      borderRadius: 200,
+      backgroundColor: "rgb(248,250,252)",
+      display: "flex",
+      flexDirection: "row",
+      gap: 10,
+      alignItems: "center",
+      flexWrap: "nowrap",
+      flexShrink: 0
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      overflow: "hidden",
+      borderRadius: 104,
+      display: "flex",
+      flexDirection: "row",
+      gap: 4,
+      padding: "4px 4px 4px 4px",
+      justifyContent: "center",
+      alignItems: "center",
+      flexWrap: "nowrap",
+      boxSizing: "border-box",
+      flexGrow: 1,
+      alignSelf: "stretch"
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      width: 16,
+      height: 16,
+      flexShrink: 0
+    }
+  }, /*#__PURE__*/React.createElement("svg", {
+    width: 8,
+    height: 8,
+    viewBox: "0 0 8 8",
+    fill: "none",
+    style: {
+      position: "absolute",
+      left: 4,
+      top: 4.333,
+      width: 8,
+      height: 8,
+      color: "rgb(71,85,105)"
+    }
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M 3.429 4.571 L 0 4.571 L 0 3.429 L 3.429 3.429 L 3.429 0 L 4.571 0 L 4.571 3.429 L 8 3.429 L 8 4.571 L 4.571 4.571 L 4.571 8 L 3.429 8 L 3.429 4.571 Z",
+    fill: "currentColor",
+    fillRule: "nonzero"
+  }))), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      width: 42,
+      display: "flex",
+      flexDirection: "row",
+      gap: 10,
+      alignItems: "center",
+      flexWrap: "nowrap",
+      flexShrink: 0
+    }
+  }, /*#__PURE__*/React.createElement("span", {
+    style: {
+      position: "relative",
+      fontFamily: "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+      fontWeight: 400,
+      fontSize: 12,
+      whiteSpace: "nowrap",
+      lineHeight: 1.2999999523162842,
+      letterSpacing: "-0.020em",
+      color: "rgb(71,85,105)",
+      flexShrink: 0
+    }
+  }, "Button")), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      width: 16,
+      height: 16,
+      flexShrink: 0
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "absolute",
+      left: 0,
+      top: 0,
+      width: 16,
+      height: 16
+    }
+  }, /*#__PURE__*/React.createElement("svg", {
+    width: 10.667,
+    height: 12,
+    viewBox: "0 0 10.667 12",
+    fill: "none",
+    style: {
+      position: "absolute",
+      left: 2.667,
+      top: 2,
+      width: 10.667,
+      height: 12,
+      color: "rgb(71,85,105)"
+    }
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M 4.741 10.455 L 4.741 6.345 L 1.185 4.26 L 1.185 8.37 L 4.741 10.455 Z M 5.926 10.455 L 9.481 8.37 L 9.481 4.26 L 5.926 6.345 L 5.926 10.455 Z M 5.333 5.31 L 8.844 3.255 L 5.333 1.2 L 1.822 3.255 L 5.333 5.31 Z M 0.593 9.42 C 0.405 9.31 0.259 9.165 0.156 8.985 C 0.052 8.805 0 8.605 0 8.385 L 0 3.615 C 0 3.395 0.052 3.195 0.156 3.015 C 0.259 2.835 0.405 2.69 0.593 2.58 L 4.741 0.165 C 4.928 0.055 5.126 0 5.333 0 C 5.541 0 5.738 0.055 5.926 0.165 L 10.074 2.58 C 10.262 2.69 10.407 2.835 10.511 3.015 C 10.615 3.195 10.667 3.395 10.667 3.615 L 10.667 8.385 C 10.667 8.605 10.615 8.805 10.511 8.985 C 10.407 9.165 10.262 9.31 10.074 9.42 L 5.926 11.835 C 5.738 11.945 5.541 12 5.333 12 C 5.126 12 4.928 11.945 4.741 11.835 L 0.593 9.42 Z",
+    fill: "currentColor",
+    fillRule: "nonzero"
+  }))))), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "absolute",
+      left: 0,
+      top: -100,
+      borderRadius: 5,
+      backgroundColor: "rgb(255,255,255)",
+      boxShadow: "0px 0px 8px 0px rgba(0,0,0,0.12)",
+      display: "flex",
+      flexDirection: "column",
+      gap: 2,
+      padding: "4px 0px 4px 0px",
+      justifyContent: "flex-end",
+      alignItems: "flex-start",
+      flexWrap: "nowrap",
+      boxSizing: "border-box"
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      overflow: "hidden",
+      display: "flex",
+      flexDirection: "column",
+      gap: 12,
+      padding: "5px 8px 5px 8px",
+      justifyContent: "center",
+      alignItems: "flex-start",
+      flexWrap: "nowrap",
+      boxSizing: "border-box",
+      flexShrink: 0,
+      alignSelf: "stretch"
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      display: "flex",
+      flexDirection: "row",
+      gap: 10,
+      alignItems: "center",
+      flexWrap: "nowrap",
+      flexShrink: 0,
+      alignSelf: "stretch"
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      display: "flex",
+      flexDirection: "row",
+      gap: 8,
+      alignItems: "center",
+      flexWrap: "nowrap",
+      flexGrow: 1
+    }
+  }, /*#__PURE__*/React.createElement(AgentIcon, {
+    style: {
+      position: "relative",
+      width: 18,
+      height: 18,
+      flexShrink: 0
+    },
+    property1: "master agent"
+  }), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      height: 16,
+      display: "flex",
+      flexDirection: "column",
+      gap: 2,
+      justifyContent: "center",
+      alignItems: "flex-start",
+      flexWrap: "nowrap",
+      flexGrow: 1
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      height: 16,
+      display: "flex",
+      flexDirection: "row",
+      gap: 10,
+      alignItems: "flex-start",
+      flexWrap: "nowrap",
+      flexShrink: 0,
+      alignSelf: "stretch"
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      display: "flex",
+      flexDirection: "row",
+      gap: 10,
+      justifyContent: "center",
+      alignItems: "center",
+      flexWrap: "nowrap",
+      flexGrow: 1,
+      alignSelf: "stretch"
+    }
+  }, /*#__PURE__*/React.createElement("span", {
+    style: {
+      position: "relative",
+      fontFamily: "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+      fontWeight: 400,
+      fontSize: 12,
+      lineHeight: 1.2999999523162842,
+      letterSpacing: "-0.020em",
+      color: "rgb(51,65,85)",
+      flexGrow: 1,
+      alignSelf: "stretch"
+    }
+  }, "MCP Agents")), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      width: 16,
+      overflow: "hidden",
+      flexShrink: 0,
+      alignSelf: "stretch"
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "absolute",
+      left: 0,
+      top: 0,
+      width: 16,
+      height: 16
+    }
+  }, /*#__PURE__*/React.createElement("svg", {
+    width: 4.933,
+    height: 8,
+    viewBox: "0 0 4.933 8",
+    fill: "none",
+    style: {
+      position: "absolute",
+      left: 5.333,
+      top: 4,
+      width: 4.933,
+      height: 8,
+      color: "rgb(71,85,105)"
+    }
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M 3.067 4 L 0 0.933 L 0.933 0 L 4.933 4 L 0.933 8 L 0 7.067 L 3.067 4 Z",
+    fill: "currentColor",
+    fillRule: "nonzero"
+  }))))), /*#__PURE__*/React.createElement("span", {
+    style: {
+      position: "relative",
+      fontFamily: "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+      fontWeight: 500,
+      fontSize: 10,
+      whiteSpace: "nowrap",
+      lineHeight: 1.340000033378601,
+      letterSpacing: "-0.020em",
+      color: "rgb(100,116,139)",
+      flexShrink: 0,
+      alignSelf: "stretch"
+    }
+  }, "Lumenore's proprietary engine "))))), /*#__PURE__*/React.createElement(DropdownOptions, {
+    style: {
+      position: "relative",
+      width: 155,
+      height: 28,
+      flexShrink: 0
+    },
+    title: "Connect Connection",
+    icon1: /*#__PURE__*/React.createElement(IconPack5, {
+      style: {
+        transform: "scale(0.750, 0.750)",
+        transformOrigin: "0 0"
+      }
+    }),
+    property1: "default"
+  }), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      overflow: "hidden",
+      display: "flex",
+      flexDirection: "column",
+      gap: 12,
+      padding: "5px 8px 5px 8px",
+      justifyContent: "center",
+      alignItems: "flex-start",
+      flexWrap: "nowrap",
+      boxSizing: "border-box",
+      flexShrink: 0,
+      alignSelf: "stretch"
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      display: "flex",
+      flexDirection: "row",
+      gap: 10,
+      alignItems: "center",
+      flexWrap: "nowrap",
+      flexShrink: 0,
+      alignSelf: "stretch"
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      display: "flex",
+      flexDirection: "row",
+      gap: 8,
+      alignItems: "center",
+      flexWrap: "nowrap",
+      flexShrink: 0
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      width: 18,
+      height: 18,
+      overflow: "hidden",
+      borderRadius: 2,
+      backgroundColor: "rgb(237,233,254)",
+      flexShrink: 0
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "absolute",
+      left: 0,
+      top: 0,
+      width: 18,
+      height: 18
+    }
+  }, /*#__PURE__*/React.createElement(Attachment, {
+    style: {
+      transform: "scale(0.750, 0.750)",
+      transformOrigin: "0 0"
+    }
+  }))), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      height: 16,
+      display: "flex",
+      flexDirection: "column",
+      gap: 2,
+      justifyContent: "center",
+      alignItems: "flex-start",
+      flexWrap: "nowrap",
+      flexShrink: 0
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      height: 16,
+      display: "flex",
+      flexDirection: "row",
+      gap: 10,
+      alignItems: "flex-start",
+      flexWrap: "nowrap",
+      flexShrink: 0
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      display: "flex",
+      flexDirection: "row",
+      gap: 10,
+      justifyContent: "center",
+      alignItems: "center",
+      flexWrap: "nowrap",
+      flexShrink: 0,
+      alignSelf: "stretch"
+    }
+  }, /*#__PURE__*/React.createElement("span", {
+    style: {
+      position: "relative",
+      fontFamily: "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+      fontWeight: 400,
+      fontSize: 12,
+      whiteSpace: "nowrap",
+      lineHeight: 1.2999999523162842,
+      letterSpacing: "-0.020em",
+      color: "rgb(51,65,85)",
+      flexShrink: 0,
+      alignSelf: "stretch"
+    }
+  }, "Upload Attachment"))), /*#__PURE__*/React.createElement("span", {
+    style: {
+      position: "relative",
+      fontFamily: "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+      fontWeight: 500,
+      fontSize: 10,
+      whiteSpace: "nowrap",
+      lineHeight: 1.340000033378601,
+      letterSpacing: "-0.020em",
+      color: "rgb(100,116,139)",
+      flexShrink: 0,
+      alignSelf: "stretch"
+    }
+  }, "Lumenore's proprietary engine "))))))), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      height: 32,
+      overflow: "hidden",
+      borderRadius: 50,
+      backgroundColor: "rgb(248,250,252)",
+      display: "flex",
+      flexDirection: "row",
+      gap: 10,
+      justifyContent: "center",
+      alignItems: "center",
+      flexWrap: "nowrap",
+      flexShrink: 0
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      width: 84,
+      overflow: "hidden",
+      borderRadius: 4,
+      display: "flex",
+      flexDirection: "row",
+      gap: 4,
+      padding: "4px 4px 4px 4px",
+      justifyContent: "center",
+      alignItems: "center",
+      flexWrap: "nowrap",
+      boxSizing: "border-box",
+      flexShrink: 0,
+      alignSelf: "stretch"
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      width: 16,
+      height: 16,
+      flexShrink: 0
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "absolute",
+      left: 0,
+      top: 0,
+      width: 16,
+      height: 16,
+      clipPath: "inset(0px 0px 0px 0px)"
+    }
+  }, /*#__PURE__*/React.createElement("svg", {
+    width: 11,
+    height: 12,
+    viewBox: "0 0 11 12",
+    fill: "none",
+    style: {
+      position: "absolute",
+      left: 2,
+      top: 2,
+      width: 11,
+      height: 12,
+      color: "rgb(100,116,139)"
+    }
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M 9.084 11.95 C 9.02 11.926 8.96 11.886 8.905 11.829 L 6.093 8.914 C 6.038 8.857 5.999 8.795 5.976 8.729 C 5.953 8.662 5.941 8.59 5.941 8.514 C 5.941 8.438 5.953 8.367 5.976 8.3 C 5.999 8.233 6.038 8.171 6.093 8.114 L 7.264 6.9 C 7.32 6.843 7.379 6.802 7.444 6.779 C 7.508 6.755 7.577 6.743 7.65 6.743 C 7.724 6.743 7.793 6.755 7.857 6.779 C 7.921 6.802 7.981 6.843 8.036 6.9 L 10.848 9.814 C 10.904 9.871 10.943 9.933 10.966 10 C 10.989 10.067 11 10.138 11 10.214 C 11 10.29 10.989 10.362 10.966 10.429 C 10.943 10.495 10.904 10.557 10.848 10.614 L 9.677 11.829 C 9.622 11.886 9.562 11.926 9.497 11.95 C 9.433 11.974 9.364 11.986 9.291 11.986 C 9.217 11.986 9.148 11.974 9.084 11.95 Z M 9.291 10.629 L 9.69 10.214 L 7.664 8.114 L 7.264 8.529 L 9.291 10.629 Z M 1.509 11.957 C 1.44 11.929 1.378 11.886 1.323 11.829 L 0.165 10.629 C 0.11 10.571 0.069 10.507 0.041 10.436 C 0.014 10.364 0 10.29 0 10.214 C 0 10.138 0.014 10.067 0.041 10 C 0.069 9.933 0.11 9.871 0.165 9.814 L 3.088 6.786 L 4.259 6.786 L 4.728 6.3 L 2.454 3.943 L 1.668 3.943 L 0 2.214 L 1.558 0.6 L 3.226 2.329 L 3.226 3.143 L 5.5 5.5 L 7.099 3.843 L 6.506 3.229 L 7.278 2.429 L 5.721 2.429 L 5.335 2.029 L 7.292 0 L 7.678 0.4 L 7.678 2.014 L 8.45 1.214 L 10.407 3.243 C 10.563 3.405 10.683 3.588 10.766 3.793 C 10.848 3.998 10.89 4.214 10.89 4.443 C 10.89 4.671 10.848 4.89 10.766 5.1 C 10.683 5.31 10.563 5.495 10.407 5.657 L 9.236 4.443 L 8.464 5.243 L 7.885 4.643 L 5.031 7.6 L 5.031 8.8 L 2.109 11.829 C 2.054 11.886 1.994 11.929 1.93 11.957 C 1.865 11.986 1.797 12 1.723 12 C 1.65 12 1.578 11.986 1.509 11.957 Z M 1.723 10.629 L 4.066 8.2 L 4.066 7.786 L 3.667 7.786 L 1.323 10.214 L 1.723 10.629 Z M 1.723 10.629 L 1.323 10.214 L 1.53 10.414 L 1.723 10.629 Z",
+    fill: "currentColor",
+    fillRule: "nonzero"
+  })))), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      width: 30,
+      display: "flex",
+      flexDirection: "row",
+      gap: 10,
+      alignItems: "center",
+      flexWrap: "nowrap",
+      flexShrink: 0
+    }
+  }, /*#__PURE__*/React.createElement("span", {
+    style: {
+      position: "relative",
+      fontFamily: "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+      fontWeight: 400,
+      fontSize: 12,
+      whiteSpace: "nowrap",
+      lineHeight: 1.2999999523162842,
+      letterSpacing: "-0.020em",
+      color: "rgb(71,85,105)",
+      flexShrink: 0
+    }
+  }, "Tools")), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      width: 16,
+      height: 16,
+      flexShrink: 0
+    }
+  }, /*#__PURE__*/React.createElement(DownArrow2, {
+    style: {
+      transform: "scale(0.667, 0.667)",
+      transformOrigin: "0 0"
+    }
+  }))), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "absolute",
+      left: 0,
+      top: -100,
+      borderRadius: 5,
+      backgroundColor: "rgb(255,255,255)",
+      boxShadow: "0px 0px 8px 0px rgba(0,0,0,0.12)",
+      display: "flex",
+      flexDirection: "column",
+      gap: 2,
+      padding: "4px 0px 4px 0px",
+      justifyContent: "flex-end",
+      alignItems: "flex-start",
+      flexWrap: "nowrap",
+      boxSizing: "border-box"
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      overflow: "hidden",
+      display: "flex",
+      flexDirection: "column",
+      gap: 12,
+      padding: "5px 8px 5px 8px",
+      justifyContent: "center",
+      alignItems: "flex-start",
+      flexWrap: "nowrap",
+      boxSizing: "border-box",
+      flexShrink: 0,
+      alignSelf: "stretch"
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      display: "flex",
+      flexDirection: "row",
+      gap: 10,
+      alignItems: "center",
+      flexWrap: "nowrap",
+      flexShrink: 0,
+      alignSelf: "stretch"
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      display: "flex",
+      flexDirection: "row",
+      gap: 8,
+      alignItems: "center",
+      flexWrap: "nowrap",
+      flexGrow: 1
+    }
+  }, /*#__PURE__*/React.createElement(AgentIcon, {
+    style: {
+      position: "relative",
+      width: 18,
+      height: 18,
+      flexShrink: 0
+    },
+    property1: "master agent"
+  }), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      height: 16,
+      display: "flex",
+      flexDirection: "column",
+      gap: 2,
+      justifyContent: "center",
+      alignItems: "flex-start",
+      flexWrap: "nowrap",
+      flexGrow: 1
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      height: 16,
+      display: "flex",
+      flexDirection: "row",
+      gap: 10,
+      alignItems: "flex-start",
+      flexWrap: "nowrap",
+      flexShrink: 0,
+      alignSelf: "stretch"
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      display: "flex",
+      flexDirection: "row",
+      gap: 10,
+      justifyContent: "center",
+      alignItems: "center",
+      flexWrap: "nowrap",
+      flexGrow: 1,
+      alignSelf: "stretch"
+    }
+  }, /*#__PURE__*/React.createElement("span", {
+    style: {
+      position: "relative",
+      fontFamily: "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+      fontWeight: 400,
+      fontSize: 12,
+      lineHeight: 1.2999999523162842,
+      letterSpacing: "-0.020em",
+      color: "rgb(51,65,85)",
+      flexGrow: 1,
+      alignSelf: "stretch"
+    }
+  }, "MCP Agents")), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      width: 16,
+      overflow: "hidden",
+      flexShrink: 0,
+      alignSelf: "stretch"
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "absolute",
+      left: 0,
+      top: 0,
+      width: 16,
+      height: 16
+    }
+  }, /*#__PURE__*/React.createElement("svg", {
+    width: 4.933,
+    height: 8,
+    viewBox: "0 0 4.933 8",
+    fill: "none",
+    style: {
+      position: "absolute",
+      left: 5.333,
+      top: 4,
+      width: 4.933,
+      height: 8,
+      color: "rgb(71,85,105)"
+    }
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M 3.067 4 L 0 0.933 L 0.933 0 L 4.933 4 L 0.933 8 L 0 7.067 L 3.067 4 Z",
+    fill: "currentColor",
+    fillRule: "nonzero"
+  }))))), /*#__PURE__*/React.createElement("span", {
+    style: {
+      position: "relative",
+      fontFamily: "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+      fontWeight: 500,
+      fontSize: 10,
+      whiteSpace: "nowrap",
+      lineHeight: 1.340000033378601,
+      letterSpacing: "-0.020em",
+      color: "rgb(100,116,139)",
+      flexShrink: 0,
+      alignSelf: "stretch"
+    }
+  }, "Lumenore's proprietary engine "))))), /*#__PURE__*/React.createElement(DropdownOptions, {
+    style: {
+      position: "relative",
+      width: 155,
+      height: 28,
+      flexShrink: 0
+    },
+    title: "Connect Connection",
+    icon1: /*#__PURE__*/React.createElement(IconPack5, {
+      style: {
+        transform: "scale(0.750, 0.750)",
+        transformOrigin: "0 0"
+      }
+    }),
+    property1: "default"
+  }), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      overflow: "hidden",
+      display: "flex",
+      flexDirection: "column",
+      gap: 12,
+      padding: "5px 8px 5px 8px",
+      justifyContent: "center",
+      alignItems: "flex-start",
+      flexWrap: "nowrap",
+      boxSizing: "border-box",
+      flexShrink: 0,
+      alignSelf: "stretch"
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      display: "flex",
+      flexDirection: "row",
+      gap: 10,
+      alignItems: "center",
+      flexWrap: "nowrap",
+      flexShrink: 0,
+      alignSelf: "stretch"
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      display: "flex",
+      flexDirection: "row",
+      gap: 8,
+      alignItems: "center",
+      flexWrap: "nowrap",
+      flexShrink: 0
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      width: 18,
+      height: 18,
+      overflow: "hidden",
+      borderRadius: 2,
+      backgroundColor: "rgb(237,233,254)",
+      flexShrink: 0
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "absolute",
+      left: 0,
+      top: 0,
+      width: 18,
+      height: 18
+    }
+  }, /*#__PURE__*/React.createElement(Attachment, {
+    style: {
+      transform: "scale(0.750, 0.750)",
+      transformOrigin: "0 0"
+    }
+  }))), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      height: 16,
+      display: "flex",
+      flexDirection: "column",
+      gap: 2,
+      justifyContent: "center",
+      alignItems: "flex-start",
+      flexWrap: "nowrap",
+      flexShrink: 0
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      height: 16,
+      display: "flex",
+      flexDirection: "row",
+      gap: 10,
+      alignItems: "flex-start",
+      flexWrap: "nowrap",
+      flexShrink: 0
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      display: "flex",
+      flexDirection: "row",
+      gap: 10,
+      justifyContent: "center",
+      alignItems: "center",
+      flexWrap: "nowrap",
+      flexShrink: 0,
+      alignSelf: "stretch"
+    }
+  }, /*#__PURE__*/React.createElement("span", {
+    style: {
+      position: "relative",
+      fontFamily: "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+      fontWeight: 400,
+      fontSize: 12,
+      whiteSpace: "nowrap",
+      lineHeight: 1.2999999523162842,
+      letterSpacing: "-0.020em",
+      color: "rgb(51,65,85)",
+      flexShrink: 0,
+      alignSelf: "stretch"
+    }
+  }, "Upload Attachment"))), /*#__PURE__*/React.createElement("span", {
+    style: {
+      position: "relative",
+      fontFamily: "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+      fontWeight: 500,
+      fontSize: 10,
+      whiteSpace: "nowrap",
+      lineHeight: 1.340000033378601,
+      letterSpacing: "-0.020em",
+      color: "rgb(100,116,139)",
+      flexShrink: 0,
+      alignSelf: "stretch"
+    }
+  }, "Lumenore's proprietary engine "))))))), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      display: "flex",
+      flexDirection: "row",
+      gap: 8,
+      justifyContent: "flex-end",
+      alignItems: "center",
+      flexWrap: "nowrap",
+      flexGrow: 1
+    }
+  }, /*#__PURE__*/React.createElement(DataCollaps, {
+    style: {
+      position: "relative",
+      flexShrink: 0
+    },
+    property1: "default"
+  }), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      width: 30,
+      height: 30,
+      flexShrink: 0
+    }
+  }, props.icon3 ?? /*#__PURE__*/React.createElement(SearchButtonContainer, {
+    property1: "default"
+  }))))));
+  const __body2 = () => /*#__PURE__*/React.createElement("div", {
+    className: props.className,
+    style: {
+      width: 817,
+      height: 160,
+      position: "relative",
+      ...props.style
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "absolute",
+      left: 0,
+      top: 0,
+      width: 817,
+      height: 160,
+      borderRadius: 8,
+      backgroundColor: "rgb(255,255,255)",
+      display: "flex",
+      flexDirection: "column",
+      padding: "10px 12px 10px 12px",
+      justifyContent: "space-between",
+      alignItems: "flex-start",
+      flexWrap: "nowrap",
+      boxSizing: "border-box"
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      height: 51,
+      display: "flex",
+      flexDirection: "column",
+      padding: "4px -63.969px 4px 0px",
+      alignItems: "flex-start",
+      flexWrap: "nowrap",
+      boxSizing: "border-box",
+      flexShrink: 0,
+      alignSelf: "stretch"
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      height: 48,
+      flexShrink: 0,
+      alignSelf: "stretch"
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "absolute",
+      left: 0,
+      top: 0,
+      width: 48,
+      height: 48
+    }
+  }, props.icon1 ?? /*#__PURE__*/React.createElement(Container, {
+    property1: "default"
+  })), /*#__PURE__*/React.createElement(Container2, {
+    style: {
+      position: "absolute",
+      left: 56,
+      top: 0,
+      width: 186,
+      height: 48
+    },
+    property1: "default"
+  }), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "absolute",
+      left: 250,
+      top: 0,
+      width: 48,
+      height: 48
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "absolute",
+      left: 0,
+      top: 0,
+      width: 48,
+      height: 48,
+      overflow: "hidden",
+      borderRadius: 10,
+      borderTop: "1px solid rgb(229,231,235)",
+      borderRight: "1px solid rgb(229,231,235)",
+      borderBottom: "1px solid rgb(229,231,235)",
+      borderLeft: "1px solid rgb(229,231,235)"
+    }
+  }), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "absolute",
+      left: 38,
+      top: -6,
+      width: 16,
+      height: 16,
+      borderRadius: 33554400,
+      backgroundColor: "rgb(226,232,240)",
+      display: "flex",
+      flexDirection: "row",
+      justifyContent: "center",
+      alignItems: "center",
+      flexWrap: "nowrap"
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      width: 8,
+      height: 8,
+      overflow: "hidden",
+      flexShrink: 0
+    }
+  }, /*#__PURE__*/React.createElement("svg", {
+    width: 4,
+    height: 4,
+    viewBox: "0 0 4 4",
+    fill: "none",
+    style: {
+      position: "absolute",
+      left: 2,
+      top: 2,
+      width: 4,
+      height: 4,
+      color: "rgb(71,85,105)"
+    }
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M 4 0 L 0 4 Z",
+    fill: "currentColor",
+    fillRule: "evenodd"
+  })), /*#__PURE__*/React.createElement("svg", {
+    width: 4,
+    height: 4,
+    viewBox: "0 0 4 4",
+    fill: "none",
+    style: {
+      position: "absolute",
+      left: 2,
+      top: 2,
+      width: 4,
+      height: 4,
+      color: "rgb(71,85,105)"
+    }
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M 0 0 L 4 4 Z",
+    fill: "currentColor",
+    fillRule: "evenodd"
+  }))))), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "absolute",
+      left: 306,
+      top: 0,
+      width: 186,
+      height: 48
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "absolute",
+      left: 0,
+      top: 0,
+      width: 186,
+      height: 48,
+      borderRadius: 14,
+      backgroundColor: "rgb(255,255,255)",
+      borderTop: "1px solid rgb(229,231,235)",
+      borderRight: "1px solid rgb(229,231,235)",
+      borderBottom: "1px solid rgb(229,231,235)",
+      borderLeft: "1px solid rgb(229,231,235)",
+      display: "flex",
+      flexDirection: "row",
+      gap: 8,
+      padding: "0px 10px 0px 8px",
+      alignItems: "center",
+      flexWrap: "nowrap",
+      boxSizing: "border-box"
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      width: 32,
+      height: 32,
+      borderRadius: 8,
+      backgroundColor: "rgb(0,201,80)",
+      display: "flex",
+      flexDirection: "row",
+      justifyContent: "center",
+      alignItems: "center",
+      flexWrap: "nowrap",
+      flexShrink: 0
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      width: 16,
+      height: 16,
+      overflow: "hidden",
+      flexShrink: 0
+    }
+  }, /*#__PURE__*/React.createElement("svg", {
+    width: 10.667,
+    height: 13.333,
+    viewBox: "0 0 10.667 13.333",
+    fill: "none",
+    style: {
+      position: "absolute",
+      left: 2.667,
+      top: 1.332,
+      width: 10.667,
+      height: 13.333,
+      color: "rgb(255,255,255)"
+    }
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M 7.333 0 L 1.333 0 C 0.98 0 0.641 0.14 0.391 0.391 C 0.14 0.641 0 0.98 0 1.333 L 0 12 C 0 12.354 0.14 12.693 0.391 12.943 C 0.641 13.193 0.98 13.333 1.333 13.333 L 9.333 13.333 C 9.687 13.333 10.026 13.193 10.276 12.943 C 10.526 12.693 10.667 12.354 10.667 12 L 10.667 3.333 L 7.333 0 Z",
+    fill: "currentColor",
+    fillRule: "evenodd"
+  })), /*#__PURE__*/React.createElement("svg", {
+    width: 4,
+    height: 4,
+    viewBox: "0 0 4 4",
+    fill: "none",
+    style: {
+      position: "absolute",
+      left: 9.333,
+      top: 1.332,
+      width: 4,
+      height: 4,
+      color: "rgb(255,255,255)"
+    }
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M 0 0 L 0 2.667 C 0 3.02 0.14 3.359 0.391 3.609 C 0.641 3.86 0.98 4 1.333 4 L 4 4 Z",
+    fill: "currentColor",
+    fillRule: "evenodd"
+  })), /*#__PURE__*/React.createElement("svg", {
+    width: 1.333,
+    height: 1.333,
+    viewBox: "0 -0.667 1.333 1.333",
+    fill: "none",
+    style: {
+      position: "absolute",
+      left: 5.333,
+      top: 8.668,
+      width: 1.333,
+      height: 1.3333333730697632,
+      color: "rgb(255,255,255)"
+    }
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M 0 0 L 1.333 0 Z",
+    fill: "currentColor",
+    fillRule: "evenodd"
+  })), /*#__PURE__*/React.createElement("svg", {
+    width: 1.333,
+    height: 1.333,
+    viewBox: "0 -0.667 1.333 1.333",
+    fill: "none",
+    style: {
+      position: "absolute",
+      left: 9.333,
+      top: 8.668,
+      width: 1.333,
+      height: 1.3333333730697632,
+      color: "rgb(255,255,255)"
+    }
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M 0 0 L 1.333 0 Z",
+    fill: "currentColor",
+    fillRule: "evenodd"
+  })), /*#__PURE__*/React.createElement("svg", {
+    width: 1.333,
+    height: 1.333,
+    viewBox: "0 -0.667 1.333 1.333",
+    fill: "none",
+    style: {
+      position: "absolute",
+      left: 5.333,
+      top: 11.332,
+      width: 1.333,
+      height: 1.3333333730697632,
+      color: "rgb(255,255,255)"
+    }
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M 0 0 L 1.333 0 Z",
+    fill: "currentColor",
+    fillRule: "evenodd"
+  })), /*#__PURE__*/React.createElement("svg", {
+    width: 1.333,
+    height: 1.333,
+    viewBox: "0 -0.667 1.333 1.333",
+    fill: "none",
+    style: {
+      position: "absolute",
+      left: 9.333,
+      top: 11.332,
+      width: 1.333,
+      height: 1.3333333730697632,
+      color: "rgb(255,255,255)"
+    }
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M 0 0 L 1.333 0 Z",
+    fill: "currentColor",
+    fillRule: "evenodd"
+  })))), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      height: 28.594,
+      display: "flex",
+      flexDirection: "column",
+      gap: 3,
+      alignItems: "flex-start",
+      flexWrap: "nowrap",
+      flexGrow: 1
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      width: 120,
+      overflow: "hidden",
+      display: "flex",
+      flexDirection: "row",
+      alignItems: "flex-start",
+      flexWrap: "nowrap",
+      flexGrow: 1
+    }
+  }, /*#__PURE__*/React.createElement("span", {
+    style: {
+      position: "relative",
+      fontFamily: "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+      fontWeight: 500,
+      fontSize: 10,
+      whiteSpace: "nowrap",
+      lineHeight: 1.340000033378601,
+      letterSpacing: "-0.020em",
+      color: "rgb(51,65,85)",
+      flexShrink: 0,
+      alignSelf: "stretch"
+    }
+  }, props.text1 ?? "Usability & Heuristic ...")), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      width: 120,
+      height: 13,
+      display: "flex",
+      flexDirection: "row",
+      alignItems: "flex-start",
+      flexWrap: "nowrap",
+      flexShrink: 0
+    }
+  }, /*#__PURE__*/React.createElement("span", {
+    style: {
+      position: "relative",
+      fontFamily: "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+      fontWeight: 400,
+      fontSize: 12,
+      whiteSpace: "nowrap",
+      lineHeight: 1.2999999523162842,
+      letterSpacing: "-0.020em",
+      color: "rgb(100,116,139)",
+      flexShrink: 0
+    }
+  }, props.text2 ?? "Spreadsheet")))), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "absolute",
+      left: 176,
+      top: -6,
+      width: 16,
+      height: 16,
+      borderRadius: 33554400,
+      backgroundColor: "rgb(226,232,240)",
+      display: "flex",
+      flexDirection: "row",
+      justifyContent: "center",
+      alignItems: "center",
+      flexWrap: "nowrap"
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      width: 8,
+      height: 8,
+      overflow: "hidden",
+      flexShrink: 0
+    }
+  }, /*#__PURE__*/React.createElement("svg", {
+    width: 4,
+    height: 4,
+    viewBox: "0 0 4 4",
+    fill: "none",
+    style: {
+      position: "absolute",
+      left: 2,
+      top: 2,
+      width: 4,
+      height: 4,
+      color: "rgb(71,85,105)"
+    }
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M 4 0 L 0 4 Z",
+    fill: "currentColor",
+    fillRule: "evenodd"
+  })), /*#__PURE__*/React.createElement("svg", {
+    width: 4,
+    height: 4,
+    viewBox: "0 0 4 4",
+    fill: "none",
+    style: {
+      position: "absolute",
+      left: 2,
+      top: 2,
+      width: 4,
+      height: 4,
+      color: "rgb(71,85,105)"
+    }
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M 0 0 L 4 4 Z",
+    fill: "currentColor",
+    fillRule: "evenodd"
+  }))))), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "absolute",
+      left: 500,
+      top: 0,
+      width: 161.969,
+      height: 48
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "absolute",
+      left: 0,
+      top: 0,
+      width: 161.969,
+      height: 48,
+      borderRadius: 14,
+      backgroundColor: "rgb(255,255,255)",
+      borderTop: "1px solid rgb(229,231,235)",
+      borderRight: "1px solid rgb(229,231,235)",
+      borderBottom: "1px solid rgb(229,231,235)",
+      borderLeft: "1px solid rgb(229,231,235)",
+      display: "flex",
+      flexDirection: "row",
+      gap: 8,
+      padding: "0px 10px 0px 8px",
+      alignItems: "center",
+      flexWrap: "nowrap",
+      boxSizing: "border-box"
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      width: 32,
+      height: 32,
+      borderRadius: 8,
+      backgroundColor: "rgb(251,44,54)",
+      display: "flex",
+      flexDirection: "row",
+      justifyContent: "center",
+      alignItems: "center",
+      flexWrap: "nowrap",
+      flexShrink: 0
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      width: 16,
+      height: 16,
+      overflow: "hidden",
+      flexShrink: 0
+    }
+  }, /*#__PURE__*/React.createElement("svg", {
+    width: 10.667,
+    height: 13.333,
+    viewBox: "0 0 10.667 13.333",
+    fill: "none",
+    style: {
+      position: "absolute",
+      left: 2.667,
+      top: 1.332,
+      width: 10.667,
+      height: 13.333,
+      color: "rgb(255,255,255)"
+    }
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M 7.333 0 L 1.333 0 C 0.98 0 0.641 0.14 0.391 0.391 C 0.14 0.641 0 0.98 0 1.333 L 0 12 C 0 12.354 0.14 12.693 0.391 12.943 C 0.641 13.193 0.98 13.333 1.333 13.333 L 9.333 13.333 C 9.687 13.333 10.026 13.193 10.276 12.943 C 10.526 12.693 10.667 12.354 10.667 12 L 10.667 3.333 L 7.333 0 Z",
+    fill: "currentColor",
+    fillRule: "evenodd"
+  })), /*#__PURE__*/React.createElement("svg", {
+    width: 4,
+    height: 4,
+    viewBox: "0 0 4 4",
+    fill: "none",
+    style: {
+      position: "absolute",
+      left: 9.333,
+      top: 1.332,
+      width: 4,
+      height: 4,
+      color: "rgb(255,255,255)"
+    }
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M 0 0 L 0 2.667 C 0 3.02 0.14 3.359 0.391 3.609 C 0.641 3.86 0.98 4 1.333 4 L 4 4 Z",
+    fill: "currentColor",
+    fillRule: "evenodd"
+  })), /*#__PURE__*/React.createElement("svg", {
+    width: 1.333,
+    height: 1.333,
+    viewBox: "0 -0.667 1.333 1.333",
+    fill: "none",
+    style: {
+      position: "absolute",
+      left: 5.333,
+      top: 6,
+      width: 1.333,
+      height: 1.3333333730697632,
+      color: "rgb(255,255,255)"
+    }
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M 1.333 0 L 0 0 Z",
+    fill: "currentColor",
+    fillRule: "evenodd"
+  })), /*#__PURE__*/React.createElement("svg", {
+    width: 5.333,
+    height: 1.333,
+    viewBox: "0 -0.667 5.333 1.333",
+    fill: "none",
+    style: {
+      position: "absolute",
+      left: 5.333,
+      top: 8.668,
+      width: 5.333,
+      height: 1.3333333730697632,
+      color: "rgb(255,255,255)"
+    }
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M 5.333 0 L 0 0 Z",
+    fill: "currentColor",
+    fillRule: "evenodd"
+  })), /*#__PURE__*/React.createElement("svg", {
+    width: 5.333,
+    height: 1.333,
+    viewBox: "0 -0.667 5.333 1.333",
+    fill: "none",
+    style: {
+      position: "absolute",
+      left: 5.333,
+      top: 11.332,
+      width: 5.333,
+      height: 1.3333333730697632,
+      color: "rgb(255,255,255)"
+    }
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M 5.333 0 L 0 0 Z",
+    fill: "currentColor",
+    fillRule: "evenodd"
+  })))), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      height: 28.594,
+      display: "flex",
+      flexDirection: "column",
+      gap: 3,
+      alignItems: "flex-start",
+      flexWrap: "nowrap",
+      flexGrow: 1
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      width: 95.969,
+      overflow: "hidden",
+      display: "flex",
+      flexDirection: "row",
+      alignItems: "flex-start",
+      flexWrap: "nowrap",
+      flexGrow: 1
+    }
+  }, /*#__PURE__*/React.createElement("span", {
+    style: {
+      position: "relative",
+      fontFamily: "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+      fontWeight: 500,
+      fontSize: 10,
+      whiteSpace: "nowrap",
+      lineHeight: 1.340000033378601,
+      letterSpacing: "-0.020em",
+      color: "rgb(51,65,85)",
+      flexShrink: 0,
+      alignSelf: "stretch"
+    }
+  }, props.text3 ?? "project-brief.pdf")), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      width: 95.969,
+      height: 13,
+      display: "flex",
+      flexDirection: "row",
+      alignItems: "flex-start",
+      flexWrap: "nowrap",
+      flexShrink: 0
+    }
+  }, /*#__PURE__*/React.createElement("span", {
+    style: {
+      position: "relative",
+      fontFamily: "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+      fontWeight: 400,
+      fontSize: 12,
+      whiteSpace: "nowrap",
+      lineHeight: 1.2999999523162842,
+      letterSpacing: "-0.020em",
+      color: "rgb(100,116,139)",
+      flexShrink: 0
+    }
+  }, props.text4 ?? "PDF Document")))), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "absolute",
+      left: 151.969,
+      top: -6,
+      width: 16,
+      height: 16,
+      borderRadius: 33554400,
+      backgroundColor: "rgb(226,232,240)",
+      display: "flex",
+      flexDirection: "row",
+      justifyContent: "center",
+      alignItems: "center",
+      flexWrap: "nowrap"
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      width: 8,
+      height: 8,
+      overflow: "hidden",
+      flexShrink: 0
+    }
+  }, /*#__PURE__*/React.createElement("svg", {
+    width: 4,
+    height: 4,
+    viewBox: "0 0 4 4",
+    fill: "none",
+    style: {
+      position: "absolute",
+      left: 2,
+      top: 2,
+      width: 4,
+      height: 4,
+      color: "rgb(71,85,105)"
+    }
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M 4 0 L 0 4 Z",
+    fill: "currentColor",
+    fillRule: "evenodd"
+  })), /*#__PURE__*/React.createElement("svg", {
+    width: 4,
+    height: 4,
+    viewBox: "0 0 4 4",
+    fill: "none",
+    style: {
+      position: "absolute",
+      left: 2,
+      top: 2,
+      width: 4,
+      height: 4,
+      color: "rgb(71,85,105)"
+    }
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M 0 0 L 4 4 Z",
+    fill: "currentColor",
+    fillRule: "evenodd"
+  }))))), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "absolute",
+      left: 669.969,
+      top: 0,
+      width: 48,
+      height: 48
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "absolute",
+      left: 0,
+      top: 0,
+      width: 48,
+      height: 48,
+      overflow: "hidden",
+      borderRadius: 14,
+      borderTop: "1px solid rgb(229,231,235)",
+      borderRight: "1px solid rgb(229,231,235)",
+      borderBottom: "1px solid rgb(229,231,235)",
+      borderLeft: "1px solid rgb(229,231,235)"
+    }
+  }, /*#__PURE__*/React.createElement("svg", {
+    width: 46,
+    height: 46,
+    viewBox: "0 0 46 46",
+    fill: "none",
+    style: {
+      position: "absolute",
+      left: 1,
+      top: 1,
+      width: 46,
+      height: 46,
+      color: "rgb(0,0,0)"
+    }
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M 15.333 23 L 11.5 23 C 9.386 23 7.667 24.719 7.667 26.833 L 7.667 30.667 C 7.667 32.781 9.386 34.5 11.5 34.5 L 15.333 34.5 C 17.447 34.5 19.167 32.781 19.167 30.667 L 19.167 26.833 C 19.167 24.719 17.447 23 15.333 23 Z M 11.5 30.667 L 11.5 26.833 L 15.333 26.833 L 15.333 30.667 L 11.5 30.667 Z M 36.417 3.833 L 34.5 3.833 L 34.5 1.917 C 34.5 0.859 33.643 0 32.583 0 C 31.523 0 30.667 0.859 30.667 1.917 L 30.667 3.833 L 15.333 3.833 L 15.333 1.917 C 15.333 0.859 14.477 0 13.417 0 C 12.357 0 11.5 0.859 11.5 1.917 L 11.5 3.833 L 9.583 3.833 C 4.299 3.833 0 8.132 0 13.417 L 0 36.417 C 0 41.701 4.299 46 9.583 46 L 36.417 46 C 41.701 46 46 41.701 46 36.417 L 46 13.417 C 46 8.132 41.701 3.833 36.417 3.833 Z M 9.583 7.667 L 36.417 7.667 C 39.587 7.667 42.167 10.246 42.167 13.417 L 42.167 15.333 L 3.833 15.333 L 3.833 13.417 C 3.833 10.246 6.413 7.667 9.583 7.667 Z M 36.417 42.167 L 9.583 42.167 C 6.413 42.167 3.833 39.587 3.833 36.417 L 3.833 19.167 L 42.167 19.167 L 42.167 36.417 C 42.167 39.587 39.587 42.167 36.417 42.167 Z",
+    fill: "currentColor",
+    fillRule: "evenodd"
+  }))), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "absolute",
+      left: 38,
+      top: -6,
+      width: 16,
+      height: 16,
+      borderRadius: 33554400,
+      backgroundColor: "rgb(226,232,240)",
+      display: "flex",
+      flexDirection: "row",
+      justifyContent: "center",
+      alignItems: "center",
+      flexWrap: "nowrap"
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      width: 8,
+      height: 8,
+      overflow: "hidden",
+      flexShrink: 0
+    }
+  }, /*#__PURE__*/React.createElement("svg", {
+    width: 4,
+    height: 4,
+    viewBox: "0 0 4 4",
+    fill: "none",
+    style: {
+      position: "absolute",
+      left: 2,
+      top: 2,
+      width: 4,
+      height: 4,
+      color: "rgb(71,85,105)"
+    }
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M 4 0 L 0 4 Z",
+    fill: "currentColor",
+    fillRule: "evenodd"
+  })), /*#__PURE__*/React.createElement("svg", {
+    width: 4,
+    height: 4,
+    viewBox: "0 0 4 4",
+    fill: "none",
+    style: {
+      position: "absolute",
+      left: 2,
+      top: 2,
+      width: 4,
+      height: 4,
+      color: "rgb(71,85,105)"
+    }
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M 0 0 L 4 4 Z",
+    fill: "currentColor",
+    fillRule: "evenodd"
+  }))))))), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      display: "flex",
+      flexDirection: "row",
+      gap: 10,
+      alignItems: "center",
+      flexWrap: "nowrap",
+      flexShrink: 0,
+      alignSelf: "stretch"
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      display: "flex",
+      flexDirection: "row",
+      gap: 10,
+      alignItems: "center",
+      flexWrap: "nowrap",
+      flexGrow: 1
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      display: "flex",
+      flexDirection: "row",
+      gap: 10,
+      alignItems: "center",
+      flexWrap: "nowrap",
+      flexShrink: 0
+    }
+  }, /*#__PURE__*/React.createElement("span", {
+    style: {
+      position: "relative",
+      fontFamily: "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+      fontWeight: 500,
+      fontSize: 12,
+      whiteSpace: "nowrap",
+      lineHeight: 1.2999999523162842,
+      letterSpacing: "-0.020em",
+      color: "rgb(71,85,105)",
+      flexShrink: 0
+    }
+  }, "Why were sales low in Q4 2024 in Brazil?")))), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      display: "flex",
+      flexDirection: "row",
+      gap: 6,
+      alignItems: "center",
+      flexWrap: "nowrap",
+      flexShrink: 0,
+      alignSelf: "stretch"
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      width: 32,
+      height: 32,
+      overflow: "hidden",
+      borderRadius: 200,
+      backgroundColor: "rgb(248,250,252)",
+      display: "flex",
+      flexDirection: "row",
+      gap: 10,
+      alignItems: "center",
+      flexWrap: "nowrap",
+      flexShrink: 0
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      overflow: "hidden",
+      borderRadius: 104,
+      display: "flex",
+      flexDirection: "row",
+      gap: 4,
+      padding: "4px 4px 4px 4px",
+      justifyContent: "center",
+      alignItems: "center",
+      flexWrap: "nowrap",
+      boxSizing: "border-box",
+      flexGrow: 1,
+      alignSelf: "stretch"
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      width: 16,
+      height: 16,
+      flexShrink: 0
+    }
+  }, /*#__PURE__*/React.createElement("svg", {
+    width: 8,
+    height: 8,
+    viewBox: "0 0 8 8",
+    fill: "none",
+    style: {
+      position: "absolute",
+      left: 4,
+      top: 4.333,
+      width: 8,
+      height: 8,
+      color: "rgb(71,85,105)"
+    }
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M 3.429 4.571 L 0 4.571 L 0 3.429 L 3.429 3.429 L 3.429 0 L 4.571 0 L 4.571 3.429 L 8 3.429 L 8 4.571 L 4.571 4.571 L 4.571 8 L 3.429 8 L 3.429 4.571 Z",
+    fill: "currentColor",
+    fillRule: "nonzero"
+  }))), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      width: 42,
+      display: "flex",
+      flexDirection: "row",
+      gap: 10,
+      alignItems: "center",
+      flexWrap: "nowrap",
+      flexShrink: 0
+    }
+  }, /*#__PURE__*/React.createElement("span", {
+    style: {
+      position: "relative",
+      fontFamily: "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+      fontWeight: 400,
+      fontSize: 12,
+      whiteSpace: "nowrap",
+      lineHeight: 1.2999999523162842,
+      letterSpacing: "-0.020em",
+      color: "rgb(71,85,105)",
+      flexShrink: 0
+    }
+  }, "Button")), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      width: 16,
+      height: 16,
+      flexShrink: 0
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "absolute",
+      left: 0,
+      top: 0,
+      width: 16,
+      height: 16
+    }
+  }, /*#__PURE__*/React.createElement("svg", {
+    width: 10.667,
+    height: 12,
+    viewBox: "0 0 10.667 12",
+    fill: "none",
+    style: {
+      position: "absolute",
+      left: 2.667,
+      top: 2,
+      width: 10.667,
+      height: 12,
+      color: "rgb(71,85,105)"
+    }
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M 4.741 10.455 L 4.741 6.345 L 1.185 4.26 L 1.185 8.37 L 4.741 10.455 Z M 5.926 10.455 L 9.481 8.37 L 9.481 4.26 L 5.926 6.345 L 5.926 10.455 Z M 5.333 5.31 L 8.844 3.255 L 5.333 1.2 L 1.822 3.255 L 5.333 5.31 Z M 0.593 9.42 C 0.405 9.31 0.259 9.165 0.156 8.985 C 0.052 8.805 0 8.605 0 8.385 L 0 3.615 C 0 3.395 0.052 3.195 0.156 3.015 C 0.259 2.835 0.405 2.69 0.593 2.58 L 4.741 0.165 C 4.928 0.055 5.126 0 5.333 0 C 5.541 0 5.738 0.055 5.926 0.165 L 10.074 2.58 C 10.262 2.69 10.407 2.835 10.511 3.015 C 10.615 3.195 10.667 3.395 10.667 3.615 L 10.667 8.385 C 10.667 8.605 10.615 8.805 10.511 8.985 C 10.407 9.165 10.262 9.31 10.074 9.42 L 5.926 11.835 C 5.738 11.945 5.541 12 5.333 12 C 5.126 12 4.928 11.945 4.741 11.835 L 0.593 9.42 Z",
+    fill: "currentColor",
+    fillRule: "nonzero"
+  }))))), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "absolute",
+      left: 0,
+      top: -100,
+      borderRadius: 5,
+      backgroundColor: "rgb(255,255,255)",
+      boxShadow: "0px 0px 8px 0px rgba(0,0,0,0.12)",
+      display: "flex",
+      flexDirection: "column",
+      gap: 2,
+      padding: "4px 0px 4px 0px",
+      justifyContent: "flex-end",
+      alignItems: "flex-start",
+      flexWrap: "nowrap",
+      boxSizing: "border-box"
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      overflow: "hidden",
+      display: "flex",
+      flexDirection: "column",
+      gap: 12,
+      padding: "5px 8px 5px 8px",
+      justifyContent: "center",
+      alignItems: "flex-start",
+      flexWrap: "nowrap",
+      boxSizing: "border-box",
+      flexShrink: 0,
+      alignSelf: "stretch"
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      display: "flex",
+      flexDirection: "row",
+      gap: 10,
+      alignItems: "center",
+      flexWrap: "nowrap",
+      flexShrink: 0,
+      alignSelf: "stretch"
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      display: "flex",
+      flexDirection: "row",
+      gap: 8,
+      alignItems: "center",
+      flexWrap: "nowrap",
+      flexGrow: 1
+    }
+  }, /*#__PURE__*/React.createElement(AgentIcon, {
+    style: {
+      position: "relative",
+      width: 18,
+      height: 18,
+      flexShrink: 0
+    },
+    property1: "master agent"
+  }), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      height: 16,
+      display: "flex",
+      flexDirection: "column",
+      gap: 2,
+      justifyContent: "center",
+      alignItems: "flex-start",
+      flexWrap: "nowrap",
+      flexGrow: 1
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      height: 16,
+      display: "flex",
+      flexDirection: "row",
+      gap: 10,
+      alignItems: "flex-start",
+      flexWrap: "nowrap",
+      flexShrink: 0,
+      alignSelf: "stretch"
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      display: "flex",
+      flexDirection: "row",
+      gap: 10,
+      justifyContent: "center",
+      alignItems: "center",
+      flexWrap: "nowrap",
+      flexGrow: 1,
+      alignSelf: "stretch"
+    }
+  }, /*#__PURE__*/React.createElement("span", {
+    style: {
+      position: "relative",
+      fontFamily: "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+      fontWeight: 400,
+      fontSize: 12,
+      lineHeight: 1.2999999523162842,
+      letterSpacing: "-0.020em",
+      color: "rgb(51,65,85)",
+      flexGrow: 1,
+      alignSelf: "stretch"
+    }
+  }, "MCP Agents")), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      width: 16,
+      overflow: "hidden",
+      flexShrink: 0,
+      alignSelf: "stretch"
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "absolute",
+      left: 0,
+      top: 0,
+      width: 16,
+      height: 16
+    }
+  }, /*#__PURE__*/React.createElement("svg", {
+    width: 4.933,
+    height: 8,
+    viewBox: "0 0 4.933 8",
+    fill: "none",
+    style: {
+      position: "absolute",
+      left: 5.333,
+      top: 4,
+      width: 4.933,
+      height: 8,
+      color: "rgb(71,85,105)"
+    }
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M 3.067 4 L 0 0.933 L 0.933 0 L 4.933 4 L 0.933 8 L 0 7.067 L 3.067 4 Z",
+    fill: "currentColor",
+    fillRule: "nonzero"
+  }))))), /*#__PURE__*/React.createElement("span", {
+    style: {
+      position: "relative",
+      fontFamily: "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+      fontWeight: 500,
+      fontSize: 10,
+      whiteSpace: "nowrap",
+      lineHeight: 1.340000033378601,
+      letterSpacing: "-0.020em",
+      color: "rgb(100,116,139)",
+      flexShrink: 0,
+      alignSelf: "stretch"
+    }
+  }, "Lumenore's proprietary engine "))))), /*#__PURE__*/React.createElement(DropdownOptions, {
+    style: {
+      position: "relative",
+      width: 155,
+      height: 28,
+      flexShrink: 0
+    },
+    title: "Connect Connection",
+    icon1: /*#__PURE__*/React.createElement(IconPack5, {
+      style: {
+        transform: "scale(0.750, 0.750)",
+        transformOrigin: "0 0"
+      }
+    }),
+    property1: "default"
+  }), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      overflow: "hidden",
+      display: "flex",
+      flexDirection: "column",
+      gap: 12,
+      padding: "5px 8px 5px 8px",
+      justifyContent: "center",
+      alignItems: "flex-start",
+      flexWrap: "nowrap",
+      boxSizing: "border-box",
+      flexShrink: 0,
+      alignSelf: "stretch"
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      display: "flex",
+      flexDirection: "row",
+      gap: 10,
+      alignItems: "center",
+      flexWrap: "nowrap",
+      flexShrink: 0,
+      alignSelf: "stretch"
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      display: "flex",
+      flexDirection: "row",
+      gap: 8,
+      alignItems: "center",
+      flexWrap: "nowrap",
+      flexShrink: 0
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      width: 18,
+      height: 18,
+      overflow: "hidden",
+      borderRadius: 2,
+      backgroundColor: "rgb(237,233,254)",
+      flexShrink: 0
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "absolute",
+      left: 0,
+      top: 0,
+      width: 18,
+      height: 18
+    }
+  }, /*#__PURE__*/React.createElement(Attachment, {
+    style: {
+      transform: "scale(0.750, 0.750)",
+      transformOrigin: "0 0"
+    }
+  }))), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      height: 16,
+      display: "flex",
+      flexDirection: "column",
+      gap: 2,
+      justifyContent: "center",
+      alignItems: "flex-start",
+      flexWrap: "nowrap",
+      flexShrink: 0
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      height: 16,
+      display: "flex",
+      flexDirection: "row",
+      gap: 10,
+      alignItems: "flex-start",
+      flexWrap: "nowrap",
+      flexShrink: 0
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      display: "flex",
+      flexDirection: "row",
+      gap: 10,
+      justifyContent: "center",
+      alignItems: "center",
+      flexWrap: "nowrap",
+      flexShrink: 0,
+      alignSelf: "stretch"
+    }
+  }, /*#__PURE__*/React.createElement("span", {
+    style: {
+      position: "relative",
+      fontFamily: "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+      fontWeight: 400,
+      fontSize: 12,
+      whiteSpace: "nowrap",
+      lineHeight: 1.2999999523162842,
+      letterSpacing: "-0.020em",
+      color: "rgb(51,65,85)",
+      flexShrink: 0,
+      alignSelf: "stretch"
+    }
+  }, "Upload Attachment"))), /*#__PURE__*/React.createElement("span", {
+    style: {
+      position: "relative",
+      fontFamily: "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+      fontWeight: 500,
+      fontSize: 10,
+      whiteSpace: "nowrap",
+      lineHeight: 1.340000033378601,
+      letterSpacing: "-0.020em",
+      color: "rgb(100,116,139)",
+      flexShrink: 0,
+      alignSelf: "stretch"
+    }
+  }, "Lumenore's proprietary engine "))))))), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      height: 32,
+      overflow: "hidden",
+      borderRadius: 50,
+      backgroundColor: "rgb(248,250,252)",
+      display: "flex",
+      flexDirection: "row",
+      gap: 10,
+      justifyContent: "center",
+      alignItems: "center",
+      flexWrap: "nowrap",
+      flexShrink: 0
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      width: 84,
+      overflow: "hidden",
+      borderRadius: 4,
+      display: "flex",
+      flexDirection: "row",
+      gap: 4,
+      padding: "4px 4px 4px 4px",
+      justifyContent: "center",
+      alignItems: "center",
+      flexWrap: "nowrap",
+      boxSizing: "border-box",
+      flexShrink: 0,
+      alignSelf: "stretch"
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      width: 16,
+      height: 16,
+      overflow: "hidden",
+      flexShrink: 0
+    }
+  }, /*#__PURE__*/React.createElement("svg", {
+    width: 11.997,
+    height: 12,
+    viewBox: "0 0 11.997 12",
+    fill: "none",
+    style: {
+      position: "absolute",
+      left: 2.001,
+      top: 2,
+      width: 11.997,
+      height: 12,
+      color: "rgb(71,85,105)"
+    }
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M 8.987 6.512 C 8.427 5.954 7.58 5.853 6.917 6.209 L 4.501 3.793 L 4.501 2.25 C 4.501 1.743 4.228 1.272 3.79 1.019 L 2.299 0.159 C 1.834 -0.11 1.243 -0.031 0.862 0.349 L 0.35 0.862 C -0.031 1.242 -0.108 1.833 0.16 2.298 L 1.02 3.789 C 1.273 4.228 1.745 4.5 2.251 4.5 L 3.794 4.5 L 6.207 6.913 C 6.068 7.167 5.994 7.453 5.994 7.75 C 5.994 8.218 6.176 8.657 6.508 8.988 L 9.015 11.488 C 9.344 11.816 9.792 12 10.255 12 C 10.747 12 11.298 11.74 11.613 11.356 C 12.176 10.67 12.101 9.618 11.443 8.962 L 8.987 6.512 Z M 1.886 3.29 L 1.026 1.799 C 0.983 1.725 0.996 1.63 1.057 1.569 L 1.569 1.056 C 1.63 0.996 1.725 0.983 1.799 1.026 L 3.289 1.886 C 3.419 1.961 3.5 2.101 3.5 2.25 L 3.5 3.5 L 2.25 3.5 C 2.1 3.5 1.961 3.42 1.886 3.29 Z M 10.841 10.721 C 10.703 10.89 10.508 10.988 10.292 10.999 C 10.082 11.009 9.872 10.93 9.721 10.78 L 7.214 8.28 C 7.072 8.139 6.994 7.951 6.994 7.75 C 6.994 7.55 7.073 7.362 7.214 7.22 C 7.361 7.074 7.555 7 7.748 7 C 7.941 7 8.134 7.074 8.281 7.22 L 10.738 9.67 C 11.035 9.967 11.08 10.429 10.841 10.721 Z M 5.216 8.55 C 5.411 8.746 5.41 9.062 5.215 9.257 L 2.976 11.488 C 2.647 11.816 2.2 12 1.736 12 C 1.296 12 0.692 11.739 0.377 11.355 C -0.185 10.669 -0.111 9.618 0.548 8.962 L 3.382 6.134 C 3.577 5.939 3.894 5.939 4.089 6.135 C 4.284 6.331 4.284 6.647 4.088 6.842 L 1.254 9.67 C 0.956 9.967 0.91 10.429 1.15 10.721 C 1.288 10.89 1.483 10.988 1.699 10.999 C 1.912 11.009 2.119 10.93 2.27 10.78 L 4.509 8.549 C 4.704 8.354 5.02 8.354 5.216 8.55 L 5.216 8.55 Z M 4.944 2.317 C 5.404 1.146 6.456 0.28 7.689 0.059 C 8.121 -0.018 8.554 -0.02 8.979 0.056 C 9.312 0.115 9.58 0.35 9.68 0.668 C 9.794 1.032 9.68 1.433 9.374 1.74 L 8.206 2.861 C 7.964 3.104 7.924 3.492 8.124 3.736 C 8.239 3.876 8.4 3.958 8.579 3.968 C 8.754 3.976 8.926 3.912 9.053 3.785 L 10.36 2.525 C 10.603 2.282 10.966 2.191 11.306 2.3 C 11.638 2.404 11.881 2.681 11.942 3.02 C 12.017 3.444 12.016 3.879 11.939 4.311 C 11.798 5.097 11.389 5.829 10.786 6.372 C 10.691 6.458 10.571 6.501 10.452 6.501 C 10.315 6.501 10.179 6.445 10.08 6.336 C 9.895 6.131 9.912 5.814 10.117 5.629 C 10.555 5.234 10.853 4.703 10.954 4.135 C 11.003 3.861 11.01 3.588 10.976 3.319 L 9.754 4.499 C 9.436 4.817 8.989 4.991 8.53 4.967 C 8.072 4.944 7.642 4.726 7.35 4.369 C 6.829 3.732 6.898 2.756 7.507 2.148 L 8.674 1.027 L 8.678 1.022 C 8.411 0.988 8.138 0.995 7.866 1.044 C 6.972 1.204 6.209 1.833 5.875 2.684 C 5.774 2.941 5.484 3.067 5.227 2.966 C 4.97 2.865 4.843 2.575 4.944 2.318 L 4.944 2.317 Z",
+    fill: "currentColor",
+    fillRule: "nonzero"
+  }))), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      width: 30,
+      display: "flex",
+      flexDirection: "row",
+      gap: 10,
+      alignItems: "center",
+      flexWrap: "nowrap",
+      flexShrink: 0
+    }
+  }, /*#__PURE__*/React.createElement("span", {
+    style: {
+      position: "relative",
+      fontFamily: "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+      fontWeight: 400,
+      fontSize: 12,
+      whiteSpace: "nowrap",
+      lineHeight: 1.2999999523162842,
+      letterSpacing: "-0.020em",
+      color: "rgb(71,85,105)",
+      flexShrink: 0
+    }
+  }, "Tools")), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      width: 16,
+      height: 16,
+      flexShrink: 0
+    }
+  }, /*#__PURE__*/React.createElement(DownArrow2, {
+    style: {
+      transform: "scale(0.667, 0.667)",
+      transformOrigin: "0 0"
+    }
+  }))), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "absolute",
+      left: 0,
+      top: -100,
+      borderRadius: 5,
+      backgroundColor: "rgb(255,255,255)",
+      boxShadow: "0px 0px 8px 0px rgba(0,0,0,0.12)",
+      display: "flex",
+      flexDirection: "column",
+      gap: 2,
+      padding: "4px 0px 4px 0px",
+      justifyContent: "flex-end",
+      alignItems: "flex-start",
+      flexWrap: "nowrap",
+      boxSizing: "border-box"
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      overflow: "hidden",
+      display: "flex",
+      flexDirection: "column",
+      gap: 12,
+      padding: "5px 8px 5px 8px",
+      justifyContent: "center",
+      alignItems: "flex-start",
+      flexWrap: "nowrap",
+      boxSizing: "border-box",
+      flexShrink: 0,
+      alignSelf: "stretch"
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      display: "flex",
+      flexDirection: "row",
+      gap: 10,
+      alignItems: "center",
+      flexWrap: "nowrap",
+      flexShrink: 0,
+      alignSelf: "stretch"
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      display: "flex",
+      flexDirection: "row",
+      gap: 8,
+      alignItems: "center",
+      flexWrap: "nowrap",
+      flexGrow: 1
+    }
+  }, /*#__PURE__*/React.createElement(AgentIcon, {
+    style: {
+      position: "relative",
+      width: 18,
+      height: 18,
+      flexShrink: 0
+    },
+    property1: "master agent"
+  }), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      height: 16,
+      display: "flex",
+      flexDirection: "column",
+      gap: 2,
+      justifyContent: "center",
+      alignItems: "flex-start",
+      flexWrap: "nowrap",
+      flexGrow: 1
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      height: 16,
+      display: "flex",
+      flexDirection: "row",
+      gap: 10,
+      alignItems: "flex-start",
+      flexWrap: "nowrap",
+      flexShrink: 0,
+      alignSelf: "stretch"
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      display: "flex",
+      flexDirection: "row",
+      gap: 10,
+      justifyContent: "center",
+      alignItems: "center",
+      flexWrap: "nowrap",
+      flexGrow: 1,
+      alignSelf: "stretch"
+    }
+  }, /*#__PURE__*/React.createElement("span", {
+    style: {
+      position: "relative",
+      fontFamily: "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+      fontWeight: 400,
+      fontSize: 12,
+      lineHeight: 1.2999999523162842,
+      letterSpacing: "-0.020em",
+      color: "rgb(51,65,85)",
+      flexGrow: 1,
+      alignSelf: "stretch"
+    }
+  }, "MCP Agents")), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      width: 16,
+      overflow: "hidden",
+      flexShrink: 0,
+      alignSelf: "stretch"
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "absolute",
+      left: 0,
+      top: 0,
+      width: 16,
+      height: 16
+    }
+  }, /*#__PURE__*/React.createElement("svg", {
+    width: 4.933,
+    height: 8,
+    viewBox: "0 0 4.933 8",
+    fill: "none",
+    style: {
+      position: "absolute",
+      left: 5.333,
+      top: 4,
+      width: 4.933,
+      height: 8,
+      color: "rgb(71,85,105)"
+    }
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M 3.067 4 L 0 0.933 L 0.933 0 L 4.933 4 L 0.933 8 L 0 7.067 L 3.067 4 Z",
+    fill: "currentColor",
+    fillRule: "nonzero"
+  }))))), /*#__PURE__*/React.createElement("span", {
+    style: {
+      position: "relative",
+      fontFamily: "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+      fontWeight: 500,
+      fontSize: 10,
+      whiteSpace: "nowrap",
+      lineHeight: 1.340000033378601,
+      letterSpacing: "-0.020em",
+      color: "rgb(100,116,139)",
+      flexShrink: 0,
+      alignSelf: "stretch"
+    }
+  }, "Lumenore's proprietary engine "))))), /*#__PURE__*/React.createElement(DropdownOptions, {
+    style: {
+      position: "relative",
+      width: 155,
+      height: 28,
+      flexShrink: 0
+    },
+    title: "Connect Connection",
+    icon1: /*#__PURE__*/React.createElement(IconPack5, {
+      style: {
+        transform: "scale(0.750, 0.750)",
+        transformOrigin: "0 0"
+      }
+    }),
+    property1: "default"
+  }), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      overflow: "hidden",
+      display: "flex",
+      flexDirection: "column",
+      gap: 12,
+      padding: "5px 8px 5px 8px",
+      justifyContent: "center",
+      alignItems: "flex-start",
+      flexWrap: "nowrap",
+      boxSizing: "border-box",
+      flexShrink: 0,
+      alignSelf: "stretch"
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      display: "flex",
+      flexDirection: "row",
+      gap: 10,
+      alignItems: "center",
+      flexWrap: "nowrap",
+      flexShrink: 0,
+      alignSelf: "stretch"
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      display: "flex",
+      flexDirection: "row",
+      gap: 8,
+      alignItems: "center",
+      flexWrap: "nowrap",
+      flexShrink: 0
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      width: 18,
+      height: 18,
+      overflow: "hidden",
+      borderRadius: 2,
+      backgroundColor: "rgb(237,233,254)",
+      flexShrink: 0
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "absolute",
+      left: 0,
+      top: 0,
+      width: 18,
+      height: 18
+    }
+  }, /*#__PURE__*/React.createElement(Attachment, {
+    style: {
+      transform: "scale(0.750, 0.750)",
+      transformOrigin: "0 0"
+    }
+  }))), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      height: 16,
+      display: "flex",
+      flexDirection: "column",
+      gap: 2,
+      justifyContent: "center",
+      alignItems: "flex-start",
+      flexWrap: "nowrap",
+      flexShrink: 0
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      height: 16,
+      display: "flex",
+      flexDirection: "row",
+      gap: 10,
+      alignItems: "flex-start",
+      flexWrap: "nowrap",
+      flexShrink: 0
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      display: "flex",
+      flexDirection: "row",
+      gap: 10,
+      justifyContent: "center",
+      alignItems: "center",
+      flexWrap: "nowrap",
+      flexShrink: 0,
+      alignSelf: "stretch"
+    }
+  }, /*#__PURE__*/React.createElement("span", {
+    style: {
+      position: "relative",
+      fontFamily: "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+      fontWeight: 400,
+      fontSize: 12,
+      whiteSpace: "nowrap",
+      lineHeight: 1.2999999523162842,
+      letterSpacing: "-0.020em",
+      color: "rgb(51,65,85)",
+      flexShrink: 0,
+      alignSelf: "stretch"
+    }
+  }, "Upload Attachment"))), /*#__PURE__*/React.createElement("span", {
+    style: {
+      position: "relative",
+      fontFamily: "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+      fontWeight: 500,
+      fontSize: 10,
+      whiteSpace: "nowrap",
+      lineHeight: 1.340000033378601,
+      letterSpacing: "-0.020em",
+      color: "rgb(100,116,139)",
+      flexShrink: 0,
+      alignSelf: "stretch"
+    }
+  }, "Lumenore's proprietary engine "))))))), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      display: "flex",
+      flexDirection: "row",
+      gap: 8,
+      justifyContent: "flex-end",
+      alignItems: "center",
+      flexWrap: "nowrap",
+      flexGrow: 1
+    }
+  }, /*#__PURE__*/React.createElement(DataCollaps, {
+    style: {
+      position: "relative",
+      flexShrink: 0
+    },
+    property1: "default"
+  }), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      width: 30,
+      height: 30,
+      flexShrink: 0
+    }
+  }, props.icon3 ?? /*#__PURE__*/React.createElement(SearchButtonContainer, {
+    property1: "variant2"
+  }))))));
+  const __impls = {
+    // figma: Property 1=Default
+    "property1=default": __body0,
+    // figma: Property 1=Variant2
+    "property1=variant2": __body1,
+    // figma: Property 1=Variant3
+    "property1=variant3": __body2
+  };
+  return (__impls[__vkey_FirstTime(props)] ?? __body0)();
+}
+
+// figma node: 11001:5942 Frame 1707479485 (2 variants)
+const __venc_Frame1707479485 = v => String(v).replace(/[%|=]/g, encodeURIComponent);
+const __vkey_Frame1707479485 = p => "property1=" + __venc_Frame1707479485(p.property1);
+function Frame1707479485(_p = {}) {
+  const props = {
+    ..._p,
+    text: _p.text ?? "What is the summary of my data?",
+    property1: _p.property1 ?? "default"
+  };
+  const __body0 = () => /*#__PURE__*/React.createElement("div", {
+    className: props.className,
+    style: {
+      width: 833,
+      borderTop: "1px solid rgb(241,245,249)",
+      borderRight: "1px solid rgb(241,245,249)",
+      borderBottom: "1px solid rgb(241,245,249)",
+      borderLeft: "1px solid rgb(241,245,249)",
+      display: "flex",
+      flexDirection: "row",
+      gap: 10,
+      padding: "14px 0px 14px 0px",
+      alignItems: "center",
+      flexWrap: "nowrap",
+      boxSizing: "border-box",
+      position: "relative",
+      ...props.style
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      width: 193,
+      display: "flex",
+      flexDirection: "row",
+      gap: 10,
+      padding: "0px 10px 0px 10px",
+      justifyContent: "center",
+      alignItems: "center",
+      flexWrap: "nowrap",
+      boxSizing: "border-box",
+      flexShrink: 0,
+      alignSelf: "stretch"
+    }
+  }, /*#__PURE__*/React.createElement("span", {
+    style: {
+      position: "relative",
+      fontFamily: "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+      fontWeight: 400,
+      fontSize: 12,
+      whiteSpace: "nowrap",
+      lineHeight: 1.2999999523162842,
+      letterSpacing: "-0.020em",
+      color: "rgb(71,85,105)",
+      flexShrink: 0,
+      alignSelf: "stretch"
+    }
+  }, props.text)));
+  const __body1 = () => /*#__PURE__*/React.createElement("div", {
+    className: props.className,
+    style: {
+      width: 833,
+      borderRadius: 8,
+      backgroundColor: "rgb(248,250,252)",
+      borderTop: "1px solid rgb(241,245,249)",
+      borderRight: "1px solid rgb(241,245,249)",
+      borderBottom: "1px solid rgb(241,245,249)",
+      borderLeft: "1px solid rgb(241,245,249)",
+      display: "flex",
+      flexDirection: "row",
+      gap: 10,
+      padding: "14px 0px 14px 0px",
+      alignItems: "center",
+      flexWrap: "nowrap",
+      boxSizing: "border-box",
+      position: "relative",
+      ...props.style
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      width: 193,
+      display: "flex",
+      flexDirection: "row",
+      gap: 10,
+      padding: "0px 10px 0px 10px",
+      justifyContent: "center",
+      alignItems: "center",
+      flexWrap: "nowrap",
+      boxSizing: "border-box",
+      flexShrink: 0,
+      alignSelf: "stretch"
+    }
+  }, /*#__PURE__*/React.createElement("span", {
+    style: {
+      position: "relative",
+      fontFamily: "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+      fontWeight: 400,
+      fontSize: 12,
+      whiteSpace: "nowrap",
+      lineHeight: 1.2999999523162842,
+      letterSpacing: "-0.020em",
+      color: "rgb(71,85,105)",
+      flexShrink: 0,
+      alignSelf: "stretch"
+    }
+  }, props.text)));
+  const __impls = {
+    // figma: Property 1=Default
+    "property1=default": __body0,
+    // figma: Property 1=Variant2
+    "property1=variant2": __body1
+  };
+  return (__impls[__vkey_Frame1707479485(props)] ?? __body0)();
+}
+
+// figma node: 11001:6517 Frame 1707479557 (3 variants)
+const __venc_Frame1707479557 = v => String(v).replace(/[%|=]/g, encodeURIComponent);
+const __vkey_Frame1707479557 = p => "property1=" + __venc_Frame1707479557(p.property1);
+function Frame1707479557(_p = {}) {
+  const props = {
+    ..._p,
+    property1: _p.property1 ?? "default"
+  };
+  const __body0 = () => /*#__PURE__*/React.createElement("div", {
+    className: props.className,
+    style: {
+      width: 128,
+      height: 32,
+      overflow: "hidden",
+      position: "relative",
+      ...props.style
+    }
+  }, /*#__PURE__*/React.createElement("span", {
+    style: {
+      position: "absolute",
+      left: 0,
+      top: 0,
+      width: 111,
+      height: 93,
+      fontFamily: "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+      fontWeight: 500,
+      fontSize: 25,
+      lineHeight: 1.2400000095367432,
+      letterSpacing: "-0.030em",
+      whiteSpace: "pre-wrap"
+    }
+  }, props.text1 ?? "Insights\nAnalytics\nForecasts"));
+  const __body1 = () => /*#__PURE__*/React.createElement("div", {
+    className: props.className,
+    style: {
+      width: 128,
+      height: 32,
+      overflow: "hidden",
+      position: "relative",
+      ...props.style
+    }
+  }, /*#__PURE__*/React.createElement("span", {
+    style: {
+      position: "absolute",
+      left: 0,
+      top: -31,
+      width: 111,
+      height: 93,
+      fontFamily: "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+      fontWeight: 500,
+      fontSize: 25,
+      lineHeight: 1.2400000095367432,
+      letterSpacing: "-0.030em",
+      whiteSpace: "pre-wrap"
+    }
+  }, props.text1 ?? "Insights\nAnalytics\nForecasts"));
+  const __body2 = () => /*#__PURE__*/React.createElement("div", {
+    className: props.className,
+    style: {
+      width: 128,
+      height: 32,
+      overflow: "hidden",
+      position: "relative",
+      ...props.style
+    }
+  }, /*#__PURE__*/React.createElement("span", {
+    style: {
+      position: "absolute",
+      left: 0,
+      top: -62,
+      width: 111,
+      height: 93,
+      fontFamily: "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+      fontWeight: 500,
+      fontSize: 25,
+      lineHeight: 1.2400000095367432,
+      letterSpacing: "-0.030em",
+      whiteSpace: "pre-wrap"
+    }
+  }, props.text1 ?? "Insights\nAnalytics\nForecasts"));
+  const __impls = {
+    // figma: Property 1=Default
+    "property1=default": __body0,
+    // figma: Property 1=Variant2
+    "property1=variant2": __body1,
+    // figma: Property 1=Variant3
+    "property1=variant3": __body2
+  };
+  return (__impls[__vkey_Frame1707479557(props)] ?? __body0)();
+}
+
+// figma node: 11001:6524 Frame 1707479588 (2 variants)
+const __venc_Frame1707479588 = v => String(v).replace(/[%|=]/g, encodeURIComponent);
+const __vkey_Frame1707479588 = p => "property1=" + __venc_Frame1707479588(p.property1);
+function Frame1707479588(_p = {}) {
+  const props = {
+    ..._p,
+    text: _p.text ?? "Explore Help",
+    property1: _p.property1 ?? "default"
+  };
+  const __body0 = () => /*#__PURE__*/React.createElement("div", {
+    className: props.className,
+    style: {
+      width: "fit-content",
+      borderRadius: 30,
+      backgroundColor: "rgb(248,250,252)",
+      display: "flex",
+      flexDirection: "row",
+      gap: 4,
+      padding: "6px 12px 6px 8px",
+      alignItems: "center",
+      flexWrap: "nowrap",
+      boxSizing: "border-box",
+      position: "relative",
+      ...props.style
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      width: 18,
+      flexShrink: 0,
+      alignSelf: "stretch",
+      height: "auto"
+    }
+  }, props.icon1 ?? /*#__PURE__*/React.createElement(Icons, {
+    property1: "Variant53"
+  })), /*#__PURE__*/React.createElement("span", {
+    style: {
+      position: "relative",
+      fontFamily: "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+      fontWeight: 500,
+      fontSize: 12,
+      whiteSpace: "nowrap",
+      lineHeight: 1.2999999523162842,
+      letterSpacing: "-0.020em",
+      color: "rgb(71,85,105)",
+      flexShrink: 0,
+      alignSelf: "stretch"
+    }
+  }, props.text));
+  const __body1 = () => /*#__PURE__*/React.createElement("div", {
+    className: props.className,
+    style: {
+      width: "fit-content",
+      borderRadius: 30,
+      backgroundColor: "rgb(241,245,249)",
+      display: "flex",
+      flexDirection: "row",
+      gap: 4,
+      padding: "6px 12px 6px 8px",
+      alignItems: "center",
+      flexWrap: "nowrap",
+      boxSizing: "border-box",
+      position: "relative",
+      ...props.style
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      width: 18,
+      flexShrink: 0,
+      alignSelf: "stretch",
+      height: "auto"
+    }
+  }, props.icon1 ?? /*#__PURE__*/React.createElement(Icons, {
+    property1: "Variant53"
+  })), /*#__PURE__*/React.createElement("span", {
+    style: {
+      position: "relative",
+      fontFamily: "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+      fontWeight: 500,
+      fontSize: 12,
+      whiteSpace: "nowrap",
+      lineHeight: 1.2999999523162842,
+      letterSpacing: "-0.020em",
+      color: "rgb(71,85,105)",
+      flexShrink: 0,
+      alignSelf: "stretch"
+    }
+  }, props.text));
+  const __impls = {
+    // figma: Property 1=Default
+    "property1=default": __body0,
+    // figma: Property 1=Variant2
+    "property1=variant2": __body1
+  };
+  return (__impls[__vkey_Frame1707479588(props)] ?? __body0)();
+}
+
+// figma node: 9001:12970 AI Stroke
+function AIStroke(_p = {}) {
+  const props = _p;
+  return /*#__PURE__*/React.createElement("div", {
+    className: props.className,
+    style: {
+      width: 24,
+      height: 24,
+      overflow: "hidden",
+      position: "relative",
+      ...props.style
+    }
+  }, /*#__PURE__*/React.createElement("svg", {
+    width: 18,
+    height: 17,
+    viewBox: "0 0 18 17",
+    fill: "none",
+    style: {
+      position: "absolute",
+      left: 3,
+      top: 3.5,
+      width: 18,
+      height: 17
+    }
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M 13.211 8.499 C 13.211 8.213 13.058 7.95 12.813 7.82 C 12.186 7.487 11.515 7.18 10.763 6.882 C 9.52 6.384 8.615 5.424 8.144 4.109 C 7.862 3.31 7.572 2.6 7.258 1.936 C 7.135 1.677 6.881 1.513 6.605 1.513 C 6.329 1.513 6.074 1.677 5.952 1.937 C 5.639 2.598 5.35 3.309 5.068 4.105 C 4.597 5.423 3.691 6.384 2.45 6.881 C 1.694 7.181 1.022 7.488 0.398 7.82 C 0.154 7.95 0 8.212 0 8.498 C 0 8.784 0.154 9.047 0.399 9.177 C 1.027 9.51 1.698 9.818 2.448 10.114 C 3.691 10.612 4.597 11.572 5.067 12.889 C 5.351 13.69 5.64 14.399 5.952 15.06 C 6.076 15.32 6.328 15.484 6.605 15.484 C 6.882 15.484 7.136 15.32 7.258 15.06 C 7.572 14.399 7.861 13.688 8.143 12.891 C 8.614 11.573 9.521 10.613 10.76 10.116 C 11.514 9.818 12.185 9.511 12.813 9.178 C 13.058 9.048 13.211 8.786 13.211 8.499 Z M 10.241 8.694 C 8.621 9.344 7.391 10.645 6.776 12.362 C 6.72 12.523 6.663 12.68 6.605 12.834 C 6.548 12.68 6.491 12.523 6.433 12.359 C 5.821 10.645 4.591 9.344 2.967 8.693 C 2.804 8.629 2.647 8.564 2.492 8.499 C 2.646 8.434 2.806 8.369 2.97 8.303 C 4.591 7.654 5.821 6.352 6.433 4.637 C 6.491 4.475 6.548 4.317 6.605 4.164 C 6.663 4.319 6.72 4.477 6.778 4.639 C 7.391 6.353 8.621 7.654 10.243 8.304 C 10.406 8.368 10.564 8.434 10.719 8.499 C 10.564 8.564 10.404 8.629 10.241 8.694 Z",
+    fill: "currentColor",
+    fillRule: "evenodd"
+  }), /*#__PURE__*/React.createElement("path", {
+    d: "M 14.659 16.734 C 14.818 17.089 15.311 17.089 15.469 16.733 M 14.659 16.734 L 14.012 15.289 C 13.968 15.19 13.89 15.111 13.794 15.065 L 12.387 14.401 C 12.04 14.237 12.041 13.732 12.388 13.569 L 13.792 12.912 C 13.89 12.866 13.968 12.786 14.012 12.686 L 14.659 11.237 C 14.818 10.881 15.311 10.882 15.469 11.239 L 16.109 12.685 C 16.154 12.785 16.232 12.866 16.33 12.912 L 17.739 13.569 C 18.086 13.731 18.087 14.238 17.74 14.401 L 16.329 15.065 C 16.232 15.11 16.154 15.191 16.11 15.291 L 15.469 16.733 Z",
+    fill: "currentColor",
+    fillRule: "evenodd"
+  }), /*#__PURE__*/React.createElement("path", {
+    d: "M 14.659 5.763 C 14.818 6.119 15.311 6.118 15.469 5.762 M 14.659 5.763 L 14.012 4.319 C 13.968 4.219 13.89 4.14 13.794 4.094 L 12.387 3.43 C 12.04 3.267 12.041 2.761 12.388 2.599 L 13.792 1.941 C 13.89 1.895 13.968 1.815 14.012 1.715 L 14.659 0.267 C 14.818 -0.089 15.311 -0.089 15.469 0.268 L 16.109 1.714 C 16.154 1.815 16.232 1.895 16.33 1.941 L 17.739 2.599 C 18.086 2.761 18.087 3.267 17.74 3.43 L 16.329 4.094 C 16.232 4.14 16.154 4.22 16.11 4.32 L 15.469 5.762 Z",
+    fill: "currentColor",
+    fillRule: "evenodd"
+  })));
+}
+
+// figma node: 9001:12972 Dock left (2 variants)
+const __venc_DockLeft2 = v => String(v).replace(/[%|=]/g, encodeURIComponent);
+const __vkey_DockLeft2 = p => "property1=" + __venc_DockLeft2(p.property1);
+function DockLeft2(_p = {}) {
+  const props = {
+    ..._p,
+    property1: _p.property1 ?? "default"
+  };
+  const __body0 = () => /*#__PURE__*/React.createElement("div", {
+    className: props.className,
+    style: {
+      width: 20,
+      height: 20,
+      overflow: "hidden",
+      position: "relative",
+      ...props.style
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "absolute",
+      left: 2,
+      top: 4,
+      width: 16,
+      height: 13,
+      overflow: "hidden",
+      borderRadius: 2,
+      boxShadow: "inset 0 0 0 1px rgb(148,163,184)"
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "absolute",
+      left: 0,
+      top: 0,
+      width: 6,
+      height: 12,
+      backgroundColor: "rgb(148,163,184)"
+    }
+  })));
+  const __body1 = () => /*#__PURE__*/React.createElement("div", {
+    className: props.className,
+    style: {
+      width: 20,
+      height: 20,
+      overflow: "hidden",
+      position: "relative",
+      ...props.style
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "absolute",
+      left: 2,
+      top: 4,
+      width: 16,
+      height: 13,
+      overflow: "hidden",
+      borderRadius: 2,
+      boxShadow: "inset 0 0 0 1px rgb(100,116,139)"
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "absolute",
+      left: 0,
+      top: 0,
+      width: 6,
+      height: 12,
+      backgroundColor: "rgb(100,116,139)"
+    }
+  })));
+  const __impls = {
+    // figma: Property 1=Default
+    "property1=default": __body0,
+    // figma: Property 1=Variant2
+    "property1=variant2": __body1
+  };
+  return (__impls[__vkey_DockLeft2(props)] ?? __body0)();
+}
+
+// figma node: 9001:12979 Frame 1707479610 (2 variants)
+const __venc_Frame1707479610 = v => String(v).replace(/[%|=]/g, encodeURIComponent);
+const __vkey_Frame1707479610 = p => "property1=" + __venc_Frame1707479610(p.property1);
+function Frame1707479610(_p = {}) {
+  const props = {
+    ..._p,
+    property1: _p.property1 ?? "default"
+  };
+  const __body0 = () => /*#__PURE__*/React.createElement("div", {
+    className: props.className,
+    style: {
+      width: 22,
+      height: 22,
+      position: "relative",
+      ...props.style
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "absolute",
+      left: 0,
+      top: 0,
+      width: 22,
+      height: 22
+    }
+  }, props.icon1 ?? /*#__PURE__*/React.createElement(AIStroke, {
+    style: {
+      transform: "scale(0.917, 0.917)",
+      transformOrigin: "0 0"
+    }
+  })));
+  const __body1 = () => /*#__PURE__*/React.createElement("div", {
+    className: props.className,
+    style: {
+      width: 22,
+      height: 22,
+      position: "relative",
+      ...props.style
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "absolute",
+      left: 1,
+      top: 1,
+      width: 20,
+      height: 20
+    }
+  }, props.icon1 ?? /*#__PURE__*/React.createElement(DockLeft2, {
+    property1: "default"
+  })));
+  const __impls = {
+    // figma: Property 1=Default
+    "property1=default": __body0,
+    // figma: Property 1=Variant2
+    "property1=variant2": __body1
+  };
+  return (__impls[__vkey_Frame1707479610(props)] ?? __body0)();
+}
+
+// figma node: 11016:8125 Arrow (1 variants)
+const __venc_Arrow = v => String(v).replace(/[%|=]/g, encodeURIComponent);
+const __vkey_Arrow = p => "property1=" + __venc_Arrow(p.property1);
+function Arrow(_p = {}) {
+  const props = {
+    ..._p,
+    property1: _p.property1 ?? "left"
+  };
+  const __body0 = () => /*#__PURE__*/React.createElement("div", {
+    className: props.className,
+    style: {
+      width: 24,
+      height: 24,
+      overflow: "hidden",
+      position: "relative",
+      color: "rgb(71,85,105)",
+      ...props.style
+    }
+  }, /*#__PURE__*/React.createElement("svg", {
+    width: 8,
+    height: 16,
+    viewBox: "0 0 8 16",
+    fill: "none",
+    style: {
+      position: "absolute",
+      left: 0,
+      top: 0,
+      transform: "matrix(-1,0,0,1,16,4)",
+      transformOrigin: "0 0",
+      width: 8,
+      height: 16
+    }
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M 2.551 8.812 C 2.446 8.706 2.364 8.579 2.307 8.44 C 2.25 8.301 2.221 8.151 2.221 8 C 2.221 7.85 2.25 7.7 2.307 7.561 C 2.364 7.422 2.446 7.295 2.551 7.189 L 7.67 1.955 C 7.775 1.849 7.858 1.722 7.914 1.583 C 7.971 1.444 8 1.295 8 1.144 C 8 0.993 7.971 0.843 7.914 0.704 C 7.858 0.565 7.775 0.439 7.67 0.332 C 7.461 0.119 7.178 0 6.884 0 C 6.589 0 6.307 0.119 6.098 0.332 L 0.978 5.578 C 0.352 6.221 0 7.092 0 8 C 0 8.909 0.352 9.78 0.978 10.423 L 6.098 15.669 C 6.305 15.88 6.586 15.999 6.878 16 C 7.025 16.001 7.171 15.972 7.306 15.915 C 7.442 15.858 7.566 15.774 7.67 15.669 C 7.775 15.562 7.858 15.436 7.914 15.297 C 7.971 15.157 8 15.008 8 14.857 C 8 14.706 7.971 14.557 7.914 14.418 C 7.858 14.278 7.775 14.152 7.67 14.046 L 2.551 8.812 Z",
+    fill: "currentColor",
+    fillRule: "evenodd"
+  })));
+  const __impls = {
+    // figma: Property 1=Right
+    "property1=right": __body0
+  };
+  return (__impls[__vkey_Arrow(props)] ?? __body0)();
+}
+
+// figma node: 11102:7943 bolt
+function Bolt(_p = {}) {
+  const props = _p;
+  return /*#__PURE__*/React.createElement("div", {
+    className: props.className,
+    style: {
+      width: 24,
+      height: 24,
+      overflow: "hidden",
+      position: "relative",
+      color: "rgb(71,85,105)",
+      ...props.style
+    }
+  }, /*#__PURE__*/React.createElement("svg", {
+    width: 14,
+    height: 20,
+    viewBox: "0 0 14 20",
+    fill: "none",
+    style: {
+      position: "absolute",
+      left: 5,
+      top: 2,
+      width: 14,
+      height: 20
+    }
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M 6.349 20 C 6.062 19.999 5.78 19.939 5.521 19.823 C 5.097 19.643 4.757 19.322 4.564 18.92 C 4.371 18.517 4.338 18.062 4.472 17.638 L 5.836 13.333 L 2.623 13.333 C 2.214 13.334 1.81 13.243 1.445 13.068 C 1.079 12.892 0.761 12.638 0.517 12.324 C 0.273 12.011 0.109 11.647 0.039 11.263 C -0.031 10.878 -0.006 10.483 0.112 10.109 L 2.754 1.776 C 2.915 1.26 3.246 0.809 3.699 0.489 C 4.152 0.168 4.702 -0.003 5.266 0 L 8.491 0 C 8.858 0 9.219 0.085 9.544 0.248 C 9.868 0.41 10.147 0.645 10.356 0.933 C 10.565 1.22 10.697 1.552 10.743 1.899 C 10.788 2.246 10.745 2.598 10.616 2.926 L 9.146 6.667 L 11.38 6.667 C 11.856 6.667 12.323 6.79 12.731 7.025 C 13.139 7.259 13.472 7.594 13.695 7.996 C 13.918 8.397 14.022 8.849 13.996 9.302 C 13.97 9.756 13.815 10.194 13.548 10.57 L 7.958 19.153 C 7.786 19.412 7.548 19.624 7.266 19.772 C 6.985 19.92 6.67 19.998 6.349 20 Z M 5.266 1.667 C 5.078 1.667 4.895 1.724 4.745 1.831 C 4.594 1.937 4.483 2.087 4.429 2.258 L 1.788 10.592 C 1.748 10.716 1.74 10.848 1.763 10.976 C 1.786 11.104 1.841 11.225 1.922 11.33 C 2.003 11.434 2.109 11.519 2.231 11.578 C 2.353 11.636 2.487 11.667 2.623 11.667 L 7.012 11.667 C 7.149 11.667 7.283 11.697 7.405 11.756 C 7.527 11.814 7.633 11.899 7.714 12.004 C 7.795 12.108 7.85 12.229 7.873 12.357 C 7.896 12.486 7.888 12.617 7.848 12.742 L 6.148 18.11 C 6.14 18.13 6.136 18.151 6.137 18.172 C 6.139 18.193 6.144 18.214 6.154 18.233 C 6.164 18.251 6.178 18.268 6.195 18.282 C 6.212 18.295 6.232 18.305 6.253 18.311 C 6.273 18.323 6.294 18.33 6.317 18.334 C 6.34 18.337 6.363 18.336 6.385 18.33 C 6.407 18.324 6.428 18.314 6.446 18.301 C 6.463 18.287 6.478 18.27 6.488 18.25 L 12.078 9.667 C 12.176 9.54 12.234 9.39 12.246 9.233 C 12.258 9.076 12.224 8.92 12.146 8.781 C 12.075 8.646 11.965 8.532 11.83 8.453 C 11.694 8.374 11.538 8.333 11.38 8.333 L 7.886 8.333 C 7.745 8.333 7.606 8.301 7.48 8.238 C 7.355 8.176 7.248 8.086 7.168 7.975 C 7.087 7.864 7.036 7.737 7.019 7.603 C 7.001 7.469 7.018 7.334 7.067 7.208 L 8.98 2.341 C 9.01 2.265 9.019 2.184 9.009 2.104 C 8.998 2.025 8.968 1.948 8.92 1.882 C 8.872 1.816 8.808 1.762 8.733 1.724 C 8.659 1.687 8.575 1.667 8.491 1.667 L 5.266 1.667 Z",
+    fill: "currentColor",
+    fillRule: "evenodd"
+  })));
+}
+
+// figma node: 11102:7934 user
+function User(_p = {}) {
+  const props = _p;
+  return /*#__PURE__*/React.createElement("div", {
+    className: props.className,
+    style: {
+      width: 24,
+      height: 24,
+      overflow: "hidden",
+      position: "relative",
+      color: "rgb(71,85,105)",
+      ...props.style
+    }
+  }, /*#__PURE__*/React.createElement("svg", {
+    width: 18,
+    height: 18,
+    viewBox: "0 0 18 18",
+    fill: "none",
+    style: {
+      position: "absolute",
+      left: 3,
+      top: 3,
+      width: 18,
+      height: 18
+    }
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M 9 0 C 4.037 0 0 4.037 0 9 C 0 13.963 4.037 18 9 18 C 13.963 18 18 13.963 18 9 C 18 4.037 13.963 0 9 0 Z M 6 15.873 L 6 14.25 C 6 13.836 6.337 13.5 6.75 13.5 L 11.25 13.5 C 11.663 13.5 12 13.836 12 14.25 L 12 15.873 C 11.081 16.276 10.067 16.5 9 16.5 C 7.933 16.5 6.919 16.276 6 15.873 Z M 13.5 14.996 L 13.5 14.25 C 13.5 13.009 12.491 12 11.25 12 L 6.75 12 C 5.509 12 4.5 13.009 4.5 14.25 L 4.5 14.996 C 2.68 13.627 1.5 11.449 1.5 9 C 1.5 4.865 4.865 1.5 9 1.5 C 13.135 1.5 16.5 4.865 16.5 9 C 16.5 11.448 15.32 13.627 13.5 14.996 Z M 9 4.5 C 7.345 4.5 6 5.845 6 7.5 C 6 9.155 7.345 10.5 9 10.5 C 10.655 10.5 12 9.155 12 7.5 C 12 5.845 10.655 4.5 9 4.5 Z M 9 9 C 8.173 9 7.5 8.327 7.5 7.5 C 7.5 6.673 8.173 6 9 6 C 9.827 6 10.5 6.673 10.5 7.5 C 10.5 8.327 9.827 9 9 9 Z",
+    fill: "currentColor",
+    fillRule: "evenodd"
+  })));
+}
+
+// figma node: 11102:7936 Button (2 variants)
+const __venc_Button2 = v => String(v).replace(/[%|=]/g, encodeURIComponent);
+const __vkey_Button2 = p => "property1=" + __venc_Button2(p.property1);
+function Button2(_p = {}) {
+  const props = {
+    ..._p,
+    text: _p.text ?? "Profile",
+    property1: _p.property1 ?? "default"
+  };
+  const __body0 = () => /*#__PURE__*/React.createElement("div", {
+    className: props.className,
+    style: {
+      width: 196,
+      borderRadius: 6,
+      display: "flex",
+      flexDirection: "row",
+      gap: 8,
+      padding: "8px 10px 8px 10px",
+      alignItems: "center",
+      flexWrap: "nowrap",
+      boxSizing: "border-box",
+      position: "relative",
+      ...props.style
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      width: 16,
+      flexShrink: 0,
+      alignSelf: "stretch",
+      height: "auto"
+    }
+  }, props.icon1 ?? /*#__PURE__*/React.createElement(User, null)), /*#__PURE__*/React.createElement("span", {
+    style: {
+      position: "relative",
+      fontFamily: "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+      fontWeight: 400,
+      fontSize: 12,
+      whiteSpace: "nowrap",
+      lineHeight: 1.2999999523162842,
+      letterSpacing: "-0.020em",
+      color: "var(--color-bluegray-700)",
+      flexShrink: 0,
+      alignSelf: "stretch"
+    }
+  }, props.text));
+  const __body1 = () => /*#__PURE__*/React.createElement("div", {
+    className: props.className,
+    style: {
+      width: 196,
+      borderRadius: 6,
+      backgroundColor: "rgb(248,250,252)",
+      display: "flex",
+      flexDirection: "row",
+      gap: 8,
+      padding: "8px 10px 8px 10px",
+      alignItems: "center",
+      flexWrap: "nowrap",
+      boxSizing: "border-box",
+      position: "relative",
+      ...props.style
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      width: 16,
+      flexShrink: 0,
+      alignSelf: "stretch",
+      height: "auto"
+    }
+  }, props.icon1 ?? /*#__PURE__*/React.createElement(User, null)), /*#__PURE__*/React.createElement("span", {
+    style: {
+      position: "relative",
+      fontFamily: "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+      fontWeight: 400,
+      fontSize: 12,
+      whiteSpace: "nowrap",
+      lineHeight: 1.2999999523162842,
+      letterSpacing: "-0.020em",
+      color: "var(--color-bluegray-700)",
+      flexShrink: 0,
+      alignSelf: "stretch"
+    }
+  }, props.text));
+  const __impls = {
+    // figma: Property 1=Default
+    "property1=default": __body0,
+    // figma: Property 1=Variant2
+    "property1=variant2": __body1
+  };
+  return (__impls[__vkey_Button2(props)] ?? __body0)();
+}
+
+// figma node: 11102:7954 Dark mode (moon)
+function DarkModeMoon(_p = {}) {
+  const props = _p;
+  return /*#__PURE__*/React.createElement("div", {
+    className: props.className,
+    style: {
+      width: 24,
+      height: 24,
+      overflow: "hidden",
+      position: "relative",
+      color: "rgb(71,85,105)",
+      ...props.style
+    }
+  }, /*#__PURE__*/React.createElement("svg", {
+    width: 18,
+    height: 18,
+    viewBox: "0 0 18 18",
+    fill: "none",
+    style: {
+      position: "absolute",
+      left: 3,
+      top: 3,
+      width: 18,
+      height: 18
+    }
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M 9.018 18 C 4.045 18 0 13.954 0 8.983 C 0 4.306 3.506 0.447 8.156 0.005 C 8.518 -0.037 8.847 0.172 8.986 0.501 C 9.126 0.829 9.037 1.211 8.766 1.443 C 7.871 2.213 7.436 3.543 7.436 5.509 C 7.436 9.716 9.37 10.561 12.491 10.561 C 14.506 10.561 15.797 10.138 16.556 9.232 C 16.785 8.956 17.169 8.865 17.498 9.002 C 17.828 9.141 18.031 9.479 17.996 9.836 C 17.558 14.49 13.698 17.999 9.018 17.999 L 9.018 18 Z M 6.366 2.09 C 3.569 3.154 1.636 5.842 1.636 8.982 C 1.636 13.05 4.948 16.359 9.018 16.359 C 12.153 16.359 14.84 14.435 15.908 11.65 C 14.75 12.125 13.486 12.202 12.491 12.202 C 9.618 12.202 5.799 11.508 5.799 5.51 C 5.799 4.154 5.987 3.02 6.366 2.09 Z",
+    fill: "currentColor",
+    fillRule: "evenodd"
+  })));
+}
+
+// figma node: 11102:7952 Feedback
+function Feedback(_p = {}) {
+  const props = _p;
+  return /*#__PURE__*/React.createElement("div", {
+    className: props.className,
+    style: {
+      width: 24,
+      height: 24,
+      overflow: "hidden",
+      position: "relative",
+      color: "rgb(71,85,105)",
+      ...props.style
+    }
+  }, /*#__PURE__*/React.createElement("svg", {
+    width: 18,
+    height: 18,
+    viewBox: "0 0 18 18",
+    fill: "none",
+    style: {
+      position: "absolute",
+      left: 3,
+      top: 3,
+      width: 18,
+      height: 18
+    }
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M 18 3.75 L 18 5.25 C 18 7.318 16.318 9 14.25 9 L 12.75 9 C 12.336 9 12 8.664 12 8.25 C 12 7.836 12.336 7.5 12.75 7.5 L 14.25 7.5 C 15.491 7.5 16.5 6.491 16.5 5.25 L 16.5 3.75 C 16.5 2.51 15.491 1.5 14.25 1.5 L 3.75 1.5 C 2.509 1.5 1.5 2.51 1.5 3.75 L 1.5 5.25 C 1.5 6.491 2.509 7.5 3.75 7.5 C 4.164 7.5 4.5 7.836 4.5 8.25 C 4.5 8.664 4.164 9 3.75 9 C 1.682 9 0 7.318 0 5.25 L 0 3.75 C 0 1.682 1.682 0 3.75 0 L 14.25 0 C 16.318 0 18 1.682 18 3.75 Z M 14.071 13.915 L 10.505 12.577 L 10.505 9.081 C 10.505 7.944 9.698 6.955 8.628 6.781 C 7.969 6.674 7.302 6.858 6.799 7.287 C 6.295 7.715 6.006 8.34 6.006 9.001 L 6.006 14.674 L 5.254 14.074 C 4.346 13.262 2.947 13.32 2.113 14.214 C 1.265 15.12 1.313 16.546 2.21 17.386 L 2.629 17.79 C 2.768 17.925 2.955 18 3.149 18 C 3.824 18 4.156 17.179 3.67 16.71 L 3.244 16.299 C 2.941 16.015 2.926 15.539 3.209 15.237 C 3.49 14.935 3.965 14.921 4.267 15.201 C 4.275 15.209 5.595 16.262 5.595 16.262 C 5.952 16.546 6.428 16.6 6.84 16.402 C 7.251 16.204 7.507 15.797 7.507 15.34 L 7.507 8.999 C 7.507 8.778 7.603 8.57 7.772 8.427 C 7.943 8.283 8.161 8.223 8.389 8.259 C 8.735 8.316 9.008 8.676 9.008 9.079 L 9.008 13.095 C 9.008 13.408 9.202 13.687 9.494 13.798 L 13.547 15.318 C 14.38 15.631 14.952 16.405 15.003 17.293 C 15.026 17.692 15.357 17.999 15.752 17.999 C 15.767 17.999 15.781 17.999 15.796 17.998 C 16.209 17.974 16.525 17.62 16.501 17.206 C 16.414 15.726 15.462 14.434 14.074 13.913 L 14.071 13.915 Z M 15.727 3.992 C 15.673 3.844 15.532 3.745 15.374 3.745 L 14.249 3.745 L 13.851 2.627 C 13.796 2.48 13.656 2.384 13.499 2.384 C 13.343 2.384 13.202 2.481 13.148 2.627 L 12.749 3.745 L 11.624 3.745 C 11.467 3.745 11.326 3.843 11.272 3.991 C 11.218 4.139 11.262 4.304 11.382 4.406 L 12.274 5.131 L 11.921 6.262 C 11.874 6.414 11.927 6.579 12.054 6.675 C 12.121 6.724 12.199 6.75 12.279 6.75 C 12.352 6.75 12.424 6.729 12.487 6.687 L 13.503 6.007 L 14.536 6.68 C 14.669 6.766 14.842 6.759 14.969 6.663 C 15.095 6.565 15.146 6.399 15.096 6.248 L 14.729 5.13 L 15.617 4.407 C 15.737 4.306 15.781 4.139 15.727 3.992 Z M 11.227 3.992 C 11.173 3.844 11.032 3.745 10.874 3.745 L 9.749 3.745 L 9.351 2.627 C 9.296 2.48 9.156 2.384 8.999 2.384 C 8.842 2.384 8.702 2.481 8.647 2.627 L 8.249 3.745 L 7.124 3.745 C 6.967 3.745 6.826 3.843 6.772 3.991 C 6.718 4.139 6.762 4.304 6.882 4.406 L 7.966 5.262 C 8.264 5.239 8.567 5.25 8.868 5.3 C 9.485 5.4 10.05 5.66 10.526 6.033 L 10.228 5.129 L 11.116 4.406 C 11.237 4.305 11.281 4.139 11.227 3.992 Z M 3.053 6.675 C 3.12 6.725 3.199 6.75 3.278 6.75 C 3.351 6.75 3.424 6.729 3.487 6.687 L 4.502 6.008 L 5.535 6.681 C 5.669 6.767 5.842 6.76 5.969 6.663 C 6.095 6.566 6.145 6.399 6.095 6.249 L 5.729 5.131 L 6.616 4.408 C 6.737 4.307 6.781 4.14 6.727 3.992 C 6.673 3.845 6.532 3.746 6.374 3.746 L 5.249 3.746 L 4.851 2.628 C 4.796 2.481 4.656 2.384 4.499 2.384 C 4.343 2.384 4.202 2.482 4.148 2.628 L 3.749 3.746 L 2.624 3.746 C 2.467 3.746 2.326 3.844 2.272 3.992 C 2.218 4.139 2.262 4.305 2.382 4.406 L 3.274 5.132 L 2.921 6.263 C 2.874 6.414 2.926 6.58 3.053 6.675 Z",
+    fill: "currentColor",
+    fillRule: "evenodd"
+  })));
+}
+
+// figma node: 11102:7960 Logout
+function Logout(_p = {}) {
+  const props = _p;
+  return /*#__PURE__*/React.createElement("div", {
+    className: props.className,
+    style: {
+      width: 24,
+      height: 24,
+      overflow: "hidden",
+      position: "relative",
+      color: "rgb(71,85,105)",
+      ...props.style
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "absolute",
+      left: 3,
+      top: 3,
+      width: 18,
+      height: 18,
+      overflow: "hidden"
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "absolute",
+      left: 0,
+      top: 0,
+      width: 18,
+      height: 18,
+      border: "1px dashed currentColor",
+      display: "flex",
+      alignItems: "center",
+      justifyContent: "center",
+      overflow: "hidden",
+      fontSize: 10,
+      opacity: 0.45
+    }
+  }, "Union")));
+}
+
+// figma node: 11102:7945 Rocket
+function Rocket(_p = {}) {
+  const props = _p;
+  return /*#__PURE__*/React.createElement("div", {
+    className: props.className,
+    style: {
+      width: 24,
+      height: 24,
+      overflow: "hidden",
+      position: "relative",
+      color: "rgb(71,85,105)",
+      ...props.style
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "absolute",
+      left: 3,
+      top: 3,
+      width: 18,
+      height: 18,
+      border: "1px dashed currentColor",
+      display: "flex",
+      alignItems: "center",
+      justifyContent: "center",
+      overflow: "hidden",
+      fontSize: 10,
+      opacity: 0.45
+    }
+  }, "Union"));
+}
+
+// figma node: 9001:13206 Setting
+function Setting(_p = {}) {
+  const props = _p;
+  return /*#__PURE__*/React.createElement("div", {
+    className: props.className,
+    style: {
+      width: 24,
+      height: 24,
+      overflow: "hidden",
+      position: "relative",
+      color: "rgb(71,85,105)",
+      ...props.style
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "absolute",
+      left: 3.837,
+      top: 3,
+      width: 16.326,
+      height: 18,
+      border: "1px dashed currentColor",
+      display: "flex",
+      alignItems: "center",
+      justifyContent: "center",
+      overflow: "hidden",
+      fontSize: 10,
+      opacity: 0.45
+    }
+  }, "Union"));
+}
+
+// figma node: 11102:7948 Share
+function Share(_p = {}) {
+  const props = _p;
+  return /*#__PURE__*/React.createElement("div", {
+    className: props.className,
+    style: {
+      width: 24,
+      height: 24,
+      overflow: "hidden",
+      position: "relative",
+      color: "rgb(71,85,105)",
+      ...props.style
+    }
+  }, /*#__PURE__*/React.createElement("svg", {
+    width: 18,
+    height: 18,
+    viewBox: "0 0 18 18",
+    fill: "none",
+    style: {
+      position: "absolute",
+      left: 3,
+      top: 3,
+      width: 18,
+      height: 18
+    }
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M 14.503 11 C 13.937 11 13.379 11.139 12.878 11.403 C 12.377 11.668 11.947 12.05 11.627 12.518 L 6.751 10.314 C 7.097 9.476 7.099 8.536 6.755 7.698 L 11.624 5.482 C 12.099 6.17 12.804 6.664 13.612 6.876 C 14.42 7.087 15.277 7.002 16.027 6.635 C 16.777 6.269 17.371 5.645 17.702 4.877 C 18.032 4.11 18.077 3.249 17.827 2.451 C 17.578 1.653 17.051 0.972 16.343 0.529 C 15.634 0.087 14.791 -0.086 13.966 0.041 C 13.14 0.167 12.388 0.586 11.844 1.221 C 11.301 1.856 11.003 2.664 11.005 3.5 C 11.008 3.698 11.028 3.895 11.064 4.09 L 5.888 6.445 C 5.391 5.978 4.768 5.668 4.097 5.55 C 3.426 5.433 2.735 5.515 2.11 5.786 C 1.484 6.056 0.952 6.504 0.577 7.073 C 0.202 7.643 0.002 8.31 0 8.992 C -0.001 9.674 0.196 10.341 0.568 10.912 C 0.941 11.484 1.472 11.934 2.096 12.207 C 2.72 12.48 3.41 12.565 4.082 12.451 C 4.754 12.337 5.377 12.029 5.877 11.565 L 11.067 13.91 C 11.031 14.105 11.011 14.302 11.008 14.499 C 11.007 15.191 11.212 15.868 11.596 16.444 C 11.981 17.02 12.527 17.468 13.165 17.733 C 13.804 17.998 14.507 18.068 15.186 17.933 C 15.864 17.798 16.487 17.464 16.976 16.975 C 17.465 16.485 17.798 15.862 17.933 15.183 C 18.068 14.504 17.998 13.8 17.734 13.16 C 17.469 12.521 17.021 11.974 16.446 11.589 C 15.871 11.205 15.195 11 14.503 11 Z M 14.503 1.5 C 14.898 1.5 15.285 1.617 15.613 1.837 C 15.942 2.057 16.198 2.369 16.349 2.734 C 16.501 3.1 16.54 3.502 16.463 3.89 C 16.386 4.278 16.196 4.635 15.917 4.914 C 15.637 5.194 15.281 5.385 14.894 5.462 C 14.506 5.539 14.104 5.5 13.739 5.348 C 13.374 5.197 13.062 4.94 12.843 4.612 C 12.623 4.283 12.506 3.896 12.506 3.5 C 12.506 2.97 12.717 2.462 13.091 2.087 C 13.466 1.712 13.973 1.501 14.503 1.5 Z M 3.516 11 C 3.121 11 2.735 10.883 2.406 10.663 C 2.077 10.443 1.821 10.131 1.67 9.766 C 1.518 9.4 1.479 8.998 1.556 8.61 C 1.633 8.222 1.823 7.865 2.102 7.586 C 2.382 7.306 2.738 7.115 3.125 7.038 C 3.513 6.961 3.915 7 4.28 7.152 C 4.645 7.303 4.957 7.559 5.177 7.888 C 5.396 8.217 5.513 8.604 5.513 9 C 5.513 9.53 5.302 10.038 4.928 10.413 C 4.553 10.788 4.046 10.999 3.516 11 Z M 14.503 16.499 C 14.108 16.499 13.722 16.382 13.393 16.162 C 13.064 15.942 12.808 15.63 12.657 15.265 C 12.506 14.899 12.466 14.497 12.543 14.109 C 12.621 13.721 12.811 13.365 13.09 13.085 C 13.37 12.805 13.726 12.615 14.113 12.537 C 14.501 12.46 14.903 12.5 15.268 12.651 C 15.633 12.803 15.945 13.059 16.164 13.388 C 16.384 13.717 16.501 14.104 16.501 14.499 C 16.501 15.03 16.29 15.538 15.915 15.913 C 15.541 16.288 15.033 16.499 14.503 16.499 Z",
+    fill: "currentColor",
+    fillRule: "evenodd"
+  })));
+}
+
+// figma node: 11102:7950 Support
+function Support(_p = {}) {
+  const props = _p;
+  return /*#__PURE__*/React.createElement("div", {
+    className: props.className,
+    style: {
+      width: 24,
+      height: 24,
+      overflow: "hidden",
+      position: "relative",
+      color: "rgb(71,85,105)",
+      ...props.style
+    }
+  }, /*#__PURE__*/React.createElement("svg", {
+    width: 20,
+    height: 17,
+    viewBox: "0 0 20 17",
+    fill: "none",
+    style: {
+      position: "absolute",
+      left: 2,
+      top: 4,
+      width: 20,
+      height: 17
+    }
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M 17.509 8.86 L 17.509 7.65 C 17.509 5.621 16.718 3.675 15.31 2.241 C 13.902 0.806 11.992 0 10 0 C 8.008 0 6.098 0.806 4.69 2.241 C 3.282 3.675 2.491 5.621 2.491 7.65 L 2.491 8.86 C 1.616 9.253 0.899 9.94 0.462 10.806 C 0.025 11.672 -0.107 12.665 0.088 13.619 C 0.284 14.572 0.795 15.429 1.536 16.044 C 2.277 16.66 3.203 16.997 4.159 17 C 4.602 17 5.026 16.821 5.339 16.502 C 5.652 16.183 5.828 15.751 5.828 15.3 L 5.828 10.2 C 5.828 9.749 5.652 9.317 5.339 8.998 C 5.026 8.679 4.602 8.5 4.159 8.5 L 4.159 7.65 C 4.159 6.072 4.775 4.559 5.87 3.443 C 6.965 2.327 8.451 1.7 10 1.7 C 11.549 1.7 13.035 2.327 14.13 3.443 C 15.225 4.559 15.841 6.072 15.841 7.65 L 15.841 8.5 C 15.398 8.5 14.974 8.679 14.661 8.998 C 14.348 9.317 14.172 9.749 14.172 10.2 L 14.172 15.3 L 11.669 15.3 C 11.447 15.3 11.235 15.39 11.079 15.549 C 10.922 15.708 10.834 15.925 10.834 16.15 C 10.834 16.375 10.922 16.592 11.079 16.751 C 11.235 16.91 11.447 17 11.669 17 L 15.841 17 C 16.797 16.997 17.723 16.66 18.464 16.044 C 19.205 15.429 19.716 14.572 19.912 13.619 C 20.107 12.665 19.975 11.672 19.538 10.806 C 19.101 9.94 18.384 9.253 17.509 8.86 Z M 4.159 15.3 C 3.496 15.3 2.859 15.031 2.389 14.553 C 1.92 14.075 1.656 13.426 1.656 12.75 C 1.656 12.074 1.92 11.425 2.389 10.947 C 2.859 10.469 3.496 10.2 4.159 10.2 L 4.159 15.3 Z M 15.841 15.3 L 15.841 10.2 C 16.504 10.2 17.141 10.469 17.611 10.947 C 18.08 11.425 18.344 12.074 18.344 12.75 C 18.344 13.426 18.08 14.075 17.611 14.553 C 17.141 15.031 16.504 15.3 15.841 15.3 Z",
+    fill: "currentColor",
+    fillRule: "evenodd"
+  })));
+}
+
+// figma node: 11102:7965 Frame 1707480391 (2 variants)
+const __venc_Frame1707480391 = v => String(v).replace(/[%|=]/g, encodeURIComponent);
+const __vkey_Frame1707480391 = p => "property1=" + __venc_Frame1707480391(p.property1);
+function Frame1707480391(_p = {}) {
+  const props = {
+    ..._p,
+    property1: _p.property1 ?? "default"
+  };
+  const __body0 = () => /*#__PURE__*/React.createElement("div", {
+    className: props.className,
+    style: {
+      width: 28,
+      height: 28,
+      overflow: "hidden",
+      borderRadius: 50,
+      position: "relative",
+      ...props.style
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "absolute",
+      left: 0,
+      top: -424,
+      width: 196,
+      overflow: "hidden",
+      borderRadius: 14,
+      backgroundColor: "var(--color-core-white)",
+      borderTop: "1px solid rgb(226,232,240)",
+      borderRight: "1px solid rgb(226,232,240)",
+      borderBottom: "1px solid rgb(226,232,240)",
+      borderLeft: "1px solid rgb(226,232,240)",
+      boxShadow: "0px 20px 60px 0px rgba(15,23,42,0.15)",
+      display: "flex",
+      flexDirection: "column",
+      alignItems: "flex-start",
+      flexWrap: "nowrap"
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      display: "flex",
+      flexDirection: "row",
+      gap: 12,
+      padding: "16px 16px 16px 16px",
+      alignItems: "center",
+      flexWrap: "nowrap",
+      boxSizing: "border-box",
+      flexShrink: 0,
+      alignSelf: "stretch"
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      display: "flex",
+      flexDirection: "row",
+      gap: 10,
+      alignItems: "center",
+      flexWrap: "nowrap",
+      flexGrow: 1
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      width: 28,
+      height: 28,
+      borderRadius: "50%",
+      flexShrink: 0
+    }
+  }), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      width: 113,
+      display: "flex",
+      flexDirection: "column",
+      alignItems: "flex-start",
+      flexWrap: "nowrap",
+      flexShrink: 0
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      display: "flex",
+      flexDirection: "column",
+      alignItems: "flex-start",
+      flexWrap: "nowrap",
+      flexShrink: 0,
+      alignSelf: "stretch"
+    }
+  }, /*#__PURE__*/React.createElement("span", {
+    style: {
+      position: "relative",
+      fontFamily: "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+      fontWeight: 500,
+      fontSize: 14,
+      whiteSpace: "nowrap",
+      lineHeight: 1.2999999523162842,
+      letterSpacing: "-0.020em",
+      color: "rgb(51,65,85)",
+      flexShrink: 0
+    }
+  }, props.text1 ?? "Priti Jani")), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      display: "flex",
+      flexDirection: "column",
+      alignItems: "flex-start",
+      flexWrap: "nowrap",
+      flexShrink: 0,
+      alignSelf: "stretch"
+    }
+  }, /*#__PURE__*/React.createElement("span", {
+    style: {
+      position: "relative",
+      fontFamily: "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+      fontWeight: 400,
+      fontSize: 12,
+      whiteSpace: "nowrap",
+      lineHeight: 1.2999999523162842,
+      letterSpacing: "-0.020em",
+      color: "rgb(100,116,139)",
+      flexShrink: 0
+    }
+  }, props.text2 ?? "Free")))), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      width: 16,
+      height: 16,
+      flexShrink: 0
+    }
+  }, props.icon1 ?? /*#__PURE__*/React.createElement(Arrow, {
+    property1: "right",
+    style: {
+      transform: "scale(0.667, 0.667)",
+      transformOrigin: "0 0"
+    }
+  }))), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      display: "flex",
+      flexDirection: "column",
+      padding: "0px 16px 0px 16px",
+      alignItems: "flex-start",
+      flexWrap: "nowrap",
+      boxSizing: "border-box",
+      flexShrink: 0,
+      alignSelf: "stretch"
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      height: 1,
+      backgroundColor: "rgb(241,245,249)",
+      flexShrink: 0,
+      alignSelf: "stretch"
+    }
+  })), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      display: "flex",
+      flexDirection: "column",
+      gap: 2,
+      padding: "8px 10px 8px 10px",
+      alignItems: "flex-start",
+      flexWrap: "nowrap",
+      boxSizing: "border-box",
+      flexShrink: 0,
+      alignSelf: "stretch"
+    }
+  }, /*#__PURE__*/React.createElement(Button2, {
+    style: {
+      position: "relative",
+      width: 196,
+      flexShrink: 0
+    },
+    property1: "default"
+  }), /*#__PURE__*/React.createElement(Button2, {
+    style: {
+      position: "relative",
+      width: 196,
+      flexShrink: 0
+    },
+    text: "Upgrade plan",
+    icon1: /*#__PURE__*/React.createElement(Bolt, {
+      style: {
+        transform: "scale(0.667, 0.667)",
+        transformOrigin: "0 0"
+      }
+    }),
+    property1: "default"
+  }), /*#__PURE__*/React.createElement(Button2, {
+    style: {
+      position: "relative",
+      width: 196,
+      flexShrink: 0
+    },
+    text: "Get started",
+    icon1: /*#__PURE__*/React.createElement(Rocket, {
+      style: {
+        transform: "scale(0.667, 0.667)",
+        transformOrigin: "0 0"
+      }
+    }),
+    property1: "default"
+  }), /*#__PURE__*/React.createElement(Button2, {
+    style: {
+      position: "relative",
+      width: 196,
+      flexShrink: 0
+    },
+    text: "Invite teammates",
+    icon1: /*#__PURE__*/React.createElement(Share, {
+      style: {
+        transform: "scale(0.667, 0.667)",
+        transformOrigin: "0 0"
+      }
+    }),
+    property1: "default"
+  }), /*#__PURE__*/React.createElement(Button2, {
+    style: {
+      position: "relative",
+      width: 196,
+      flexShrink: 0
+    },
+    text: "Settings",
+    icon1: /*#__PURE__*/React.createElement(Setting, {
+      style: {
+        transform: "scale(0.667, 0.667)",
+        transformOrigin: "0 0"
+      }
+    }),
+    property1: "default"
+  }), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      display: "flex",
+      flexDirection: "column",
+      padding: "4px 0px 4px 0px",
+      alignItems: "flex-start",
+      flexWrap: "nowrap",
+      boxSizing: "border-box",
+      flexShrink: 0,
+      alignSelf: "stretch"
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      display: "flex",
+      flexDirection: "column",
+      alignItems: "flex-start",
+      flexWrap: "nowrap",
+      flexShrink: 0,
+      alignSelf: "stretch"
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      height: 1,
+      backgroundColor: "rgb(241,245,249)",
+      flexShrink: 0,
+      alignSelf: "stretch"
+    }
+  }))), /*#__PURE__*/React.createElement(Button2, {
+    style: {
+      position: "relative",
+      width: 196,
+      flexShrink: 0
+    },
+    text: "Support",
+    icon1: /*#__PURE__*/React.createElement(Support, {
+      style: {
+        transform: "scale(0.667, 0.667)",
+        transformOrigin: "0 0"
+      }
+    }),
+    property1: "default"
+  }), /*#__PURE__*/React.createElement(Button2, {
+    style: {
+      position: "relative",
+      width: 196,
+      flexShrink: 0
+    },
+    text: "Feedback",
+    icon1: /*#__PURE__*/React.createElement(Feedback, {
+      style: {
+        transform: "scale(0.667, 0.667)",
+        transformOrigin: "0 0"
+      }
+    }),
+    property1: "default"
+  }), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      display: "flex",
+      flexDirection: "column",
+      padding: "4px 0px 4px 0px",
+      alignItems: "flex-start",
+      flexWrap: "nowrap",
+      boxSizing: "border-box",
+      flexShrink: 0,
+      alignSelf: "stretch"
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      display: "flex",
+      flexDirection: "column",
+      alignItems: "flex-start",
+      flexWrap: "nowrap",
+      flexShrink: 0,
+      alignSelf: "stretch"
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      height: 1,
+      backgroundColor: "rgb(241,245,249)",
+      flexShrink: 0,
+      alignSelf: "stretch"
+    }
+  }))), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      borderRadius: 6,
+      display: "flex",
+      flexDirection: "row",
+      padding: "8px 10px 8px 10px",
+      justifyContent: "space-between",
+      alignItems: "center",
+      flexWrap: "nowrap",
+      boxSizing: "border-box",
+      flexShrink: 0,
+      alignSelf: "stretch"
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      display: "flex",
+      flexDirection: "row",
+      gap: 8,
+      alignItems: "center",
+      flexWrap: "nowrap",
+      flexShrink: 0
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      width: 16,
+      height: 16,
+      flexShrink: 0
+    }
+  }, props.icon2 ?? /*#__PURE__*/React.createElement(DarkModeMoon, {
+    style: {
+      transform: "scale(0.667, 0.667)",
+      transformOrigin: "0 0"
+    }
+  })), /*#__PURE__*/React.createElement("span", {
+    style: {
+      position: "relative",
+      fontFamily: "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+      fontWeight: 400,
+      fontSize: 12,
+      whiteSpace: "nowrap",
+      lineHeight: 1.2999999523162842,
+      letterSpacing: "-0.020em",
+      color: "var(--color-bluegray-700)",
+      flexShrink: 0
+    }
+  }, props.text3 ?? "Dark theme")), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      width: 29,
+      height: 16,
+      borderRadius: 79.75,
+      backgroundColor: "rgba(156,163,175,0.4)",
+      flexShrink: 0
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "absolute",
+      left: 2.417,
+      top: 2.417,
+      width: 11.278,
+      height: 11.278,
+      borderRadius: 5.638889312744141,
+      backgroundColor: "var(--backgrounds-whiite)",
+      boxShadow: "0px 0.806px 2.417px 0px rgba(0,0,0,0.3)"
+    }
+  }))), /*#__PURE__*/React.createElement(Button2, {
+    style: {
+      position: "relative",
+      width: 196,
+      flexShrink: 0
+    },
+    text: "Log out",
+    icon1: /*#__PURE__*/React.createElement(Logout, {
+      style: {
+        transform: "scale(0.667, 0.667)",
+        transformOrigin: "0 0"
+      }
+    }),
+    property1: "default"
+  }))), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "absolute",
+      left: 0,
+      top: 0,
+      width: 28,
+      height: 28,
+      borderRadius: "50%"
+    }
+  }));
+  const __body1 = () => /*#__PURE__*/React.createElement("div", {
+    className: props.className,
+    style: {
+      width: 28,
+      height: 28,
+      position: "relative",
+      ...props.style
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "absolute",
+      left: 0,
+      top: -424,
+      width: 196,
+      overflow: "hidden",
+      borderRadius: 14,
+      backgroundColor: "var(--color-core-white)",
+      borderTop: "1px solid rgb(226,232,240)",
+      borderRight: "1px solid rgb(226,232,240)",
+      borderBottom: "1px solid rgb(226,232,240)",
+      borderLeft: "1px solid rgb(226,232,240)",
+      boxShadow: "0px 20px 60px 0px rgba(15,23,42,0.15)",
+      display: "flex",
+      flexDirection: "column",
+      alignItems: "flex-start",
+      flexWrap: "nowrap"
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      display: "flex",
+      flexDirection: "row",
+      gap: 12,
+      padding: "16px 16px 16px 16px",
+      alignItems: "center",
+      flexWrap: "nowrap",
+      boxSizing: "border-box",
+      flexShrink: 0,
+      alignSelf: "stretch"
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      display: "flex",
+      flexDirection: "row",
+      gap: 10,
+      alignItems: "center",
+      flexWrap: "nowrap",
+      flexGrow: 1
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      width: 28,
+      height: 28,
+      borderRadius: "50%",
+      flexShrink: 0
+    }
+  }), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      width: 113,
+      display: "flex",
+      flexDirection: "column",
+      alignItems: "flex-start",
+      flexWrap: "nowrap",
+      flexShrink: 0
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      display: "flex",
+      flexDirection: "column",
+      alignItems: "flex-start",
+      flexWrap: "nowrap",
+      flexShrink: 0,
+      alignSelf: "stretch"
+    }
+  }, /*#__PURE__*/React.createElement("span", {
+    style: {
+      position: "relative",
+      fontFamily: "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+      fontWeight: 500,
+      fontSize: 14,
+      whiteSpace: "nowrap",
+      lineHeight: 1.2999999523162842,
+      letterSpacing: "-0.020em",
+      color: "rgb(51,65,85)",
+      flexShrink: 0
+    }
+  }, props.text1 ?? "Priti Jani")), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      display: "flex",
+      flexDirection: "column",
+      alignItems: "flex-start",
+      flexWrap: "nowrap",
+      flexShrink: 0,
+      alignSelf: "stretch"
+    }
+  }, /*#__PURE__*/React.createElement("span", {
+    style: {
+      position: "relative",
+      fontFamily: "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+      fontWeight: 400,
+      fontSize: 12,
+      whiteSpace: "nowrap",
+      lineHeight: 1.2999999523162842,
+      letterSpacing: "-0.020em",
+      color: "rgb(100,116,139)",
+      flexShrink: 0
+    }
+  }, props.text2 ?? "Free")))), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      width: 16,
+      height: 16,
+      flexShrink: 0
+    }
+  }, props.icon1 ?? /*#__PURE__*/React.createElement(Arrow, {
+    property1: "right",
+    style: {
+      transform: "scale(0.667, 0.667)",
+      transformOrigin: "0 0"
+    }
+  }))), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      display: "flex",
+      flexDirection: "column",
+      padding: "0px 16px 0px 16px",
+      alignItems: "flex-start",
+      flexWrap: "nowrap",
+      boxSizing: "border-box",
+      flexShrink: 0,
+      alignSelf: "stretch"
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      height: 1,
+      backgroundColor: "rgb(241,245,249)",
+      flexShrink: 0,
+      alignSelf: "stretch"
+    }
+  })), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      display: "flex",
+      flexDirection: "column",
+      gap: 2,
+      padding: "8px 10px 8px 10px",
+      alignItems: "flex-start",
+      flexWrap: "nowrap",
+      boxSizing: "border-box",
+      flexShrink: 0,
+      alignSelf: "stretch"
+    }
+  }, /*#__PURE__*/React.createElement(Button2, {
+    style: {
+      position: "relative",
+      width: 196,
+      flexShrink: 0
+    },
+    property1: "default"
+  }), /*#__PURE__*/React.createElement(Button2, {
+    style: {
+      position: "relative",
+      width: 196,
+      flexShrink: 0
+    },
+    text: "Upgrade plan",
+    icon1: /*#__PURE__*/React.createElement(Bolt, {
+      style: {
+        transform: "scale(0.667, 0.667)",
+        transformOrigin: "0 0"
+      }
+    }),
+    property1: "default"
+  }), /*#__PURE__*/React.createElement(Button2, {
+    style: {
+      position: "relative",
+      width: 196,
+      flexShrink: 0
+    },
+    text: "Get started",
+    icon1: /*#__PURE__*/React.createElement(Rocket, {
+      style: {
+        transform: "scale(0.667, 0.667)",
+        transformOrigin: "0 0"
+      }
+    }),
+    property1: "default"
+  }), /*#__PURE__*/React.createElement(Button2, {
+    style: {
+      position: "relative",
+      width: 196,
+      flexShrink: 0
+    },
+    text: "Invite teammates",
+    icon1: /*#__PURE__*/React.createElement(Share, {
+      style: {
+        transform: "scale(0.667, 0.667)",
+        transformOrigin: "0 0"
+      }
+    }),
+    property1: "default"
+  }), /*#__PURE__*/React.createElement(Button2, {
+    style: {
+      position: "relative",
+      width: 196,
+      flexShrink: 0
+    },
+    text: "Settings",
+    icon1: /*#__PURE__*/React.createElement(Setting, {
+      style: {
+        transform: "scale(0.667, 0.667)",
+        transformOrigin: "0 0"
+      }
+    }),
+    property1: "default"
+  }), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      display: "flex",
+      flexDirection: "column",
+      padding: "4px 0px 4px 0px",
+      alignItems: "flex-start",
+      flexWrap: "nowrap",
+      boxSizing: "border-box",
+      flexShrink: 0,
+      alignSelf: "stretch"
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      display: "flex",
+      flexDirection: "column",
+      alignItems: "flex-start",
+      flexWrap: "nowrap",
+      flexShrink: 0,
+      alignSelf: "stretch"
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      height: 1,
+      backgroundColor: "rgb(241,245,249)",
+      flexShrink: 0,
+      alignSelf: "stretch"
+    }
+  }))), /*#__PURE__*/React.createElement(Button2, {
+    style: {
+      position: "relative",
+      width: 196,
+      flexShrink: 0
+    },
+    text: "Support",
+    icon1: /*#__PURE__*/React.createElement(Support, {
+      style: {
+        transform: "scale(0.667, 0.667)",
+        transformOrigin: "0 0"
+      }
+    }),
+    property1: "default"
+  }), /*#__PURE__*/React.createElement(Button2, {
+    style: {
+      position: "relative",
+      width: 196,
+      flexShrink: 0
+    },
+    text: "Feedback",
+    icon1: /*#__PURE__*/React.createElement(Feedback, {
+      style: {
+        transform: "scale(0.667, 0.667)",
+        transformOrigin: "0 0"
+      }
+    }),
+    property1: "default"
+  }), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      display: "flex",
+      flexDirection: "column",
+      padding: "4px 0px 4px 0px",
+      alignItems: "flex-start",
+      flexWrap: "nowrap",
+      boxSizing: "border-box",
+      flexShrink: 0,
+      alignSelf: "stretch"
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      display: "flex",
+      flexDirection: "column",
+      alignItems: "flex-start",
+      flexWrap: "nowrap",
+      flexShrink: 0,
+      alignSelf: "stretch"
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      height: 1,
+      backgroundColor: "rgb(241,245,249)",
+      flexShrink: 0,
+      alignSelf: "stretch"
+    }
+  }))), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      borderRadius: 6,
+      display: "flex",
+      flexDirection: "row",
+      padding: "8px 10px 8px 10px",
+      justifyContent: "space-between",
+      alignItems: "center",
+      flexWrap: "nowrap",
+      boxSizing: "border-box",
+      flexShrink: 0,
+      alignSelf: "stretch"
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      display: "flex",
+      flexDirection: "row",
+      gap: 8,
+      alignItems: "center",
+      flexWrap: "nowrap",
+      flexShrink: 0
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      width: 16,
+      height: 16,
+      flexShrink: 0
+    }
+  }, props.icon2 ?? /*#__PURE__*/React.createElement(DarkModeMoon, {
+    style: {
+      transform: "scale(0.667, 0.667)",
+      transformOrigin: "0 0"
+    }
+  })), /*#__PURE__*/React.createElement("span", {
+    style: {
+      position: "relative",
+      fontFamily: "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+      fontWeight: 400,
+      fontSize: 12,
+      whiteSpace: "nowrap",
+      lineHeight: 1.2999999523162842,
+      letterSpacing: "-0.020em",
+      color: "var(--color-bluegray-700)",
+      flexShrink: 0
+    }
+  }, props.text3 ?? "Dark theme")), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      width: 29,
+      height: 16,
+      borderRadius: 79.75,
+      backgroundColor: "rgba(156,163,175,0.4)",
+      flexShrink: 0
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "absolute",
+      left: 2.417,
+      top: 2.417,
+      width: 11.278,
+      height: 11.278,
+      borderRadius: 5.638889312744141,
+      backgroundColor: "var(--backgrounds-whiite)",
+      boxShadow: "0px 0.806px 2.417px 0px rgba(0,0,0,0.3)"
+    }
+  }))), /*#__PURE__*/React.createElement(Button2, {
+    style: {
+      position: "relative",
+      width: 196,
+      flexShrink: 0
+    },
+    text: "Log out",
+    icon1: /*#__PURE__*/React.createElement(Logout, {
+      style: {
+        transform: "scale(0.667, 0.667)",
+        transformOrigin: "0 0"
+      }
+    }),
+    property1: "default"
+  }))), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "absolute",
+      left: 0,
+      top: 0,
+      width: 28,
+      height: 28,
+      borderRadius: "50%"
+    }
+  }));
+  const __impls = {
+    // figma: Property 1=Default
+    "property1=default": __body0,
+    // figma: Property 1=Variant2
+    "property1=variant2": __body1
+  };
+  return (__impls[__vkey_Frame1707480391(props)] ?? __body0)();
+}
+
+// figma node: 1:7875 Down arrow
+function DownArrow(_p = {}) {
+  const props = _p;
+  return /*#__PURE__*/React.createElement("div", {
+    className: props.className,
+    style: {
+      width: 24,
+      height: 24,
+      position: "relative",
+      color: "rgb(100,116,139)",
+      ...props.style
+    }
+  }, /*#__PURE__*/React.createElement("svg", {
+    width: 12,
+    height: 7.400,
+    viewBox: "0 0 12 7.400",
+    fill: "none",
+    style: {
+      position: "absolute",
+      left: 6,
+      top: 8.5,
+      width: 12,
+      height: 7.4
+    }
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M 6 7.4 L 0 1.4 L 1.4 0 L 6 4.575 L 10.6 0 L 12 1.4 L 6 7.4 Z",
+    fill: "currentColor",
+    fillRule: "evenodd"
+  })));
+}
+
+// figma node: 1:181 Add
+function Add2(_p = {}) {
+  const props = _p;
+  return /*#__PURE__*/React.createElement("div", {
+    className: props.className,
+    style: {
+      width: 24,
+      height: 24,
+      position: "relative",
+      color: "rgb(100,116,139)",
+      ...props.style
+    }
+  }, /*#__PURE__*/React.createElement("svg", {
+    width: 12,
+    height: 12,
+    viewBox: "0 0 12 12",
+    fill: "none",
+    style: {
+      position: "absolute",
+      left: 6,
+      top: 6.5,
+      width: 12,
+      height: 12
+    }
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M 5.143 6.857 L 0 6.857 L 0 5.143 L 5.143 5.143 L 5.143 0 L 6.857 0 L 6.857 5.143 L 12 5.143 L 12 6.857 L 6.857 6.857 L 6.857 12 L 5.143 12 L 5.143 6.857 Z",
+    fill: "currentColor",
+    fillRule: "evenodd"
+  })));
+}
+
+// figma node: 1:7456 Icon Pack
+function IconPack2(_p = {}) {
+  const props = _p;
+  return /*#__PURE__*/React.createElement("div", {
+    className: props.className,
+    style: {
+      width: 24,
+      height: 24,
+      overflow: "hidden",
+      position: "relative",
+      ...props.style
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "absolute",
+      left: 0,
+      top: 0,
+      width: 24,
+      height: 24
+    }
+  }, props.instance ?? /*#__PURE__*/React.createElement(Add2, null)));
+}
+
+// figma node: 1:11565 LLM Model icon (3 variants)
+const __venc_LLMModelIcon = v => String(v).replace(/[%|=]/g, encodeURIComponent);
+const __vkey_LLMModelIcon = p => "property1=" + __venc_LLMModelIcon(p.property1);
+function LLMModelIcon(_p = {}) {
+  const props = {
+    ..._p,
+    property1: _p.property1 ?? "chatgpt 4o mini"
+  };
+  const __body0 = () => /*#__PURE__*/React.createElement("div", {
+    className: props.className,
+    style: {
+      width: 28,
+      height: 28,
+      overflow: "hidden",
+      borderRadius: 6,
+      backgroundColor: "rgb(153,246,228)",
+      position: "relative",
+      ...props.style
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "absolute",
+      left: 4,
+      top: 4,
+      width: 20,
+      height: 20,
+      overflow: "hidden"
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "absolute",
+      left: 0,
+      top: 0,
+      width: 20,
+      height: 20,
+      overflow: "hidden"
+    }
+  }, /*#__PURE__*/React.createElement("svg", {
+    width: 12.500,
+    height: 11.667,
+    viewBox: "0 0 12.500 11.667",
+    fill: "none",
+    style: {
+      position: "absolute",
+      left: 1.667,
+      top: 4.167,
+      width: 12.5,
+      height: 11.667,
+      color: "rgb(8,145,178)"
+    }
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M 6.25 0 L 8.203 4.01 L 12.5 5.833 L 8.203 7.656 L 6.25 11.667 L 4.297 7.656 L 0 5.833 L 4.297 4.01 L 6.25 0 Z M 6.25 3.522 L 5.469 5.104 L 3.773 5.833 L 5.469 6.563 L 6.25 8.145 L 7.031 6.563 L 8.727 5.833 L 7.031 5.104 L 6.25 3.522 Z",
+    fill: "currentColor",
+    fillRule: "evenodd"
+  })), /*#__PURE__*/React.createElement("svg", {
+    width: 6.667,
+    height: 6.667,
+    viewBox: "0 0 6.667 6.667",
+    fill: "none",
+    style: {
+      position: "absolute",
+      left: 11.667,
+      top: 11.667,
+      width: 6.667,
+      height: 6.667,
+      color: "rgb(8,145,178)"
+    }
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M 3.333 6.667 L 2.283 4.383 L 0 3.333 L 2.283 2.292 L 3.333 0 L 4.375 2.292 L 6.667 3.333 L 4.375 4.383 L 3.333 6.667 Z",
+    fill: "currentColor",
+    fillRule: "evenodd"
+  })), /*#__PURE__*/React.createElement("svg", {
+    width: 6.667,
+    height: 6.667,
+    viewBox: "0 0 6.667 6.667",
+    fill: "none",
+    style: {
+      position: "absolute",
+      left: 11.667,
+      top: 1.667,
+      width: 6.667,
+      height: 6.667,
+      color: "rgb(45,212,191)"
+    }
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M 3.333 6.667 L 2.283 4.383 L 0 3.333 L 2.283 2.292 L 3.333 0 L 4.375 2.292 L 6.667 3.333 L 4.375 4.383 L 3.333 6.667 Z",
+    fill: "currentColor",
+    fillRule: "evenodd"
+  })))));
+  const __body1 = () => /*#__PURE__*/React.createElement("div", {
+    className: props.className,
+    style: {
+      width: 28,
+      height: 28,
+      overflow: "hidden",
+      borderRadius: 6,
+      backgroundColor: "rgb(221,214,254)",
+      position: "relative",
+      color: "rgb(124,58,237)",
+      ...props.style
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "absolute",
+      left: 4.667,
+      top: 4.667,
+      width: 18.667,
+      height: 18.667,
+      overflow: "hidden"
+    }
+  }, /*#__PURE__*/React.createElement("svg", {
+    width: 18.667,
+    height: 18.667,
+    viewBox: "0 0 18.667 18.667",
+    fill: "none",
+    style: {
+      position: "absolute",
+      left: 0,
+      top: 0,
+      width: 18.667,
+      height: 18.667
+    }
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M 9.333 0 L 6.417 6.417 L 0 9.333 L 6.417 12.25 L 9.333 18.667 L 12.25 12.25 L 18.667 9.333 L 12.25 6.417 Z",
+    fill: "currentColor",
+    fillRule: "evenodd"
+  })), /*#__PURE__*/React.createElement("svg", {
+    width: 6.222,
+    height: 6.222,
+    viewBox: "0 0 6.222 6.222",
+    fill: "none",
+    style: {
+      position: "absolute",
+      left: 12.333,
+      top: 0.333,
+      width: 6.222,
+      height: 6.222
+    }
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M 3.111 0 L 2.139 2.139 L 0 3.111 L 2.139 4.083 L 3.111 6.222 L 4.083 4.083 L 6.222 3.111 L 4.083 2.139 Z",
+    fill: "currentColor",
+    fillRule: "evenodd"
+  }))));
+  const __body2 = () => /*#__PURE__*/React.createElement("div", {
+    className: props.className,
+    style: {
+      width: 28,
+      height: 28,
+      overflow: "hidden",
+      borderRadius: 6,
+      backgroundColor: "rgb(167,243,208)",
+      position: "relative",
+      color: "rgb(5,150,105)",
+      ...props.style
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "absolute",
+      left: 4.667,
+      top: 4.667,
+      width: 18.667,
+      height: 18.667,
+      overflow: "hidden"
+    }
+  }, /*#__PURE__*/React.createElement("svg", {
+    width: 18.667,
+    height: 18.667,
+    viewBox: "0 0 18.667 18.667",
+    fill: "none",
+    style: {
+      position: "absolute",
+      left: 0,
+      top: 0,
+      width: 18.667,
+      height: 18.667
+    }
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M 9.333 0 L 6.417 6.417 L 0 9.333 L 6.417 12.25 L 9.333 18.667 L 12.25 12.25 L 18.667 9.333 L 12.25 6.417 Z",
+    fill: "currentColor",
+    fillRule: "evenodd"
+  }))));
+  const __impls = {
+    // figma: Property 1=Lumenore Ai
+    "property1=lumenore ai": __body0,
+    // figma: Property 1=ChatGpt 4o
+    "property1=chatgpt 4o": __body1,
+    // figma: Property 1=ChatGpt 4
+    "property1=chatgpt 4": __body2
+  };
+  return (__impls[__vkey_LLMModelIcon(props)] ?? __body0)();
+}
+
+// figma node: 1:11629 LLM Options (4 variants)
+const __venc_LLMOptions = v => String(v).replace(/[%|=]/g, encodeURIComponent);
+const __vkey_LLMOptions = p => "property1=" + __venc_LLMOptions(p.property1);
+function LLMOptions(_p = {}) {
+  const props = {
+    ..._p,
+    property1: _p.property1 ?? "default"
+  };
+  const __body0 = () => /*#__PURE__*/React.createElement("div", {
+    className: props.className,
+    style: {
+      width: 197,
+      overflow: "hidden",
+      borderRadius: 4,
+      backgroundColor: "rgb(255,255,255)",
+      display: "flex",
+      flexDirection: "row",
+      gap: 10,
+      padding: "4px 21px 4px 10px",
+      justifyContent: "flex-end",
+      alignItems: "center",
+      flexWrap: "wrap",
+      alignContent: "space-between",
+      boxSizing: "border-box",
+      position: "relative",
+      ...props.style
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      width: 24,
+      flexShrink: 0,
+      alignSelf: "stretch",
+      height: "auto"
+    }
+  }, props.icon1 ?? /*#__PURE__*/React.createElement(LLMModelIcon, {
+    property1: "lumenore ai"
+  })), /*#__PURE__*/React.createElement("span", {
+    style: {
+      position: "relative",
+      fontFamily: "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+      fontWeight: 500,
+      fontSize: 12,
+      lineHeight: 1.2999999523162842,
+      letterSpacing: "-0.020em",
+      color: "rgb(71,85,105)",
+      flexGrow: 1,
+      whiteSpace: "nowrap"
+    }
+  }, props.text1 ?? "Lumenore AI"));
+  const __body1 = () => /*#__PURE__*/React.createElement("div", {
+    className: props.className,
+    style: {
+      width: 197,
+      overflow: "hidden",
+      borderRadius: 4,
+      backgroundColor: "rgb(239,246,255)",
+      display: "flex",
+      flexDirection: "row",
+      gap: 10,
+      padding: "4px 21px 4px 10px",
+      justifyContent: "flex-end",
+      alignItems: "center",
+      flexWrap: "wrap",
+      alignContent: "space-between",
+      boxSizing: "border-box",
+      position: "relative",
+      ...props.style
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      width: 24,
+      flexShrink: 0,
+      alignSelf: "stretch",
+      height: "auto"
+    }
+  }, props.icon1 ?? /*#__PURE__*/React.createElement(LLMModelIcon, {
+    property1: "lumenore ai"
+  })), /*#__PURE__*/React.createElement("span", {
+    style: {
+      position: "relative",
+      fontFamily: "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+      fontWeight: 500,
+      fontSize: 12,
+      lineHeight: 1.2999999523162842,
+      letterSpacing: "-0.020em",
+      color: "rgb(71,85,105)",
+      flexGrow: 1,
+      whiteSpace: "nowrap"
+    }
+  }, props.text1 ?? "Lumenore AI"));
+  const __body2 = () => /*#__PURE__*/React.createElement("div", {
+    className: props.className,
+    style: {
+      width: 197,
+      overflow: "hidden",
+      borderRadius: 4,
+      backgroundColor: "rgb(219,234,254)",
+      borderTop: "1px solid rgb(59,130,246)",
+      borderRight: "1px solid rgb(59,130,246)",
+      borderBottom: "1px solid rgb(59,130,246)",
+      borderLeft: "4px solid rgb(59,130,246)",
+      display: "flex",
+      flexDirection: "row",
+      gap: 10,
+      padding: "4px 21px 4px 10px",
+      justifyContent: "flex-end",
+      alignItems: "center",
+      flexWrap: "wrap",
+      alignContent: "space-between",
+      boxSizing: "border-box",
+      position: "relative",
+      ...props.style
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      width: 24,
+      flexShrink: 0,
+      alignSelf: "stretch",
+      height: "auto"
+    }
+  }, props.icon1 ?? /*#__PURE__*/React.createElement(LLMModelIcon, {
+    property1: "lumenore ai"
+  })), /*#__PURE__*/React.createElement("span", {
+    style: {
+      position: "relative",
+      fontFamily: "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+      fontWeight: 500,
+      fontSize: 12,
+      lineHeight: 1.2999999523162842,
+      letterSpacing: "-0.020em",
+      color: "rgb(51,65,85)",
+      flexGrow: 1,
+      whiteSpace: "nowrap"
+    }
+  }, props.text1 ?? "Lumenore AI"));
+  const __body3 = () => /*#__PURE__*/React.createElement("div", {
+    className: props.className,
+    style: {
+      width: 197,
+      overflow: "hidden",
+      borderRadius: 4,
+      backgroundColor: "rgb(239,246,255)",
+      borderTop: "1px solid rgb(59,130,246)",
+      borderRight: "1px solid rgb(59,130,246)",
+      borderBottom: "1px solid rgb(59,130,246)",
+      borderLeft: "4px solid rgb(59,130,246)",
+      display: "flex",
+      flexDirection: "row",
+      gap: 10,
+      padding: "4px 21px 4px 10px",
+      justifyContent: "flex-end",
+      alignItems: "center",
+      flexWrap: "wrap",
+      alignContent: "space-between",
+      boxSizing: "border-box",
+      position: "relative",
+      ...props.style
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      width: 24,
+      flexShrink: 0,
+      alignSelf: "stretch",
+      height: "auto"
+    }
+  }, props.icon1 ?? /*#__PURE__*/React.createElement(LLMModelIcon, {
+    property1: "lumenore ai"
+  })), /*#__PURE__*/React.createElement("span", {
+    style: {
+      position: "relative",
+      fontFamily: "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+      fontWeight: 500,
+      fontSize: 12,
+      lineHeight: 1.2999999523162842,
+      letterSpacing: "-0.020em",
+      color: "rgb(71,85,105)",
+      flexGrow: 1,
+      whiteSpace: "nowrap"
+    }
+  }, props.text1 ?? "Lumenore AI"));
+  const __impls = {
+    // figma: Property 1=Default
+    "property1=default": __body0,
+    // figma: Property 1=Hover
+    "property1=hover": __body1,
+    // figma: Property 1=Selected hover
+    "property1=selected hover": __body2,
+    // figma: Property 1=Selected
+    "property1=selected": __body3
+  };
+  return (__impls[__vkey_LLMOptions(props)] ?? __body0)();
+}
+
+// figma node: 1:11656 Up arrow
+function UpArrow(_p = {}) {
+  const props = _p;
+  return /*#__PURE__*/React.createElement("div", {
+    className: props.className,
+    style: {
+      width: 24,
+      height: 24,
+      position: "relative",
+      color: "rgb(71,85,105)",
+      ...props.style
+    }
+  }, /*#__PURE__*/React.createElement("svg", {
+    width: 12,
+    height: 7.400,
+    viewBox: "0 0 12 7.400",
+    fill: "none",
+    style: {
+      position: "absolute",
+      left: 6,
+      top: 7.975,
+      width: 12,
+      height: 7.4
+    }
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M 1.4 7.4 L 0 6 L 6 0 L 12 6 L 10.6 7.4 L 6 2.825 L 1.4 7.4 Z",
+    fill: "currentColor",
+    fillRule: "evenodd"
+  })));
+}
+
+// figma node: 1:12901 LLM Model (3 variants)
+const __venc_LLMModel = v => String(v).replace(/[%|=]/g, encodeURIComponent);
+const __vkey_LLMModel = p => "property1=" + __venc_LLMModel(p.property1);
+function LLMModel(_p = {}) {
+  const props = {
+    ..._p,
+    property1: _p.property1 ?? "default"
+  };
+  const __body0 = () => /*#__PURE__*/React.createElement("div", {
+    className: props.className,
+    style: {
+      width: "fit-content",
+      borderRadius: 4,
+      display: "flex",
+      flexDirection: "row",
+      gap: 8,
+      padding: "6px 8px 6px 8px",
+      alignItems: "center",
+      flexWrap: "nowrap",
+      boxSizing: "border-box",
+      position: "relative",
+      ...props.style
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      display: "flex",
+      flexDirection: "row",
+      gap: 6,
+      alignItems: "center",
+      flexWrap: "nowrap",
+      flexShrink: 0,
+      alignSelf: "stretch"
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      width: 20,
+      flexShrink: 0,
+      alignSelf: "stretch",
+      height: "auto"
+    }
+  }, props.icon1 ?? /*#__PURE__*/React.createElement(LLMModelIcon, {
+    property1: "chatgpt 4o"
+  })), /*#__PURE__*/React.createElement("span", {
+    style: {
+      position: "relative",
+      fontFamily: "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+      fontWeight: 500,
+      fontSize: 12,
+      textAlign: "center",
+      whiteSpace: "nowrap",
+      lineHeight: 1.2999999523162842,
+      letterSpacing: "-0.020em",
+      color: "rgb(71,85,105)",
+      flexShrink: 0
+    }
+  }, props.text1 ?? "Chat GPT 4o")), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      width: 16,
+      height: 16,
+      flexShrink: 0
+    }
+  }, props.icon2 ?? /*#__PURE__*/React.createElement(IconPack2, {
+    instance: /*#__PURE__*/React.createElement(DownArrow, null),
+    style: {
+      transform: "scale(0.667, 0.667)",
+      transformOrigin: "0 0"
+    }
+  })));
+  const __body1 = () => /*#__PURE__*/React.createElement("div", {
+    className: props.className,
+    style: {
+      width: "fit-content",
+      borderRadius: 4,
+      backgroundColor: "rgb(241,245,249)",
+      display: "flex",
+      flexDirection: "row",
+      gap: 8,
+      padding: "6px 8px 6px 8px",
+      alignItems: "center",
+      flexWrap: "nowrap",
+      boxSizing: "border-box",
+      position: "relative",
+      ...props.style
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      display: "flex",
+      flexDirection: "row",
+      gap: 6,
+      alignItems: "center",
+      flexWrap: "nowrap",
+      flexShrink: 0,
+      alignSelf: "stretch"
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      width: 20,
+      flexShrink: 0,
+      alignSelf: "stretch",
+      height: "auto"
+    }
+  }, props.icon1 ?? /*#__PURE__*/React.createElement(LLMModelIcon, {
+    property1: "chatgpt 4o"
+  })), /*#__PURE__*/React.createElement("span", {
+    style: {
+      position: "relative",
+      fontFamily: "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+      fontWeight: 500,
+      fontSize: 12,
+      textAlign: "center",
+      whiteSpace: "nowrap",
+      lineHeight: 1.2999999523162842,
+      letterSpacing: "-0.020em",
+      color: "rgb(71,85,105)",
+      flexShrink: 0
+    }
+  }, props.text1 ?? "Chat GPT 4o")), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      width: 16,
+      height: 16,
+      flexShrink: 0
+    }
+  }, props.icon2 ?? /*#__PURE__*/React.createElement(IconPack2, {
+    instance: /*#__PURE__*/React.createElement(DownArrow, null),
+    style: {
+      transform: "scale(0.667, 0.667)",
+      transformOrigin: "0 0"
+    }
+  })));
+  const __body2 = () => /*#__PURE__*/React.createElement("div", {
+    className: props.className,
+    style: {
+      width: "fit-content",
+      borderRadius: 4,
+      backgroundColor: "rgb(241,245,249)",
+      display: "flex",
+      flexDirection: "row",
+      gap: 8,
+      padding: "6px 8px 6px 8px",
+      alignItems: "center",
+      flexWrap: "nowrap",
+      boxSizing: "border-box",
+      position: "relative",
+      ...props.style
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      display: "flex",
+      flexDirection: "row",
+      gap: 6,
+      alignItems: "center",
+      flexWrap: "nowrap",
+      flexShrink: 0,
+      alignSelf: "stretch"
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      width: 20,
+      flexShrink: 0,
+      alignSelf: "stretch",
+      height: "auto"
+    }
+  }, props.icon1 ?? /*#__PURE__*/React.createElement(LLMModelIcon, {
+    property1: "chatgpt 4o"
+  })), /*#__PURE__*/React.createElement("span", {
+    style: {
+      position: "relative",
+      fontFamily: "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+      fontWeight: 500,
+      fontSize: 12,
+      textAlign: "center",
+      whiteSpace: "nowrap",
+      lineHeight: 1.2999999523162842,
+      letterSpacing: "-0.020em",
+      color: "rgb(71,85,105)",
+      flexShrink: 0
+    }
+  }, props.text1 ?? "Chat GPT 4o")), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      width: 16,
+      height: 16,
+      flexShrink: 0
+    }
+  }, props.icon2 ?? /*#__PURE__*/React.createElement(IconPack2, {
+    instance: /*#__PURE__*/React.createElement(UpArrow, null),
+    style: {
+      transform: "scale(0.667, 0.667)",
+      transformOrigin: "0 0"
+    }
+  })), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "absolute",
+      left: 0,
+      top: 36,
+      width: 149,
+      overflow: "hidden",
+      borderRadius: 5,
+      backgroundColor: "rgb(255,255,255)",
+      boxShadow: "0px 0px 8px 0px rgba(0,0,0,0.12)",
+      display: "flex",
+      flexDirection: "column",
+      gap: 2,
+      padding: "4px 0px 4px 0px",
+      alignItems: "flex-start",
+      flexWrap: "nowrap",
+      boxSizing: "border-box"
+    }
+  }, /*#__PURE__*/React.createElement(LLMOptions, {
+    style: {
+      position: "relative",
+      flexShrink: 0,
+      alignSelf: "stretch",
+      width: "auto"
+    },
+    property1: "default"
+  }), /*#__PURE__*/React.createElement(LLMOptions, {
+    style: {
+      position: "relative",
+      flexShrink: 0,
+      alignSelf: "stretch",
+      width: "auto"
+    },
+    text1: "Chat GPT 4o",
+    icon1: /*#__PURE__*/React.createElement(LLMModelIcon, {
+      property1: "chatgpt 4o",
+      style: {
+        transform: "scale(0.857, 0.857)",
+        transformOrigin: "0 0"
+      }
+    }),
+    property1: "selected"
+  }), /*#__PURE__*/React.createElement(LLMOptions, {
+    style: {
+      position: "relative",
+      flexShrink: 0,
+      alignSelf: "stretch",
+      width: "auto"
+    },
+    text1: "Chat GPT 4",
+    icon1: /*#__PURE__*/React.createElement(LLMModelIcon, {
+      property1: "chatgpt 4",
+      style: {
+        transform: "scale(0.857, 0.857)",
+        transformOrigin: "0 0"
+      }
+    }),
+    property1: "default"
+  })));
+  const __impls = {
+    // figma: Property 1=Default
+    "property1=default": __body0,
+    // figma: Property 1=Hover
+    "property1=hover": __body1,
+    // figma: Property 1=Selected
+    "property1=selected": __body2
+  };
+  return (__impls[__vkey_LLMModel(props)] ?? __body0)();
+}
+
+// figma node: 1:47 Add
+function Add(_p = {}) {
+  const props = _p;
+  return /*#__PURE__*/React.createElement("div", {
+    className: props.className,
+    style: {
+      width: 24,
+      height: 24,
+      position: "relative",
+      color: "rgb(71,85,105)",
+      ...props.style
+    }
+  }, /*#__PURE__*/React.createElement("svg", {
+    width: 12,
+    height: 12,
+    viewBox: "0 0 12 12",
+    fill: "none",
+    style: {
+      position: "absolute",
+      left: 6,
+      top: 6.5,
+      width: 12,
+      height: 12
+    }
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M 5.143 6.857 L 0 6.857 L 0 5.143 L 5.143 5.143 L 5.143 0 L 6.857 0 L 6.857 5.143 L 12 5.143 L 12 6.857 L 6.857 6.857 L 6.857 12 L 5.143 12 L 5.143 6.857 Z",
+    fill: "currentColor",
+    fillRule: "evenodd"
+  })));
+}
+
+// figma node: 1:50 Auto RCA
+function AutoRCA2(_p = {}) {
+  const props = _p;
+  return /*#__PURE__*/React.createElement("div", {
+    className: props.className,
+    style: {
+      width: 24,
+      height: 24,
+      overflow: "hidden",
+      position: "relative",
+      ...props.style
+    }
+  }, /*#__PURE__*/React.createElement("svg", {
+    width: 7.652,
+    height: 7.826,
+    viewBox: "0 0 7.652 7.826",
+    fill: "none",
+    style: {
+      position: "absolute",
+      left: 9.101,
+      top: 2,
+      width: 7.652,
+      height: 7.826,
+      color: "rgb(8,145,178)"
+    }
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M 3.826 0 L 2.63 2.69 L 0 3.913 L 2.63 5.136 L 3.826 7.826 L 5.022 5.136 L 7.652 3.913 L 5.022 2.69 L 3.826 0 Z M 3.348 4.402 L 4.345 4.158 L 5.342 3.913 L 3.348 4.402 Z",
+    fill: "currentColor",
+    fillRule: "evenodd"
+  })), /*#__PURE__*/React.createElement("svg", {
+    width: 4.947,
+    height: 5.059,
+    viewBox: "0 0 4.947 5.059",
+    fill: "none",
+    style: {
+      position: "absolute",
+      left: 15.053,
+      top: 6.348,
+      width: 4.947,
+      height: 5.059,
+      color: "rgb(45,212,191)"
+    }
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M 2.473 5.059 L 3.253 3.326 L 4.947 2.53 L 3.253 1.739 L 2.473 0 L 1.7 1.739 L 0 2.53 L 1.7 3.326 L 2.473 5.059 Z",
+    fill: "currentColor",
+    fillRule: "evenodd"
+  })), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "absolute",
+      left: 4,
+      top: 6.734,
+      width: 16,
+      height: 15.266,
+      border: "1px dashed currentColor",
+      display: "flex",
+      alignItems: "center",
+      justifyContent: "center",
+      overflow: "hidden",
+      fontSize: 10,
+      opacity: 0.45
+    }
+  }, "Subtract"), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "absolute",
+      left: 7,
+      top: 9.857,
+      width: 2,
+      height: 4.742,
+      border: "1px dashed currentColor",
+      display: "flex",
+      alignItems: "center",
+      justifyContent: "center",
+      overflow: "hidden",
+      fontSize: 10,
+      opacity: 0.45
+    }
+  }, "Ellipse 69"));
+}
+
+// figma node: 144:14687 Icon Pack
+function IconPack4(_p = {}) {
+  const props = _p;
+  return /*#__PURE__*/React.createElement("div", {
+    className: props.className,
+    style: {
+      width: 24,
+      height: 24,
+      overflow: "hidden",
+      position: "relative",
+      ...props.style
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "absolute",
+      left: 0,
+      top: 0,
+      width: 24,
+      height: 24
+    }
+  }, props.instance ?? /*#__PURE__*/React.createElement(AutoRCA2, null)));
+}
+
+// figma node: 3244:51717 nav.create (2 variants)
+const __venc_NavCreate = v => String(v).replace(/[%|=]/g, encodeURIComponent);
+const __vkey_NavCreate = p => "state=" + __venc_NavCreate(p.state);
+function NavCreate(_p = {}) {
+  const props = {
+    ..._p,
+    state: _p.state ?? "default"
+  };
+  const __body0 = () => /*#__PURE__*/React.createElement("div", {
+    className: props.className,
+    style: {
+      width: 32,
+      height: 43,
+      position: "relative",
+      ...props.style
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "absolute",
+      left: 0,
+      top: 0,
+      width: 32,
+      maxWidth: 50,
+      maxHeight: null,
+      display: "flex",
+      flexDirection: "column",
+      gap: 6,
+      alignItems: "center",
+      flexWrap: "nowrap"
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      height: 24,
+      borderRadius: 24,
+      backgroundColor: "rgb(191,219,254)",
+      display: "flex",
+      flexDirection: "column",
+      gap: 6,
+      justifyContent: "center",
+      alignItems: "center",
+      flexWrap: "nowrap",
+      flexShrink: 0,
+      alignSelf: "stretch"
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      width: 18,
+      height: 18,
+      flexShrink: 0
+    }
+  }, props.icon1 ?? /*#__PURE__*/React.createElement(IconPack4, {
+    instance: /*#__PURE__*/React.createElement(Add, null),
+    style: {
+      transform: "scale(0.750, 0.750)",
+      transformOrigin: "0 0"
+    }
+  }))), /*#__PURE__*/React.createElement("span", {
+    style: {
+      position: "relative",
+      fontFamily: "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+      fontWeight: 500,
+      fontSize: 10,
+      whiteSpace: "nowrap",
+      lineHeight: 1.340000033378601,
+      letterSpacing: "-0.020em",
+      color: "rgb(51,65,85)",
+      flexShrink: 0,
+      alignSelf: "stretch"
+    }
+  }, props.text1 ?? "Create")));
+  const __body1 = () => /*#__PURE__*/React.createElement("div", {
+    className: props.className,
+    style: {
+      width: 32,
+      height: 43,
+      position: "relative",
+      ...props.style
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "absolute",
+      left: 0,
+      top: 0,
+      width: 32,
+      maxWidth: 50,
+      maxHeight: null,
+      display: "flex",
+      flexDirection: "column",
+      gap: 6,
+      alignItems: "center",
+      flexWrap: "nowrap"
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      height: 24,
+      borderRadius: 24,
+      backgroundColor: "rgb(147,197,253)",
+      display: "flex",
+      flexDirection: "column",
+      gap: 6,
+      justifyContent: "center",
+      alignItems: "center",
+      flexWrap: "nowrap",
+      flexShrink: 0,
+      alignSelf: "stretch"
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      width: 18,
+      height: 18,
+      flexShrink: 0
+    }
+  }, props.icon1 ?? /*#__PURE__*/React.createElement(IconPack4, {
+    instance: /*#__PURE__*/React.createElement(Add, null),
+    style: {
+      transform: "scale(0.750, 0.750)",
+      transformOrigin: "0 0"
+    }
+  }))), /*#__PURE__*/React.createElement("span", {
+    style: {
+      position: "relative",
+      fontFamily: "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+      fontWeight: 500,
+      fontSize: 10,
+      whiteSpace: "nowrap",
+      lineHeight: 1.340000033378601,
+      letterSpacing: "-0.020em",
+      color: "rgb(51,65,85)",
+      flexShrink: 0,
+      alignSelf: "stretch"
+    }
+  }, props.text1 ?? "Create")));
+  const __impls = {
+    // figma: state=default
+    "state=default": __body0,
+    // figma: state=hover
+    "state=hover": __body1
+  };
+  return (__impls[__vkey_NavCreate(props)] ?? __body0)();
+}
+
+// figma node: 1:17 Home
+function Home(_p = {}) {
+  const props = _p;
+  return /*#__PURE__*/React.createElement("div", {
+    className: props.className,
+    style: {
+      width: 24,
+      height: 24,
+      position: "relative",
+      color: "rgb(100,116,139)",
+      ...props.style
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "absolute",
+      left: 0,
+      top: 0,
+      width: 24,
+      height: 24
+    }
+  }, /*#__PURE__*/React.createElement("svg", {
+    width: 16,
+    height: 18,
+    viewBox: "0 0 16 18",
+    fill: "none",
+    style: {
+      position: "absolute",
+      left: 4,
+      top: 3,
+      width: 16,
+      height: 18
+    }
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M 2 16 L 5 16 L 5 10 L 11 10 L 11 16 L 14 16 L 14 7 L 8 2.5 L 2 7 L 2 16 Z M 0 18 L 0 6 L 8 0 L 16 6 L 16 18 L 9 18 L 9 12 L 7 12 L 7 18 L 0 18 Z",
+    fill: "currentColor",
+    fillRule: "evenodd"
+  }))));
+}
+
+// figma node: 1:7 Auto RCA
+function AutoRCA(_p = {}) {
+  const props = _p;
+  return /*#__PURE__*/React.createElement("div", {
+    className: props.className,
+    style: {
+      width: 24,
+      height: 24,
+      overflow: "hidden",
+      position: "relative",
+      ...props.style
+    }
+  }, /*#__PURE__*/React.createElement("svg", {
+    width: 7.652,
+    height: 7.826,
+    viewBox: "0 0 7.652 7.826",
+    fill: "none",
+    style: {
+      position: "absolute",
+      left: 9.101,
+      top: 2,
+      width: 7.652,
+      height: 7.826,
+      color: "rgb(8,145,178)"
+    }
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M 3.826 0 L 2.63 2.69 L 0 3.913 L 2.63 5.136 L 3.826 7.826 L 5.022 5.136 L 7.652 3.913 L 5.022 2.69 L 3.826 0 Z M 3.348 4.402 L 4.345 4.158 L 5.342 3.913 L 3.348 4.402 Z",
+    fill: "currentColor",
+    fillRule: "evenodd"
+  })), /*#__PURE__*/React.createElement("svg", {
+    width: 4.947,
+    height: 5.059,
+    viewBox: "0 0 4.947 5.059",
+    fill: "none",
+    style: {
+      position: "absolute",
+      left: 15.053,
+      top: 6.348,
+      width: 4.947,
+      height: 5.059,
+      color: "rgb(45,212,191)"
+    }
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M 2.473 5.059 L 3.253 3.326 L 4.947 2.53 L 3.253 1.739 L 2.473 0 L 1.7 1.739 L 0 2.53 L 1.7 3.326 L 2.473 5.059 Z",
+    fill: "currentColor",
+    fillRule: "evenodd"
+  })), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "absolute",
+      left: 4,
+      top: 6.734,
+      width: 16,
+      height: 15.266,
+      border: "1px dashed currentColor",
+      display: "flex",
+      alignItems: "center",
+      justifyContent: "center",
+      overflow: "hidden",
+      fontSize: 10,
+      opacity: 0.45
+    }
+  }, "Subtract"), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "absolute",
+      left: 7,
+      top: 9.857,
+      width: 2,
+      height: 4.742,
+      border: "1px dashed currentColor",
+      display: "flex",
+      alignItems: "center",
+      justifyContent: "center",
+      overflow: "hidden",
+      fontSize: 10,
+      opacity: 0.45
+    }
+  }, "Ellipse 69"));
+}
+
+// figma node: 1:15 Icon Pack
+function IconPack(_p = {}) {
+  const props = _p;
+  return /*#__PURE__*/React.createElement("div", {
+    className: props.className,
+    style: {
+      width: 24,
+      height: 24,
+      overflow: "hidden",
+      position: "relative",
+      ...props.style
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "absolute",
+      left: 0,
+      top: 0,
+      width: 24,
+      height: 24
+    }
+  }, props.instance ?? /*#__PURE__*/React.createElement(AutoRCA, null)));
+}
+
+// figma node: 1:32 nav.menu (2 variants)
+const __venc_NavMenu = v => String(v).replace(/[%|=]/g, encodeURIComponent);
+const __vkey_NavMenu = p => "state=" + __venc_NavMenu(p.state);
+function NavMenu(_p = {}) {
+  const props = {
+    ..._p,
+    state: _p.state ?? "clicked",
+    text: _p.text ?? "Homepage"
+  };
+  const __body0 = () => /*#__PURE__*/React.createElement("div", {
+    className: props.className,
+    style: {
+      width: "fit-content",
+      maxWidth: 50,
+      maxHeight: null,
+      display: "flex",
+      flexDirection: "column",
+      gap: 6,
+      alignItems: "center",
+      flexWrap: "nowrap",
+      position: "relative",
+      ...props.style
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      width: 32,
+      height: 32,
+      borderRadius: 2,
+      display: "flex",
+      flexDirection: "column",
+      gap: 6,
+      justifyContent: "center",
+      alignItems: "center",
+      flexWrap: "nowrap",
+      flexShrink: 0
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      width: 16,
+      height: 16,
+      flexShrink: 0
+    }
+  }, props.changeIcon ?? /*#__PURE__*/React.createElement(IconPack, {
+    instance: /*#__PURE__*/React.createElement(Home, null),
+    style: {
+      transform: "scale(0.667, 0.667)",
+      transformOrigin: "0 0"
+    }
+  }))), /*#__PURE__*/React.createElement("span", {
+    style: {
+      position: "relative",
+      maxWidth: 51,
+      maxHeight: null,
+      fontFamily: "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+      fontWeight: 500,
+      fontSize: 10,
+      textAlign: "center",
+      lineHeight: 1.340000033378601,
+      letterSpacing: "-0.020em",
+      color: "rgb(51,65,85)",
+      flexShrink: 0,
+      alignSelf: "stretch"
+    }
+  }, props.text));
+  const __body1 = () => /*#__PURE__*/React.createElement("div", {
+    className: props.className,
+    style: {
+      width: "fit-content",
+      maxWidth: 50,
+      maxHeight: null,
+      display: "flex",
+      flexDirection: "column",
+      gap: 6,
+      alignItems: "center",
+      flexWrap: "nowrap",
+      position: "relative",
+      ...props.style
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      width: 32,
+      height: 32,
+      borderRadius: 2,
+      backgroundColor: "rgb(96,165,250)",
+      display: "flex",
+      flexDirection: "column",
+      gap: 6,
+      justifyContent: "center",
+      alignItems: "center",
+      flexWrap: "nowrap",
+      flexShrink: 0
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      width: 16,
+      height: 16,
+      flexShrink: 0
+    }
+  }, props.icon1 ?? /*#__PURE__*/React.createElement(IconPack, {
+    instance: /*#__PURE__*/React.createElement(Home, null),
+    style: {
+      transform: "scale(0.667, 0.667)",
+      transformOrigin: "0 0"
+    }
+  }))), /*#__PURE__*/React.createElement("span", {
+    style: {
+      position: "relative",
+      maxWidth: 51,
+      maxHeight: null,
+      fontFamily: "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+      fontWeight: 500,
+      fontSize: 10,
+      textAlign: "center",
+      lineHeight: 1.340000033378601,
+      letterSpacing: "-0.020em",
+      color: "rgb(51,65,85)",
+      flexShrink: 0,
+      alignSelf: "stretch"
+    }
+  }, props.text));
+  const __impls = {
+    // figma: state=default
+    "state=default": __body0,
+    // figma: state=hover
+    "state=hover": __body1
+  };
+  return (__impls[__vkey_NavMenu(props)] ?? __body0)();
+}
+
+// figma node: 11001:5937 SUFFLE (2 variants)
+const __venc_SUFFLE = v => String(v).replace(/[%|=]/g, encodeURIComponent);
+const __vkey_SUFFLE = p => "property1=" + __venc_SUFFLE(p.property1);
+function SUFFLE(_p = {}) {
+  const props = {
+    ..._p,
+    property1: _p.property1 ?? "default"
+  };
+  const __body0 = () => /*#__PURE__*/React.createElement("div", {
+    className: props.className,
+    style: {
+      width: 18,
+      height: 18,
+      position: "relative",
+      ...props.style
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "absolute",
+      left: 0,
+      top: 0,
+      width: 18,
+      height: 18
+    }
+  }, props.icon1 ?? /*#__PURE__*/React.createElement(Icons, {
+    property1: "refresh",
+    style: {
+      transform: "scale(0.750, 0.750)",
+      transformOrigin: "0 0"
+    }
+  })));
+  const __body1 = () => /*#__PURE__*/React.createElement("div", {
+    className: props.className,
+    style: {
+      width: 18,
+      height: 18,
+      position: "relative",
+      ...props.style
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "absolute",
+      left: 0,
+      top: 0,
+      width: 18,
+      height: 18,
+      transform: "matrix(-0.500,0.866,-0.866,-0.500,21.294,5.706)",
+      transformOrigin: "0 0"
+    }
+  }, props.icon1 ?? /*#__PURE__*/React.createElement(Icons, {
+    property1: "refresh",
+    style: {
+      transform: "scale(0.750, 0.750)",
+      transformOrigin: "0 0"
+    }
+  })));
+  const __impls = {
+    // figma: Property 1=Default
+    "property1=default": __body0,
+    // figma: Property 1=Variant2
+    "property1=variant2": __body1
+  };
+  return (__impls[__vkey_SUFFLE(props)] ?? __body0)();
+}
+
+// figma node: 9001:13191 Ask Me users (1 variants)
+const __venc_AskMeUsers = v => String(v).replace(/[%|=]/g, encodeURIComponent);
+const __vkey_AskMeUsers = p => "property1=" + __venc_AskMeUsers(p.property1);
+function AskMeUsers(_p = {}) {
+  const props = {
+    ..._p,
+    property1: _p.property1 ?? "default"
+  };
+  const __body0 = () => /*#__PURE__*/React.createElement("div", {
+    className: props.className,
+    style: {
+      width: 24,
+      height: 24,
+      overflow: "hidden",
+      position: "relative",
+      color: "rgb(14,116,144)",
+      ...props.style
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "absolute",
+      left: 3,
+      top: 3,
+      width: 18,
+      height: 18,
+      border: "1px dashed currentColor",
+      display: "flex",
+      alignItems: "center",
+      justifyContent: "center",
+      overflow: "hidden",
+      fontSize: 10,
+      opacity: 0.45
+    }
+  }, "Union"));
+  const __impls = {
+    // figma: Property 1=Default
+    "property1=default": __body0
+  };
+  return (__impls[__vkey_AskMeUsers(props)] ?? __body0)();
+}
+
+// figma node: 11102:7931 Help
+function Help(_p = {}) {
+  const props = _p;
+  return /*#__PURE__*/React.createElement("div", {
+    className: props.className,
+    style: {
+      width: 24,
+      height: 24,
+      overflow: "hidden",
+      position: "relative",
+      color: "rgb(71,85,105)",
+      ...props.style
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "absolute",
+      left: 3,
+      top: 3,
+      width: 18,
+      height: 18,
+      border: "1px dashed currentColor",
+      display: "flex",
+      alignItems: "center",
+      justifyContent: "center",
+      overflow: "hidden",
+      fontSize: 10,
+      opacity: 0.45
+    }
+  }, "Union"));
+}
+
+// figma node: 11102:7929 Notification
+function Notification(_p = {}) {
+  const props = _p;
+  return /*#__PURE__*/React.createElement("div", {
+    className: props.className,
+    style: {
+      width: 24,
+      height: 24,
+      overflow: "hidden",
+      position: "relative",
+      color: "rgb(71,85,105)",
+      ...props.style
+    }
+  }, /*#__PURE__*/React.createElement("svg", {
+    width: 18,
+    height: 19,
+    viewBox: "0 0 18 19",
+    fill: "none",
+    style: {
+      position: "absolute",
+      left: 3,
+      top: 3,
+      width: 18,
+      height: 19
+    }
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M 17.914 12.823 L 15.868 5.407 C 15.431 3.821 14.479 2.427 13.164 1.448 C 11.848 0.468 10.245 -0.04 8.608 0.003 C 6.972 0.045 5.397 0.637 4.134 1.684 C 2.871 2.731 1.993 4.173 1.639 5.78 L 0.056 12.942 C -0.02 13.289 -0.019 13.649 0.062 13.995 C 0.142 14.341 0.298 14.665 0.519 14.942 C 0.74 15.219 1.021 15.443 1.339 15.597 C 1.658 15.751 2.007 15.83 2.36 15.831 L 5.198 15.831 C 5.379 16.725 5.862 17.529 6.564 18.107 C 7.267 18.684 8.147 19 9.054 19 C 9.962 19 10.841 18.684 11.544 18.107 C 12.247 17.529 12.729 16.725 12.91 15.831 L 15.64 15.831 C 16.004 15.83 16.363 15.746 16.688 15.583 C 17.014 15.421 17.298 15.185 17.518 14.894 C 17.738 14.603 17.889 14.264 17.957 13.905 C 18.026 13.546 18.011 13.176 17.914 12.823 Z M 9.054 17.413 C 8.568 17.411 8.094 17.258 7.697 16.975 C 7.3 16.691 7 16.292 6.838 15.831 L 11.27 15.831 C 11.108 16.292 10.808 16.691 10.411 16.975 C 10.015 17.258 9.541 17.411 9.054 17.413 Z M 16.266 13.935 C 16.193 14.033 16.097 14.112 15.988 14.167 C 15.879 14.221 15.758 14.249 15.636 14.248 L 2.36 14.248 C 2.242 14.248 2.126 14.221 2.02 14.17 C 1.913 14.119 1.82 14.044 1.746 13.952 C 1.673 13.859 1.621 13.751 1.594 13.636 C 1.567 13.52 1.567 13.4 1.592 13.285 L 3.175 6.123 C 3.453 4.862 4.143 3.73 5.135 2.909 C 6.127 2.087 7.363 1.622 8.647 1.589 C 9.931 1.555 11.19 1.954 12.223 2.722 C 13.256 3.49 14.004 4.584 14.348 5.828 L 16.394 13.244 C 16.428 13.362 16.433 13.485 16.411 13.605 C 16.389 13.725 16.339 13.838 16.266 13.935 Z",
+    fill: "currentColor",
+    fillRule: "evenodd"
+  })));
+}
+
+// figma node: 11102:8056 side.nav
+function SideNav(_p = {}) {
+  const props = _p;
+  return /*#__PURE__*/React.createElement("div", {
+    className: props.className,
+    style: {
+      width: 60,
+      height: 753,
+      backgroundColor: "rgb(241,245,249)",
+      borderTop: "1px solid rgb(226,232,240)",
+      borderRight: "1px solid rgb(226,232,240)",
+      borderBottom: "1px solid rgb(226,232,240)",
+      borderLeft: "1px solid rgb(226,232,240)",
+      display: "flex",
+      flexDirection: "column",
+      gap: 14,
+      padding: "16px 0px 16px 0px",
+      alignItems: "center",
+      flexWrap: "nowrap",
+      boxSizing: "border-box",
+      position: "relative",
+      ...props.style
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      width: 32,
+      height: 32,
+      overflow: "hidden",
+      borderRadius: 4,
+      flexShrink: 0
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "absolute",
+      left: 8,
+      top: 3.556,
+      width: 15.635,
+      height: 24.889,
+      overflow: "hidden"
+    }
+  }, /*#__PURE__*/React.createElement("svg", {
+    width: 5.906,
+    height: 19.054,
+    viewBox: "0 0 5.906 19.054",
+    fill: "none",
+    style: {
+      position: "absolute",
+      left: 0,
+      top: 0,
+      width: 5.906,
+      height: 19.054
+    }
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M 5.906 0 L 0 0 L 0 19.054 L 5.906 19.054 L 5.906 0 Z",
+    fill: "currentColor",
+    fillRule: "evenodd"
+  })), /*#__PURE__*/React.createElement("svg", {
+    width: 9.729,
+    height: 5.836,
+    viewBox: "0 0 9.729 5.836",
+    fill: "none",
+    style: {
+      position: "absolute",
+      left: 5.906,
+      top: 19.053,
+      width: 9.729,
+      height: 5.836
+    }
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M 9.729 0 L 0 0 L 0 5.836 L 9.729 5.836 L 9.729 0 Z",
+    fill: "currentColor",
+    fillRule: "evenodd"
+  })), /*#__PURE__*/React.createElement("svg", {
+    width: 5.906,
+    height: 5.836,
+    viewBox: "0 0 5.906 5.836",
+    fill: "none",
+    style: {
+      position: "absolute",
+      left: 0,
+      top: 19.053,
+      width: 5.906,
+      height: 5.836,
+      color: "rgb(86,181,207)"
+    }
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M 0 0 L 5.906 0 L 5.906 5.836 L 0 0 Z",
+    fill: "currentColor",
+    fillRule: "nonzero"
+  })))), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      display: "flex",
+      flexDirection: "column",
+      gap: 18,
+      alignItems: "center",
+      flexWrap: "nowrap",
+      flexGrow: 1,
+      alignSelf: "stretch"
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      width: 50,
+      height: 28,
+      maxWidth: 50,
+      maxHeight: null,
+      display: "flex",
+      flexDirection: "column",
+      gap: 6,
+      justifyContent: "center",
+      alignItems: "center",
+      flexWrap: "nowrap",
+      flexShrink: 0
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      width: 32,
+      height: 32,
+      borderRadius: 2,
+      display: "flex",
+      flexDirection: "column",
+      gap: 6,
+      justifyContent: "center",
+      alignItems: "center",
+      flexWrap: "nowrap",
+      flexShrink: 0
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      width: 16,
+      height: 16,
+      flexShrink: 0
+    }
+  }, /*#__PURE__*/React.createElement(IconPack, {
+    style: {
+      transform: "scale(0.667, 0.667)",
+      transformOrigin: "0 0"
+    },
+    instance: /*#__PURE__*/React.createElement(Home, null)
+  })))), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      width: 37,
+      height: 1,
+      flexShrink: 0,
+      border: "1px dashed currentColor",
+      display: "flex",
+      alignItems: "center",
+      justifyContent: "center",
+      overflow: "hidden",
+      fontSize: 10,
+      opacity: 0.45
+    }
+  }, "Line 2"), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      flexShrink: 0
+    }
+  }, props.icon2 ?? /*#__PURE__*/React.createElement(NavMenu, {
+    text: "Home",
+    state: "default"
+  })), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      maxWidth: 50,
+      maxHeight: null,
+      display: "flex",
+      flexDirection: "column",
+      gap: 4,
+      alignItems: "center",
+      flexWrap: "nowrap",
+      flexShrink: 0,
+      alignSelf: "stretch"
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      width: 32,
+      height: 32,
+      borderRadius: 2,
+      backgroundColor: "rgb(59,130,246)",
+      display: "flex",
+      flexDirection: "column",
+      gap: 6,
+      justifyContent: "center",
+      alignItems: "center",
+      flexWrap: "nowrap",
+      flexShrink: 0
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      width: 16,
+      height: 16,
+      overflow: "hidden",
+      flexShrink: 0
+    }
+  }, /*#__PURE__*/React.createElement("svg", {
+    width: 12.004,
+    height: 11.340,
+    viewBox: "0 0 12.004 11.340",
+    fill: "none",
+    style: {
+      position: "absolute",
+      left: 1.998,
+      top: 2.33,
+      width: 12.004,
+      height: 11.34,
+      color: "var(--white-text)"
+    }
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M 8.808 5.672 C 8.808 5.481 8.705 5.306 8.542 5.22 C 8.124 4.997 7.677 4.793 7.176 4.594 C 6.347 4.262 5.743 3.622 5.429 2.745 C 5.241 2.213 5.048 1.739 4.839 1.297 C 4.757 1.124 4.588 1.015 4.404 1.015 C 4.219 1.015 4.049 1.124 3.968 1.297 C 3.759 1.738 3.567 2.212 3.379 2.743 C 3.065 3.622 2.461 4.262 1.633 4.593 C 1.129 4.794 0.681 4.998 0.265 5.22 C 0.102 5.306 0 5.481 0 5.672 C 0 5.862 0.102 6.037 0.266 6.124 C 0.684 6.346 1.132 6.551 1.632 6.749 C 2.461 7.081 3.064 7.721 3.378 8.599 C 3.567 9.133 3.76 9.605 3.968 10.046 C 4.05 10.219 4.219 10.329 4.404 10.329 C 4.588 10.329 4.757 10.219 4.839 10.046 C 5.048 9.605 5.241 9.132 5.428 8.6 C 5.743 7.721 6.347 7.081 7.174 6.75 C 7.676 6.551 8.123 6.347 8.542 6.125 C 8.705 6.038 8.808 5.863 8.808 5.672 Z M 6.827 5.803 C 5.747 6.235 4.928 7.103 4.518 8.248 C 4.48 8.355 4.442 8.46 4.404 8.562 C 4.365 8.46 4.327 8.355 4.288 8.246 C 3.88 7.103 3.061 6.235 1.978 5.801 C 1.87 5.759 1.765 5.715 1.662 5.672 C 1.764 5.629 1.87 5.585 1.98 5.542 C 3.061 5.109 3.88 4.241 4.289 3.097 C 4.327 2.989 4.366 2.884 4.404 2.782 C 4.442 2.885 4.48 2.991 4.519 3.099 C 4.928 4.242 5.747 5.109 6.829 5.542 C 6.938 5.585 7.043 5.629 7.146 5.672 C 7.042 5.716 6.936 5.759 6.827 5.803 Z",
+    fill: "currentColor",
+    fillRule: "evenodd"
+  }), /*#__PURE__*/React.createElement("path", {
+    d: "M 9.773 11.162 C 9.879 11.399 10.207 11.399 10.312 11.161 M 9.773 11.162 C 9.361 10.243 9.165 10.035 8.258 9.607 C 8.027 9.498 8.027 9.161 8.258 9.052 C 9.17 8.626 9.364 8.414 9.773 7.498 C 9.879 7.26 10.207 7.261 10.313 7.499 C 10.721 8.422 10.915 8.627 11.826 9.052 C 12.058 9.16 12.058 9.498 11.827 9.607 C 10.916 10.035 10.72 10.244 10.312 11.161 Z",
+    fill: "currentColor",
+    fillRule: "evenodd"
+  }), /*#__PURE__*/React.createElement("path", {
+    d: "M 9.773 3.848 C 9.872 4.088 10.207 4.085 10.312 3.847 M 9.773 3.848 C 9.333 2.782 9.294 2.782 8.258 2.293 C 8.027 2.184 8.027 1.847 8.258 1.739 C 9.371 1.218 9.38 1.218 9.773 0.184 C 9.865 -0.059 10.236 -0.064 10.313 0.185 C 10.667 1.34 10.804 1.387 11.826 1.739 C 12.068 1.822 12.058 2.184 11.827 2.293 C 10.82 2.767 10.786 2.781 10.312 3.847 Z",
+    fill: "currentColor",
+    fillRule: "evenodd"
+  })))), /*#__PURE__*/React.createElement("span", {
+    style: {
+      position: "relative",
+      maxWidth: 51,
+      maxHeight: null,
+      fontFamily: "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+      fontWeight: 500,
+      fontSize: 10,
+      textAlign: "center",
+      lineHeight: 1.340000033378601,
+      letterSpacing: "-0.020em",
+      color: "rgb(51,65,85)",
+      flexShrink: 0,
+      whiteSpace: "nowrap"
+    }
+  }, props.text1 ?? "Ask Me")), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      flexShrink: 0
+    }
+  }, props.icon3 ?? /*#__PURE__*/React.createElement(NavMenu, {
+    state: "default"
+  })), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      height: 62,
+      flexShrink: 0,
+      alignSelf: "stretch",
+      width: "auto"
+    }
+  }, props.icon4 ?? /*#__PURE__*/React.createElement(NavMenu, {
+    text: "Do You Know",
+    state: "default"
+  })), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      maxWidth: 50,
+      maxHeight: null,
+      display: "flex",
+      flexDirection: "column",
+      gap: 4,
+      alignItems: "center",
+      flexWrap: "nowrap",
+      flexShrink: 0,
+      alignSelf: "stretch"
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      width: 32,
+      height: 32,
+      borderRadius: 2,
+      display: "flex",
+      flexDirection: "column",
+      gap: 6,
+      justifyContent: "center",
+      alignItems: "center",
+      flexWrap: "nowrap",
+      flexShrink: 0
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      width: 16,
+      height: 16,
+      overflow: "hidden",
+      flexShrink: 0
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "absolute",
+      left: 0,
+      top: 0,
+      width: 16,
+      height: 16,
+      overflow: "hidden"
+    }
+  }, /*#__PURE__*/React.createElement("svg", {
+    width: 7.652,
+    height: 7.826,
+    viewBox: "0 0 7.652 7.826",
+    fill: "none",
+    style: {
+      position: "absolute",
+      left: 9.101,
+      top: 2,
+      width: 7.652,
+      height: 7.826,
+      color: "rgb(8,145,178)"
+    }
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M 3.826 0 L 2.63 2.69 L 0 3.913 L 2.63 5.136 L 3.826 7.826 L 5.022 5.136 L 7.652 3.913 L 5.022 2.69 L 3.826 0 Z M 3.348 4.402 L 4.345 4.158 L 5.342 3.913 L 3.348 4.402 Z",
+    fill: "currentColor",
+    fillRule: "nonzero"
+  })), /*#__PURE__*/React.createElement("svg", {
+    width: 4.947,
+    height: 5.059,
+    viewBox: "0 0 4.947 5.059",
+    fill: "none",
+    style: {
+      position: "absolute",
+      left: 15.053,
+      top: 6.348,
+      width: 4.947,
+      height: 5.059,
+      color: "rgb(45,212,191)"
+    }
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M 2.473 5.059 L 3.253 3.326 L 4.947 2.53 L 3.253 1.739 L 2.473 0 L 1.7 1.739 L 0 2.53 L 1.7 3.326 L 2.473 5.059 Z",
+    fill: "currentColor",
+    fillRule: "nonzero"
+  })), /*#__PURE__*/React.createElement("svg", {
+    width: 16,
+    height: 15.266,
+    viewBox: "0 0 16 15.266",
+    fill: "none",
+    style: {
+      position: "absolute",
+      left: 4,
+      top: 6.734,
+      width: 16,
+      height: 15.266,
+      color: "rgb(8,145,178)"
+    }
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M 4.038 0 C 4.096 0.553 4.219 1.087 4.398 1.595 C 3.983 1.838 3.593 2.142 3.23 2.507 C 2.144 3.6 1.6 4.92 1.6 6.467 C 1.6 8.027 2.144 9.35 3.23 10.437 C 4.317 11.523 5.64 12.066 7.2 12.066 C 8.747 12.066 10.067 11.523 11.16 10.437 C 12.253 9.35 12.8 8.027 12.8 6.467 C 12.8 6.321 12.793 6.177 12.783 6.035 C 13.326 5.893 13.843 5.688 14.325 5.427 C 14.374 5.766 14.4 6.113 14.4 6.467 C 14.4 7.32 14.26 8.127 13.98 8.887 C 13.7 9.647 13.314 10.34 12.82 10.967 L 16 14.146 L 14.86 15.267 L 11.68 12.106 C 11.053 12.6 10.36 12.984 9.6 13.257 C 8.84 13.53 8.04 13.666 7.2 13.666 C 6.2 13.666 5.263 13.477 4.39 13.097 C 3.517 12.717 2.757 12.203 2.11 11.557 C 1.464 10.91 0.95 10.15 0.57 9.276 C 0.19 8.403 0 7.467 0 6.467 C 0 5.48 0.19 4.55 0.57 3.677 C 0.95 2.803 1.464 2.04 2.11 1.387 C 2.669 0.823 3.311 0.36 4.038 0 Z",
+    fill: "currentColor",
+    fillRule: "nonzero"
+  })), /*#__PURE__*/React.createElement("svg", {
+    width: 2,
+    height: 4.742,
+    viewBox: "0 0 2 4.742",
+    fill: "none",
+    style: {
+      position: "absolute",
+      left: 7,
+      top: 9.857,
+      width: 2,
+      height: 4.742,
+      color: "rgb(165,243,252)"
+    }
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M -0.279 4.831 C -0.23 5.046 -0.015 5.181 0.2 5.132 C 0.415 5.083 0.55 4.869 0.502 4.654 L 0.112 4.742 L -0.279 4.831 Z M 2.223 0.332 C 2.406 0.21 2.455 -0.039 2.332 -0.223 C 2.21 -0.406 1.961 -0.455 1.777 -0.332 L 2 0 L 2.223 0.332 Z M 0.112 4.742 L 0.502 4.654 C 0.435 4.361 0.4 4.056 0.4 3.742 L 0 3.742 L -0.4 3.742 C -0.4 4.116 -0.358 4.48 -0.279 4.831 L 0.112 4.742 Z M 0 3.742 L 0.4 3.742 C 0.4 2.321 1.123 1.069 2.223 0.332 L 2 0 L 1.777 -0.332 C 0.465 0.546 -0.4 2.043 -0.4 3.742 L 0 3.742 Z",
+    fill: "currentColor",
+    fillRule: "nonzero"
+  }))))), /*#__PURE__*/React.createElement("span", {
+    style: {
+      position: "relative",
+      maxWidth: 51,
+      maxHeight: null,
+      fontFamily: "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+      fontWeight: 500,
+      fontSize: 10,
+      textAlign: "center",
+      lineHeight: 1.340000033378601,
+      letterSpacing: "-0.020em",
+      color: "rgb(51,65,85)",
+      flexShrink: 0
+    }
+  }, "Data ")), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      maxWidth: 50,
+      maxHeight: null,
+      display: "flex",
+      flexDirection: "column",
+      gap: 4,
+      alignItems: "center",
+      flexWrap: "nowrap",
+      flexShrink: 0,
+      alignSelf: "stretch"
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      width: 32,
+      height: 32,
+      borderRadius: 2,
+      display: "flex",
+      flexDirection: "column",
+      gap: 6,
+      justifyContent: "center",
+      alignItems: "center",
+      flexWrap: "nowrap",
+      flexShrink: 0
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      width: 16,
+      height: 16,
+      overflow: "hidden",
+      flexShrink: 0
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "absolute",
+      left: 0,
+      top: 0,
+      width: 16,
+      height: 16,
+      overflow: "hidden"
+    }
+  }, /*#__PURE__*/React.createElement("svg", {
+    width: 7.652,
+    height: 7.826,
+    viewBox: "0 0 7.652 7.826",
+    fill: "none",
+    style: {
+      position: "absolute",
+      left: 9.101,
+      top: 2,
+      width: 7.652,
+      height: 7.826,
+      color: "rgb(8,145,178)"
+    }
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M 3.826 0 L 2.63 2.69 L 0 3.913 L 2.63 5.136 L 3.826 7.826 L 5.022 5.136 L 7.652 3.913 L 5.022 2.69 L 3.826 0 Z M 3.348 4.402 L 4.345 4.158 L 5.342 3.913 L 3.348 4.402 Z",
+    fill: "currentColor",
+    fillRule: "nonzero"
+  })), /*#__PURE__*/React.createElement("svg", {
+    width: 4.947,
+    height: 5.059,
+    viewBox: "0 0 4.947 5.059",
+    fill: "none",
+    style: {
+      position: "absolute",
+      left: 15.053,
+      top: 6.348,
+      width: 4.947,
+      height: 5.059,
+      color: "rgb(45,212,191)"
+    }
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M 2.473 5.059 L 3.253 3.326 L 4.947 2.53 L 3.253 1.739 L 2.473 0 L 1.7 1.739 L 0 2.53 L 1.7 3.326 L 2.473 5.059 Z",
+    fill: "currentColor",
+    fillRule: "nonzero"
+  })), /*#__PURE__*/React.createElement("svg", {
+    width: 16,
+    height: 15.266,
+    viewBox: "0 0 16 15.266",
+    fill: "none",
+    style: {
+      position: "absolute",
+      left: 4,
+      top: 6.734,
+      width: 16,
+      height: 15.266,
+      color: "rgb(8,145,178)"
+    }
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M 4.038 0 C 4.096 0.553 4.219 1.087 4.398 1.595 C 3.983 1.838 3.593 2.142 3.23 2.507 C 2.144 3.6 1.6 4.92 1.6 6.467 C 1.6 8.027 2.144 9.35 3.23 10.437 C 4.317 11.523 5.64 12.066 7.2 12.066 C 8.747 12.066 10.067 11.523 11.16 10.437 C 12.253 9.35 12.8 8.027 12.8 6.467 C 12.8 6.321 12.793 6.177 12.783 6.035 C 13.326 5.893 13.843 5.688 14.325 5.427 C 14.374 5.766 14.4 6.113 14.4 6.467 C 14.4 7.32 14.26 8.127 13.98 8.887 C 13.7 9.647 13.314 10.34 12.82 10.967 L 16 14.146 L 14.86 15.267 L 11.68 12.106 C 11.053 12.6 10.36 12.984 9.6 13.257 C 8.84 13.53 8.04 13.666 7.2 13.666 C 6.2 13.666 5.263 13.477 4.39 13.097 C 3.517 12.717 2.757 12.203 2.11 11.557 C 1.464 10.91 0.95 10.15 0.57 9.276 C 0.19 8.403 0 7.467 0 6.467 C 0 5.48 0.19 4.55 0.57 3.677 C 0.95 2.803 1.464 2.04 2.11 1.387 C 2.669 0.823 3.311 0.36 4.038 0 Z",
+    fill: "currentColor",
+    fillRule: "nonzero"
+  })), /*#__PURE__*/React.createElement("svg", {
+    width: 2,
+    height: 4.742,
+    viewBox: "0 0 2 4.742",
+    fill: "none",
+    style: {
+      position: "absolute",
+      left: 7,
+      top: 9.857,
+      width: 2,
+      height: 4.742,
+      color: "rgb(165,243,252)"
+    }
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M -0.279 4.831 C -0.23 5.046 -0.015 5.181 0.2 5.132 C 0.415 5.083 0.55 4.869 0.502 4.654 L 0.112 4.742 L -0.279 4.831 Z M 2.223 0.332 C 2.406 0.21 2.455 -0.039 2.332 -0.223 C 2.21 -0.406 1.961 -0.455 1.777 -0.332 L 2 0 L 2.223 0.332 Z M 0.112 4.742 L 0.502 4.654 C 0.435 4.361 0.4 4.056 0.4 3.742 L 0 3.742 L -0.4 3.742 C -0.4 4.116 -0.358 4.48 -0.279 4.831 L 0.112 4.742 Z M 0 3.742 L 0.4 3.742 C 0.4 2.321 1.123 1.069 2.223 0.332 L 2 0 L 1.777 -0.332 C 0.465 0.546 -0.4 2.043 -0.4 3.742 L 0 3.742 Z",
+    fill: "currentColor",
+    fillRule: "nonzero"
+  }))))), /*#__PURE__*/React.createElement("span", {
+    style: {
+      position: "relative",
+      maxWidth: 51,
+      maxHeight: null,
+      fontFamily: "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+      fontWeight: 500,
+      fontSize: 10,
+      textAlign: "center",
+      lineHeight: 1.340000033378601,
+      letterSpacing: "-0.020em",
+      color: "rgb(51,65,85)",
+      flexShrink: 0,
+      alignSelf: "stretch"
+    }
+  }, "Data Magnet"))), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      display: "flex",
+      flexDirection: "column",
+      gap: 6,
+      justifyContent: "center",
+      alignItems: "center",
+      flexWrap: "nowrap",
+      isolation: "isolate",
+      flexShrink: 0
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      height: 1,
+      zIndex: 4,
+      flexShrink: 0,
+      alignSelf: "stretch",
+      border: "1px dashed currentColor",
+      display: "flex",
+      alignItems: "center",
+      justifyContent: "center",
+      overflow: "hidden",
+      fontSize: 10,
+      opacity: 0.45,
+      width: 1
+    }
+  }, "Vector 104"), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      borderRadius: 2,
+      display: "flex",
+      flexDirection: "row",
+      gap: 8,
+      padding: "6px 6px 6px 6px",
+      alignItems: "center",
+      flexWrap: "nowrap",
+      boxSizing: "border-box",
+      zIndex: 3,
+      flexShrink: 0
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      width: 16,
+      height: 16,
+      flexShrink: 0
+    }
+  }, /*#__PURE__*/React.createElement(Notification, {
+    style: {
+      transform: "scale(0.667, 0.667)",
+      transformOrigin: "0 0"
+    }
+  }))), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      borderRadius: 2,
+      display: "flex",
+      flexDirection: "row",
+      gap: 8,
+      padding: "6px 6px 6px 6px",
+      alignItems: "center",
+      flexWrap: "nowrap",
+      boxSizing: "border-box",
+      zIndex: 2,
+      flexShrink: 0
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      width: 16,
+      height: 16,
+      flexShrink: 0
+    }
+  }, /*#__PURE__*/React.createElement(Help, {
+    style: {
+      transform: "scale(0.667, 0.667)",
+      transformOrigin: "0 0"
+    }
+  }))), /*#__PURE__*/React.createElement(Frame1707480391, {
+    style: {
+      position: "relative",
+      width: 28,
+      height: 28,
+      zIndex: 1,
+      flexShrink: 0
+    },
+    property1: "default"
+  })));
+}
+
+// Globals for scripts loaded after this file.
+window.AgentIcon = AgentIcon;
+window.Attachment = Attachment;
+window.DropdownOptions = DropdownOptions;
+window.AutoRCA3 = AutoRCA3;
+window.IconPack5 = IconPack5;
+window.BenefitHand1 = BenefitHand1;
+window.Icons = Icons;
+window.Sample = Sample;
+window.AddDropdown = AddDropdown;
+window.Beta = Beta;
+window.DownArrow2 = DownArrow2;
+window.SchemaInfo = SchemaInfo;
+window.TooltipInfo = TooltipInfo;
+window.Button = Button;
+window.Schema = Schema;
+window.ComponentButtonSystem = ComponentButtonSystem;
+window.Loader1Spiner = Loader1Spiner;
+window.Container = Container;
+window.ContextMenu = ContextMenu;
+window.Delete = Delete;
+window.Pin = Pin;
+window.ProfitSalesAnalysis = ProfitSalesAnalysis;
+window.Star = Star;
+window.UnpinPinOff = UnpinPinOff;
+window.ConversationTab = ConversationTab;
+window.PreviewTable = PreviewTable;
+window.DataCollaps = DataCollaps;
+window.DockLeft3 = DockLeft3;
+window.DockLeft = DockLeft;
+window.Container2 = Container2;
+window.PlaceholderAnimation = PlaceholderAnimation;
+window.ForewordArrow = ForewordArrow;
+window.SearchButtonContainer = SearchButtonContainer;
+window.FirstTime = FirstTime;
+window.Frame1707479485 = Frame1707479485;
+window.Frame1707479557 = Frame1707479557;
+window.Frame1707479588 = Frame1707479588;
+window.AIStroke = AIStroke;
+window.DockLeft2 = DockLeft2;
+window.Frame1707479610 = Frame1707479610;
+window.Arrow = Arrow;
+window.Bolt = Bolt;
+window.User = User;
+window.Button2 = Button2;
+window.DarkModeMoon = DarkModeMoon;
+window.Feedback = Feedback;
+window.Logout = Logout;
+window.Rocket = Rocket;
+window.Setting = Setting;
+window.Share = Share;
+window.Support = Support;
+window.Frame1707480391 = Frame1707480391;
+window.DownArrow = DownArrow;
+window.Add2 = Add2;
+window.IconPack2 = IconPack2;
+window.LLMModelIcon = LLMModelIcon;
+window.LLMOptions = LLMOptions;
+window.UpArrow = UpArrow;
+window.LLMModel = LLMModel;
+window.Add = Add;
+window.AutoRCA2 = AutoRCA2;
+window.IconPack4 = IconPack4;
+window.NavCreate = NavCreate;
+window.Home = Home;
+window.AutoRCA = AutoRCA;
+window.IconPack = IconPack;
+window.NavMenu = NavMenu;
+window.SUFFLE = SUFFLE;
+window.AskMeUsers = AskMeUsers;
+window.Help = Help;
+window.Notification = Notification;
+window.SideNav = SideNav;

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<meta name="design_doc_mode" content="canvas">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+body{margin:0;font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;letter-spacing:-0.02em;color:rgb(51,65,85);background:rgb(241,245,249)}
+*{box-sizing:border-box}
+a{color:rgb(37,99,235);text-decoration:none}a:hover{color:rgb(59,130,246);text-decoration:underline}
+code{font-family:"JetBrains Mono",ui-monospace,monospace;font-size:12px;background:rgb(241,245,249);border-radius:4px;padding:1px 5px;color:rgb(30,41,59)}
+</style>
+</helmet>
+<section data-screen-label="AI Credits Fix" style="padding:64px;display:flex;flex-direction:column;gap:40px">
+  <div style="display:flex;flex-direction:column;gap:8px;max-width:960px">
+    <span style="font-size:12px;font-weight:500;color:rgb(37,99,235)">Bug fix · Ask Me usage indicator</span>
+    <span style="font-size:32px;font-weight:600;line-height:1.2;color:rgb(15,23,42)">Explain what AI credits are</span>
+    <span style="font-size:16px;line-height:1.5;color:rgb(71,85,105);text-wrap:pretty">The Usage popover showed figures only, and the trigger had no accessible name. The fix adds a hover/focus tooltip, an (i) explanation per meter, “used” labelling with credits left and reset date, and proper ARIA. Every frame is live — hover, click and press (i).</span>
+  </div>
+
+  <div style="display:flex;flex-wrap:wrap;gap:48px 40px;align-items:flex-start">
+    <div id="0" style="display:flex;flex-direction:column;gap:14px;width:560px">
+      <div style="display:flex;align-items:center;gap:12px">
+        <span style="height:28px;min-width:36px;padding:0 10px;border-radius:6px;background:rgb(148,163,184);color:rgb(255,255,255);font-size:14px;font-weight:600;display:flex;align-items:center;justify-content:center">Before</span>
+        <span style="font-size:20px;font-weight:600;color:rgb(15,23,42)">Current (fails AC)</span>
+      </div>
+      <span style="font-size:14px;line-height:1.5;color:rgb(100,116,139);text-wrap:pretty">Figures only. “360.43 / 1.00K” doesn’t say used or left. No title, no aria-label — screen readers hear “Usage”.</span>
+      <div style="width:560px;height:440px;border-radius:12px;overflow:hidden;box-shadow:0 0 0 1px rgb(226,232,240),0 12px 40px rgba(15,23,42,0.08)">
+        <dc-import name="Usage Indicator" legacy="{{ true }}" initial-open="{{ true }}" style="width:100%;height:100%" hint-size="560px,440px"></dc-import>
+      </div>
+    </div>
+
+    <div id="1a" style="display:flex;flex-direction:column;gap:14px;width:560px">
+      <div style="display:flex;align-items:center;gap:12px">
+        <span style="height:28px;min-width:36px;padding:0 10px;border-radius:6px;background:rgb(15,23,42);color:rgb(255,255,255);font-size:14px;font-weight:600;display:flex;align-items:center;justify-content:center">1a</span>
+        <span style="font-size:20px;font-weight:600;color:rgb(15,23,42)">Hover or focus the pill</span>
+      </div>
+      <span style="font-size:14px;line-height:1.5;color:rgb(100,116,139);text-wrap:pretty">Tooltip gives the figure with direction (“used”) and a one-line meaning. Same text is the accessible description.</span>
+      <div style="width:560px;height:440px;border-radius:12px;overflow:hidden;box-shadow:0 0 0 1px rgb(226,232,240),0 12px 40px rgba(15,23,42,0.08)">
+        <dc-import name="Usage Indicator" initial-hover="{{ true }}" style="width:100%;height:100%" hint-size="560px,440px"></dc-import>
+      </div>
+    </div>
+
+    <div id="1b" style="display:flex;flex-direction:column;gap:14px;width:560px">
+      <div style="display:flex;align-items:center;gap:12px">
+        <span style="height:28px;min-width:36px;padding:0 10px;border-radius:6px;background:rgb(15,23,42);color:rgb(255,255,255);font-size:14px;font-weight:600;display:flex;align-items:center;justify-content:center">1b</span>
+        <span style="font-size:20px;font-weight:600;color:rgb(15,23,42)">Popover open</span>
+      </div>
+      <span style="font-size:14px;line-height:1.5;color:rgb(100,116,139);text-wrap:pretty">Totals read “/ 1,000 used” (no “1.00K”). A meta line under each bar gives what’s left and when it resets. (i) sits next to each label.</span>
+      <div style="width:560px;height:440px;border-radius:12px;overflow:hidden;box-shadow:0 0 0 1px rgb(226,232,240),0 12px 40px rgba(15,23,42,0.08)">
+        <dc-import name="Usage Indicator" initial-open="{{ true }}" style="width:100%;height:100%" hint-size="560px,440px"></dc-import>
+      </div>
+    </div>
+
+    <div id="1c" style="display:flex;flex-direction:column;gap:14px;width:560px">
+      <div style="display:flex;align-items:center;gap:12px">
+        <span style="height:28px;min-width:36px;padding:0 10px;border-radius:6px;background:rgb(15,23,42);color:rgb(255,255,255);font-size:14px;font-weight:600;display:flex;align-items:center;justify-content:center">1c</span>
+        <span style="font-size:20px;font-weight:600;color:rgb(15,23,42)">“What are AI credits?” expanded</span>
+      </div>
+      <span style="font-size:14px;line-height:1.5;color:rgb(100,116,139);text-wrap:pretty">Answers the three gaps: what a credit is, what uses one, and what happens at the limit.</span>
+      <div style="width:560px;height:580px;border-radius:12px;overflow:hidden;box-shadow:0 0 0 1px rgb(226,232,240),0 12px 40px rgba(15,23,42,0.08)">
+        <dc-import name="Usage Indicator" initial-open="{{ true }}" initial-info="credits" style="width:100%;height:100%" hint-size="560px,580px"></dc-import>
+      </div>
+    </div>
+
+    <div id="1d" style="display:flex;flex-direction:column;gap:14px;width:560px">
+      <div style="display:flex;align-items:center;gap:12px">
+        <span style="height:28px;min-width:36px;padding:0 10px;border-radius:6px;background:rgb(15,23,42);color:rgb(255,255,255);font-size:14px;font-weight:600;display:flex;align-items:center;justify-content:center">1d</span>
+        <span style="font-size:20px;font-weight:600;color:rgb(15,23,42)">External tool calls expanded</span>
+      </div>
+      <span style="font-size:14px;line-height:1.5;color:rgb(100,116,139);text-wrap:pretty">Same pattern for the second meter. One explanation open at a time.</span>
+      <div style="width:560px;height:520px;border-radius:12px;overflow:hidden;box-shadow:0 0 0 1px rgb(226,232,240),0 12px 40px rgba(15,23,42,0.08)">
+        <dc-import name="Usage Indicator" initial-open="{{ true }}" initial-info="tools" style="width:100%;height:100%" hint-size="560px,520px"></dc-import>
+      </div>
+    </div>
+
+    <div id="1e" style="display:flex;flex-direction:column;gap:14px;width:560px">
+      <div style="display:flex;align-items:center;gap:12px">
+        <span style="height:28px;min-width:36px;padding:0 10px;border-radius:6px;background:rgb(15,23,42);color:rgb(255,255,255);font-size:14px;font-weight:600;display:flex;align-items:center;justify-content:center">1e</span>
+        <span style="font-size:20px;font-weight:600;color:rgb(15,23,42)">Running low (≥ 90%)</span>
+      </div>
+      <span style="font-size:14px;line-height:1.5;color:rgb(100,116,139);text-wrap:pretty">Bar turns orange, meta reads “Only 38.5 left”, and a dot on the pill signals it without opening.</span>
+      <div style="width:560px;height:440px;border-radius:12px;overflow:hidden;box-shadow:0 0 0 1px rgb(226,232,240),0 12px 40px rgba(15,23,42,0.08)">
+        <dc-import name="Usage Indicator" used="{{ 961.5 }}" tools-used="{{ 12 }}" initial-open="{{ true }}" style="width:100%;height:100%" hint-size="560px,440px"></dc-import>
+      </div>
+    </div>
+
+    <div id="1f" style="display:flex;flex-direction:column;gap:14px;width:560px">
+      <div style="display:flex;align-items:center;gap:12px">
+        <span style="height:28px;min-width:36px;padding:0 10px;border-radius:6px;background:rgb(15,23,42);color:rgb(255,255,255);font-size:14px;font-weight:600;display:flex;align-items:center;justify-content:center">1f</span>
+        <span style="font-size:20px;font-weight:600;color:rgb(15,23,42)">Out of credits</span>
+      </div>
+      <span style="font-size:14px;line-height:1.5;color:rgb(100,116,139);text-wrap:pretty">States the consequence plainly and promotes Upgrade to the primary button.</span>
+      <div style="width:560px;height:440px;border-radius:12px;overflow:hidden;box-shadow:0 0 0 1px rgb(226,232,240),0 12px 40px rgba(15,23,42,0.08)">
+        <dc-import name="Usage Indicator" used="{{ 1000 }}" tools-used="{{ 34 }}" initial-open="{{ true }}" style="width:100%;height:100%" hint-size="560px,440px"></dc-import>
+      </div>
+    </div>
+
+    <div id="spec" style="display:flex;flex-direction:column;gap:14px;width:560px">
+      <div style="display:flex;align-items:center;gap:12px">
+        <span style="height:28px;min-width:36px;padding:0 10px;border-radius:6px;background:rgb(37,99,235);color:rgb(255,255,255);font-size:14px;font-weight:600;display:flex;align-items:center;justify-content:center">Spec</span>
+        <span style="font-size:20px;font-weight:600;color:rgb(15,23,42)">Accessibility &amp; copy</span>
+      </div>
+      <div style="border-radius:12px;background:rgb(255,255,255);box-shadow:0 0 0 1px rgb(226,232,240);padding:24px;display:flex;flex-direction:column;gap:16px;font-size:14px;line-height:1.55;color:rgb(51,65,85)">
+        <div style="display:flex;flex-direction:column;gap:6px">
+          <span style="font-size:12px;font-weight:600;color:rgb(100,116,139)">TRIGGER · [data-testid="chat-header-credit-pill"]</span>
+          <span><code>aria-label</code> “Usage: 360.43 of 1,000 AI credits used, 639.57 left. Resets Oct 1.”</span>
+          <span><code>aria-haspopup="dialog"</code> · <code>aria-expanded</code> · <code>aria-describedby</code> → tooltip</span>
+          <span>Tooltip opens on hover and keyboard focus. Esc or click closes it. No native <code>title</code>, so it doesn’t show twice.</span>
+        </div>
+        <div style="height:1px;background:rgb(241,245,249)"></div>
+        <div style="display:flex;flex-direction:column;gap:6px">
+          <span style="font-size:12px;font-weight:600;color:rgb(100,116,139)">POPOVER</span>
+          <span><code>role="dialog"</code> <code>aria-label="Usage and limits"</code>. Each bar is a <code>progressbar</code> with valuenow/valuemax.</span>
+          <span>(i) buttons: <code>aria-label="What are AI credits?"</code>, <code>aria-expanded</code>, <code>aria-controls</code> → explanation.</span>
+        </div>
+        <div style="height:1px;background:rgb(241,245,249)"></div>
+        <div style="display:flex;flex-direction:column;gap:6px">
+          <span style="font-size:12px;font-weight:600;color:rgb(100,116,139)">THRESHOLDS</span>
+          <span>Under 90% blue · 90–99% orange + pill dot · 100% red + filled Upgrade.</span>
+          <span>Numbers use full values (“1,000”), not “1.00K”.</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</x-dc>
+</body>
+</html>

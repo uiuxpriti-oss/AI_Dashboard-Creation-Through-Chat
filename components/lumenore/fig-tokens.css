@@ -1,0 +1,40 @@
+/* Generated from Figma Variables. First mode = :root default.
+   FLOAT tokens are unitless — multiply by 1px in calc() where a length is needed. */
+
+:root {
+  --backgrounds-whiite: var(--white); /* @kind color */
+  --body-medium-medium-size-14: var(--font-size-5-14);
+  --body-medium-medium-weight: var(--font-weight-medium);
+  --body-medium-size-14: var(--font-size-6-14);
+  --body-small-medium-size-12: var(--font-size-2-12);
+  --body-small-medium-size: var(--font-size-2-12);
+  --body-small-medium-weight: var(--font-weight-medium);
+  --body-small-size-12: var(--font-size-3-12);
+  --body-small-weight: var(--font-weight-regular);
+  --card-text: rgb(255,255,255); /* @kind color */
+  --color-bluegray-500: rgb(100,116,139); /* @kind color */
+  --color-bluegray-700: rgb(51,65,85); /* @kind color */
+  --color-core-white: rgb(255,255,255); /* @kind color */
+  --font-size-1-10: 10;
+  --font-size-12-20: 20;
+  --font-size-14-25: 25;
+  --font-size-2-12: 12;
+  --font-size-3-12: 12;
+  --font-size-5-14: 14;
+  --font-size-6-14: 14;
+  --font-weight-medium: 500;
+  --font-weight-regular: 400;
+  --heading-regular-size-25: var(--font-size-14-25);
+  --label-semibold-size-10: var(--font-size-1-10);
+  --label-semibold-size: var(--font-size-1-10);
+  --label-semibold-weight: var(--font-weight-medium);
+  --subheading-large-regular-weight: var(--font-weight-regular);
+  --typeface-font-face: "Inter";
+  --white-text: rgb(255,255,255); /* @kind color */
+  --white: rgb(255,255,255); /* @kind color */
+}
+
+:root[data-theme="light"], .light {
+  --card-text: rgb(51,65,85); /* @kind color */
+  --white-text: rgb(51,65,85); /* @kind color */
+}
